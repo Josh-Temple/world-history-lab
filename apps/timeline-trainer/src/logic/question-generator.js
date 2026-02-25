@@ -37,7 +37,7 @@ function orderByYear(eventA, eventB) {
 }
 
 function createPairKey(eventAId, eventBId) {
-  return [eventAId, eventBId].sort().join("::");
+  return [eventAId, eventBId].sort().join("|");
 }
 
 export function resolveUnitEvents(events, unit) {
@@ -64,17 +64,18 @@ export function filterTimelineCandidateEvents(events) {
   });
 }
 
-export function generateBeforeAfterQuestion(events, previousPairKey = null) {
+export function generateBeforeAfterQuestion(events, lastPairKey = null) {
   if (events.length < 2) {
     throw new Error("Need at least two valid events to generate a question.");
   }
 
-  const maxAttempts = 80;
+  const maxAttempts = 100;
+
   for (let i = 0; i < maxAttempts; i += 1) {
     const [eventA, eventB] = pickDistinctPair(events);
     const pairKey = createPairKey(eventA.id, eventB.id);
 
-    if (previousPairKey && pairKey === previousPairKey) {
+    if (lastPairKey && pairKey === lastPairKey) {
       continue;
     }
 
@@ -84,23 +85,30 @@ export function generateBeforeAfterQuestion(events, previousPairKey = null) {
 
     const { earlierEvent, laterEvent } = orderByYear(eventA, eventB);
     const showEarlierFirst = Math.random() < 0.5;
+    const options = showEarlierFirst ? [earlierEvent, laterEvent] : [laterEvent, earlierEvent];
+    const correctOptionIndex = options[0].id === earlierEvent.id ? 0 : 1;
 
     return {
-      left: showEarlierFirst ? earlierEvent : laterEvent,
-      right: showEarlierFirst ? laterEvent : earlierEvent,
+      options: [
+        { key: "A", ...options[0] },
+        { key: "B", ...options[1] },
+      ],
+      left: options[0],
+      right: options[1],
       correctId: earlierEvent.id,
+      correctOptionIndex,
       pairKey,
     };
   }
 
   throw new Error(
-    "We couldn't build a new question right now. Please try again (the event pool may be too small)."
+    "We couldn't generate a new question right now. This can happen when the event pool is too small. Try again."
   );
 }
 
 export function explainQuestionAnswer(question) {
-  const earlier = question.left.id === question.correctId ? question.left : question.right;
-  const later = earlier.id === question.left.id ? question.right : question.left;
+  const earlier = question.options[question.correctOptionIndex];
+  const later = question.options[question.correctOptionIndex === 0 ? 1 : 0];
 
   return `${earlier.label} (${earlier.time.year_start}) happened before ${later.label} (${later.time.year_start}).`;
 }
