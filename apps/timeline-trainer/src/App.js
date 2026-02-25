@@ -13,6 +13,7 @@ const state = {
   totalAnswered: 0,
   correctAnswered: 0,
   hasAnsweredCurrent: false,
+  previousPairKey: null,
 };
 
 const ui = {
@@ -33,17 +34,38 @@ function setAnswerButtonsEnabled(enabled) {
   ui.optionB.disabled = !enabled;
 }
 
+function clearAnswerButtonStates() {
+  ui.optionA.classList.remove("selected", "correct", "incorrect");
+  ui.optionB.classList.remove("selected", "correct", "incorrect");
+}
+
+function applyAnswerButtonStates(selectedId, correctId) {
+  clearAnswerButtonStates();
+
+  const selectedButton = selectedId === state.currentQuestion?.left.id ? ui.optionA : ui.optionB;
+  const correctButton = correctId === state.currentQuestion?.left.id ? ui.optionA : ui.optionB;
+
+  selectedButton.classList.add("selected");
+  if (selectedButton === correctButton) {
+    selectedButton.classList.add("correct");
+    return;
+  }
+
+  selectedButton.classList.add("incorrect");
+  correctButton.classList.add("correct");
+}
+
 function setResultMessage(message, resultType = "neutral") {
   ui.resultText.textContent = message;
   ui.resultText.classList.toggle("correct", resultType === "correct");
   ui.resultText.classList.toggle("incorrect", resultType === "incorrect");
 }
 
-function setError(message) {
+function setError(message, { allowRetry = false } = {}) {
   ui.errorText.textContent = message;
   ui.errorPanel.hidden = false;
   setAnswerButtonsEnabled(false);
-  ui.nextButton.disabled = true;
+  ui.nextButton.disabled = !allowRetry;
   console.error("[Timeline Trainer]", message);
 }
 
@@ -60,21 +82,27 @@ function updateStats() {
 function renderQuestion(question) {
   state.currentQuestion = question;
   state.hasAnsweredCurrent = false;
+  clearError();
 
   ui.questionText.textContent = "Which event happened earlier?";
   ui.optionA.textContent = question.left.label;
   ui.optionB.textContent = question.right.label;
+  clearAnswerButtonStates();
   setAnswerButtonsEnabled(true);
   ui.nextButton.disabled = true;
   setResultMessage("Choose one option.");
 }
 
 function generateAndRenderNextQuestion() {
+  clearError();
+
   try {
-    const question = generateBeforeAfterQuestion(state.candidates);
+    const question = generateBeforeAfterQuestion(state.candidates, state.previousPairKey);
     renderQuestion(question);
   } catch (error) {
-    setError(error.message);
+    state.currentQuestion = null;
+    setError(error.message, { allowRetry: true });
+    setResultMessage("Could not load the next question. Use Next question to retry.", "incorrect");
   }
 }
 
@@ -85,6 +113,7 @@ function handleAnswer(selectedId) {
 
   const isCorrect = selectedId === state.currentQuestion.correctId;
   state.hasAnsweredCurrent = true;
+  state.previousPairKey = state.currentQuestion.pairKey;
   state.totalAnswered += 1;
   if (isCorrect) {
     state.correctAnswered += 1;
@@ -92,6 +121,7 @@ function handleAnswer(selectedId) {
   updateStats();
 
   setAnswerButtonsEnabled(false);
+  applyAnswerButtonStates(selectedId, state.currentQuestion.correctId);
   ui.nextButton.disabled = false;
 
   const explanation = explainQuestionAnswer(state.currentQuestion);

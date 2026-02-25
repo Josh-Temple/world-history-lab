@@ -36,6 +36,10 @@ function orderByYear(eventA, eventB) {
   return { earlierEvent: eventB, laterEvent: eventA };
 }
 
+function createPairKey(eventAId, eventBId) {
+  return [eventAId, eventBId].sort().join("::");
+}
+
 export function resolveUnitEvents(events, unit) {
   const eventById = new Map(events.map((eventRecord) => [eventRecord.id, eventRecord]));
 
@@ -60,14 +64,19 @@ export function filterTimelineCandidateEvents(events) {
   });
 }
 
-export function generateBeforeAfterQuestion(events) {
+export function generateBeforeAfterQuestion(events, previousPairKey = null) {
   if (events.length < 2) {
     throw new Error("Need at least two valid events to generate a question.");
   }
 
-  const maxAttempts = 50;
+  const maxAttempts = 80;
   for (let i = 0; i < maxAttempts; i += 1) {
     const [eventA, eventB] = pickDistinctPair(events);
+    const pairKey = createPairKey(eventA.id, eventB.id);
+
+    if (previousPairKey && pairKey === previousPairKey) {
+      continue;
+    }
 
     if (eventA.time.year_start === eventB.time.year_start) {
       continue;
@@ -80,10 +89,13 @@ export function generateBeforeAfterQuestion(events) {
       left: showEarlierFirst ? earlierEvent : laterEvent,
       right: showEarlierFirst ? laterEvent : earlierEvent,
       correctId: earlierEvent.id,
+      pairKey,
     };
   }
 
-  throw new Error("Could not generate a valid event pair with different years.");
+  throw new Error(
+    "We couldn't build a new question right now. Please try again (the event pool may be too small)."
+  );
 }
 
 export function explainQuestionAnswer(question) {
