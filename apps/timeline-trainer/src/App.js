@@ -12,8 +12,10 @@ const state = {
   currentQuestion: null,
   totalAnswered: 0,
   correctAnswered: 0,
-  hasAnsweredCurrent: false,
-  previousPairKey: null,
+  hasAnswered: false,
+  selectedOptionIndex: null,
+  correctOptionIndex: null,
+  lastPairKey: null,
 };
 
 const ui = {
@@ -27,7 +29,12 @@ const ui = {
   statCorrect: document.getElementById("stat-correct"),
   errorPanel: document.getElementById("error-panel"),
   errorText: document.getElementById("error-text"),
+  retryButton: document.getElementById("retry-button"),
 };
+
+function getOptionByIndex(optionIndex) {
+  return optionIndex === 0 ? ui.optionA : ui.optionB;
+}
 
 function setAnswerButtonsEnabled(enabled) {
   ui.optionA.disabled = !enabled;
@@ -35,24 +42,39 @@ function setAnswerButtonsEnabled(enabled) {
 }
 
 function clearAnswerButtonStates() {
-  ui.optionA.classList.remove("selected", "correct", "incorrect");
-  ui.optionB.classList.remove("selected", "correct", "incorrect");
+  for (const button of [ui.optionA, ui.optionB]) {
+    button.classList.remove("selected", "correct", "incorrect");
+    button.removeAttribute("data-marker");
+    button.removeAttribute("aria-label");
+  }
 }
 
-function applyAnswerButtonStates(selectedId, correctId) {
+function applyAnswerButtonStates() {
   clearAnswerButtonStates();
 
-  const selectedButton = selectedId === state.currentQuestion?.left.id ? ui.optionA : ui.optionB;
-  const correctButton = correctId === state.currentQuestion?.left.id ? ui.optionA : ui.optionB;
+  if (!state.hasAnswered || state.selectedOptionIndex === null || state.correctOptionIndex === null) {
+    return;
+  }
+
+  const selectedButton = getOptionByIndex(state.selectedOptionIndex);
+  const correctButton = getOptionByIndex(state.correctOptionIndex);
 
   selectedButton.classList.add("selected");
-  if (selectedButton === correctButton) {
+
+  if (state.selectedOptionIndex === state.correctOptionIndex) {
     selectedButton.classList.add("correct");
+    selectedButton.dataset.marker = "✓ Selected and correct";
+    selectedButton.setAttribute("aria-label", `${selectedButton.textContent}. Selected and correct`);
     return;
   }
 
   selectedButton.classList.add("incorrect");
+  selectedButton.dataset.marker = "✗ Selected";
+  selectedButton.setAttribute("aria-label", `${selectedButton.textContent}. Selected and incorrect`);
+
   correctButton.classList.add("correct");
+  correctButton.dataset.marker = "✓ Correct";
+  correctButton.setAttribute("aria-label", `${correctButton.textContent}. Correct answer`);
 }
 
 function setResultMessage(message, resultType = "neutral") {
@@ -64,6 +86,7 @@ function setResultMessage(message, resultType = "neutral") {
 function setError(message, { allowRetry = false } = {}) {
   ui.errorText.textContent = message;
   ui.errorPanel.hidden = false;
+  ui.retryButton.hidden = !allowRetry;
   setAnswerButtonsEnabled(false);
   ui.nextButton.disabled = !allowRetry;
   console.error("[Timeline Trainer]", message);
@@ -72,6 +95,7 @@ function setError(message, { allowRetry = false } = {}) {
 function clearError() {
   ui.errorText.textContent = "";
   ui.errorPanel.hidden = true;
+  ui.retryButton.hidden = true;
 }
 
 function updateStats() {
@@ -81,12 +105,14 @@ function updateStats() {
 
 function renderQuestion(question) {
   state.currentQuestion = question;
-  state.hasAnsweredCurrent = false;
+  state.hasAnswered = false;
+  state.selectedOptionIndex = null;
+  state.correctOptionIndex = null;
   clearError();
 
   ui.questionText.textContent = "Which event happened earlier?";
-  ui.optionA.textContent = question.left.label;
-  ui.optionB.textContent = question.right.label;
+  ui.optionA.textContent = question.options[0].label;
+  ui.optionB.textContent = question.options[1].label;
   clearAnswerButtonStates();
   setAnswerButtonsEnabled(true);
   ui.nextButton.disabled = true;
@@ -97,36 +123,41 @@ function generateAndRenderNextQuestion() {
   clearError();
 
   try {
-    const question = generateBeforeAfterQuestion(state.candidates, state.previousPairKey);
+    const question = generateBeforeAfterQuestion(state.candidates, state.lastPairKey);
     renderQuestion(question);
   } catch (error) {
     state.currentQuestion = null;
     setError(error.message, { allowRetry: true });
-    setResultMessage("Could not load the next question. Use Next question to retry.", "incorrect");
+    setResultMessage("Could not load the next question. Use Try again to retry.", "incorrect");
   }
 }
 
-function handleAnswer(selectedId) {
-  if (!state.currentQuestion || state.hasAnsweredCurrent) {
+function handleAnswer(optionIndex) {
+  if (!state.currentQuestion || state.hasAnswered) {
     return;
   }
 
-  const isCorrect = selectedId === state.currentQuestion.correctId;
-  state.hasAnsweredCurrent = true;
-  state.previousPairKey = state.currentQuestion.pairKey;
+  const selectedOption = state.currentQuestion.options[optionIndex];
+  const isCorrect = optionIndex === state.currentQuestion.correctOptionIndex;
+
+  state.hasAnswered = true;
+  state.selectedOptionIndex = optionIndex;
+  state.correctOptionIndex = state.currentQuestion.correctOptionIndex;
+  state.lastPairKey = state.currentQuestion.pairKey;
   state.totalAnswered += 1;
+
   if (isCorrect) {
     state.correctAnswered += 1;
   }
-  updateStats();
 
+  updateStats();
   setAnswerButtonsEnabled(false);
-  applyAnswerButtonStates(selectedId, state.currentQuestion.correctId);
+  applyAnswerButtonStates();
   ui.nextButton.disabled = false;
 
   const explanation = explainQuestionAnswer(state.currentQuestion);
   setResultMessage(
-    `${isCorrect ? "✅ Correct" : "❌ Incorrect"}. ${explanation}`,
+    `${isCorrect ? "✅ Correct" : "❌ Incorrect"}. You chose ${selectedOption.key}. ${explanation}`,
     isCorrect ? "correct" : "incorrect"
   );
 }
@@ -155,16 +186,18 @@ function validateAndPrepareData(events, unit) {
 
 function bindEvents() {
   ui.optionA.addEventListener("click", () => {
-    if (!state.currentQuestion) return;
-    handleAnswer(state.currentQuestion.left.id);
+    handleAnswer(0);
   });
 
   ui.optionB.addEventListener("click", () => {
-    if (!state.currentQuestion) return;
-    handleAnswer(state.currentQuestion.right.id);
+    handleAnswer(1);
   });
 
   ui.nextButton.addEventListener("click", () => {
+    generateAndRenderNextQuestion();
+  });
+
+  ui.retryButton.addEventListener("click", () => {
     generateAndRenderNextQuestion();
   });
 }

@@ -33,6 +33,15 @@ button {
   background: transparent;
 }
 
+.options button {
+  text-align: left;
+}
+
+.options button:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
 .options button.selected {
   outline: 2px solid color-mix(in oklab, currentColor 35%, transparent);
   outline-offset: 1px;
@@ -46,6 +55,14 @@ button {
 .options button.incorrect {
   border-color: #b00020;
   background: color-mix(in oklab, #b00020 12%, transparent);
+}
+
+.options button[data-marker]::after {
+  content: attr(data-marker);
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.85em;
+  font-weight: 600;
 }
 
 .actions {
@@ -66,4 +83,16 @@ button {
 
 .error-panel {
   border-color: #b00020;
+}
+
+@media (max-width: 540px) {
+  button {
+    width: 100%;
+  }
+
+  .options button[data-marker]::after {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.25rem;
+  }
 }
