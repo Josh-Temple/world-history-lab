@@ -198,6 +198,9 @@ export async function startApp() {
     updateStats();
     generateAndRenderNextQuestion();
   } catch (error) {
+    ui.unitTitle.textContent = "Unit could not be loaded";
+    ui.questionText.textContent = "Question data failed to load.";
+    setResultMessage("Could not start Timeline Trainer.", "incorrect");
     setError(error.message);
   }
 }
