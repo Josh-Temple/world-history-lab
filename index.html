@@ -30,6 +30,12 @@
       code {
         font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
       }
+      .error-list {
+        margin-top: 0.75rem;
+      }
+      .error-item {
+        color: #b00020;
+      }
     </style>
   </head>
   <body>
@@ -46,16 +52,24 @@
         <li><strong>People:</strong> <span id="people-count">読み込み中...</span></li>
         <li><strong>Units:</strong> <span id="unit-count">読み込み中...</span></li>
       </ul>
+      <ul id="summary-errors" class="error-list" hidden></ul>
+    </div>
+
+    <div class="card">
+      <h2>Mini apps</h2>
+      <ul>
+        <li><a href="./apps/timeline-trainer/"><code>/apps/timeline-trainer/</code></a></li>
+      </ul>
     </div>
 
     <div class="card">
       <h2>Raw data links</h2>
       <ul>
-        <li><a href="/data/metadata.json"><code>/data/metadata.json</code></a></li>
-        <li><a href="/data/events.json"><code>/data/events.json</code></a></li>
-        <li><a href="/data/people.json"><code>/data/people.json</code></a></li>
+        <li><a href="./data/metadata.json"><code>/data/metadata.json</code></a></li>
+        <li><a href="./data/events.json"><code>/data/events.json</code></a></li>
+        <li><a href="./data/people.json"><code>/data/people.json</code></a></li>
         <li>
-          <a href="/data/units/french-revolution-napoleon.json"
+          <a href="./data/units/french-revolution-napoleon.json"
             ><code>/data/units/french-revolution-napoleon.json</code></a
           >
         </li>
@@ -63,24 +77,99 @@
     </div>
 
     <script>
-      async function loadCount(path, key, elementId) {
-        const element = document.getElementById(elementId);
+      const elements = {
+        eventCount: document.getElementById("event-count"),
+        peopleCount: document.getElementById("people-count"),
+        unitCount: document.getElementById("unit-count"),
+        errors: document.getElementById("summary-errors"),
+      };
+
+      const summaryLoaders = [
+        {
+          label: "Events",
+          path: "./data/events.json",
+          element: elements.eventCount,
+          formatResult: (json) => {
+            if (!Array.isArray(json)) {
+              throw new Error("Events: expected top-level array");
+            }
+            console.debug(`[Dataset summary] Parsed Events type=${typeof json} length=${json.length}`);
+            return String(json.length);
+          },
+        },
+        {
+          label: "People",
+          path: "./data/people.json",
+          element: elements.peopleCount,
+          formatResult: (json) => {
+            if (!Array.isArray(json)) {
+              throw new Error("People: expected top-level array");
+            }
+            console.debug(`[Dataset summary] Parsed People type=${typeof json} length=${json.length}`);
+            return String(json.length);
+          },
+        },
+        {
+          label: "Units",
+          path: "./data/units/french-revolution-napoleon.json",
+          element: elements.unitCount,
+          formatResult: (json) => {
+            const isObject = json !== null && typeof json === "object" && !Array.isArray(json);
+            if (!isObject) {
+              throw new Error("Units: expected top-level object");
+            }
+            console.debug(`[Dataset summary] Parsed Unit type=${typeof json} id=${json.id || "(none)"}`);
+            console.debug("[Dataset summary] Units count fixed for MVP: 1");
+            return "1";
+          },
+        },
+      ];
+
+      function toAbsoluteUrl(relativePath) {
+        return new URL(relativePath, window.location.href).toString();
+      }
+
+      function addError(message) {
+        const item = document.createElement("li");
+        item.className = "error-item";
+        item.textContent = message;
+        elements.errors.appendChild(item);
+        elements.errors.hidden = false;
+      }
+
+      async function fetchJson(url, label) {
+        console.debug(`[Dataset summary] Fetching ${label}: ${url}`);
+        const response = await fetch(url, { cache: "no-store" });
+        console.debug(`[Dataset summary] ${label} response status: ${response.status}`);
+
+        if (!response.ok) {
+          throw new Error(`${label}: HTTP ${response.status}`);
+        }
+
         try {
-          const response = await fetch(path);
-          if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
-          }
-          const json = await response.json();
-          const items = Array.isArray(json[key]) ? json[key] : [];
-          element.textContent = String(items.length);
+          return await response.json();
         } catch (error) {
-          element.textContent = `取得失敗 (${error.message})`;
+          throw new Error(`${label}: JSON parse failed (${error.message})`);
         }
       }
 
-      loadCount("/data/events.json", "events", "event-count");
-      loadCount("/data/people.json", "people", "people-count");
-      loadCount("/data/metadata.json", "included_units", "unit-count");
+      async function loadOneSummaryItem(config) {
+        try {
+          const url = toAbsoluteUrl(config.path);
+          const json = await fetchJson(url, config.label);
+          config.element.textContent = config.formatResult(json);
+        } catch (error) {
+          config.element.textContent = "取得失敗";
+          addError(error.message);
+          console.error(`[Dataset summary] ${config.label} load failed`, error);
+        }
+      }
+
+      async function loadSummary() {
+        await Promise.all(summaryLoaders.map(loadOneSummaryItem));
+      }
+
+      loadSummary();
     </script>
   </body>
 </html>
