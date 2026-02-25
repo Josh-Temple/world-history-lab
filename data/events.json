@@ -1,0 +1,674 @@
+[
+  {
+    "id": "ev_estates_general_1789",
+    "label": "Convening of the Estates-General",
+    "alt_labels": [
+      "Estates-General of 1789"
+    ],
+    "time": {
+      "year_start": 1789,
+      "year_end": null,
+      "century_label": "18th century CE",
+      "precision": "year",
+      "display_text": "1789"
+    },
+    "regions": [
+      "reg_france"
+    ],
+    "places": [],
+    "tags": [
+      "revolution",
+      "state",
+      "politics"
+    ],
+    "summary_short": "Louis XVI convened the Estates-General in 1789 amid a fiscal crisis, helping trigger the political escalation that became the French Revolution.",
+    "related_people": [
+      "pe_louis_xvi"
+    ],
+    "related_events": [
+      "ev_tennis_court_oath_1789",
+      "ev_storming_bastille_1789"
+    ],
+    "causes": [
+      {
+        "label": "fiscal crisis of the French monarchy",
+        "category": "economic",
+        "note": "Debt and revenue problems pressured the crown."
+      },
+      {
+        "label": "political deadlock over representation and voting",
+        "category": "political",
+        "note": "Conflict among estates over voting by order vs by head."
+      }
+    ],
+    "effects": [
+      "ev_tennis_court_oath_1789",
+      {
+        "label": "escalation of conflict between crown and representatives",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_chain"
+    ],
+    "difficulty_hint": "beginner",
+    "source_refs": [
+      {
+        "source_type": "wikidata",
+        "source_id": "Q209577",
+        "url": "https://www.wikidata.org/wiki/Q209577",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "French Revolution (context reference)"
+      },
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_001",
+        "url": "https://example.com/internal/manual_unit_seed_001",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "ev_tennis_court_oath_1789",
+    "label": "Tennis Court Oath",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1789,
+      "year_end": null,
+      "century_label": "18th century CE",
+      "precision": "year",
+      "display_text": "1789"
+    },
+    "regions": [
+      "reg_france"
+    ],
+    "places": [],
+    "tags": [
+      "revolution",
+      "constitution",
+      "politics"
+    ],
+    "summary_short": "Representatives of the Third Estate pledged not to separate until France had a constitution, marking a decisive break with royal authority.",
+    "related_people": [],
+    "related_events": [
+      "ev_estates_general_1789",
+      "ev_storming_bastille_1789"
+    ],
+    "causes": [
+      "ev_estates_general_1789",
+      {
+        "label": "dispute over representation and legitimacy",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "effects": [
+      "ev_storming_bastille_1789",
+      {
+        "label": "strengthened revolutionary claims to sovereignty",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_chain"
+    ],
+    "difficulty_hint": "beginner",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_002",
+        "url": "https://example.com/internal/manual_unit_seed_002",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "ev_storming_bastille_1789",
+    "label": "Storming of the Bastille",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1789,
+      "year_end": null,
+      "century_label": "18th century CE",
+      "precision": "year",
+      "display_text": "1789"
+    },
+    "regions": [
+      "reg_france"
+    ],
+    "places": [],
+    "tags": [
+      "revolution",
+      "violence",
+      "symbolic-politics"
+    ],
+    "summary_short": "The fall of the Bastille became a powerful symbol of popular action and the weakening of royal authority in revolutionary France.",
+    "related_people": [],
+    "related_events": [
+      "ev_tennis_court_oath_1789",
+      "ev_declaration_rights_man_citizen_1789"
+    ],
+    "causes": [
+      "ev_tennis_court_oath_1789",
+      {
+        "label": "urban tension and fear of royal repression",
+        "category": "social",
+        "note": null
+      }
+    ],
+    "effects": [
+      "ev_declaration_rights_man_citizen_1789",
+      {
+        "label": "strengthened revolutionary momentum",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_chain"
+    ],
+    "difficulty_hint": "beginner",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_003",
+        "url": "https://example.com/internal/manual_unit_seed_003",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "ev_declaration_rights_man_citizen_1789",
+    "label": "Declaration of the Rights of Man and of the Citizen",
+    "alt_labels": [
+      "Declaration of the Rights of Man and Citizen"
+    ],
+    "time": {
+      "year_start": 1789,
+      "year_end": null,
+      "century_label": "18th century CE",
+      "precision": "year",
+      "display_text": "1789"
+    },
+    "regions": [
+      "reg_france"
+    ],
+    "places": [],
+    "tags": [
+      "revolution",
+      "rights",
+      "political-thought"
+    ],
+    "summary_short": "A foundational revolutionary declaration asserting rights, citizenship, and principles of political legitimacy that shaped later constitutional politics.",
+    "related_people": [],
+    "related_events": [
+      "ev_storming_bastille_1789",
+      "ev_execution_louis_xvi_1793"
+    ],
+    "causes": [
+      "ev_storming_bastille_1789",
+      {
+        "label": "Enlightenment political ideas",
+        "category": "intellectual",
+        "note": null
+      }
+    ],
+    "effects": [
+      {
+        "label": "provided a rights-based framework for revolutionary politics",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_categorize_causes",
+      "causality_match_effects"
+    ],
+    "difficulty_hint": "beginner",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_004",
+        "url": "https://example.com/internal/manual_unit_seed_004",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "ev_execution_louis_xvi_1793",
+    "label": "Execution of Louis XVI",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1793,
+      "year_end": null,
+      "century_label": "18th century CE",
+      "precision": "year",
+      "display_text": "1793"
+    },
+    "regions": [
+      "reg_france"
+    ],
+    "places": [],
+    "tags": [
+      "revolution",
+      "monarchy",
+      "politics"
+    ],
+    "summary_short": "The execution of Louis XVI marked a decisive break with monarchy and intensified the radicalization and external conflict surrounding the Revolution.",
+    "related_people": [
+      "pe_louis_xvi"
+    ],
+    "related_events": [
+      "ev_reign_of_terror_1793_1794"
+    ],
+    "causes": [
+      {
+        "label": "collapse of trust between king and revolutionary government",
+        "category": "political",
+        "note": null
+      },
+      {
+        "label": "radicalization under war and internal crisis",
+        "category": "military",
+        "note": null
+      }
+    ],
+    "effects": [
+      "ev_reign_of_terror_1793_1794",
+      {
+        "label": "deepened polarization in revolutionary politics",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_chain",
+      "causality_match_effects"
+    ],
+    "difficulty_hint": "intermediate",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_005",
+        "url": "https://example.com/internal/manual_unit_seed_005",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "ev_reign_of_terror_1793_1794",
+    "label": "Reign of Terror",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1793,
+      "year_end": 1794,
+      "century_label": "18th century CE",
+      "precision": "range",
+      "display_text": "1793–1794"
+    },
+    "regions": [
+      "reg_france"
+    ],
+    "places": [],
+    "tags": [
+      "revolution",
+      "violence",
+      "state-power"
+    ],
+    "summary_short": "A radical phase of the Revolution marked by emergency politics, intense repression, and struggles over how to defend the revolutionary state.",
+    "related_people": [
+      "pe_maximilien_robespierre"
+    ],
+    "related_events": [
+      "ev_execution_louis_xvi_1793",
+      "ev_thermidorian_reaction_1794"
+    ],
+    "causes": [
+      "ev_execution_louis_xvi_1793",
+      {
+        "label": "war pressure and internal rebellion",
+        "category": "military",
+        "note": null
+      },
+      {
+        "label": "emergency revolutionary governance",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "effects": [
+      "ev_thermidorian_reaction_1794",
+      {
+        "label": "legacy of revolutionary violence and political instability",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_chain",
+      "causality_categorize_causes"
+    ],
+    "difficulty_hint": "intermediate",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_006",
+        "url": "https://example.com/internal/manual_unit_seed_006",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "ev_thermidorian_reaction_1794",
+    "label": "Thermidorian Reaction",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1794,
+      "year_end": null,
+      "century_label": "18th century CE",
+      "precision": "year",
+      "display_text": "1794"
+    },
+    "regions": [
+      "reg_france"
+    ],
+    "places": [],
+    "tags": [
+      "revolution",
+      "political-shift",
+      "state-power"
+    ],
+    "summary_short": "The Thermidorian Reaction marked a political turn after the Terror, including the fall of Robespierre and a shift away from radical Jacobin dominance.",
+    "related_people": [
+      "pe_maximilien_robespierre"
+    ],
+    "related_events": [
+      "ev_reign_of_terror_1793_1794",
+      "ev_napoleon_coup_18_brumaire_1799"
+    ],
+    "causes": [
+      "ev_reign_of_terror_1793_1794",
+      {
+        "label": "backlash against radical repression",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "effects": [
+      {
+        "label": "weaker revolutionary stability and continued political volatility",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_chain"
+    ],
+    "difficulty_hint": "intermediate",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_007",
+        "url": "https://example.com/internal/manual_unit_seed_007",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "ev_napoleon_coup_18_brumaire_1799",
+    "label": "Coup of 18 Brumaire",
+    "alt_labels": [
+      "18 Brumaire coup"
+    ],
+    "time": {
+      "year_start": 1799,
+      "year_end": null,
+      "century_label": "18th century CE",
+      "precision": "year",
+      "display_text": "1799"
+    },
+    "regions": [
+      "reg_france"
+    ],
+    "places": [],
+    "tags": [
+      "napoleon",
+      "coup",
+      "state-power"
+    ],
+    "summary_short": "Napoleon Bonaparte seized power in the Coup of 18 Brumaire, ending the Directory and establishing the Consulate.",
+    "related_people": [
+      "pe_napoleon_bonaparte"
+    ],
+    "related_events": [
+      "ev_thermidorian_reaction_1794",
+      "ev_napoleon_emperor_1804"
+    ],
+    "causes": [
+      {
+        "label": "political instability under the Directory",
+        "category": "political",
+        "note": null
+      },
+      {
+        "label": "Napoleon's military prestige",
+        "category": "military",
+        "note": null
+      }
+    ],
+    "effects": [
+      "ev_napoleon_emperor_1804",
+      {
+        "label": "centralization of executive power under Napoleon",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_chain",
+      "causality_match_effects"
+    ],
+    "difficulty_hint": "beginner",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_008",
+        "url": "https://example.com/internal/manual_unit_seed_008",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "ev_napoleon_emperor_1804",
+    "label": "Napoleon Crowned Emperor",
+    "alt_labels": [
+      "Napoleon becomes Emperor of the French"
+    ],
+    "time": {
+      "year_start": 1804,
+      "year_end": null,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1804"
+    },
+    "regions": [
+      "reg_france",
+      "reg_western_europe"
+    ],
+    "places": [],
+    "tags": [
+      "napoleon",
+      "empire",
+      "state-power"
+    ],
+    "summary_short": "Napoleon's coronation as Emperor symbolized a new political order that preserved some revolutionary changes while consolidating personal rule.",
+    "related_people": [
+      "pe_napoleon_bonaparte"
+    ],
+    "related_events": [
+      "ev_napoleon_coup_18_brumaire_1799",
+      "ev_congress_of_vienna_1814_1815"
+    ],
+    "causes": [
+      "ev_napoleon_coup_18_brumaire_1799",
+      {
+        "label": "consolidation of Napoleonic authority",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "effects": [
+      {
+        "label": "intensified European conflict with Napoleonic France",
+        "category": "military",
+        "note": null
+      },
+      "ev_congress_of_vienna_1814_1815"
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_chain"
+    ],
+    "difficulty_hint": "beginner",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_009",
+        "url": "https://example.com/internal/manual_unit_seed_009",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "ev_congress_of_vienna_1814_1815",
+    "label": "Congress of Vienna",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1814,
+      "year_end": 1815,
+      "century_label": "19th century CE",
+      "precision": "range",
+      "display_text": "1814–1815"
+    },
+    "regions": [
+      "reg_western_europe"
+    ],
+    "places": [],
+    "tags": [
+      "diplomacy",
+      "state-system",
+      "europe"
+    ],
+    "summary_short": "European powers met at Vienna to rebuild order after the Napoleonic Wars, reshaping borders and seeking a balance of power.",
+    "related_people": [
+      "pe_napoleon_bonaparte"
+    ],
+    "related_events": [
+      "ev_napoleon_emperor_1804"
+    ],
+    "causes": [
+      {
+        "label": "collapse of Napoleonic dominance in Europe",
+        "category": "military",
+        "note": null
+      },
+      "ev_napoleon_emperor_1804"
+    ],
+    "effects": [
+      {
+        "label": "reorganization of European political order",
+        "category": "political",
+        "note": null
+      },
+      {
+        "label": "balance-of-power diplomacy as a guiding principle",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_categorize_causes",
+      "causality_match_effects"
+    ],
+    "difficulty_hint": "beginner",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_010",
+        "url": "https://example.com/internal/manual_unit_seed_010",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  }
+]

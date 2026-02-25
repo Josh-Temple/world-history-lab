@@ -1,0 +1,71 @@
+{
+  "id": "unit_french_revolution_napoleon",
+  "title": "French Revolution to Napoleon",
+  "language": "en",
+  "description": "MVP unit for training chronology and causality using core events from the French Revolution and the Napoleonic era.",
+  "recommended_level": "beginner",
+  "regions": [
+    "reg_france",
+    "reg_western_europe"
+  ],
+  "tags": [
+    "revolution",
+    "state",
+    "war",
+    "europe",
+    "modern-history"
+  ],
+  "learning_goals": [
+    "Place major events in chronological order",
+    "Distinguish phases of the French Revolution",
+    "Connect political and military developments to outcomes",
+    "Identify major actors and their roles"
+  ],
+  "event_ids": [
+    "ev_estates_general_1789",
+    "ev_tennis_court_oath_1789",
+    "ev_storming_bastille_1789",
+    "ev_declaration_rights_man_citizen_1789",
+    "ev_execution_louis_xvi_1793",
+    "ev_reign_of_terror_1793_1794",
+    "ev_thermidorian_reaction_1794",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815"
+  ],
+  "person_ids": [
+    "pe_louis_xvi",
+    "pe_maximilien_robespierre",
+    "pe_napoleon_bonaparte"
+  ],
+  "app_profiles": {
+    "timeline-trainer": {
+      "enabled": true,
+      "question_types": [
+        "timeline_before_after",
+        "timeline_ordering",
+        "timeline_century"
+      ],
+      "session_defaults": {
+        "questions_per_session": 10,
+        "ordering_question_size": 3,
+        "allow_repeat_within_session": false
+      }
+    },
+    "causality-builder": {
+      "enabled": true,
+      "question_types": [
+        "causality_chain",
+        "causality_categorize_causes",
+        "causality_match_effects"
+      ],
+      "session_defaults": {
+        "questions_per_session": 8,
+        "allow_free_text_explanation": true,
+        "free_text_explanation_max_chars": 180
+      }
+    }
+  },
+  "status": "draft",
+  "updated_at": "2026-02-25T00:00:00Z"
+}

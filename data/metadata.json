@@ -1,0 +1,56 @@
+{
+  "dataset_id": "world-history-lab-core",
+  "dataset_version": "0.1.0",
+  "language": "en",
+  "default_content_language": "en",
+  "scope": {
+    "mode": "mvp",
+    "included_units": [
+      "unit_french_revolution_napoleon"
+    ],
+    "notes": "MVP dataset focused on timeline and causality training."
+  },
+  "source_policy": {
+    "structured_data_sources": [
+      "wikidata",
+      "self-curated"
+    ],
+    "text_policy": "Short learning summaries should be self-written or AI-assisted and manually reviewed. Avoid copying long source text."
+  },
+  "content_policy": {
+    "naming_convention": {
+      "event_id_prefix": "ev_",
+      "person_id_prefix": "pe_",
+      "region_id_prefix": "reg_"
+    },
+    "status_values": [
+      "draft",
+      "reviewed",
+      "approved"
+    ],
+    "content_origin_values": [
+      "structured_external",
+      "self_written",
+      "ai_assisted_self_reviewed"
+    ]
+  },
+  "app_support": {
+    "enabled_apps": [
+      "timeline-trainer",
+      "causality-builder"
+    ],
+    "enabled_question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_chain",
+      "causality_categorize_causes",
+      "causality_match_effects"
+    ]
+  },
+  "updated_at": "2026-02-25T00:00:00Z",
+  "maintainer": {
+    "name": "Josh",
+    "notes": "Personal learning project"
+  }
+}
