@@ -1,229 +1,108 @@
 # World History Lab
 
-A personal learning project for studying world history with **memory-friendly practice formats** beyond standard flashcards.
+World History Lab is a personal learning project for studying world history with practice formats that go beyond standard flashcards. The goal is to build stronger understanding of chronology, causality, and historical connections by using structured data that can power multiple mini apps in one repository.
 
-This repository is designed as a small **learning lab**:
-- a shared history dataset (events, people, causal links)
-- multiple mini apps (timeline, causality, comparison, etc.)
-- local-first progress tracking
-- AI-assisted authoring and implementation (with human review)
+## Core idea / approach
 
-## Why this project exists
+- **One shared dataset, many mini apps**: this repository is intended to host multiple mini apps in the same repo, all using the same core data and schemas.
+- **Local-first workflow**: data and app development are designed to work locally without requiring a hosted backend.
+- **AI-assisted, human-reviewed process**: AI helps with scaffolding, normalization, and implementation speed, while factual and learning-quality decisions stay with the human author.
+- **Single-repo by default**: splitting apps into separate repositories may be considered later only if scaling or maintenance needs require it.
 
-Traditional flashcards are powerful for recall, but world history also requires:
-- chronology (what came before/after)
-- causality (why events happened)
-- connections across regions and actors
-- comparison (similar institutions, revolutions, state systems)
+## Current scope (MVP focus)
 
-This project explores a more structured approach:
-- **Timeline Trainer** for chronological reasoning
-- **Causality Builder** for cause/effect understanding
-- (later) comparison, confusion drills, and map-based practice
+- **Initial history unit**: French Revolution to Napoleon.
+- **First mini apps**:
+  - **Timeline Trainer** (MVP focus; implementation not started yet).
+  - **Causality Builder** (planned for the next phase after timeline basics).
 
-## Project goals (MVP)
+## Repository structure (high-level)
 
-### Learning goals
-- Build stronger chronological intuition
-- Practice causal reasoning, not only fact recall
-- Reduce confusion between similar events / actors
-- Create a reusable study workflow for long-term learning
+Current repository status includes seed data files under `data/`.
 
-### Product goals
-- Keep the system **simple, local-first, and maintainable**
-- Use a **shared data model** across mini apps
-- Make content authoring AI-friendly but **quality-controlled**
-- Stay easy to host on GitHub Pages (and portable to Vercel later)
-
-## MVP scope
-
-Initial unit:
-- **French Revolution to Napoleon**
-
-Initial mini apps:
-1. **Timeline Trainer**
-   - before/after questions
-   - ordering questions
-   - century questions
-
-2. **Causality Builder**
-   - cause/effect chains
-   - cause categorization
-   - effect matching
-
-## Repository structure (planned)
+Planned high-level layout:
 
 ```text
 world-history-lab/
-├─ apps/
-│  ├─ hub/
-│  ├─ timeline-trainer/
-│  └─ causality-builder/
-├─ data/
-│  ├─ metadata.json
-│  ├─ events.json
-│  ├─ people.json
-│  ├─ links.json
-│  └─ units/
-├─ schemas/
-├─ tools/
-│  ├─ validate/
-│  └─ import/
-├─ docs/
-└─ .github/
+├─ apps/        # mini apps (timeline, causality, etc.)
+├─ data/        # shared history dataset
+├─ schemas/     # shared data schemas
+├─ tools/       # validation and content tooling
+└─ docs/        # project documentation
+```
 
-Data design principles
+## Data model overview
 
-This project stores knowledge structure, not just question text.
+The shared dataset is structured so apps can generate practice dynamically instead of storing only fixed question text.
 
-Core entities:
+- **Events**: core historical events with dates, tags, and relationships.
+- **People**: key actors linked to events.
+- **Units**: study units/groupings (for example, French Revolution to Napoleon).
+- **Links (later)**: explicit relationship records for richer graph-style practice.
 
-Events (time, tags, causes, effects, related people)
+This structure allows different mini apps to reuse the same data in different learning modes.
 
-People (roles, related events)
+## Content and source policy
 
-(later) Places/Regions
+- Short summaries should be written in original wording, or generated with AI and then reviewed.
+- Avoid copying long passages from source materials.
+- Keep source references in data records for traceability.
+- Use status tracking (for example `draft`, `reviewed`, `approved`) when present in the data model to separate work-in-progress from trusted content.
 
-(optional) explicit Links for graph-like relations
+## AI usage policy (practical)
 
+Good uses of AI in this project:
 
-Key idea:
+- Project/app scaffolding
+- Validation and consistency scripts
+- Data normalization support
+- UI implementation assistance
 
-One shared dataset can generate multiple practice formats.
+Human responsibility remains final for:
 
+- Factual accuracy
+- Ambiguity resolution
+- Causal interpretation quality
+- Learning design decisions
 
-Content and source policy
+## Current status checklist
 
-This is a personal study project.
+Already done:
 
-General policy
+- [x] Repository initialized.
+- [x] Root README exists and is maintained.
+- [x] Seed data files added:
+  - `data/metadata.json`
+  - `data/events.json`
+  - `data/people.json`
+  - `data/units/french-revolution-napoleon.json`
 
-Prefer structured external references (e.g. Wikidata) for factual scaffolding
+Next:
 
-Write short learning summaries in original wording
+- [ ] Start Timeline Trainer MVP implementation under `apps/`.
+- [ ] Add initial app scaffold and run instructions.
+- [ ] Begin Causality Builder planning after timeline MVP baseline.
 
-If AI assists with summaries, manually review before relying on them
+## Roadmap (short)
 
-Avoid copying long source text into the dataset
+- **Phase 1: Timeline MVP**
+  - Build first playable timeline trainer.
+  - Connect it to the shared seed dataset.
+  - Add basic local progress handling.
 
+- **Phase 2: Causality MVP**
+  - Build first causality practice prototype.
+  - Reuse the same event/person/unit dataset.
 
-Status workflow
+- **Phase 3+: Data and expansion**
+  - Improve validation tooling.
+  - Add more units.
+  - Add additional mini apps as needed.
 
-Records may be marked as:
+## How to run
 
-draft
+Setup instructions will be added after the first app scaffold is committed.
 
-reviewed
-
-approved
-
-
-This allows the apps to later filter content quality if needed.
-
-AI usage policy (practical)
-
-AI is used as a tooling assistant, not a source of authority.
-
-Recommended use:
-
-schema drafting
-
-data normalization
-
-validation scripts
-
-app implementation scaffolding
-
-UI iteration
-
-
-Human responsibilities:
-
-final data review
-
-learning design decisions
-
-ambiguity checks
-
-historical quality control (especially causal claims)
-
-
-Current status
-
-[x] Project concept defined
-
-[x] Initial repository structure planned
-
-[x] Event/Person schema drafted (MVP)
-
-[x] Seed unit selected (French Revolution → Napoleon)
-
-[ ] Seed dataset expanded and reviewed
-
-[ ] Timeline Trainer MVP implemented
-
-[ ] Causality Builder MVP implemented
-
-[ ] GitHub Pages deployment
-
-
-Roadmap (short version)
-
-Phase 1 — MVP foundation
-
-Seed dataset for one unit
-
-Timeline Trainer MVP
-
-Local progress tracking
-
-Basic validation scripts
-
-
-Phase 2 — Causality practice
-
-Causality Builder MVP
-
-Better cause/effect tagging
-
-Error-aware re-practice logic
-
-
-Phase 3 — Authoring workflow
-
-Data validation improvements
-
-AI-assisted import/normalization utilities
-
-Better content review workflow
-
-
-Phase 4 — Expansion
-
-More units (e.g. Industrial Revolution, Reformation, Cold War)
-
-Additional mini apps (comparison, confusion drills, geography)
-
-Optional Vercel deployment / preview workflow
-
-
-How to contribute (future / personal workflow note)
-
-This is currently a personal project, but the structure is intentionally modular.
-
-If this becomes public/open later, contributions will likely focus on:
-
-data quality improvements
-
-schema improvements
-
-new mini-app modules
-
-validation and testing
-
-
-License
+## License
 
 TBD
-
-(Recommended approach later: separate code license and content/data policy if needed.)
