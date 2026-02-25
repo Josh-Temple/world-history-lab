@@ -1,0 +1,115 @@
+[
+  {
+    "id": "pe_louis_xvi",
+    "name": "Louis XVI",
+    "alt_names": [],
+    "birth_year": 1754,
+    "death_year": 1793,
+    "regions": [
+      "reg_france"
+    ],
+    "roles": [
+      "king",
+      "monarch"
+    ],
+    "summary_short": "King of France during the early French Revolution; his loss of authority and execution became pivotal in the revolutionary crisis.",
+    "related_events": [
+      "ev_estates_general_1789",
+      "ev_execution_louis_xvi_1793"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_seed_001",
+        "url": "https://example.com/internal/manual_person_seed_001",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "pe_maximilien_robespierre",
+    "name": "Maximilien Robespierre",
+    "alt_names": [],
+    "birth_year": 1758,
+    "death_year": 1794,
+    "regions": [
+      "reg_france"
+    ],
+    "roles": [
+      "revolutionary",
+      "political-leader",
+      "jacobin"
+    ],
+    "summary_short": "A leading revolutionary figure associated with the Jacobins and the radical phase of the Revolution, especially the Reign of Terror.",
+    "related_events": [
+      "ev_reign_of_terror_1793_1794",
+      "ev_thermidorian_reaction_1794"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match",
+      "causality_actor_identification"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_seed_002",
+        "url": "https://example.com/internal/manual_person_seed_002",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  },
+  {
+    "id": "pe_napoleon_bonaparte",
+    "name": "Napoleon Bonaparte",
+    "alt_names": [
+      "Napoleon I"
+    ],
+    "birth_year": 1769,
+    "death_year": 1821,
+    "regions": [
+      "reg_france",
+      "reg_western_europe"
+    ],
+    "roles": [
+      "general",
+      "consul",
+      "emperor"
+    ],
+    "summary_short": "French military and political leader who rose during the revolutionary era, seized power in 1799, and later became Emperor.",
+    "related_events": [
+      "ev_napoleon_coup_18_brumaire_1799",
+      "ev_napoleon_emperor_1804",
+      "ev_congress_of_vienna_1814_1815"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match",
+      "causality_actor_identification"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_seed_003",
+        "url": "https://example.com/internal/manual_person_seed_003",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "draft"
+  }
+]
