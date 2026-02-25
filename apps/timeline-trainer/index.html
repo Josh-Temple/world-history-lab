@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline Trainer MVP</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Timeline Trainer</h1>
+      <p id="unit-title" class="muted">Loading unit...</p>
+
+      <section class="panel" id="question-panel">
+        <h2>Which happened earlier?</h2>
+        <p id="question-text">Loading question...</p>
+        <div class="options">
+          <button id="option-a" type="button" disabled>Option A</button>
+          <button id="option-b" type="button" disabled>Option B</button>
+        </div>
+      </section>
+
+      <section class="panel" id="result-panel">
+        <h2>Result</h2>
+        <p id="result-text" class="muted">Answer a question to see the result.</p>
+      </section>
+
+      <div class="actions">
+        <button id="next-button" type="button" disabled>Next question</button>
+      </div>
+
+      <section class="panel" id="stats-panel">
+        <h2>Session stats</h2>
+        <p>Total answered: <span id="stat-total">0</span></p>
+        <p>Correct: <span id="stat-correct">0</span></p>
+      </section>
+
+      <section class="panel error-panel" id="error-panel" hidden>
+        <h2>Data error</h2>
+        <p id="error-text"></p>
+      </section>
+
+      <p><a href="../../index.html">Back to top page</a></p>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

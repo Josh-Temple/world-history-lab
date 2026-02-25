@@ -79,8 +79,8 @@ Already done:
 
 Next:
 
-- [ ] Start Timeline Trainer MVP implementation under `apps/`.
-- [ ] Add initial app scaffold and run instructions.
+- [x] Start Timeline Trainer MVP implementation under `apps/`.
+- [x] Add initial app scaffold and run instructions.
 - [ ] Begin Causality Builder planning after timeline MVP baseline.
 
 ## Roadmap (short)
@@ -108,6 +108,8 @@ python -m http.server 4173
 ```
 
 Then open `http://localhost:4173`.
+
+Timeline Trainer MVP is available at `http://localhost:4173/apps/timeline-trainer/`.
 
 ## Deploy to Vercel
 

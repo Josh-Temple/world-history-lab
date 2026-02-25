@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.panel {
+  border: 1px solid color-mix(in oklab, currentColor 18%, transparent);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.options {
+  display: grid;
+  gap: 0.75rem;
+}
+
+button {
+  font: inherit;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid color-mix(in oklab, currentColor 24%, transparent);
+  background: transparent;
+}
+
+.actions {
+  margin-bottom: 1rem;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.correct {
+  color: #0f7a2a;
+}
+
+.incorrect {
+  color: #b00020;
+}
+
+.error-panel {
+  border-color: #b00020;
+}
