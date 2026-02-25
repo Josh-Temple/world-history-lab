@@ -172,6 +172,16 @@ function bindEvents() {
 export async function startApp() {
   bindEvents();
 
+  if (window.location.protocol === "file:") {
+    ui.unitTitle.textContent = "Unit could not be loaded";
+    ui.questionText.textContent = "Start a local web server and reopen this app over http://localhost.";
+    setResultMessage("Data files cannot be fetched over file:// URLs.", "incorrect");
+    setError(
+      "This app must be opened via HTTP. Example: run `python3 -m http.server` in the repo root and open http://localhost:8000/apps/timeline-trainer/."
+    );
+    return;
+  }
+
   try {
     clearError();
     ui.unitTitle.textContent = "Loading unit...";
