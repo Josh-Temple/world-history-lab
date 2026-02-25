@@ -33,6 +33,21 @@ button {
   background: transparent;
 }
 
+.options button.selected {
+  outline: 2px solid color-mix(in oklab, currentColor 35%, transparent);
+  outline-offset: 1px;
+}
+
+.options button.correct {
+  border-color: #0f7a2a;
+  background: color-mix(in oklab, #0f7a2a 12%, transparent);
+}
+
+.options button.incorrect {
+  border-color: #b00020;
+  background: color-mix(in oklab, #b00020 12%, transparent);
+}
+
 .actions {
   margin-bottom: 1rem;
 }
