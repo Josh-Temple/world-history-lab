@@ -101,7 +101,28 @@ Next:
 
 ## How to run
 
-Setup instructions will be added after the first app scaffold is committed.
+This repository currently serves static files, so you can preview it locally with any static server.
+
+```bash
+python -m http.server 4173
+```
+
+Then open `http://localhost:4173`.
+
+## Deploy to Vercel
+
+This repository is deployment-ready for Vercel as a static site.
+
+1. Push this repository to GitHub.
+2. In Vercel, click **Add New... → Project** and import the repository.
+3. Keep Framework Preset as **Other** (or leave auto-detected static settings).
+4. Build Command: **(empty)**
+5. Output Directory: **(empty)**
+6. Deploy.
+
+After deployment, the root page (`/`) and JSON files under `/data` are served directly.
+
+The `vercel.json` in this repo adds lightweight cache headers for `/data/*` responses.
 
 ## License
 

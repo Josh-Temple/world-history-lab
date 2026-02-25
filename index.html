@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World History Lab</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: Inter, "Noto Sans JP", system-ui, -apple-system, sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 2rem;
+        line-height: 1.6;
+        max-width: 800px;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .card {
+        border: 1px solid color-mix(in oklab, currentColor 18%, transparent);
+        border-radius: 12px;
+        padding: 1rem 1.25rem;
+        margin-bottom: 1rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>World History Lab</h1>
+    <p>
+      Vercelデプロイ確認用のシンプルなトップページです。現在はデータセット中心のリポジトリなので、
+      公開後に最低限の確認ができるよう、データ件数とJSONへのリンクを表示しています。
+    </p>
+
+    <div class="card">
+      <h2>Dataset summary</h2>
+      <ul>
+        <li><strong>Events:</strong> <span id="event-count">読み込み中...</span></li>
+        <li><strong>People:</strong> <span id="people-count">読み込み中...</span></li>
+        <li><strong>Units:</strong> <span id="unit-count">読み込み中...</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Raw data links</h2>
+      <ul>
+        <li><a href="/data/metadata.json"><code>/data/metadata.json</code></a></li>
+        <li><a href="/data/events.json"><code>/data/events.json</code></a></li>
+        <li><a href="/data/people.json"><code>/data/people.json</code></a></li>
+        <li>
+          <a href="/data/units/french-revolution-napoleon.json"
+            ><code>/data/units/french-revolution-napoleon.json</code></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      async function loadCount(path, key, elementId) {
+        const element = document.getElementById(elementId);
+        try {
+          const response = await fetch(path);
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          const json = await response.json();
+          const items = Array.isArray(json[key]) ? json[key] : [];
+          element.textContent = String(items.length);
+        } catch (error) {
+          element.textContent = `取得失敗 (${error.message})`;
+        }
+      }
+
+      loadCount("/data/events.json", "events", "event-count");
+      loadCount("/data/people.json", "people", "people-count");
+      loadCount("/data/metadata.json", "included_units", "unit-count");
+    </script>
+  </body>
+</html>
