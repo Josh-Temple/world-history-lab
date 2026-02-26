@@ -1,22 +1,19 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World History Lab</title>
     <style>
       :root {
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
         color-scheme: light dark;
-        font-family: Inter, "Noto Sans JP", system-ui, -apple-system, sans-serif;
       }
       body {
         margin: 0;
         padding: 2rem;
-        line-height: 1.6;
-        max-width: 800px;
-      }
-      h1 {
-        margin-top: 0;
+        max-width: 900px;
+        line-height: 1.5;
       }
       .card {
         border: 1px solid color-mix(in oklab, currentColor 18%, transparent);
@@ -24,152 +21,107 @@
         padding: 1rem 1.25rem;
         margin-bottom: 1rem;
       }
-      ul {
-        padding-left: 1.25rem;
-      }
       code {
         font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      }
-      .error-list {
-        margin-top: 0.75rem;
-      }
-      .error-item {
-        color: #b00020;
       }
     </style>
   </head>
   <body>
     <h1>World History Lab</h1>
-    <p>
-      Vercelデプロイ確認用のシンプルなトップページです。現在はデータセット中心のリポジトリなので、
-      公開後に最低限の確認ができるよう、データ件数とJSONへのリンクを表示しています。
-    </p>
+    <p>Static top page for dataset and app health checks.</p>
 
-    <div class="card">
+    <section class="card">
       <h2>Dataset summary</h2>
       <ul>
-        <li><strong>Events:</strong> <span id="event-count">読み込み中...</span></li>
-        <li><strong>People:</strong> <span id="people-count">読み込み中...</span></li>
-        <li><strong>Units:</strong> <span id="unit-count">読み込み中...</span></li>
+        <li><strong>Events:</strong> <span id="count-events">loading...</span></li>
+        <li><strong>People:</strong> <span id="count-people">loading...</span></li>
+        <li><strong>Units:</strong> <span id="count-units">loading...</span></li>
       </ul>
-      <ul id="summary-errors" class="error-list" hidden></ul>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="card">
       <h2>Mini apps</h2>
       <ul>
-        <li><a href="./apps/timeline-trainer/"><code>/apps/timeline-trainer/</code></a></li>
+        <li><a href="/apps/timeline-trainer/"><code>/apps/timeline-trainer/</code></a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="card">
       <h2>Raw data links</h2>
       <ul>
-        <li><a href="./data/metadata.json"><code>/data/metadata.json</code></a></li>
-        <li><a href="./data/events.json"><code>/data/events.json</code></a></li>
-        <li><a href="./data/people.json"><code>/data/people.json</code></a></li>
+        <li><a href="/data/events.json"><code>/data/events.json</code></a></li>
+        <li><a href="/data/people.json"><code>/data/people.json</code></a></li>
         <li>
-          <a href="./data/units/french-revolution-napoleon.json"
+          <a href="/data/units/french-revolution-napoleon.json"
             ><code>/data/units/french-revolution-napoleon.json</code></a
           >
         </li>
       </ul>
-    </div>
+    </section>
 
     <script>
-      const elements = {
-        eventCount: document.getElementById("event-count"),
-        peopleCount: document.getElementById("people-count"),
-        unitCount: document.getElementById("unit-count"),
-        errors: document.getElementById("summary-errors"),
-      };
-
-      const summaryLoaders = [
+      const summaryItems = [
         {
-          label: "Events",
-          path: "./data/events.json",
-          element: elements.eventCount,
-          formatResult: (json) => {
+          label: "events",
+          element: document.getElementById("count-events"),
+          path: "/data/events.json",
+          parseCount(json) {
             if (!Array.isArray(json)) {
-              throw new Error("Events: expected top-level array");
+              throw new Error("Expected /data/events.json to be an array");
             }
-            console.debug(`[Dataset summary] Parsed Events type=${typeof json} length=${json.length}`);
-            return String(json.length);
+            return json.length;
           },
         },
         {
-          label: "People",
-          path: "./data/people.json",
-          element: elements.peopleCount,
-          formatResult: (json) => {
+          label: "people",
+          element: document.getElementById("count-people"),
+          path: "/data/people.json",
+          parseCount(json) {
             if (!Array.isArray(json)) {
-              throw new Error("People: expected top-level array");
+              throw new Error("Expected /data/people.json to be an array");
             }
-            console.debug(`[Dataset summary] Parsed People type=${typeof json} length=${json.length}`);
-            return String(json.length);
+            return json.length;
           },
         },
         {
-          label: "Units",
-          path: "./data/units/french-revolution-napoleon.json",
-          element: elements.unitCount,
-          formatResult: (json) => {
+          label: "units",
+          element: document.getElementById("count-units"),
+          path: "/data/units/french-revolution-napoleon.json",
+          parseCount(json) {
             const isObject = json !== null && typeof json === "object" && !Array.isArray(json);
             if (!isObject) {
-              throw new Error("Units: expected top-level object");
+              throw new Error("Expected /data/units/french-revolution-napoleon.json to be an object");
             }
-            console.debug(`[Dataset summary] Parsed Unit type=${typeof json} id=${json.id || "(none)"}`);
-            console.debug("[Dataset summary] Units count fixed for MVP: 1");
-            return "1";
+            return 1;
           },
         },
       ];
 
-      function toAbsoluteUrl(relativePath) {
-        return new URL(relativePath, window.location.href).toString();
-      }
-
-      function addError(message) {
-        const item = document.createElement("li");
-        item.className = "error-item";
-        item.textContent = message;
-        elements.errors.appendChild(item);
-        elements.errors.hidden = false;
-      }
-
-      async function fetchJson(url, label) {
-        console.debug(`[Dataset summary] Fetching ${label}: ${url}`);
-        const response = await fetch(url, { cache: "no-store" });
-        console.debug(`[Dataset summary] ${label} response status: ${response.status}`);
-
+      async function fetchCount(item) {
+        const response = await fetch(item.path, { cache: "no-store" });
         if (!response.ok) {
-          throw new Error(`${label}: HTTP ${response.status}`);
+          throw new Error(`HTTP ${response.status} for ${item.path}`);
         }
-
-        try {
-          return await response.json();
-        } catch (error) {
-          throw new Error(`${label}: JSON parse failed (${error.message})`);
-        }
+        const json = await response.json();
+        return item.parseCount(json);
       }
 
-      async function loadOneSummaryItem(config) {
-        try {
-          const url = toAbsoluteUrl(config.path);
-          const json = await fetchJson(url, config.label);
-          config.element.textContent = config.formatResult(json);
-        } catch (error) {
-          config.element.textContent = "取得失敗";
-          addError(error.message);
-          console.error(`[Dataset summary] ${config.label} load failed`, error);
-        }
+      async function loadCounts() {
+        const results = await Promise.allSettled(summaryItems.map((item) => fetchCount(item)));
+
+        results.forEach((result, index) => {
+          const item = summaryItems[index];
+          if (result.status === "fulfilled") {
+            item.element.textContent = String(result.value);
+            return;
+          }
+
+          item.element.textContent = "—";
+          console.error(`[Top page counts] Failed to load ${item.label}`, result.reason);
+        });
       }
 
-      async function loadSummary() {
-        await Promise.all(summaryLoaders.map(loadOneSummaryItem));
-      }
-
-      loadSummary();
+      loadCounts();
     </script>
   </body>
 </html>
