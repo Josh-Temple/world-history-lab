@@ -6,58 +6,158 @@
     <title>World History Lab</title>
     <style>
       :root {
-        font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-        color-scheme: light dark;
+        --bg: #f4f7fb;
+        --surface: #ffffff;
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --accent: #1d4ed8;
+        --border: #cbd5e1;
+        --shadow: 0 20px 40px -30px rgba(15, 23, 42, 0.42);
+        font-family: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
       }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
-        padding: 2rem;
-        max-width: 900px;
-        line-height: 1.5;
+        min-height: 100vh;
+        padding: 1.5rem;
+        background: radial-gradient(circle at top left, #e0e7ff 0%, var(--bg) 55%);
+        color: var(--text-primary);
+        line-height: 1.65;
       }
-      .card {
-        border: 1px solid color-mix(in oklab, currentColor 18%, transparent);
-        border-radius: 12px;
-        padding: 1rem 1.25rem;
+
+      .page {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+
+      .hero {
+        background: linear-gradient(145deg, #ffffff 0%, #eff6ff 65%);
+        border: 1px solid #dbeafe;
+        border-radius: 22px;
+        padding: 1.4rem 1.6rem;
+        box-shadow: var(--shadow);
         margin-bottom: 1rem;
       }
+
+      .hero h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.6rem, 3vw, 2.35rem);
+      }
+
+      .hero p {
+        margin: 0;
+        color: var(--text-secondary);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+
+      .card {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1rem 1.15rem;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+
+      .card h2 {
+        margin-top: 0;
+      }
+
+      ul {
+        margin: 0.65rem 0 0;
+        padding-left: 1.1rem;
+      }
+
+      li {
+        margin: 0.35rem 0;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 2px;
+      }
+
+      a:hover {
+        color: #1e40af;
+      }
+
       code {
         font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: 6px;
+        padding: 0.05rem 0.35rem;
+      }
+
+      .stat {
+        font-size: 1.15rem;
+        font-weight: 700;
+      }
+
+      .muted {
+        color: var(--text-secondary);
+      }
+
+      @media (max-width: 580px) {
+        body {
+          padding: 1rem;
+        }
+
+        .hero,
+        .card {
+          border-radius: 14px;
+          padding: 1rem;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>World History Lab</h1>
-    <p>Static top page for dataset and app health checks.</p>
+    <main class="page">
+      <header class="hero">
+        <h1>World History Lab</h1>
+        <p>World history learning tools with improved readability and clean, focused visual hierarchy.</p>
+      </header>
 
-    <section class="card">
-      <h2>Dataset summary</h2>
-      <ul>
-        <li><strong>Events:</strong> <span id="count-events">loading...</span></li>
-        <li><strong>People:</strong> <span id="count-people">loading...</span></li>
-        <li><strong>Units:</strong> <span id="count-units">loading...</span></li>
-      </ul>
-    </section>
+      <section class="grid">
+        <section class="card">
+          <h2>Dataset summary</h2>
+          <ul>
+            <li><strong>Events:</strong> <span id="count-events" class="stat">loading...</span></li>
+            <li><strong>People:</strong> <span id="count-people" class="stat">loading...</span></li>
+            <li><strong>Units:</strong> <span id="count-units" class="stat">loading...</span></li>
+          </ul>
+        </section>
 
-    <section class="card">
-      <h2>Mini apps</h2>
-      <ul>
-        <li><a href="/apps/timeline-trainer/"><code>/apps/timeline-trainer/</code></a></li>
-      </ul>
-    </section>
+        <section class="card">
+          <h2>Mini apps</h2>
+          <p class="muted">Practice modes available right now:</p>
+          <ul>
+            <li><a href="/apps/timeline-trainer/"><code>/apps/timeline-trainer/</code></a></li>
+          </ul>
+        </section>
 
-    <section class="card">
-      <h2>Raw data links</h2>
-      <ul>
-        <li><a href="/data/events.json"><code>/data/events.json</code></a></li>
-        <li><a href="/data/people.json"><code>/data/people.json</code></a></li>
-        <li>
-          <a href="/data/units/french-revolution-napoleon.json"
-            ><code>/data/units/french-revolution-napoleon.json</code></a
-          >
-        </li>
-      </ul>
-    </section>
+        <section class="card">
+          <h2>Raw data links</h2>
+          <ul>
+            <li><a href="/data/events.json"><code>/data/events.json</code></a></li>
+            <li><a href="/data/people.json"><code>/data/people.json</code></a></li>
+            <li>
+              <a href="/data/units/french-revolution-napoleon.json"
+                ><code>/data/units/french-revolution-napoleon.json</code></a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
 
     <script>
       const summaryItems = [
