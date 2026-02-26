@@ -1,23 +1,62 @@
 :root {
-  color-scheme: light dark;
-  font-family: Inter, system-ui, -apple-system, sans-serif;
+  --bg: #f3f5fb;
+  --surface: #ffffff;
+  --surface-soft: #eef2ff;
+  --text-primary: #111827;
+  --text-secondary: #475569;
+  --accent: #2563eb;
+  --accent-strong: #1d4ed8;
+  --success: #166534;
+  --success-bg: #dcfce7;
+  --danger: #991b1b;
+  --danger-bg: #fee2e2;
+  --border: #cbd5e1;
+  --shadow: 0 20px 40px -28px rgba(15, 23, 42, 0.45);
+  font-family: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  padding: 1rem;
+  min-height: 100vh;
+  padding: 1.25rem;
+  background: radial-gradient(circle at top, #e8eeff 0%, var(--bg) 50%);
+  color: var(--text-primary);
 }
 
 .container {
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.page-header {
+  background: linear-gradient(150deg, #eff6ff 0%, #ffffff 72%);
+  border: 1px solid #dbeafe;
+  border-radius: 20px;
+  padding: 1.4rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.page-header h1 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
 }
 
 .panel {
-  border: 1px solid color-mix(in oklab, currentColor 18%, transparent);
-  border-radius: 12px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.2rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.panel h2 {
+  margin-top: 0;
 }
 
 .options {
@@ -27,14 +66,29 @@ body {
 
 button {
   font: inherit;
-  padding: 0.85rem;
-  border-radius: 10px;
-  border: 1px solid color-mix(in oklab, currentColor 24%, transparent);
-  background: transparent;
+  padding: 0.85rem 0.95rem;
+  border-radius: 12px;
+  border: 1px solid #93c5fd;
+  background: #f8fbff;
+  color: var(--text-primary);
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+button:hover:enabled {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 20px -14px rgba(37, 99, 235, 0.8);
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 1px;
 }
 
 .options button {
   text-align: left;
+  font-weight: 550;
 }
 
 .options button:disabled {
@@ -43,18 +97,18 @@ button {
 }
 
 .options button.selected {
-  outline: 2px solid color-mix(in oklab, currentColor 35%, transparent);
-  outline-offset: 1px;
+  border-color: #60a5fa;
+  background: var(--surface-soft);
 }
 
 .options button.correct {
-  border-color: #0f7a2a;
-  background: color-mix(in oklab, #0f7a2a 12%, transparent);
+  border-color: var(--success);
+  background: var(--success-bg);
 }
 
 .options button.incorrect {
-  border-color: #b00020;
-  background: color-mix(in oklab, #b00020 12%, transparent);
+  border-color: var(--danger);
+  background: var(--danger-bg);
 }
 
 .options button[data-marker]::after {
@@ -62,30 +116,61 @@ button {
   display: inline-block;
   margin-left: 0.5rem;
   font-size: 0.85em;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .actions {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+#next-button,
+#retry-button {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  border-color: #1d4ed8;
+  color: #fff;
+  font-weight: 650;
+}
+
+#next-button:disabled,
+#retry-button:disabled {
+  opacity: 0.55;
 }
 
 .muted {
-  opacity: 0.8;
+  color: var(--text-secondary);
 }
 
 .correct {
-  color: #0f7a2a;
+  color: var(--success);
+  font-weight: 600;
 }
 
 .incorrect {
-  color: #b00020;
+  color: var(--danger);
+  font-weight: 600;
 }
 
 .error-panel {
-  border-color: #b00020;
+  border-color: #fca5a5;
+  background: #fff5f5;
+}
+
+.back-link {
+  color: var(--accent-strong);
+  font-weight: 600;
 }
 
 @media (max-width: 540px) {
+  body {
+    padding: 0.85rem;
+  }
+
+  .panel,
+  .page-header {
+    border-radius: 14px;
+    padding: 1rem;
+  }
+
   button {
     width: 100%;
   }
