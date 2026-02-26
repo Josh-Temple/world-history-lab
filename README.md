@@ -126,6 +126,41 @@ After deployment, the root page (`/`) and JSON files under `/data` are served di
 
 The `vercel.json` in this repo adds lightweight cache headers for `/data/*` responses.
 
+
+## How it works (data + top page counts)
+
+### Data files and JSON shapes
+
+The app is static and reads JSON directly from `/data`:
+
+- `/data/events.json`: **array** of event records.
+- `/data/people.json`: **array** of people records.
+- `/data/units/french-revolution-napoleon.json`: **single object** for the current unit.
+
+Current app code assumes those top-level shapes (`Array`, `Array`, `Object`) and treats shape mismatches as load errors.
+
+### Top page summary logic
+
+`/index.html` fetches all three datasets in parallel with `Promise.allSettled` and updates:
+
+- `#count-events` = `events.length`
+- `#count-people` = `people.length`
+- `#count-units` = `1` (for the single current unit JSON object)
+
+If any request fails or a JSON shape is unexpected, the page shows `—` for that count and logs a clear console error.
+
+### Safe data updates
+
+When adding/editing data:
+
+1. Keep top-level JSON shapes stable (`events`/`people` arrays, unit file object).
+2. Add new events in `/data/events.json` and ensure IDs are unique.
+3. Add new people in `/data/people.json` and keep references consistent.
+4. Update unit files under `/data/units/` and ensure `event_ids` reference existing event IDs.
+5. Re-open `/` and `/apps/timeline-trainer/` to verify counts and app loading.
+
+(Recommended future enhancement: add `/data/units/index.json` for multi-unit counting.)
+
 ## License
 
 TBD
