@@ -11,14 +11,27 @@
       <header class="page-header">
         <h1>Timeline Trainer</h1>
         <p id="unit-title" class="muted">Loading unit...</p>
+        <label for="mode-select" class="mode-control">
+          Mode:
+          <select id="mode-select">
+            <option value="before_after">Before / After</option>
+            <option value="earliest_of_3">Earliest of 3</option>
+            <option value="latest_of_3">Latest of 3</option>
+            <option value="mixed">Mixed</option>
+          </select>
+        </label>
       </header>
 
       <section class="panel" id="question-panel">
-        <h2>Which happened earlier?</h2>
+        <h2 id="question-title">
+          Which happened earlier?
+          <span id="question-badge" class="question-badge" hidden>Review</span>
+        </h2>
         <p id="question-text">Loading question...</p>
         <div class="options">
           <button id="option-a" type="button" disabled>Option A</button>
           <button id="option-b" type="button" disabled>Option B</button>
+          <button id="option-c" type="button" disabled hidden>Option C</button>
         </div>
       </section>
 
@@ -35,6 +48,11 @@
         <h2>Session stats</h2>
         <p>Total answered: <span id="stat-total">0</span></p>
         <p>Correct: <span id="stat-correct">0</span></p>
+        <p>Review answered: <span id="stat-review-answered">0</span></p>
+        <p>Review correct: <span id="stat-review-correct">0</span></p>
+        <p>Before/after: <span id="stat-before-after-correct">0</span>/<span id="stat-before-after-answered">0</span></p>
+        <p>Earliest-of-3: <span id="stat-earliest-correct">0</span>/<span id="stat-earliest-answered">0</span></p>
+        <p>Latest-of-3: <span id="stat-latest-correct">0</span>/<span id="stat-latest-answered">0</span></p>
       </section>
 
       <section class="panel error-panel" id="error-panel" hidden>
