@@ -13,7 +13,7 @@ World History Lab is a personal learning project for studying world history with
 
 - **Initial history unit**: French Revolution to Napoleon.
 - **First mini apps**:
-  - **Timeline Trainer** (MVP focus; implementation not started yet).
+  - **Timeline Trainer** (MVP focus; before/after playable).
   - **Causality Builder** (planned for the next phase after timeline basics).
 
 ## Repository structure (high-level)

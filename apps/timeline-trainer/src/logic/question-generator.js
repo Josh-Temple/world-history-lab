@@ -64,18 +64,19 @@ export function filterTimelineCandidateEvents(events) {
   });
 }
 
-export function generateBeforeAfterQuestion(events, lastPairKey = null) {
+export function generateBeforeAfterQuestion(events, options = {}) {
+  const recentPairKeys = Array.isArray(options.recentPairKeys) ? options.recentPairKeys : [];
+  const maxAttempts = Number.isFinite(options.maxAttempts) ? options.maxAttempts : 120;
+
   if (events.length < 2) {
     throw new Error("Need at least two valid events to generate a question.");
   }
 
-  const maxAttempts = 100;
-
-  for (let i = 0; i < maxAttempts; i += 1) {
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
     const [eventA, eventB] = pickDistinctPair(events);
     const pairKey = createPairKey(eventA.id, eventB.id);
 
-    if (lastPairKey && pairKey === lastPairKey) {
+    if (recentPairKeys.includes(pairKey)) {
       continue;
     }
 
@@ -85,30 +86,38 @@ export function generateBeforeAfterQuestion(events, lastPairKey = null) {
 
     const { earlierEvent, laterEvent } = orderByYear(eventA, eventB);
     const showEarlierFirst = Math.random() < 0.5;
-    const options = showEarlierFirst ? [earlierEvent, laterEvent] : [laterEvent, earlierEvent];
-    const correctOptionIndex = options[0].id === earlierEvent.id ? 0 : 1;
+    const optionsView = showEarlierFirst ? [earlierEvent, laterEvent] : [laterEvent, earlierEvent];
+    const correctOptionIndex = optionsView[0].id === earlierEvent.id ? 0 : 1;
 
     return {
+      type: "timeline_before_after",
       options: [
-        { key: "A", ...options[0] },
-        { key: "B", ...options[1] },
+        { key: "A", ...optionsView[0] },
+        { key: "B", ...optionsView[1] },
       ],
-      left: options[0],
-      right: options[1],
-      correctId: earlierEvent.id,
       correctOptionIndex,
       pairKey,
     };
   }
 
-  throw new Error(
-    "We couldn't generate a new question right now. This can happen when the event pool is too small. Try again."
-  );
+  console.warn("[Timeline Trainer] question generation failed", {
+    attempts: maxAttempts,
+    candidatePool: events.length,
+    filters: {
+      requiresQuestionType: "timeline_before_after",
+      requiresNumericYearStart: true,
+      excludesSameYearPairs: true,
+      excludesRecentPairs: true,
+    },
+    recentHistoryLength: recentPairKeys.length,
+  });
+
+  throw new Error("Not enough suitable questions right now.");
 }
 
 export function explainQuestionAnswer(question) {
   const earlier = question.options[question.correctOptionIndex];
   const later = question.options[question.correctOptionIndex === 0 ? 1 : 0];
 
-  return `${earlier.label} (${earlier.time.year_start}) happened before ${later.label} (${later.time.year_start}).`;
+  return `${earlier.label} (${earlier.time.year_start}) happened earlier than ${later.label} (${later.time.year_start}).`;
 }

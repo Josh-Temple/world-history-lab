@@ -6,6 +6,8 @@ import {
   resolveUnitEvents,
 } from "./logic/question-generator.js";
 
+const RECENT_PAIR_WINDOW = 15;
+
 const state = {
   unit: null,
   candidates: [],
@@ -15,7 +17,7 @@ const state = {
   hasAnswered: false,
   selectedOptionIndex: null,
   correctOptionIndex: null,
-  lastPairKey: null,
+  recentPairKeys: [],
 };
 
 const ui = {
@@ -45,7 +47,6 @@ function clearAnswerButtonStates() {
   for (const button of [ui.optionA, ui.optionB]) {
     button.classList.remove("selected", "correct", "incorrect");
     button.removeAttribute("data-marker");
-    button.removeAttribute("aria-label");
   }
 }
 
@@ -63,18 +64,15 @@ function applyAnswerButtonStates() {
 
   if (state.selectedOptionIndex === state.correctOptionIndex) {
     selectedButton.classList.add("correct");
-    selectedButton.dataset.marker = "✓ Selected and correct";
-    selectedButton.setAttribute("aria-label", `${selectedButton.textContent}. Selected and correct`);
+    selectedButton.dataset.marker = "Selected • ✓ Correct";
     return;
   }
 
   selectedButton.classList.add("incorrect");
-  selectedButton.dataset.marker = "✗ Selected";
-  selectedButton.setAttribute("aria-label", `${selectedButton.textContent}. Selected and incorrect`);
+  selectedButton.dataset.marker = "Selected • ✗ Incorrect";
 
   correctButton.classList.add("correct");
-  correctButton.dataset.marker = "✓ Correct";
-  correctButton.setAttribute("aria-label", `${correctButton.textContent}. Correct answer`);
+  correctButton.dataset.marker = "✓ Correct answer";
 }
 
 function setResultMessage(message, resultType = "neutral") {
@@ -119,11 +117,21 @@ function renderQuestion(question) {
   setResultMessage("Choose one option.");
 }
 
+function recordRecentPair(pairKey) {
+  if (!pairKey) {
+    return;
+  }
+  state.recentPairKeys.unshift(pairKey);
+  state.recentPairKeys = state.recentPairKeys.slice(0, RECENT_PAIR_WINDOW);
+}
+
 function generateAndRenderNextQuestion() {
   clearError();
 
   try {
-    const question = generateBeforeAfterQuestion(state.candidates, state.lastPairKey);
+    const question = generateBeforeAfterQuestion(state.candidates, {
+      recentPairKeys: state.recentPairKeys,
+    });
     renderQuestion(question);
   } catch (error) {
     state.currentQuestion = null;
@@ -137,13 +145,12 @@ function handleAnswer(optionIndex) {
     return;
   }
 
-  const selectedOption = state.currentQuestion.options[optionIndex];
   const isCorrect = optionIndex === state.currentQuestion.correctOptionIndex;
 
   state.hasAnswered = true;
   state.selectedOptionIndex = optionIndex;
   state.correctOptionIndex = state.currentQuestion.correctOptionIndex;
-  state.lastPairKey = state.currentQuestion.pairKey;
+  recordRecentPair(state.currentQuestion.pairKey);
   state.totalAnswered += 1;
 
   if (isCorrect) {
@@ -156,10 +163,7 @@ function handleAnswer(optionIndex) {
   ui.nextButton.disabled = false;
 
   const explanation = explainQuestionAnswer(state.currentQuestion);
-  setResultMessage(
-    `${isCorrect ? "✅ Correct" : "❌ Incorrect"}. You chose ${selectedOption.key}. ${explanation}`,
-    isCorrect ? "correct" : "incorrect"
-  );
+  setResultMessage(`${isCorrect ? "Correct" : "Incorrect"}. ${explanation}`, isCorrect ? "correct" : "incorrect");
 }
 
 function validateAndPrepareData(events, unit) {
@@ -176,7 +180,7 @@ function validateAndPrepareData(events, unit) {
   );
 
   if (candidates.length < 2) {
-    setError("No valid timeline events available for before/after questions.");
+    setError("Not enough valid timeline events available right now.");
     return false;
   }
 
