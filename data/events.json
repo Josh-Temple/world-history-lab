@@ -670,5 +670,365 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "draft"
+  },
+  {
+    "id": "ev_flying_shuttle_patent_1733",
+    "label": "Flying shuttle patented (John Kay)",
+    "time": {
+      "year_start": 1733
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "weaving",
+      "invention"
+    ],
+    "summary_short": "John Kay’s flying shuttle sped up weaving and increased demand for spun yarn, helping trigger later spinning innovations.",
+    "source_refs": [
+      {
+        "title": "Flying shuttle (patent year 1733)",
+        "url": "https://en.wikipedia.org/wiki/Flying_shuttle"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_bridgewater_canal_opens_1761",
+    "label": "Bridgewater Canal opens (coal transport to Manchester)",
+    "time": {
+      "year_start": 1761
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "infrastructure",
+      "canals",
+      "coal"
+    ],
+    "summary_short": "The Bridgewater Canal opened to move coal efficiently, cutting transport costs and accelerating industrial growth.",
+    "source_refs": [
+      {
+        "title": "Bridgewater Canal (opened 1761)",
+        "url": "https://en.wikipedia.org/wiki/Bridgewater_Canal"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_spinning_jenny_invented_1764",
+    "label": "Spinning jenny invented (James Hargreaves)",
+    "time": {
+      "year_start": 1764
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "spinning",
+      "invention"
+    ],
+    "summary_short": "A multi-spindle spinning machine that greatly increased yarn output and helped propel mechanized textile production.",
+    "source_refs": [
+      {
+        "title": "Spinning jenny (invented 1764–1765)",
+        "url": "https://en.wikipedia.org/wiki/Spinning_jenny"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_water_frame_patent_1769",
+    "label": "Water frame patented (Richard Arkwright)",
+    "time": {
+      "year_start": 1769
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "spinning",
+      "patent"
+    ],
+    "summary_short": "Arkwright’s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
+    "source_refs": [
+      {
+        "title": "Water frame (patented 1769)",
+        "url": "https://en.wikipedia.org/wiki/Water_frame"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_watt_condenser_patent_1769",
+    "label": "Watt’s separate condenser patented (steam engine efficiency)",
+    "time": {
+      "year_start": 1769
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "steam",
+      "energy",
+      "patent"
+    ],
+    "summary_short": "James Watt’s separate condenser greatly improved steam engine efficiency, enabling broader industrial use beyond mines.",
+    "source_refs": [
+      {
+        "title": "Watt steam engine (1769 patent context)",
+        "url": "https://en.wikipedia.org/wiki/Watt_steam_engine"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_cromford_mill_uses_water_frame_1771",
+    "label": "Cromford Mill uses water frame (early factory system)",
+    "time": {
+      "year_start": 1771
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "factories",
+      "textiles",
+      "water_power"
+    ],
+    "summary_short": "Arkwright’s water-powered spinning at Cromford is often cited as a key step toward the factory system in textiles.",
+    "source_refs": [
+      {
+        "title": "Arkwright’s water-frame at Cromford (1771)",
+        "url": "https://www.nationalarchives.gov.uk/education/resources/georgian-britain-age-modernity/arkwrights-spinning-frame/"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_spinning_jenny_patented_1770",
+    "label": "Spinning jenny patented (James Hargreaves)",
+    "time": {
+      "year_start": 1770
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "spinning",
+      "patent"
+    ],
+    "summary_short": "Hargreaves secured a patent for the spinning jenny, helping spread multi-spindle spinning as textile production mechanized.",
+    "source_refs": [
+      {
+        "title": "James Hargreaves (spinning jenny patented 1770)",
+        "url": "https://www.britannica.com/biography/James-Hargreaves"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_spinning_mule_invented_1779",
+    "label": "Spinning mule invented (Samuel Crompton)",
+    "time": {
+      "year_start": 1779
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "spinning",
+      "invention"
+    ],
+    "summary_short": "Crompton’s spinning mule combined features of earlier spinning machines and enabled large-scale production of high-quality yarn.",
+    "source_refs": [
+      {
+        "title": "Crompton’s spinning mule (invented 1779)",
+        "url": "https://ageofrevolution.org/200-object/cromptons-spinning-mule/"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_power_loom_patented_1785",
+    "label": "Power loom patented (Edmund Cartwright)",
+    "time": {
+      "year_start": 1785
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "weaving",
+      "mechanization"
+    ],
+    "summary_short": "Cartwright’s power loom mechanized weaving, helping shift textile production further into factories.",
+    "source_refs": [
+      {
+        "title": "Patenting of the steam-powered loom (1785)",
+        "url": "https://www.ebsco.com/research-starters/history/patenting-steam-powered-loom"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_cotton_gin_invented_1793",
+    "label": "Cotton gin invented (Eli Whitney)",
+    "time": {
+      "year_start": 1793
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "cotton",
+      "invention",
+      "supply_chain"
+    ],
+    "summary_short": "Whitney’s cotton gin sped seed removal, expanding raw cotton supply feeding textile mills and intensifying the global cotton economy.",
+    "source_refs": [
+      {
+        "title": "Cotton gin (invented 1793)",
+        "url": "https://www.britannica.com/technology/cotton-gin"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_penydarren_locomotive_run_1804",
+    "label": "Penydarren steam locomotive run (Trevithick)",
+    "time": {
+      "year_start": 1804
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "railways",
+      "steam",
+      "transport"
+    ],
+    "summary_short": "A landmark early rail journey powered by a steam locomotive, demonstrating the feasibility of steam traction on rails.",
+    "source_refs": [
+      {
+        "title": "Penydarren journey (21 Feb 1804)",
+        "url": "https://museum.wales/articles/1012/Richard-Trevithickrsquos-steam-locomotive/"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_rainhill_trials_rocket_1829",
+    "label": "Rainhill Trials won by Stephenson’s Rocket",
+    "time": {
+      "year_start": 1829
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "railways",
+      "transport",
+      "competition"
+    ],
+    "summary_short": "Rocket’s success at the Rainhill Trials helped convince investors and engineers that locomotive-hauled railways were viable at scale.",
+    "source_refs": [
+      {
+        "title": "Stephenson’s Rocket (Rainhill Trials, 1829)",
+        "url": "https://en.wikipedia.org/wiki/Stephenson%27s_Rocket"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_factory_act_1833",
+    "label": "Factory Act (UK) strengthens child labor regulation and enforcement",
+    "time": {
+      "year_start": 1833
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "labor",
+      "law",
+      "regulation"
+    ],
+    "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate—an important step toward enforceable workplace regulation.",
+    "source_refs": [
+      {
+        "title": "1833 Factory Act (Parliament; inspectorate)",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_great_exhibition_opens_1851",
+    "label": "Great Exhibition opens in London (Crystal Palace)",
+    "time": {
+      "year_start": 1851
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "exhibition",
+      "industry",
+      "culture"
+    ],
+    "summary_short": "A major international exhibition showcasing industrial and cultural achievements, symbolizing Britain’s industrial prominence.",
+    "source_refs": [
+      {
+        "title": "Great Exhibition (opened 1 May 1851)",
+        "url": "https://en.wikipedia.org/wiki/Great_Exhibition"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_bessemer_process_patent_1856",
+    "label": "Bessemer process patented (mass steel production)",
+    "time": {
+      "year_start": 1856
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "steel",
+      "manufacturing",
+      "invention"
+    ],
+    "summary_short": "Bessemer’s process enabled cheaper mass production of steel, accelerating industrial expansion in railways, construction, and machinery.",
+    "source_refs": [
+      {
+        "title": "Bessemer process (patent 1856)",
+        "url": "https://en.wikipedia.org/wiki/Bessemer_process"
+      }
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
   }
 ]
