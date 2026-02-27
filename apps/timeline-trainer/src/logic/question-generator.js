@@ -64,14 +64,12 @@ export function createTripletKey(eventIds) {
   return [...eventIds].sort().join("|");
 }
 
-export function resolveUnitEvents(events, unit) {
-  const eventById = new Map(events.map((eventRecord) => [eventRecord.id, eventRecord]));
-
+export function resolveUnitEvents(unit, eventsById) {
   const missingIds = [];
   const resolvedEvents = [];
 
   for (const eventId of unit.event_ids) {
-    const eventRecord = eventById.get(eventId);
+    const eventRecord = eventsById.get(eventId);
     if (!eventRecord) {
       missingIds.push(eventId);
       continue;
@@ -80,6 +78,25 @@ export function resolveUnitEvents(events, unit) {
   }
 
   return { resolvedEvents, missingIds };
+}
+
+function getAllowedStatuses(minStatus) {
+  if (minStatus === "draft") {
+    return new Set(["draft", "reviewed", "approved"]);
+  }
+  return new Set(["reviewed", "approved"]);
+}
+
+export function filterEligibleEvents(events, scope, questionType) {
+  const allowedStatuses = getAllowedStatuses(scope.minStatus);
+  return events.filter((eventRecord) => {
+    return (
+      hasNumericYearStart(eventRecord) &&
+      hasQuestionType(eventRecord, questionType) &&
+      typeof eventRecord.status === "string" &&
+      allowedStatuses.has(eventRecord.status)
+    );
+  });
 }
 
 export function filterTimelineCandidateEvents(events) {

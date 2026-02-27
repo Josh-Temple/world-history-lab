@@ -4,7 +4,7 @@ A minimal static timeline quiz that uses the shared seed dataset.
 
 ## What this MVP supports
 
-- Loads `data/events.json` and `data/units/french-revolution-napoleon.json`.
+- Loads `data/events.json` and a small in-app unit registry (`/data/units/*.json`) with graceful skip on invalid/missing unit files.
 - Resolves `unit.event_ids` to event records.
 - Filters events to records that have:
   - `question_types` including `timeline_before_after`
@@ -62,6 +62,16 @@ Open:
 ## Known limitations
 
 - New 3-option modes require event records tagged with `timeline_earliest_of_3` / `timeline_latest_of_3`.
-- Unit selection is fixed to `french-revolution-napoleon`.
+- Unit list comes from a small hardcoded registry in the app loader; add new unit paths there as new files are added.
 - Progress is in-memory only (resets on refresh).
 - No schema validator integration yet.
+
+
+## Scope settings (Unit vs All + quality)
+
+- **Default scope is Unit mode** with a selected unit.
+- **All units mode** uses **unit-first sampling**: each question is generated from one unit pool (not uniform random over all events).
+- **Minimum quality** setting:
+  - `Reviewed+` (default): includes `reviewed` + `approved` events only
+  - `Include drafts`: includes `draft` + `reviewed` + `approved`
+- Any scope change resets in-session state safely: current question, stats, wrong queue, and recent history windows.

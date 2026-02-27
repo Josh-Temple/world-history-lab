@@ -13,7 +13,7 @@ World History Lab is a personal learning project for studying world history with
 
 - **Initial history unit**: French Revolution to Napoleon.
 - **First mini apps**:
-  - **Timeline Trainer** (MVP playable: Before/After, Earliest of 3, Latest of 3, and Mixed mode).
+  - **Timeline Trainer** (MVP playable: Before/After, Earliest of 3, Latest of 3, Mixed mode, plus Unit/All practice scope and quality filtering).
   - **Causality Builder** (planned for the next phase after timeline basics).
 
 ## Repository structure (high-level)
@@ -117,6 +117,11 @@ Planned (not yet implemented in the current Timeline Trainer UI):
 - `timeline_century`
 
 The metadata file may list broader future question types for roadmap purposes, but the current shipped trainer only supports the modes above.
+
+Timeline Trainer now supports scope controls:
+- Practice **Unit** (single unit) or **All units** (unit-first sampling per question).
+- Set minimum content quality (`Reviewed+` default, or `Include drafts`).
+- Changing scope/settings resets in-memory session stats and review queues to avoid cross-scope contamination.
 
 ## UI design direction (current)
 
