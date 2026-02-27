@@ -13,6 +13,10 @@ async function fetchJson(url, label) {
   }
 }
 
+function appUrl(relativePath) {
+  return new URL(relativePath, window.location.href).toString();
+}
+
 function assertEventShape(events) {
   if (!Array.isArray(events)) {
     throw new Error("events.json must be a top-level array");
