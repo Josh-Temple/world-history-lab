@@ -1,7 +1,3 @@
-function appUrl(relativePath) {
-  return new URL(relativePath, window.location.href).toString();
-}
-
 async function fetchJson(url, label) {
   console.debug(`[Timeline Trainer] Fetching ${label}: ${url}`);
   const response = await fetch(url, { cache: "no-store" });
@@ -38,8 +34,8 @@ function assertUnitShape(unit) {
 }
 
 export async function loadTimelineSeedData() {
-  const eventsUrl = appUrl("../../../data/events.json");
-  const unitUrl = appUrl("../../../data/units/french-revolution-napoleon.json");
+  const eventsUrl = "/data/events.json";
+  const unitUrl = "/data/units/french-revolution-napoleon.json";
 
   const [events, unit] = await Promise.all([
     fetchJson(eventsUrl, "events.json"),
