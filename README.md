@@ -99,6 +99,14 @@ Next:
   - Add more units.
   - Add additional mini apps as needed.
 
+
+## UI design direction (current)
+
+- **Radical minimalism** across all current pages (`/` and `/apps/timeline-trainer/`).
+- **Subtractive styling**: card-like containers, heavy shadows, and decorative gradients were removed.
+- **Underline-first language**: interactions and structure are expressed mainly through thin bottom borders and restrained typography.
+- **Calm visual rhythm**: spacing and type weight are tuned to feel editorial and premium without visual noise.
+
 ## How to run
 
 This repository currently serves static files, so you can preview it locally with any static server.

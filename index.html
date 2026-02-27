@@ -4,126 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World History Lab</title>
-    <style>
-      :root {
-        --bg: #f4f7fb;
-        --surface: #ffffff;
-        --text-primary: #0f172a;
-        --text-secondary: #475569;
-        --accent: #1d4ed8;
-        --border: #cbd5e1;
-        --shadow: 0 20px 40px -30px rgba(15, 23, 42, 0.42);
-        font-family: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        padding: 1.5rem;
-        background: radial-gradient(circle at top left, #e0e7ff 0%, var(--bg) 55%);
-        color: var(--text-primary);
-        line-height: 1.65;
-      }
-
-      .page {
-        max-width: 980px;
-        margin: 0 auto;
-      }
-
-      .hero {
-        background: linear-gradient(145deg, #ffffff 0%, #eff6ff 65%);
-        border: 1px solid #dbeafe;
-        border-radius: 22px;
-        padding: 1.4rem 1.6rem;
-        box-shadow: var(--shadow);
-        margin-bottom: 1rem;
-      }
-
-      .hero h1 {
-        margin: 0 0 0.5rem;
-        font-size: clamp(1.6rem, 3vw, 2.35rem);
-      }
-
-      .hero p {
-        margin: 0;
-        color: var(--text-secondary);
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-      }
-
-      .card {
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 1rem 1.15rem;
-        background: var(--surface);
-        box-shadow: var(--shadow);
-      }
-
-      .card h2 {
-        margin-top: 0;
-      }
-
-      ul {
-        margin: 0.65rem 0 0;
-        padding-left: 1.1rem;
-      }
-
-      li {
-        margin: 0.35rem 0;
-      }
-
-      a {
-        color: var(--accent);
-        text-underline-offset: 2px;
-      }
-
-      a:hover {
-        color: #1e40af;
-      }
-
-      code {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-        background: #eff6ff;
-        border: 1px solid #bfdbfe;
-        border-radius: 6px;
-        padding: 0.05rem 0.35rem;
-      }
-
-      .stat {
-        font-size: 1.15rem;
-        font-weight: 700;
-      }
-
-      .muted {
-        color: var(--text-secondary);
-      }
-
-      @media (max-width: 580px) {
-        body {
-          padding: 1rem;
-        }
-
-        .hero,
-        .card {
-          border-radius: 14px;
-          padding: 1rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="/styles/site.css" />
   </head>
   <body>
     <main class="page">
       <header class="hero">
         <h1>World History Lab</h1>
-        <p>World history learning tools with improved readability and clean, focused visual hierarchy.</p>
+        <p>World history learning tools shaped by a quiet, editorial minimalism.</p>
       </header>
 
       <section class="grid">
@@ -160,41 +47,51 @@
     </main>
 
     <script>
-      const summaryItems = [
-        {
-          label: "events",
-          element: document.getElementById("count-events"),
-          path: "/data/events.json",
+      function createArrayCountItem({ label, elementId, path }) {
+        return {
+          label,
+          element: document.getElementById(elementId),
+          path,
           parseCount(json) {
             if (!Array.isArray(json)) {
-              throw new Error("Expected /data/events.json to be an array");
+              throw new Error(`Expected ${path} to be an array`);
             }
             return json.length;
           },
-        },
-        {
-          label: "people",
-          element: document.getElementById("count-people"),
-          path: "/data/people.json",
-          parseCount(json) {
-            if (!Array.isArray(json)) {
-              throw new Error("Expected /data/people.json to be an array");
-            }
-            return json.length;
-          },
-        },
-        {
-          label: "units",
-          element: document.getElementById("count-units"),
-          path: "/data/units/french-revolution-napoleon.json",
+        };
+      }
+
+      function createObjectCountItem({ label, elementId, path, count = 1 }) {
+        return {
+          label,
+          element: document.getElementById(elementId),
+          path,
           parseCount(json) {
             const isObject = json !== null && typeof json === "object" && !Array.isArray(json);
             if (!isObject) {
-              throw new Error("Expected /data/units/french-revolution-napoleon.json to be an object");
+              throw new Error(`Expected ${path} to be an object`);
             }
-            return 1;
+            return count;
           },
-        },
+        };
+      }
+
+      const summaryItems = [
+        createArrayCountItem({
+          label: "events",
+          elementId: "count-events",
+          path: "/data/events.json",
+        }),
+        createArrayCountItem({
+          label: "people",
+          elementId: "count-people",
+          path: "/data/people.json",
+        }),
+        createObjectCountItem({
+          label: "units",
+          elementId: "count-units",
+          path: "/data/units/french-revolution-napoleon.json",
+        }),
       ];
 
       async function fetchCount(item) {
