@@ -17,6 +17,13 @@ A minimal static timeline quiz that uses the shared seed dataset.
 - Supports next-question flow and in-memory session stats.
 - Shows user-facing errors for invalid/missing data or when generation cannot find suitable pairs.
 
+
+## Visual design update
+
+- The trainer UI now follows a strict minimal style: no card surfaces, almost no boxed outlines, and no decorative gradients.
+- Primary hierarchy is carried by typography, whitespace, and subtle underline separators.
+- Buttons are rendered as text rows with bottom borders to keep emphasis on content, not chrome.
+
 ## How to run locally
 
 From the repository root:
