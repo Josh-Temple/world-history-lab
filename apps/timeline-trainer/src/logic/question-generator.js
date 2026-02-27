@@ -7,7 +7,15 @@ function hasTimelineBeforeAfter(eventRecord) {
 }
 
 function hasQuestionType(eventRecord, questionType) {
-  return eventRecord && Array.isArray(eventRecord.question_types) && eventRecord.question_types.includes(questionType);
+  if (!eventRecord || !Array.isArray(eventRecord.question_types)) {
+    return false;
+  }
+
+  if (Array.isArray(questionType)) {
+    return questionType.some((type) => eventRecord.question_types.includes(type));
+  }
+
+  return eventRecord.question_types.includes(questionType);
 }
 
 function hasNumericYearStart(eventRecord) {
