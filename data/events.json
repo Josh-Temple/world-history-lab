@@ -74,7 +74,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_tennis_court_oath_1789",
@@ -136,7 +136,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_storming_bastille_1789",
@@ -198,7 +198,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_declaration_rights_man_citizen_1789",
@@ -262,7 +262,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_execution_louis_xvi_1793",
@@ -330,7 +330,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_reign_of_terror_1793_1794",
@@ -400,7 +400,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_thermidorian_reaction_1794",
@@ -463,7 +463,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_napoleon_coup_18_brumaire_1799",
@@ -534,7 +534,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_napoleon_emperor_1804",
@@ -601,7 +601,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_congress_of_vienna_1814_1815",
@@ -669,7 +669,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "draft"
+    "status": "approved"
   },
   {
     "id": "ev_flying_shuttle_patent_1733",
@@ -692,7 +692,7 @@
         "url": "https://en.wikipedia.org/wiki/Flying_shuttle"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -716,7 +716,7 @@
         "url": "https://en.wikipedia.org/wiki/Bridgewater_Canal"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -740,7 +740,7 @@
         "url": "https://en.wikipedia.org/wiki/Spinning_jenny"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -764,7 +764,7 @@
         "url": "https://en.wikipedia.org/wiki/Water_frame"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -788,7 +788,7 @@
         "url": "https://en.wikipedia.org/wiki/Watt_steam_engine"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -812,7 +812,7 @@
         "url": "https://www.nationalarchives.gov.uk/education/resources/georgian-britain-age-modernity/arkwrights-spinning-frame/"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -836,7 +836,7 @@
         "url": "https://www.britannica.com/biography/James-Hargreaves"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -860,7 +860,7 @@
         "url": "https://ageofrevolution.org/200-object/cromptons-spinning-mule/"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -884,7 +884,7 @@
         "url": "https://www.ebsco.com/research-starters/history/patenting-steam-powered-loom"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -908,7 +908,7 @@
         "url": "https://www.britannica.com/technology/cotton-gin"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -932,7 +932,7 @@
         "url": "https://museum.wales/articles/1012/Richard-Trevithickrsquos-steam-locomotive/"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -956,7 +956,7 @@
         "url": "https://en.wikipedia.org/wiki/Stephenson%27s_Rocket"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -980,7 +980,7 @@
         "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1004,7 +1004,7 @@
         "url": "https://en.wikipedia.org/wiki/Great_Exhibition"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1028,7 +1028,7 @@
         "url": "https://en.wikipedia.org/wiki/Bessemer_process"
       }
     ],
-    "status": "draft",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   }
 ]
