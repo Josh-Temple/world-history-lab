@@ -1,7 +1,3 @@
-function appUrl(relativePath) {
-  return new URL(relativePath, window.location.href).toString();
-}
-
 async function fetchJson(url, label) {
   console.debug(`[Timeline Trainer] Fetching ${label}: ${url}`);
   const response = await fetch(url, { cache: "no-store" });
