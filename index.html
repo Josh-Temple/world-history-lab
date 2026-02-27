@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World History Lab</title>
-    <link rel="stylesheet" href="/styles/site.css" />
+    <link rel="stylesheet" href="./styles/site.css" />
   </head>
   <body>
     <main class="page">
       <header class="hero">
+        <p class="eyebrow">engineered play &amp; logic</p>
         <h1>World History Lab</h1>
-        <p>World history learning tools shaped by a quiet, editorial minimalism.</p>
+        <div class="accent-dots" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p>
+          A quiet workspace for timelines, people, and source datasets — shaped mostly by
+          typography and spacing.
+        </p>
       </header>
 
-      <section class="grid">
-        <section class="card">
+      <section class="grid" aria-label="World History Lab modules">
+        <section class="card card-highlight">
           <h2>Dataset summary</h2>
-          <ul>
+          <ul class="stat-list">
             <li><strong>Events:</strong> <span id="count-events" class="stat">loading...</span></li>
             <li><strong>People:</strong> <span id="count-people" class="stat">loading...</span></li>
             <li><strong>Units:</strong> <span id="count-units" class="stat">loading...</span></li>
@@ -26,23 +35,24 @@
         <section class="card">
           <h2>Mini apps</h2>
           <p class="muted">Practice modes available right now:</p>
-          <ul>
-            <li><a href="/apps/timeline-trainer/"><code>/apps/timeline-trainer/</code></a></li>
-          </ul>
+          <a class="module-link" href="./apps/timeline-trainer/">
+            <span class="module-path">/apps/timeline-trainer/</span>
+            <span class="module-arrow" aria-hidden="true">↗</span>
+          </a>
         </section>
 
         <section class="card">
           <h2>Raw data links</h2>
-          <ul>
-            <li><a href="/data/events.json"><code>/data/events.json</code></a></li>
-            <li><a href="/data/people.json"><code>/data/people.json</code></a></li>
+          <ul class="data-links">
+            <li><a href="./data/events.json"><code>/data/events.json</code></a></li>
+            <li><a href="./data/people.json"><code>/data/people.json</code></a></li>
             <li>
-              <a href="/data/units/french-revolution-napoleon.json"
+              <a href="./data/units/french-revolution-napoleon.json"
                 ><code>/data/units/french-revolution-napoleon.json</code></a
               >
             </li>
             <li>
-              <a href="/data/units/industrial-revolution.json"
+              <a href="./data/units/industrial-revolution.json"
                 ><code>/data/units/industrial-revolution.json</code></a
               >
             </li>
@@ -50,15 +60,17 @@
         </section>
       </section>
 
-      <p id="count-error" class="error-text" role="status" hidden>
-        Failed to load some dataset counts. Please reload the page.
-      </p>
+      <footer class="status-area">
+        <p id="count-error" class="error-text" role="status" hidden>
+          Failed to load some dataset counts. Please reload the page.
+        </p>
+      </footer>
     </main>
 
     <script type="module">
       const unitPaths = [
-        "/data/units/french-revolution-napoleon.json",
-        "/data/units/industrial-revolution.json",
+        "./data/units/french-revolution-napoleon.json",
+        "./data/units/industrial-revolution.json",
       ];
 
       function createArrayCountItem({ label, elementId, path }) {
@@ -98,12 +110,12 @@
         createArrayCountItem({
           label: "events",
           elementId: "count-events",
-          path: "/data/events.json",
+          path: "./data/events.json",
         }),
         createArrayCountItem({
           label: "people",
           elementId: "count-people",
-          path: "/data/people.json",
+          path: "./data/people.json",
         }),
         createUnitsCountItem({
           label: "units",
