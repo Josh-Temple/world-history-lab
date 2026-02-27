@@ -38,8 +38,8 @@ function assertUnitShape(unit) {
 }
 
 export async function loadTimelineSeedData() {
-  const eventsUrl = appUrl("../../../data/events.json");
-  const unitUrl = appUrl("../../../data/units/french-revolution-napoleon.json");
+  const eventsUrl = appUrl("../../data/events.json");
+  const unitUrl = appUrl("../../data/units/french-revolution-napoleon.json");
 
   const [events, unit] = await Promise.all([
     fetchJson(eventsUrl, "events.json"),
