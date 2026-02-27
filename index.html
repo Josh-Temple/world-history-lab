@@ -41,12 +41,26 @@
                 ><code>/data/units/french-revolution-napoleon.json</code></a
               >
             </li>
+            <li>
+              <a href="/data/units/industrial-revolution.json"
+                ><code>/data/units/industrial-revolution.json</code></a
+              >
+            </li>
           </ul>
         </section>
       </section>
+
+      <p id="count-error" class="error-text" role="status" hidden>
+        Failed to load some dataset counts. Please reload the page.
+      </p>
     </main>
 
-    <script>
+    <script type="module">
+      const unitPaths = [
+        "/data/units/french-revolution-napoleon.json",
+        "/data/units/industrial-revolution.json",
+      ];
+
       function createArrayCountItem({ label, elementId, path }) {
         return {
           label,
@@ -61,17 +75,21 @@
         };
       }
 
-      function createObjectCountItem({ label, elementId, path, count = 1 }) {
+      function createUnitsCountItem({ label, elementId, paths }) {
         return {
           label,
           element: document.getElementById(elementId),
-          path,
-          parseCount(json) {
-            const isObject = json !== null && typeof json === "object" && !Array.isArray(json);
-            if (!isObject) {
-              throw new Error(`Expected ${path} to be an object`);
-            }
-            return count;
+          paths,
+          async fetchCount() {
+            const results = await Promise.all(paths.map((path) => fetchJson(path)));
+            results.forEach((json, index) => {
+              const isObject = json !== null && typeof json === "object" && !Array.isArray(json);
+              if (!isObject) {
+                throw new Error(`Expected ${paths[index]} to be an object`);
+              }
+            });
+
+            return results.length;
           },
         };
       }
@@ -87,24 +105,37 @@
           elementId: "count-people",
           path: "/data/people.json",
         }),
-        createObjectCountItem({
+        createUnitsCountItem({
           label: "units",
           elementId: "count-units",
-          path: "/data/units/french-revolution-napoleon.json",
+          paths: unitPaths,
         }),
       ];
 
-      async function fetchCount(item) {
-        const response = await fetch(item.path, { cache: "no-store" });
+      const countError = document.getElementById("count-error");
+
+      async function fetchJson(path) {
+        const response = await fetch(path, { cache: "no-store" });
         if (!response.ok) {
-          throw new Error(`HTTP ${response.status} for ${item.path}`);
+          throw new Error(`HTTP ${response.status} for ${path}`);
         }
-        const json = await response.json();
+        return response.json();
+      }
+
+      async function fetchCount(item) {
+        if (typeof item.fetchCount === "function") {
+          return item.fetchCount();
+        }
+
+        const json = await fetchJson(item.path);
         return item.parseCount(json);
       }
 
       async function loadCounts() {
         const results = await Promise.allSettled(summaryItems.map((item) => fetchCount(item)));
+        const hasFailure = results.some((result) => result.status !== "fulfilled");
+
+        countError.hidden = !hasFailure;
 
         results.forEach((result, index) => {
           const item = summaryItems[index];

@@ -13,7 +13,7 @@ World History Lab is a personal learning project for studying world history with
 
 - **Initial history unit**: French Revolution to Napoleon.
 - **First mini apps**:
-  - **Timeline Trainer** (MVP focus; before/after playable).
+  - **Timeline Trainer** (MVP playable: Before/After, Earliest of 3, Latest of 3, and Mixed mode).
   - **Causality Builder** (planned for the next phase after timeline basics).
 
 ## Repository structure (high-level)
@@ -76,6 +76,7 @@ Already done:
   - `data/events.json`
   - `data/people.json`
   - `data/units/french-revolution-napoleon.json`
+  - `data/units/industrial-revolution.json`
 
 Next:
 
@@ -99,6 +100,23 @@ Next:
   - Add more units.
   - Add additional mini apps as needed.
 
+
+
+## Timeline Trainer modes: implemented vs planned
+
+Implemented now in `main`:
+
+- `timeline_before_after`
+- `timeline_earliest_of_3`
+- `timeline_latest_of_3`
+- UI mode selector: Before / After, Earliest of 3, Latest of 3, Mixed
+
+Planned (not yet implemented in the current Timeline Trainer UI):
+
+- `timeline_ordering`
+- `timeline_century`
+
+The metadata file may list broader future question types for roadmap purposes, but the current shipped trainer only supports the modes above.
 
 ## UI design direction (current)
 
@@ -143,17 +161,18 @@ The app is static and reads JSON directly from `/data`:
 
 - `/data/events.json`: **array** of event records.
 - `/data/people.json`: **array** of people records.
-- `/data/units/french-revolution-napoleon.json`: **single object** for the current unit.
+- `/data/units/french-revolution-napoleon.json`: **single object** for one unit.
+- `/data/units/industrial-revolution.json`: **single object** for one unit.
 
 Current app code assumes those top-level shapes (`Array`, `Array`, `Object`) and treats shape mismatches as load errors.
 
 ### Top page summary logic
 
-`/index.html` fetches all three datasets in parallel with `Promise.allSettled` and updates:
+`/index.html` fetches events/people plus all tracked unit JSON files in parallel with `Promise.allSettled` and updates:
 
 - `#count-events` = `events.length`
 - `#count-people` = `people.length`
-- `#count-units` = `1` (for the single current unit JSON object)
+- `#count-units` = number of valid unit JSON objects currently tracked on the page (currently `2`)
 
 If any request fails or a JSON shape is unexpected, the page shows `—` for that count and logs a clear console error.
 
