@@ -15,6 +15,11 @@ const QUESTION_TYPES = {
   LATEST_OF_3: "timeline_latest_of_3",
 };
 
+const QUESTION_TYPE_ALIASES = {
+  [QUESTION_TYPES.EARLIEST_OF_3]: [QUESTION_TYPES.EARLIEST_OF_3, "timeline_ordering"],
+  [QUESTION_TYPES.LATEST_OF_3]: [QUESTION_TYPES.LATEST_OF_3, "timeline_ordering"],
+};
+
 const MODE = {
   BEFORE_AFTER: "before_after",
   EARLIEST_OF_3: "earliest_of_3",
@@ -547,8 +552,11 @@ function validateAndPrepareData(events, unit) {
   state.eventById = new Map(resolvedEvents.map((eventRecord) => [eventRecord.id, eventRecord]));
 
   const beforeAfterCandidates = filterQuestionTypeCandidates(resolvedEvents, QUESTION_TYPES.BEFORE_AFTER);
-  const earliestCandidates = filterQuestionTypeCandidates(resolvedEvents, QUESTION_TYPES.EARLIEST_OF_3);
-  const latestCandidates = filterQuestionTypeCandidates(resolvedEvents, QUESTION_TYPES.LATEST_OF_3);
+  const earliestCandidates = filterQuestionTypeCandidates(
+    resolvedEvents,
+    QUESTION_TYPE_ALIASES[QUESTION_TYPES.EARLIEST_OF_3]
+  );
+  const latestCandidates = filterQuestionTypeCandidates(resolvedEvents, QUESTION_TYPE_ALIASES[QUESTION_TYPES.LATEST_OF_3]);
 
   state.candidatesByType = {
     [QUESTION_TYPES.BEFORE_AFTER]: beforeAfterCandidates,
