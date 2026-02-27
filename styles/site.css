@@ -1,10 +1,10 @@
 :root {
-  --bg: #f8f8f6;
-  --text-primary: #101010;
-  --text-secondary: #666;
-  --line: #d8d8d2;
-  --line-strong: #bfbfb6;
-  --accent: #111;
+  --bg: #e4e5e8;
+  --surface: #f3f4f6;
+  --text-primary: #12151c;
+  --text-secondary: #647186;
+  --accent: #de8f6d;
+  --danger: #b55e5e;
   font-family: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
 }
 
@@ -15,68 +15,128 @@
 body {
   margin: 0;
   min-height: 100vh;
-  padding: 2.5rem 1.4rem 3rem;
   background: var(--bg);
   color: var(--text-primary);
-  line-height: 1.72;
+  line-height: 1.68;
   letter-spacing: 0.01em;
 }
 
 .page {
-  max-width: 820px;
+  max-width: 980px;
   margin: 0 auto;
-}
-
-.hero,
-.card {
-  border: 0;
-  border-bottom: 1px solid var(--line);
-  border-radius: 0;
-  padding: 0 0 1.1rem;
-  margin: 0;
-  background: transparent;
+  padding: clamp(1.2rem, 3vw, 2.8rem) clamp(1rem, 2.6vw, 2.1rem) 2.5rem;
 }
 
 .hero {
-  margin-bottom: 1.5rem;
+  margin-bottom: clamp(1.6rem, 4vw, 2.8rem);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  font-weight: 700;
 }
 
 .hero h1 {
-  margin: 0 0 0.55rem;
-  font-size: clamp(1.75rem, 3vw, 2.2rem);
-  font-weight: 620;
-  letter-spacing: 0.01em;
+  margin: 0.55rem 0 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  font-weight: 820;
 }
 
-.hero p,
-.muted {
+.accent-dots {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.accent-dots span {
+  width: 0.7rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.hero p {
+  margin: 1rem 0 0;
+  max-width: 62ch;
   color: var(--text-secondary);
+  font-size: 1.02rem;
 }
 
 .grid {
   display: grid;
-  gap: 1.35rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(1rem, 2.4vw, 1.8rem);
+  row-gap: clamp(1.8rem, 4vw, 2.9rem);
+}
+
+.card {
+  grid-column: span 4;
 }
 
 .card h2 {
-  margin: 0 0 0.7rem;
-  font-size: 1.08rem;
-  font-weight: 560;
+  margin: 0 0 0.75rem;
+  font-size: 0.84rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9aa6b9;
+  font-weight: 760;
 }
 
-ul {
+.stat-list,
+.data-links {
   margin: 0;
-  padding-left: 1.1rem;
+  padding-left: 1rem;
 }
 
 li {
-  margin: 0.28rem 0;
+  margin: 0.34rem 0;
+}
+
+.stat {
+  font-size: 1.08rem;
+  font-weight: 740;
+}
+
+.muted {
+  margin: 0 0 0.55rem;
+  color: var(--text-secondary);
+}
+
+.module-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--text-primary);
+  font-weight: 640;
+  text-decoration: none;
+}
+
+.module-link:hover .module-path {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.24em;
+}
+
+.module-path {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+}
+
+.module-arrow {
+  color: var(--accent);
+  font-size: 0.98rem;
 }
 
 a {
-  color: var(--accent);
-  text-decoration-color: var(--line-strong);
-  text-underline-offset: 0.24em;
+  color: var(--text-primary);
+  text-decoration-color: #a7b0bf;
+  text-underline-offset: 0.25em;
 }
 
 a:hover {
@@ -86,27 +146,45 @@ a:hover {
 code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   background: transparent;
-  border: 0;
-  border-bottom: 1px solid var(--line);
-  border-radius: 0;
   padding: 0;
 }
 
-.stat {
-  font-size: 1.04rem;
-  font-weight: 560;
+.status-area {
+  margin-top: 1.2rem;
+  min-height: 1.1rem;
 }
 
-@media (max-width: 580px) {
-  body {
-    padding: 1.6rem 1rem 2.3rem;
+.error-text {
+  margin: 0;
+  color: var(--danger);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 900px) {
+  .card {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 620px) {
+  .page {
+    padding: 1.1rem 0.95rem 1.9rem;
   }
 
   .hero {
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 13vw, 2.8rem);
   }
 
   .grid {
-    gap: 1.1rem;
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+
+  .card {
+    grid-column: auto;
   }
 }
