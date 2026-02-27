@@ -74,6 +74,12 @@ body {
   font-weight: 760;
 }
 
+
+.settings-panel {
+  display: grid;
+  gap: 0.35rem;
+}
+
 .mode-control {
   display: inline-flex;
   gap: 0.6rem;
@@ -83,7 +89,7 @@ body {
   font-weight: 560;
 }
 
-#mode-select {
+ .mode-control select {
   border: 0;
   background: transparent;
   padding: 0.2rem 0;

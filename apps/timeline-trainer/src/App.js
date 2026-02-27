@@ -2,7 +2,7 @@ import { loadTimelineSeedData } from "./data/loaders.js";
 import {
   createPairKey,
   explainQuestionAnswer,
-  filterQuestionTypeCandidates,
+  filterEligibleEvents,
   generateBeforeAfterQuestion,
   generateEarliestOfThreeQuestion,
   generateLatestOfThreeQuestion,
@@ -27,6 +27,11 @@ const MODE = {
   MIXED: "mixed",
 };
 
+const PRACTICE_MODE = {
+  UNIT: "unit",
+  ALL: "all",
+};
+
 const RECENT_PAIR_WINDOW = 15;
 const RECENT_TRIPLET_WINDOW = 12;
 const REVIEW_PROBABILITY = 0.3;
@@ -36,10 +41,17 @@ const REVIEW_MAX_ATTEMPTS = 2;
 const MIN_TRIPLET_YEAR_SPAN = 10;
 
 const state = {
-  unit: null,
-  resolvedEvents: [],
-  candidatesByType: {},
+  eventsById: new Map(),
+  units: [],
+  unitById: new Map(),
+  poolsByUnitId: new Map(),
   availableTypes: new Set(),
+  scope: {
+    mode: PRACTICE_MODE.UNIT,
+    unitId: null,
+    minStatus: "reviewed",
+    enabledQuestionTypes: [QUESTION_TYPES.BEFORE_AFTER, QUESTION_TYPES.EARLIEST_OF_3, QUESTION_TYPES.LATEST_OF_3],
+  },
   currentQuestion: null,
   totalAnswered: 0,
   correctAnswered: 0,
@@ -62,12 +74,15 @@ const state = {
   recentTripletKeys: [],
   wrongQueue: new Map(),
   questionIndex: 0,
-  eventById: new Map(),
 };
 
 const ui = {
   unitTitle: document.getElementById("unit-title"),
   modeSelect: document.getElementById("mode-select"),
+  practiceModeSelect: document.getElementById("practice-mode-select"),
+  unitSelectWrap: document.getElementById("unit-select-wrap"),
+  unitSelect: document.getElementById("unit-select"),
+  qualitySelect: document.getElementById("quality-select"),
   questionTitle: document.getElementById("question-title"),
   questionText: document.getElementById("question-text"),
   questionBadge: document.getElementById("question-badge"),
@@ -258,8 +273,8 @@ function getRandomDelay() {
 }
 
 function createReviewQuestion(eventIds) {
-  const firstEvent = state.eventById.get(eventIds[0]);
-  const secondEvent = state.eventById.get(eventIds[1]);
+  const firstEvent = state.eventsById.get(eventIds[0]);
+  const secondEvent = state.eventsById.get(eventIds[1]);
 
   if (!firstEvent || !secondEvent) {
     return null;
@@ -365,31 +380,129 @@ function queueWrongPair(question) {
   state.wrongQueue.set(pairKey, existing);
 }
 
+function hasTripletCapacity(events) {
+  if (events.length < 3) {
+    return false;
+  }
+
+  const sortedYears = [...new Set(events.map((eventRecord) => eventRecord.time.year_start))].sort((left, right) => left - right);
+  for (let startIndex = 0; startIndex < sortedYears.length - 2; startIndex += 1) {
+    for (let endIndex = startIndex + 2; endIndex < sortedYears.length; endIndex += 1) {
+      if (sortedYears[endIndex] - sortedYears[startIndex] >= MIN_TRIPLET_YEAR_SPAN) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
+function getQuestionTypeFilter(type) {
+  return QUESTION_TYPE_ALIASES[type] || type;
+}
+
+function buildPoolsForScope() {
+  const poolsByUnitId = new Map();
+
+  for (const unit of state.units) {
+    const { resolvedEvents, missingIds } = resolveUnitEvents(unit, state.eventsById);
+    if (missingIds.length > 0) {
+      console.warn("[Timeline Trainer] Missing unit event ids:", unit.id, missingIds);
+    }
+
+    const beforeAfterCandidates = filterEligibleEvents(
+      resolvedEvents,
+      state.scope,
+      getQuestionTypeFilter(QUESTION_TYPES.BEFORE_AFTER)
+    );
+    const earliestCandidates = filterEligibleEvents(
+      resolvedEvents,
+      state.scope,
+      getQuestionTypeFilter(QUESTION_TYPES.EARLIEST_OF_3)
+    );
+    const latestCandidates = filterEligibleEvents(
+      resolvedEvents,
+      state.scope,
+      getQuestionTypeFilter(QUESTION_TYPES.LATEST_OF_3)
+    );
+
+    const availableTypes = new Set();
+    if (beforeAfterCandidates.length >= 2) {
+      availableTypes.add(QUESTION_TYPES.BEFORE_AFTER);
+    }
+    if (hasTripletCapacity(earliestCandidates)) {
+      availableTypes.add(QUESTION_TYPES.EARLIEST_OF_3);
+    }
+    if (hasTripletCapacity(latestCandidates)) {
+      availableTypes.add(QUESTION_TYPES.LATEST_OF_3);
+    }
+
+    poolsByUnitId.set(unit.id, {
+      unit,
+      byType: {
+        [QUESTION_TYPES.BEFORE_AFTER]: beforeAfterCandidates,
+        [QUESTION_TYPES.EARLIEST_OF_3]: earliestCandidates,
+        [QUESTION_TYPES.LATEST_OF_3]: latestCandidates,
+      },
+      availableTypes,
+      eligibleCount: {
+        [QUESTION_TYPES.BEFORE_AFTER]: beforeAfterCandidates.length,
+        [QUESTION_TYPES.EARLIEST_OF_3]: earliestCandidates.length,
+        [QUESTION_TYPES.LATEST_OF_3]: latestCandidates.length,
+      },
+    });
+  }
+
+  state.poolsByUnitId = poolsByUnitId;
+}
+
+function refreshScopeAvailability() {
+  const availableTypes = new Set();
+
+  if (state.scope.mode === PRACTICE_MODE.UNIT) {
+    const selectedPool = state.poolsByUnitId.get(state.scope.unitId);
+    if (selectedPool) {
+      for (const type of selectedPool.availableTypes) {
+        availableTypes.add(type);
+      }
+    }
+  } else {
+    for (const unitPool of state.poolsByUnitId.values()) {
+      for (const type of unitPool.availableTypes) {
+        availableTypes.add(type);
+      }
+    }
+  }
+
+  state.availableTypes = availableTypes;
+}
+
 function isQuestionTypeAvailable(questionType) {
   return state.availableTypes.has(questionType);
 }
 
-function getEnabledTypesForMode() {
+function getRequestedTypesFromQuestionMode() {
   const selectedMode = ui.modeSelect.value;
   if (selectedMode === MODE.BEFORE_AFTER) {
-    return [QUESTION_TYPES.BEFORE_AFTER].filter(isQuestionTypeAvailable);
+    return [QUESTION_TYPES.BEFORE_AFTER];
   }
   if (selectedMode === MODE.EARLIEST_OF_3) {
-    return [QUESTION_TYPES.EARLIEST_OF_3].filter(isQuestionTypeAvailable);
+    return [QUESTION_TYPES.EARLIEST_OF_3];
   }
   if (selectedMode === MODE.LATEST_OF_3) {
-    return [QUESTION_TYPES.LATEST_OF_3].filter(isQuestionTypeAvailable);
+    return [QUESTION_TYPES.LATEST_OF_3];
   }
-
-  return [QUESTION_TYPES.BEFORE_AFTER, QUESTION_TYPES.EARLIEST_OF_3, QUESTION_TYPES.LATEST_OF_3].filter(
-    isQuestionTypeAvailable
-  );
+  return [QUESTION_TYPES.BEFORE_AFTER, QUESTION_TYPES.EARLIEST_OF_3, QUESTION_TYPES.LATEST_OF_3];
 }
 
-function generateByType(questionType) {
+function getEnabledTypesForScope() {
+  return state.scope.enabledQuestionTypes.filter(isQuestionTypeAvailable);
+}
+
+function generateByTypeWithPool(questionType, candidatePool) {
   if (questionType === QUESTION_TYPES.EARLIEST_OF_3) {
     return {
-      ...generateEarliestOfThreeQuestion(state.candidatesByType[QUESTION_TYPES.EARLIEST_OF_3], {
+      ...generateEarliestOfThreeQuestion(candidatePool, {
         recentTripletKeys: state.recentTripletKeys,
         minYearSpan: MIN_TRIPLET_YEAR_SPAN,
       }),
@@ -399,7 +512,7 @@ function generateByType(questionType) {
 
   if (questionType === QUESTION_TYPES.LATEST_OF_3) {
     return {
-      ...generateLatestOfThreeQuestion(state.candidatesByType[QUESTION_TYPES.LATEST_OF_3], {
+      ...generateLatestOfThreeQuestion(candidatePool, {
         recentTripletKeys: state.recentTripletKeys,
         minYearSpan: MIN_TRIPLET_YEAR_SPAN,
       }),
@@ -408,7 +521,7 @@ function generateByType(questionType) {
   }
 
   return {
-    ...generateBeforeAfterQuestion(state.candidatesByType[QUESTION_TYPES.BEFORE_AFTER], {
+    ...generateBeforeAfterQuestion(candidatePool, {
       recentPairKeys: state.recentPairKeys,
     }),
     isReview: false,
@@ -444,22 +557,64 @@ function pickTypeWithWeights(types) {
   return attempts;
 }
 
+function pickUnitPoolForType(questionType) {
+  const eligibleUnitPools = [];
+  for (const unitPool of state.poolsByUnitId.values()) {
+    if (unitPool.availableTypes.has(questionType)) {
+      eligibleUnitPools.push(unitPool);
+    }
+  }
+
+  if (eligibleUnitPools.length === 0) {
+    return null;
+  }
+
+  const index = Math.floor(Math.random() * eligibleUnitPools.length);
+  return eligibleUnitPools[index];
+}
+
 function generateFreshQuestion(enabledTypes) {
   if (enabledTypes.length === 0) {
-    throw new Error("Not enough events for this mode yet. Try a different mode.");
+    if (state.scope.mode === PRACTICE_MODE.ALL) {
+      throw new Error("No units have enough eligible events for this mode/settings. Try Include drafts.");
+    }
+    throw new Error("This unit has no eligible events for the current settings. Try Include drafts.");
   }
 
   const orderedTypes = ui.modeSelect.value === MODE.MIXED ? pickTypeWithWeights(enabledTypes) : enabledTypes;
 
-  for (const questionType of orderedTypes) {
-    try {
-      return generateByType(questionType);
-    } catch (error) {
-      console.warn(`[Timeline Trainer] ${getQuestionTypeLabel(questionType)} generation skipped:`, error.message);
+  if (state.scope.mode === PRACTICE_MODE.UNIT) {
+    const selectedUnitPool = state.poolsByUnitId.get(state.scope.unitId);
+    if (!selectedUnitPool) {
+      throw new Error("Selected unit could not be loaded.");
+    }
+
+    for (const questionType of orderedTypes) {
+      try {
+        return generateByTypeWithPool(questionType, selectedUnitPool.byType[questionType]);
+      } catch (error) {
+        console.warn(`[Timeline Trainer] ${getQuestionTypeLabel(questionType)} generation skipped:`, error.message);
+      }
     }
   }
 
-  throw new Error("Not enough events for this mode yet. Try a different mode.");
+  for (const questionType of orderedTypes) {
+    const pickedUnitPool = pickUnitPoolForType(questionType);
+    if (!pickedUnitPool) {
+      continue;
+    }
+
+    try {
+      return generateByTypeWithPool(questionType, pickedUnitPool.byType[questionType]);
+    } catch (error) {
+      console.warn(
+        `[Timeline Trainer] ${pickedUnitPool.unit.title} / ${getQuestionTypeLabel(questionType)} generation skipped:`,
+        error.message
+      );
+    }
+  }
+
+  throw new Error("No units have enough eligible events for this mode/settings. Try Include drafts.");
 }
 
 function generateAndRenderNextQuestion() {
@@ -467,7 +622,7 @@ function generateAndRenderNextQuestion() {
   state.questionIndex += 1;
 
   try {
-    const enabledTypes = getEnabledTypesForMode();
+    const enabledTypes = getEnabledTypesForScope();
     const reviewQuestion = pickReviewQuestion(enabledTypes);
     const question = reviewQuestion || generateFreshQuestion(enabledTypes);
     renderQuestion(question);
@@ -523,64 +678,82 @@ function handleAnswer(optionIndex) {
   setResultMessage(`${isCorrect ? "Correct" : "Incorrect"}. ${explanation}`, isCorrect ? "correct" : "incorrect");
 }
 
-function hasTripletCapacity(events) {
-  if (events.length < 3) {
-    return false;
+function populateUnitSelector() {
+  ui.unitSelect.innerHTML = "";
+  for (const unit of state.units) {
+    const option = document.createElement("option");
+    option.value = unit.id;
+    option.textContent = unit.title;
+    ui.unitSelect.append(option);
   }
-
-  const sortedYears = [...new Set(events.map((eventRecord) => eventRecord.time.year_start))].sort((left, right) => left - right);
-  for (let startIndex = 0; startIndex < sortedYears.length - 2; startIndex += 1) {
-    for (let endIndex = startIndex + 2; endIndex < sortedYears.length; endIndex += 1) {
-      if (sortedYears[endIndex] - sortedYears[startIndex] >= MIN_TRIPLET_YEAR_SPAN) {
-        return true;
-      }
-    }
-  }
-
-  return false;
 }
 
-function validateAndPrepareData(events, unit) {
-  const { resolvedEvents, missingIds } = resolveUnitEvents(events, unit);
-  if (missingIds.length > 0) {
-    console.warn("[Timeline Trainer] Missing unit event ids:", missingIds);
-    setError(`Some unit event IDs were not found in events.json: ${missingIds.join(", ")}`);
-    return false;
+function updateHeaderScopeLabel() {
+  if (state.scope.mode === PRACTICE_MODE.ALL) {
+    ui.unitTitle.textContent = `Scope: All units (${state.units.length})`;
+    return;
   }
 
-  state.resolvedEvents = resolvedEvents;
-  state.eventById = new Map(resolvedEvents.map((eventRecord) => [eventRecord.id, eventRecord]));
+  const unit = state.unitById.get(state.scope.unitId);
+  ui.unitTitle.textContent = unit ? `Unit: ${unit.title}` : "Unit: Not selected";
+}
 
-  const beforeAfterCandidates = filterQuestionTypeCandidates(resolvedEvents, QUESTION_TYPES.BEFORE_AFTER);
-  const earliestCandidates = filterQuestionTypeCandidates(
-    resolvedEvents,
-    QUESTION_TYPE_ALIASES[QUESTION_TYPES.EARLIEST_OF_3]
-  );
-  const latestCandidates = filterQuestionTypeCandidates(resolvedEvents, QUESTION_TYPE_ALIASES[QUESTION_TYPES.LATEST_OF_3]);
+function syncSettingsUI() {
+  ui.practiceModeSelect.value = state.scope.mode;
+  if (state.scope.unitId) {
+    ui.unitSelect.value = state.scope.unitId;
+  }
+  ui.qualitySelect.value = state.scope.minStatus;
+  ui.unitSelectWrap.hidden = state.scope.mode !== PRACTICE_MODE.UNIT;
+  updateHeaderScopeLabel();
+}
 
-  state.candidatesByType = {
-    [QUESTION_TYPES.BEFORE_AFTER]: beforeAfterCandidates,
-    [QUESTION_TYPES.EARLIEST_OF_3]: earliestCandidates,
-    [QUESTION_TYPES.LATEST_OF_3]: latestCandidates,
+function resetSessionState() {
+  state.currentQuestion = null;
+  state.totalAnswered = 0;
+  state.correctAnswered = 0;
+  state.reviewAnswered = 0;
+  state.reviewCorrect = 0;
+  state.answeredByType = {
+    [QUESTION_TYPES.BEFORE_AFTER]: 0,
+    [QUESTION_TYPES.EARLIEST_OF_3]: 0,
+    [QUESTION_TYPES.LATEST_OF_3]: 0,
   };
+  state.correctByType = {
+    [QUESTION_TYPES.BEFORE_AFTER]: 0,
+    [QUESTION_TYPES.EARLIEST_OF_3]: 0,
+    [QUESTION_TYPES.LATEST_OF_3]: 0,
+  };
+  state.hasAnswered = false;
+  state.selectedOptionIndex = null;
+  state.correctOptionIndex = null;
+  state.recentPairKeys = [];
+  state.recentTripletKeys = [];
+  state.wrongQueue = new Map();
+  state.questionIndex = 0;
+  updateStats();
+}
 
-  state.availableTypes = new Set();
-  if (beforeAfterCandidates.length >= 2) {
-    state.availableTypes.add(QUESTION_TYPES.BEFORE_AFTER);
-  }
-  if (hasTripletCapacity(earliestCandidates)) {
-    state.availableTypes.add(QUESTION_TYPES.EARLIEST_OF_3);
-  }
-  if (hasTripletCapacity(latestCandidates)) {
-    state.availableTypes.add(QUESTION_TYPES.LATEST_OF_3);
+function areScopesEqual(left, right) {
+  return (
+    left.mode === right.mode &&
+    left.unitId === right.unitId &&
+    left.minStatus === right.minStatus &&
+    JSON.stringify(left.enabledQuestionTypes) === JSON.stringify(right.enabledQuestionTypes)
+  );
+}
+
+function applyScope(nextScope) {
+  if (areScopesEqual(state.scope, nextScope)) {
+    return;
   }
 
-  if (state.availableTypes.size === 0) {
-    setError("No timeline question modes have enough events right now.");
-    return false;
-  }
-
-  return true;
+  state.scope = nextScope;
+  syncSettingsUI();
+  buildPoolsForScope();
+  refreshScopeAvailability();
+  resetSessionState();
+  generateAndRenderNextQuestion();
 }
 
 function bindEvents() {
@@ -605,8 +778,32 @@ function bindEvents() {
   });
 
   ui.modeSelect.addEventListener("change", () => {
-    state.currentQuestion = null;
-    generateAndRenderNextQuestion();
+    applyScope({
+      ...state.scope,
+      enabledQuestionTypes: getRequestedTypesFromQuestionMode(),
+    });
+  });
+
+  ui.practiceModeSelect.addEventListener("change", () => {
+    applyScope({
+      ...state.scope,
+      mode: ui.practiceModeSelect.value,
+      unitId: ui.practiceModeSelect.value === PRACTICE_MODE.UNIT ? ui.unitSelect.value : null,
+    });
+  });
+
+  ui.unitSelect.addEventListener("change", () => {
+    applyScope({
+      ...state.scope,
+      unitId: ui.unitSelect.value,
+    });
+  });
+
+  ui.qualitySelect.addEventListener("change", () => {
+    applyScope({
+      ...state.scope,
+      minStatus: ui.qualitySelect.value,
+    });
   });
 }
 
@@ -625,18 +822,27 @@ export async function startApp() {
 
   try {
     clearError();
-    ui.unitTitle.textContent = "Loading unit...";
+    ui.unitTitle.textContent = "Loading units...";
 
-    const { events, unit } = await loadTimelineSeedData();
-    state.unit = unit;
-    ui.unitTitle.textContent = `Unit: ${unit.title}`;
+    const { events, units } = await loadTimelineSeedData();
+    state.eventsById = new Map(events.map((eventRecord) => [eventRecord.id, eventRecord]));
+    state.units = units;
+    state.unitById = new Map(units.map((unit) => [unit.id, unit]));
 
-    const ready = validateAndPrepareData(events, unit);
-    if (!ready) {
-      return;
-    }
+    populateUnitSelector();
+    const defaultUnitId = units[0]?.id || null;
+    state.scope = {
+      ...state.scope,
+      mode: PRACTICE_MODE.UNIT,
+      unitId: defaultUnitId,
+      minStatus: "reviewed",
+      enabledQuestionTypes: getRequestedTypesFromQuestionMode(),
+    };
 
-    updateStats();
+    syncSettingsUI();
+    buildPoolsForScope();
+    refreshScopeAvailability();
+    resetSessionState();
     generateAndRenderNextQuestion();
   } catch (error) {
     ui.unitTitle.textContent = "Unit could not be loaded";

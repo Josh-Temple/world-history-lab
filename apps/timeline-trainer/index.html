@@ -13,8 +13,30 @@
         <h1>Timeline Trainer</h1>
         <div class="accent-dots" aria-hidden="true"><span></span><span></span><span></span></div>
         <p id="unit-title" class="muted">Loading unit...</p>
+      </header>
+
+      <section class="panel settings-panel">
+        <h2>Settings</h2>
+        <label for="practice-mode-select" class="mode-control">
+          Practice scope:
+          <select id="practice-mode-select">
+            <option value="unit">Unit</option>
+            <option value="all">All units</option>
+          </select>
+        </label>
+        <label for="unit-select" class="mode-control" id="unit-select-wrap">
+          Unit:
+          <select id="unit-select"></select>
+        </label>
+        <label for="quality-select" class="mode-control">
+          Minimum quality:
+          <select id="quality-select">
+            <option value="reviewed">Reviewed+</option>
+            <option value="draft">Include drafts</option>
+          </select>
+        </label>
         <label for="mode-select" class="mode-control">
-          Mode:
+          Question mode:
           <select id="mode-select">
             <option value="before_after">Before / After</option>
             <option value="earliest_of_3">Earliest of 3</option>
@@ -22,7 +44,7 @@
             <option value="mixed">Mixed</option>
           </select>
         </label>
-      </header>
+      </section>
 
       <section class="panel" id="question-panel">
         <h2 id="question-title">
