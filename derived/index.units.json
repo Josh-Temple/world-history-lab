@@ -1,0 +1,39 @@
+[
+  {
+    "id": "unit_french_revolution_napoleon",
+    "title": "French Revolution to Napoleon",
+    "event_ids": [
+      "ev_estates_general_1789",
+      "ev_tennis_court_oath_1789",
+      "ev_storming_bastille_1789",
+      "ev_declaration_rights_man_citizen_1789",
+      "ev_execution_louis_xvi_1793",
+      "ev_reign_of_terror_1793_1794",
+      "ev_thermidorian_reaction_1794",
+      "ev_napoleon_coup_18_brumaire_1799",
+      "ev_napoleon_emperor_1804",
+      "ev_congress_of_vienna_1814_1815"
+    ]
+  },
+  {
+    "id": "unit_industrial_revolution",
+    "title": "Industrial Revolution (Britain-centric, 1733–1856 seed)",
+    "event_ids": [
+      "ev_flying_shuttle_patent_1733",
+      "ev_bridgewater_canal_opens_1761",
+      "ev_spinning_jenny_invented_1764",
+      "ev_spinning_jenny_patented_1770",
+      "ev_water_frame_patent_1769",
+      "ev_watt_condenser_patent_1769",
+      "ev_cromford_mill_uses_water_frame_1771",
+      "ev_spinning_mule_invented_1779",
+      "ev_power_loom_patented_1785",
+      "ev_cotton_gin_invented_1793",
+      "ev_penydarren_locomotive_run_1804",
+      "ev_rainhill_trials_rocket_1829",
+      "ev_factory_act_1833",
+      "ev_great_exhibition_opens_1851",
+      "ev_bessemer_process_patent_1856"
+    ]
+  }
+]

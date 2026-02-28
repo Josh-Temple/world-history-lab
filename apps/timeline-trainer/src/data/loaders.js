@@ -17,7 +17,7 @@ function appUrl(relativePath) {
   return new URL(relativePath, window.location.href).toString();
 }
 
-const UNIT_FILES = [
+const FALLBACK_UNIT_FILES = [
   "../../data/units/french-revolution-napoleon.json",
   "../../data/units/industrial-revolution.json",
 ];
@@ -46,13 +46,40 @@ function assertUnitShape(unit, label = "unit") {
   console.debug(`[Timeline Trainer] Parsed unit id=${unit.id} title=${unit.title} event_ids=${unit.event_ids.length}`);
 }
 
+async function resolveUnitFiles() {
+  const registryPath = "../../data/units/index.json";
+  const registryUrl = appUrl(registryPath);
+
+  try {
+    const registry = await fetchJson(registryUrl, "units/index.json");
+    if (!registry || !Array.isArray(registry.units)) {
+      throw new Error("units/index.json must include { units: [] }");
+    }
+
+    const resolved = registry.units
+      .map((entry) => (entry && typeof entry.path === "string" ? entry.path : null))
+      .filter(Boolean)
+      .map((path) => `../../${path.replace(/^\.?\/?/, "")}`);
+
+    if (resolved.length === 0) {
+      throw new Error("units/index.json has no valid unit paths");
+    }
+
+    return resolved;
+  } catch (error) {
+    console.warn("[Timeline Trainer] Failed to load unit registry. Using fallback unit file list.", error?.message || error);
+    return FALLBACK_UNIT_FILES;
+  }
+}
+
 export async function loadTimelineSeedData() {
   const eventsUrl = appUrl("../../data/events.json");
   const events = await fetchJson(eventsUrl, "events.json");
   assertEventShape(events);
 
+  const unitFiles = await resolveUnitFiles();
   const unitResults = await Promise.allSettled(
-    UNIT_FILES.map(async (unitFile) => {
+    unitFiles.map(async (unitFile) => {
       const unitUrl = appUrl(unitFile);
       const unit = await fetchJson(unitUrl, unitFile.split("/").pop() || unitFile);
       assertUnitShape(unit, unitFile);

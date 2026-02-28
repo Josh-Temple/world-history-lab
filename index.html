@@ -46,6 +46,7 @@
           <ul class="data-links">
             <li><a href="./data/events.json"><code>/data/events.json</code></a></li>
             <li><a href="./data/people.json"><code>/data/people.json</code></a></li>
+            <li><a href="./data/units/index.json"><code>/data/units/index.json</code></a></li>
             <li>
               <a href="./data/units/french-revolution-napoleon.json"
                 ><code>/data/units/french-revolution-napoleon.json</code></a
@@ -68,7 +69,7 @@
     </main>
 
     <script type="module">
-      const unitPaths = [
+      const fallbackUnitPaths = [
         "./data/units/french-revolution-napoleon.json",
         "./data/units/industrial-revolution.json",
       ];
@@ -87,16 +88,42 @@
         };
       }
 
-      function createUnitsCountItem({ label, elementId, paths }) {
+      function isTopLevelObject(json) {
+        return json !== null && typeof json === "object" && !Array.isArray(json);
+      }
+
+      async function resolveUnitPaths() {
+        try {
+          const registry = await fetchJson("./data/units/index.json");
+          if (!registry || !Array.isArray(registry.units)) {
+            throw new Error("units/index.json must include { units: [] }");
+          }
+
+          const paths = registry.units
+            .map((entry) => (entry && typeof entry.path === "string" ? entry.path : null))
+            .filter(Boolean)
+            .map((path) => `./${path.replace(/^\.?\/?/, "")}`);
+
+          if (paths.length === 0) {
+            throw new Error("units/index.json has no valid unit paths");
+          }
+
+          return paths;
+        } catch (error) {
+          console.warn("[Top page counts] Falling back to hardcoded unit list", error);
+          return fallbackUnitPaths;
+        }
+      }
+
+      function createUnitsCountItem({ label, elementId }) {
         return {
           label,
           element: document.getElementById(elementId),
-          paths,
           async fetchCount() {
+            const paths = await resolveUnitPaths();
             const results = await Promise.all(paths.map((path) => fetchJson(path)));
             results.forEach((json, index) => {
-              const isObject = json !== null && typeof json === "object" && !Array.isArray(json);
-              if (!isObject) {
+              if (!isTopLevelObject(json)) {
                 throw new Error(`Expected ${paths[index]} to be an object`);
               }
             });
@@ -120,7 +147,6 @@
         createUnitsCountItem({
           label: "units",
           elementId: "count-units",
-          paths: unitPaths,
         }),
       ];
 
