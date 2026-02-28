@@ -191,7 +191,28 @@ When adding/editing data:
 4. Update unit files under `/data/units/` and ensure `event_ids` reference existing event IDs.
 5. Re-open `/` and `/apps/timeline-trainer/` to verify counts and app loading.
 
-(Recommended future enhancement: add `/data/units/index.json` for multi-unit counting.)
+`/data/units/index.json` is now used as the primary unit registry for both app loading and derivation.
+
+## Derived artifacts (build-time)
+
+Canonical data under `/data` remains human-authored and backward-compatible (`time.year_start` still works for MVP).
+A lightweight Node script generates runtime-friendly numeric indexes under `/derived`.
+
+Regenerate derived artifacts with:
+
+```bash
+node scripts/derive.mjs
+```
+
+Generated files:
+
+- `derived/events.normalized.json`
+- `derived/index.events_by_year.json`
+- `derived/index.events_sorted.json`
+- `derived/index.units.json`
+- `derived/index.unit_event_pool.json`
+
+Unit files are loaded from `data/units/index.json` (with fallback defaults inside the script).
 
 ## License
 

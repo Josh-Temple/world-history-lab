@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ev_bessemer_process_patent_1856",
+    "label": "Bessemer process patented (mass steel production)",
+    "time": {
+      "start": "1856",
+      "end": "1856",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18560101,
+      "sort_end": 18561231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1856
+    }
+  },
+  {
+    "id": "ev_bridgewater_canal_opens_1761",
+    "label": "Bridgewater Canal opens (coal transport to Manchester)",
+    "time": {
+      "start": "1761",
+      "end": "1761",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17610101,
+      "sort_end": 17611231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1761
+    }
+  },
+  {
+    "id": "ev_congress_of_vienna_1814_1815",
+    "label": "Congress of Vienna",
+    "time": {
+      "start": "1814",
+      "end": "1814",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18140101,
+      "sort_end": 18141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1814
+    }
+  },
+  {
+    "id": "ev_cotton_gin_invented_1793",
+    "label": "Cotton gin invented (Eli Whitney)",
+    "time": {
+      "start": "1793",
+      "end": "1793",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17930101,
+      "sort_end": 17931231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1793
+    }
+  },
+  {
+    "id": "ev_cromford_mill_uses_water_frame_1771",
+    "label": "Cromford Mill uses water frame (early factory system)",
+    "time": {
+      "start": "1771",
+      "end": "1771",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17710101,
+      "sort_end": 17711231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1771
+    }
+  },
+  {
+    "id": "ev_declaration_rights_man_citizen_1789",
+    "label": "Declaration of the Rights of Man and of the Citizen",
+    "time": {
+      "start": "1789",
+      "end": "1789",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17890101,
+      "sort_end": 17891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1789
+    }
+  },
+  {
+    "id": "ev_estates_general_1789",
+    "label": "Convening of the Estates-General",
+    "time": {
+      "start": "1789",
+      "end": "1789",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17890101,
+      "sort_end": 17891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1789
+    }
+  },
+  {
+    "id": "ev_execution_louis_xvi_1793",
+    "label": "Execution of Louis XVI",
+    "time": {
+      "start": "1793",
+      "end": "1793",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17930101,
+      "sort_end": 17931231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1793
+    }
+  },
+  {
+    "id": "ev_factory_act_1833",
+    "label": "Factory Act (UK) strengthens child labor regulation and enforcement",
+    "time": {
+      "start": "1833",
+      "end": "1833",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18330101,
+      "sort_end": 18331231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1833
+    }
+  },
+  {
+    "id": "ev_flying_shuttle_patent_1733",
+    "label": "Flying shuttle patented (John Kay)",
+    "time": {
+      "start": "1733",
+      "end": "1733",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17330101,
+      "sort_end": 17331231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1733
+    }
+  },
+  {
+    "id": "ev_great_exhibition_opens_1851",
+    "label": "Great Exhibition opens in London (Crystal Palace)",
+    "time": {
+      "start": "1851",
+      "end": "1851",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18510101,
+      "sort_end": 18511231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1851
+    }
+  },
+  {
+    "id": "ev_napoleon_coup_18_brumaire_1799",
+    "label": "Coup of 18 Brumaire",
+    "time": {
+      "start": "1799",
+      "end": "1799",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17990101,
+      "sort_end": 17991231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1799
+    }
+  },
+  {
+    "id": "ev_napoleon_emperor_1804",
+    "label": "Napoleon Crowned Emperor",
+    "time": {
+      "start": "1804",
+      "end": "1804",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18040101,
+      "sort_end": 18041231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1804
+    }
+  },
+  {
+    "id": "ev_penydarren_locomotive_run_1804",
+    "label": "Penydarren steam locomotive run (Trevithick)",
+    "time": {
+      "start": "1804",
+      "end": "1804",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18040101,
+      "sort_end": 18041231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1804
+    }
+  },
+  {
+    "id": "ev_power_loom_patented_1785",
+    "label": "Power loom patented (Edmund Cartwright)",
+    "time": {
+      "start": "1785",
+      "end": "1785",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17850101,
+      "sort_end": 17851231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1785
+    }
+  },
+  {
+    "id": "ev_rainhill_trials_rocket_1829",
+    "label": "Rainhill Trials won by Stephenson’s Rocket",
+    "time": {
+      "start": "1829",
+      "end": "1829",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18290101,
+      "sort_end": 18291231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1829
+    }
+  },
+  {
+    "id": "ev_reign_of_terror_1793_1794",
+    "label": "Reign of Terror",
+    "time": {
+      "start": "1793",
+      "end": "1793",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17930101,
+      "sort_end": 17931231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1793
+    }
+  },
+  {
+    "id": "ev_spinning_jenny_invented_1764",
+    "label": "Spinning jenny invented (James Hargreaves)",
+    "time": {
+      "start": "1764",
+      "end": "1764",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17640101,
+      "sort_end": 17641231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1764
+    }
+  },
+  {
+    "id": "ev_spinning_jenny_patented_1770",
+    "label": "Spinning jenny patented (James Hargreaves)",
+    "time": {
+      "start": "1770",
+      "end": "1770",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17700101,
+      "sort_end": 17701231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1770
+    }
+  },
+  {
+    "id": "ev_spinning_mule_invented_1779",
+    "label": "Spinning mule invented (Samuel Crompton)",
+    "time": {
+      "start": "1779",
+      "end": "1779",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17790101,
+      "sort_end": 17791231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1779
+    }
+  },
+  {
+    "id": "ev_storming_bastille_1789",
+    "label": "Storming of the Bastille",
+    "time": {
+      "start": "1789",
+      "end": "1789",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17890101,
+      "sort_end": 17891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1789
+    }
+  },
+  {
+    "id": "ev_tennis_court_oath_1789",
+    "label": "Tennis Court Oath",
+    "time": {
+      "start": "1789",
+      "end": "1789",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17890101,
+      "sort_end": 17891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1789
+    }
+  },
+  {
+    "id": "ev_thermidorian_reaction_1794",
+    "label": "Thermidorian Reaction",
+    "time": {
+      "start": "1794",
+      "end": "1794",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17940101,
+      "sort_end": 17941231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1794
+    }
+  },
+  {
+    "id": "ev_water_frame_patent_1769",
+    "label": "Water frame patented (Richard Arkwright)",
+    "time": {
+      "start": "1769",
+      "end": "1769",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17690101,
+      "sort_end": 17691231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1769
+    }
+  },
+  {
+    "id": "ev_watt_condenser_patent_1769",
+    "label": "Watt’s separate condenser patented (steam engine efficiency)",
+    "time": {
+      "start": "1769",
+      "end": "1769",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17690101,
+      "sort_end": 17691231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1769
+    }
+  }
+]

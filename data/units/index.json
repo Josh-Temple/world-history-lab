@@ -1,0 +1,12 @@
+{
+  "units": [
+    {
+      "id": "unit_french_revolution_napoleon",
+      "path": "data/units/french-revolution-napoleon.json"
+    },
+    {
+      "id": "unit_industrial_revolution",
+      "path": "data/units/industrial-revolution.json"
+    }
+  ]
+}
