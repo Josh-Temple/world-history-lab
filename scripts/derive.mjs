@@ -7,6 +7,7 @@ const DERIVED_DIR = path.join(ROOT, "derived");
 const FALLBACK_UNIT_FILES = [
   { id: "unit_french_revolution_napoleon", path: "data/units/french-revolution-napoleon.json" },
   { id: "unit_industrial_revolution", path: "data/units/industrial-revolution.json" },
+  { id: "unit_meiji_restoration", path: "data/units/meiji-restoration.json" },
 ];
 
 function toJson(value) {
@@ -317,7 +318,7 @@ function buildEventsSorted(normalizedEvents) {
     .map((event) => event.id);
 }
 
-function buildUnitEventPool(units, canonicalEventLookup, normalizedEventLookup) {
+function buildUnitEventPool(units, canonicalEventLookup, normalizedEventLookup, enabledQuestionTypeSet) {
   const pool = {};
 
   for (const unit of units) {
@@ -336,6 +337,10 @@ function buildUnitEventPool(units, canonicalEventLookup, normalizedEventLookup) 
 
       const questionTypes = Array.isArray(event.question_types) ? event.question_types : [];
       for (const type of questionTypes) {
+        if (!enabledQuestionTypeSet.has(type)) {
+          continue;
+        }
+
         if (!eligibleIds[type]) {
           eligibleIds[type] = [];
         }
@@ -402,6 +407,13 @@ async function loadUnits() {
 }
 
 async function main() {
+  const metadata = await readJson("data/metadata.json");
+  const enabledQuestionTypes = metadata?.app_support?.enabled_question_types;
+  if (!Array.isArray(enabledQuestionTypes)) {
+    throw new Error("data/metadata.json must contain app_support.enabled_question_types as an array");
+  }
+  const enabledQuestionTypeSet = new Set(enabledQuestionTypes);
+
   const events = await readJson("data/events.json");
   assertArray(events, "data/events.json");
 
@@ -438,7 +450,7 @@ async function main() {
   const unitsIndex = units
     .map((unit) => ({ id: unit.id, title: unit.title, event_ids: unit.event_ids.slice() }))
     .sort((a, b) => a.id.localeCompare(b.id));
-  const unitEventPool = buildUnitEventPool(units, eventLookup, normalizedEventLookup);
+  const unitEventPool = buildUnitEventPool(units, eventLookup, normalizedEventLookup, enabledQuestionTypeSet);
 
   await mkdir(DERIVED_DIR, { recursive: true });
   await writeFile(path.join(DERIVED_DIR, "events.normalized.json"), toJson(normalizedEvents), "utf8");
