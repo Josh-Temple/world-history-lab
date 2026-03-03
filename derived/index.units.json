@@ -17,7 +17,7 @@
   },
   {
     "id": "unit_industrial_revolution",
-    "title": "Industrial Revolution (Britain-centric, 1733–1856 seed)",
+    "title": "産業革命",
     "event_ids": [
       "ev_flying_shuttle_patent_1733",
       "ev_bridgewater_canal_opens_1761",
@@ -34,6 +34,24 @@
       "ev_factory_act_1833",
       "ev_great_exhibition_opens_1851",
       "ev_bessemer_process_patent_1856"
+    ]
+  },
+  {
+    "id": "unit_meiji_restoration",
+    "title": "明治維新と日本の近代化",
+    "event_ids": [
+      "ev_meiji_perry_1853",
+      "ev_meiji_kanagawa_treaty_1854",
+      "ev_meiji_boshin_war_1868",
+      "ev_meiji_charter_oath_1868",
+      "ev_meiji_abolish_han_1871",
+      "ev_meiji_conscription_1873",
+      "ev_meiji_constitution_1889",
+      "ev_meiji_diet_1890",
+      "ev_meiji_sinojapanese_war_1894",
+      "ev_meiji_russojapanese_war_1905",
+      "ev_meiji_annex_korea_1910",
+      "ev_meiji_emperor_death_1912"
     ]
   }
 ]

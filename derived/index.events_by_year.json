@@ -57,7 +57,41 @@
   "1851": [
     "ev_great_exhibition_opens_1851"
   ],
+  "1853": [
+    "ev_meiji_perry_1853"
+  ],
+  "1854": [
+    "ev_meiji_kanagawa_treaty_1854"
+  ],
   "1856": [
     "ev_bessemer_process_patent_1856"
+  ],
+  "1868": [
+    "ev_meiji_boshin_war_1868",
+    "ev_meiji_charter_oath_1868"
+  ],
+  "1871": [
+    "ev_meiji_abolish_han_1871"
+  ],
+  "1873": [
+    "ev_meiji_conscription_1873"
+  ],
+  "1889": [
+    "ev_meiji_constitution_1889"
+  ],
+  "1890": [
+    "ev_meiji_diet_1890"
+  ],
+  "1894": [
+    "ev_meiji_sinojapanese_war_1894"
+  ],
+  "1905": [
+    "ev_meiji_russojapanese_war_1905"
+  ],
+  "1910": [
+    "ev_meiji_annex_korea_1910"
+  ],
+  "1912": [
+    "ev_meiji_emperor_death_1912"
   ]
 }

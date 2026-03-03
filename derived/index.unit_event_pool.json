@@ -80,5 +80,57 @@
         "ev_watt_condenser_patent_1769"
       ]
     }
+  },
+  "unit_meiji_restoration": {
+    "eligible_ids": {
+      "cause_and_effect": [
+        "ev_meiji_conscription_1873",
+        "ev_meiji_perry_1853",
+        "ev_meiji_sinojapanese_war_1894"
+      ],
+      "significance": [
+        "ev_meiji_charter_oath_1868",
+        "ev_meiji_diet_1890",
+        "ev_meiji_emperor_death_1912",
+        "ev_meiji_kanagawa_treaty_1854",
+        "ev_meiji_russojapanese_war_1905"
+      ],
+      "timeline_before_after": [
+        "ev_meiji_abolish_han_1871",
+        "ev_meiji_annex_korea_1910",
+        "ev_meiji_boshin_war_1868",
+        "ev_meiji_charter_oath_1868",
+        "ev_meiji_conscription_1873",
+        "ev_meiji_constitution_1889",
+        "ev_meiji_diet_1890",
+        "ev_meiji_emperor_death_1912",
+        "ev_meiji_kanagawa_treaty_1854",
+        "ev_meiji_perry_1853",
+        "ev_meiji_russojapanese_war_1905",
+        "ev_meiji_sinojapanese_war_1894"
+      ],
+      "timeline_ordering": [
+        "ev_meiji_abolish_han_1871",
+        "ev_meiji_annex_korea_1910",
+        "ev_meiji_boshin_war_1868",
+        "ev_meiji_charter_oath_1868",
+        "ev_meiji_conscription_1873",
+        "ev_meiji_constitution_1889",
+        "ev_meiji_diet_1890",
+        "ev_meiji_emperor_death_1912",
+        "ev_meiji_kanagawa_treaty_1854",
+        "ev_meiji_perry_1853",
+        "ev_meiji_russojapanese_war_1905",
+        "ev_meiji_sinojapanese_war_1894"
+      ],
+      "what_happened": [
+        "ev_meiji_abolish_han_1871",
+        "ev_meiji_annex_korea_1910",
+        "ev_meiji_boshin_war_1868",
+        "ev_meiji_constitution_1889",
+        "ev_meiji_kanagawa_treaty_1854",
+        "ev_meiji_perry_1853"
+      ]
+    }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "id": "unit_meiji_restoration",
+  "title": "明治維新と日本の近代化",
+  "language": "ja",
+  "description": "1853年のペリー来航から1912年の明治天皇崩御まで、日本が近代国家へと変貌した過程を学ぶ。",
+  "recommended_level": "middle",
+  "regions": [
+    "日本",
+    "東アジア"
+  ],
+  "tags": [
+    "meiji",
+    "modernization",
+    "east_asia"
+  ],
+  "learning_goals": [
+    "日本の近代化を構成する主要事件を時系列で説明できる",
+    "国内改革と対外戦争の相互作用を分析できる"
+  ],
+  "event_ids": [
+    "ev_meiji_perry_1853",
+    "ev_meiji_kanagawa_treaty_1854",
+    "ev_meiji_boshin_war_1868",
+    "ev_meiji_charter_oath_1868",
+    "ev_meiji_abolish_han_1871",
+    "ev_meiji_conscription_1873",
+    "ev_meiji_constitution_1889",
+    "ev_meiji_diet_1890",
+    "ev_meiji_sinojapanese_war_1894",
+    "ev_meiji_russojapanese_war_1905",
+    "ev_meiji_annex_korea_1910",
+    "ev_meiji_emperor_death_1912"
+  ],
+  "person_ids": [],
+  "app_profiles": [
+    "basic"
+  ],
+  "status": "draft",
+  "updated_at": "2026-03-03"
+}

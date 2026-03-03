@@ -7,6 +7,10 @@
     {
       "id": "unit_industrial_revolution",
       "path": "data/units/industrial-revolution.json"
+    },
+    {
+      "id": "unit_meiji_restoration",
+      "path": "data/units/meiji-restoration.json"
     }
   ]
 }
