@@ -1,6 +1,6 @@
 {
   "id": "unit_industrial_revolution",
-  "title": "Industrial Revolution (Britain-centric, 1733–1856 seed)",
+  "title": "産業革命",
   "event_ids": [
     "ev_flying_shuttle_patent_1733",
     "ev_bridgewater_canal_opens_1761",
@@ -17,5 +17,30 @@
     "ev_factory_act_1833",
     "ev_great_exhibition_opens_1851",
     "ev_bessemer_process_patent_1856"
-  ]
+  ],
+  "language": "ja",
+  "description": "18世紀後半から19世紀半ばにかけて進行した技術革新と社会変革を学ぶ。紡績機、蒸気機関、鉄道、工場法などを通じて近代工業化の流れを捉える。",
+  "recommended_level": "middle",
+  "regions": [
+    "ヨーロッパ",
+    "北米"
+  ],
+  "tags": [
+    "industrial_revolution",
+    "technology"
+  ],
+  "learning_goals": [
+    "技術革新が労働・都市化・生活に与えた影響を説明できる",
+    "主要な発明とその担い手を時系列で関連付けられる"
+  ],
+  "person_ids": [
+    "pe_james_hargreaves",
+    "pe_richard_arkwright",
+    "pe_eli_whitney"
+  ],
+  "app_profiles": [
+    "basic"
+  ],
+  "status": "draft",
+  "updated_at": "2026-03-03"
 }

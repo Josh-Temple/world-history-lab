@@ -1,5 +1,285 @@
 [
   {
+    "id": "ev_flying_shuttle_patent_1733",
+    "label": "Flying shuttle patented (John Kay)",
+    "time": {
+      "year_start": 1733
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "weaving",
+      "invention"
+    ],
+    "summary_short": "John Kay’s flying shuttle sped up weaving and increased demand for spun yarn, helping trigger later spinning innovations.",
+    "source_refs": [
+      {
+        "title": "Flying shuttle (patent year 1733)",
+        "url": "https://en.wikipedia.org/wiki/Flying_shuttle"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_bridgewater_canal_opens_1761",
+    "label": "Bridgewater Canal opens (coal transport to Manchester)",
+    "time": {
+      "year_start": 1761
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "infrastructure",
+      "canals",
+      "coal"
+    ],
+    "summary_short": "The Bridgewater Canal opened to move coal efficiently, cutting transport costs and accelerating industrial growth.",
+    "source_refs": [
+      {
+        "title": "Bridgewater Canal (opened 1761)",
+        "url": "https://en.wikipedia.org/wiki/Bridgewater_Canal"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_spinning_jenny_invented_1764",
+    "label": "Spinning jenny invented (James Hargreaves)",
+    "time": {
+      "year_start": 1764
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "spinning",
+      "invention"
+    ],
+    "summary_short": "A multi-spindle spinning machine that greatly increased yarn output and helped propel mechanized textile production.",
+    "source_refs": [
+      {
+        "title": "Spinning jenny (invented 1764–1765)",
+        "url": "https://en.wikipedia.org/wiki/Spinning_jenny"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_water_frame_patent_1769",
+    "label": "Water frame patented (Richard Arkwright)",
+    "time": {
+      "year_start": 1769
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "spinning",
+      "patent"
+    ],
+    "summary_short": "Arkwright’s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
+    "source_refs": [
+      {
+        "title": "Water frame (patented 1769)",
+        "url": "https://en.wikipedia.org/wiki/Water_frame"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_watt_condenser_patent_1769",
+    "label": "Watt’s separate condenser patented (steam engine efficiency)",
+    "time": {
+      "year_start": 1769
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "steam",
+      "energy",
+      "patent"
+    ],
+    "summary_short": "James Watt’s separate condenser greatly improved steam engine efficiency, enabling broader industrial use beyond mines.",
+    "source_refs": [
+      {
+        "title": "Watt steam engine (1769 patent context)",
+        "url": "https://en.wikipedia.org/wiki/Watt_steam_engine"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_spinning_jenny_patented_1770",
+    "label": "Spinning jenny patented (James Hargreaves)",
+    "time": {
+      "year_start": 1770
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "spinning",
+      "patent"
+    ],
+    "summary_short": "Hargreaves secured a patent for the spinning jenny, helping spread multi-spindle spinning as textile production mechanized.",
+    "source_refs": [
+      {
+        "title": "James Hargreaves (spinning jenny patented 1770)",
+        "url": "https://www.britannica.com/biography/James-Hargreaves"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_cromford_mill_uses_water_frame_1771",
+    "label": "Cromford Mill uses water frame (early factory system)",
+    "time": {
+      "year_start": 1771
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "factories",
+      "textiles",
+      "water_power"
+    ],
+    "summary_short": "Arkwright’s water-powered spinning at Cromford is often cited as a key step toward the factory system in textiles.",
+    "source_refs": [
+      {
+        "title": "Arkwright’s water-frame at Cromford (1771)",
+        "url": "https://www.nationalarchives.gov.uk/education/resources/georgian-britain-age-modernity/arkwrights-spinning-frame/"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_spinning_mule_invented_1779",
+    "label": "Spinning mule invented (Samuel Crompton)",
+    "time": {
+      "year_start": 1779
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "spinning",
+      "invention"
+    ],
+    "summary_short": "Crompton’s spinning mule combined features of earlier spinning machines and enabled large-scale production of high-quality yarn.",
+    "source_refs": [
+      {
+        "title": "Crompton’s spinning mule (invented 1779)",
+        "url": "https://ageofrevolution.org/200-object/cromptons-spinning-mule/"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_power_loom_patented_1785",
+    "label": "Power loom patented (Edmund Cartwright)",
+    "time": {
+      "year_start": 1785
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "textiles",
+      "weaving",
+      "mechanization"
+    ],
+    "summary_short": "Cartwright’s power loom mechanized weaving, helping shift textile production further into factories.",
+    "source_refs": [
+      {
+        "title": "Patenting of the steam-powered loom (1785)",
+        "url": "https://www.ebsco.com/research-starters/history/patenting-steam-powered-loom"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_declaration_rights_man_citizen_1789",
+    "label": "Declaration of the Rights of Man and of the Citizen",
+    "alt_labels": [
+      "Declaration of the Rights of Man and Citizen"
+    ],
+    "time": {
+      "year_start": 1789,
+      "year_end": null,
+      "century_label": "18th century CE",
+      "precision": "year",
+      "display_text": "1789"
+    },
+    "regions": [
+      "reg_france"
+    ],
+    "places": [],
+    "tags": [
+      "revolution",
+      "rights",
+      "political-thought"
+    ],
+    "summary_short": "A foundational revolutionary declaration asserting rights, citizenship, and principles of political legitimacy that shaped later constitutional politics.",
+    "related_people": [],
+    "related_events": [
+      "ev_storming_bastille_1789",
+      "ev_execution_louis_xvi_1793"
+    ],
+    "causes": [
+      "ev_storming_bastille_1789",
+      {
+        "label": "Enlightenment political ideas",
+        "category": "intellectual",
+        "note": null
+      }
+    ],
+    "effects": [
+      {
+        "label": "provided a rights-based framework for revolutionary politics",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "timeline_century",
+      "causality_categorize_causes",
+      "causality_match_effects"
+    ],
+    "difficulty_hint": "beginner",
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_unit_seed_004",
+        "url": "https://example.com/internal/manual_unit_seed_004",
+        "retrieved_at": "2026-02-25T00:00:00Z",
+        "notes": "MVP curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "approved"
+  },
+  {
     "id": "ev_estates_general_1789",
     "label": "Convening of the Estates-General",
     "alt_labels": [
@@ -77,68 +357,6 @@
     "status": "approved"
   },
   {
-    "id": "ev_tennis_court_oath_1789",
-    "label": "Tennis Court Oath",
-    "alt_labels": [],
-    "time": {
-      "year_start": 1789,
-      "year_end": null,
-      "century_label": "18th century CE",
-      "precision": "year",
-      "display_text": "1789"
-    },
-    "regions": [
-      "reg_france"
-    ],
-    "places": [],
-    "tags": [
-      "revolution",
-      "constitution",
-      "politics"
-    ],
-    "summary_short": "Representatives of the Third Estate pledged not to separate until France had a constitution, marking a decisive break with royal authority.",
-    "related_people": [],
-    "related_events": [
-      "ev_estates_general_1789",
-      "ev_storming_bastille_1789"
-    ],
-    "causes": [
-      "ev_estates_general_1789",
-      {
-        "label": "dispute over representation and legitimacy",
-        "category": "political",
-        "note": null
-      }
-    ],
-    "effects": [
-      "ev_storming_bastille_1789",
-      {
-        "label": "strengthened revolutionary claims to sovereignty",
-        "category": "political",
-        "note": null
-      }
-    ],
-    "confusions": [],
-    "question_types": [
-      "timeline_before_after",
-      "timeline_ordering",
-      "timeline_century",
-      "causality_chain"
-    ],
-    "difficulty_hint": "beginner",
-    "source_refs": [
-      {
-        "source_type": "self",
-        "source_id": "manual_unit_seed_002",
-        "url": "https://example.com/internal/manual_unit_seed_002",
-        "retrieved_at": "2026-02-25T00:00:00Z",
-        "notes": "MVP curated learning summary"
-      }
-    ],
-    "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
-  },
-  {
     "id": "ev_storming_bastille_1789",
     "label": "Storming of the Bastille",
     "alt_labels": [],
@@ -201,11 +419,9 @@
     "status": "approved"
   },
   {
-    "id": "ev_declaration_rights_man_citizen_1789",
-    "label": "Declaration of the Rights of Man and of the Citizen",
-    "alt_labels": [
-      "Declaration of the Rights of Man and Citizen"
-    ],
+    "id": "ev_tennis_court_oath_1789",
+    "label": "Tennis Court Oath",
+    "alt_labels": [],
     "time": {
       "year_start": 1789,
       "year_end": null,
@@ -219,26 +435,27 @@
     "places": [],
     "tags": [
       "revolution",
-      "rights",
-      "political-thought"
+      "constitution",
+      "politics"
     ],
-    "summary_short": "A foundational revolutionary declaration asserting rights, citizenship, and principles of political legitimacy that shaped later constitutional politics.",
+    "summary_short": "Representatives of the Third Estate pledged not to separate until France had a constitution, marking a decisive break with royal authority.",
     "related_people": [],
     "related_events": [
-      "ev_storming_bastille_1789",
-      "ev_execution_louis_xvi_1793"
+      "ev_estates_general_1789",
+      "ev_storming_bastille_1789"
     ],
     "causes": [
-      "ev_storming_bastille_1789",
+      "ev_estates_general_1789",
       {
-        "label": "Enlightenment political ideas",
-        "category": "intellectual",
+        "label": "dispute over representation and legitimacy",
+        "category": "political",
         "note": null
       }
     ],
     "effects": [
+      "ev_storming_bastille_1789",
       {
-        "label": "provided a rights-based framework for revolutionary politics",
+        "label": "strengthened revolutionary claims to sovereignty",
         "category": "political",
         "note": null
       }
@@ -248,21 +465,44 @@
       "timeline_before_after",
       "timeline_ordering",
       "timeline_century",
-      "causality_categorize_causes",
-      "causality_match_effects"
+      "causality_chain"
     ],
     "difficulty_hint": "beginner",
     "source_refs": [
       {
         "source_type": "self",
-        "source_id": "manual_unit_seed_004",
-        "url": "https://example.com/internal/manual_unit_seed_004",
+        "source_id": "manual_unit_seed_002",
+        "url": "https://example.com/internal/manual_unit_seed_002",
         "retrieved_at": "2026-02-25T00:00:00Z",
         "notes": "MVP curated learning summary"
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "approved"
+  },
+  {
+    "id": "ev_cotton_gin_invented_1793",
+    "label": "Cotton gin invented (Eli Whitney)",
+    "time": {
+      "year_start": 1793
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "cotton",
+      "invention",
+      "supply_chain"
+    ],
+    "summary_short": "Whitney’s cotton gin sped seed removal, expanding raw cotton supply feeding textile mills and intensifying the global cotton economy.",
+    "source_refs": [
+      {
+        "title": "Cotton gin (invented 1793)",
+        "url": "https://www.britannica.com/technology/cotton-gin"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
   },
   {
     "id": "ev_execution_louis_xvi_1793",
@@ -604,6 +844,30 @@
     "status": "approved"
   },
   {
+    "id": "ev_penydarren_locomotive_run_1804",
+    "label": "Penydarren steam locomotive run (Trevithick)",
+    "time": {
+      "year_start": 1804
+    },
+    "question_types": [
+      "timeline_before_after"
+    ],
+    "tags": [
+      "railways",
+      "steam",
+      "transport"
+    ],
+    "summary_short": "A landmark early rail journey powered by a steam locomotive, demonstrating the feasibility of steam traction on rails.",
+    "source_refs": [
+      {
+        "title": "Penydarren journey (21 Feb 1804)",
+        "url": "https://museum.wales/articles/1012/Richard-Trevithickrsquos-steam-locomotive/"
+      }
+    ],
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
     "id": "ev_congress_of_vienna_1814_1815",
     "label": "Congress of Vienna",
     "alt_labels": [],
@@ -670,270 +934,6 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "approved"
-  },
-  {
-    "id": "ev_flying_shuttle_patent_1733",
-    "label": "Flying shuttle patented (John Kay)",
-    "time": {
-      "year_start": 1733
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "textiles",
-      "weaving",
-      "invention"
-    ],
-    "summary_short": "John Kay’s flying shuttle sped up weaving and increased demand for spun yarn, helping trigger later spinning innovations.",
-    "source_refs": [
-      {
-        "title": "Flying shuttle (patent year 1733)",
-        "url": "https://en.wikipedia.org/wiki/Flying_shuttle"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_bridgewater_canal_opens_1761",
-    "label": "Bridgewater Canal opens (coal transport to Manchester)",
-    "time": {
-      "year_start": 1761
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "infrastructure",
-      "canals",
-      "coal"
-    ],
-    "summary_short": "The Bridgewater Canal opened to move coal efficiently, cutting transport costs and accelerating industrial growth.",
-    "source_refs": [
-      {
-        "title": "Bridgewater Canal (opened 1761)",
-        "url": "https://en.wikipedia.org/wiki/Bridgewater_Canal"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_spinning_jenny_invented_1764",
-    "label": "Spinning jenny invented (James Hargreaves)",
-    "time": {
-      "year_start": 1764
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "textiles",
-      "spinning",
-      "invention"
-    ],
-    "summary_short": "A multi-spindle spinning machine that greatly increased yarn output and helped propel mechanized textile production.",
-    "source_refs": [
-      {
-        "title": "Spinning jenny (invented 1764–1765)",
-        "url": "https://en.wikipedia.org/wiki/Spinning_jenny"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_water_frame_patent_1769",
-    "label": "Water frame patented (Richard Arkwright)",
-    "time": {
-      "year_start": 1769
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "textiles",
-      "spinning",
-      "patent"
-    ],
-    "summary_short": "Arkwright’s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
-    "source_refs": [
-      {
-        "title": "Water frame (patented 1769)",
-        "url": "https://en.wikipedia.org/wiki/Water_frame"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_watt_condenser_patent_1769",
-    "label": "Watt’s separate condenser patented (steam engine efficiency)",
-    "time": {
-      "year_start": 1769
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "steam",
-      "energy",
-      "patent"
-    ],
-    "summary_short": "James Watt’s separate condenser greatly improved steam engine efficiency, enabling broader industrial use beyond mines.",
-    "source_refs": [
-      {
-        "title": "Watt steam engine (1769 patent context)",
-        "url": "https://en.wikipedia.org/wiki/Watt_steam_engine"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_cromford_mill_uses_water_frame_1771",
-    "label": "Cromford Mill uses water frame (early factory system)",
-    "time": {
-      "year_start": 1771
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "factories",
-      "textiles",
-      "water_power"
-    ],
-    "summary_short": "Arkwright’s water-powered spinning at Cromford is often cited as a key step toward the factory system in textiles.",
-    "source_refs": [
-      {
-        "title": "Arkwright’s water-frame at Cromford (1771)",
-        "url": "https://www.nationalarchives.gov.uk/education/resources/georgian-britain-age-modernity/arkwrights-spinning-frame/"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_spinning_jenny_patented_1770",
-    "label": "Spinning jenny patented (James Hargreaves)",
-    "time": {
-      "year_start": 1770
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "textiles",
-      "spinning",
-      "patent"
-    ],
-    "summary_short": "Hargreaves secured a patent for the spinning jenny, helping spread multi-spindle spinning as textile production mechanized.",
-    "source_refs": [
-      {
-        "title": "James Hargreaves (spinning jenny patented 1770)",
-        "url": "https://www.britannica.com/biography/James-Hargreaves"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_spinning_mule_invented_1779",
-    "label": "Spinning mule invented (Samuel Crompton)",
-    "time": {
-      "year_start": 1779
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "textiles",
-      "spinning",
-      "invention"
-    ],
-    "summary_short": "Crompton’s spinning mule combined features of earlier spinning machines and enabled large-scale production of high-quality yarn.",
-    "source_refs": [
-      {
-        "title": "Crompton’s spinning mule (invented 1779)",
-        "url": "https://ageofrevolution.org/200-object/cromptons-spinning-mule/"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_power_loom_patented_1785",
-    "label": "Power loom patented (Edmund Cartwright)",
-    "time": {
-      "year_start": 1785
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "textiles",
-      "weaving",
-      "mechanization"
-    ],
-    "summary_short": "Cartwright’s power loom mechanized weaving, helping shift textile production further into factories.",
-    "source_refs": [
-      {
-        "title": "Patenting of the steam-powered loom (1785)",
-        "url": "https://www.ebsco.com/research-starters/history/patenting-steam-powered-loom"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_cotton_gin_invented_1793",
-    "label": "Cotton gin invented (Eli Whitney)",
-    "time": {
-      "year_start": 1793
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "cotton",
-      "invention",
-      "supply_chain"
-    ],
-    "summary_short": "Whitney’s cotton gin sped seed removal, expanding raw cotton supply feeding textile mills and intensifying the global cotton economy.",
-    "source_refs": [
-      {
-        "title": "Cotton gin (invented 1793)",
-        "url": "https://www.britannica.com/technology/cotton-gin"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
-  },
-  {
-    "id": "ev_penydarren_locomotive_run_1804",
-    "label": "Penydarren steam locomotive run (Trevithick)",
-    "time": {
-      "year_start": 1804
-    },
-    "question_types": [
-      "timeline_before_after"
-    ],
-    "tags": [
-      "railways",
-      "steam",
-      "transport"
-    ],
-    "summary_short": "A landmark early rail journey powered by a steam locomotive, demonstrating the feasibility of steam traction on rails.",
-    "source_refs": [
-      {
-        "title": "Penydarren journey (21 Feb 1804)",
-        "url": "https://museum.wales/articles/1012/Richard-Trevithickrsquos-steam-locomotive/"
-      }
-    ],
-    "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
   },
   {
     "id": "ev_rainhill_trials_rocket_1829",
@@ -1008,6 +1008,124 @@
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
+    "id": "ev_meiji_perry_1853",
+    "label": "ペリー来航",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1853,
+      "year_end": null,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1853"
+    },
+    "regions": [
+      "reg_japan"
+    ],
+    "places": [
+      "浦賀"
+    ],
+    "tags": [
+      "meiji",
+      "foreign_relations",
+      "opening_of_japan"
+    ],
+    "summary_short": "アメリカのペリー艦隊が来航し、幕府に開国を迫ったことで、鎖国体制の転換が始まった。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_kanagawa_treaty_1854"
+    ],
+    "causes": [
+      {
+        "label": "米国の太平洋航路と補給地の必要",
+        "category": "international",
+        "note": null
+      }
+    ],
+    "effects": [
+      "ev_meiji_kanagawa_treaty_1854"
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "difficulty_hint": "easy",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "historycom_kanagawa",
+        "url": "https://www.history.com/this-day-in-history/treaty-of-kanagawa-signed-with-japan",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "Background on Perry expedition and treaty context"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_kanagawa_treaty_1854",
+    "label": "日米和親条約の締結",
+    "alt_labels": [
+      "Treaty of Kanagawa"
+    ],
+    "time": {
+      "year_start": 1854,
+      "year_end": null,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1854"
+    },
+    "regions": [
+      "reg_japan"
+    ],
+    "places": [
+      "下田",
+      "函館"
+    ],
+    "tags": [
+      "meiji",
+      "treaty",
+      "foreign_relations"
+    ],
+    "summary_short": "日米和親条約により下田・函館の開港などが定められ、日本の対外関係は本格的に再編へ向かった。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_perry_1853",
+      "ev_meiji_boshin_war_1868"
+    ],
+    "causes": [
+      "ev_meiji_perry_1853"
+    ],
+    "effects": [
+      {
+        "label": "不平等条約交渉と国内政治不安の拡大",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "what_happened",
+      "significance"
+    ],
+    "difficulty_hint": "easy",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "historycom_kanagawa",
+        "url": "https://www.history.com/this-day-in-history/treaty-of-kanagawa-signed-with-japan",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "Treaty summary"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
     "id": "ev_bessemer_process_patent_1856",
     "label": "Bessemer process patented (mass steel production)",
     "time": {
@@ -1030,5 +1148,537 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_meiji_boshin_war_1868",
+    "label": "戊辰戦争",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1868,
+      "year_end": 1869,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1868–1869"
+    },
+    "regions": [
+      "reg_japan"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "civil_war"
+    ],
+    "summary_short": "旧幕府勢力と新政府勢力の内戦で、新政府側の勝利によって政権移行が決定的となった。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_charter_oath_1868"
+    ],
+    "causes": [
+      {
+        "label": "公武合体路線の破綻と倒幕運動の激化",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "effects": [
+      "ev_meiji_charter_oath_1868"
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "what_happened"
+    ],
+    "difficulty_hint": "medium",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_boshin",
+        "url": "https://www.britannica.com/event/Boshin-War",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "War overview"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_charter_oath_1868",
+    "label": "五箇条の御誓文",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1868,
+      "year_end": null,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1868"
+    },
+    "regions": [
+      "reg_japan"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "political_reform"
+    ],
+    "summary_short": "新政府が国家運営の基本方針を示し、広く議論を尽くす政治と知識導入の姿勢を掲げた。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_abolish_han_1871"
+    ],
+    "causes": [
+      "ev_meiji_boshin_war_1868"
+    ],
+    "effects": [
+      {
+        "label": "中央集権化改革の理念的基盤を形成",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "significance"
+    ],
+    "difficulty_hint": "medium",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "ndl_charter_oath",
+        "url": "https://www.ndl.go.jp/constitution/e/etc/c02.html",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "National Diet Library material"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_abolish_han_1871",
+    "label": "廃藩置県",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1871,
+      "year_end": null,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1871"
+    },
+    "regions": [
+      "reg_japan"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "centralization"
+    ],
+    "summary_short": "藩を廃して府県を設置し、近代国家形成に向けた中央集権体制を確立した。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_conscription_1873"
+    ],
+    "causes": [
+      "ev_meiji_charter_oath_1868"
+    ],
+    "effects": [
+      {
+        "label": "徴税・軍制・行政制度の全国一元化が進展",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "what_happened"
+    ],
+    "difficulty_hint": "medium",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "nippon_han_abolition",
+        "url": "https://www.nippon.com/en/japan-topics/g00871/",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "Overview of Meiji reforms"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_conscription_1873",
+    "label": "徴兵令",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1873,
+      "year_end": null,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1873"
+    },
+    "regions": [
+      "reg_japan"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "military_reform"
+    ],
+    "summary_short": "近代的国民軍を編成するため徴兵令を公布し、士族中心の軍制から転換した。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_sinojapanese_war_1894"
+    ],
+    "causes": [
+      "ev_meiji_abolish_han_1871"
+    ],
+    "effects": [
+      {
+        "label": "国家主導の軍事動員体制が整備",
+        "category": "military",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "cause_and_effect"
+    ],
+    "difficulty_hint": "medium",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_meiji",
+        "url": "https://www.britannica.com/event/Meiji-Restoration",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "Reform context"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_constitution_1889",
+    "label": "大日本帝国憲法発布",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1889,
+      "year_end": null,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1889"
+    },
+    "regions": [
+      "reg_japan"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "constitution"
+    ],
+    "summary_short": "近代立憲体制の枠組みとして大日本帝国憲法が発布され、統治制度が法制化された。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_diet_1890"
+    ],
+    "causes": [
+      {
+        "label": "条約改正交渉を見据えた制度近代化",
+        "category": "international",
+        "note": null
+      }
+    ],
+    "effects": [
+      "ev_meiji_diet_1890"
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "what_happened"
+    ],
+    "difficulty_hint": "medium",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "ndl_constitution",
+        "url": "https://www.ndl.go.jp/constitution/e/etc/c06.html",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "Constitution text context"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_diet_1890",
+    "label": "帝国議会開設",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1890,
+      "year_end": null,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1890"
+    },
+    "regions": [
+      "reg_japan"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "parliament"
+    ],
+    "summary_short": "帝国議会が開設され、選挙と議会審議を伴う政治運営が始動した。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_constitution_1889"
+    ],
+    "causes": [
+      "ev_meiji_constitution_1889"
+    ],
+    "effects": [
+      {
+        "label": "政党政治と政府の交渉が本格化",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "significance"
+    ],
+    "difficulty_hint": "medium",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_meiji",
+        "url": "https://www.britannica.com/event/Meiji-Restoration",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "Parliament establishment context"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_sinojapanese_war_1894",
+    "label": "日清戦争",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1894,
+      "year_end": 1895,
+      "century_label": "19th century CE",
+      "precision": "year",
+      "display_text": "1894–1895"
+    },
+    "regions": [
+      "reg_japan",
+      "reg_east_asia"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "war",
+      "east_asia"
+    ],
+    "summary_short": "朝鮮半島をめぐる対立から清と開戦し、日本の勝利は東アジア秩序の変化をもたらした。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_russojapanese_war_1905"
+    ],
+    "causes": [
+      "ev_meiji_conscription_1873"
+    ],
+    "effects": [
+      {
+        "label": "下関条約による領土・賠償の獲得",
+        "category": "international",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "cause_and_effect"
+    ],
+    "difficulty_hint": "medium",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_first_sino_japanese",
+        "url": "https://www.britannica.com/event/First-Sino-Japanese-War",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "War overview"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_russojapanese_war_1905",
+    "label": "日露戦争の講和（ポーツマス条約）",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1905,
+      "year_end": null,
+      "century_label": "20th century CE",
+      "precision": "year",
+      "display_text": "1905"
+    },
+    "regions": [
+      "reg_japan",
+      "reg_east_asia"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "war",
+      "diplomacy"
+    ],
+    "summary_short": "日露戦争の講和で日本の権益拡大が国際的に確認され、列強間での地位が上昇した。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_annex_korea_1910"
+    ],
+    "causes": [
+      "ev_meiji_sinojapanese_war_1894"
+    ],
+    "effects": [
+      {
+        "label": "韓国に対する支配強化へ進展",
+        "category": "international",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "significance"
+    ],
+    "difficulty_hint": "medium",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_russo_japanese",
+        "url": "https://www.britannica.com/event/Russo-Japanese-War",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "Treaty and impact"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_annex_korea_1910",
+    "label": "韓国併合",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1910,
+      "year_end": null,
+      "century_label": "20th century CE",
+      "precision": "year",
+      "display_text": "1910"
+    },
+    "regions": [
+      "reg_japan",
+      "reg_korea"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "imperialism",
+      "colonialism"
+    ],
+    "summary_short": "韓国併合条約により日本は朝鮮半島を植民地化し、帝国拡張政策を強めた。",
+    "related_people": [],
+    "related_events": [
+      "ev_meiji_emperor_death_1912"
+    ],
+    "causes": [
+      "ev_meiji_russojapanese_war_1905"
+    ],
+    "effects": [
+      {
+        "label": "東アジアの反植民地運動と緊張を増幅",
+        "category": "international",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "what_happened"
+    ],
+    "difficulty_hint": "hard",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_korea_annexation",
+        "url": "https://www.britannica.com/place/Korea/Korea-under-Japanese-rule",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "Annexation context"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
+  },
+  {
+    "id": "ev_meiji_emperor_death_1912",
+    "label": "明治天皇崩御",
+    "alt_labels": [],
+    "time": {
+      "year_start": 1912,
+      "year_end": null,
+      "century_label": "20th century CE",
+      "precision": "year",
+      "display_text": "1912"
+    },
+    "regions": [
+      "reg_japan"
+    ],
+    "places": [],
+    "tags": [
+      "meiji",
+      "periodization"
+    ],
+    "summary_short": "明治天皇の崩御により明治時代が終わり、日本の近代化第一段階の区切りとなった。",
+    "related_people": [],
+    "related_events": [],
+    "causes": [],
+    "effects": [
+      {
+        "label": "大正期への移行と政治・社会課題の再編",
+        "category": "political",
+        "note": null
+      }
+    ],
+    "confusions": [],
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering",
+      "significance"
+    ],
+    "difficulty_hint": "easy",
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_meiji_emperor",
+        "url": "https://www.britannica.com/biography/Meiji",
+        "retrieved_at": "2026-03-03T00:00:00Z",
+        "notes": "Emperor Meiji biography"
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "draft"
   }
 ]
