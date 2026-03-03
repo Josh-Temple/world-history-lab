@@ -1009,7 +1009,7 @@
   },
   {
     "id": "ev_meiji_perry_1853",
-    "label": "ペリー来航",
+    "label": "Arrival of Commodore Perry",
     "alt_labels": [],
     "time": {
       "year_start": 1853,
@@ -1022,21 +1022,21 @@
       "reg_japan"
     ],
     "places": [
-      "浦賀"
+      "Uraga"
     ],
     "tags": [
       "meiji",
       "foreign_relations",
       "opening_of_japan"
     ],
-    "summary_short": "アメリカのペリー艦隊が来航し、幕府に開国を迫ったことで、鎖国体制の転換が始まった。",
+    "summary_short": "Commodore Perry's U.S. fleet arrived and pressured the Tokugawa shogunate to open the country, beginning the shift away from sakoku (closed-country) policy.",
     "related_people": [],
     "related_events": [
       "ev_meiji_kanagawa_treaty_1854"
     ],
     "causes": [
       {
-        "label": "米国の太平洋航路と補給地の必要",
+        "label": "U.S. need for Pacific routes and supply ports",
         "category": "international",
         "note": null
       }
@@ -1066,7 +1066,7 @@
   },
   {
     "id": "ev_meiji_kanagawa_treaty_1854",
-    "label": "日米和親条約の締結",
+    "label": "Treaty of Kanagawa signed",
     "alt_labels": [
       "Treaty of Kanagawa"
     ],
@@ -1081,15 +1081,15 @@
       "reg_japan"
     ],
     "places": [
-      "下田",
-      "函館"
+      "Shimoda",
+      "Hakodate"
     ],
     "tags": [
       "meiji",
       "treaty",
       "foreign_relations"
     ],
-    "summary_short": "日米和親条約により下田・函館の開港などが定められ、日本の対外関係は本格的に再編へ向かった。",
+    "summary_short": "The Treaty of Kanagawa opened Shimoda and Hakodate to U.S. ships, marking a major reorganization of Japan's foreign relations.",
     "related_people": [],
     "related_events": [
       "ev_meiji_perry_1853",
@@ -1100,7 +1100,7 @@
     ],
     "effects": [
       {
-        "label": "不平等条約交渉と国内政治不安の拡大",
+        "label": "Expansion of unequal treaty negotiations and domestic political instability",
         "category": "political",
         "note": null
       }
@@ -1151,7 +1151,7 @@
   },
   {
     "id": "ev_meiji_boshin_war_1868",
-    "label": "戊辰戦争",
+    "label": "Boshin War",
     "alt_labels": [],
     "time": {
       "year_start": 1868,
@@ -1168,14 +1168,14 @@
       "meiji",
       "civil_war"
     ],
-    "summary_short": "旧幕府勢力と新政府勢力の内戦で、新政府側の勝利によって政権移行が決定的となった。",
+    "summary_short": "A civil war between pro-shogunate and pro-imperial forces ended in victory for the new imperial government, making the regime transition decisive.",
     "related_people": [],
     "related_events": [
       "ev_meiji_charter_oath_1868"
     ],
     "causes": [
       {
-        "label": "公武合体路線の破綻と倒幕運動の激化",
+        "label": "Collapse of the kōbu-gattai compromise and intensification of anti-shogunate movements",
         "category": "political",
         "note": null
       }
@@ -1204,7 +1204,7 @@
   },
   {
     "id": "ev_meiji_charter_oath_1868",
-    "label": "五箇条の御誓文",
+    "label": "Charter Oath proclaimed",
     "alt_labels": [],
     "time": {
       "year_start": 1868,
@@ -1221,7 +1221,7 @@
       "meiji",
       "political_reform"
     ],
-    "summary_short": "新政府が国家運営の基本方針を示し、広く議論を尽くす政治と知識導入の姿勢を掲げた。",
+    "summary_short": "The new government announced guiding principles for national governance, emphasizing broad deliberation and the adoption of knowledge from abroad.",
     "related_people": [],
     "related_events": [
       "ev_meiji_abolish_han_1871"
@@ -1231,7 +1231,7 @@
     ],
     "effects": [
       {
-        "label": "中央集権化改革の理念的基盤を形成",
+        "label": "Created an ideological foundation for later centralization reforms",
         "category": "political",
         "note": null
       }
@@ -1257,7 +1257,7 @@
   },
   {
     "id": "ev_meiji_abolish_han_1871",
-    "label": "廃藩置県",
+    "label": "Abolition of domains and establishment of prefectures",
     "alt_labels": [],
     "time": {
       "year_start": 1871,
@@ -1274,7 +1274,7 @@
       "meiji",
       "centralization"
     ],
-    "summary_short": "藩を廃して府県を設置し、近代国家形成に向けた中央集権体制を確立した。",
+    "summary_short": "The han domains were abolished and replaced by prefectures, establishing a centralized system for modern state-building.",
     "related_people": [],
     "related_events": [
       "ev_meiji_conscription_1873"
@@ -1284,7 +1284,7 @@
     ],
     "effects": [
       {
-        "label": "徴税・軍制・行政制度の全国一元化が進展",
+        "label": "Advanced nationwide unification of taxation, military organization, and administration",
         "category": "political",
         "note": null
       }
@@ -1310,7 +1310,7 @@
   },
   {
     "id": "ev_meiji_conscription_1873",
-    "label": "徴兵令",
+    "label": "Conscription Ordinance issued",
     "alt_labels": [],
     "time": {
       "year_start": 1873,
@@ -1327,7 +1327,7 @@
       "meiji",
       "military_reform"
     ],
-    "summary_short": "近代的国民軍を編成するため徴兵令を公布し、士族中心の軍制から転換した。",
+    "summary_short": "The government promulgated conscription to form a modern national army, shifting away from a samurai-centered military system.",
     "related_people": [],
     "related_events": [
       "ev_meiji_sinojapanese_war_1894"
@@ -1337,7 +1337,7 @@
     ],
     "effects": [
       {
-        "label": "国家主導の軍事動員体制が整備",
+        "label": "Established a state-led military mobilization system",
         "category": "military",
         "note": null
       }
@@ -1363,7 +1363,7 @@
   },
   {
     "id": "ev_meiji_constitution_1889",
-    "label": "大日本帝国憲法発布",
+    "label": "Promulgation of the Meiji Constitution",
     "alt_labels": [],
     "time": {
       "year_start": 1889,
@@ -1380,14 +1380,14 @@
       "meiji",
       "constitution"
     ],
-    "summary_short": "近代立憲体制の枠組みとして大日本帝国憲法が発布され、統治制度が法制化された。",
+    "summary_short": "The Meiji Constitution was promulgated as the framework of a modern constitutional order, codifying key institutions of governance.",
     "related_people": [],
     "related_events": [
       "ev_meiji_diet_1890"
     ],
     "causes": [
       {
-        "label": "条約改正交渉を見据えた制度近代化",
+        "label": "Institutional modernization aimed at future treaty revision negotiations",
         "category": "international",
         "note": null
       }
@@ -1416,7 +1416,7 @@
   },
   {
     "id": "ev_meiji_diet_1890",
-    "label": "帝国議会開設",
+    "label": "Opening of the Imperial Diet",
     "alt_labels": [],
     "time": {
       "year_start": 1890,
@@ -1433,7 +1433,7 @@
       "meiji",
       "parliament"
     ],
-    "summary_short": "帝国議会が開設され、選挙と議会審議を伴う政治運営が始動した。",
+    "summary_short": "The Imperial Diet convened, beginning electoral and parliamentary politics in national governance.",
     "related_people": [],
     "related_events": [
       "ev_meiji_constitution_1889"
@@ -1443,7 +1443,7 @@
     ],
     "effects": [
       {
-        "label": "政党政治と政府の交渉が本格化",
+        "label": "Intensified negotiation between political parties and the government",
         "category": "political",
         "note": null
       }
@@ -1469,7 +1469,7 @@
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
-    "label": "日清戦争",
+    "label": "First Sino-Japanese War",
     "alt_labels": [],
     "time": {
       "year_start": 1894,
@@ -1488,7 +1488,7 @@
       "war",
       "east_asia"
     ],
-    "summary_short": "朝鮮半島をめぐる対立から清と開戦し、日本の勝利は東アジア秩序の変化をもたらした。",
+    "summary_short": "Conflict over the Korean Peninsula led to war with Qing China, and Japan's victory reshaped the East Asian order.",
     "related_people": [],
     "related_events": [
       "ev_meiji_russojapanese_war_1905"
@@ -1498,7 +1498,7 @@
     ],
     "effects": [
       {
-        "label": "下関条約による領土・賠償の獲得",
+        "label": "Territorial and indemnity gains under the Treaty of Shimonoseki",
         "category": "international",
         "note": null
       }
@@ -1524,7 +1524,7 @@
   },
   {
     "id": "ev_meiji_russojapanese_war_1905",
-    "label": "日露戦争の講和（ポーツマス条約）",
+    "label": "Peace settlement of the Russo-Japanese War (Treaty of Portsmouth)",
     "alt_labels": [],
     "time": {
       "year_start": 1905,
@@ -1543,7 +1543,7 @@
       "war",
       "diplomacy"
     ],
-    "summary_short": "日露戦争の講和で日本の権益拡大が国際的に確認され、列強間での地位が上昇した。",
+    "summary_short": "The peace settlement confirmed Japan's expanded interests internationally and raised its status among the great powers.",
     "related_people": [],
     "related_events": [
       "ev_meiji_annex_korea_1910"
@@ -1553,7 +1553,7 @@
     ],
     "effects": [
       {
-        "label": "韓国に対する支配強化へ進展",
+        "label": "Advanced stronger control over Korea",
         "category": "international",
         "note": null
       }
@@ -1579,7 +1579,7 @@
   },
   {
     "id": "ev_meiji_annex_korea_1910",
-    "label": "韓国併合",
+    "label": "Annexation of Korea",
     "alt_labels": [],
     "time": {
       "year_start": 1910,
@@ -1598,7 +1598,7 @@
       "imperialism",
       "colonialism"
     ],
-    "summary_short": "韓国併合条約により日本は朝鮮半島を植民地化し、帝国拡張政策を強めた。",
+    "summary_short": "Through the Japan–Korea Annexation Treaty, Japan colonized the Korean Peninsula and intensified imperial expansion.",
     "related_people": [],
     "related_events": [
       "ev_meiji_emperor_death_1912"
@@ -1608,7 +1608,7 @@
     ],
     "effects": [
       {
-        "label": "東アジアの反植民地運動と緊張を増幅",
+        "label": "Heightened anti-colonial movements and tensions across East Asia",
         "category": "international",
         "note": null
       }
@@ -1634,7 +1634,7 @@
   },
   {
     "id": "ev_meiji_emperor_death_1912",
-    "label": "明治天皇崩御",
+    "label": "Death of Emperor Meiji",
     "alt_labels": [],
     "time": {
       "year_start": 1912,
@@ -1651,13 +1651,13 @@
       "meiji",
       "periodization"
     ],
-    "summary_short": "明治天皇の崩御により明治時代が終わり、日本の近代化第一段階の区切りとなった。",
+    "summary_short": "Emperor Meiji's death marked the end of the Meiji era and a turning point in Japan's first phase of modernization.",
     "related_people": [],
     "related_events": [],
     "causes": [],
     "effects": [
       {
-        "label": "大正期への移行と政治・社会課題の再編",
+        "label": "Transition to the Taishō era and reconfiguration of political and social challenges",
         "category": "political",
         "note": null
       }

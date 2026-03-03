@@ -177,7 +177,7 @@
   },
   {
     "id": "ev_meiji_abolish_han_1871",
-    "label": "廃藩置県",
+    "label": "Abolition of domains and establishment of prefectures",
     "time": {
       "start": "1871",
       "end": "1871",
@@ -193,7 +193,7 @@
   },
   {
     "id": "ev_meiji_annex_korea_1910",
-    "label": "韓国併合",
+    "label": "Annexation of Korea",
     "time": {
       "start": "1910",
       "end": "1910",
@@ -209,7 +209,7 @@
   },
   {
     "id": "ev_meiji_boshin_war_1868",
-    "label": "戊辰戦争",
+    "label": "Boshin War",
     "time": {
       "start": "1868",
       "end": "1868",
@@ -225,7 +225,7 @@
   },
   {
     "id": "ev_meiji_charter_oath_1868",
-    "label": "五箇条の御誓文",
+    "label": "Charter Oath proclaimed",
     "time": {
       "start": "1868",
       "end": "1868",
@@ -241,7 +241,7 @@
   },
   {
     "id": "ev_meiji_conscription_1873",
-    "label": "徴兵令",
+    "label": "Conscription Ordinance issued",
     "time": {
       "start": "1873",
       "end": "1873",
@@ -257,7 +257,7 @@
   },
   {
     "id": "ev_meiji_constitution_1889",
-    "label": "大日本帝国憲法発布",
+    "label": "Promulgation of the Meiji Constitution",
     "time": {
       "start": "1889",
       "end": "1889",
@@ -273,7 +273,7 @@
   },
   {
     "id": "ev_meiji_diet_1890",
-    "label": "帝国議会開設",
+    "label": "Opening of the Imperial Diet",
     "time": {
       "start": "1890",
       "end": "1890",
@@ -289,7 +289,7 @@
   },
   {
     "id": "ev_meiji_emperor_death_1912",
-    "label": "明治天皇崩御",
+    "label": "Death of Emperor Meiji",
     "time": {
       "start": "1912",
       "end": "1912",
@@ -305,7 +305,7 @@
   },
   {
     "id": "ev_meiji_kanagawa_treaty_1854",
-    "label": "日米和親条約の締結",
+    "label": "Treaty of Kanagawa signed",
     "time": {
       "start": "1854",
       "end": "1854",
@@ -321,7 +321,7 @@
   },
   {
     "id": "ev_meiji_perry_1853",
-    "label": "ペリー来航",
+    "label": "Arrival of Commodore Perry",
     "time": {
       "start": "1853",
       "end": "1853",
@@ -337,7 +337,7 @@
   },
   {
     "id": "ev_meiji_russojapanese_war_1905",
-    "label": "日露戦争の講和（ポーツマス条約）",
+    "label": "Peace settlement of the Russo-Japanese War (Treaty of Portsmouth)",
     "time": {
       "start": "1905",
       "end": "1905",
@@ -353,7 +353,7 @@
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
-    "label": "日清戦争",
+    "label": "First Sino-Japanese War",
     "time": {
       "start": "1894",
       "end": "1894",
