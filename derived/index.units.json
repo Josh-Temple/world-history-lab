@@ -17,7 +17,7 @@
   },
   {
     "id": "unit_industrial_revolution",
-    "title": "産業革命",
+    "title": "Industrial Revolution",
     "event_ids": [
       "ev_flying_shuttle_patent_1733",
       "ev_bridgewater_canal_opens_1761",
@@ -38,7 +38,7 @@
   },
   {
     "id": "unit_meiji_restoration",
-    "title": "明治維新と日本の近代化",
+    "title": "Meiji Restoration and Japan's Modernization",
     "event_ids": [
       "ev_meiji_perry_1853",
       "ev_meiji_kanagawa_treaty_1854",

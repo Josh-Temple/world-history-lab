@@ -1,12 +1,12 @@
 {
   "id": "unit_meiji_restoration",
-  "title": "明治維新と日本の近代化",
-  "language": "ja",
-  "description": "1853年のペリー来航から1912年の明治天皇崩御まで、日本が近代国家へと変貌した過程を学ぶ。",
+  "title": "Meiji Restoration and Japan's Modernization",
+  "language": "en",
+  "description": "Study Japan's transformation into a modern nation-state from Commodore Perry's arrival in 1853 to the death of Emperor Meiji in 1912.",
   "recommended_level": "middle",
   "regions": [
-    "日本",
-    "東アジア"
+    "Japan",
+    "East Asia"
   ],
   "tags": [
     "meiji",
@@ -14,8 +14,8 @@
     "east_asia"
   ],
   "learning_goals": [
-    "日本の近代化を構成する主要事件を時系列で説明できる",
-    "国内改革と対外戦争の相互作用を分析できる"
+    "Explain the major events of Japan's modernization in chronological order.",
+    "Analyze the interaction between domestic reforms and external wars."
   ],
   "event_ids": [
     "ev_meiji_perry_1853",
