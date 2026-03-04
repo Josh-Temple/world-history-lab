@@ -1,13 +1,22 @@
 {
   "id": "unit_industrial_revolution",
   "title": "Industrial Revolution",
+  "language": "en",
+  "description": "Technological and economic transformation driven by mechanization, steam power, and industrial production.",
+  "recommended_level": "middle",
+  "regions": ["Britain", "Europe", "North America"],
+  "tags": ["industry", "technology", "labor"],
+  "learning_goals": [
+    "Order major industrial innovations chronologically",
+    "Understand connections between technology, transport, and labor reform"
+  ],
   "event_ids": [
     "ev_flying_shuttle_patent_1733",
     "ev_bridgewater_canal_opens_1761",
     "ev_spinning_jenny_invented_1764",
-    "ev_spinning_jenny_patented_1770",
     "ev_water_frame_patent_1769",
     "ev_watt_condenser_patent_1769",
+    "ev_spinning_jenny_patented_1770",
     "ev_cromford_mill_uses_water_frame_1771",
     "ev_spinning_mule_invented_1779",
     "ev_power_loom_patented_1785",
@@ -18,29 +27,8 @@
     "ev_great_exhibition_opens_1851",
     "ev_bessemer_process_patent_1856"
   ],
-  "language": "en",
-  "description": "Study the technological innovations and social transformations from the late 18th to the mid-19th century. Follow the flow of modern industrialization through spinning machines, steam engines, railways, and factory legislation.",
-  "recommended_level": "middle",
-  "regions": [
-    "Europe",
-    "North America"
-  ],
-  "tags": [
-    "industrial_revolution",
-    "technology"
-  ],
-  "learning_goals": [
-    "Explain how technological innovation affected labor, urbanization, and daily life.",
-    "Connect major inventions and their key contributors in chronological order."
-  ],
-  "person_ids": [
-    "pe_james_hargreaves",
-    "pe_richard_arkwright",
-    "pe_eli_whitney"
-  ],
-  "app_profiles": [
-    "basic"
-  ],
+  "person_ids": [],
+  "app_profiles": ["basic"],
   "status": "draft",
-  "updated_at": "2026-03-03"
+  "updated_at": "2026-03-04"
 }
