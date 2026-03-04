@@ -1,27 +1,34 @@
 # Handoff Notes (Next Session)
 
 ## What changed
-- Homepage data-detail presentation was simplified.
-- Raw dataset links were moved from a visible card into a right-top kebab menu (`⋮`) using a native `<details>` dropdown.
-- The visible homepage modules now focus on:
-  - Dataset summary counts
-  - Mini app entry point(s)
-- Styling was updated to support the new kebab menu and dropdown panel while keeping the existing minimalist direction.
-- Root `README.md` was updated to describe the new top-page disclosure pattern.
+- Improved homepage kebab menu behavior.
+  - Kept the trigger icon stable (no shift while toggling).
+  - Added outside-click dismissal: when the menu is open and users click elsewhere on the page, the menu closes.
+- Refined homepage Mini apps labeling.
+  - The Timeline Trainer entry remains human-readable while still showing the path as secondary context.
+- Reduced visual noise on Timeline Trainer.
+  - Session stats now emphasize core metrics in the default view: **Total answered / Correct / Accuracy**.
+  - Review and per-mode metrics were moved into a collapsible **Detailed breakdown** section for progressive disclosure.
+- Updated docs.
+  - Root `README.md` now notes outside-click kebab dismissal and concise stats presentation.
+  - `apps/timeline-trainer/README.md` now documents the collapsed detailed stats behavior.
 
 ## Files touched
 - `index.html`
-- `styles/site.css`
+- `apps/timeline-trainer/index.html`
+- `apps/timeline-trainer/src/App.js`
+- `apps/timeline-trainer/src/styles.css`
 - `README.md`
-- `HANDOFF.md` (new)
+- `apps/timeline-trainer/README.md`
+- `HANDOFF.md`
 
 ## Validation performed
-- Started a local static server and loaded the top page.
-- Confirmed dataset counts still load.
-- Confirmed kebab menu opens and raw data links are visible.
-- Captured an updated homepage screenshot artifact for review.
+- Served the project with a local static server.
+- Confirmed top-page kebab menu opens and closes via outside click.
+- Confirmed Timeline Trainer renders core stats and collapsible detailed stats.
+- Captured updated screenshots for homepage and Timeline Trainer.
 
 ## Suggested next steps
-1. Decide whether to add keyboard-close behavior (Esc) for the kebab menu (currently native `<details>` behavior only).
-2. Optionally add one internal "Data Overview" page and link it from the same menu.
-3. If more utilities are added later (theme, language, etc.), keep the kebab menu grouped by section labels.
+1. Consider adding `Esc` key support for closing the homepage kebab menu.
+2. If more mini apps are added, convert the homepage app list to named entries with short descriptions.
+3. Consider persisting session stats in local storage so accuracy/history survives refresh.

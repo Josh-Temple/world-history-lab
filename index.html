@@ -9,7 +9,7 @@
   <body>
     <main class="page">
       <header class="hero">
-        <details class="utility-menu">
+        <details class="utility-menu" id="utility-menu">
           <summary aria-label="Open data links menu" title="Data links">⋮</summary>
           <div class="utility-panel" role="menu" aria-label="Data links">
             <p class="utility-title">Data links</p>
@@ -58,7 +58,8 @@
           <h2>Mini apps</h2>
           <p class="muted">Practice modes available right now:</p>
           <a class="module-link" href="./apps/timeline-trainer/">
-            <span class="module-path">/apps/timeline-trainer/</span>
+            <span class="module-name">Timeline Trainer</span>
+            <span class="module-path" aria-label="Path">/apps/timeline-trainer/</span>
             <span class="module-arrow" aria-hidden="true">↗</span>
           </a>
         </section>
@@ -154,6 +155,25 @@
       ];
 
       const countError = document.getElementById("count-error");
+      const utilityMenu = document.getElementById("utility-menu");
+
+      function setupUtilityMenuDismiss() {
+        if (!utilityMenu) {
+          return;
+        }
+
+        document.addEventListener("click", (event) => {
+          if (!utilityMenu.open) {
+            return;
+          }
+
+          if (utilityMenu.contains(event.target)) {
+            return;
+          }
+
+          utilityMenu.open = false;
+        });
+      }
 
       async function fetchJson(path) {
         const response = await fetch(path, { cache: "no-store" });
@@ -190,6 +210,7 @@
         });
       }
 
+      setupUtilityMenuDismiss();
       loadCounts();
     </script>
   </body>

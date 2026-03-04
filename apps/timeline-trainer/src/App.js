@@ -93,6 +93,7 @@ const ui = {
   nextButton: document.getElementById("next-button"),
   statTotal: document.getElementById("stat-total"),
   statCorrect: document.getElementById("stat-correct"),
+  statAccuracy: document.getElementById("stat-accuracy"),
   statReviewAnswered: document.getElementById("stat-review-answered"),
   statReviewCorrect: document.getElementById("stat-review-correct"),
   statBeforeAfterAnswered: document.getElementById("stat-before-after-answered"),
@@ -211,6 +212,8 @@ function clearError() {
 function updateStats() {
   ui.statTotal.textContent = String(state.totalAnswered);
   ui.statCorrect.textContent = String(state.correctAnswered);
+  ui.statAccuracy.textContent =
+    state.totalAnswered === 0 ? "—" : `${Math.round((state.correctAnswered / state.totalAnswered) * 100)}%`;
   ui.statReviewAnswered.textContent = String(state.reviewAnswered);
   ui.statReviewCorrect.textContent = String(state.reviewCorrect);
   ui.statBeforeAfterAnswered.textContent = String(state.answeredByType[QUESTION_TYPES.BEFORE_AFTER]);

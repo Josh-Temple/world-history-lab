@@ -46,6 +46,7 @@ body {
   border-radius: 999px;
   display: grid;
   place-items: center;
+  padding: 0;
   cursor: pointer;
   color: var(--text-secondary);
   font-size: 1.1rem;
@@ -55,6 +56,10 @@ body {
 
 .utility-menu summary::-webkit-details-marker {
   display: none;
+}
+
+.utility-menu summary::marker {
+  content: "";
 }
 
 .utility-menu[open] summary {
@@ -158,11 +163,15 @@ li {
 
 .module-link {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.45rem;
   color: var(--text-primary);
   font-weight: 640;
   text-decoration: none;
+}
+
+.module-name {
+  font-size: 1rem;
 }
 
 .module-link:hover .module-path {

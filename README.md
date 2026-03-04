@@ -174,13 +174,17 @@ Current app code assumes those top-level shapes (`Array`, `Array`, `Object`) and
 
 ### Top page summary logic
 
-`/index.html` keeps only high-level cards visible by default and moves raw data links into a right-top kebab menu (`⋮`) for on-demand access.
+`/index.html` keeps only high-level cards visible by default and moves raw data links into a right-top kebab menu (`⋮`) for on-demand access. The menu icon is intentionally marker-less in both closed/open states to avoid layout shift when toggled, and the menu now closes when the user clicks outside it.
 
 The top page fetches events/people plus all tracked unit JSON files in parallel with `Promise.allSettled` and updates:
 
 - `#count-events` = `events.length`
 - `#count-people` = `people.length`
 - `#count-units` = number of valid unit JSON objects currently tracked on the page (currently `2`)
+
+The Mini apps card shows a human-readable app title (`Timeline Trainer`) with the path shown as supplementary context.
+
+Timeline Trainer keeps the default view concise by showing core stats first (Total / Correct / Accuracy), while detailed review and per-mode counts are tucked into a collapsible "Detailed breakdown" section.
 
 If any request fails or a JSON shape is unexpected, the page shows `—` for that count and logs a clear console error.
 
