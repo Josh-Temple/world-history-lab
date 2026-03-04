@@ -129,6 +129,7 @@ Timeline Trainer now supports scope controls:
 - **Subtractive styling**: card-like containers, heavy shadows, and decorative gradients were removed.
 - **Underline-first language**: interactions and structure are expressed mainly through thin bottom borders and restrained typography.
 - **Calm visual rhythm**: spacing and type weight are tuned to feel editorial and premium without visual noise.
+- **Progressive disclosure for data links**: top-page raw data links are tucked into a right-top kebab menu so the page stays focused while still exposing quick access for data checks.
 
 ## How to run
 
@@ -173,7 +174,9 @@ Current app code assumes those top-level shapes (`Array`, `Array`, `Object`) and
 
 ### Top page summary logic
 
-`/index.html` fetches events/people plus all tracked unit JSON files in parallel with `Promise.allSettled` and updates:
+`/index.html` keeps only high-level cards visible by default and moves raw data links into a right-top kebab menu (`⋮`) for on-demand access.
+
+The top page fetches events/people plus all tracked unit JSON files in parallel with `Promise.allSettled` and updates:
 
 - `#count-events` = `events.length`
 - `#count-people` = `people.length`
