@@ -1,40 +1,35 @@
 # Handoff Notes (Next Session)
 
-## What changed
-- Improved homepage kebab menu behavior.
-  - Kept the trigger icon stable (no shift while toggling).
-  - Added outside-click dismissal: when the menu is open and users click elsewhere on the page, the menu closes.
-- Refined homepage Mini apps labeling.
-  - The Timeline Trainer entry remains human-readable while still showing the path as secondary context.
-- Reduced visual noise on Timeline Trainer.
-  - Session stats now emphasize core metrics in the default view: **Total answered / Correct / Accuracy**.
-  - Review and per-mode metrics were moved into a collapsible **Detailed breakdown** section for progressive disclosure.
-- Updated docs.
-  - Root `README.md` now notes outside-click kebab dismissal and concise stats presentation.
-  - `apps/timeline-trainer/README.md` now documents the collapsed detailed stats behavior.
+## Session context
+- The latest commit (`cac9f16`) updated Industrial Revolution unit content plus docs, but the user reported dissatisfaction and requested a follow-up.
+- In this session, no product code/data behavior was changed yet; this handoff is updated to clarify corrective direction before additional edits.
 
-## Files touched
-- `index.html`
-- `apps/timeline-trainer/index.html`
-- `apps/timeline-trainer/src/App.js`
-- `apps/timeline-trainer/src/styles.css`
-- `README.md`
-- `apps/timeline-trainer/README.md`
-- `HANDOFF.md`
+## Current state snapshot
+- Deterministic data workflow is documented as:
+  1. `node scripts/validate.mjs`
+  2. `node scripts/derive.mjs`
+- `data/units/industrial-revolution.json` currently reflects the 2026-03-04 draft with empty `person_ids`.
+- `derived/index.units.json` is synchronized with canonical unit event ordering from the current draft.
 
-## Validation performed
-- Served the project with a local static server.
-- Confirmed top-page kebab menu opens and closes via outside click.
-- Confirmed Timeline Trainer renders core stats and collapsible detailed stats.
-- Captured updated screenshots for homepage and Timeline Trainer.
+## Open review concerns to resolve next
+1. Re-check all inline review comments on the previous PR diff and map each comment to an explicit action (accept / adjust / reject with rationale).
+2. Reconfirm whether clearing `person_ids` was intended long-term or only temporary.
+3. Confirm whether README wording should remain as-is or be tightened to match actual maintainer workflow expectations.
 
-## Suggested next steps
-1. Consider adding `Esc` key support for closing the homepage kebab menu.
-2. If more mini apps are added, convert the homepage app list to named entries with short descriptions.
-3. Consider persisting session stats in local storage so accuracy/history survives refresh.
+## Recommended execution order (next working session)
+1. Build a comment-resolution checklist from the previous PR review.
+2. Apply only agreed canonical data/doc changes.
+3. Run:
+   - `node scripts/validate.mjs`
+   - `node scripts/derive.mjs`
+4. Verify changed files are limited to intended scope.
+5. Update HANDOFF again with final outcomes and any deferred items.
 
-## New user feedback to carry forward
-- In Timeline Trainer, after showing each question, add an **optional** way for users to open event details on demand (do not show details by default every time). This can be implemented in a future enhancement.
-- On the top page mini app links, consider removing visible path text from link labels so only the app name is shown.
-- Beyond Timeline Trainer, gradually plan additional mini apps so learners can practice with more than one study approach, even if implementation is staged later.
+## Files touched in this session
+- `HANDOFF.md` (documentation-only refresh for next-session alignment)
 
+## Validation performed in this session
+- Documentation consistency check only (no code/data mutation beyond this handoff update).
+
+## Carry-forward note
+- Keep canonical (`data/`) edits as the source of truth; regenerate `derived/` artifacts rather than hand-editing them.

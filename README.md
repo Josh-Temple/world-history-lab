@@ -208,6 +208,7 @@ A lightweight Node script generates runtime-friendly numeric indexes under `/der
 Regenerate derived artifacts with:
 
 ```bash
+node scripts/validate.mjs
 node scripts/derive.mjs
 ```
 
