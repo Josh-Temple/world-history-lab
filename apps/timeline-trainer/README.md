@@ -57,6 +57,7 @@ Open:
 - Added a mode selector: `Before / After`, `Earliest of 3`, `Latest of 3`, and `Mixed`.
 - Mixed mode safely skips unavailable or temporarily ungeneratable types.
 - Added per-type in-session stats (`answered_by_type`, `correct_by_type`) in the stats panel.
+- Simplified visible session metrics: top-level panel shows Total/Correct/Accuracy, and detailed metrics are available under a collapsible "Detailed breakdown" block.
 - If a selected mode lacks eligible data, the app shows a friendly in-session message instead of crashing.
 
 ## Known limitations

@@ -72,11 +72,16 @@
         <h2>Session stats</h2>
         <p>Total answered: <span id="stat-total">0</span></p>
         <p>Correct: <span id="stat-correct">0</span></p>
-        <p>Review answered: <span id="stat-review-answered">0</span></p>
-        <p>Review correct: <span id="stat-review-correct">0</span></p>
-        <p>Before/after: <span id="stat-before-after-correct">0</span>/<span id="stat-before-after-answered">0</span></p>
-        <p>Earliest-of-3: <span id="stat-earliest-correct">0</span>/<span id="stat-earliest-answered">0</span></p>
-        <p>Latest-of-3: <span id="stat-latest-correct">0</span>/<span id="stat-latest-answered">0</span></p>
+        <p>Accuracy: <span id="stat-accuracy">—</span></p>
+
+        <details class="stats-details">
+          <summary>Detailed breakdown</summary>
+          <p>Review answered: <span id="stat-review-answered">0</span></p>
+          <p>Review correct: <span id="stat-review-correct">0</span></p>
+          <p>Before/after: <span id="stat-before-after-correct">0</span>/<span id="stat-before-after-answered">0</span></p>
+          <p>Earliest-of-3: <span id="stat-earliest-correct">0</span>/<span id="stat-earliest-answered">0</span></p>
+          <p>Latest-of-3: <span id="stat-latest-correct">0</span>/<span id="stat-latest-answered">0</span></p>
+        </details>
       </section>
 
       <section class="panel error-panel" id="error-panel" hidden>
