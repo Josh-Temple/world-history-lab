@@ -28,7 +28,55 @@ body {
 }
 
 .hero {
+  position: relative;
   margin-bottom: clamp(1.6rem, 4vw, 2.8rem);
+}
+
+.utility-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.utility-menu summary {
+  list-style: none;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #b7bfcc;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1;
+  user-select: none;
+}
+
+.utility-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.utility-menu[open] summary {
+  background: #e9ecf1;
+  color: var(--text-primary);
+}
+
+.utility-panel {
+  margin-top: 0.45rem;
+  width: min(86vw, 340px);
+  border: 1px solid #c5ccd8;
+  background: var(--surface);
+  padding: 0.75rem 0.9rem;
+}
+
+.utility-title {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #7a879c;
+  font-weight: 700;
 }
 
 .eyebrow {
@@ -76,7 +124,7 @@ body {
 }
 
 .card {
-  grid-column: span 4;
+  grid-column: span 6;
 }
 
 .card h2 {
@@ -177,6 +225,11 @@ code {
 
   .hero h1 {
     font-size: clamp(2rem, 13vw, 2.8rem);
+  }
+
+  .utility-menu summary {
+    width: 1.9rem;
+    height: 1.9rem;
   }
 
   .grid {
