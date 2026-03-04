@@ -32,3 +32,9 @@
 1. Consider adding `Esc` key support for closing the homepage kebab menu.
 2. If more mini apps are added, convert the homepage app list to named entries with short descriptions.
 3. Consider persisting session stats in local storage so accuracy/history survives refresh.
+
+## New user feedback to carry forward
+- In Timeline Trainer, after showing each question, add an **optional** way for users to open event details on demand (do not show details by default every time). This can be implemented in a future enhancement.
+- On the top page mini app links, consider removing visible path text from link labels so only the app name is shown.
+- Beyond Timeline Trainer, gradually plan additional mini apps so learners can practice with more than one study approach, even if implementation is staged later.
+
