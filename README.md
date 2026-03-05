@@ -125,9 +125,9 @@ Timeline Trainer now supports scope controls:
 
 ## UI design direction (current)
 
-- **Landing page is intentionally minimal**: plain HTML with quick links and live dataset counts.
-- **Timeline Trainer remains the primary styled app surface** under `apps/timeline-trainer/`.
-- **Top-page focus is operational clarity** rather than visual decoration.
+- **Top page and Timeline Trainer now share one visual language**: the root page reuses Timeline Trainer typography, palette, and spacing so navigation feels continuous.
+- **Operational clarity remains primary**: the top page still prioritizes quick app entry and live dataset counts.
+- **Timeline Trainer remains the main interactive surface** under `apps/timeline-trainer/`.
 
 ## How to run
 

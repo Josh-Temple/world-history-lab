@@ -4,31 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World History Lab</title>
+    <link rel="stylesheet" href="/apps/timeline-trainer/src/styles.css" />
     <style>
-      body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.5; }
-      h1 { margin-bottom: 0.5rem; }
-      ul { padding-left: 1.2rem; }
-      .counts li { margin: 0.25rem 0; }
+      .lead {
+        margin: 0.7rem 0 0;
+        max-width: 62ch;
+      }
+
+      .count-grid,
+      .link-grid {
+        display: grid;
+        gap: 0.6rem;
+      }
+
+      .count-item,
+      .link-item {
+        background: #eaecf0;
+        border-radius: 0.6rem;
+        padding: 0.72rem 0.85rem;
+      }
+
+      .count-item strong {
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-right: 0.35rem;
+      }
+
+      .count-value {
+        font-weight: 700;
+      }
+
+      .link-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.8rem;
+      }
+
+      .link-item a {
+        color: var(--text-primary);
+        text-decoration-color: #a7b0bf;
+        text-underline-offset: 0.2em;
+        font-weight: 560;
+      }
+
+      .link-item a:hover {
+        text-decoration-color: var(--accent);
+      }
+
+      .link-kind {
+        color: var(--text-secondary);
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
     </style>
   </head>
   <body>
-    <h1>World History Lab</h1>
-    <p>Shared dataset and mini apps for history practice.</p>
+    <main class="container">
+      <header class="page-header">
+        <p class="eyebrow">engineered play &amp; logic</p>
+        <h1>World History Lab</h1>
+        <div class="accent-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="lead muted">Shared dataset and mini apps for history practice. Start with Timeline Trainer or inspect the data directly.</p>
+      </header>
 
-    <h2>Dataset counts</h2>
-    <ul class="counts">
-      <li>Events: <span id="count-events">loading...</span></li>
-      <li>People: <span id="count-people">loading...</span></li>
-      <li>Units: <span id="count-units">loading...</span></li>
-    </ul>
+      <section class="panel" aria-live="polite">
+        <h2>Dataset counts</h2>
+        <div class="count-grid">
+          <p class="count-item"><strong>Events</strong><span id="count-events" class="count-value">loading...</span></p>
+          <p class="count-item"><strong>People</strong><span id="count-people" class="count-value">loading...</span></p>
+          <p class="count-item"><strong>Units</strong><span id="count-units" class="count-value">loading...</span></p>
+        </div>
+      </section>
 
-    <h2>Links</h2>
-    <ul>
-      <li><a href="/apps/timeline-trainer/">Timeline Trainer</a></li>
-      <li><a href="/data/events.json">/data/events.json</a></li>
-      <li><a href="/data/people.json">/data/people.json</a></li>
-      <li><a href="/data/units/index.json">/data/units/index.json</a></li>
-    </ul>
+      <section class="panel">
+        <h2>Explore</h2>
+        <div class="link-grid">
+          <p class="link-item"><a href="/apps/timeline-trainer/">Timeline Trainer</a><span class="link-kind">App</span></p>
+          <p class="link-item"><a href="/data/events.json">/data/events.json</a><span class="link-kind">Data</span></p>
+          <p class="link-item"><a href="/data/people.json">/data/people.json</a><span class="link-kind">Data</span></p>
+          <p class="link-item"><a href="/data/units/index.json">/data/units/index.json</a><span class="link-kind">Data</span></p>
+        </div>
+      </section>
+    </main>
 
     <script type="module">
       async function fetchJson(path) {
