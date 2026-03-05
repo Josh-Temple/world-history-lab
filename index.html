@@ -4,213 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World History Lab</title>
-    <link rel="stylesheet" href="./styles/site.css" />
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+      h1 { margin-bottom: 0.5rem; }
+      ul { padding-left: 1.2rem; }
+      .counts li { margin: 0.25rem 0; }
+    </style>
   </head>
   <body>
-    <main class="page">
-      <header class="hero">
-        <details class="utility-menu" id="utility-menu">
-          <summary aria-label="Open data links menu" title="Data links">⋮</summary>
-          <div class="utility-panel" role="menu" aria-label="Data links">
-            <p class="utility-title">Data links</p>
-            <ul class="data-links">
-              <li><a href="./data/events.json"><code>/data/events.json</code></a></li>
-              <li><a href="./data/people.json"><code>/data/people.json</code></a></li>
-              <li><a href="./data/units/index.json"><code>/data/units/index.json</code></a></li>
-              <li>
-                <a href="./data/units/french-revolution-napoleon.json"
-                  ><code>/data/units/french-revolution-napoleon.json</code></a
-                >
-              </li>
-              <li>
-                <a href="./data/units/industrial-revolution.json"
-                  ><code>/data/units/industrial-revolution.json</code></a
-                >
-              </li>
-            </ul>
-          </div>
-        </details>
+    <h1>World History Lab</h1>
+    <p>Shared dataset and mini apps for history practice.</p>
 
-        <p class="eyebrow">engineered play &amp; logic</p>
-        <h1>World History Lab</h1>
-        <div class="accent-dots" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <p>
-          A quiet workspace for timelines, people, and source datasets — shaped mostly by
-          typography and spacing.
-        </p>
-      </header>
+    <h2>Dataset counts</h2>
+    <ul class="counts">
+      <li>Events: <span id="count-events">loading...</span></li>
+      <li>People: <span id="count-people">loading...</span></li>
+      <li>Units: <span id="count-units">loading...</span></li>
+    </ul>
 
-      <section class="grid" aria-label="World History Lab modules">
-        <section class="card card-highlight">
-          <h2>Dataset summary</h2>
-          <ul class="stat-list">
-            <li><strong>Events:</strong> <span id="count-events" class="stat">loading...</span></li>
-            <li><strong>People:</strong> <span id="count-people" class="stat">loading...</span></li>
-            <li><strong>Units:</strong> <span id="count-units" class="stat">loading...</span></li>
-          </ul>
-        </section>
-
-        <section class="card">
-          <h2>Mini apps</h2>
-          <p class="muted">Practice modes available right now:</p>
-          <a class="module-link" href="./apps/timeline-trainer/">
-            <span class="module-name">Timeline Trainer</span>
-            <span class="module-path" aria-label="Path">/apps/timeline-trainer/</span>
-            <span class="module-arrow" aria-hidden="true">↗</span>
-          </a>
-        </section>
-      </section>
-
-      <footer class="status-area">
-        <p id="count-error" class="error-text" role="status" hidden>
-          Failed to load some dataset counts. Please reload the page.
-        </p>
-      </footer>
-    </main>
+    <h2>Links</h2>
+    <ul>
+      <li><a href="/apps/timeline-trainer/">Timeline Trainer</a></li>
+      <li><a href="/data/events.json">/data/events.json</a></li>
+      <li><a href="/data/people.json">/data/people.json</a></li>
+      <li><a href="/data/units/index.json">/data/units/index.json</a></li>
+    </ul>
 
     <script type="module">
-      const fallbackUnitPaths = [
-        "./data/units/french-revolution-napoleon.json",
-        "./data/units/industrial-revolution.json",
-      ];
-
-      function createArrayCountItem({ label, elementId, path }) {
-        return {
-          label,
-          element: document.getElementById(elementId),
-          path,
-          parseCount(json) {
-            if (!Array.isArray(json)) {
-              throw new Error(`Expected ${path} to be an array`);
-            }
-            return json.length;
-          },
-        };
-      }
-
-      function isTopLevelObject(json) {
-        return json !== null && typeof json === "object" && !Array.isArray(json);
-      }
-
-      async function resolveUnitPaths() {
-        try {
-          const registry = await fetchJson("./data/units/index.json");
-          if (!registry || !Array.isArray(registry.units)) {
-            throw new Error("units/index.json must include { units: [] }");
-          }
-
-          const paths = registry.units
-            .map((entry) => (entry && typeof entry.path === "string" ? entry.path : null))
-            .filter(Boolean)
-            .map((path) => `./${path.replace(/^\.?\/?/, "")}`);
-
-          if (paths.length === 0) {
-            throw new Error("units/index.json has no valid unit paths");
-          }
-
-          return paths;
-        } catch (error) {
-          console.warn("[Top page counts] Falling back to hardcoded unit list", error);
-          return fallbackUnitPaths;
-        }
-      }
-
-      function createUnitsCountItem({ label, elementId }) {
-        return {
-          label,
-          element: document.getElementById(elementId),
-          async fetchCount() {
-            const paths = await resolveUnitPaths();
-            const results = await Promise.all(paths.map((path) => fetchJson(path)));
-            results.forEach((json, index) => {
-              if (!isTopLevelObject(json)) {
-                throw new Error(`Expected ${paths[index]} to be an object`);
-              }
-            });
-
-            return results.length;
-          },
-        };
-      }
-
-      const summaryItems = [
-        createArrayCountItem({
-          label: "events",
-          elementId: "count-events",
-          path: "./data/events.json",
-        }),
-        createArrayCountItem({
-          label: "people",
-          elementId: "count-people",
-          path: "./data/people.json",
-        }),
-        createUnitsCountItem({
-          label: "units",
-          elementId: "count-units",
-        }),
-      ];
-
-      const countError = document.getElementById("count-error");
-      const utilityMenu = document.getElementById("utility-menu");
-
-      function setupUtilityMenuDismiss() {
-        if (!utilityMenu) {
-          return;
-        }
-
-        document.addEventListener("click", (event) => {
-          if (!utilityMenu.open) {
-            return;
-          }
-
-          if (utilityMenu.contains(event.target)) {
-            return;
-          }
-
-          utilityMenu.open = false;
-        });
-      }
-
       async function fetchJson(path) {
         const response = await fetch(path, { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status} for ${path}`);
-        }
+        if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
         return response.json();
       }
 
-      async function fetchCount(item) {
-        if (typeof item.fetchCount === "function") {
-          return item.fetchCount();
-        }
-
-        const json = await fetchJson(item.path);
-        return item.parseCount(json);
-      }
-
       async function loadCounts() {
-        const results = await Promise.allSettled(summaryItems.map((item) => fetchCount(item)));
-        const hasFailure = results.some((result) => result.status !== "fulfilled");
+        try {
+          const [events, people, unitIndex] = await Promise.all([
+            fetchJson("/data/events.json"),
+            fetchJson("/data/people.json"),
+            fetchJson("/data/units/index.json"),
+          ]);
 
-        countError.hidden = !hasFailure;
-
-        results.forEach((result, index) => {
-          const item = summaryItems[index];
-          if (result.status === "fulfilled") {
-            item.element.textContent = String(result.value);
-            return;
+          if (!Array.isArray(events)) throw new Error("events.json must be an array");
+          if (!Array.isArray(people)) throw new Error("people.json must be an array");
+          if (!unitIndex || !Array.isArray(unitIndex.units)) {
+            throw new Error("units/index.json must contain a units array");
           }
 
-          item.element.textContent = "—";
-          console.error(`[Top page counts] Failed to load ${item.label}`, result.reason);
-        });
+          document.getElementById("count-events").textContent = String(events.length);
+          document.getElementById("count-people").textContent = String(people.length);
+          document.getElementById("count-units").textContent = String(unitIndex.units.length);
+        } catch (error) {
+          console.error("Failed loading counts", error);
+          document.getElementById("count-events").textContent = "—";
+          document.getElementById("count-people").textContent = "—";
+          document.getElementById("count-units").textContent = "—";
+        }
       }
 
-      setupUtilityMenuDismiss();
       loadCounts();
     </script>
   </body>
