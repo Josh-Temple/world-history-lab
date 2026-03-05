@@ -125,11 +125,9 @@ Timeline Trainer now supports scope controls:
 
 ## UI design direction (current)
 
-- **Radical minimalism** across all current pages (`/` and `/apps/timeline-trainer/`).
-- **Subtractive styling**: card-like containers, heavy shadows, and decorative gradients were removed.
-- **Underline-first language**: interactions and structure are expressed mainly through thin bottom borders and restrained typography.
-- **Calm visual rhythm**: spacing and type weight are tuned to feel editorial and premium without visual noise.
-- **Progressive disclosure for data links**: top-page raw data links are tucked into a right-top kebab menu so the page stays focused while still exposing quick access for data checks.
+- **Landing page is intentionally minimal**: plain HTML with quick links and live dataset counts.
+- **Timeline Trainer remains the primary styled app surface** under `apps/timeline-trainer/`.
+- **Top-page focus is operational clarity** rather than visual decoration.
 
 ## How to run
 
@@ -174,19 +172,15 @@ Current app code assumes those top-level shapes (`Array`, `Array`, `Object`) and
 
 ### Top page summary logic
 
-`/index.html` keeps only high-level cards visible by default and moves raw data links into a right-top kebab menu (`⋮`) for on-demand access. The menu icon is intentionally marker-less in both closed/open states to avoid layout shift when toggled, and the menu now closes when the user clicks outside it.
-
-The top page fetches events/people plus all tracked unit JSON files in parallel with `Promise.allSettled` and updates:
+`/index.html` fetches `events.json`, `people.json`, and `units/index.json` in parallel and updates:
 
 - `#count-events` = `events.length`
 - `#count-people` = `people.length`
-- `#count-units` = number of valid unit JSON objects currently tracked on the page (currently `2`)
+- `#count-units` = `units/index.json` entry count
 
-The Mini apps card shows a human-readable app title (`Timeline Trainer`) with the path shown as supplementary context.
+The page also provides direct links to Timeline Trainer and raw dataset endpoints for quick sanity checks.
 
-Timeline Trainer keeps the default view concise by showing core stats first (Total / Correct / Accuracy), while detailed review and per-mode counts are tucked into a collapsible "Detailed breakdown" section.
-
-If any request fails or a JSON shape is unexpected, the page shows `—` for that count and logs a clear console error.
+If any request fails or a JSON shape is unexpected, the page shows `—` for all counts and logs a clear console error.
 
 ### Safe data updates
 
