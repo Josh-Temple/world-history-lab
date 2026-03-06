@@ -366,6 +366,28 @@ function assertArray(value, label) {
   }
 }
 
+function assertObject(value, label) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    throw new Error(`${label} must be an object`);
+  }
+}
+
+function validateUnitSchema(unit, sourcePath) {
+  assertArray(unit.regions, `${sourcePath}: unit.regions`);
+  for (const region of unit.regions) {
+    if (typeof region !== "string") {
+      throw new Error(`${sourcePath}: unit.regions must be an array of strings`);
+    }
+    if (!region.startsWith("reg_")) {
+      throw new Error(`${sourcePath}: invalid region id \"${region}\" (expected reg_* format)`);
+    }
+  }
+
+  if (unit.app_profiles !== undefined) {
+    assertObject(unit.app_profiles, `${sourcePath}: unit.app_profiles`);
+  }
+}
+
 async function loadUnits() {
   let registry;
 
@@ -400,6 +422,7 @@ async function loadUnits() {
       throw new Error(`${entry.path}: unit.event_ids must be an array of strings`);
     }
 
+    validateUnitSchema(unit, entry.path);
     units.push(unit);
   }
 
@@ -437,12 +460,17 @@ async function main() {
   normalizedEvents.sort((a, b) => a.id.localeCompare(b.id));
   const normalizedEventLookup = new Map(normalizedEvents.map((event) => [event.id, event]));
 
+  const missingRefs = [];
   for (const unit of units) {
     for (const eventId of unit.event_ids) {
       if (!eventLookup.has(eventId)) {
-        console.warn(`[derive] Unit ${unit.id} references missing event id: ${eventId}`);
+        missingRefs.push(`${unit.id}:${eventId}`);
       }
     }
+  }
+
+  if (missingRefs.length > 0) {
+    throw new Error(`Missing event references in unit manifests: ${missingRefs.join(", ")}`);
   }
 
   const eventsByYear = buildEventsByYear(normalizedEvents);
@@ -459,7 +487,9 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "index.units.json"), toJson(unitsIndex), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.unit_event_pool.json"), toJson(unitEventPool), "utf8");
 
-  console.log(`[derive] Generated ${normalizedEvents.length} normalized events and 4 indexes in /derived.`);
+  console.log(
+    `[derive] Validated ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events and 4 indexes in /derived.`
+  );
 }
 
 main().catch((error) => {

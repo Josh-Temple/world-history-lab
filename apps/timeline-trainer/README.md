@@ -76,3 +76,10 @@ Open:
   - `Reviewed+` (default): includes `reviewed` + `approved` events only
   - `Include drafts`: includes `draft` + `reviewed` + `approved`
 - Any scope change resets in-session state safely: current question, stats, wrong queue, and recent history windows.
+
+## UX flow update
+
+- Settings are now split into **Practice setup** and **Question mode** for faster first-use comprehension.
+- The mode helper line updates as the selected mode changes.
+- An inline availability hint appears near scope/quality controls so users can detect zero-eligible states before generating a dead-end question.
+- Result feedback and the **Next question** action are grouped together, and detailed stats remain available but visually secondary.
