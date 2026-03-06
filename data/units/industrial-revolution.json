@@ -4,8 +4,15 @@
   "language": "en",
   "description": "Technological transformation driven by mechanization, steam power, and industrial production.",
   "recommended_level": "middle",
-  "regions": ["Britain", "Europe", "North America"],
-  "tags": ["industry", "technology"],
+  "regions": [
+    "reg_britain",
+    "reg_europe",
+    "reg_north_america"
+  ],
+  "tags": [
+    "industry",
+    "technology"
+  ],
   "learning_goals": [
     "Understand the sequence of major industrial innovations",
     "Connect technology with economic and social change"
@@ -27,5 +34,14 @@
   ],
   "person_ids": [],
   "status": "draft",
-  "updated_at": "2026-03-06"
+  "updated_at": "2026-03-06",
+  "app_profiles": {
+    "timeline-trainer": {
+      "enabled": true,
+      "question_types": [
+        "timeline_before_after",
+        "timeline_ordering"
+      ]
+    }
+  }
 }

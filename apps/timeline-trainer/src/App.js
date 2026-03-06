@@ -83,6 +83,8 @@ const ui = {
   unitSelectWrap: document.getElementById("unit-select-wrap"),
   unitSelect: document.getElementById("unit-select"),
   qualitySelect: document.getElementById("quality-select"),
+  availabilityHint: document.getElementById("availability-hint"),
+  modeHelp: document.getElementById("mode-help"),
   questionTitle: document.getElementById("question-title"),
   questionText: document.getElementById("question-text"),
   questionBadge: document.getElementById("question-badge"),
@@ -134,6 +136,53 @@ function getQuestionPrompt(type) {
     title: "Which happened earlier?",
     text: "Choose the earlier event.",
   };
+}
+
+
+function getModeHelpText(mode) {
+  if (mode === MODE.EARLIEST_OF_3) {
+    return "Choose the earliest of the three events.";
+  }
+  if (mode === MODE.LATEST_OF_3) {
+    return "Choose the latest of the three events.";
+  }
+  if (mode === MODE.MIXED) {
+    return "Rotates between available modes for your current setup.";
+  }
+  return "Choose the event that happened earlier.";
+}
+
+function getScopeEligibleCount() {
+  if (state.scope.mode === PRACTICE_MODE.UNIT) {
+    const pool = state.poolsByUnitId.get(state.scope.unitId);
+    if (!pool) {
+      return 0;
+    }
+    return Math.max(...Object.values(pool.eligibleCount));
+  }
+
+  let maxCount = 0;
+  for (const pool of state.poolsByUnitId.values()) {
+    maxCount += Math.max(...Object.values(pool.eligibleCount));
+  }
+  return maxCount;
+}
+
+function updateModeHelp() {
+  ui.modeHelp.textContent = getModeHelpText(ui.modeSelect.value);
+}
+
+function updateAvailabilityHint() {
+  const eligibleCount = getScopeEligibleCount();
+  if (eligibleCount === 0 && state.scope.minStatus === "reviewed") {
+    ui.availabilityHint.textContent = "No reviewed items available. Switch to Include drafts.";
+    return;
+  }
+  if (eligibleCount === 0) {
+    ui.availabilityHint.textContent = "No eligible items available for this selection.";
+    return;
+  }
+  ui.availabilityHint.textContent = `${eligibleCount} eligible events available.`;
 }
 
 function getOptionButtons() {
@@ -579,9 +628,9 @@ function pickUnitPoolForType(questionType) {
 function generateFreshQuestion(enabledTypes) {
   if (enabledTypes.length === 0) {
     if (state.scope.mode === PRACTICE_MODE.ALL) {
-      throw new Error("No units have enough eligible events for this mode/settings. Try Include drafts.");
+      throw new Error("No units have enough eligible events for this mode/settings.");
     }
-    throw new Error("This unit has no eligible events for the current settings. Try Include drafts.");
+    throw new Error("This unit has no eligible events for the current settings.");
   }
 
   const orderedTypes = ui.modeSelect.value === MODE.MIXED ? pickTypeWithWeights(enabledTypes) : enabledTypes;
@@ -617,7 +666,7 @@ function generateFreshQuestion(enabledTypes) {
     }
   }
 
-  throw new Error("No units have enough eligible events for this mode/settings. Try Include drafts.");
+  throw new Error("No units have enough eligible events for this mode/settings.");
 }
 
 function generateAndRenderNextQuestion() {
@@ -709,6 +758,8 @@ function syncSettingsUI() {
   ui.qualitySelect.value = state.scope.minStatus;
   ui.unitSelectWrap.hidden = state.scope.mode !== PRACTICE_MODE.UNIT;
   updateHeaderScopeLabel();
+  updateModeHelp();
+  updateAvailabilityHint();
 }
 
 function resetSessionState() {
@@ -755,6 +806,7 @@ function applyScope(nextScope) {
   syncSettingsUI();
   buildPoolsForScope();
   refreshScopeAvailability();
+  updateAvailabilityHint();
   resetSessionState();
   generateAndRenderNextQuestion();
 }
@@ -781,6 +833,7 @@ function bindEvents() {
   });
 
   ui.modeSelect.addEventListener("change", () => {
+    updateModeHelp();
     applyScope({
       ...state.scope,
       enabledQuestionTypes: getRequestedTypesFromQuestionMode(),
@@ -845,6 +898,7 @@ export async function startApp() {
     syncSettingsUI();
     buildPoolsForScope();
     refreshScopeAvailability();
+    updateAvailabilityHint();
     resetSessionState();
     generateAndRenderNextQuestion();
   } catch (error) {

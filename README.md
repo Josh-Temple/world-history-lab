@@ -216,6 +216,8 @@ Generated files:
 
 Unit files are loaded from `data/units/index.json` (with fallback defaults inside the script).
 
+Derive now validates unit manifests more strictly: missing `unit.event_ids` references fail the run, `regions` must use canonical `reg_*` identifiers, and `app_profiles` (if present) must be an object keyed by app id.
+
 ## License
 
 TBD

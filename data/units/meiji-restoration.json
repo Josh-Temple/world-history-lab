@@ -5,8 +5,8 @@
   "description": "Study Japan's transformation into a modern nation-state from Commodore Perry's arrival in 1853 to the death of Emperor Meiji in 1912.",
   "recommended_level": "middle",
   "regions": [
-    "Japan",
-    "East Asia"
+    "reg_japan",
+    "reg_east_asia"
   ],
   "tags": [
     "meiji",
@@ -32,9 +32,15 @@
     "ev_meiji_emperor_death_1912"
   ],
   "person_ids": [],
-  "app_profiles": [
-    "basic"
-  ],
+  "app_profiles": {
+    "timeline-trainer": {
+      "enabled": true,
+      "question_types": [
+        "timeline_before_after",
+        "timeline_ordering"
+      ]
+    }
+  },
   "status": "draft",
   "updated_at": "2026-03-03"
 }
