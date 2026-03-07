@@ -385,6 +385,13 @@ function validateUnitSchema(unit, sourcePath) {
 
   if (unit.app_profiles !== undefined) {
     assertObject(unit.app_profiles, `${sourcePath}: unit.app_profiles`);
+
+    for (const [appId, profile] of Object.entries(unit.app_profiles)) {
+      assertObject(profile, `${sourcePath}: unit.app_profiles.${appId}`);
+      if (typeof profile.enabled !== "boolean") {
+        throw new Error(`${sourcePath}: unit.app_profiles.${appId}.enabled must be a boolean`);
+      }
+    }
   }
 }
 
@@ -460,17 +467,12 @@ async function main() {
   normalizedEvents.sort((a, b) => a.id.localeCompare(b.id));
   const normalizedEventLookup = new Map(normalizedEvents.map((event) => [event.id, event]));
 
-  const missingRefs = [];
   for (const unit of units) {
     for (const eventId of unit.event_ids) {
       if (!eventLookup.has(eventId)) {
-        missingRefs.push(`${unit.id}:${eventId}`);
+        throw new Error(`Missing event reference: ${unit.id} -> ${eventId}`);
       }
     }
-  }
-
-  if (missingRefs.length > 0) {
-    throw new Error(`Missing event references in unit manifests: ${missingRefs.join(", ")}`);
   }
 
   const eventsByYear = buildEventsByYear(normalizedEvents);
