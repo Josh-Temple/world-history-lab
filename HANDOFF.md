@@ -1,28 +1,26 @@
 # Handoff Notes (Next Session)
 
 ## Session context
-- Applied the Task 1 data-pipeline hardening follow-up to make derive failures more explicit and enforce stricter `app_profiles` shape checks.
-- Re-ran validation and derive generation successfully after the change.
+- The user asked for a concrete forward plan after prior documentation-only updates.
+- This session refined planning docs to focus on executable next sessions.
 
 ## Changes made
-1. Derive strictness improvements
-   - `scripts/derive.mjs`
-     - Unit reference validation now fails immediately with a precise per-reference error:
-       - `Missing event reference: <unit_id> -> <event_id>`
-     - `app_profiles` validation is now stricter:
-       - remains required to be an object when present
-       - each app profile value must be an object
-       - each app profile must include `enabled` as a boolean
-
-2. Documentation update
+1. Updated README with a concrete 3-session execution plan
    - `README.md`
-     - Updated derive validation documentation to include the new `app_profiles.<app>.enabled` boolean requirement.
+   - Added a new section: **History Player immediate execution plan (next 3 sessions)**.
+   - Includes Session A (data freeze), Session B (player core), Session C (map + log integration), and first-release definition of done.
+
+2. Updated handoff for implementation readiness
+   - `HANDOFF.md`
+   - Replaced the previous seed-only handoff with an action-oriented sequence and release gate checks.
 
 ## Validation performed
-- `node scripts/validate.mjs`
-- `node scripts/derive.mjs`
+- `git diff -- README.md HANDOFF.md`
 
-## Suggested next steps
-1. Add a machine-readable schema file for unit manifests to align editor/tooling checks with derive-time validations.
-2. Consider adding CI automation to run `node scripts/validate.mjs && node scripts/derive.mjs` on every PR.
-3. If future apps are added, document app-profile conventions (required keys beyond `enabled`) in a dedicated schema section.
+## Next steps (ordered)
+1. Execute Session A data freeze on a limited approved event subset.
+2. Run and fix all issues from:
+   - `node scripts/validate.mjs`
+   - `node scripts/derive.mjs`
+3. Start Session B route/core implementation only after data scripts pass.
+4. Keep `/player` MVP scope fixed (no causality lines, no animated borders) until first release criteria are met.

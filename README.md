@@ -102,6 +102,45 @@ Next:
 
 
 
+## History Player planning (new)
+
+A practical MVP plan for adding a new in-repo `History Player` view is now documented here:
+
+- `docs/history-player-mvp-plan.md`
+
+Key decision: keep a **single shared data source** (`data/events.json`) and ship a focused MVP centered on event-sequence playback + map markers + event log + importance filtering.
+
+
+Additional planning assets for the next execution step:
+
+- `docs/history-player-top50-candidate-seed.md` (first-pass major 50 event candidates with category, representative coordinates, and one-line summaries)
+- `docs/history-player-event-extension-sample.json` (drop-in JSON examples for the proposed event schema extension fields)
+
+
+## History Player immediate execution plan (next 3 sessions)
+
+1. **Session A: Data freeze for first playable slice**
+   - Finalize 50 events from `docs/history-player-top50-candidate-seed.md`.
+   - Add `importance`, `category`, `summary_short`, and `location` for the approved subset in `data/events.json`.
+   - Run `node scripts/validate.mjs` and `node scripts/derive.mjs`; treat failures as blockers before UI work.
+
+2. **Session B: Player route + playback core**
+   - Add `/player` page shell and local player state (`currentIndex`, `isPlaying`, `playbackSpeed`, filters).
+   - Implement helper utilities: normalize, filter, chronological sort, visible-event derivation, log-event derivation.
+   - Implement controls: previous / play-pause / next / speed / timeline slider (event-index based).
+
+3. **Session C: Map + log MVP completion**
+   - Add map marker rendering for current event plus faded recent events.
+   - Add bottom event log with click-to-select behavior.
+   - Ship first MVP pass behind `importance <= 1` default and then expand to level switching (1..4).
+
+### Definition of done for first release
+
+- `/player` is reachable and functional from first load.
+- Playback works in event-sequence mode (not year-by-year stepping).
+- Importance filtering changes playable event set predictably.
+- Validation + derivation scripts pass after data updates.
+
 ## Timeline Trainer modes: implemented vs planned
 
 Implemented now in `main`:
