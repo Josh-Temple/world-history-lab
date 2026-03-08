@@ -383,14 +383,12 @@ function validateUnitSchema(unit, sourcePath) {
     }
   }
 
-  if (unit.app_profiles !== undefined) {
-    assertObject(unit.app_profiles, `${sourcePath}: unit.app_profiles`);
+  assertObject(unit.app_profiles, `${sourcePath}: unit.app_profiles`);
 
-    for (const [appId, profile] of Object.entries(unit.app_profiles)) {
-      assertObject(profile, `${sourcePath}: unit.app_profiles.${appId}`);
-      if (typeof profile.enabled !== "boolean") {
-        throw new Error(`${sourcePath}: unit.app_profiles.${appId}.enabled must be a boolean`);
-      }
+  for (const [appId, profile] of Object.entries(unit.app_profiles)) {
+    assertObject(profile, `${sourcePath}: unit.app_profiles.${appId}`);
+    if (typeof profile.enabled !== "boolean") {
+      throw new Error(`${sourcePath}: unit.app_profiles.${appId}.enabled must be a boolean`);
     }
   }
 }
@@ -410,6 +408,7 @@ async function loadUnits() {
   }
 
   const units = [];
+  const unitIdSet = new Set();
   for (const entry of registry.units) {
     if (!entry || typeof entry.path !== "string") {
       throw new Error("Each unit registry entry must include a path string");
@@ -427,6 +426,15 @@ async function loadUnits() {
     }
     if (!Array.isArray(unit.event_ids) || unit.event_ids.some((id) => typeof id !== "string")) {
       throw new Error(`${entry.path}: unit.event_ids must be an array of strings`);
+    }
+    if (unitIdSet.has(unit.id)) {
+      throw new Error(`${entry.path}: duplicate unit.id \"${unit.id}\"`);
+    }
+    unitIdSet.add(unit.id);
+
+    const uniqueEventIds = new Set(unit.event_ids);
+    if (uniqueEventIds.size !== unit.event_ids.length) {
+      throw new Error(`${entry.path}: unit.event_ids contains duplicates`);
     }
 
     validateUnitSchema(unit, entry.path);
@@ -456,6 +464,9 @@ async function main() {
   const eventLookup = new Map();
   for (const event of events) {
     validateEvent(event);
+    if (eventLookup.has(event.id)) {
+      throw new Error(`Duplicate event id: ${event.id}`);
+    }
     eventLookup.set(event.id, event);
 
     const normalized = normalizeEvent(event);
@@ -481,6 +492,8 @@ async function main() {
     .map((unit) => ({ id: unit.id, title: unit.title, event_ids: unit.event_ids.slice() }))
     .sort((a, b) => a.id.localeCompare(b.id));
   const unitEventPool = buildUnitEventPool(units, eventLookup, normalizedEventLookup, enabledQuestionTypeSet);
+  const unitEventPoolTypeCount = Object.values(unitEventPool)
+    .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
 
   await mkdir(DERIVED_DIR, { recursive: true });
   await writeFile(path.join(DERIVED_DIR, "events.normalized.json"), toJson(normalizedEvents), "utf8");
@@ -490,7 +503,7 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "index.unit_event_pool.json"), toJson(unitEventPool), "utf8");
 
   console.log(
-    `[derive] Validated ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events and 4 indexes in /derived.`
+    `[derive] Validation summary: ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events, ${Object.keys(eventsByYear).length} year buckets, and ${unitEventPoolTypeCount} unit/type eligibility pools in /derived.`
   );
 }
 
