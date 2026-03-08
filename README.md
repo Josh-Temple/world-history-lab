@@ -233,6 +233,19 @@ When adding/editing data:
 
 `/data/units/index.json` is now used as the primary unit registry for both app loading and derivation.
 
+
+## Unit schema expectations (validation-critical)
+
+`node scripts/derive.mjs` now enforces strict unit metadata validation. Keep every unit file under `data/units/*.json` aligned with these rules:
+
+- `regions`: required array of canonical region IDs using `reg_` prefix (for example `reg_britain`, `reg_europe`, `reg_north_america`, `reg_japan`, `reg_east_asia`).
+- `app_profiles`: required object keyed by app ID (for example `timeline-trainer`).
+- Each `app_profiles.<appId>` entry must be an object that includes `enabled` as a boolean.
+- `event_ids` must only contain valid existing event IDs and must not contain duplicates.
+- `unit.id` values must be unique across all units in `data/units/index.json`.
+
+Derive now fails fast (non-zero exit) on schema/reference violations so broken unit metadata cannot silently pass.
+
 ## Derived artifacts (build-time)
 
 Canonical data under `/data` remains human-authored and backward-compatible (`time.year_start` still works for MVP).

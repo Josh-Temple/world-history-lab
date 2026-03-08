@@ -1,34 +1,36 @@
 # Handoff Notes (Next Session)
 
 ## Session context
-- The user asked for a concrete forward plan after prior documentation-only updates.
-- This session refined planning docs to focus on executable next sessions.
+- Completed the "today health review" implementation focus for Task 1 (data integrity hardening + derive strictness).
+- Verified Timeline Trainer setup simplification work remains present and functional in the current codebase.
 
 ## Changes made
-1. Updated README with a concrete 3-session execution plan
-   - `README.md`
-   - Added a new section: **History Player immediate execution plan (next 3 sessions)**.
-   - Includes Session A (data freeze), Session B (player core), Session C (map + log integration), and first-release definition of done.
+1. Hardened derive validation (`scripts/derive.mjs`)
+   - Enforced required object schema for `unit.app_profiles`.
+   - Enforced `app_profiles.<appId>.enabled` boolean checks.
+   - Added duplicate detection for `unit.id` and per-unit `event_ids`.
+   - Added duplicate detection for `event.id`.
+   - Kept missing unit event references as hard errors (derive now fails fast).
+   - Expanded derive completion log with a validation summary.
 
-2. Updated handoff for implementation readiness
-   - `HANDOFF.md`
-   - Replaced the previous seed-only handoff with an action-oriented sequence and release gate checks.
+2. Updated documentation (`README.md`)
+   - Added **Unit schema expectations (validation-critical)** section.
+   - Documented canonical `regions` (`reg_*` IDs), required `app_profiles` object shape, and fail-fast derive behavior.
+
+3. Unit metadata state confirmed
+   - `data/units/french-revolution-napoleon.json`, `data/units/meiji-restoration.json`, and `data/units/industrial-revolution.json` all use canonical `reg_*` region IDs.
+   - All three unit files include object-based `app_profiles` with `enabled` booleans.
 
 ## Validation performed
-- `git diff -- README.md HANDOFF.md`
+- `node scripts/derive.mjs`
+- `git diff -- scripts/derive.mjs README.md HANDOFF.md`
 
 ## Next steps (ordered)
-1. Execute Session A data freeze on a limited approved event subset.
-2. Run and fix all issues from:
-   - `node scripts/validate.mjs`
-   - `node scripts/derive.mjs`
-3. Start Session B route/core implementation only after data scripts pass.
-4. Keep `/player` MVP scope fixed (no causality lines, no animated borders) until first release criteria are met.
+1. Add CI guardrails to run `node scripts/derive.mjs` on each PR.
+2. Add explicit JSON schema files for events/units and wire them into validation.
+3. Decide whether `data/people.json` should be consumed by derived artifacts now (or intentionally deferred).
+4. Optional: promote initial `people` records from `draft` once reviewed.
 
-## UX content density guardrail (for next implementation)
-- Reduce on-screen text as much as possible to lower cognitive load.
-- Keep only high-frequency controls and one-line status text visible by default.
-- Move secondary explanations, long labels, and edge-case guidance into collapsible sections (`<details>`/accordion).
-- Move advanced controls to a dedicated "Details" / "Advanced" menu instead of the primary surface.
-- Prefer concise labels and icon+tooltip patterns over persistent multi-line helper text.
-- Apply this rule first on the top page and History Player controls before adding new UI copy.
+## Notes for next UI-focused session
+- Timeline Trainer’s setup grouping, mode helper text, availability hint, and result/next block are already in place.
+- If further UX refinement is needed, prioritize mobile spacing and clearer mode semantics copy without increasing on-screen text density.
