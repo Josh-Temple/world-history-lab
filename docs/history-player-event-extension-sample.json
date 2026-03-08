@@ -1,0 +1,93 @@
+[
+  {
+    "id": "ev_fall_western_rome_476",
+    "label": "Fall of the Western Roman Empire",
+    "time": {
+      "year_start": 476,
+      "year_end": 476
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_earliest_of_3",
+      "timeline_latest_of_3"
+    ],
+    "tags": ["late_antiquity", "rome", "europe"],
+    "summary_short": "Western imperial rule collapsed, accelerating political fragmentation in Europe.",
+    "importance": 1,
+    "category": "politics",
+    "location": {
+      "label": "Ravenna",
+      "lat": 44.4184,
+      "lng": 12.2035,
+      "precision": "city"
+    },
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "source_refs": [
+      {
+        "title": "Western Roman Empire overview",
+        "url": "https://en.wikipedia.org/wiki/Western_Roman_Empire"
+      }
+    ]
+  },
+  {
+    "id": "ev_hijra_622",
+    "label": "Hijra (Muhammad's migration)",
+    "time": {
+      "year_start": 622,
+      "year_end": 622
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_earliest_of_3"
+    ],
+    "tags": ["islam", "arabia", "religion"],
+    "summary_short": "The migration to Medina marks the formation of the first Islamic polity.",
+    "importance": 1,
+    "category": "religion",
+    "location": {
+      "label": "Medina",
+      "lat": 24.4672,
+      "lng": 39.6111,
+      "precision": "city"
+    },
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "source_refs": [
+      {
+        "title": "Hijrah",
+        "url": "https://en.wikipedia.org/wiki/Hijrah"
+      }
+    ]
+  },
+  {
+    "id": "ev_industrialization_britain_1760",
+    "label": "Industrial Revolution accelerates in Britain",
+    "time": {
+      "year_start": 1760,
+      "year_end": 1840
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_latest_of_3"
+    ],
+    "tags": ["industry", "technology", "britain"],
+    "summary_short": "Mechanization and new energy systems transformed production and labor at scale.",
+    "importance": 1,
+    "category": "technology",
+    "location": {
+      "label": "Midlands (England)",
+      "lat": 52.4862,
+      "lng": -1.8904,
+      "precision": "region"
+    },
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "source_refs": [
+      {
+        "title": "Industrial Revolution",
+        "url": "https://en.wikipedia.org/wiki/Industrial_Revolution"
+      }
+    ]
+  }
+]
