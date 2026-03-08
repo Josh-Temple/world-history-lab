@@ -24,3 +24,11 @@
    - `node scripts/derive.mjs`
 3. Start Session B route/core implementation only after data scripts pass.
 4. Keep `/player` MVP scope fixed (no causality lines, no animated borders) until first release criteria are met.
+
+## UX content density guardrail (for next implementation)
+- Reduce on-screen text as much as possible to lower cognitive load.
+- Keep only high-frequency controls and one-line status text visible by default.
+- Move secondary explanations, long labels, and edge-case guidance into collapsible sections (`<details>`/accordion).
+- Move advanced controls to a dedicated "Details" / "Advanced" menu instead of the primary surface.
+- Prefer concise labels and icon+tooltip patterns over persistent multi-line helper text.
+- Apply this rule first on the top page and History Player controls before adding new UI copy.
