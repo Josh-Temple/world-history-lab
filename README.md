@@ -84,6 +84,12 @@ Next:
 - [x] Add initial app scaffold and run instructions.
 - [ ] Begin Causality Builder planning after timeline MVP baseline.
 
+## Current challenges (today)
+
+- **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
+- **People data is not yet used in derived runtime indexes**: `data/people.json` is loaded/validated but does not currently power app behavior.
+- **Timeline Trainer UX still needs final polish**: setup clarity and smoke checks are in place, but mobile readability and mode explanation copy can still be refined.
+
 ## Roadmap (short)
 
 - **Phase 1: Timeline MVP**
@@ -168,6 +174,17 @@ Timeline Trainer now supports scope controls:
 - **Operational clarity remains primary**: the top page still prioritizes quick app entry and live dataset counts.
 - **Timeline Trainer remains the main interactive surface** under `apps/timeline-trainer/`.
 
+## CI data integrity checks
+
+GitHub Actions now runs data integrity checks on pushes to `main` and on pull requests:
+
+- `node scripts/validate.mjs`
+- `node scripts/derive.mjs`
+- `git diff --exit-code -- derived`
+- `node scripts/smoke-timeline-trainer.mjs`
+
+If derive output changes, regenerate locally and commit updated files under `derived/` before opening/refreshing a PR.
+
 ## How to run
 
 This repository currently serves static files, so you can preview it locally with any static server.
@@ -238,7 +255,7 @@ When adding/editing data:
 
 `node scripts/derive.mjs` now enforces strict unit metadata validation. Keep every unit file under `data/units/*.json` aligned with these rules:
 
-- `regions`: required array of canonical region IDs using `reg_` prefix (for example `reg_britain`, `reg_europe`, `reg_north_america`, `reg_japan`, `reg_east_asia`).
+- `regions`: required array of canonical region IDs using `reg_` prefix (for example `reg_france`, `reg_britain`, `reg_europe`, `reg_north_america`, `reg_japan`, `reg_east_asia`).
 - `app_profiles`: required object keyed by app ID (for example `timeline-trainer`).
 - Each `app_profiles.<appId>` entry must be an object that includes `enabled` as a boolean.
 - `event_ids` must only contain valid existing event IDs and must not contain duplicates.
@@ -268,7 +285,7 @@ Generated files:
 
 Unit files are loaded from `data/units/index.json` (with fallback defaults inside the script).
 
-Derive now validates unit manifests more strictly: missing `unit.event_ids` references fail the run, `regions` must use canonical `reg_*` identifiers, and `app_profiles` (if present) must be an object keyed by app id where each profile includes a boolean `enabled` field.
+Derive now validates unit manifests more strictly: missing `unit.event_ids` references fail the run, `regions` must use canonical `reg_*` identifiers, and `app_profiles` must be an object keyed by app id where each profile includes a boolean `enabled` field.
 
 ## License
 
