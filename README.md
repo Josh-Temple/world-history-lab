@@ -256,7 +256,7 @@ When adding/editing data:
 `node scripts/derive.mjs` now enforces strict unit metadata validation. Keep every unit file under `data/units/*.json` aligned with these rules:
 
 - `regions`: required array of canonical region IDs using `reg_` prefix (for example `reg_france`, `reg_britain`, `reg_europe`, `reg_north_america`, `reg_japan`, `reg_east_asia`).
-- `app_profiles`: required object keyed by app ID (for example `timeline-trainer`).
+- `app_profiles`: required object keyed by app ID and must include `timeline-trainer`.
 - Each `app_profiles.<appId>` entry must be an object that includes `enabled` as a boolean.
 - `event_ids` must only contain valid existing event IDs and must not contain duplicates.
 - `unit.id` values must be unique across all units in `data/units/index.json`.

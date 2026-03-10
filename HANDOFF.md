@@ -1,25 +1,20 @@
 # Handoff Notes (Next Session)
 
 ## Session context
-- Continued resolving items from the previous handoff by implementing the first prioritized action: a lightweight Timeline Trainer CI smoke check.
-- Kept existing data integrity checks and added app-level regression detection without adding external dependencies.
+- Completed the requested health-review implementation focus with stricter derive-time unit validation.
+- Confirmed unit metadata normalization remains consistent (`regions` as `reg_*`, object-based `app_profiles`).
+- Synced README validation guidance with the stricter derive expectation.
 
 ## Changes made
-1. Added Timeline Trainer smoke-check script
-   - New file: `scripts/smoke-timeline-trainer.mjs`
-   - Verifies:
-     - `apps/timeline-trainer/index.html` loads expected CSS/JS entrypoints
-     - `apps/timeline-trainer/src/main.js` imports and calls `startApp()`
-     - all `document.getElementById(...)` IDs used in `App.js` exist in HTML
-     - key setup/question/result/error UI IDs are present
+1. Strengthened unit schema validation in derive pipeline
+   - Updated `scripts/derive.mjs`:
+     - `unit.regions` must be a non-empty array.
+     - `unit.app_profiles.timeline-trainer` is now required.
+     - Existing checks remain for `reg_*` formatting and `enabled` boolean per app profile.
 
-2. Extended CI workflow
-   - Updated `.github/workflows/data-integrity.yml`
-   - Added `node scripts/smoke-timeline-trainer.mjs` after derive reproducibility checks.
-
-3. Updated documentation
-   - Updated `README.md` CI section to include the smoke-check command.
-   - Refined current UX challenge wording to reflect that smoke checks are now in place.
+2. Updated schema documentation
+   - Updated `README.md` Unit schema expectations section:
+     - Clarified that `app_profiles` must include `timeline-trainer`.
 
 ## Validation performed
 - `node scripts/validate.mjs`
@@ -28,6 +23,6 @@
 - `node scripts/smoke-timeline-trainer.mjs`
 
 ## Next steps (ordered)
-1. Decide whether to introduce people-linked derived indexes.
-2. Continue Timeline Trainer UX refinement (mobile spacing + mode helper copy).
-3. Optionally add a second smoke check for top-page data-count loading behavior.
+1. Decide whether to promote selected `data/people.json` records from `draft` to `reviewed`.
+2. If people-linked runtime features are planned, add people-derived indexes and wire one app use-case.
+3. Continue Timeline Trainer UX polish (microcopy and narrow-screen spacing checks).

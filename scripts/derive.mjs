@@ -374,6 +374,9 @@ function assertObject(value, label) {
 
 function validateUnitSchema(unit, sourcePath) {
   assertArray(unit.regions, `${sourcePath}: unit.regions`);
+  if (unit.regions.length === 0) {
+    throw new Error(`${sourcePath}: unit.regions must contain at least one region id`);
+  }
   for (const region of unit.regions) {
     if (typeof region !== "string") {
       throw new Error(`${sourcePath}: unit.regions must be an array of strings`);
@@ -384,6 +387,9 @@ function validateUnitSchema(unit, sourcePath) {
   }
 
   assertObject(unit.app_profiles, `${sourcePath}: unit.app_profiles`);
+  if (!Object.hasOwn(unit.app_profiles, "timeline-trainer")) {
+    throw new Error(`${sourcePath}: unit.app_profiles.timeline-trainer is required`);
+  }
 
   for (const [appId, profile] of Object.entries(unit.app_profiles)) {
     assertObject(profile, `${sourcePath}: unit.app_profiles.${appId}`);
