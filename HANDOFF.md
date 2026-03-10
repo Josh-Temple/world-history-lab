@@ -1,36 +1,33 @@
 # Handoff Notes (Next Session)
 
 ## Session context
-- Completed the "today health review" implementation focus for Task 1 (data integrity hardening + derive strictness).
-- Verified Timeline Trainer setup simplification work remains present and functional in the current codebase.
+- Continued resolving items from the previous handoff by implementing the first prioritized action: a lightweight Timeline Trainer CI smoke check.
+- Kept existing data integrity checks and added app-level regression detection without adding external dependencies.
 
 ## Changes made
-1. Hardened derive validation (`scripts/derive.mjs`)
-   - Enforced required object schema for `unit.app_profiles`.
-   - Enforced `app_profiles.<appId>.enabled` boolean checks.
-   - Added duplicate detection for `unit.id` and per-unit `event_ids`.
-   - Added duplicate detection for `event.id`.
-   - Kept missing unit event references as hard errors (derive now fails fast).
-   - Expanded derive completion log with a validation summary.
+1. Added Timeline Trainer smoke-check script
+   - New file: `scripts/smoke-timeline-trainer.mjs`
+   - Verifies:
+     - `apps/timeline-trainer/index.html` loads expected CSS/JS entrypoints
+     - `apps/timeline-trainer/src/main.js` imports and calls `startApp()`
+     - all `document.getElementById(...)` IDs used in `App.js` exist in HTML
+     - key setup/question/result/error UI IDs are present
 
-2. Updated documentation (`README.md`)
-   - Added **Unit schema expectations (validation-critical)** section.
-   - Documented canonical `regions` (`reg_*` IDs), required `app_profiles` object shape, and fail-fast derive behavior.
+2. Extended CI workflow
+   - Updated `.github/workflows/data-integrity.yml`
+   - Added `node scripts/smoke-timeline-trainer.mjs` after derive reproducibility checks.
 
-3. Unit metadata state confirmed
-   - `data/units/french-revolution-napoleon.json`, `data/units/meiji-restoration.json`, and `data/units/industrial-revolution.json` all use canonical `reg_*` region IDs.
-   - All three unit files include object-based `app_profiles` with `enabled` booleans.
+3. Updated documentation
+   - Updated `README.md` CI section to include the smoke-check command.
+   - Refined current UX challenge wording to reflect that smoke checks are now in place.
 
 ## Validation performed
+- `node scripts/validate.mjs`
 - `node scripts/derive.mjs`
-- `git diff -- scripts/derive.mjs README.md HANDOFF.md`
+- `git diff --exit-code -- derived`
+- `node scripts/smoke-timeline-trainer.mjs`
 
 ## Next steps (ordered)
-1. Add CI guardrails to run `node scripts/derive.mjs` on each PR.
-2. Add explicit JSON schema files for events/units and wire them into validation.
-3. Decide whether `data/people.json` should be consumed by derived artifacts now (or intentionally deferred).
-4. Optional: promote initial `people` records from `draft` once reviewed.
-
-## Notes for next UI-focused session
-- Timeline Trainer’s setup grouping, mode helper text, availability hint, and result/next block are already in place.
-- If further UX refinement is needed, prioritize mobile spacing and clearer mode semantics copy without increasing on-screen text density.
+1. Decide whether to introduce people-linked derived indexes.
+2. Continue Timeline Trainer UX refinement (mobile spacing + mode helper copy).
+3. Optionally add a second smoke check for top-page data-count loading behavior.

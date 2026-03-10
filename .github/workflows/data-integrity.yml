@@ -1,0 +1,32 @@
+name: Data Integrity
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-and-derive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate canonical data
+        run: node scripts/validate.mjs
+
+      - name: Derive runtime artifacts
+        run: node scripts/derive.mjs
+
+      - name: Ensure derived artifacts are up to date
+        run: git diff --exit-code -- derived
+
+      - name: Timeline Trainer smoke check
+        run: node scripts/smoke-timeline-trainer.mjs
