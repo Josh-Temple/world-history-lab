@@ -242,6 +242,22 @@ function validateEvent(event) {
   }
 }
 
+function validatePeople(people) {
+  const personIdSet = new Set();
+  for (const person of people) {
+    if (!person || typeof person !== "object" || Array.isArray(person)) {
+      throw new Error("Each person must be an object");
+    }
+    if (typeof person.id !== "string" || person.id.trim() === "") {
+      throw new Error("Each person must include a non-empty id");
+    }
+    if (personIdSet.has(person.id)) {
+      throw new Error(`Duplicate person id: ${person.id}`);
+    }
+    personIdSet.add(person.id);
+  }
+}
+
 function normalizeEvent(event) {
   const parsed = parseEventTime(event);
   if (!parsed) {
@@ -463,6 +479,7 @@ async function main() {
 
   const people = await readJson("data/people.json");
   assertArray(people, "data/people.json");
+  validatePeople(people);
 
   const units = await loadUnits();
 
