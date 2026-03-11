@@ -1,20 +1,18 @@
 # Handoff Notes (Next Session)
 
 ## Session context
-- Completed the requested health-review implementation focus with stricter derive-time unit validation.
-- Confirmed unit metadata normalization remains consistent (`regions` as `reg_*`, object-based `app_profiles`).
-- Synced README validation guidance with the stricter derive expectation.
+- Completed the health-review hardening pass for data/derive reliability that remained in scope.
+- Verified unit metadata normalization and strict reference checks remain enforced and passing.
+- Added missing derive-time guard for duplicate people IDs.
 
 ## Changes made
-1. Strengthened unit schema validation in derive pipeline
+1. Added people duplicate-ID validation in derive pipeline
    - Updated `scripts/derive.mjs`:
-     - `unit.regions` must be a non-empty array.
-     - `unit.app_profiles.timeline-trainer` is now required.
-     - Existing checks remain for `reg_*` formatting and `enabled` boolean per app profile.
+     - New `validatePeople(people)` routine validates each person is an object with non-empty string `id`.
+     - Derive now throws on duplicate person IDs (`Duplicate person id: ...`).
 
-2. Updated schema documentation
-   - Updated `README.md` Unit schema expectations section:
-     - Clarified that `app_profiles` must include `timeline-trainer`.
+2. Updated documentation
+   - Updated `README.md` derive section to document that duplicate person IDs now fail derive-time validation.
 
 ## Validation performed
 - `node scripts/validate.mjs`
@@ -23,6 +21,6 @@
 - `node scripts/smoke-timeline-trainer.mjs`
 
 ## Next steps (ordered)
-1. Decide whether to promote selected `data/people.json` records from `draft` to `reviewed`.
-2. If people-linked runtime features are planned, add people-derived indexes and wire one app use-case.
-3. Continue Timeline Trainer UX polish (microcopy and narrow-screen spacing checks).
+1. Decide whether to promote selected `data/people.json` entries from `draft` to `reviewed` after factual review.
+2. If people-linked runtime features are planned, add a people-derived runtime artifact (for example a people index) and wire at least one app consumer.
+3. Continue Timeline Trainer UX polish with mobile readability checks and wording refinements.
