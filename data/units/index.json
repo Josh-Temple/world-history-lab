@@ -11,6 +11,10 @@
     {
       "id": "unit_meiji_restoration",
       "path": "data/units/meiji-restoration.json"
+    },
+    {
+      "id": "unit_age_of_imperialism",
+      "path": "data/units/age-of-imperialism.json"
     }
   ]
 }
