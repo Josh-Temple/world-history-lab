@@ -84,6 +84,13 @@ Next:
 - [x] Add initial app scaffold and run instructions.
 - [ ] Begin Causality Builder planning after timeline MVP baseline.
 
+
+## Recent updates (2026-03-12)
+
+- Timeline Trainer setup flow was refined to reduce cognitive load (clear setup grouping, dynamic mode helper text, eligibility hint, tighter result→next loop, and reduced stats prominence).
+- Added a new draft unit: **Age of Imperialism (1870–1914)** with 15 timeline-practice events.
+- Regenerated derived artifacts after dataset expansion.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.

@@ -141,15 +141,15 @@ function getQuestionPrompt(type) {
 
 function getModeHelpText(mode) {
   if (mode === MODE.EARLIEST_OF_3) {
-    return "Choose the earliest of the three events.";
+    return "Select the earliest event.";
   }
   if (mode === MODE.LATEST_OF_3) {
-    return "Choose the latest of the three events.";
+    return "Select the latest event.";
   }
   if (mode === MODE.MIXED) {
-    return "Rotates between available modes for your current setup.";
+    return "Rotates between the available question modes.";
   }
-  return "Choose the event that happened earlier.";
+  return "Choose which event happened earlier.";
 }
 
 function getScopeEligibleCount() {
@@ -158,14 +158,16 @@ function getScopeEligibleCount() {
     if (!pool) {
       return 0;
     }
-    return Math.max(...Object.values(pool.eligibleCount));
+    return pool.byType[QUESTION_TYPES.BEFORE_AFTER].length;
   }
 
-  let maxCount = 0;
+  const uniqueIds = new Set();
   for (const pool of state.poolsByUnitId.values()) {
-    maxCount += Math.max(...Object.values(pool.eligibleCount));
+    for (const eventRecord of pool.byType[QUESTION_TYPES.BEFORE_AFTER]) {
+      uniqueIds.add(eventRecord.id);
+    }
   }
-  return maxCount;
+  return uniqueIds.size;
 }
 
 function updateModeHelp() {

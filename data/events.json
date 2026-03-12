@@ -1680,5 +1680,339 @@
     ],
     "content_origin": "structured_external",
     "status": "draft"
+  },
+  {
+    "id": "ev_imperialism_leopold_congo_project_1876",
+    "label": "Leopold II begins Congo Free State project",
+    "time": {
+      "year_start": 1876
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "colonialism",
+      "congo"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_british_occupation_egypt_1882",
+    "label": "British occupation of Egypt",
+    "time": {
+      "year_start": 1882
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "british_empire",
+      "egypt"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_berlin_conference_begins_1884",
+    "label": "Berlin Conference begins",
+    "time": {
+      "year_start": 1884
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "berlin_conference",
+      "scramble_for_africa"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_berlin_conference_ends_1885",
+    "label": "Berlin Conference ends",
+    "time": {
+      "year_start": 1885
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "berlin_conference",
+      "colonial_partition"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_first_sinojapanese_war_begins_1894",
+    "label": "First Sino-Japanese War begins",
+    "time": {
+      "year_start": 1894
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "japan",
+      "china",
+      "war"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_treaty_shimonoseki_1895",
+    "label": "Treaty of Shimonoseki",
+    "time": {
+      "year_start": 1895
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "japan",
+      "china",
+      "treaty"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_spanish_american_war_1898",
+    "label": "Spanish-American War",
+    "time": {
+      "year_start": 1898
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "united_states",
+      "spain",
+      "war"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_second_boer_war_begins_1899",
+    "label": "Second Boer War begins",
+    "time": {
+      "year_start": 1899
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "british_empire",
+      "south_africa",
+      "war"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_boxer_rebellion_1900",
+    "label": "Boxer Rebellion",
+    "time": {
+      "year_start": 1900
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "china",
+      "rebellion"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_boer_war_ends_1902",
+    "label": "Boer War ends",
+    "time": {
+      "year_start": 1902
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "british_empire",
+      "south_africa"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_russojapanese_war_begins_1904",
+    "label": "Russo-Japanese War begins",
+    "time": {
+      "year_start": 1904
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "japan",
+      "russia",
+      "war"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_treaty_portsmouth_1905",
+    "label": "Treaty of Portsmouth",
+    "time": {
+      "year_start": 1905
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "japan",
+      "russia",
+      "treaty"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_first_moroccan_crisis_1905",
+    "label": "First Moroccan Crisis",
+    "time": {
+      "year_start": 1905
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "morocco",
+      "great_powers"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_agadir_crisis_1911",
+    "label": "Agadir Crisis",
+    "time": {
+      "year_start": 1911
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "morocco",
+      "gunboat_diplomacy"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_first_balkan_war_1912",
+    "label": "First Balkan War",
+    "time": {
+      "year_start": 1912
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "balkans",
+      "war"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
   }
 ]
