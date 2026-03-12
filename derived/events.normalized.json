@@ -176,6 +176,246 @@
     }
   },
   {
+    "id": "ev_imperialism_agadir_crisis_1911",
+    "label": "Agadir Crisis",
+    "time": {
+      "start": "1911",
+      "end": "1911",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19110101,
+      "sort_end": 19111231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1911
+    }
+  },
+  {
+    "id": "ev_imperialism_berlin_conference_begins_1884",
+    "label": "Berlin Conference begins",
+    "time": {
+      "start": "1884",
+      "end": "1884",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18840101,
+      "sort_end": 18841231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1884
+    }
+  },
+  {
+    "id": "ev_imperialism_berlin_conference_ends_1885",
+    "label": "Berlin Conference ends",
+    "time": {
+      "start": "1885",
+      "end": "1885",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18850101,
+      "sort_end": 18851231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1885
+    }
+  },
+  {
+    "id": "ev_imperialism_boer_war_ends_1902",
+    "label": "Boer War ends",
+    "time": {
+      "start": "1902",
+      "end": "1902",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19020101,
+      "sort_end": 19021231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1902
+    }
+  },
+  {
+    "id": "ev_imperialism_boxer_rebellion_1900",
+    "label": "Boxer Rebellion",
+    "time": {
+      "start": "1900",
+      "end": "1900",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19000101,
+      "sort_end": 19001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1900
+    }
+  },
+  {
+    "id": "ev_imperialism_british_occupation_egypt_1882",
+    "label": "British occupation of Egypt",
+    "time": {
+      "start": "1882",
+      "end": "1882",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18820101,
+      "sort_end": 18821231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1882
+    }
+  },
+  {
+    "id": "ev_imperialism_first_balkan_war_1912",
+    "label": "First Balkan War",
+    "time": {
+      "start": "1912",
+      "end": "1912",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19120101,
+      "sort_end": 19121231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1912
+    }
+  },
+  {
+    "id": "ev_imperialism_first_moroccan_crisis_1905",
+    "label": "First Moroccan Crisis",
+    "time": {
+      "start": "1905",
+      "end": "1905",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19050101,
+      "sort_end": 19051231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1905
+    }
+  },
+  {
+    "id": "ev_imperialism_first_sinojapanese_war_begins_1894",
+    "label": "First Sino-Japanese War begins",
+    "time": {
+      "start": "1894",
+      "end": "1894",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18940101,
+      "sort_end": 18941231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1894
+    }
+  },
+  {
+    "id": "ev_imperialism_leopold_congo_project_1876",
+    "label": "Leopold II begins Congo Free State project",
+    "time": {
+      "start": "1876",
+      "end": "1876",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18760101,
+      "sort_end": 18761231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1876
+    }
+  },
+  {
+    "id": "ev_imperialism_russojapanese_war_begins_1904",
+    "label": "Russo-Japanese War begins",
+    "time": {
+      "start": "1904",
+      "end": "1904",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19040101,
+      "sort_end": 19041231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1904
+    }
+  },
+  {
+    "id": "ev_imperialism_second_boer_war_begins_1899",
+    "label": "Second Boer War begins",
+    "time": {
+      "start": "1899",
+      "end": "1899",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18990101,
+      "sort_end": 18991231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1899
+    }
+  },
+  {
+    "id": "ev_imperialism_spanish_american_war_1898",
+    "label": "Spanish-American War",
+    "time": {
+      "start": "1898",
+      "end": "1898",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18980101,
+      "sort_end": 18981231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1898
+    }
+  },
+  {
+    "id": "ev_imperialism_treaty_portsmouth_1905",
+    "label": "Treaty of Portsmouth",
+    "time": {
+      "start": "1905",
+      "end": "1905",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19050101,
+      "sort_end": 19051231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1905
+    }
+  },
+  {
+    "id": "ev_imperialism_treaty_shimonoseki_1895",
+    "label": "Treaty of Shimonoseki",
+    "time": {
+      "start": "1895",
+      "end": "1895",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18950101,
+      "sort_end": 18951231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1895
+    }
+  },
+  {
     "id": "ev_meiji_abolish_han_1871",
     "label": "Abolition of domains and establishment of prefectures",
     "time": {

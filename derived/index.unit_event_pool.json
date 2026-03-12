@@ -130,5 +130,43 @@
         "ev_meiji_perry_1853"
       ]
     }
+  },
+  "unit_age_of_imperialism": {
+    "eligible_ids": {
+      "timeline_before_after": [
+        "ev_imperialism_agadir_crisis_1911",
+        "ev_imperialism_berlin_conference_begins_1884",
+        "ev_imperialism_berlin_conference_ends_1885",
+        "ev_imperialism_boer_war_ends_1902",
+        "ev_imperialism_boxer_rebellion_1900",
+        "ev_imperialism_british_occupation_egypt_1882",
+        "ev_imperialism_first_balkan_war_1912",
+        "ev_imperialism_first_moroccan_crisis_1905",
+        "ev_imperialism_first_sinojapanese_war_begins_1894",
+        "ev_imperialism_leopold_congo_project_1876",
+        "ev_imperialism_russojapanese_war_begins_1904",
+        "ev_imperialism_second_boer_war_begins_1899",
+        "ev_imperialism_spanish_american_war_1898",
+        "ev_imperialism_treaty_portsmouth_1905",
+        "ev_imperialism_treaty_shimonoseki_1895"
+      ],
+      "timeline_ordering": [
+        "ev_imperialism_agadir_crisis_1911",
+        "ev_imperialism_berlin_conference_begins_1884",
+        "ev_imperialism_berlin_conference_ends_1885",
+        "ev_imperialism_boer_war_ends_1902",
+        "ev_imperialism_boxer_rebellion_1900",
+        "ev_imperialism_british_occupation_egypt_1882",
+        "ev_imperialism_first_balkan_war_1912",
+        "ev_imperialism_first_moroccan_crisis_1905",
+        "ev_imperialism_first_sinojapanese_war_begins_1894",
+        "ev_imperialism_leopold_congo_project_1876",
+        "ev_imperialism_russojapanese_war_begins_1904",
+        "ev_imperialism_second_boer_war_begins_1899",
+        "ev_imperialism_spanish_american_war_1898",
+        "ev_imperialism_treaty_portsmouth_1905",
+        "ev_imperialism_treaty_shimonoseki_1895"
+      ]
+    }
   }
 }
