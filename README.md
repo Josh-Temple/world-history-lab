@@ -135,7 +135,7 @@ Additional planning assets for the next execution step:
 1. **Session A: Data freeze for first playable slice**
    - Finalize 50 events from `docs/history-player-top50-candidate-seed.md`.
    - Add `importance`, `category`, `summary_short`, and `location` for the approved subset in `data/events.json`.
-   - Run `node scripts/validate.mjs` and `node scripts/derive.mjs`; treat failures as blockers before UI work.
+   - Run `node scripts/validate-data.mjs` and `node scripts/derive.mjs`; treat failures as blockers before UI work.
 
 2. **Session B: Player route + playback core**
    - Add `/player` page shell and local player state (`currentIndex`, `isPlaying`, `playbackSpeed`, filters).
@@ -185,7 +185,7 @@ Timeline Trainer now supports scope controls:
 
 GitHub Actions now runs data integrity checks on pushes to `main` and on pull requests:
 
-- `node scripts/validate.mjs`
+- `node scripts/validate-data.mjs`
 - `node scripts/derive.mjs`
 - `git diff --exit-code -- derived`
 - `node scripts/smoke-timeline-trainer.mjs`
@@ -270,6 +270,8 @@ When adding/editing data:
 
 Derive now fails fast (non-zero exit) on schema/reference violations so broken unit metadata cannot silently pass.
 
+Derive now runs `scripts/validate-data.mjs` first, so duplicate IDs, missing unit event references, invalid status values, and required event fields are blocked before index generation.
+
 ## Derived artifacts (build-time)
 
 Canonical data under `/data` remains human-authored and backward-compatible (`time.year_start` still works for MVP).
@@ -278,7 +280,7 @@ A lightweight Node script generates runtime-friendly numeric indexes under `/der
 Regenerate derived artifacts with:
 
 ```bash
-node scripts/validate.mjs
+node scripts/validate-data.mjs
 node scripts/derive.mjs
 ```
 
