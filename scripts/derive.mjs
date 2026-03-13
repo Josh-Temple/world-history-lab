@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { validateData } from "./validate-data.mjs";
 
 const ROOT = process.cwd();
 const DERIVED_DIR = path.join(ROOT, "derived");
@@ -467,6 +468,11 @@ async function loadUnits() {
 }
 
 async function main() {
+  const validationSummary = await validateData({ log: true });
+  if (validationSummary.errors.length > 0) {
+    throw new Error(`Dataset validation failed with ${validationSummary.errors.length} error(s).`);
+  }
+
   const metadata = await readJson("data/metadata.json");
   const enabledQuestionTypes = metadata?.app_support?.enabled_question_types;
   if (!Array.isArray(enabledQuestionTypes)) {

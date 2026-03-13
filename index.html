@@ -4,91 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World History Lab</title>
-    <link rel="stylesheet" href="/apps/timeline-trainer/src/styles.css" />
     <style>
+      :root {
+        color-scheme: light;
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: #dbe2ea;
+        --accent: #0f766e;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+      }
+
+      main {
+        width: min(920px, calc(100% - 2rem));
+        margin: 2.5rem auto 3rem;
+      }
+
+      h1 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        margin: 0;
+      }
+
       .lead {
-        margin: 0.7rem 0 0;
-        max-width: 62ch;
+        color: var(--muted);
+        max-width: 65ch;
+        margin-top: 0.75rem;
+        margin-bottom: 2rem;
       }
 
-      .count-grid,
-      .link-grid {
+      h2 {
+        margin: 0 0 0.9rem;
+        font-size: 1.2rem;
+      }
+
+      .apps {
         display: grid;
-        gap: 0.6rem;
+        gap: 1rem;
       }
 
-      .count-item,
-      .link-item {
-        background: #eaecf0;
-        border-radius: 0.6rem;
-        padding: 0.72rem 0.85rem;
+      .app-card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.25rem;
       }
 
-      .count-item strong {
-        color: var(--text-secondary);
-        font-size: 0.85rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        margin-right: 0.35rem;
+      .app-card p {
+        margin: 0.6rem 0 1rem;
+        color: var(--muted);
       }
 
-      .count-value {
-        font-weight: 700;
-      }
-
-      .link-item {
-        display: flex;
-        justify-content: space-between;
+      .app-link {
+        display: inline-flex;
         align-items: center;
-        gap: 0.8rem;
+        min-height: 44px;
+        padding: 0.45rem 0.2rem;
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
       }
 
-      .link-item a {
-        color: var(--text-primary);
-        text-decoration-color: #a7b0bf;
-        text-underline-offset: 0.2em;
-        font-weight: 560;
+      .app-link:hover,
+      .app-link:focus-visible {
+        text-decoration: underline;
       }
 
-      .link-item a:hover {
-        text-decoration-color: var(--accent);
+      .counts {
+        margin-top: 1.5rem;
+        color: var(--muted);
+        font-size: 0.95rem;
       }
 
-      .link-kind {
-        color: var(--text-secondary);
-        font-size: 0.8rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+      @media (max-width: 640px) {
+        main {
+          width: calc(100% - 1.2rem);
+          margin-top: 1.3rem;
+        }
+
+        .app-card {
+          padding: 1rem;
+        }
       }
     </style>
   </head>
   <body>
-    <main class="container">
-      <header class="page-header">
-        <p class="eyebrow">engineered play &amp; logic</p>
+    <main>
+      <header>
         <h1>World History Lab</h1>
-        <div class="accent-dots" aria-hidden="true"><span></span><span></span><span></span></div>
-        <p class="lead muted">Shared dataset and mini apps for history practice. Start with Timeline Trainer or inspect the data directly.</p>
+        <p class="lead">Build historical intuition through focused practice. Choose a mode below to start learning.</p>
       </header>
 
-      <section class="panel" aria-live="polite">
-        <h2>Dataset counts</h2>
-        <div class="count-grid">
-          <p class="count-item"><strong>Events</strong><span id="count-events" class="count-value">loading...</span></p>
-          <p class="count-item"><strong>People</strong><span id="count-people" class="count-value">loading...</span></p>
-          <p class="count-item"><strong>Units</strong><span id="count-units" class="count-value">loading...</span></p>
+      <section aria-labelledby="practice-modes-heading">
+        <h2 id="practice-modes-heading">Practice modes</h2>
+        <div class="apps">
+          <article class="app-card">
+            <h3>Timeline Trainer</h3>
+            <p>Practice ordering historical events on a timeline and improve your chronology recall.</p>
+            <a class="app-link" href="apps/timeline-trainer/">Start practicing →</a>
+          </article>
         </div>
       </section>
 
-      <section class="panel">
-        <h2>Explore</h2>
-        <div class="link-grid">
-          <p class="link-item"><a href="/apps/timeline-trainer/">Timeline Trainer</a><span class="link-kind">App</span></p>
-          <p class="link-item"><a href="/data/events.json">/data/events.json</a><span class="link-kind">Data</span></p>
-          <p class="link-item"><a href="/data/people.json">/data/people.json</a><span class="link-kind">Data</span></p>
-          <p class="link-item"><a href="/data/units/index.json">/data/units/index.json</a><span class="link-kind">Data</span></p>
-        </div>
-      </section>
+      <p class="counts" aria-live="polite">Dataset: <span id="count-events">…</span> events, <span id="count-people">…</span> people, <span id="count-units">…</span> units.</p>
     </main>
 
     <script type="module">
@@ -106,17 +133,10 @@
             fetchJson("/data/units/index.json"),
           ]);
 
-          if (!Array.isArray(events)) throw new Error("events.json must be an array");
-          if (!Array.isArray(people)) throw new Error("people.json must be an array");
-          if (!unitIndex || !Array.isArray(unitIndex.units)) {
-            throw new Error("units/index.json must contain a units array");
-          }
-
-          document.getElementById("count-events").textContent = String(events.length);
-          document.getElementById("count-people").textContent = String(people.length);
-          document.getElementById("count-units").textContent = String(unitIndex.units.length);
-        } catch (error) {
-          console.error("Failed loading counts", error);
+          document.getElementById("count-events").textContent = String(Array.isArray(events) ? events.length : "—");
+          document.getElementById("count-people").textContent = String(Array.isArray(people) ? people.length : "—");
+          document.getElementById("count-units").textContent = String(unitIndex?.units?.length ?? "—");
+        } catch {
           document.getElementById("count-events").textContent = "—";
           document.getElementById("count-people").textContent = "—";
           document.getElementById("count-units").textContent = "—";
