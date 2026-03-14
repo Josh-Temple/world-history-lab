@@ -42,6 +42,30 @@ export async function validateData({ log = false } = {}) {
     errors.push("data/units/index.json must be an object with a units array.");
   }
 
+  const personIdSet = new Set();
+  if (peopleList) {
+    for (const [index, person] of peopleList.entries()) {
+      if (!isObject(person)) {
+        errors.push(`people[${index}] must be an object.`);
+        continue;
+      }
+
+      if (typeof person.id !== "string" || person.id.trim() === "") {
+        errors.push(`people[${index}] must include a non-empty id.`);
+        continue;
+      }
+
+      if (personIdSet.has(person.id)) {
+        errors.push(`Duplicate person id found: ${person.id}`);
+      }
+      personIdSet.add(person.id);
+
+      if (!person.id.startsWith("pe_")) {
+        warnings.push(`Person id does not use pe_ prefix: ${person.id}`);
+      }
+    }
+  }
+
   const eventIdSet = new Set();
   if (eventList) {
     for (const [index, event] of eventList.entries()) {
@@ -73,29 +97,21 @@ export async function validateData({ log = false } = {}) {
       if (typeof event.status !== "string" || !ALLOWED_STATUS.has(event.status)) {
         errors.push(`Event ${event.id || `[index ${index}]`} has invalid status: ${String(event.status)}`);
       }
-    }
-  }
 
-  const personIdSet = new Set();
-  if (peopleList) {
-    for (const [index, person] of peopleList.entries()) {
-      if (!isObject(person)) {
-        errors.push(`people[${index}] must be an object.`);
-        continue;
-      }
-
-      if (typeof person.id !== "string" || person.id.trim() === "") {
-        errors.push(`people[${index}] must include a non-empty id.`);
-        continue;
-      }
-
-      if (personIdSet.has(person.id)) {
-        errors.push(`Duplicate person id found: ${person.id}`);
-      }
-      personIdSet.add(person.id);
-
-      if (!person.id.startsWith("pe_")) {
-        warnings.push(`Person id does not use pe_ prefix: ${person.id}`);
+      if (event.people_ids !== undefined) {
+        if (!Array.isArray(event.people_ids)) {
+          errors.push(`Event ${event.id || `[index ${index}]`} has invalid people_ids; expected an array of person ids.`);
+        } else {
+          for (const personId of event.people_ids) {
+            if (typeof personId !== "string") {
+              errors.push(`Event ${event.id || `[index ${index}]`} has a non-string people_ids entry.`);
+              continue;
+            }
+            if (!personIdSet.has(personId)) {
+              errors.push(`Event ${event.id || `[index ${index}]`} references unknown person id in people_ids: ${personId}`);
+            }
+          }
+        }
       }
     }
   }
