@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Recognition Trainer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p><a href="/">← Back to World History Lab</a></p>
+        <h1>Event Recognition Trainer</h1>
+        <p class="lead">Read a clue and select the matching event.</p>
+      </header>
+
+      <section class="card" aria-live="polite">
+        <h2 id="question-title">Which event is this?</h2>
+        <p id="question">Loading events…</p>
+        <div id="choices" class="choices"></div>
+        <p id="feedback" class="feedback"></p>
+        <button id="next" type="button" disabled>Next question</button>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -14,6 +14,7 @@ World History Lab is a personal learning project for studying world history with
 - **Initial history unit**: French Revolution to Napoleon.
 - **First mini apps**:
   - **Timeline Trainer** (MVP playable: Before/After, Earliest of 3, Latest of 3, Mixed mode, plus Unit/All practice scope and quality filtering).
+  - **Event Recognition Trainer** (multiple-choice recognition from event clues).
   - **Causality Builder** (planned for the next phase after timeline basics).
 
 ## Repository structure (high-level)
@@ -41,6 +42,22 @@ The shared dataset is structured so apps can generate practice dynamically inste
 - **Links (later)**: explicit relationship records for richer graph-style practice.
 
 This structure allows different mini apps to reuse the same data in different learning modes.
+
+
+### Event field notes
+
+`data/events.json` supports an optional `people_ids` field:
+
+```json
+{
+  "id": "ev_napoleon_emperor_1804",
+  "label": "Napoleon Crowned Emperor",
+  "time": { "year_start": 1804 },
+  "people_ids": ["pe_napoleon_bonaparte"]
+}
+```
+
+`people_ids` should contain valid IDs from `data/people.json` and is intended for people-event association learning modes.
 
 ## Content and source policy
 
@@ -94,7 +111,7 @@ Next:
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
-- **People data is not yet used in derived runtime indexes**: `data/people.json` is loaded/validated but does not currently power app behavior.
+- **People links are now present but underutilized**: events can include `people_ids`, but no dedicated people quiz mode exists yet.
 - **Timeline Trainer UX still needs final polish**: setup clarity and smoke checks are in place, but mobile readability and mode explanation copy can still be refined.
 
 ## Roadmap (short)
