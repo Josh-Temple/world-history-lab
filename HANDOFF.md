@@ -1,41 +1,51 @@
 # Handoff Notes (Next Session)
 
 ## Session context
-- Friday focus work completed on validation/integration reliability and onboarding navigation.
-- Added a dedicated dataset validation entrypoint and wired derive to fail early when data integrity rules are violated.
-- Reworked the top page into a clearer learning hub with a prominent Practice modes section.
+- Saturday focus: push beyond a single learning mode and activate people-event relationships in data.
+- Added a second learner-facing app and extended event records with person associations.
 
 ## Changes made
-1. Dataset validation foundation
-   - Added `scripts/validate-data.mjs`.
-   - Implemented checks for:
-     - event schema (`id`, `label`, `time.year_start`),
-     - duplicate event and person IDs,
-     - allowed status values (`draft`, `reviewed`, `approved`),
-     - unit `event_ids` references to existing events,
-     - ID prefix conventions (`ev_`, `pe_`) as warnings.
-   - Added CLI summary output (events/people/units counts) and non-zero exit on validation errors.
+1. New learning mode: Event Recognition Trainer
+   - Added `apps/event-recognition/` with:
+     - `index.html`
+     - `app.js`
+     - `styles.css`
+   - App behavior:
+     - loads `/derived/events.normalized.json`
+     - builds 4-choice multiple-choice questions
+     - randomizes options
+     - shows immediate correctness feedback
+     - supports next-question loop
 
-2. Derive pipeline integration
-   - Updated `scripts/derive.mjs` to import and run `validateData()` before derivation.
-   - Derive now aborts immediately if validation reports errors.
+2. Homepage navigation update
+   - Added a new app card on `/` linking to `apps/event-recognition/`.
 
-3. Homepage onboarding
-   - Replaced `index.html` layout with a simple learning hub structure.
-   - Added **Practice modes** section and Timeline Trainer card with one-click entry (`apps/timeline-trainer/`).
-   - Improved spacing/readability and ensured mobile-friendly sizing, including a 44px+ tap target for the main CTA.
-   - Kept lightweight dataset count indicators.
+3. People–event association support
+   - Added optional `people_ids` on 10 event records in `data/events.json` (primarily French Revolution/Napoleonic events).
+   - Associations currently use existing people IDs:
+     - `pe_louis_xvi`
+     - `pe_maximilien_robespierre`
+     - `pe_napoleon_bonaparte`
 
-4. Documentation updates
-   - Updated `README.md` command references to use `node scripts/validate-data.mjs`.
-   - Added note that derive now runs the data validation step first.
+4. Validation + derive updates
+   - Updated `scripts/validate-data.mjs` to validate optional `event.people_ids`:
+     - must be an array when present
+     - all entries must be strings
+     - all entries must reference existing IDs in `data/people.json`
+   - Updated `scripts/derive.mjs` to carry forward `summary_short` and `people_ids` into `derived/events.normalized.json` for app consumption.
+
+5. Documentation updates
+   - Updated `README.md` to include:
+     - Event Recognition Trainer in current app scope
+     - optional `people_ids` event field documentation
+     - challenge text reflecting current people-link status
 
 ## Validation performed
 - `node scripts/validate-data.mjs`
 - `node scripts/derive.mjs`
 
 ## Next steps (ordered)
-1. Decide whether to deprecate/remove legacy `scripts/validate.mjs` to avoid confusion between validation entrypoints.
-2. Add a CI check that explicitly runs `node scripts/validate-data.mjs` (if not already updated in workflow config).
-3. Consider adding one additional practice app card placeholder on `/` to signal near-term multi-app roadmap.
-4. Start integrating `data/people.json` into at least one learner-facing flow so people data contributes to practice.
+1. Add a dedicated people-focused quiz mode (for example: "Which person is most associated with this event?").
+2. Expand `data/people.json` beyond 3 records so associations cover Meiji and Industrial Revolution events.
+3. Add validation to flag duplicate IDs inside `people_ids` arrays (currently only type/existence is enforced).
+4. Consider adding lightweight scoring/streak tracking to Event Recognition Trainer.
