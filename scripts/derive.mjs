@@ -268,6 +268,8 @@ function normalizeEvent(event) {
       return {
         id: event.id,
         label: event.label,
+        summary_short: typeof event.summary_short === "string" ? event.summary_short : null,
+        people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
         time: {
           start: String(year),
           end: String(year),
@@ -290,6 +292,8 @@ function normalizeEvent(event) {
   return {
     id: event.id,
     label: event.label,
+    summary_short: typeof event.summary_short === "string" ? event.summary_short : null,
+    people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
     time: {
       start: parsed.canonical_start,
       end: parsed.canonical_end,

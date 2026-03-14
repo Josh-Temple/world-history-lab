@@ -277,7 +277,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_louis_xvi"
+    ]
   },
   {
     "id": "ev_estates_general_1789",
@@ -354,7 +357,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_louis_xvi"
+    ]
   },
   {
     "id": "ev_storming_bastille_1789",
@@ -416,7 +422,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_louis_xvi"
+    ]
   },
   {
     "id": "ev_tennis_court_oath_1789",
@@ -478,7 +487,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_louis_xvi"
+    ]
   },
   {
     "id": "ev_cotton_gin_invented_1793",
@@ -570,7 +582,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_louis_xvi"
+    ]
   },
   {
     "id": "ev_reign_of_terror_1793_1794",
@@ -640,7 +655,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_maximilien_robespierre"
+    ]
   },
   {
     "id": "ev_thermidorian_reaction_1794",
@@ -703,7 +721,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_maximilien_robespierre"
+    ]
   },
   {
     "id": "ev_napoleon_coup_18_brumaire_1799",
@@ -774,7 +795,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_napoleon_bonaparte"
+    ]
   },
   {
     "id": "ev_napoleon_emperor_1804",
@@ -841,7 +865,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_napoleon_bonaparte"
+    ]
   },
   {
     "id": "ev_penydarren_locomotive_run_1804",
@@ -933,7 +960,10 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "approved"
+    "status": "approved",
+    "people_ids": [
+      "pe_napoleon_bonaparte"
+    ]
   },
   {
     "id": "ev_rainhill_trials_rocket_1829",
