@@ -1,0 +1,17 @@
+[
+  {
+    "id": "east_asia",
+    "label": "East Asia",
+    "description": "Chinese core regions and neighboring polities in East Asia."
+  },
+  {
+    "id": "europe",
+    "label": "Europe",
+    "description": "European regions from late antiquity to late medieval transitions."
+  },
+  {
+    "id": "west_asia",
+    "label": "West Asia",
+    "description": "Eastern Mediterranean and Southwest Asian imperial and trade zones."
+  }
+]

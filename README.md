@@ -16,6 +16,7 @@ World History Lab is a personal learning project for studying world history with
   - **Timeline Trainer** (MVP playable: Before/After, Earliest of 3, Latest of 3, Mixed mode, plus Unit/All practice scope and quality filtering).
   - **Event Recognition Trainer** (multiple-choice recognition from event clues).
   - **Causality Builder** (planned for the next phase after timeline basics).
+- **Overview layer (scaffold-stage)**: an experimental survey-oriented data slice under `data/overview/` for coarse era × region mental-map practice that complements (not replaces) event/timeline learning.
 
 ## Repository structure (high-level)
 

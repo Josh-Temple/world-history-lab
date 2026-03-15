@@ -1,0 +1,50 @@
+[
+  {
+    "era_id": "ancient",
+    "region_id": "east_asia",
+    "summary": "Durable imperial rule and bureaucratic governance took shape across major agrarian cores.",
+    "anchors": ["Qin", "Han", "Silk Road exchange"],
+    "keywords": ["empire", "bureaucracy", "Confucianism"],
+    "connections": ["Linked westward through Inner Asia and Silk Road trade corridors."]
+  },
+  {
+    "era_id": "ancient",
+    "region_id": "europe",
+    "summary": "Mediterranean-centered empires expanded law, urban life, and long-distance exchange.",
+    "anchors": ["Classical Greece", "Roman Republic", "Roman Empire"],
+    "keywords": ["citizenship", "empire", "Mediterranean"],
+    "connections": ["Interacted with West Asia and North Africa through war, trade, and religion."]
+  },
+  {
+    "era_id": "ancient",
+    "region_id": "west_asia",
+    "summary": "Successive imperial powers coordinated diverse peoples across key overland and maritime routes.",
+    "anchors": ["Achaemenid Empire", "Parthian Empire", "Sasanian Empire"],
+    "keywords": ["imperial administration", "caravan trade", "religious traditions"],
+    "connections": ["Served as a bridge zone linking Mediterranean and East Asian networks."]
+  },
+  {
+    "era_id": "medieval",
+    "region_id": "east_asia",
+    "summary": "State rebuilding and cultural synthesis supported vibrant cities and regional diplomacy.",
+    "anchors": ["Tang", "Song", "Heian Japan"],
+    "keywords": ["scholar-officials", "urbanization", "tribute relations"],
+    "connections": ["Technology and goods moved across maritime and overland routes into wider Afro-Eurasia."]
+  },
+  {
+    "era_id": "medieval",
+    "region_id": "europe",
+    "summary": "Fragmented polities gradually consolidated while church, towns, and commerce reshaped society.",
+    "anchors": ["Byzantine Empire", "Carolingian world", "High Medieval kingdoms"],
+    "keywords": ["feudal ties", "Christendom", "commercial revival"],
+    "connections": ["Cross-regional exchange intensified through Mediterranean trade and crusading contact."]
+  },
+  {
+    "era_id": "medieval",
+    "region_id": "west_asia",
+    "summary": "Islamic polities integrated scholarship, trade, and governance across a broad connected zone.",
+    "anchors": ["Umayyad Caliphate", "Abbasid Caliphate", "Seljuk networks"],
+    "keywords": ["caliphate", "scholarship", "trade hubs"],
+    "connections": ["Connected Europe, Africa, and Asia through translation, pilgrimage, and commerce."]
+  }
+]
