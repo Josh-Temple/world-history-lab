@@ -15,7 +15,8 @@ World History Lab is a personal learning project for studying world history with
 - **First mini apps**:
   - **Timeline Trainer** (MVP playable: Before/After, Earliest of 3, Latest of 3, Mixed mode, plus Unit/All practice scope and quality filtering).
   - **Event Recognition Trainer** (multiple-choice recognition from event clues).
-  - **Causality Builder** (planned for the next phase after timeline basics).
+  - **History Player** (first playable slice: sequence playback, speed control, slider navigation, cumulative event log).
+  - **Causality Builder** (planned for the next phase after timeline/player basics).
 - **Overview layer (scaffold-stage)**: an experimental survey-oriented data slice under `data/overview/` for coarse era × region mental-map practice that complements (not replaces) event/timeline learning.
 
 ## Repository structure (high-level)
@@ -109,6 +110,13 @@ Next:
 - Added a new draft unit: **Age of Imperialism (1870–1914)** with 15 timeline-practice events.
 - Regenerated derived artifacts after dataset expansion.
 
+## Recent updates (2026-03-15)
+
+- Added a first playable **History Player** route at `apps/history-player/`.
+- Reworked the top page into a clearer learning-mode chooser with explicit "start here" guidance.
+- Replaced sparse dataset messaging with live status counters (events, people, units, approved/reviewed+ counts).
+- Updated `data/metadata.json` scope/app entries to match the actual four-unit dataset and shipped app set.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
@@ -168,7 +176,7 @@ Additional planning assets for the next execution step:
 
 ### Definition of done for first release
 
-- `/player` is reachable and functional from first load.
+- `/player` is reachable and functional from first load. ✅
 - Playback works in event-sequence mode (not year-by-year stepping).
 - Importance filtering changes playable event set predictably.
 - Validation + derivation scripts pass after data updates.

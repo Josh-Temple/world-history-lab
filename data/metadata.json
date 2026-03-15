@@ -6,9 +6,12 @@
   "scope": {
     "mode": "mvp",
     "included_units": [
-      "unit_french_revolution_napoleon"
+      "unit_french_revolution_napoleon",
+      "unit_industrial_revolution",
+      "unit_meiji_restoration",
+      "unit_age_of_imperialism"
     ],
-    "notes": "MVP dataset focused on timeline and causality training."
+    "notes": "Core dataset now spans four units for timeline, recognition, and player-based overview practice."
   },
   "source_policy": {
     "structured_data_sources": [
@@ -37,7 +40,9 @@
   "app_support": {
     "enabled_apps": [
       "timeline-trainer",
-      "causality-builder"
+      "causality-builder",
+      "event-recognition",
+      "history-player"
     ],
     "enabled_question_types": [
       "timeline_before_after",
@@ -51,7 +56,7 @@
       "cause_and_effect"
     ]
   },
-  "updated_at": "2026-02-25T00:00:00Z",
+  "updated_at": "2026-03-15T00:00:00Z",
   "maintainer": {
     "name": "Josh",
     "notes": "Personal learning project"
