@@ -1,34 +1,34 @@
 # Overview Layer Scaffold (Survey Learning)
 
-## Why this layer exists
-The existing dataset and apps are strong for event-level recall and timeline ordering. The overview layer adds a lightweight survey step so learners can first build a coarse mental map by era and region before diving into specific events.
+## Purpose
+The overview layer adds a lightweight survey step so learners can build a coarse era × region mental map before diving into detailed event practice.
 
 ## How it differs from event-level data
-- `data/events.json` remains the source for detailed event practice.
-- `data/overview/*` is intentionally coarse and short-form.
-- Overview entries summarize patterns (era × region), not full dated event records.
+- `data/events.json` remains the source for detailed event/timeline learning.
+- `data/overview/*` is intentionally short-form and pattern-oriented.
+- Overview cells summarize broad context, not dated event records.
 
-## Progressive granularity model
+## Progressive granularity
 1. Era
 2. Region
 3. Representative anchors (states/civilizations/phenomena)
 4. Keyword recall
 
-Later phases can add:
-- comparison prompts across regions/eras
-- simple causal thread prompts
-- eventual links back to detailed events/people/dates
+Potential later extensions:
+- Comparison prompts across regions/eras
+- Simple causal-thread prompts
+- Links back to detailed events/people/dates
 
 ## In scope now
-- Minimal design note (this document)
-- Small seed schema under `data/overview/`
-- Tiny starter content for a few era/region cells
+- This design note
+- Minimal overview seed data under `data/overview/`
+- Tiny starter set of era × region survey cells
 
 ## Out of scope now
 - Full overview trainer app
 - Scoring/progression logic
-- Exhaustive global content coverage
-- Changes to existing timeline/event trainer architecture
+- Exhaustive global coverage
+- Refactors to existing timeline/event trainer architecture
 
-## Planned connection to later layers
-This scaffold is designed to feed future read-only overview viewing first, then hide/reveal recall practice, then comparison and causality prompts after basic survey fluency is stable.
+## Intended integration path
+Start with read-only overview viewing, then add lightweight hide/reveal recall, then comparison prompts, and only later causal-thread support.

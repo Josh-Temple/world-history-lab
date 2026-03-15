@@ -130,6 +130,7 @@ Next:
   - Improve validation tooling.
   - Add more units.
   - Add additional mini apps as needed.
+  - Keep the overview/survey layer in scaffold-stage as a complementary bridge into event/timeline practice (not a replacement for core event data).
 
 
 
