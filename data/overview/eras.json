@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ancient",
+    "label": "Ancient",
+    "description": "Early complex societies through late antiquity."
+  },
+  {
+    "id": "medieval",
+    "label": "Medieval",
+    "description": "Post-classical regional consolidation and exchange networks."
+  }
+]
