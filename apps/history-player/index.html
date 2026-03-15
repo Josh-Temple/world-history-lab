@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History Player · World History Lab</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: #dbe2ea;
+        --accent: #0f766e;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--text); }
+      main { width: min(1040px, calc(100% - 2rem)); margin: 1.5rem auto 2rem; display: grid; gap: 1rem; }
+      .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; }
+      .muted { color: var(--muted); }
+      h1 { margin: 0; font-size: clamp(1.6rem, 3vw, 2rem); }
+      .controls { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-top: .75rem; }
+      button, select, input[type="range"] { font: inherit; }
+      button { border: 1px solid var(--border); background: #fff; color: var(--text); border-radius: 8px; padding: .45rem .7rem; cursor: pointer; }
+      button:hover { border-color: #94a3b8; }
+      .event-title { margin: 0 0 .35rem; font-size: 1.15rem; }
+      .grid { display: grid; gap: 1rem; grid-template-columns: 2fr 1fr; }
+      .log { max-height: 300px; overflow: auto; padding-left: 0; list-style: none; margin: 0; display: grid; gap: .5rem; }
+      .log button { width: 100%; text-align: left; }
+      .slider { width: min(680px, 100%); }
+      .pill { display: inline-block; margin-right: .5rem; background: #ecfeff; color: #155e75; border: 1px solid #bae6fd; border-radius: 999px; padding: .1rem .55rem; font-size: .85rem; }
+      .map {
+        border: 1px dashed var(--border);
+        border-radius: 10px;
+        height: 180px;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+      }
+      .marker { position: absolute; width: 10px; height: 10px; border-radius: 50%; transform: translate(-50%, -50%); }
+      .marker.current { background: #0f766e; box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.2); }
+      .marker.recent { background: #64748b; opacity: .6; }
+      .empty { padding: .4rem; color: var(--muted); }
+      a { color: var(--accent); }
+      @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <p class="muted" style="margin:0"><a href="/">← Back to mode chooser</a></p>
+        <h1>History Player (first playable slice)</h1>
+        <p class="muted" style="margin:.45rem 0 0">Play through a curated chronological sequence. This mode is for big-picture narrative flow, not drill scoring.</p>
+        <div class="controls">
+          <button id="prev-btn">Previous</button>
+          <button id="play-btn">Play</button>
+          <button id="next-btn">Next</button>
+          <label for="speed-select">Speed</label>
+          <select id="speed-select">
+            <option value="2200">Slow</option>
+            <option value="1400" selected>Normal</option>
+            <option value="800">Fast</option>
+          </select>
+          <label for="window-select">Slice</label>
+          <select id="window-select">
+            <option value="15" selected>First 15 events</option>
+            <option value="30">First 30 events</option>
+            <option value="999">All currently available</option>
+          </select>
+        </div>
+        <div style="margin-top:.7rem">
+          <label for="timeline-slider" class="muted">Position</label>
+          <input class="slider" id="timeline-slider" type="range" min="0" max="0" value="0" />
+        </div>
+      </section>
+
+      <div class="grid">
+        <section class="panel">
+          <p class="muted" id="position-text" style="margin:.1rem 0 .45rem"></p>
+          <h2 id="event-title" class="event-title">Loading…</h2>
+          <p id="event-year" class="pill">—</p>
+          <p id="event-summary" class="muted">Loading event sequence…</p>
+
+          <h3 style="margin:1rem 0 .5rem">Map marker preview</h3>
+          <div id="map" class="map" aria-label="Simplified map marker panel"></div>
+          <p class="muted" style="margin:.45rem 0 0">Markers are seeded from deterministic placeholders until canonical event locations are added.</p>
+        </section>
+
+        <section class="panel">
+          <h3 style="margin:.1rem 0 .5rem">Cumulative event log</h3>
+          <ul id="event-log" class="log"></ul>
+        </section>
+      </div>
+    </main>
+
+    <script type="module">
+      const state = { events: [], filtered: [], index: 0, isPlaying: false, timer: null, speedMs: 1400, sliceSize: 15 };
+
+      function seededCoordinate(id) {
+        let hash = 0;
+        for (const ch of id) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
+        const x = 8 + (hash % 84);
+        const y = 12 + ((Math.floor(hash / 97) % 70));
+        return { x, y };
+      }
+
+      function applySlice() {
+        const limit = Number(state.sliceSize);
+        state.filtered = state.events.slice(0, limit);
+        if (state.index >= state.filtered.length) state.index = Math.max(0, state.filtered.length - 1);
+        document.getElementById("timeline-slider").max = String(Math.max(0, state.filtered.length - 1));
+        render();
+      }
+
+      function renderMapMarkers(currentEvent) {
+        const map = document.getElementById("map");
+        map.innerHTML = "";
+        if (!currentEvent) {
+          map.innerHTML = '<p class="empty">No event available for this filter.</p>';
+          return;
+        }
+
+        const recent = state.filtered.slice(Math.max(0, state.index - 4), state.index + 1);
+        recent.forEach((event, idx) => {
+          const dot = document.createElement("span");
+          dot.className = `marker ${idx === recent.length - 1 ? "current" : "recent"}`;
+          const { x, y } = seededCoordinate(event.id);
+          dot.style.left = `${x}%`;
+          dot.style.top = `${y}%`;
+          dot.title = event.label;
+          map.append(dot);
+        });
+      }
+
+      function renderLog() {
+        const log = document.getElementById("event-log");
+        log.innerHTML = "";
+        state.filtered.slice(0, state.index + 1).forEach((event, idx) => {
+          const item = document.createElement("li");
+          const btn = document.createElement("button");
+          btn.textContent = `${event.derived.year_start}: ${event.label}`;
+          btn.addEventListener("click", () => {
+            state.index = idx;
+            syncSlider();
+            render();
+          });
+          item.append(btn);
+          log.append(item);
+        });
+      }
+
+      function syncSlider() {
+        document.getElementById("timeline-slider").value = String(state.index);
+      }
+
+      function render() {
+        const event = state.filtered[state.index];
+        document.getElementById("position-text").textContent = state.filtered.length
+          ? `Event ${state.index + 1} of ${state.filtered.length}`
+          : "No events available";
+
+        document.getElementById("event-title").textContent = event?.label ?? "No event available";
+        document.getElementById("event-year").textContent = event ? String(event.derived.year_start) : "—";
+        document.getElementById("event-summary").textContent = event?.summary_short ?? "Summary unavailable.";
+
+        syncSlider();
+        renderMapMarkers(event);
+        renderLog();
+      }
+
+      function stopPlayback() {
+        state.isPlaying = false;
+        if (state.timer) clearInterval(state.timer);
+        state.timer = null;
+        document.getElementById("play-btn").textContent = "Play";
+      }
+
+      function nextEvent() {
+        if (!state.filtered.length) return;
+        if (state.index < state.filtered.length - 1) {
+          state.index += 1;
+          render();
+          return;
+        }
+        stopPlayback();
+      }
+
+      function startPlayback() {
+        if (!state.filtered.length) return;
+        state.isPlaying = true;
+        document.getElementById("play-btn").textContent = "Pause";
+        state.timer = setInterval(nextEvent, state.speedMs);
+      }
+
+      function togglePlayback() {
+        if (state.isPlaying) {
+          stopPlayback();
+        } else {
+          stopPlayback();
+          startPlayback();
+        }
+      }
+
+      async function init() {
+        const response = await fetch("/derived/events.normalized.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const events = await response.json();
+        state.events = events
+          .filter((event) => Number.isFinite(event?.derived?.sort_start))
+          .sort((a, b) => a.derived.sort_start - b.derived.sort_start);
+
+        applySlice();
+
+        document.getElementById("prev-btn").addEventListener("click", () => {
+          if (!state.filtered.length) return;
+          state.index = Math.max(0, state.index - 1);
+          render();
+        });
+
+        document.getElementById("next-btn").addEventListener("click", nextEvent);
+        document.getElementById("play-btn").addEventListener("click", togglePlayback);
+
+        document.getElementById("speed-select").addEventListener("change", (event) => {
+          state.speedMs = Number(event.target.value);
+          if (state.isPlaying) {
+            stopPlayback();
+            startPlayback();
+          }
+        });
+
+        document.getElementById("window-select").addEventListener("change", (event) => {
+          state.sliceSize = Number(event.target.value);
+          stopPlayback();
+          state.index = 0;
+          applySlice();
+        });
+
+        document.getElementById("timeline-slider").addEventListener("input", (event) => {
+          state.index = Number(event.target.value);
+          render();
+        });
+      }
+
+      init().catch((error) => {
+        stopPlayback();
+        document.getElementById("event-title").textContent = "Unable to load events";
+        document.getElementById("event-summary").textContent = `Error: ${error.message}`;
+      });
+    </script>
+  </body>
+</html>

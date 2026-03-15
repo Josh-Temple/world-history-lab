@@ -26,8 +26,8 @@
       }
 
       main {
-        width: min(920px, calc(100% - 2rem));
-        margin: 2.5rem auto 3rem;
+        width: min(980px, calc(100% - 2rem));
+        margin: 2.2rem auto 3rem;
       }
 
       h1 {
@@ -37,9 +37,17 @@
 
       .lead {
         color: var(--muted);
-        max-width: 65ch;
+        max-width: 70ch;
         margin-top: 0.75rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .start-here {
+        background: #ecfeff;
+        border: 1px solid #bae6fd;
+        border-radius: 12px;
+        padding: 0.85rem 1rem;
+        margin-bottom: 1.3rem;
       }
 
       h2 {
@@ -59,8 +67,12 @@
         padding: 1.25rem;
       }
 
+      .app-card h3 {
+        margin: 0;
+      }
+
       .app-card p {
-        margin: 0.6rem 0 1rem;
+        margin: 0.6rem 0 0.85rem;
         color: var(--muted);
       }
 
@@ -79,8 +91,9 @@
         text-decoration: underline;
       }
 
-      .counts {
-        margin-top: 1.5rem;
+      .counts,
+      .coverage {
+        margin-top: 1rem;
         color: var(--muted);
         font-size: 0.95rem;
       }
@@ -101,26 +114,34 @@
     <main>
       <header>
         <h1>World History Lab</h1>
-        <p class="lead">Build historical intuition through focused practice. Choose a mode below to start learning.</p>
+        <p class="lead">Build historical intuition with multiple learning modes. Use drills for precision recall, then switch to flow mode for big-picture narrative understanding.</p>
       </header>
 
+      <p class="start-here"><strong>Start here:</strong> If you are new, begin with <strong>Timeline Trainer</strong> for chronology basics, then use <strong>Event Recognition</strong> for clue-based recall, and use <strong>History Player</strong> to review sequence and context.</p>
+
       <section aria-labelledby="practice-modes-heading">
-        <h2 id="practice-modes-heading">Practice modes</h2>
+        <h2 id="practice-modes-heading">Learning modes</h2>
         <div class="apps">
           <article class="app-card">
             <h3>Timeline Trainer</h3>
-            <p>Practice ordering historical events on a timeline and improve your chronology recall.</p>
-            <a class="app-link" href="apps/timeline-trainer/">Start practicing →</a>
+            <p><strong>Trains:</strong> chronological ordering and date intuition with multiple timeline question types.</p>
+            <a class="app-link" href="apps/timeline-trainer/">Open Timeline Trainer →</a>
           </article>
           <article class="app-card">
             <h3>Event Recognition Trainer</h3>
-            <p>Read a clue and identify the matching historical event from multiple choices.</p>
-            <a class="app-link" href="apps/event-recognition/">Start practicing →</a>
+            <p><strong>Trains:</strong> identifying events from concise clues and distinguishing similar modern-history milestones.</p>
+            <a class="app-link" href="apps/event-recognition/">Open Event Recognition →</a>
+          </article>
+          <article class="app-card">
+            <h3>History Player (new)</h3>
+            <p><strong>Trains:</strong> macro historical flow by stepping or auto-playing a curated chronology with a cumulative log.</p>
+            <a class="app-link" href="apps/history-player/">Open History Player →</a>
           </article>
         </div>
       </section>
 
-      <p class="counts" aria-live="polite">Dataset: <span id="count-events">…</span> events, <span id="count-people">…</span> people, <span id="count-units">…</span> units.</p>
+      <p class="counts" aria-live="polite">Dataset: <span id="count-events">…</span> events, <span id="count-people">…</span> people, <span id="count-units">…</span> units (<span id="count-approved">…</span> approved, <span id="count-reviewed">…</span> reviewed+).</p>
+      <p class="coverage" aria-live="polite">Current unit coverage: <span id="unit-names">loading…</span>.</p>
     </main>
 
     <script type="module">
@@ -138,13 +159,27 @@
             fetchJson("/data/units/index.json"),
           ]);
 
-          document.getElementById("count-events").textContent = String(Array.isArray(events) ? events.length : "—");
+          const eventList = Array.isArray(events) ? events : [];
+          const approved = eventList.filter((event) => event.status === "approved").length;
+          const reviewedPlus = eventList.filter((event) => event.status === "approved" || event.status === "reviewed").length;
+
+          document.getElementById("count-events").textContent = String(eventList.length || "—");
           document.getElementById("count-people").textContent = String(Array.isArray(people) ? people.length : "—");
           document.getElementById("count-units").textContent = String(unitIndex?.units?.length ?? "—");
+          document.getElementById("count-approved").textContent = String(approved);
+          document.getElementById("count-reviewed").textContent = String(reviewedPlus);
+
+          const unitNames = Array.isArray(unitIndex?.units)
+            ? unitIndex.units.map((unit) => unit.id.replace(/^unit_/, "").replaceAll("_", " ")).join(", ")
+            : "—";
+          document.getElementById("unit-names").textContent = unitNames;
         } catch {
           document.getElementById("count-events").textContent = "—";
           document.getElementById("count-people").textContent = "—";
           document.getElementById("count-units").textContent = "—";
+          document.getElementById("count-approved").textContent = "—";
+          document.getElementById("count-reviewed").textContent = "—";
+          document.getElementById("unit-names").textContent = "unavailable";
         }
       }
 

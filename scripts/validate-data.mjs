@@ -23,14 +23,20 @@ export async function validateData({ log = false } = {}) {
   const errors = [];
   const warnings = [];
 
-  const [events, people, unitRegistry] = await Promise.all([
+  const [events, people, unitRegistry, metadata] = await Promise.all([
     readJson("data/events.json"),
     readJson("data/people.json"),
     readJson("data/units/index.json"),
+    readJson("data/metadata.json"),
   ]);
 
   const eventList = asArray(events);
   const peopleList = asArray(people);
+
+
+  if (!isObject(metadata)) {
+    errors.push("data/metadata.json must be an object.");
+  }
 
   if (!eventList) {
     errors.push("data/events.json must be an array.");
@@ -151,6 +157,32 @@ export async function validateData({ log = false } = {}) {
 
         if (!eventIdSet.has(eventId)) {
           errors.push(`Missing event reference: ${unit.id || unitEntry.path} -> ${eventId}`);
+        }
+      }
+    }
+  }
+
+
+
+  if (isObject(metadata) && isObject(unitRegistry) && Array.isArray(unitRegistry.units)) {
+    const scopeUnits = asArray(metadata?.scope?.included_units);
+    if (!scopeUnits) {
+      errors.push("data/metadata.json scope.included_units must be an array.");
+    } else {
+      const registryUnitIds = unitRegistry.units
+        .map((unit) => (isObject(unit) ? unit.id : null))
+        .filter((id) => typeof id === "string");
+
+      const scopeSet = new Set(scopeUnits);
+      for (const registryId of registryUnitIds) {
+        if (!scopeSet.has(registryId)) {
+          errors.push(`metadata scope missing registered unit: ${registryId}`);
+        }
+      }
+
+      for (const scopeId of scopeUnits) {
+        if (!registryUnitIds.includes(scopeId)) {
+          errors.push(`metadata scope includes unknown unit id: ${scopeId}`);
         }
       }
     }
