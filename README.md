@@ -14,9 +14,9 @@ World History Lab is a personal learning project for studying world history with
 - **Initial history unit**: French Revolution to Napoleon.
 - **First mini apps**:
   - **Timeline Trainer** (MVP playable: Before/After, Earliest of 3, Latest of 3, Mixed mode, plus Unit/All practice scope and quality filtering).
-  - **Event Recognition Trainer** (multiple-choice recognition from event clues).
+  - **Event Recognition Trainer** (unit-scoped, quality-aware multiple-choice recognition from event clues).
   - **History Player** (first playable slice: sequence playback, speed control, slider navigation, cumulative event log).
-  - **Causality Builder** (planned for the next phase after timeline/player basics).
+  - **Causality Builder** (first playable MVP with direct-effect and cause-category practice).
 - **Overview layer (scaffold-stage)**: an experimental survey-oriented data slice under `data/overview/` for coarse era × region mental-map practice that complements (not replaces) event/timeline learning.
 
 ## Repository structure (high-level)
@@ -101,7 +101,7 @@ Next:
 
 - [x] Start Timeline Trainer MVP implementation under `apps/`.
 - [x] Add initial app scaffold and run instructions.
-- [ ] Begin Causality Builder planning after timeline MVP baseline.
+- [x] Ship first playable Causality Builder route and link it from the homepage.
 
 
 ## Recent updates (2026-03-12)
@@ -117,11 +117,21 @@ Next:
 - Replaced sparse dataset messaging with live status counters (events, people, units, approved/reviewed+ counts).
 - Updated `data/metadata.json` scope/app entries to match the actual four-unit dataset and shipped app set.
 
+
+## Recent updates (2026-03-16)
+
+- Added first playable **Causality Builder** route at `apps/causality-builder/`.
+- Causality Builder now loads raw events + unit files, gates units by causality-ready density, and supports Reviewed+/Include drafts filtering.
+- Added two causality quiz modes: **Direct effect** and **Cause category** (with graceful mode-disable messaging when category diversity is insufficient).
+- Rebuilt **Event Recognition Trainer** to use unit-aware + quality-aware setup instead of whole-corpus normalized randomization.
+- Event Recognition now limits eligibility to recognition-suitable records and reveals year/unit/explanation metadata after each answer.
+- Updated the homepage start-here guidance and app cards to include the new Causality Builder progression step.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
 - **People links are now present but underutilized**: events can include `people_ids`, but no dedicated people quiz mode exists yet.
-- **Timeline Trainer UX still needs final polish**: setup clarity and smoke checks are in place, but mobile readability and mode explanation copy can still be refined.
+- **Keep learning-flow consistency across apps**: Timeline Trainer, Event Recognition, Causality Builder, and History Player should keep aligned setup language and progress expectations.
 
 ## Roadmap (short)
 
