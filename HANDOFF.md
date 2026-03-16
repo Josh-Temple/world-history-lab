@@ -1,37 +1,46 @@
 # Handoff Notes (Next Session)
 
 ## Session context
-- This pass focused on **shipping a new learner-facing app slice** and **clarifying the product front door**.
-- Goal: move from "single strong app" posture toward a clearer multi-mode learning product.
+- This pass focused on **Monday forward progress**: shipping the missing causality mode and making Event Recognition align with unit-first learner flow.
+- Goal: close the largest learner-facing gap without breaking data validation/derive workflows.
 
 ## Changes made
-1. **History Player first playable slice landed**
-   - Added `apps/history-player/index.html`.
-   - Implemented sequence playback controls: previous / play-pause / next, speed control, and timeline-position slider.
-   - Added cumulative event log (click to jump) and a simple marker panel for current/recent events.
-   - Data source: `derived/events.normalized.json` sorted chronologically.
+1. **New Causality Builder MVP shipped**
+   - Added `apps/causality-builder/index.html`, `apps/causality-builder/app.js`, and `apps/causality-builder/styles.css`.
+   - Loads raw data from `data/events.json`, `data/units/index.json`, and each referenced unit file.
+   - Implements causality-ready gating (`time.year_start` + causal links + causal question types).
+   - Unit selector includes only units with at least 4 causality-ready events.
+   - Default unit prefers `unit_french_revolution_napoleon` when eligible.
+   - Includes quality filter (`Reviewed+` / `Include drafts`).
+   - Includes two playable modes:
+     - **Direct effect**: match source event to downstream event.
+     - **Cause category**: classify a selected cause label by category.
+   - Graceful fallback if cause categories are too sparse.
 
-2. **Top page rebuilt as learning-mode chooser**
-   - Updated root `index.html` with explicit "start here" guidance.
-   - Added clear app cards for Timeline Trainer, Event Recognition Trainer, and History Player.
-   - Added live dataset counters: events, people, units, approved, reviewed+.
-   - Added visible unit coverage text from `data/units/index.json`.
+2. **Event Recognition rebuilt for learner flow**
+   - Replaced normalized whole-corpus loading with raw events + unit registry + unit files.
+   - Added setup controls: practice scope (unit/all), unit selection, and quality filter.
+   - Recognition eligibility now requires:
+     - non-empty `summary_short`
+     - numeric `time.year_start`
+     - at least one of `what_happened`, `significance`, `cause_and_effect`
+   - Distractors prefer same-unit records first, then fallback to broader filtered pool.
+   - Answer reveal now includes year, active unit title, and one-line summary explanation.
+   - Added eligibility hint and clear empty state guidance.
 
-3. **Packaging/scope consistency tightened**
-   - Updated `data/metadata.json` scope to include all four registered units.
-   - Updated enabled app list to include shipped surfaces (`timeline-trainer`, `event-recognition`, `history-player`).
-   - Extended `scripts/validate-data.mjs` with metadata scope checks against `data/units/index.json`.
+3. **Homepage onboarding updated**
+   - Added Causality Builder card and link on root `index.html`.
+   - Updated start-here copy to place Causality Builder in the progression.
 
-4. **Documentation refreshed**
-   - Updated README current scope + recent updates to reflect new app/status.
+4. **Docs refreshed**
+   - Updated `README.md` current scope and recent updates to reflect the new Causality Builder route and Event Recognition flow.
 
 ## Validation/checks performed
 - `node scripts/validate-data.mjs`
 - `node scripts/derive.mjs`
-- `node scripts/smoke-timeline-trainer.mjs`
 
 ## Next steps (smallest logical order)
-1. Replace History Player placeholder marker coordinates with canonical per-event locations in `data/events.json`.
-2. Add importance/category filters to History Player once the first curated global slice is finalized.
-3. Add a lightweight smoke check covering History Player load and basic controls.
-4. Consider extracting a shared "dataset summary" artifact for reuse by top-page onboarding and CI checks.
+1. Add lightweight smoke checks for Causality Builder and Event Recognition setup states.
+2. Consider integrating `people_ids` into at least one mode (recognition distractor context or causality explanation enrichment).
+3. Expand causality-ready coverage for non-French units so more units pass the 4-event causality threshold.
+4. Review copy consistency across app setup cards to keep learner cognitive load low.
