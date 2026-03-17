@@ -111,5 +111,426 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "draft"
+  },
+  {
+    "id": "pe_otto_von_bismarck",
+    "name": "Otto von Bismarck",
+    "alt_names": [],
+    "birth_year": 1815,
+    "death_year": 1898,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "statesman",
+      "chancellor"
+    ],
+    "summary_short": "Prussian statesman who unified Germany and helped shape great-power diplomacy during the high imperial era.",
+    "related_events": [
+      "ev_imperialism_berlin_conference_begins_1884"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_bismarck",
+        "url": "https://www.britannica.com/biography/Otto-von-Bismarck",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_cecil_rhodes",
+    "name": "Cecil Rhodes",
+    "alt_names": [],
+    "birth_year": 1853,
+    "death_year": 1902,
+    "regions": [
+      "reg_africa",
+      "reg_europe"
+    ],
+    "roles": [
+      "imperialist",
+      "businessman"
+    ],
+    "summary_short": "British imperialist and mining magnate who expanded chartered-company rule in southern Africa.",
+    "related_events": [
+      "ev_imperialism_british_south_africa_company_charter_1889",
+      "ev_imperialism_second_boer_war_begins_1899"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_rhodes",
+        "url": "https://www.britannica.com/biography/Cecil-Rhodes",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_leopold_ii",
+    "name": "Leopold II",
+    "alt_names": [],
+    "birth_year": 1835,
+    "death_year": 1909,
+    "regions": [
+      "reg_africa",
+      "reg_europe"
+    ],
+    "roles": [
+      "king",
+      "imperialist"
+    ],
+    "summary_short": "King of Belgium whose private control of the Congo Free State became central to imperial exploitation debates.",
+    "related_events": [
+      "ev_imperialism_leopold_congo_project_1876",
+      "ev_imperialism_congo_free_state_established_1885"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match",
+      "causality_actor_identification"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_leopold_ii",
+        "url": "https://www.britannica.com/biography/Leopold-II-king-of-Belgium",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_david_livingstone",
+    "name": "David Livingstone",
+    "alt_names": [],
+    "birth_year": 1813,
+    "death_year": 1873,
+    "regions": [
+      "reg_africa",
+      "reg_europe"
+    ],
+    "roles": [
+      "explorer",
+      "missionary"
+    ],
+    "summary_short": "Scottish missionary-explorer whose travels in Africa influenced public opinion and imperial-era exploration narratives.",
+    "related_events": [
+      "ev_imperialism_leopold_congo_project_1876"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_livingstone",
+        "url": "https://www.britannica.com/biography/David-Livingstone",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_henry_morton_stanley",
+    "name": "Henry Morton Stanley",
+    "alt_names": [],
+    "birth_year": 1841,
+    "death_year": 1904,
+    "regions": [
+      "reg_africa",
+      "reg_europe"
+    ],
+    "roles": [
+      "explorer",
+      "journalist"
+    ],
+    "summary_short": "Journalist and explorer who mapped Central African routes later used in colonial expansion, especially in the Congo basin.",
+    "related_events": [
+      "ev_imperialism_leopold_congo_project_1876",
+      "ev_imperialism_congo_free_state_established_1885"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_stanley",
+        "url": "https://www.britannica.com/biography/Henry-Morton-Stanley",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_karl_marx",
+    "name": "Karl Marx",
+    "alt_names": [],
+    "birth_year": 1818,
+    "death_year": 1883,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "philosopher",
+      "economist"
+    ],
+    "summary_short": "German theorist whose critique of capitalism shaped socialist and labor movements during industrialization.",
+    "related_events": [
+      "ev_factory_act_1833"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_marx",
+        "url": "https://www.britannica.com/biography/Karl-Marx",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_friedrich_engels",
+    "name": "Friedrich Engels",
+    "alt_names": [],
+    "birth_year": 1820,
+    "death_year": 1895,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "writer",
+      "theorist"
+    ],
+    "summary_short": "German social theorist and collaborator of Marx who documented industrial working conditions and class conflict.",
+    "related_events": [
+      "ev_factory_act_1833"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_engels",
+        "url": "https://www.britannica.com/biography/Friedrich-Engels",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_andrew_carnegie",
+    "name": "Andrew Carnegie",
+    "alt_names": [],
+    "birth_year": 1835,
+    "death_year": 1919,
+    "regions": [
+      "reg_north_america",
+      "reg_europe"
+    ],
+    "roles": [
+      "industrialist",
+      "philanthropist"
+    ],
+    "summary_short": "Scottish-American steel industrialist who symbolized large-scale corporate growth in the Second Industrial Revolution.",
+    "related_events": [
+      "ev_bessemer_process_patent_1856"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_carnegie",
+        "url": "https://www.britannica.com/biography/Andrew-Carnegie",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_jp_morgan",
+    "name": "J. P. Morgan",
+    "alt_names": [
+      "John Pierpont Morgan"
+    ],
+    "birth_year": 1837,
+    "death_year": 1913,
+    "regions": [
+      "reg_north_america"
+    ],
+    "roles": [
+      "banker",
+      "financier"
+    ],
+    "summary_short": "American financier who consolidated major corporations and influenced industrial capital networks at global scale.",
+    "related_events": [
+      "ev_bessemer_process_patent_1856"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_jp_morgan",
+        "url": "https://www.britannica.com/biography/J-P-Morgan",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_thomas_edison",
+    "name": "Thomas Edison",
+    "alt_names": [],
+    "birth_year": 1847,
+    "death_year": 1931,
+    "regions": [
+      "reg_north_america"
+    ],
+    "roles": [
+      "inventor",
+      "entrepreneur"
+    ],
+    "summary_short": "American inventor whose electric lighting and power-system ventures accelerated late-industrial urban transformation.",
+    "related_events": [
+      "ev_great_exhibition_opens_1851"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_edison",
+        "url": "https://www.britannica.com/biography/Thomas-Edison",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_queen_victoria",
+    "name": "Queen Victoria",
+    "alt_names": [],
+    "birth_year": 1819,
+    "death_year": 1901,
+    "regions": [
+      "reg_europe",
+      "reg_global"
+    ],
+    "roles": [
+      "monarch"
+    ],
+    "summary_short": "British monarch whose reign coincided with industrial expansion and the peak phase of British imperial influence.",
+    "related_events": [
+      "ev_imperialism_british_occupation_egypt_1882",
+      "ev_imperialism_fashoda_incident_1898"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_victoria",
+        "url": "https://www.britannica.com/biography/Victoria-queen-of-United-Kingdom",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_menelik_ii",
+    "name": "Menelik II",
+    "alt_names": [],
+    "birth_year": 1844,
+    "death_year": 1913,
+    "regions": [
+      "reg_africa"
+    ],
+    "roles": [
+      "emperor",
+      "military-leader"
+    ],
+    "summary_short": "Emperor of Ethiopia who defeated Italy at Adwa, preserving Ethiopian sovereignty during the Scramble for Africa.",
+    "related_events": [
+      "ev_imperialism_battle_of_adwa_1896"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match",
+      "causality_actor_identification"
+    ],
+    "source_refs": [
+      {
+        "source_type": "external",
+        "source_id": "britannica_menelik_ii",
+        "url": "https://www.britannica.com/biography/Menilek-II",
+        "retrieved_at": "2026-03-17T00:00:00Z",
+        "notes": "Biographical baseline for timeline practice."
+      }
+    ],
+    "content_origin": "structured_external",
+    "status": "reviewed"
   }
 ]

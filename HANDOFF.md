@@ -1,46 +1,32 @@
 # Handoff Notes (Next Session)
 
 ## Session context
-- This pass focused on **Monday forward progress**: shipping the missing causality mode and making Event Recognition align with unit-first learner flow.
-- Goal: close the largest learner-facing gap without breaking data validation/derive workflows.
+- This pass executed Tuesday data/content expansion priorities focused on actor coverage and late-19th-century imperialism chronology depth.
 
 ## Changes made
-1. **New Causality Builder MVP shipped**
-   - Added `apps/causality-builder/index.html`, `apps/causality-builder/app.js`, and `apps/causality-builder/styles.css`.
-   - Loads raw data from `data/events.json`, `data/units/index.json`, and each referenced unit file.
-   - Implements causality-ready gating (`time.year_start` + causal links + causal question types).
-   - Unit selector includes only units with at least 4 causality-ready events.
-   - Default unit prefers `unit_french_revolution_napoleon` when eligible.
-   - Includes quality filter (`Reviewed+` / `Include drafts`).
-   - Includes two playable modes:
-     - **Direct effect**: match source event to downstream event.
-     - **Cause category**: classify a selected cause label by category.
-   - Graceful fallback if cause categories are too sparse.
+1. **People dataset expansion**
+   - Added 12 reviewed people records in `data/people.json` covering industrialization and imperialism actors.
+   - New entries include figures such as Bismarck, Rhodes, Leopold II, Livingstone, Stanley, Marx, Engels, Carnegie, J.P. Morgan, Edison, Queen Victoria, and Menelik II.
 
-2. **Event Recognition rebuilt for learner flow**
-   - Replaced normalized whole-corpus loading with raw events + unit registry + unit files.
-   - Added setup controls: practice scope (unit/all), unit selection, and quality filter.
-   - Recognition eligibility now requires:
-     - non-empty `summary_short`
-     - numeric `time.year_start`
-     - at least one of `what_happened`, `significance`, `cause_and_effect`
-   - Distractors prefer same-unit records first, then fallback to broader filtered pool.
-   - Answer reveal now includes year, active unit title, and one-line summary explanation.
-   - Added eligibility hint and clear empty state guidance.
+2. **Imperialism event bundle expansion**
+   - Added 12 new events to `data/events.json` for 1869-1910 coverage (Suez Canal opening, Congo Free State establishment, Fashoda Incident, Open Door Notes, Philippine-American War, Algeciras Conference, annexation of Korea, etc.).
+   - Added concise `summary_short` and optional causal metadata (`causes`, `effects`) for the new records.
 
-3. **Homepage onboarding updated**
-   - Added Causality Builder card and link on root `index.html`.
-   - Updated start-here copy to place Causality Builder in the progression.
+3. **Cross-linking and unit updates**
+   - Added/extended `people_ids` links on selected existing and new events where actor association was clear.
+   - Updated `data/units/age-of-imperialism.json` to include the new events in chronological order and populated `person_ids` for key imperialism actors.
+   - Updated `data/units/industrial-revolution.json` `person_ids` with industrial-era thinkers and business figures.
 
-4. **Docs refreshed**
-   - Updated `README.md` current scope and recent updates to reflect the new Causality Builder route and Event Recognition flow.
+4. **Documentation + derived outputs**
+   - Updated `README.md` with a new 2026-03-17 recent-updates entry.
+   - Re-ran derive pipeline; refreshed files under `derived/`.
 
 ## Validation/checks performed
 - `node scripts/validate-data.mjs`
 - `node scripts/derive.mjs`
 
-## Next steps (smallest logical order)
-1. Add lightweight smoke checks for Causality Builder and Event Recognition setup states.
-2. Consider integrating `people_ids` into at least one mode (recognition distractor context or causality explanation enrichment).
-3. Expand causality-ready coverage for non-French units so more units pass the 4-event causality threshold.
-4. Review copy consistency across app setup cards to keep learner cognitive load low.
+## Suggested next steps
+1. Raise status for newly added imperialism events from `reviewed` to `approved` after historical accuracy pass.
+2. Backfill `summary_short` for older imperialism draft events that still lack concise learner-facing explanations.
+3. Add a lightweight consistency rule in validation to flag missing `summary_short` for timeline-enabled events.
+4. Begin integrating `person_ids` into Event Recognition distractor logic and/or Causality Builder explanations.
