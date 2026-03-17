@@ -3,7 +3,10 @@
     "id": "ev_bessemer_process_patent_1856",
     "label": "Bessemer process patented (mass steel production)",
     "summary_short": "Bessemer’s process enabled cheaper mass production of steel, accelerating industrial expansion in railways, construction, and machinery.",
-    "people_ids": [],
+    "people_ids": [
+      "pe_andrew_carnegie",
+      "pe_jp_morgan"
+    ],
     "time": {
       "start": "1856",
       "end": "1856",
@@ -155,7 +158,10 @@
     "id": "ev_factory_act_1833",
     "label": "Factory Act (UK) strengthens child labor regulation and enforcement",
     "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate—an important step toward enforceable workplace regulation.",
-    "people_ids": [],
+    "people_ids": [
+      "pe_karl_marx",
+      "pe_friedrich_engels"
+    ],
     "time": {
       "start": "1833",
       "end": "1833",
@@ -224,10 +230,68 @@
     }
   },
   {
+    "id": "ev_imperialism_algeciras_conference_1906",
+    "label": "Algeciras Conference",
+    "summary_short": "European powers and the US met at Algeciras to settle Moroccan disputes, exposing fragile great-power cooperation.",
+    "people_ids": [],
+    "time": {
+      "start": "1906",
+      "end": "1906",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19060101,
+      "sort_end": 19061231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1906
+    }
+  },
+  {
+    "id": "ev_imperialism_anglo_japanese_alliance_1902",
+    "label": "Anglo-Japanese Alliance signed",
+    "summary_short": "Britain and Japan formed an alliance to balance Russian influence in East Asia and protect imperial interests.",
+    "people_ids": [],
+    "time": {
+      "start": "1902",
+      "end": "1902",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19020101,
+      "sort_end": 19021231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1902
+    }
+  },
+  {
+    "id": "ev_imperialism_battle_of_adwa_1896",
+    "label": "Battle of Adwa",
+    "summary_short": "Ethiopian forces defeated Italy at Adwa, becoming a major anti-colonial victory during the Scramble for Africa.",
+    "people_ids": [
+      "pe_menelik_ii"
+    ],
+    "time": {
+      "start": "1896",
+      "end": "1896",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18960101,
+      "sort_end": 18961231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1896
+    }
+  },
+  {
     "id": "ev_imperialism_berlin_conference_begins_1884",
     "label": "Berlin Conference begins",
     "summary_short": null,
-    "people_ids": [],
+    "people_ids": [
+      "pe_otto_von_bismarck"
+    ],
     "time": {
       "start": "1884",
       "end": "1884",
@@ -299,7 +363,9 @@
     "id": "ev_imperialism_british_occupation_egypt_1882",
     "label": "British occupation of Egypt",
     "summary_short": null,
-    "people_ids": [],
+    "people_ids": [
+      "pe_queen_victoria"
+    ],
     "time": {
       "start": "1882",
       "end": "1882",
@@ -311,6 +377,67 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1882
+    }
+  },
+  {
+    "id": "ev_imperialism_british_south_africa_company_charter_1889",
+    "label": "British South Africa Company receives royal charter",
+    "summary_short": "Britain granted Cecil Rhodes's company authority to administer and expand control in parts of southern Africa.",
+    "people_ids": [
+      "pe_cecil_rhodes"
+    ],
+    "time": {
+      "start": "1889",
+      "end": "1889",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18890101,
+      "sort_end": 18891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1889
+    }
+  },
+  {
+    "id": "ev_imperialism_congo_free_state_established_1885",
+    "label": "Congo Free State established",
+    "summary_short": "Leopold II secured international recognition for the Congo Free State under personal rule, intensifying extractive colonial governance.",
+    "people_ids": [
+      "pe_leopold_ii",
+      "pe_henry_morton_stanley"
+    ],
+    "time": {
+      "start": "1885",
+      "end": "1885",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18850101,
+      "sort_end": 18851231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1885
+    }
+  },
+  {
+    "id": "ev_imperialism_fashoda_incident_1898",
+    "label": "Fashoda Incident",
+    "summary_short": "French and British forces confronted each other in Sudan, testing imperial rivalry before a negotiated French withdrawal.",
+    "people_ids": [
+      "pe_queen_victoria"
+    ],
+    "time": {
+      "start": "1898",
+      "end": "1898",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18980101,
+      "sort_end": 18981231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1898
     }
   },
   {
@@ -368,10 +495,32 @@
     }
   },
   {
+    "id": "ev_imperialism_japan_annexes_korea_1910",
+    "label": "Japan annexes Korea",
+    "summary_short": "Japan formally annexed Korea, consolidating colonial control after years of military and diplomatic pressure.",
+    "people_ids": [],
+    "time": {
+      "start": "1910",
+      "end": "1910",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19100101,
+      "sort_end": 19101231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1910
+    }
+  },
+  {
     "id": "ev_imperialism_leopold_congo_project_1876",
     "label": "Leopold II begins Congo Free State project",
     "summary_short": null,
-    "people_ids": [],
+    "people_ids": [
+      "pe_leopold_ii",
+      "pe_henry_morton_stanley",
+      "pe_david_livingstone"
+    ],
     "time": {
       "start": "1876",
       "end": "1876",
@@ -383,6 +532,42 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1876
+    }
+  },
+  {
+    "id": "ev_imperialism_open_door_notes_1899",
+    "label": "Open Door Notes issued",
+    "summary_short": "US diplomatic notes called for equal commercial access in China, reflecting intensifying competition among imperial powers.",
+    "people_ids": [],
+    "time": {
+      "start": "1899",
+      "end": "1899",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18990101,
+      "sort_end": 18991231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1899
+    }
+  },
+  {
+    "id": "ev_imperialism_philippine_american_war_begins_1899",
+    "label": "Philippine-American War begins",
+    "summary_short": "Conflict broke out between US forces and Filipino nationalists after Spain ceded the Philippines, redefining US imperial policy.",
+    "people_ids": [],
+    "time": {
+      "start": "1899",
+      "end": "1899",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18990101,
+      "sort_end": 18991231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1899
     }
   },
   {
@@ -440,6 +625,26 @@
     }
   },
   {
+    "id": "ev_imperialism_suez_canal_opens_1869",
+    "label": "Suez Canal opens to navigation",
+    "summary_short": "The Suez Canal created a shorter sea route between Europe and Asia, raising Egypt's strategic importance for imperial powers.",
+    "people_ids": [
+      "pe_queen_victoria"
+    ],
+    "time": {
+      "start": "1869",
+      "end": "1869",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18690101,
+      "sort_end": 18691231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1869
+    }
+  },
+  {
     "id": "ev_imperialism_treaty_portsmouth_1905",
     "label": "Treaty of Portsmouth",
     "summary_short": null,
@@ -473,6 +678,42 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1895
+    }
+  },
+  {
+    "id": "ev_imperialism_triple_intervention_1895",
+    "label": "Triple Intervention pressures Japan after Sino-Japanese War",
+    "summary_short": "Russia, France, and Germany forced Japan to revise postwar gains, deepening Japanese distrust of European power politics.",
+    "people_ids": [],
+    "time": {
+      "start": "1895",
+      "end": "1895",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18950101,
+      "sort_end": 18951231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1895
+    }
+  },
+  {
+    "id": "ev_imperialism_us_annexes_hawaii_1898",
+    "label": "United States annexes Hawaii",
+    "summary_short": "The United States formally annexed Hawaii, expanding its strategic position across Pacific imperial networks.",
+    "people_ids": [],
+    "time": {
+      "start": "1898",
+      "end": "1898",
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18980101,
+      "sort_end": 18981231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1898
     }
   },
   {

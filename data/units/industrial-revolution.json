@@ -32,9 +32,15 @@
     "ev_great_exhibition_opens_1851",
     "ev_bessemer_process_patent_1856"
   ],
-  "person_ids": [],
+  "person_ids": [
+    "pe_karl_marx",
+    "pe_friedrich_engels",
+    "pe_andrew_carnegie",
+    "pe_jp_morgan",
+    "pe_thomas_edison"
+  ],
   "status": "draft",
-  "updated_at": "2026-03-06",
+  "updated_at": "2026-03-17",
   "app_profiles": {
     "timeline-trainer": {
       "enabled": true,

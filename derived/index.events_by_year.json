@@ -70,6 +70,9 @@
     "ev_meiji_boshin_war_1868",
     "ev_meiji_charter_oath_1868"
   ],
+  "1869": [
+    "ev_imperialism_suez_canal_opens_1869"
+  ],
   "1871": [
     "ev_meiji_abolish_han_1871"
   ],
@@ -86,9 +89,11 @@
     "ev_imperialism_berlin_conference_begins_1884"
   ],
   "1885": [
-    "ev_imperialism_berlin_conference_ends_1885"
+    "ev_imperialism_berlin_conference_ends_1885",
+    "ev_imperialism_congo_free_state_established_1885"
   ],
   "1889": [
+    "ev_imperialism_british_south_africa_company_charter_1889",
     "ev_meiji_constitution_1889"
   ],
   "1890": [
@@ -99,18 +104,27 @@
     "ev_meiji_sinojapanese_war_1894"
   ],
   "1895": [
-    "ev_imperialism_treaty_shimonoseki_1895"
+    "ev_imperialism_treaty_shimonoseki_1895",
+    "ev_imperialism_triple_intervention_1895"
+  ],
+  "1896": [
+    "ev_imperialism_battle_of_adwa_1896"
   ],
   "1898": [
-    "ev_imperialism_spanish_american_war_1898"
+    "ev_imperialism_fashoda_incident_1898",
+    "ev_imperialism_spanish_american_war_1898",
+    "ev_imperialism_us_annexes_hawaii_1898"
   ],
   "1899": [
+    "ev_imperialism_open_door_notes_1899",
+    "ev_imperialism_philippine_american_war_begins_1899",
     "ev_imperialism_second_boer_war_begins_1899"
   ],
   "1900": [
     "ev_imperialism_boxer_rebellion_1900"
   ],
   "1902": [
+    "ev_imperialism_anglo_japanese_alliance_1902",
     "ev_imperialism_boer_war_ends_1902"
   ],
   "1904": [
@@ -121,7 +135,11 @@
     "ev_imperialism_treaty_portsmouth_1905",
     "ev_meiji_russojapanese_war_1905"
   ],
+  "1906": [
+    "ev_imperialism_algeciras_conference_1906"
+  ],
   "1910": [
+    "ev_imperialism_japan_annexes_korea_1910",
     "ev_meiji_annex_korea_1910"
   ],
   "1911": [

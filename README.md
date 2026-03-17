@@ -118,6 +118,13 @@ Next:
 - Updated `data/metadata.json` scope/app entries to match the actual four-unit dataset and shipped app set.
 
 
+## Recent updates (2026-03-17)
+
+- Expanded `data/people.json` with 12 reviewed figures tied to Industrial Revolution and Age of Imperialism study coverage.
+- Added 12 new imperialism-era events (1869-1910) with summaries and causal metadata in `data/events.json`.
+- Linked selected events to people via `people_ids` and expanded unit `person_ids` in Industrial Revolution and Age of Imperialism units.
+- Regenerated derived artifacts after validation and dataset expansion.
+
 ## Recent updates (2026-03-16)
 
 - Added first playable **Causality Builder** route at `apps/causality-builder/`.

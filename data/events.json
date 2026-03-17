@@ -1011,7 +1011,11 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "people_ids": [
+      "pe_karl_marx",
+      "pe_friedrich_engels"
+    ]
   },
   {
     "id": "ev_great_exhibition_opens_1851",
@@ -1177,7 +1181,11 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "people_ids": [
+      "pe_andrew_carnegie",
+      "pe_jp_morgan"
+    ]
   },
   {
     "id": "ev_meiji_boshin_war_1868",
@@ -1731,7 +1739,12 @@
       "congo"
     ],
     "status": "draft",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "people_ids": [
+      "pe_leopold_ii",
+      "pe_henry_morton_stanley",
+      "pe_david_livingstone"
+    ]
   },
   {
     "id": "ev_imperialism_british_occupation_egypt_1882",
@@ -1753,7 +1766,10 @@
       "egypt"
     ],
     "status": "draft",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "people_ids": [
+      "pe_queen_victoria"
+    ]
   },
   {
     "id": "ev_imperialism_berlin_conference_begins_1884",
@@ -1775,7 +1791,10 @@
       "scramble_for_africa"
     ],
     "status": "draft",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "people_ids": [
+      "pe_otto_von_bismarck"
+    ]
   },
   {
     "id": "ev_imperialism_berlin_conference_ends_1885",
@@ -2044,5 +2063,408 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "ev_imperialism_suez_canal_opens_1869",
+    "label": "Suez Canal opens to navigation",
+    "time": {
+      "year_start": 1869
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "trade_routes",
+      "egypt"
+    ],
+    "summary_short": "The Suez Canal created a shorter sea route between Europe and Asia, raising Egypt's strategic importance for imperial powers.",
+    "causes": [
+      {
+        "label": "European and Egyptian investment in faster intercontinental trade",
+        "category": "economic"
+      }
+    ],
+    "effects": [
+      "ev_imperialism_british_occupation_egypt_1882"
+    ],
+    "people_ids": [
+      "pe_queen_victoria"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_congo_free_state_established_1885",
+    "label": "Congo Free State established",
+    "time": {
+      "year_start": 1885
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "congo",
+      "colonial_rule"
+    ],
+    "summary_short": "Leopold II secured international recognition for the Congo Free State under personal rule, intensifying extractive colonial governance.",
+    "causes": [
+      "ev_imperialism_berlin_conference_ends_1885"
+    ],
+    "effects": [
+      {
+        "label": "Escalating forced-labor abuses and international reform campaigns",
+        "category": "social"
+      }
+    ],
+    "people_ids": [
+      "pe_leopold_ii",
+      "pe_henry_morton_stanley"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_british_south_africa_company_charter_1889",
+    "label": "British South Africa Company receives royal charter",
+    "time": {
+      "year_start": 1889
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "chartered_company",
+      "southern_africa"
+    ],
+    "summary_short": "Britain granted Cecil Rhodes's company authority to administer and expand control in parts of southern Africa.",
+    "causes": [
+      {
+        "label": "Competition over mineral wealth and territorial influence in southern Africa",
+        "category": "economic"
+      }
+    ],
+    "effects": [
+      "ev_imperialism_second_boer_war_begins_1899"
+    ],
+    "people_ids": [
+      "pe_cecil_rhodes"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_triple_intervention_1895",
+    "label": "Triple Intervention pressures Japan after Sino-Japanese War",
+    "time": {
+      "year_start": 1895
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "diplomacy",
+      "japan"
+    ],
+    "summary_short": "Russia, France, and Germany forced Japan to revise postwar gains, deepening Japanese distrust of European power politics.",
+    "causes": [
+      "ev_imperialism_treaty_shimonoseki_1895"
+    ],
+    "effects": [
+      "ev_imperialism_russojapanese_war_begins_1904"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_battle_of_adwa_1896",
+    "label": "Battle of Adwa",
+    "time": {
+      "year_start": 1896
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "ethiopia",
+      "war"
+    ],
+    "summary_short": "Ethiopian forces defeated Italy at Adwa, becoming a major anti-colonial victory during the Scramble for Africa.",
+    "causes": [
+      {
+        "label": "Italian expansion attempts in the Horn of Africa",
+        "category": "political"
+      }
+    ],
+    "effects": [
+      {
+        "label": "Ethiopian sovereignty was preserved and anti-colonial resistance gained a landmark symbol",
+        "category": "political"
+      }
+    ],
+    "people_ids": [
+      "pe_menelik_ii"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_fashoda_incident_1898",
+    "label": "Fashoda Incident",
+    "time": {
+      "year_start": 1898
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "france",
+      "britain",
+      "diplomacy"
+    ],
+    "summary_short": "French and British forces confronted each other in Sudan, testing imperial rivalry before a negotiated French withdrawal.",
+    "causes": [
+      {
+        "label": "Competing French and British expansion corridors across Africa",
+        "category": "political"
+      }
+    ],
+    "effects": [
+      {
+        "label": "Anglo-French accommodation reduced immediate colonial war risk",
+        "category": "political"
+      }
+    ],
+    "people_ids": [
+      "pe_queen_victoria"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_us_annexes_hawaii_1898",
+    "label": "United States annexes Hawaii",
+    "time": {
+      "year_start": 1898
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "united_states",
+      "pacific"
+    ],
+    "summary_short": "The United States formally annexed Hawaii, expanding its strategic position across Pacific imperial networks.",
+    "causes": [
+      {
+        "label": "US commercial and naval strategy in the Pacific",
+        "category": "economic"
+      }
+    ],
+    "effects": [
+      "ev_imperialism_philippine_american_war_begins_1899"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_open_door_notes_1899",
+    "label": "Open Door Notes issued",
+    "time": {
+      "year_start": 1899
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "china",
+      "diplomacy"
+    ],
+    "summary_short": "US diplomatic notes called for equal commercial access in China, reflecting intensifying competition among imperial powers.",
+    "causes": [
+      {
+        "label": "Fear of exclusive spheres of influence in China",
+        "category": "economic"
+      }
+    ],
+    "effects": [
+      "ev_imperialism_boxer_rebellion_1900"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_philippine_american_war_begins_1899",
+    "label": "Philippine-American War begins",
+    "time": {
+      "year_start": 1899
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "united_states",
+      "philippines",
+      "war"
+    ],
+    "summary_short": "Conflict broke out between US forces and Filipino nationalists after Spain ceded the Philippines, redefining US imperial policy.",
+    "causes": [
+      "ev_imperialism_spanish_american_war_1898"
+    ],
+    "effects": [
+      {
+        "label": "US colonial administration expanded in the Philippines",
+        "category": "political"
+      }
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_anglo_japanese_alliance_1902",
+    "label": "Anglo-Japanese Alliance signed",
+    "time": {
+      "year_start": 1902
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "alliance",
+      "japan",
+      "britain"
+    ],
+    "summary_short": "Britain and Japan formed an alliance to balance Russian influence in East Asia and protect imperial interests.",
+    "causes": [
+      {
+        "label": "Shared concern over Russian expansion in East Asia",
+        "category": "political"
+      }
+    ],
+    "effects": [
+      "ev_imperialism_russojapanese_war_begins_1904"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_algeciras_conference_1906",
+    "label": "Algeciras Conference",
+    "time": {
+      "year_start": 1906
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "morocco",
+      "diplomacy"
+    ],
+    "summary_short": "European powers and the US met at Algeciras to settle Moroccan disputes, exposing fragile great-power cooperation.",
+    "causes": [
+      "ev_imperialism_first_moroccan_crisis_1905"
+    ],
+    "effects": [
+      "ev_imperialism_agadir_crisis_1911"
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_imperialism_japan_annexes_korea_1910",
+    "label": "Japan annexes Korea",
+    "time": {
+      "year_start": 1910
+    },
+    "question_types": [
+      "timeline_before_after",
+      "timeline_ordering"
+    ],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "tags": [
+      "imperialism",
+      "japan",
+      "korea",
+      "annexation"
+    ],
+    "summary_short": "Japan formally annexed Korea, consolidating colonial control after years of military and diplomatic pressure.",
+    "causes": [
+      "ev_imperialism_treaty_portsmouth_1905"
+    ],
+    "effects": [
+      {
+        "label": "Colonial rule intensified political repression and resource extraction in Korea",
+        "category": "political"
+      }
+    ],
+    "status": "reviewed",
+    "content_origin": "structured_external"
   }
 ]
