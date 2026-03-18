@@ -39,6 +39,17 @@ const REVIEW_DELAY_MIN = 2;
 const REVIEW_DELAY_MAX = 4;
 const REVIEW_MAX_ATTEMPTS = 2;
 const MIN_TRIPLET_YEAR_SPAN = 10;
+const DIFFICULTY = {
+  BEGINNER: "beginner",
+  INTERMEDIATE: "intermediate",
+  FULL: "full",
+};
+const DIFFICULTY_MULTIPLIER = {
+  [DIFFICULTY.BEGINNER]: 1,
+  [DIFFICULTY.INTERMEDIATE]: 1.2,
+  [DIFFICULTY.FULL]: 1.5,
+};
+const BEGINNER_EVENT_LIMIT = 10;
 
 const state = {
   eventsById: new Map(),
@@ -50,11 +61,13 @@ const state = {
     mode: PRACTICE_MODE.UNIT,
     unitId: null,
     minStatus: "reviewed",
+    difficulty: DIFFICULTY.BEGINNER,
     enabledQuestionTypes: [QUESTION_TYPES.BEFORE_AFTER, QUESTION_TYPES.EARLIEST_OF_3, QUESTION_TYPES.LATEST_OF_3],
   },
   currentQuestion: null,
   totalAnswered: 0,
   correctAnswered: 0,
+  score: 0,
   reviewAnswered: 0,
   reviewCorrect: 0,
   answeredByType: {
@@ -83,6 +96,8 @@ const ui = {
   unitSelectWrap: document.getElementById("unit-select-wrap"),
   unitSelect: document.getElementById("unit-select"),
   qualitySelect: document.getElementById("quality-select"),
+  difficultySelect: document.getElementById("difficulty-select"),
+  difficultyLabel: document.getElementById("difficulty-label"),
   availabilityHint: document.getElementById("availability-hint"),
   modeHelp: document.getElementById("mode-help"),
   questionTitle: document.getElementById("question-title"),
@@ -152,6 +167,28 @@ function getModeHelpText(mode) {
   return "Choose which event happened earlier.";
 }
 
+function getDifficultyLabelText(difficulty) {
+  if (difficulty === DIFFICULTY.INTERMEDIATE) return "Intermediate";
+  if (difficulty === DIFFICULTY.FULL) return "Full";
+  return "Beginner";
+}
+
+function filterByDifficulty(events, difficulty) {
+  if (difficulty === DIFFICULTY.BEGINNER) {
+    return events.filter((event) => event.status === "reviewed" || event.status === "approved").slice(0, BEGINNER_EVENT_LIMIT);
+  }
+  if (difficulty === DIFFICULTY.INTERMEDIATE) {
+    return events.filter((event) => typeof event.status === "string");
+  }
+  return events;
+}
+
+function getMinYearSpanForDifficulty(difficulty) {
+  if (difficulty === DIFFICULTY.BEGINNER) return 15;
+  if (difficulty === DIFFICULTY.INTERMEDIATE) return 12;
+  return MIN_TRIPLET_YEAR_SPAN;
+}
+
 function getScopeEligibleCount() {
   if (state.scope.mode === PRACTICE_MODE.UNIT) {
     const pool = state.poolsByUnitId.get(state.scope.unitId);
@@ -184,8 +221,9 @@ function updateAvailabilityHint() {
     ui.availabilityHint.textContent = "No eligible items available for this selection.";
     return;
   }
-  ui.availabilityHint.textContent = `${eligibleCount} eligible events available.`;
+  ui.availabilityHint.textContent = `${eligibleCount} eligible events available in ${getDifficultyLabelText(state.scope.difficulty)} mode.`;
 }
+
 
 function getOptionButtons() {
   return [ui.optionA, ui.optionB, ui.optionC];
@@ -262,7 +300,7 @@ function clearError() {
 
 function updateStats() {
   ui.statTotal.textContent = String(state.totalAnswered);
-  ui.statCorrect.textContent = String(state.correctAnswered);
+  ui.statCorrect.textContent = `${state.correctAnswered} (${state.score.toFixed(1)} pts)`;
   ui.statAccuracy.textContent =
     state.totalAnswered === 0 ? "—" : `${Math.round((state.correctAnswered / state.totalAnswered) * 100)}%`;
   ui.statReviewAnswered.textContent = String(state.reviewAnswered);
@@ -464,18 +502,19 @@ function buildPoolsForScope() {
       console.warn("[Timeline Trainer] Missing unit event ids:", unit.id, missingIds);
     }
 
+    const difficultyFilteredEvents = filterByDifficulty(resolvedEvents, state.scope.difficulty);
     const beforeAfterCandidates = filterEligibleEvents(
-      resolvedEvents,
+      difficultyFilteredEvents,
       state.scope,
       getQuestionTypeFilter(QUESTION_TYPES.BEFORE_AFTER)
     );
     const earliestCandidates = filterEligibleEvents(
-      resolvedEvents,
+      difficultyFilteredEvents,
       state.scope,
       getQuestionTypeFilter(QUESTION_TYPES.EARLIEST_OF_3)
     );
     const latestCandidates = filterEligibleEvents(
-      resolvedEvents,
+      difficultyFilteredEvents,
       state.scope,
       getQuestionTypeFilter(QUESTION_TYPES.LATEST_OF_3)
     );
@@ -558,7 +597,7 @@ function generateByTypeWithPool(questionType, candidatePool) {
     return {
       ...generateEarliestOfThreeQuestion(candidatePool, {
         recentTripletKeys: state.recentTripletKeys,
-        minYearSpan: MIN_TRIPLET_YEAR_SPAN,
+        minYearSpan: getMinYearSpanForDifficulty(state.scope.difficulty),
       }),
       isReview: false,
     };
@@ -568,7 +607,7 @@ function generateByTypeWithPool(questionType, candidatePool) {
     return {
       ...generateLatestOfThreeQuestion(candidatePool, {
         recentTripletKeys: state.recentTripletKeys,
-        minYearSpan: MIN_TRIPLET_YEAR_SPAN,
+        minYearSpan: getMinYearSpanForDifficulty(state.scope.difficulty),
       }),
       isReview: false,
     };
@@ -714,6 +753,7 @@ function handleAnswer(optionIndex) {
 
   if (isCorrect) {
     state.correctAnswered += 1;
+    state.score += DIFFICULTY_MULTIPLIER[state.scope.difficulty] ?? 1;
     state.correctByType[state.currentQuestion.type] += 1;
     if (state.currentQuestion.isReview) {
       state.reviewCorrect += 1;
@@ -758,6 +798,8 @@ function syncSettingsUI() {
     ui.unitSelect.value = state.scope.unitId;
   }
   ui.qualitySelect.value = state.scope.minStatus;
+  ui.difficultySelect.value = state.scope.difficulty;
+  ui.difficultyLabel.textContent = `Difficulty: ${getDifficultyLabelText(state.scope.difficulty)}`;
   ui.unitSelectWrap.hidden = state.scope.mode !== PRACTICE_MODE.UNIT;
   updateHeaderScopeLabel();
   updateModeHelp();
@@ -768,6 +810,7 @@ function resetSessionState() {
   state.currentQuestion = null;
   state.totalAnswered = 0;
   state.correctAnswered = 0;
+  state.score = 0;
   state.reviewAnswered = 0;
   state.reviewCorrect = 0;
   state.answeredByType = {
@@ -795,6 +838,7 @@ function areScopesEqual(left, right) {
     left.mode === right.mode &&
     left.unitId === right.unitId &&
     left.minStatus === right.minStatus &&
+    left.difficulty === right.difficulty &&
     JSON.stringify(left.enabledQuestionTypes) === JSON.stringify(right.enabledQuestionTypes)
   );
 }
@@ -863,6 +907,13 @@ function bindEvents() {
       minStatus: ui.qualitySelect.value,
     });
   });
+
+  ui.difficultySelect.addEventListener("change", () => {
+    applyScope({
+      ...state.scope,
+      difficulty: ui.difficultySelect.value,
+    });
+  });
 }
 
 export async function startApp() {
@@ -894,6 +945,7 @@ export async function startApp() {
       mode: PRACTICE_MODE.UNIT,
       unitId: defaultUnitId,
       minStatus: "reviewed",
+      difficulty: DIFFICULTY.BEGINNER,
       enabledQuestionTypes: getRequestedTypesFromQuestionMode(),
     };
 

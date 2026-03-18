@@ -343,3 +343,9 @@ Derive now validates unit manifests more strictly: missing `unit.event_ids` refe
 ## License
 
 TBD
+
+## Recent updates (2026-03-19)
+
+- Reworked **Causality Builder** into a focused event-to-event reasoning drill that loads raw `data/events.json`, asks “Which event follows from this?”, and explains the causal link after each answer.
+- Added difficulty tiers to **Timeline Trainer** with Beginner / Intermediate / Full pools, visible mode labeling, and difficulty-weighted scoring.
+- Updated the homepage learning-mode card copy to better reflect the new causality flow.

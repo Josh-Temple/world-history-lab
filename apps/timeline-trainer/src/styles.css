@@ -83,6 +83,11 @@ body {
   font-weight: 640;
 }
 
+
+.difficulty-label {
+  margin: 0.15rem 0 0;
+  font-size: 0.95rem;
+}
 .availability-hint {
   margin: 0.25rem 0 0;
   font-size: 0.93rem;
