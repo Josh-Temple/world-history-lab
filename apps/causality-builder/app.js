@@ -1,257 +1,192 @@
-const CAUSAL_TYPES = new Set(["causality_chain", "causality_categorize_causes", "causality_match_effects", "cause_and_effect"]);
-const REVIEWED_PLUS = new Set(["reviewed", "approved"]);
+const sourceYearEl = document.getElementById('source-year');
+const sourceLabelEl = document.getElementById('source-label');
+const sourceSummaryEl = document.getElementById('source-summary');
+const choicesEl = document.getElementById('choices');
+const feedbackEl = document.getElementById('feedback');
+const explanationEl = document.getElementById('explanation');
+const nextButton = document.getElementById('next-button');
+const statusLineEl = document.getElementById('status-line');
+const questionCountEl = document.getElementById('question-count');
 
-const qualitySelect = document.getElementById("quality-select");
-const unitSelect = document.getElementById("unit-select");
-const modeSelect = document.getElementById("mode-select");
-const statusLine = document.getElementById("status-line");
-const questionEl = document.getElementById("question");
-const choicesEl = document.getElementById("choices");
-const feedbackEl = document.getElementById("feedback");
-const explanationEl = document.getElementById("explanation");
-const nextButton = document.getElementById("next");
+const state = {
+  events: [],
+  eventMap: new Map(),
+  unitIdsByEventId: new Map(),
+  pool: [],
+  currentQuestion: null,
+  answered: 0,
+};
 
-const state = { eventsById: new Map(), units: [], eligibleUnits: [], currentQuestion: null };
-
-function randomInt(max) { return Math.floor(Math.random() * max); }
 function shuffle(items) {
-  const copy = items.slice();
-  for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = randomInt(i + 1);
-    [copy[i], copy[j]] = [copy[j], copy[i]];
+  const copy = [...items];
+  for (let index = copy.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [copy[index], copy[swapIndex]] = [copy[swapIndex], copy[index]];
   }
   return copy;
 }
-function appUrl(relativePath) { return new URL(relativePath, window.location.href).toString(); }
-function formatEvent(event) { return `${event.label} (${event.time.year_start})`; }
-function setStatusLine(message) { statusLine.textContent = message; }
 
-function isCausalityReady(event) {
-  const hasTypes = Array.isArray(event.question_types) && event.question_types.some((type) => CAUSAL_TYPES.has(type));
-  const hasLinks = (Array.isArray(event.causes) && event.causes.length > 0) || (Array.isArray(event.effects) && event.effects.length > 0);
-  return Number.isFinite(event?.time?.year_start) && hasTypes && hasLinks;
+function isCausal(event) {
+  return Array.isArray(event.effects) && event.effects.length > 0 && Number.isFinite(event?.time?.year_start);
 }
 
-function statusAllows(event, minimumQuality) {
-  if (minimumQuality === "draft") return true;
-  return REVIEWED_PLUS.has(event.status);
+function getSharedUnitIds(eventId) {
+  return state.unitIdsByEventId.get(eventId) || new Set();
 }
 
-async function fetchJson(path, label) {
-  const response = await fetch(appUrl(path), { cache: "no-store" });
-  if (!response.ok) throw new Error(`${label}: HTTP ${response.status}`);
-  return response.json();
-}
-
-async function loadData() {
-  const [events, unitRegistry] = await Promise.all([
-    fetchJson("../../data/events.json", "events"),
-    fetchJson("../../data/units/index.json", "units/index"),
-  ]);
-  const units = await Promise.all(
-    (unitRegistry.units || []).map((entry) => fetchJson(`../../${entry.path.replace(/^\.?\/?/, "")}`, entry.id || "unit"))
-  );
-  return { events, units };
-}
-
-function clearChoices() { choicesEl.innerHTML = ""; }
-function disableChoices() { choicesEl.querySelectorAll("button").forEach((button) => { button.disabled = true; }); }
-
-function getCausalityReadyEventsForUnit(unit, minimumQuality) {
-  if (!unit) return [];
-  return (unit.event_ids || [])
-    .map((id) => state.eventsById.get(id))
-    .filter((event) => event && isCausalityReady(event) && statusAllows(event, minimumQuality));
-}
-
-function getEligibleUnits(minimumQuality) {
-  return state.units.filter((unit) => getCausalityReadyEventsForUnit(unit, minimumQuality).length >= 4);
-}
-
-function computeCategoryPool(events) {
-  const categories = new Set();
-  for (const event of events) {
-    for (const cause of event.causes || []) {
-      if (cause && typeof cause === "object" && typeof cause.category === "string" && cause.category.trim()) {
-        categories.add(cause.category.trim());
-      }
+function shareAUnit(leftId, rightId) {
+  const leftUnits = getSharedUnitIds(leftId);
+  const rightUnits = getSharedUnitIds(rightId);
+  for (const unitId of leftUnits) {
+    if (rightUnits.has(unitId)) {
+      return true;
     }
   }
-  return [...categories];
+  return false;
 }
 
-function buildDirectEffectQuestion(eventsInUnit) {
-  const candidates = eventsInUnit.map((source) => {
-    const effectTargets = (source.effects || [])
-      .filter((effect) => typeof effect === "string")
-      .map((effectId) => state.eventsById.get(effectId))
-      .filter((event) => event && eventsInUnit.some((candidate) => candidate.id === event.id));
-    return { source, effectTargets };
-  }).filter((candidate) => candidate.effectTargets.length > 0);
-
-  if (candidates.length === 0) return null;
-
-  const picked = candidates[randomInt(candidates.length)];
-  const answer = picked.effectTargets[randomInt(picked.effectTargets.length)];
-  const distractors = shuffle(eventsInUnit.filter((event) => event.id !== picked.source.id && event.id !== answer.id)).slice(0, 2);
-  if (distractors.length < 2) return null;
-
-  return {
-    answer,
-    options: shuffle([answer, ...distractors]),
-    prompt: `Which event is a direct effect of ${formatEvent(picked.source)}?\n${picked.source.summary_short || ""}`,
-    explanation: `${formatEvent(picked.source)} directly leads toward ${formatEvent(answer)} in this unit's causal chain.`,
-  };
+function getDistractors(source, correct, pool) {
+  const sameUnit = pool.filter((event) => {
+    return event.id !== source.id && event.id !== correct.id && shareAUnit(source.id, event.id);
+  });
+  const fallback = pool.filter((event) => event.id !== source.id && event.id !== correct.id && !sameUnit.some((candidate) => candidate.id === event.id));
+  return [...shuffle(sameUnit), ...shuffle(fallback)].slice(0, 2);
 }
 
-function buildCauseCategoryQuestion(eventsInUnit) {
-  const candidates = eventsInUnit.map((source) => {
-    const objectCauses = (source.causes || []).filter((cause) => cause && typeof cause === "object" && typeof cause.category === "string" && cause.category.trim());
-    return { source, objectCauses };
-  }).filter((candidate) => candidate.objectCauses.length > 0);
+function generateQuestion(pool) {
+  const playableSources = shuffle(pool).filter((source) => {
+    return (source.effects || []).some((effectId) => state.eventMap.has(effectId));
+  });
 
-  if (candidates.length === 0) return { unavailable: "No categorized causes are available in this unit." };
+  for (const source of playableSources) {
+    const correctId = source.effects.find((effectId) => state.eventMap.has(effectId));
+    const correct = state.eventMap.get(correctId);
+    if (!correct) continue;
 
-  const categories = computeCategoryPool(eventsInUnit);
-  if (categories.length < 4) {
-    return { unavailable: "Cause category mode needs at least 4 unique cause categories in this unit and quality filter." };
+    const distractors = getDistractors(source, correct, pool);
+    if (distractors.length < 2) continue;
+
+    return {
+      source,
+      correct,
+      options: shuffle([correct, ...distractors]),
+    };
   }
 
-  const picked = candidates[randomInt(candidates.length)];
-  const cause = picked.objectCauses[randomInt(picked.objectCauses.length)];
-  const answer = cause.category.trim();
-  const distractors = shuffle(categories.filter((category) => category !== answer)).slice(0, 3);
-  if (distractors.length < 3) return { unavailable: "Not enough alternative categories are available for this question." };
-
-  return {
-    answer,
-    options: shuffle([answer, ...distractors]),
-    prompt: `Which category best matches this cause for ${formatEvent(picked.source)}?\nCause: ${cause.label}`,
-    explanation: `The cause “${cause.label}” is categorized as ${answer} for ${formatEvent(picked.source)}.`,
-  };
+  return null;
 }
 
-function renderChoices(options, getLabel, onSelect) {
-  clearChoices();
-  for (const option of options) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "choice";
-    button.dataset.option = String(option.id || option);
-    button.textContent = getLabel(option);
-    button.addEventListener("click", () => onSelect(button, option));
+function setFeedback(message, kind = '') {
+  feedbackEl.textContent = message;
+  feedbackEl.className = `feedback ${kind}`.trim();
+}
+
+function renderQuestion() {
+  const question = generateQuestion(state.pool);
+  state.currentQuestion = question;
+  nextButton.disabled = true;
+  choicesEl.innerHTML = '';
+  explanationEl.textContent = '';
+
+  if (!question) {
+    sourceYearEl.textContent = '—';
+    sourceLabelEl.textContent = 'No playable causality question found.';
+    sourceSummaryEl.textContent = 'The current dataset has causal links, but this slice could not form a full 3-choice question.';
+    setFeedback('Unable to generate a question.', 'incorrect');
+    statusLineEl.textContent = 'Try refreshing after adding more linked effects.';
+    return;
+  }
+
+  sourceYearEl.textContent = String(question.source.time.year_start);
+  sourceLabelEl.textContent = question.source.label;
+  sourceSummaryEl.textContent = question.source.summary_short || 'No short summary available for this event yet.';
+  setFeedback('Choose the event that most directly follows from the source event.');
+  statusLineEl.textContent = `${state.pool.length} causality-ready source events available.`;
+  questionCountEl.textContent = `Question ${state.answered + 1}`;
+
+  for (const option of question.options) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'choice';
+    button.textContent = option.label;
+    button.addEventListener('click', () => handleAnswer(button, option));
     choicesEl.appendChild(button);
   }
 }
 
-function updateStatusText(eventsInUnit, helperText) {
-  setStatusLine(`Eligible units: ${state.eligibleUnits.length} · Eligible events: ${eventsInUnit.length} · ${helperText}`);
-}
+function handleAnswer(selectedButton, option) {
+  if (!state.currentQuestion || nextButton.disabled === false) return;
 
-function showUnavailable(message) {
-  questionEl.textContent = message;
-  clearChoices();
-  feedbackEl.textContent = "";
-  explanationEl.textContent = "";
-  nextButton.disabled = true;
-}
+  const { source, correct } = state.currentQuestion;
+  const buttons = [...choicesEl.querySelectorAll('.choice')];
+  for (const button of buttons) button.disabled = true;
 
-function renderQuestion() {
-  const activeUnit = state.units.find((unit) => unit.id === unitSelect.value);
-  const eventsInUnit = getCausalityReadyEventsForUnit(activeUnit, qualitySelect.value);
-
-  if (eventsInUnit.length < 4) {
-    updateStatusText(eventsInUnit, "Not enough causality-ready events for questions.");
-    showUnavailable("This unit does not have enough causality-ready events with current filters.");
-    return;
-  }
-
-  const question = modeSelect.value === "cause_category"
-    ? buildCauseCategoryQuestion(eventsInUnit)
-    : buildDirectEffectQuestion(eventsInUnit);
-
-  if (!question || question.unavailable) {
-    const helper = question?.unavailable || "No question could be generated.";
-    updateStatusText(eventsInUnit, helper);
-    showUnavailable(helper);
-    return;
-  }
-
-  state.currentQuestion = question;
-  questionEl.textContent = question.prompt;
-  feedbackEl.textContent = "";
-  explanationEl.textContent = "";
-  nextButton.disabled = true;
-
-  const helperText = modeSelect.value === "cause_category"
-    ? "Cause category mode: classify one specific cause statement."
-    : "Direct effect mode: choose a downstream event in the same unit.";
-  updateStatusText(eventsInUnit, helperText);
-
-  renderChoices(question.options, (option) => (typeof option === "string" ? option : option.label), (button, option) => handleAnswer(button, option));
-}
-
-function handleAnswer(choiceButton, option) {
-  if (!state.currentQuestion) return;
-
-  disableChoices();
-  nextButton.disabled = false;
-
-  const chosenValue = typeof option === "string" ? option : option.id;
-  const answerValue = typeof state.currentQuestion.answer === "string" ? state.currentQuestion.answer : state.currentQuestion.answer.id;
-
-  if (chosenValue === answerValue) {
-    choiceButton.classList.add("correct");
-    feedbackEl.textContent = "Correct.";
+  const isCorrect = option.id === correct.id;
+  if (isCorrect) {
+    selectedButton.classList.add('correct');
+    setFeedback('Correct.', 'correct');
   } else {
-    choiceButton.classList.add("incorrect");
-    const answerButton = choicesEl.querySelector(`[data-option="${CSS.escape(String(answerValue))}"]`);
-    if (answerButton) answerButton.classList.add("correct");
-    feedbackEl.textContent = "Incorrect.";
+    selectedButton.classList.add('incorrect');
+    const correctIndex = state.currentQuestion.options.findIndex((candidate) => candidate.id === correct.id);
+    if (buttons[correctIndex]) buttons[correctIndex].classList.add('correct');
+    setFeedback('Incorrect.', 'incorrect');
   }
 
-  explanationEl.textContent = state.currentQuestion.explanation;
-}
-
-function refreshUnitOptions() {
-  state.eligibleUnits = getEligibleUnits(qualitySelect.value);
-  unitSelect.innerHTML = "";
-
-  if (state.eligibleUnits.length === 0) {
-    setStatusLine("Eligible units: 0 · Eligible events: 0 · No playable causality unit for current filter.");
-    showUnavailable("No units meet the causality-ready threshold (4 events). Try Include drafts.");
-    return;
-  }
-
-  for (const unit of state.eligibleUnits) {
-    const option = document.createElement("option");
-    option.value = unit.id;
-    option.textContent = unit.title || unit.id;
-    unitSelect.appendChild(option);
-  }
-
-  unitSelect.value = state.eligibleUnits.some((unit) => unit.id === "unit_french_revolution_napoleon")
-    ? "unit_french_revolution_napoleon"
-    : state.eligibleUnits[0].id;
-
-  renderQuestion();
+  explanationEl.textContent = `${source.label} (${source.time.year_start}) led toward ${correct.label} (${correct.time.year_start}).`;
+  nextButton.disabled = false;
+  state.answered += 1;
 }
 
 async function init() {
   try {
-    const { events, units } = await loadData();
-    state.eventsById = new Map(events.map((event) => [event.id, event]));
-    state.units = units;
-    refreshUnitOptions();
+    const [events, unitIndex] = await Promise.all([
+      fetch('/data/events.json').then((response) => response.json()),
+      fetch('/data/units/index.json').then((response) => response.json()),
+    ]);
+
+    state.events = Array.isArray(events) ? events : [];
+    state.eventMap = new Map(state.events.map((event) => [event.id, event]));
+
+    const units = await Promise.all(
+      (unitIndex.units || []).map(async (entry) => {
+        const response = await fetch(`/${entry.path.replace(/^\.\//, '')}`);
+        return response.json();
+      })
+    );
+
+    for (const unit of units) {
+      for (const eventId of unit.event_ids || []) {
+        if (!state.unitIdsByEventId.has(eventId)) {
+          state.unitIdsByEventId.set(eventId, new Set());
+        }
+        state.unitIdsByEventId.get(eventId).add(unit.id);
+      }
+    }
+
+    const unresolvedEffects = [];
+    state.pool = state.events.filter((event) => isCausal(event)).filter((event) => {
+      const resolvableEffects = event.effects.filter((effectId) => state.eventMap.has(effectId));
+      if (resolvableEffects.length === 0) {
+        unresolvedEffects.push(event.id);
+        return false;
+      }
+      return true;
+    });
+
+    console.info('[Causality Builder] causal events', state.pool.length);
+    if (unresolvedEffects.length > 0) {
+      console.warn('[Causality Builder] skipped events with unresolved effects', unresolvedEffects);
+    }
+
+    renderQuestion();
   } catch (error) {
-    setStatusLine(error.message);
-    showUnavailable("Could not load causality data.");
+    sourceLabelEl.textContent = 'Could not load causality data.';
+    sourceSummaryEl.textContent = error.message;
+    setFeedback('Loading failed.', 'incorrect');
+    statusLineEl.textContent = 'Check the console for more details.';
   }
 }
 
-qualitySelect.addEventListener("change", refreshUnitOptions);
-unitSelect.addEventListener("change", renderQuestion);
-modeSelect.addEventListener("change", renderQuestion);
-nextButton.addEventListener("click", renderQuestion);
+nextButton.addEventListener('click', renderQuestion);
 
 init();
