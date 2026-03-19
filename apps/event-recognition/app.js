@@ -8,12 +8,20 @@ const nextButton = document.getElementById("next");
 const practiceModeSelect = document.getElementById("practice-mode");
 const unitSelect = document.getElementById("unit-select");
 const qualitySelect = document.getElementById("quality-select");
+const sessionLengthSelect = document.getElementById("session-length");
 const eligibilityHint = document.getElementById("eligibility-hint");
+const progressElement = document.getElementById("progress");
+const sessionStatusElement = document.getElementById("session-status");
+const summaryElement = document.getElementById("summary");
 
 const state = {
   eventsById: new Map(),
   units: [],
   currentQuestion: null,
+  currentQuestionIndex: 0,
+  totalQuestions: 10,
+  correctAnswers: 0,
+  sessionActive: false,
 };
 
 function randomInt(max) { return Math.floor(Math.random() * max); }
@@ -69,8 +77,12 @@ function unitForEvent(eventId) {
   return unit || null;
 }
 
+function getRecognitionPool() {
+  return [...state.eventsById.values()].filter((event) => isRecognitionEligible(event) && statusAllows(event));
+}
+
 function getScopedPool() {
-  const recognized = [...state.eventsById.values()].filter((event) => isRecognitionEligible(event) && statusAllows(event));
+  const recognized = getRecognitionPool();
 
   if (practiceModeSelect.value === "all") return recognized;
 
@@ -111,16 +123,68 @@ function buildDistractors(answer, activePool, broaderPool) {
   return distractors;
 }
 
+function getFeedbackMessage(accuracy) {
+  if (accuracy >= 85) return "Strong recognition. You are ready to move into causality practice.";
+  if (accuracy >= 60) return "Good progress. Another short recognition session should make recall feel faster.";
+  return "Keep building the basics. A return to Timeline Trainer may help before another recognition session.";
+}
+
+function updateProgress() {
+  progressElement.textContent = `Question ${Math.min(state.currentQuestionIndex + 1, state.totalQuestions)} of ${state.totalQuestions}`;
+}
+
+function resetRoundUi() {
+  feedbackElement.textContent = "";
+  answerMetaElement.textContent = "";
+  nextButton.disabled = true;
+}
+
+function showSummary() {
+  state.sessionActive = false;
+  state.currentQuestion = null;
+  const accuracy = Math.round((state.correctAnswers / state.totalQuestions) * 100);
+  questionElement.textContent = "Session complete.";
+  clearChoices();
+  feedbackElement.textContent = "";
+  answerMetaElement.textContent = "";
+  nextButton.hidden = true;
+  progressElement.textContent = `Completed ${state.totalQuestions} of ${state.totalQuestions}`;
+  sessionStatusElement.textContent = "Review your result, then retry or continue to the next learning step.";
+  summaryElement.hidden = false;
+  summaryElement.innerHTML = `
+    <h2>Session complete</h2>
+    <p><strong>Score:</strong> ${state.correctAnswers}/${state.totalQuestions}</p>
+    <p><strong>Accuracy:</strong> ${accuracy}%</p>
+    <p>${getFeedbackMessage(accuracy)}</p>
+    <div class="summary-actions">
+      <button type="button" class="summary-button" id="retry-session">Retry session</button>
+      <a class="summary-link" href="../causality-builder/">Next step: Causality Builder</a>
+    </div>
+  `;
+
+  const retryButton = document.getElementById("retry-session");
+  if (retryButton) {
+    retryButton.addEventListener("click", () => {
+      startSession();
+    });
+  }
+}
+
 function renderQuestion() {
   const activePool = getScopedPool();
-  const broaderPool = [...state.eventsById.values()].filter((event) => isRecognitionEligible(event) && statusAllows(event));
+  const broaderPool = getRecognitionPool();
   updateEligibilityHint(activePool);
 
   if (activePool.length < 4) {
+    state.sessionActive = false;
+    state.currentQuestion = null;
     questionElement.textContent = "Not enough eligible events for a 4-option question in the current setup.";
     clearChoices();
     feedbackElement.textContent = "Adjust setup options to continue.";
     answerMetaElement.textContent = "";
+    sessionStatusElement.textContent = "Change the setup to start a session.";
+    summaryElement.hidden = true;
+    nextButton.hidden = false;
     nextButton.disabled = true;
     return;
   }
@@ -128,10 +192,15 @@ function renderQuestion() {
   const answer = activePool[randomInt(activePool.length)];
   const distractors = buildDistractors(answer, activePool, broaderPool).slice(0, 3);
   if (distractors.length < 3) {
+    state.sessionActive = false;
+    state.currentQuestion = null;
     questionElement.textContent = "Could not build enough distinct distractors.";
     clearChoices();
     feedbackElement.textContent = "Try All units or Include drafts.";
     answerMetaElement.textContent = "";
+    sessionStatusElement.textContent = "Change the setup to start a session.";
+    summaryElement.hidden = true;
+    nextButton.hidden = false;
     nextButton.disabled = true;
     return;
   }
@@ -139,10 +208,12 @@ function renderQuestion() {
   const options = shuffle([answer, ...distractors]);
   state.currentQuestion = { answer, options };
   questionElement.textContent = buildClue(answer);
+  sessionStatusElement.textContent = `Answer the clue, then continue until you finish all ${state.totalQuestions} questions.`;
+  summaryElement.hidden = true;
+  nextButton.hidden = false;
+  resetRoundUi();
+  updateProgress();
   clearChoices();
-  feedbackElement.textContent = "";
-  answerMetaElement.textContent = "";
-  nextButton.disabled = true;
 
   for (const option of options) {
     const button = document.createElement("button");
@@ -156,15 +227,17 @@ function renderQuestion() {
 }
 
 function handleChoice(choiceButton, option) {
-  if (!state.currentQuestion) return;
+  if (!state.currentQuestion || !state.sessionActive) return;
 
   disableChoices();
   nextButton.disabled = false;
 
   const { answer } = state.currentQuestion;
   const answerUnit = unitForEvent(answer.id);
+  const isCorrect = option.id === answer.id;
 
-  if (option.id === answer.id) {
+  if (isCorrect) {
+    state.correctAnswers += 1;
     choiceButton.classList.add("correct");
     feedbackElement.textContent = "Correct.";
   } else {
@@ -194,6 +267,33 @@ function populateUnitOptions() {
   }
 }
 
+function startSession() {
+  state.totalQuestions = Number.parseInt(sessionLengthSelect.value, 10) || 10;
+  state.currentQuestionIndex = 0;
+  state.correctAnswers = 0;
+  state.sessionActive = true;
+  summaryElement.hidden = true;
+  nextButton.hidden = false;
+  renderQuestion();
+}
+
+function handleAdvance() {
+  if (!state.sessionActive || !state.currentQuestion) return;
+
+  state.currentQuestionIndex += 1;
+  if (state.currentQuestionIndex >= state.totalQuestions) {
+    showSummary();
+    return;
+  }
+
+  renderQuestion();
+}
+
+function handleSetupChange() {
+  refreshUnitVisibility();
+  startSession();
+}
+
 async function init() {
   try {
     const { events, units } = await loadData();
@@ -201,16 +301,19 @@ async function init() {
     state.units = units;
     populateUnitOptions();
     refreshUnitVisibility();
-    renderQuestion();
+    startSession();
   } catch (error) {
     questionElement.textContent = "Could not load event data.";
     feedbackElement.textContent = error.message;
+    sessionStatusElement.textContent = "Unable to start a session.";
+    progressElement.textContent = "Question unavailable";
   }
 }
 
-nextButton.addEventListener("click", renderQuestion);
-practiceModeSelect.addEventListener("change", () => { refreshUnitVisibility(); renderQuestion(); });
-unitSelect.addEventListener("change", renderQuestion);
-qualitySelect.addEventListener("change", renderQuestion);
+nextButton.addEventListener("click", handleAdvance);
+practiceModeSelect.addEventListener("change", handleSetupChange);
+unitSelect.addEventListener("change", handleSetupChange);
+qualitySelect.addEventListener("change", handleSetupChange);
+sessionLengthSelect.addEventListener("change", startSession);
 
 init();

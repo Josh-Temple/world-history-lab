@@ -134,6 +134,12 @@ Next:
 - Event Recognition now limits eligibility to recognition-suitable records and reveals year/unit/explanation metadata after each answer.
 - Updated the homepage start-here guidance and app cards to include the new Causality Builder progression step.
 
+## Recent updates (2026-03-19)
+
+- Added a guided four-step learning path to the homepage with explicit "start here", step-by-step sequencing, and next-step hints across app cards.
+- Reworked Event Recognition into fixed-length sessions with progress tracking, end-of-session feedback, retry flow, and a clearer bridge into Causality Builder.
+- Regenerated derived artifacts after the UX/session-flow update.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
@@ -344,8 +350,3 @@ Derive now validates unit manifests more strictly: missing `unit.event_ids` refe
 
 TBD
 
-## Recent updates (2026-03-19)
-
-- Reworked **Causality Builder** into a focused event-to-event reasoning drill that loads raw `data/events.json`, asks “Which event follows from this?”, and explains the causal link after each answer.
-- Added difficulty tiers to **Timeline Trainer** with Beginner / Intermediate / Full pools, visible mode labeling, and difficulty-weighted scoring.
-- Updated the homepage learning-mode card copy to better reflect the new causality flow.

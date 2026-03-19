@@ -11,7 +11,7 @@
       <header>
         <p><a href="/">← Back to World History Lab</a></p>
         <h1>Event Recognition Trainer</h1>
-        <p class="lead">Read a clue and select the matching event.</p>
+        <p class="lead">Read a clue, answer a fixed-length session, and use the result to decide your next practice step.</p>
       </header>
 
       <section class="card setup-card" aria-labelledby="setup-title">
@@ -32,15 +32,29 @@
           <option value="draft">Include drafts</option>
         </select>
 
+        <label for="session-length">Session length</label>
+        <select id="session-length">
+          <option value="5">5 questions</option>
+          <option value="10" selected>10 questions</option>
+          <option value="15">15 questions</option>
+        </select>
+
         <p id="eligibility-hint" class="muted"></p>
       </section>
 
-      <section class="card" aria-live="polite">
-        <h2 id="question-title">Which event is this?</h2>
+      <section class="card session-card" aria-live="polite">
+        <div class="session-header">
+          <div>
+            <h2 id="question-title">Which event is this?</h2>
+            <p id="session-status" class="session-status">Choose a session length to begin.</p>
+          </div>
+          <p id="progress" class="progress">Question 1 of 10</p>
+        </div>
         <p id="question">Loading events…</p>
         <div id="choices" class="choices"></div>
         <p id="feedback" class="feedback"></p>
         <p id="answer-meta" class="answer-meta"></p>
+        <div id="summary" class="summary" hidden></div>
         <button id="next" type="button" disabled>Next question</button>
       </section>
     </main>

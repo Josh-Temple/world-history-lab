@@ -1,16 +1,16 @@
 # Handoff
 
 ## What changed
-- Added a simplified, playable `apps/causality-builder/` flow centered on event-to-event causal multiple-choice questions sourced from raw `data/events.json`.
-- Added Beginner / Intermediate / Full difficulty tiers to Timeline Trainer, including filtered event pools, visible difficulty state, and weighted scoring.
-- Updated root documentation/homepage copy to reflect the new learning mode behavior.
+- Added a guided homepage learning path with explicit Step 1→4 sequencing, clearer “when to use this” explanations, and next-step hints across all app cards.
+- Reworked Event Recognition into session-based practice with selectable session lengths, visible progress, completion feedback, retry support, and a direct next-step path into Causality Builder.
+- Regenerated derived artifacts so the repository stays aligned with the current data pipeline output.
 
 ## Validation completed
-- Ran the derive pipeline successfully.
-- Ran a targeted data check to confirm causal effect IDs resolve and that at least one unit can produce playable causality questions.
-- Launched a local static server and captured a screenshot of the updated homepage/app flow.
+- Ran `node scripts/derive.mjs` successfully.
+- Ran a local static-server smoke test and confirmed the homepage and Event Recognition routes return HTTP 200.
+- Performed a code-level review of the mobile layout adjustments for the homepage path cards and Event Recognition summary/actions layout.
 
 ## Suggested next steps
-1. Consider expanding Causality Builder beyond the first `effects[0]` target so multi-effect events can rotate answers more broadly.
-2. Add a small in-app score readout label in Timeline Trainer if you want weighted points to be more prominent than the current stats text.
-3. Consider unifying difficulty logic with Event Recognition so the homepage “path” feels consistent across all modes.
+1. Consider adding per-session review of missed Event Recognition answers so learners can focus on weak spots before retrying.
+2. Consider carrying session framing into Causality Builder so app-to-app progression feels even more consistent.
+3. If you want stronger onboarding, consider adding a “recommended daily loop” block on the homepage that suggests time or question counts per step.

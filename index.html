@@ -13,6 +13,7 @@
         --muted: #475569;
         --border: #dbe2ea;
         --accent: #0f766e;
+        --accent-soft: #ecfeff;
       }
 
       * { box-sizing: border-box; }
@@ -45,9 +46,14 @@
       .start-here {
         background: #ecfeff;
         border: 1px solid #bae6fd;
-        border-radius: 12px;
-        padding: 0.85rem 1rem;
-        margin-bottom: 1.3rem;
+        border-radius: 14px;
+        padding: 1rem 1.1rem;
+        margin-bottom: 1.4rem;
+      }
+
+      .start-here p {
+        margin: 0.35rem 0 0;
+        color: var(--muted);
       }
 
       h2 {
@@ -55,40 +61,95 @@
         font-size: 1.2rem;
       }
 
+      .learning-path {
+        margin: 0 0 1.6rem;
+      }
+
+      .path-grid,
       .apps {
         display: grid;
         gap: 1rem;
       }
 
+      .path-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .path-step,
       .app-card {
         background: var(--panel);
         border: 1px solid var(--border);
         border-radius: 12px;
-        padding: 1.25rem;
+        padding: 1.1rem 1.15rem;
       }
 
+      .path-step {
+        position: relative;
+      }
+
+      .step-label {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.2rem 0.55rem;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+      }
+
+      .path-step h3,
       .app-card h3 {
-        margin: 0;
+        margin: 0.7rem 0 0;
       }
 
+      .path-step p,
       .app-card p {
-        margin: 0.6rem 0 0.85rem;
+        margin: 0.6rem 0 0;
         color: var(--muted);
       }
 
+      .path-actions {
+        margin-top: 0.9rem;
+      }
+
+      .primary-btn,
       .app-link {
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         min-height: 44px;
-        padding: 0.45rem 0.2rem;
-        color: var(--accent);
-        font-weight: 600;
+        padding: 0.6rem 0.9rem;
+        border-radius: 10px;
+        font-weight: 700;
         text-decoration: none;
+      }
+
+      .primary-btn {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .primary-btn:hover,
+      .primary-btn:focus-visible {
+        background: #115e59;
+      }
+
+      .app-link {
+        padding: 0.45rem 0.2rem 0.2rem;
+        color: var(--accent);
       }
 
       .app-link:hover,
       .app-link:focus-visible {
         text-decoration: underline;
+      }
+
+      .next-step-hint {
+        margin-top: 0.75rem;
+        font-size: 0.95rem;
+        color: var(--muted);
       }
 
       .counts,
@@ -104,8 +165,15 @@
           margin-top: 1.3rem;
         }
 
+        .start-here,
+        .path-step,
         .app-card {
           padding: 1rem;
+        }
+
+        .primary-btn,
+        .app-link {
+          width: 100%;
         }
       }
     </style>
@@ -114,32 +182,83 @@
     <main>
       <header>
         <h1>World History Lab</h1>
-        <p class="lead">Build historical intuition with multiple learning modes. Use drills for precision recall, then switch to flow mode for big-picture narrative understanding.</p>
+        <p class="lead">Build historical intuition with multiple learning modes. Follow a clear sequence to reduce decision fatigue: start with chronology, move into recognition, deepen understanding through causality, then review the bigger narrative flow.</p>
       </header>
 
-      <p class="start-here"><strong>Start here:</strong> Begin with <strong>Timeline Trainer</strong> for chronology basics, use <strong>Event Recognition</strong> for clue-based recall, move to <strong>Causality Builder</strong> for why-events-led-to-what reasoning, and use <strong>History Player</strong> to review sequence and context.</p>
+      <section class="start-here" aria-labelledby="start-here-title">
+        <h2 id="start-here-title">Start here</h2>
+        <p>If you are new, begin with <strong>Timeline Trainer</strong>. It gives you the chronological frame that makes later recognition, causality, and narrative review easier to retain.</p>
+        <div class="path-actions">
+          <a href="apps/timeline-trainer/" class="primary-btn">Start Timeline Trainer</a>
+        </div>
+      </section>
+
+      <section class="learning-path" aria-labelledby="learning-path-heading">
+        <h2 id="learning-path-heading">Learning path</h2>
+        <div class="path-grid">
+          <article class="path-step">
+            <span class="step-label">Step 1</span>
+            <h3>Build chronology</h3>
+            <p><strong>Use Timeline Trainer</strong> when you need to learn when events happened and build a reliable sense of sequence.</p>
+            <div class="path-actions">
+              <a href="apps/timeline-trainer/" class="primary-btn">Start Timeline Trainer</a>
+            </div>
+          </article>
+
+          <article class="path-step">
+            <span class="step-label">Step 2</span>
+            <h3>Recognize events</h3>
+            <p><strong>Use Event Recognition</strong> after timeline practice to identify events from clues and reinforce recall with clearer context.</p>
+            <div class="path-actions">
+              <a href="apps/event-recognition/" class="app-link">Go to Event Recognition →</a>
+            </div>
+          </article>
+
+          <article class="path-step">
+            <span class="step-label">Step 3</span>
+            <h3>Understand causality</h3>
+            <p><strong>Use Causality Builder</strong> once you know the key events and want to understand how one development leads to another.</p>
+            <div class="path-actions">
+              <a href="apps/causality-builder/" class="app-link">Go to Causality Builder →</a>
+            </div>
+          </article>
+
+          <article class="path-step">
+            <span class="step-label">Step 4</span>
+            <h3>Review narrative</h3>
+            <p><strong>Use History Player</strong> after practice sessions to replay the story in order and reinforce the bigger historical arc.</p>
+            <div class="path-actions">
+              <a href="apps/history-player/" class="app-link">Go to History Player →</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
       <section aria-labelledby="practice-modes-heading">
         <h2 id="practice-modes-heading">Learning modes</h2>
         <div class="apps">
           <article class="app-card">
             <h3>Timeline Trainer</h3>
-            <p><strong>Trains:</strong> chronological ordering and date intuition with multiple timeline question types.</p>
+            <p><strong>When to use this:</strong> Start here to build chronological ordering and date intuition before moving into more interpretive practice.</p>
+            <p class="next-step-hint"><strong>Next step:</strong> Event Recognition</p>
             <a class="app-link" href="apps/timeline-trainer/">Open Timeline Trainer →</a>
           </article>
           <article class="app-card">
             <h3>Event Recognition Trainer</h3>
-            <p><strong>Trains:</strong> identifying events from concise clues and distinguishing similar modern-history milestones.</p>
+            <p><strong>When to use this:</strong> Practice identifying events from concise clues once you already have a rough sense of sequence.</p>
+            <p class="next-step-hint"><strong>Best after:</strong> Timeline Trainer · <strong>Next step:</strong> Causality Builder</p>
             <a class="app-link" href="apps/event-recognition/">Open Event Recognition →</a>
           </article>
           <article class="app-card">
             <h3>Causality Builder</h3>
-            <p><strong>Trains:</strong> cause-and-effect reasoning between events.</p>
-            <a class="app-link" href="apps/causality-builder/">Open →</a>
+            <p><strong>When to use this:</strong> Use it after recognition practice to connect causes, effects, and historical turning points.</p>
+            <p class="next-step-hint"><strong>Best after:</strong> Event Recognition · <strong>Next step:</strong> History Player</p>
+            <a class="app-link" href="apps/causality-builder/">Open Causality Builder →</a>
           </article>
           <article class="app-card">
-            <h3>History Player (new)</h3>
-            <p><strong>Trains:</strong> macro historical flow by stepping or auto-playing a curated chronology with a cumulative log.</p>
+            <h3>History Player</h3>
+            <p><strong>When to use this:</strong> Review a broader narrative sequence after drills so events feel connected instead of isolated.</p>
+            <p class="next-step-hint"><strong>Best after:</strong> Causality Builder · <strong>Next step:</strong> Return to Timeline Trainer for another cycle</p>
             <a class="app-link" href="apps/history-player/">Open History Player →</a>
           </article>
         </div>
