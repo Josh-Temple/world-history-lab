@@ -259,7 +259,25 @@ function validatePeople(people) {
   }
 }
 
-function normalizeEvent(event) {
+function buildUnitIdsByEventId(units) {
+  const unitIdsByEventId = new Map();
+  for (const unit of units) {
+    for (const eventId of unit.event_ids) {
+      if (!unitIdsByEventId.has(eventId)) {
+        unitIdsByEventId.set(eventId, []);
+      }
+      unitIdsByEventId.get(eventId).push(unit.id);
+    }
+  }
+
+  for (const unitIds of unitIdsByEventId.values()) {
+    unitIds.sort();
+  }
+
+  return unitIdsByEventId;
+}
+
+function normalizeEvent(event, unitIdsByEventId = new Map()) {
   const parsed = parseEventTime(event);
   if (!parsed) {
     if (typeof event.time?.year_start === "number") {
@@ -269,10 +287,16 @@ function normalizeEvent(event) {
         id: event.id,
         label: event.label,
         summary_short: typeof event.summary_short === "string" ? event.summary_short : null,
+        status: typeof event.status === "string" ? event.status : null,
+        question_types: Array.isArray(event.question_types) ? event.question_types : [],
         people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
+        unit_ids: unitIdsByEventId.get(event.id) || [],
+        effects: Array.isArray(event.effects) ? event.effects : [],
+        causes: Array.isArray(event.causes) ? event.causes : [],
         time: {
           start: String(year),
           end: String(year),
+          year_start: year,
           calendar: event.time?.calendar || "gregorian",
         },
         derived: {
@@ -293,10 +317,16 @@ function normalizeEvent(event) {
     id: event.id,
     label: event.label,
     summary_short: typeof event.summary_short === "string" ? event.summary_short : null,
+    status: typeof event.status === "string" ? event.status : null,
+    question_types: Array.isArray(event.question_types) ? event.question_types : [],
     people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
+    unit_ids: unitIdsByEventId.get(event.id) || [],
+    effects: Array.isArray(event.effects) ? event.effects : [],
+    causes: Array.isArray(event.causes) ? event.causes : [],
     time: {
       start: parsed.canonical_start,
       end: parsed.canonical_end,
+      year_start: typeof event.time?.year_start === "number" ? event.time.year_start : parsed.year_start,
       calendar: event.time?.calendar || "gregorian",
     },
     derived: {
@@ -493,6 +523,8 @@ async function main() {
 
   const units = await loadUnits();
 
+  const unitIdsByEventId = buildUnitIdsByEventId(units);
+
   const normalizedEvents = [];
   const eventLookup = new Map();
   for (const event of events) {
@@ -502,7 +534,7 @@ async function main() {
     }
     eventLookup.set(event.id, event);
 
-    const normalized = normalizeEvent(event);
+    const normalized = normalizeEvent(event, unitIdsByEventId);
     if (normalized) {
       normalizedEvents.push(normalized);
     }

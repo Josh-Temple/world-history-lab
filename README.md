@@ -350,3 +350,10 @@ Derive now validates unit manifests more strictly: missing `unit.event_ids` refe
 
 TBD
 
+
+
+## Recent updates (2026-03-20)
+
+- Strengthened `scripts/validate-data.mjs` with cross-reference checks for causal links, duplicate ID detection across entity types, unit-event integrity enforcement, and warnings for incomplete event summaries.
+- Extended the derive pipeline so `derived/events.normalized.json` carries status, question types, causal links, and unit membership for downstream apps.
+- Standardized Event Recognition and Causality Builder to read from the derived dataset through a shared app-side data access helper, reducing raw-vs-derived drift across learning modes.
