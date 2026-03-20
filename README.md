@@ -140,6 +140,11 @@ Next:
 - Reworked Event Recognition into fixed-length sessions with progress tracking, end-of-session feedback, retry flow, and a clearer bridge into Causality Builder.
 - Regenerated derived artifacts after the UX/session-flow update.
 
+## Recent updates (2026-03-20)
+
+- Marked all current records in `data/events.json` as **reviewed** so every event is now included in Reviewed+ practice filters.
+- Regenerated derived artifacts after the status refresh so app-facing normalized data stays in sync with the source dataset.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.

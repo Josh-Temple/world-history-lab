@@ -1,16 +1,15 @@
 # Handoff
 
 ## What changed
-- Strengthened the validation layer so `node scripts/validate-data.mjs` now checks event/effect/cause references, duplicate IDs across events and people, duplicate unit event links, and missing `summary_short` coverage warnings.
-- Extended the derive pipeline so normalized events now include `status`, `question_types`, `unit_ids`, `effects`, `causes`, and `time.year_start`, making `derived/events.normalized.json` a more complete app-facing source of truth.
-- Added a shared browser-side data access helper under `apps/shared/` and moved Event Recognition plus Causality Builder onto derived-data loading instead of mixing raw event/unit fetches.
+- Updated every record in `data/events.json` to use `status: "reviewed"`, replacing the previous mix of `draft`, `reviewed`, and `approved` states.
+- Regenerated the derived artifacts so app consumers see the updated reviewed-only event status set immediately.
+- Added a root README note documenting the 2026-03-20 event-status refresh.
 
 ## Validation completed
-- Ran `node scripts/validate-data.mjs` successfully on the clean dataset.
-- Ran `node scripts/derive.mjs` successfully and regenerated the derived artifacts.
-- Performed a temporary broken-reference check to confirm validation fails on invalid causal links, then restored the dataset and re-ran validation.
+- Ran `node scripts/validate-data.mjs` successfully after the event status update.
+- Ran `node scripts/derive.mjs` successfully and refreshed `/derived` outputs.
 
 ## Suggested next steps
-1. Move History Player and any future apps onto the same shared derived-data access helper so all learner modes use identical event normalization.
-2. Consider adding a dedicated derived index for causality-ready events or resolved effect targets if Causality Builder grows more complex.
-3. If you want fewer warnings over time, backfill `summary_short` on remaining null events so every normalized record is immediately usable in clue-based modes.
+1. Decide whether people and unit records should also move to `reviewed` for consistency with the events dataset.
+2. If you still need a stronger distinction than Reviewed+, consider introducing a separate readiness flag instead of relying on `approved` event statuses.
+3. Spot-check any learner-facing copy that mentions `approved` content as a special tier, because the dataset no longer uses that status for events.
