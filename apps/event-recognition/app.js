@@ -1,4 +1,4 @@
-const REVIEWED_PLUS = new Set(["reviewed", "approved"]);
+import { filterEvents, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
 
 const questionElement = document.getElementById("question");
 const choicesElement = document.getElementById("choices");
@@ -25,7 +25,6 @@ const state = {
 };
 
 function randomInt(max) { return Math.floor(Math.random() * max); }
-function appUrl(relativePath) { return new URL(relativePath, window.location.href).toString(); }
 function shuffle(items) {
   const copy = items.slice();
   for (let i = copy.length - 1; i > 0; i -= 1) {
@@ -42,53 +41,25 @@ function isRecognitionEligible(event) {
   return types.has("what_happened") || types.has("significance") || types.has("cause_and_effect");
 }
 
-function statusAllows(event) {
-  return qualitySelect.value === "draft" || REVIEWED_PLUS.has(event.status);
+function getRecognitionPool() {
+  return filterEvents([...state.eventsById.values()], {
+    reviewedOnly: qualitySelect.value === "reviewed",
+    predicate: isRecognitionEligible,
+  });
 }
 
-async function fetchJson(path, label) {
-  const response = await fetch(appUrl(path), { cache: "no-store" });
-  if (!response.ok) throw new Error(`${label}: HTTP ${response.status}`);
-  return response.json();
-}
-
-async function loadData() {
-  const [events, unitIndex] = await Promise.all([
-    fetchJson("../../data/events.json", "events"),
-    fetchJson("../../data/units/index.json", "unit index"),
-  ]);
-
-  const units = await Promise.all(
-    (unitIndex.units || []).map((entry) => fetchJson(`../../${entry.path.replace(/^\.?\/?/, "")}`, entry.id || "unit"))
-  );
-
-  return { events, units };
+function getScopedPool() {
+  return filterEvents(getRecognitionPool(), {
+    unitId: practiceModeSelect.value === "unit" ? unitSelect.value : null,
+  });
 }
 
 function clearChoices() { choicesElement.innerHTML = ""; }
 function disableChoices() { choicesElement.querySelectorAll("button").forEach((button) => { button.disabled = true; }); }
-
-function buildClue(event) {
-  return `"${event.summary_short.trim()}"`;
-}
-
-function unitForEvent(eventId) {
-  const unit = state.units.find((candidate) => (candidate.event_ids || []).includes(eventId));
-  return unit || null;
-}
-
-function getRecognitionPool() {
-  return [...state.eventsById.values()].filter((event) => isRecognitionEligible(event) && statusAllows(event));
-}
-
-function getScopedPool() {
-  const recognized = getRecognitionPool();
-
-  if (practiceModeSelect.value === "all") return recognized;
-
-  const activeUnit = state.units.find((unit) => unit.id === unitSelect.value);
-  const unitIds = new Set(activeUnit?.event_ids || []);
-  return recognized.filter((event) => unitIds.has(event.id));
+function buildClue(event) { return `"${event.summary_short.trim()}"`; }
+function unitForEvent(event) {
+  const unitId = Array.isArray(event.unit_ids) ? event.unit_ids[0] : null;
+  return state.units.find((candidate) => candidate.id === unitId) || null;
 }
 
 function updateEligibilityHint(pool) {
@@ -233,7 +204,7 @@ function handleChoice(choiceButton, option) {
   nextButton.disabled = false;
 
   const { answer } = state.currentQuestion;
-  const answerUnit = unitForEvent(answer.id);
+  const answerUnit = unitForEvent(answer);
   const isCorrect = option.id === answer.id;
 
   if (isCorrect) {
@@ -296,7 +267,7 @@ function handleSetupChange() {
 
 async function init() {
   try {
-    const { events, units } = await loadData();
+    const [events, units] = await Promise.all([loadDerivedEvents(), loadUnitsIndex()]);
     state.eventsById = new Map(events.map((event) => [event.id, event]));
     state.units = units;
     populateUnitOptions();

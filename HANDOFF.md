@@ -1,16 +1,16 @@
 # Handoff
 
 ## What changed
-- Added a guided homepage learning path with explicit Step 1→4 sequencing, clearer “when to use this” explanations, and next-step hints across all app cards.
-- Reworked Event Recognition into session-based practice with selectable session lengths, visible progress, completion feedback, retry support, and a direct next-step path into Causality Builder.
-- Regenerated derived artifacts so the repository stays aligned with the current data pipeline output.
+- Strengthened the validation layer so `node scripts/validate-data.mjs` now checks event/effect/cause references, duplicate IDs across events and people, duplicate unit event links, and missing `summary_short` coverage warnings.
+- Extended the derive pipeline so normalized events now include `status`, `question_types`, `unit_ids`, `effects`, `causes`, and `time.year_start`, making `derived/events.normalized.json` a more complete app-facing source of truth.
+- Added a shared browser-side data access helper under `apps/shared/` and moved Event Recognition plus Causality Builder onto derived-data loading instead of mixing raw event/unit fetches.
 
 ## Validation completed
-- Ran `node scripts/derive.mjs` successfully.
-- Ran a local static-server smoke test and confirmed the homepage and Event Recognition routes return HTTP 200.
-- Performed a code-level review of the mobile layout adjustments for the homepage path cards and Event Recognition summary/actions layout.
+- Ran `node scripts/validate-data.mjs` successfully on the clean dataset.
+- Ran `node scripts/derive.mjs` successfully and regenerated the derived artifacts.
+- Performed a temporary broken-reference check to confirm validation fails on invalid causal links, then restored the dataset and re-ran validation.
 
 ## Suggested next steps
-1. Consider adding per-session review of missed Event Recognition answers so learners can focus on weak spots before retrying.
-2. Consider carrying session framing into Causality Builder so app-to-app progression feels even more consistent.
-3. If you want stronger onboarding, consider adding a “recommended daily loop” block on the homepage that suggests time or question counts per step.
+1. Move History Player and any future apps onto the same shared derived-data access helper so all learner modes use identical event normalization.
+2. Consider adding a dedicated derived index for causality-ready events or resolved effect targets if Causality Builder grows more complex.
+3. If you want fewer warnings over time, backfill `summary_short` on remaining null events so every normalized record is immediately usable in clue-based modes.

@@ -1,3 +1,5 @@
+import { filterEvents, loadDerivedEvents } from "../shared/data-access.js";
+
 const sourceYearEl = document.getElementById('source-year');
 const sourceLabelEl = document.getElementById('source-label');
 const sourceSummaryEl = document.getElementById('source-summary');
@@ -11,7 +13,6 @@ const questionCountEl = document.getElementById('question-count');
 const state = {
   events: [],
   eventMap: new Map(),
-  unitIdsByEventId: new Map(),
   pool: [],
   currentQuestion: null,
   answered: 0,
@@ -26,19 +27,26 @@ function shuffle(items) {
   return copy;
 }
 
-function isCausal(event) {
-  return Array.isArray(event.effects) && event.effects.length > 0 && Number.isFinite(event?.time?.year_start);
+function getEffectIds(event) {
+  return (Array.isArray(event.effects) ? event.effects : [])
+    .map((effect) => {
+      if (typeof effect === 'string') return effect;
+      if (effect && typeof effect === 'object' && typeof effect.event_id === 'string') return effect.event_id;
+      return null;
+    })
+    .filter(Boolean);
 }
 
-function getSharedUnitIds(eventId) {
-  return state.unitIdsByEventId.get(eventId) || new Set();
+function isCausal(event) {
+  return getEffectIds(event).length > 0 && Number.isFinite(event?.time?.year_start);
 }
 
 function shareAUnit(leftId, rightId) {
-  const leftUnits = getSharedUnitIds(leftId);
-  const rightUnits = getSharedUnitIds(rightId);
-  for (const unitId of leftUnits) {
-    if (rightUnits.has(unitId)) {
+  const left = state.eventMap.get(leftId);
+  const right = state.eventMap.get(rightId);
+  const leftUnits = new Set(left?.unit_ids || []);
+  for (const unitId of right?.unit_ids || []) {
+    if (leftUnits.has(unitId)) {
       return true;
     }
   }
@@ -46,20 +54,16 @@ function shareAUnit(leftId, rightId) {
 }
 
 function getDistractors(source, correct, pool) {
-  const sameUnit = pool.filter((event) => {
-    return event.id !== source.id && event.id !== correct.id && shareAUnit(source.id, event.id);
-  });
+  const sameUnit = pool.filter((event) => event.id !== source.id && event.id !== correct.id && shareAUnit(source.id, event.id));
   const fallback = pool.filter((event) => event.id !== source.id && event.id !== correct.id && !sameUnit.some((candidate) => candidate.id === event.id));
   return [...shuffle(sameUnit), ...shuffle(fallback)].slice(0, 2);
 }
 
 function generateQuestion(pool) {
-  const playableSources = shuffle(pool).filter((source) => {
-    return (source.effects || []).some((effectId) => state.eventMap.has(effectId));
-  });
+  const playableSources = shuffle(pool).filter((source) => getEffectIds(source).some((effectId) => state.eventMap.has(effectId)));
 
   for (const source of playableSources) {
-    const correctId = source.effects.find((effectId) => state.eventMap.has(effectId));
+    const correctId = getEffectIds(source).find((effectId) => state.eventMap.has(effectId));
     const correct = state.eventMap.get(correctId);
     if (!correct) continue;
 
@@ -139,38 +143,20 @@ function handleAnswer(selectedButton, option) {
 
 async function init() {
   try {
-    const [events, unitIndex] = await Promise.all([
-      fetch('/data/events.json').then((response) => response.json()),
-      fetch('/data/units/index.json').then((response) => response.json()),
-    ]);
-
-    state.events = Array.isArray(events) ? events : [];
+    state.events = await loadDerivedEvents();
     state.eventMap = new Map(state.events.map((event) => [event.id, event]));
 
-    const units = await Promise.all(
-      (unitIndex.units || []).map(async (entry) => {
-        const response = await fetch(`/${entry.path.replace(/^\.\//, '')}`);
-        return response.json();
-      })
-    );
-
-    for (const unit of units) {
-      for (const eventId of unit.event_ids || []) {
-        if (!state.unitIdsByEventId.has(eventId)) {
-          state.unitIdsByEventId.set(eventId, new Set());
-        }
-        state.unitIdsByEventId.get(eventId).add(unit.id);
-      }
-    }
-
     const unresolvedEffects = [];
-    state.pool = state.events.filter((event) => isCausal(event)).filter((event) => {
-      const resolvableEffects = event.effects.filter((effectId) => state.eventMap.has(effectId));
-      if (resolvableEffects.length === 0) {
-        unresolvedEffects.push(event.id);
-        return false;
-      }
-      return true;
+    state.pool = filterEvents(state.events, {
+      predicate: (event) => {
+        if (!isCausal(event)) return false;
+        const resolvableEffects = getEffectIds(event).filter((effectId) => state.eventMap.has(effectId));
+        if (resolvableEffects.length === 0) {
+          unresolvedEffects.push(event.id);
+          return false;
+        }
+        return true;
+      },
     });
 
     console.info('[Causality Builder] causal events', state.pool.length);

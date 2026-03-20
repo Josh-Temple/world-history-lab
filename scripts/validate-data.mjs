@@ -4,6 +4,17 @@ import { pathToFileURL } from "node:url";
 
 const ROOT = process.cwd();
 const ALLOWED_STATUS = new Set(["draft", "reviewed", "approved"]);
+const ALLOWED_CAUSAL_CATEGORIES = new Set([
+  "political",
+  "economic",
+  "social",
+  "military",
+  "intellectual",
+  "technological",
+  "cultural",
+  "diplomatic",
+  "environmental",
+]);
 
 async function readJson(relativePath) {
   const absolutePath = path.join(ROOT, relativePath);
@@ -17,6 +28,52 @@ function isObject(value) {
 
 function asArray(value) {
   return Array.isArray(value) ? value : null;
+}
+
+function describeRecordId(record, fallback) {
+  return typeof record?.id === "string" && record.id.trim() !== "" ? record.id : fallback;
+}
+
+function validateCausalLinks(event, fieldName, eventIdSet, errors, warnings) {
+  const links = event[fieldName];
+  if (links === undefined) {
+    return;
+  }
+
+  if (!Array.isArray(links)) {
+    errors.push(`Event ${event.id} has invalid ${fieldName}; expected an array.`);
+    return;
+  }
+
+  for (const [index, link] of links.entries()) {
+    if (typeof link === "string") {
+      if (!eventIdSet.has(link)) {
+        errors.push(`Event ${event.id} has invalid ${fieldName} reference at index ${index}: ${link}`);
+      }
+      continue;
+    }
+
+    if (!isObject(link)) {
+      errors.push(`Event ${event.id} has invalid ${fieldName} entry at index ${index}; expected a string id or object.`);
+      continue;
+    }
+
+    if (typeof link.event_id === "string" && !eventIdSet.has(link.event_id)) {
+      errors.push(`Event ${event.id} has invalid ${fieldName}.event_id at index ${index}: ${link.event_id}`);
+    }
+
+    if (typeof link.label !== "string" || link.label.trim() === "") {
+      warnings.push(`Event ${event.id} has ${fieldName} entry ${index} without a usable label.`);
+    }
+
+    if (link.category !== undefined) {
+      if (typeof link.category !== "string" || link.category.trim() === "") {
+        warnings.push(`Event ${event.id} has ${fieldName} entry ${index} with an invalid category.`);
+      } else if (!ALLOWED_CAUSAL_CATEGORIES.has(link.category)) {
+        warnings.push(`Event ${event.id} has ${fieldName} entry ${index} with unexpected category: ${link.category}`);
+      }
+    }
+  }
 }
 
 export async function validateData({ log = false } = {}) {
@@ -33,11 +90,9 @@ export async function validateData({ log = false } = {}) {
   const eventList = asArray(events);
   const peopleList = asArray(people);
 
-
   if (!isObject(metadata)) {
     errors.push("data/metadata.json must be an object.");
   }
-
   if (!eventList) {
     errors.push("data/events.json must be an array.");
   }
@@ -55,17 +110,14 @@ export async function validateData({ log = false } = {}) {
         errors.push(`people[${index}] must be an object.`);
         continue;
       }
-
       if (typeof person.id !== "string" || person.id.trim() === "") {
         errors.push(`people[${index}] must include a non-empty id.`);
         continue;
       }
-
       if (personIdSet.has(person.id)) {
         errors.push(`Duplicate person id found: ${person.id}`);
       }
       personIdSet.add(person.id);
-
       if (!person.id.startsWith("pe_")) {
         warnings.push(`Person id does not use pe_ prefix: ${person.id}`);
       }
@@ -80,6 +132,7 @@ export async function validateData({ log = false } = {}) {
         continue;
       }
 
+      const eventLabel = describeRecordId(event, `[index ${index}]`);
       if (typeof event.id !== "string" || event.id.trim() === "") {
         errors.push(`events[${index}] must include a non-empty id.`);
       } else {
@@ -93,32 +146,53 @@ export async function validateData({ log = false } = {}) {
       }
 
       if (typeof event.label !== "string" || event.label.trim() === "") {
-        errors.push(`Event ${event.id || `[index ${index}]`} is missing a valid label.`);
+        errors.push(`Event ${eventLabel} is missing a valid label.`);
       }
-
       if (!isObject(event.time) || typeof event.time.year_start !== "number") {
-        errors.push(`Event ${event.id || `[index ${index}]`} must include time.year_start as a number.`);
+        errors.push(`Event ${eventLabel} must include time.year_start as a number.`);
       }
-
       if (typeof event.status !== "string" || !ALLOWED_STATUS.has(event.status)) {
-        errors.push(`Event ${event.id || `[index ${index}]`} has invalid status: ${String(event.status)}`);
+        errors.push(`Event ${eventLabel} has invalid status: ${String(event.status)}`);
+      }
+      if (typeof event.summary_short !== "string" || event.summary_short.trim() === "") {
+        warnings.push(`Event ${eventLabel} is missing summary_short.`);
       }
 
       if (event.people_ids !== undefined) {
         if (!Array.isArray(event.people_ids)) {
-          errors.push(`Event ${event.id || `[index ${index}]`} has invalid people_ids; expected an array of person ids.`);
+          errors.push(`Event ${eventLabel} has invalid people_ids; expected an array of person ids.`);
         } else {
           for (const personId of event.people_ids) {
             if (typeof personId !== "string") {
-              errors.push(`Event ${event.id || `[index ${index}]`} has a non-string people_ids entry.`);
+              errors.push(`Event ${eventLabel} has a non-string people_ids entry.`);
               continue;
             }
             if (!personIdSet.has(personId)) {
-              errors.push(`Event ${event.id || `[index ${index}]`} references unknown person id in people_ids: ${personId}`);
+              errors.push(`Event ${eventLabel} references unknown person id in people_ids: ${personId}`);
             }
           }
         }
       }
+    }
+
+    if (eventIdSet.size !== eventList.length) {
+      errors.push(`Duplicate event IDs detected: expected ${eventList.length} unique ids but found ${eventIdSet.size}.`);
+    }
+  }
+
+  if (eventList) {
+    for (const event of eventList) {
+      if (!isObject(event) || typeof event.id !== "string" || event.id.trim() === "") {
+        continue;
+      }
+      validateCausalLinks(event, "effects", eventIdSet, errors, warnings);
+      validateCausalLinks(event, "causes", eventIdSet, errors, warnings);
+    }
+  }
+
+  for (const personId of personIdSet) {
+    if (eventIdSet.has(personId)) {
+      errors.push(`Duplicate ID found across events and people: ${personId}`);
     }
   }
 
@@ -143,26 +217,28 @@ export async function validateData({ log = false } = {}) {
         errors.push(`${unitEntry.path} must contain an object.`);
         continue;
       }
-
       if (!Array.isArray(unit.event_ids)) {
         errors.push(`${unitEntry.path} must include event_ids as an array.`);
         continue;
       }
 
+      const unitId = describeRecordId(unit, unitEntry.path);
+      const unitEventIdSet = new Set();
       for (const eventId of unit.event_ids) {
         if (typeof eventId !== "string") {
           errors.push(`${unitEntry.path} contains a non-string event id reference.`);
           continue;
         }
-
+        if (unitEventIdSet.has(eventId)) {
+          errors.push(`Unit ${unitId} includes duplicate event id: ${eventId}`);
+        }
+        unitEventIdSet.add(eventId);
         if (!eventIdSet.has(eventId)) {
-          errors.push(`Missing event reference: ${unit.id || unitEntry.path} -> ${eventId}`);
+          errors.push(`Unit ${unitId} references missing event ${eventId}`);
         }
       }
     }
   }
-
-
 
   if (isObject(metadata) && isObject(unitRegistry) && Array.isArray(unitRegistry.units)) {
     const scopeUnits = asArray(metadata?.scope?.included_units);
@@ -179,7 +255,6 @@ export async function validateData({ log = false } = {}) {
           errors.push(`metadata scope missing registered unit: ${registryId}`);
         }
       }
-
       for (const scopeId of scopeUnits) {
         if (!registryUnitIds.includes(scopeId)) {
           errors.push(`metadata scope includes unknown unit id: ${scopeId}`);
@@ -200,13 +275,11 @@ export async function validateData({ log = false } = {}) {
     for (const warning of warnings) {
       console.warn(`[validate-data] Warning: ${warning}`);
     }
-
     if (errors.length > 0) {
       for (const error of errors) {
         console.error(`[validate-data] Error: ${error}`);
       }
     }
-
     if (errors.length === 0) {
       console.log("Dataset validation passed");
       console.log(`events: ${summary.events}`);
