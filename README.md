@@ -146,6 +146,12 @@ Next:
 - Marked all current records in `data/events.json` as **approved** because the existing event set is treated as ready for learner-facing use.
 - Regenerated derived artifacts after the status refresh so app-facing normalized data stays in sync with the source dataset.
 
+## Recent updates (2026-03-21 · PWA)
+
+- Added a web app manifest, installable app metadata, and reusable app icons for the static site.
+- Registered a root-scoped service worker that precaches the app shell and uses runtime caching for JSON data requests.
+- Wired every app entry page to the shared PWA assets so World History Lab can be installed and reopened offline with cached content.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
@@ -259,6 +265,8 @@ python -m http.server 4173
 Then open `http://localhost:4173`.
 
 Timeline Trainer MVP is available at `http://localhost:4173/apps/timeline-trainer/`.
+
+PWA installability is available when the site is served over `http://localhost` during local development or over HTTPS in deployment.
 
 ## Deploy to Vercel
 

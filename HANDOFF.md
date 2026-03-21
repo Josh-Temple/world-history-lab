@@ -1,16 +1,17 @@
 # Handoff
 
 ## What changed
-- Restored the event editorial workflow to the three-stage `draft` -> `reviewed` -> `approved` model for future event additions.
-- Updated every record in `data/events.json` to use `status: "approved"`, replacing the temporary reviewed-only event state.
-- Regenerated the derived artifacts so app consumers immediately see the approved event set.
-- Updated the root README to document the 2026-03-21 workflow reset and approved-status refresh.
+- Added first-pass PWA support for the static site with a shared manifest, install icons, and a root-scoped service worker.
+- Updated the homepage and each app entry page to advertise the manifest, theme color, install icons, and service worker registration module.
+- Documented the new install/offline behavior in the root README.
 
 ## Validation completed
-- Ran `node scripts/validate-data.mjs` successfully after the event status update.
-- Ran `node scripts/derive.mjs` successfully and refreshed `/derived` outputs.
+- Ran `node scripts/validate-data.mjs` successfully to confirm dataset integrity still passes after the PWA changes.
+- Ran `node scripts/derive.mjs` successfully to verify derived outputs remain reproducible.
+- Ran `node scripts/smoke-timeline-trainer.mjs` successfully as a regression check for the existing trainer flow.
+- Served the site locally and fetched `/pwa/manifest.webmanifest` and `/service-worker.js` over HTTP to confirm the new assets are reachable.
 
 ## Suggested next steps
-1. Decide whether people and unit records should continue using their current mixed status distribution or also adopt a stricter promotion workflow.
-2. Spot-check learner-facing copy and counters that refer to Reviewed+ content so they still read naturally now that all current events are approved.
-3. When adding the next batch of events, start them at `draft` and only promote them after review.
+1. If you want a stronger offline experience, consider adding an explicit offline fallback page and an in-app install prompt.
+2. Consider adding PNG versions of the install icons if you want broader platform-specific icon coverage beyond SVG-capable browsers.
+3. If the cached shell changes frequently, bump the cache version constants in `service-worker.js` when shipping updates.

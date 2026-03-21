@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="manifest" href="/pwa/manifest.webmanifest" />
+    <link rel="icon" href="/assets/pwa/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/pwa/apple-touch-icon.svg" />
     <title>Timeline Trainer MVP</title>
     <link rel="stylesheet" href="/apps/timeline-trainer/src/styles.css" />
   </head>
@@ -108,5 +112,6 @@
     </main>
 
     <script type="module" src="/apps/timeline-trainer/src/main.js"></script>
+      <script type="module" src="/pwa/register-sw.js"></script>
   </body>
 </html>

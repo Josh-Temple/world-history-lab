@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">World History Lab maskable icon</title>
+  <desc id="desc">A teal app icon with a centered globe and timeline marker.</desc>
+  <rect width="512" height="512" rx="144" fill="#115e59"/>
+  <rect x="48" y="48" width="416" height="416" rx="128" fill="#0f766e"/>
+  <circle cx="256" cy="220" r="116" fill="none" stroke="#ecfeff" stroke-width="26"/>
+  <path d="M140 220h232M256 104c36 28 58 70 58 116s-22 88-58 116c-36-28-58-70-58-116s22-88 58-116Z" fill="none" stroke="#ecfeff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M176 160c24 16 51 24 80 24s56-8 80-24M176 280c24-16 51-24 80-24s56 8 80 24" fill="none" stroke="#ecfeff" stroke-width="16" stroke-linecap="round"/>
+  <rect x="132" y="352" width="248" height="32" rx="16" fill="#f59e0b"/>
+  <circle cx="216" cy="368" r="22" fill="#fff7ed" stroke="#f59e0b" stroke-width="10"/>
+</svg>
