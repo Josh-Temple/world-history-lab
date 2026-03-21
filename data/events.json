@@ -20,7 +20,7 @@
         "url": "https://en.wikipedia.org/wiki/Flying_shuttle"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -44,7 +44,7 @@
         "url": "https://en.wikipedia.org/wiki/Bridgewater_Canal"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -68,7 +68,7 @@
         "url": "https://en.wikipedia.org/wiki/Spinning_jenny"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -92,7 +92,7 @@
         "url": "https://en.wikipedia.org/wiki/Water_frame"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -116,7 +116,7 @@
         "url": "https://en.wikipedia.org/wiki/Watt_steam_engine"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -140,7 +140,7 @@
         "url": "https://www.britannica.com/biography/James-Hargreaves"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -164,7 +164,7 @@
         "url": "https://www.nationalarchives.gov.uk/education/resources/georgian-britain-age-modernity/arkwrights-spinning-frame/"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -188,7 +188,7 @@
         "url": "https://ageofrevolution.org/200-object/cromptons-spinning-mule/"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -212,7 +212,7 @@
         "url": "https://www.ebsco.com/research-starters/history/patenting-steam-powered-loom"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -277,7 +277,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
     ]
@@ -357,7 +357,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
     ]
@@ -422,7 +422,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
     ]
@@ -487,7 +487,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
     ]
@@ -513,7 +513,7 @@
         "url": "https://www.britannica.com/technology/cotton-gin"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -582,7 +582,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
     ]
@@ -655,7 +655,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_maximilien_robespierre"
     ]
@@ -721,7 +721,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_maximilien_robespierre"
     ]
@@ -795,7 +795,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_napoleon_bonaparte"
     ]
@@ -865,7 +865,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_napoleon_bonaparte"
     ]
@@ -891,7 +891,7 @@
         "url": "https://museum.wales/articles/1012/Richard-Trevithickrsquos-steam-locomotive/"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -960,7 +960,7 @@
       }
     ],
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed",
+    "status": "approved",
     "people_ids": [
       "pe_napoleon_bonaparte"
     ]
@@ -986,7 +986,7 @@
         "url": "https://en.wikipedia.org/wiki/Stephenson%27s_Rocket"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1010,7 +1010,7 @@
         "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
     "people_ids": [
       "pe_karl_marx",
@@ -1038,7 +1038,7 @@
         "url": "https://en.wikipedia.org/wiki/Great_Exhibition"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1096,7 +1096,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_kanagawa_treaty_1854",
@@ -1157,7 +1157,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_bessemer_process_patent_1856",
@@ -1180,7 +1180,7 @@
         "url": "https://en.wikipedia.org/wiki/Bessemer_process"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
     "people_ids": [
       "pe_andrew_carnegie",
@@ -1238,7 +1238,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_charter_oath_1868",
@@ -1291,7 +1291,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_abolish_han_1871",
@@ -1344,7 +1344,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_conscription_1873",
@@ -1397,7 +1397,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_constitution_1889",
@@ -1450,7 +1450,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_diet_1890",
@@ -1503,7 +1503,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
@@ -1558,7 +1558,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_russojapanese_war_1905",
@@ -1613,7 +1613,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_annex_korea_1910",
@@ -1668,7 +1668,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_meiji_emperor_death_1912",
@@ -1717,7 +1717,7 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "reviewed"
+    "status": "approved"
   },
   {
     "id": "ev_imperialism_leopold_congo_project_1876",
@@ -1738,7 +1738,7 @@
       "colonialism",
       "congo"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
     "people_ids": [
       "pe_leopold_ii",
@@ -1765,7 +1765,7 @@
       "british_empire",
       "egypt"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
     "people_ids": [
       "pe_queen_victoria"
@@ -1790,7 +1790,7 @@
       "berlin_conference",
       "scramble_for_africa"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
     "people_ids": [
       "pe_otto_von_bismarck"
@@ -1815,7 +1815,7 @@
       "berlin_conference",
       "colonial_partition"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1838,7 +1838,7 @@
       "china",
       "war"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1861,7 +1861,7 @@
       "china",
       "treaty"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1883,7 +1883,7 @@
       "spain",
       "war"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1906,7 +1906,7 @@
       "south_africa",
       "war"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1928,7 +1928,7 @@
       "china",
       "rebellion"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1950,7 +1950,7 @@
       "british_empire",
       "south_africa"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1973,7 +1973,7 @@
       "russia",
       "war"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -1996,7 +1996,7 @@
       "russia",
       "treaty"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -2018,7 +2018,7 @@
       "morocco",
       "great_powers"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -2040,7 +2040,7 @@
       "morocco",
       "gunboat_diplomacy"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -2061,7 +2061,7 @@
       "balkans",
       "war"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "ai_assisted_self_reviewed"
   },
   {
@@ -2096,7 +2096,7 @@
     "people_ids": [
       "pe_queen_victoria"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2132,7 +2132,7 @@
       "pe_leopold_ii",
       "pe_henry_morton_stanley"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2167,7 +2167,7 @@
     "people_ids": [
       "pe_cecil_rhodes"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2196,7 +2196,7 @@
     "effects": [
       "ev_imperialism_russojapanese_war_begins_1904"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2234,7 +2234,7 @@
     "people_ids": [
       "pe_menelik_ii"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2273,7 +2273,7 @@
     "people_ids": [
       "pe_queen_victoria"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2304,7 +2304,7 @@
     "effects": [
       "ev_imperialism_philippine_american_war_begins_1899"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2336,7 +2336,7 @@
     "effects": [
       "ev_imperialism_boxer_rebellion_1900"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2369,7 +2369,7 @@
         "category": "political"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2402,7 +2402,7 @@
     "effects": [
       "ev_imperialism_russojapanese_war_begins_1904"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2431,7 +2431,7 @@
     "effects": [
       "ev_imperialism_agadir_crisis_1911"
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   },
   {
@@ -2464,7 +2464,7 @@
         "category": "political"
       }
     ],
-    "status": "reviewed",
+    "status": "approved",
     "content_origin": "structured_external"
   }
 ]
