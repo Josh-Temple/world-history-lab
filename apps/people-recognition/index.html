@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="manifest" href="/pwa/manifest.webmanifest" />
+    <link rel="icon" href="/assets/pwa/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/pwa/apple-touch-icon.svg" />
+    <title>People Recognition</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p><a href="/">← Back to World History Lab</a></p>
+        <h1>People Recognition</h1>
+        <p class="lead">Practice actor-to-event recall so historical figures stay connected to the events they shaped.</p>
+      </header>
+
+      <section class="card setup-card" aria-labelledby="setup-title">
+        <h2 id="setup-title">Practice setup</h2>
+
+        <label for="practice-mode">Practice scope</label>
+        <select id="practice-mode">
+          <option value="unit">Unit</option>
+          <option value="all" selected>All units</option>
+        </select>
+
+        <label for="unit-select">Unit</label>
+        <select id="unit-select"></select>
+
+        <label for="quality-select">Minimum quality</label>
+        <select id="quality-select">
+          <option value="reviewed">Reviewed+</option>
+          <option value="draft">Include drafts</option>
+        </select>
+
+        <label for="session-length">Session length</label>
+        <select id="session-length">
+          <option value="5">5 questions</option>
+          <option value="10" selected>10 questions</option>
+          <option value="15">15 questions</option>
+        </select>
+
+        <p id="eligibility-hint" class="muted"></p>
+      </section>
+
+      <section class="card session-card" aria-live="polite">
+        <div class="session-header">
+          <div>
+            <h2 id="question-title">Which event is this person most associated with?</h2>
+            <p id="session-status" class="session-status">Choose a setup to begin.</p>
+          </div>
+          <p id="progress" class="progress">Question 1 of 10</p>
+        </div>
+
+        <article class="person-card">
+          <p id="person-name" class="person-name">Loading people…</p>
+          <p id="person-summary" class="person-summary muted"></p>
+        </article>
+
+        <div id="choices" class="choices"></div>
+        <p id="feedback" class="feedback"></p>
+        <p id="answer-meta" class="answer-meta"></p>
+        <div id="summary" class="summary" hidden></div>
+        <button id="next" type="button" disabled>Next question</button>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="/pwa/register-sw.js"></script>
+  </body>
+</html>

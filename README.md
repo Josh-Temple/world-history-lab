@@ -15,6 +15,7 @@ World History Lab is a personal learning project for studying world history with
 - **First mini apps**:
   - **Timeline Trainer** (MVP playable: Before/After, Earliest of 3, Latest of 3, Mixed mode, plus Unit/All practice scope and quality filtering).
   - **Event Recognition Trainer** (unit-scoped, quality-aware multiple-choice recognition from event clues).
+  - **People Recognition** (actor-to-event recall with unit-aware distractors and explanation feedback).
   - **History Player** (first playable slice: sequence playback, speed control, slider navigation, cumulative event log).
   - **Causality Builder** (first playable MVP with direct-effect and cause-category practice).
 - **Overview layer (scaffold-stage)**: an experimental survey-oriented data slice under `data/overview/` for coarse era × region mental-map practice that complements (not replaces) event/timeline learning.
@@ -146,6 +147,12 @@ Next:
 - Marked all current records in `data/events.json` as **approved** because the existing event set is treated as ready for learner-facing use.
 - Regenerated derived artifacts after the status refresh so app-facing normalized data stays in sync with the source dataset.
 
+## Recent updates (2026-03-21 · People Recognition)
+
+- Added a new **People Recognition** app at `apps/people-recognition/` for actor-to-event retrieval practice.
+- Expanded homepage learning-path guidance so people-based recall sits alongside chronology, recognition, causality, and narrative review.
+- Kept `people_ids`-based event links flowing through validation and derived data so the new mode can safely reuse the shared dataset.
+
 ## Recent updates (2026-03-21 · PWA)
 
 - Added a web app manifest, installable app metadata, and reusable app icons for the static site.
@@ -155,8 +162,8 @@ Next:
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
-- **People links are now present but underutilized**: events can include `people_ids`, but no dedicated people quiz mode exists yet.
-- **Keep learning-flow consistency across apps**: Timeline Trainer, Event Recognition, Causality Builder, and History Player should keep aligned setup language and progress expectations.
+- **People links need continued expansion**: the new People Recognition mode is live, but more units and figures still need structured `people_ids` coverage for broader actor practice.
+- **Keep learning-flow consistency across apps**: Timeline Trainer, Event Recognition, People Recognition, Causality Builder, and History Player should keep aligned setup language and progress expectations.
 
 ## Roadmap (short)
 
