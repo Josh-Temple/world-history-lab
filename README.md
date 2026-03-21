@@ -140,9 +140,10 @@ Next:
 - Reworked Event Recognition into fixed-length sessions with progress tracking, end-of-session feedback, retry flow, and a clearer bridge into Causality Builder.
 - Regenerated derived artifacts after the UX/session-flow update.
 
-## Recent updates (2026-03-20)
+## Recent updates (2026-03-21)
 
-- Marked all current records in `data/events.json` as **reviewed** so every event is now included in Reviewed+ practice filters.
+- Restored the event editorial workflow to the three-stage `draft` → `reviewed` → `approved` model for new work.
+- Marked all current records in `data/events.json` as **approved** because the existing event set is treated as ready for learner-facing use.
 - Regenerated derived artifacts after the status refresh so app-facing normalized data stays in sync with the source dataset.
 
 ## Current challenges (today)
