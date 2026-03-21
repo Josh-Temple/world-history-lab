@@ -162,11 +162,16 @@ export async function validateData({ log = false } = {}) {
         if (!Array.isArray(event.people_ids)) {
           errors.push(`Event ${eventLabel} has invalid people_ids; expected an array of person ids.`);
         } else {
+          const peopleIdsSeen = new Set();
           for (const personId of event.people_ids) {
             if (typeof personId !== "string") {
               errors.push(`Event ${eventLabel} has a non-string people_ids entry.`);
               continue;
             }
+            if (peopleIdsSeen.has(personId)) {
+              errors.push(`Event ${eventLabel} includes duplicate people_ids entry: ${personId}`);
+            }
+            peopleIdsSeen.add(personId);
             if (!personIdSet.has(personId)) {
               errors.push(`Event ${eventLabel} references unknown person id in people_ids: ${personId}`);
             }
