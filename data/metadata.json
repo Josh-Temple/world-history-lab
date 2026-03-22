@@ -11,7 +11,7 @@
       "unit_meiji_restoration",
       "unit_age_of_imperialism"
     ],
-    "notes": "Core dataset now spans four units for timeline, recognition, and player-based overview practice."
+    "notes": "Core dataset now spans four registered units plus a canonical cross-era player slice for timeline, recognition, overview, and player-based practice."
   },
   "source_policy": {
     "structured_data_sources": [
@@ -42,7 +42,9 @@
       "timeline-trainer",
       "causality-builder",
       "event-recognition",
-      "history-player"
+      "people-recognition",
+      "history-player",
+      "overview"
     ],
     "enabled_question_types": [
       "timeline_before_after",
@@ -56,7 +58,7 @@
       "cause_and_effect"
     ]
   },
-  "updated_at": "2026-03-15T00:00:00Z",
+  "updated_at": "2026-03-22T00:00:00Z",
   "maintainer": {
     "name": "Josh",
     "notes": "Personal learning project"
