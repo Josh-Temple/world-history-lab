@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="manifest" href="/pwa/manifest.webmanifest" />
+    <link rel="icon" href="/assets/pwa/icon.svg" type="image/svg+xml" />
+    <title>Overview · World History Lab</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: #dbe2ea;
+        --accent: #0f766e;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--text); }
+      main { width: min(1120px, calc(100% - 2rem)); margin: 1.5rem auto 2rem; display: grid; gap: 1rem; }
+      .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; }
+      h1, h2, h3 { margin-top: 0; }
+      .muted { color: var(--muted); }
+      .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+      .cell { border: 1px solid var(--border); border-radius: 12px; padding: 1rem; background: #fff; }
+      .tag { display: inline-block; margin: 0 .35rem .35rem 0; padding: .15rem .55rem; border: 1px solid #bae6fd; border-radius: 999px; background: #ecfeff; color: #155e75; font-size: .82rem; }
+      ul { margin: .45rem 0 0; padding-left: 1.1rem; }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <p class="muted" style="margin:0"><a href="/">← Back to mode chooser</a></p>
+        <h1>Overview</h1>
+        <p class="muted">Use this read-only bridge when you want a coarse mental map before or after drills. It summarizes recurring patterns by era and region, then points you back into practice modes.</p>
+      </section>
+
+      <section class="panel">
+        <h2>How to use this page</h2>
+        <div class="grid">
+          <div>
+            <h3>1. Scan patterns</h3>
+            <p class="muted">Read a few cells quickly to notice what changes across eras and what stays structurally similar across regions.</p>
+          </div>
+          <div>
+            <h3>2. Pick an anchor</h3>
+            <p class="muted">Use anchors and keywords to build a compact mental checklist before you start drills or a player session.</p>
+          </div>
+          <div>
+            <h3>3. Jump back into practice</h3>
+            <p class="muted">When a cell feels fuzzy, open Timeline Trainer for chronology or History Player for the broader sequence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Era × region survey grid</h2>
+        <div id="overview-grid" class="grid"></div>
+      </section>
+    </main>
+
+    <script type="module">
+      async function fetchJson(path) {
+        const response = await fetch(path, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
+        return response.json();
+      }
+
+      function renderCell(container, cell, erasById, regionsById) {
+        const article = document.createElement('article');
+        article.className = 'cell';
+        article.innerHTML = `
+          <p class="muted" style="margin:0 0 .35rem">${erasById.get(cell.era_id)?.label ?? cell.era_id} × ${regionsById.get(cell.region_id)?.label ?? cell.region_id}</p>
+          <h3>${regionsById.get(cell.region_id)?.label ?? cell.region_id}</h3>
+          <p>${cell.summary}</p>
+          <div>
+            ${(cell.keywords || []).map((keyword) => `<span class="tag">${keyword}</span>`).join('')}
+          </div>
+          <p><strong>Anchors</strong></p>
+          <ul>${(cell.anchors || []).map((anchor) => `<li>${anchor}</li>`).join('')}</ul>
+          <p style="margin-top:.75rem"><strong>Cross-region connection</strong></p>
+          <ul>${(cell.connections || []).map((entry) => `<li>${entry}</li>`).join('')}</ul>
+          <p style="margin-top:.85rem"><a href="../timeline-trainer/">Practice chronology →</a> · <a href="../history-player/">Review canonical sequence →</a></p>
+        `;
+        container.append(article);
+      }
+
+      async function init() {
+        const [eras, regions, grid] = await Promise.all([
+          fetchJson('/data/overview/eras.json'),
+          fetchJson('/data/overview/regions.json'),
+          fetchJson('/data/overview/survey-grid.json'),
+        ]);
+
+        const erasById = new Map(eras.map((era) => [era.id, era]));
+        const regionsById = new Map(regions.map((region) => [region.id, region]));
+        const container = document.getElementById('overview-grid');
+        grid.forEach((cell) => renderCell(container, cell, erasById, regionsById));
+      }
+
+      init().catch((error) => {
+        document.getElementById('overview-grid').innerHTML = `<p class="muted">Unable to load overview data: ${error.message}</p>`;
+      });
+    </script>
+    <script type="module" src="/pwa/register-sw.js"></script>
+  </body>
+</html>

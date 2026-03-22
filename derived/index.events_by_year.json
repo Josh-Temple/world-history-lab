@@ -1,4 +1,28 @@
 {
+  "313": [
+    "ev_constantine_edict_milan_313"
+  ],
+  "622": [
+    "ev_hijra_622"
+  ],
+  "650": [
+    "ev_tang_peak_7c"
+  ],
+  "800": [
+    "ev_charlemagne_crowned_800"
+  ],
+  "1050": [
+    "ev_song_commercial_revolution_11c"
+  ],
+  "1206": [
+    "ev_mongol_empire_formation_1206"
+  ],
+  "1453": [
+    "ev_mehmed_constantinople_1453"
+  ],
+  "1492": [
+    "ev_columbus_1492"
+  ],
   "1733": [
     "ev_flying_shuttle_patent_1733"
   ],
@@ -148,5 +172,26 @@
   "1912": [
     "ev_imperialism_first_balkan_war_1912",
     "ev_meiji_emperor_death_1912"
+  ],
+  "-550": [
+    "ev_cyrus_founds_achaemenid_550bce"
+  ],
+  "-528": [
+    "ev_buddha_enlightenment_5c_bce"
+  ],
+  "-331": [
+    "ev_alexander_gaugamela_331bce"
+  ],
+  "-261": [
+    "ev_ashoka_kalinga_261bce"
+  ],
+  "-221": [
+    "ev_qin_unification_221bce"
+  ],
+  "-130": [
+    "ev_han_zhangqian_2c_bce"
+  ],
+  "-27": [
+    "ev_augustus_principate_27bce"
   ]
 }

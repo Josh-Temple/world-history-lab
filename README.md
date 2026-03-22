@@ -16,9 +16,9 @@ World History Lab is a personal learning project for studying world history with
   - **Timeline Trainer** (MVP playable: Before/After, Earliest of 3, Latest of 3, Mixed mode, plus Unit/All practice scope and quality filtering).
   - **Event Recognition Trainer** (unit-scoped, quality-aware multiple-choice recognition from event clues).
   - **People Recognition** (actor-to-event recall with unit-aware distractors and explanation feedback).
-  - **History Player** (first playable slice: sequence playback, speed control, slider navigation, cumulative event log).
+  - **History Player** (canonical player slice: sequence playback, speed control, slider navigation, cumulative event log, importance filtering, and canonical coordinates where available).
   - **Causality Builder** (first playable MVP with direct-effect and cause-category practice).
-- **Overview layer (scaffold-stage)**: an experimental survey-oriented data slice under `data/overview/` for coarse era × region mental-map practice that complements (not replaces) event/timeline learning.
+- **Overview** (first shipped read-only bridge page under `apps/overview/`, backed by `data/overview/`, for coarse era × region mental-map practice that complements event/timeline learning).
 
 ## Repository structure (high-level)
 
@@ -165,11 +165,17 @@ Next:
 - Introduced lightweight cross-app "Next step" guidance inside Timeline Trainer, Event Recognition, and Causality Builder to reinforce the intended practice loop: chronology → recognition → causality → narrative review.
 - Kept derive output current after the filtering/UI refactor so shared data artifacts stay aligned with the learner-facing apps.
 
+## Recent updates (2026-03-22 · Canonical slice + overview)
+
+- Added a first canonical cross-era History Player slice with 15 ancient-to-early-modern events spanning West Asia, South Asia, East Asia, Europe, the steppe, and the Atlantic world.
+- Upgraded `apps/history-player/` to filter on `importance`, require canonical player fields, and use canonical coordinates for map markers when available.
+- Shipped a first read-only `apps/overview/` route backed by `data/overview/*` so learners can bridge from drill practice into coarse survey learning.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
 - **People links need continued expansion**: the new People Recognition mode is live, but more units and figures still need structured `people_ids` coverage for broader actor practice.
-- **Keep learning-flow consistency across apps**: Timeline Trainer, Event Recognition, People Recognition, Causality Builder, and History Player should keep aligned setup language and progress expectations.
+- **Keep learning-flow consistency across apps**: Timeline Trainer, Event Recognition, People Recognition, Overview, Causality Builder, and History Player should keep aligned setup language and progress expectations.
 - **Finish shared filtering adoption across remaining apps**: People Recognition still has some app-local eligibility logic that could move onto the new shared filter layer next.
 
 ## Roadmap (short)
@@ -187,7 +193,7 @@ Next:
   - Improve validation tooling.
   - Add more units.
   - Add additional mini apps as needed.
-  - Keep the overview/survey layer in scaffold-stage as a complementary bridge into event/timeline practice (not a replacement for core event data).
+  - Extend the shipped overview/survey layer from read-only survey guidance into richer bridge activities over time (not a replacement for core event data).
 
 
 
@@ -200,7 +206,7 @@ A practical MVP plan for adding a new in-repo `History Player` view is now docum
 Key decision: keep a **single shared data source** (`data/events.json`) and ship a focused MVP centered on event-sequence playback + map markers + event log + importance filtering.
 
 
-Additional planning assets for the next execution step:
+Additional planning assets for future extension beyond the first shipped canonical slice:
 
 - `docs/history-player-top50-candidate-seed.md` (first-pass major 50 event candidates with category, representative coordinates, and one-line summaries)
 - `docs/history-player-event-extension-sample.json` (drop-in JSON examples for the proposed event schema extension fields)

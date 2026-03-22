@@ -1,9 +1,108 @@
 [
   {
+    "id": "ev_alexander_gaugamela_331bce",
+    "label": "Alexander defeats Persia at Gaugamela",
+    "summary_short": "Macedonian victory accelerated Hellenistic cultural spread.",
+    "status": "approved",
+    "category": "war",
+    "importance": 1,
+    "location": {
+      "label": "Gaugamela region",
+      "lat": 36.36,
+      "lng": 43.13,
+      "precision": "region"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "-331",
+      "end": "-331",
+      "year_start": -331,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": -3309899,
+      "sort_end": -3308769,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": -331
+    }
+  },
+  {
+    "id": "ev_ashoka_kalinga_261bce",
+    "label": "Ashoka's Kalinga War and turn to Dharma",
+    "summary_short": "Mauryan rule pivoted toward Buddhist statecraft and moral governance.",
+    "status": "approved",
+    "category": "religion",
+    "importance": 1,
+    "location": {
+      "label": "Dhauli region",
+      "lat": 20.19,
+      "lng": 85.84,
+      "precision": "region"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "-261",
+      "end": "-261",
+      "year_start": -261,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": -2609899,
+      "sort_end": -2608769,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": -261
+    }
+  },
+  {
+    "id": "ev_augustus_principate_27bce",
+    "label": "Augustus establishes the Principate",
+    "summary_short": "Roman imperial institutions stabilized Mediterranean governance for centuries.",
+    "status": "approved",
+    "category": "politics",
+    "importance": 1,
+    "location": {
+      "label": "Rome",
+      "lat": 41.9,
+      "lng": 12.5,
+      "precision": "city"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "-27",
+      "end": "-27",
+      "year_start": -27,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": -269899,
+      "sort_end": -268769,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": -27
+    }
+  },
+  {
     "id": "ev_bessemer_process_patent_1856",
     "label": "Bessemer process patented (mass steel production)",
     "summary_short": "Bessemer’s process enabled cheaper mass production of steel, accelerating industrial expansion in railways, construction, and machinery.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -35,6 +134,9 @@
     "label": "Bridgewater Canal opens (coal transport to Manchester)",
     "summary_short": "The Bridgewater Canal opened to move coal efficiently, cutting transport costs and accelerating industrial growth.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -57,10 +159,109 @@
     }
   },
   {
+    "id": "ev_buddha_enlightenment_5c_bce",
+    "label": "Siddhartha Gautama's enlightenment (traditional)",
+    "summary_short": "Buddhism emerged as a major religious and philosophical tradition.",
+    "status": "approved",
+    "category": "religion",
+    "importance": 1,
+    "location": {
+      "label": "Bodh Gaya",
+      "lat": 24.7,
+      "lng": 84.99,
+      "precision": "city"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "-528",
+      "end": "-528",
+      "year_start": -528,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": -5279899,
+      "sort_end": -5278769,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": -528
+    }
+  },
+  {
+    "id": "ev_charlemagne_crowned_800",
+    "label": "Charlemagne crowned emperor",
+    "summary_short": "A new western imperial claim reshaped medieval European politics.",
+    "status": "approved",
+    "category": "politics",
+    "importance": 1,
+    "location": {
+      "label": "Rome",
+      "lat": 41.9,
+      "lng": 12.5,
+      "precision": "city"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "800",
+      "end": "800",
+      "year_start": 800,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 8000101,
+      "sort_end": 8001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 800
+    }
+  },
+  {
+    "id": "ev_columbus_1492",
+    "label": "Columbus reaches the Caribbean",
+    "summary_short": "Sustained transatlantic contact transformed global demography and trade.",
+    "status": "approved",
+    "category": "exploration",
+    "importance": 1,
+    "location": {
+      "label": "San Salvador (traditional)",
+      "lat": 24.06,
+      "lng": -74.47,
+      "precision": "approx"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1492",
+      "end": "1492",
+      "year_start": 1492,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14920101,
+      "sort_end": 14921231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1492
+    }
+  },
+  {
     "id": "ev_congress_of_vienna_1814_1815",
     "label": "Congress of Vienna",
     "summary_short": "European powers met at Vienna to rebuild order after the Napoleonic Wars, reshaping borders and seeking a balance of power.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -109,10 +310,45 @@
     }
   },
   {
+    "id": "ev_constantine_edict_milan_313",
+    "label": "Edict of Milan",
+    "summary_short": "Imperial toleration transformed Christianity's status in the Roman world.",
+    "status": "approved",
+    "category": "religion",
+    "importance": 1,
+    "location": {
+      "label": "Milan",
+      "lat": 45.46,
+      "lng": 9.19,
+      "precision": "city"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "313",
+      "end": "313",
+      "year_start": 313,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 3130101,
+      "sort_end": 3131231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 313
+    }
+  },
+  {
     "id": "ev_cotton_gin_invented_1793",
     "label": "Cotton gin invented (Eli Whitney)",
     "summary_short": "Whitney’s cotton gin sped seed removal, expanding raw cotton supply feeding textile mills and intensifying the global cotton economy.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -141,6 +377,9 @@
     "label": "Cromford Mill uses water frame (early factory system)",
     "summary_short": "Arkwright’s water-powered spinning at Cromford is often cited as a key step toward the factory system in textiles.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -165,10 +404,45 @@
     }
   },
   {
+    "id": "ev_cyrus_founds_achaemenid_550bce",
+    "label": "Cyrus founds the Achaemenid Empire",
+    "summary_short": "Persian imperial expansion created one of the first large multiethnic empires.",
+    "status": "approved",
+    "category": "politics",
+    "importance": 1,
+    "location": {
+      "label": "Pasargadae region",
+      "lat": 30.2,
+      "lng": 53.18,
+      "precision": "region"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "-550",
+      "end": "-550",
+      "year_start": -550,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": -5499899,
+      "sort_end": -5498769,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": -550
+    }
+  },
+  {
     "id": "ev_declaration_rights_man_citizen_1789",
     "label": "Declaration of the Rights of Man and of the Citizen",
     "summary_short": "A foundational revolutionary declaration asserting rights, citizenship, and principles of political legitimacy that shaped later constitutional politics.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -216,6 +490,9 @@
     "label": "Convening of the Estates-General",
     "summary_short": "Louis XVI convened the Estates-General in 1789 amid a fiscal crisis, helping trigger the political escalation that became the French Revolution.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -267,6 +544,9 @@
     "label": "Execution of Louis XVI",
     "summary_short": "The execution of Louis XVI marked a decisive break with monarchy and intensified the radicalization and external conflict surrounding the Revolution.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -319,6 +599,9 @@
     "label": "Factory Act (UK) strengthens child labor regulation and enforcement",
     "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate—an important step toward enforceable workplace regulation.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -350,6 +633,9 @@
     "label": "Flying shuttle patented (John Kay)",
     "summary_short": "John Kay’s flying shuttle sped up weaving and increased demand for spun yarn, helping trigger later spinning innovations.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -378,6 +664,9 @@
     "label": "Great Exhibition opens in London (Crystal Palace)",
     "summary_short": "A major international exhibition showcasing industrial and cultural achievements, symbolizing Britain’s industrial prominence.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -402,10 +691,77 @@
     }
   },
   {
+    "id": "ev_han_zhangqian_2c_bce",
+    "label": "Han missions open early Silk Road links",
+    "summary_short": "Long-distance Afro-Eurasian exchange intensified across overland routes.",
+    "status": "approved",
+    "category": "economy",
+    "importance": 1,
+    "location": {
+      "label": "Chang'an (Xi'an)",
+      "lat": 34.34,
+      "lng": 108.94,
+      "precision": "city"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "-130",
+      "end": "-130",
+      "year_start": -130,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": -1299899,
+      "sort_end": -1298769,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": -130
+    }
+  },
+  {
+    "id": "ev_hijra_622",
+    "label": "Hijra (Muhammad's migration)",
+    "summary_short": "The Islamic community and calendar begin from this turning point.",
+    "status": "approved",
+    "category": "religion",
+    "importance": 1,
+    "location": {
+      "label": "Medina",
+      "lat": 24.47,
+      "lng": 39.61,
+      "precision": "city"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "622",
+      "end": "622",
+      "year_start": 622,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6220101,
+      "sort_end": 6221231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 622
+    }
+  },
+  {
     "id": "ev_imperialism_agadir_crisis_1911",
     "label": "Agadir Crisis",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -435,6 +791,9 @@
     "label": "Algeciras Conference",
     "summary_short": "European powers and the US met at Algeciras to settle Moroccan disputes, exposing fragile great-power cooperation.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -468,6 +827,9 @@
     "label": "Anglo-Japanese Alliance signed",
     "summary_short": "Britain and Japan formed an alliance to balance Russian influence in East Asia and protect imperial interests.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -504,6 +866,9 @@
     "label": "Battle of Adwa",
     "summary_short": "Ethiopian forces defeated Italy at Adwa, becoming a major anti-colonial victory during the Scramble for Africa.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -545,6 +910,9 @@
     "label": "Berlin Conference begins",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -576,6 +944,9 @@
     "label": "Berlin Conference ends",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -605,6 +976,9 @@
     "label": "Boer War ends",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -634,6 +1008,9 @@
     "label": "Boxer Rebellion",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -663,6 +1040,9 @@
     "label": "British occupation of Egypt",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -694,6 +1074,9 @@
     "label": "British South Africa Company receives royal charter",
     "summary_short": "Britain granted Cecil Rhodes's company authority to administer and expand control in parts of southern Africa.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -732,6 +1115,9 @@
     "label": "Congo Free State established",
     "summary_short": "Leopold II secured international recognition for the Congo Free State under personal rule, intensifying extractive colonial governance.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -771,6 +1157,9 @@
     "label": "Fashoda Incident",
     "summary_short": "French and British forces confronted each other in Sudan, testing imperial rivalry before a negotiated French withdrawal.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -812,6 +1201,9 @@
     "label": "First Balkan War",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -841,6 +1233,9 @@
     "label": "First Moroccan Crisis",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -870,6 +1265,9 @@
     "label": "First Sino-Japanese War begins",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -899,6 +1297,9 @@
     "label": "Japan annexes Korea",
     "summary_short": "Japan formally annexed Korea, consolidating colonial control after years of military and diplomatic pressure.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -935,6 +1336,9 @@
     "label": "Leopold II begins Congo Free State project",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -968,6 +1372,9 @@
     "label": "Open Door Notes issued",
     "summary_short": "US diplomatic notes called for equal commercial access in China, reflecting intensifying competition among imperial powers.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1004,6 +1411,9 @@
     "label": "Philippine-American War begins",
     "summary_short": "Conflict broke out between US forces and Filipino nationalists after Spain ceded the Philippines, redefining US imperial policy.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1040,6 +1450,9 @@
     "label": "Russo-Japanese War begins",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1069,6 +1482,9 @@
     "label": "Second Boer War begins",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1098,6 +1514,9 @@
     "label": "Spanish-American War",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1127,6 +1546,9 @@
     "label": "Suez Canal opens to navigation",
     "summary_short": "The Suez Canal created a shorter sea route between Europe and Asia, raising Egypt's strategic importance for imperial powers.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1165,6 +1587,9 @@
     "label": "Treaty of Portsmouth",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1194,6 +1619,9 @@
     "label": "Treaty of Shimonoseki",
     "summary_short": null,
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1223,6 +1651,9 @@
     "label": "Triple Intervention pressures Japan after Sino-Japanese War",
     "summary_short": "Russia, France, and Germany forced Japan to revise postwar gains, deepening Japanese distrust of European power politics.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1256,6 +1687,9 @@
     "label": "United States annexes Hawaii",
     "summary_short": "The United States formally annexed Hawaii, expanding its strategic position across Pacific imperial networks.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -1288,10 +1722,45 @@
     }
   },
   {
+    "id": "ev_mehmed_constantinople_1453",
+    "label": "Ottoman conquest of Constantinople",
+    "summary_short": "The conquest reset power balances in eastern Mediterranean geopolitics.",
+    "status": "approved",
+    "category": "war",
+    "importance": 1,
+    "location": {
+      "label": "Constantinople (Istanbul)",
+      "lat": 41.01,
+      "lng": 28.97,
+      "precision": "city"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1453",
+      "end": "1453",
+      "year_start": 1453,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14530101,
+      "sort_end": 14531231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1453
+    }
+  },
+  {
     "id": "ev_meiji_abolish_han_1871",
     "label": "Abolition of domains and establishment of prefectures",
     "summary_short": "The han domains were abolished and replaced by prefectures, establishing a centralized system for modern state-building.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1330,6 +1799,9 @@
     "label": "Annexation of Korea",
     "summary_short": "Through the Japan–Korea Annexation Treaty, Japan colonized the Korean Peninsula and intensified imperial expansion.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1368,6 +1840,9 @@
     "label": "Boshin War",
     "summary_short": "A civil war between pro-shogunate and pro-imperial forces ended in victory for the new imperial government, making the regime transition decisive.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1406,6 +1881,9 @@
     "label": "Charter Oath proclaimed",
     "summary_short": "The new government announced guiding principles for national governance, emphasizing broad deliberation and the adoption of knowledge from abroad.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1444,6 +1922,9 @@
     "label": "Conscription Ordinance issued",
     "summary_short": "The government promulgated conscription to form a modern national army, shifting away from a samurai-centered military system.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1482,6 +1963,9 @@
     "label": "Promulgation of the Meiji Constitution",
     "summary_short": "The Meiji Constitution was promulgated as the framework of a modern constitutional order, codifying key institutions of governance.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1520,6 +2004,9 @@
     "label": "Opening of the Imperial Diet",
     "summary_short": "The Imperial Diet convened, beginning electoral and parliamentary politics in national governance.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1558,6 +2045,9 @@
     "label": "Death of Emperor Meiji",
     "summary_short": "Emperor Meiji's death marked the end of the Meiji era and a turning point in Japan's first phase of modernization.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1594,6 +2084,9 @@
     "label": "Treaty of Kanagawa signed",
     "summary_short": "The Treaty of Kanagawa opened Shimoda and Hakodate to U.S. ships, marking a major reorganization of Japan's foreign relations.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1633,6 +2126,9 @@
     "label": "Arrival of Commodore Perry",
     "summary_short": "Commodore Perry's U.S. fleet arrived and pressured the Tokugawa shogunate to open the country, beginning the shift away from sakoku (closed-country) policy.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1672,6 +2168,9 @@
     "label": "Peace settlement of the Russo-Japanese War (Treaty of Portsmouth)",
     "summary_short": "The peace settlement confirmed Japan's expanded interests internationally and raised its status among the great powers.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1710,6 +2209,9 @@
     "label": "First Sino-Japanese War",
     "summary_short": "Conflict over the Korean Peninsula led to war with Qing China, and Japan's victory reshaped the East Asian order.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1744,10 +2246,45 @@
     }
   },
   {
+    "id": "ev_mongol_empire_formation_1206",
+    "label": "Mongol Empire founded under Chinggis Khan",
+    "summary_short": "Steppe conquest built the largest contiguous land empire in history.",
+    "status": "approved",
+    "category": "war",
+    "importance": 1,
+    "location": {
+      "label": "Khentii region",
+      "lat": 47.7,
+      "lng": 109,
+      "precision": "region"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1206",
+      "end": "1206",
+      "year_start": 1206,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 12060101,
+      "sort_end": 12061231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1206
+    }
+  },
+  {
     "id": "ev_napoleon_coup_18_brumaire_1799",
     "label": "Coup of 18 Brumaire",
     "summary_short": "Napoleon Bonaparte seized power in the Coup of 18 Brumaire, ending the Directory and establishing the Consulate.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1800,6 +2337,9 @@
     "label": "Napoleon Crowned Emperor",
     "summary_short": "Napoleon's coronation as Emperor symbolized a new political order that preserved some revolutionary changes while consolidating personal rule.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1847,6 +2387,9 @@
     "label": "Penydarren steam locomotive run (Trevithick)",
     "summary_short": "A landmark early rail journey powered by a steam locomotive, demonstrating the feasibility of steam traction on rails.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -1875,6 +2418,9 @@
     "label": "Power loom patented (Edmund Cartwright)",
     "summary_short": "Cartwright’s power loom mechanized weaving, helping shift textile production further into factories.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -1899,10 +2445,45 @@
     }
   },
   {
+    "id": "ev_qin_unification_221bce",
+    "label": "Qin unifies China",
+    "summary_short": "Political unification established foundations of imperial China.",
+    "status": "approved",
+    "category": "politics",
+    "importance": 1,
+    "location": {
+      "label": "Xianyang region",
+      "lat": 34.36,
+      "lng": 108.71,
+      "precision": "region"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "-221",
+      "end": "-221",
+      "year_start": -221,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": -2209899,
+      "sort_end": -2208769,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": -221
+    }
+  },
+  {
     "id": "ev_rainhill_trials_rocket_1829",
     "label": "Rainhill Trials won by Stephenson’s Rocket",
     "summary_short": "Rocket’s success at the Rainhill Trials helped convince investors and engineers that locomotive-hauled railways were viable at scale.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -1931,6 +2512,9 @@
     "label": "Reign of Terror",
     "summary_short": "A radical phase of the Revolution marked by emergency politics, intense repression, and struggles over how to defend the revolutionary state.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1980,10 +2564,45 @@
     }
   },
   {
+    "id": "ev_song_commercial_revolution_11c",
+    "label": "Song commercial revolution",
+    "summary_short": "Monetization and urban markets deepened premodern economic complexity.",
+    "status": "approved",
+    "category": "economy",
+    "importance": 1,
+    "location": {
+      "label": "Kaifeng region",
+      "lat": 34.8,
+      "lng": 114.3,
+      "precision": "region"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1050",
+      "end": "1050",
+      "year_start": 1050,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 10500101,
+      "sort_end": 10501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1050
+    }
+  },
+  {
     "id": "ev_spinning_jenny_invented_1764",
     "label": "Spinning jenny invented (James Hargreaves)",
     "summary_short": "A multi-spindle spinning machine that greatly increased yarn output and helped propel mechanized textile production.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -2012,6 +2631,9 @@
     "label": "Spinning jenny patented (James Hargreaves)",
     "summary_short": "Hargreaves secured a patent for the spinning jenny, helping spread multi-spindle spinning as textile production mechanized.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -2038,6 +2660,9 @@
     "label": "Spinning mule invented (Samuel Crompton)",
     "summary_short": "Crompton’s spinning mule combined features of earlier spinning machines and enabled large-scale production of high-quality yarn.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -2066,6 +2691,9 @@
     "label": "Storming of the Bastille",
     "summary_short": "The fall of the Bastille became a powerful symbol of popular action and the weakening of royal authority in revolutionary France.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -2109,10 +2737,45 @@
     }
   },
   {
+    "id": "ev_tang_peak_7c",
+    "label": "Tang cosmopolitan expansion",
+    "summary_short": "Tang-era networks amplified exchange across East and Central Asia.",
+    "status": "approved",
+    "category": "culture",
+    "importance": 1,
+    "location": {
+      "label": "Chang'an (Xi'an)",
+      "lat": 34.34,
+      "lng": 108.94,
+      "precision": "city"
+    },
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "650",
+      "end": "650",
+      "year_start": 650,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6500101,
+      "sort_end": 6501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 650
+    }
+  },
+  {
     "id": "ev_tennis_court_oath_1789",
     "label": "Tennis Court Oath",
     "summary_short": "Representatives of the Third Estate pledged not to separate until France had a constitution, marking a decisive break with royal authority.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -2160,6 +2823,9 @@
     "label": "Thermidorian Reaction",
     "summary_short": "The Thermidorian Reaction marked a political turn after the Terror, including the fall of Robespierre and a shift away from radical Jacobin dominance.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -2206,6 +2872,9 @@
     "label": "Water frame patented (Richard Arkwright)",
     "summary_short": "Arkwright’s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],
@@ -2234,6 +2903,9 @@
     "label": "Watt’s separate condenser patented (steam engine efficiency)",
     "summary_short": "James Watt’s separate condenser greatly improved steam engine efficiency, enabling broader industrial use beyond mines.",
     "status": "approved",
+    "category": null,
+    "importance": null,
+    "location": null,
     "question_types": [
       "timeline_before_after"
     ],

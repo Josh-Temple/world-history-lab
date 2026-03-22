@@ -2466,5 +2466,380 @@
     ],
     "status": "approved",
     "content_origin": "structured_external"
+  },
+  {
+    "id": "ev_cyrus_founds_achaemenid_550bce",
+    "label": "Cyrus founds the Achaemenid Empire",
+    "time": {
+      "year_start": -550
+    },
+    "question_types": [],
+    "tags": [
+      "empire",
+      "persia",
+      "west-asia",
+      "ancient"
+    ],
+    "summary_short": "Persian imperial expansion created one of the first large multiethnic empires.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "politics",
+    "location": {
+      "label": "Pasargadae region",
+      "lat": 30.2,
+      "lng": 53.18,
+      "precision": "region"
+    }
+  },
+  {
+    "id": "ev_buddha_enlightenment_5c_bce",
+    "label": "Siddhartha Gautama's enlightenment (traditional)",
+    "time": {
+      "year_start": -528
+    },
+    "question_types": [],
+    "tags": [
+      "religion",
+      "south-asia",
+      "buddhism",
+      "ancient"
+    ],
+    "summary_short": "Buddhism emerged as a major religious and philosophical tradition.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "religion",
+    "location": {
+      "label": "Bodh Gaya",
+      "lat": 24.7,
+      "lng": 84.99,
+      "precision": "city"
+    }
+  },
+  {
+    "id": "ev_alexander_gaugamela_331bce",
+    "label": "Alexander defeats Persia at Gaugamela",
+    "time": {
+      "year_start": -331
+    },
+    "question_types": [],
+    "tags": [
+      "war",
+      "hellenistic",
+      "west-asia",
+      "ancient"
+    ],
+    "summary_short": "Macedonian victory accelerated Hellenistic cultural spread.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "war",
+    "location": {
+      "label": "Gaugamela region",
+      "lat": 36.36,
+      "lng": 43.13,
+      "precision": "region"
+    }
+  },
+  {
+    "id": "ev_ashoka_kalinga_261bce",
+    "label": "Ashoka's Kalinga War and turn to Dharma",
+    "time": {
+      "year_start": -261
+    },
+    "question_types": [],
+    "tags": [
+      "south-asia",
+      "religion",
+      "empire",
+      "ancient"
+    ],
+    "summary_short": "Mauryan rule pivoted toward Buddhist statecraft and moral governance.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "religion",
+    "location": {
+      "label": "Dhauli region",
+      "lat": 20.19,
+      "lng": 85.84,
+      "precision": "region"
+    }
+  },
+  {
+    "id": "ev_qin_unification_221bce",
+    "label": "Qin unifies China",
+    "time": {
+      "year_start": -221
+    },
+    "question_types": [],
+    "tags": [
+      "east-asia",
+      "china",
+      "empire",
+      "ancient"
+    ],
+    "summary_short": "Political unification established foundations of imperial China.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "politics",
+    "location": {
+      "label": "Xianyang region",
+      "lat": 34.36,
+      "lng": 108.71,
+      "precision": "region"
+    }
+  },
+  {
+    "id": "ev_han_zhangqian_2c_bce",
+    "label": "Han missions open early Silk Road links",
+    "time": {
+      "year_start": -130
+    },
+    "question_types": [],
+    "tags": [
+      "east-asia",
+      "trade",
+      "silk-road",
+      "ancient"
+    ],
+    "summary_short": "Long-distance Afro-Eurasian exchange intensified across overland routes.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "economy",
+    "location": {
+      "label": "Chang'an (Xi'an)",
+      "lat": 34.34,
+      "lng": 108.94,
+      "precision": "city"
+    }
+  },
+  {
+    "id": "ev_augustus_principate_27bce",
+    "label": "Augustus establishes the Principate",
+    "time": {
+      "year_start": -27
+    },
+    "question_types": [],
+    "tags": [
+      "rome",
+      "politics",
+      "empire",
+      "ancient"
+    ],
+    "summary_short": "Roman imperial institutions stabilized Mediterranean governance for centuries.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "politics",
+    "location": {
+      "label": "Rome",
+      "lat": 41.9,
+      "lng": 12.5,
+      "precision": "city"
+    }
+  },
+  {
+    "id": "ev_constantine_edict_milan_313",
+    "label": "Edict of Milan",
+    "time": {
+      "year_start": 313
+    },
+    "question_types": [],
+    "tags": [
+      "rome",
+      "christianity",
+      "religion",
+      "late-antiquity"
+    ],
+    "summary_short": "Imperial toleration transformed Christianity's status in the Roman world.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "religion",
+    "location": {
+      "label": "Milan",
+      "lat": 45.46,
+      "lng": 9.19,
+      "precision": "city"
+    }
+  },
+  {
+    "id": "ev_hijra_622",
+    "label": "Hijra (Muhammad's migration)",
+    "time": {
+      "year_start": 622
+    },
+    "question_types": [],
+    "tags": [
+      "islam",
+      "religion",
+      "west-asia",
+      "medieval"
+    ],
+    "summary_short": "The Islamic community and calendar begin from this turning point.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "religion",
+    "location": {
+      "label": "Medina",
+      "lat": 24.47,
+      "lng": 39.61,
+      "precision": "city"
+    }
+  },
+  {
+    "id": "ev_tang_peak_7c",
+    "label": "Tang cosmopolitan expansion",
+    "time": {
+      "year_start": 650
+    },
+    "question_types": [],
+    "tags": [
+      "east-asia",
+      "tang",
+      "culture",
+      "medieval"
+    ],
+    "summary_short": "Tang-era networks amplified exchange across East and Central Asia.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "culture",
+    "location": {
+      "label": "Chang'an (Xi'an)",
+      "lat": 34.34,
+      "lng": 108.94,
+      "precision": "city"
+    }
+  },
+  {
+    "id": "ev_charlemagne_crowned_800",
+    "label": "Charlemagne crowned emperor",
+    "time": {
+      "year_start": 800
+    },
+    "question_types": [],
+    "tags": [
+      "europe",
+      "medieval",
+      "politics",
+      "empire"
+    ],
+    "summary_short": "A new western imperial claim reshaped medieval European politics.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "politics",
+    "location": {
+      "label": "Rome",
+      "lat": 41.9,
+      "lng": 12.5,
+      "precision": "city"
+    }
+  },
+  {
+    "id": "ev_song_commercial_revolution_11c",
+    "label": "Song commercial revolution",
+    "time": {
+      "year_start": 1050
+    },
+    "question_types": [],
+    "tags": [
+      "east-asia",
+      "song",
+      "economy",
+      "medieval"
+    ],
+    "summary_short": "Monetization and urban markets deepened premodern economic complexity.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "economy",
+    "location": {
+      "label": "Kaifeng region",
+      "lat": 34.8,
+      "lng": 114.3,
+      "precision": "region"
+    }
+  },
+  {
+    "id": "ev_mongol_empire_formation_1206",
+    "label": "Mongol Empire founded under Chinggis Khan",
+    "time": {
+      "year_start": 1206
+    },
+    "question_types": [],
+    "tags": [
+      "steppe",
+      "empire",
+      "war",
+      "medieval"
+    ],
+    "summary_short": "Steppe conquest built the largest contiguous land empire in history.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "war",
+    "location": {
+      "label": "Khentii region",
+      "lat": 47.7,
+      "lng": 109.0,
+      "precision": "region"
+    }
+  },
+  {
+    "id": "ev_mehmed_constantinople_1453",
+    "label": "Ottoman conquest of Constantinople",
+    "time": {
+      "year_start": 1453
+    },
+    "question_types": [],
+    "tags": [
+      "ottoman",
+      "war",
+      "west-asia",
+      "medieval"
+    ],
+    "summary_short": "The conquest reset power balances in eastern Mediterranean geopolitics.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "war",
+    "location": {
+      "label": "Constantinople (Istanbul)",
+      "lat": 41.01,
+      "lng": 28.97,
+      "precision": "city"
+    }
+  },
+  {
+    "id": "ev_columbus_1492",
+    "label": "Columbus reaches the Caribbean",
+    "time": {
+      "year_start": 1492
+    },
+    "question_types": [],
+    "tags": [
+      "atlantic",
+      "exploration",
+      "americas",
+      "early-modern"
+    ],
+    "summary_short": "Sustained transatlantic contact transformed global demography and trade.",
+    "status": "approved",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "exploration",
+    "location": {
+      "label": "San Salvador (traditional)",
+      "lat": 24.06,
+      "lng": -74.47,
+      "precision": "approx"
+    }
   }
 ]
