@@ -159,11 +159,18 @@ Next:
 - Registered a root-scoped service worker that precaches the app shell and uses runtime caching for JSON data requests.
 - Wired every app entry page to the shared PWA assets so World History Lab can be installed and reopened offline with cached content.
 
+## Recent updates (2026-03-22)
+
+- Added a shared `apps/shared/event-filters.js` module so Event Recognition, Causality Builder, and Timeline Trainer can reuse the same status-aware and eligibility-aware event filtering rules.
+- Introduced lightweight cross-app "Next step" guidance inside Timeline Trainer, Event Recognition, and Causality Builder to reinforce the intended practice loop: chronology → recognition → causality → narrative review.
+- Kept derive output current after the filtering/UI refactor so shared data artifacts stay aligned with the learner-facing apps.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
 - **People links need continued expansion**: the new People Recognition mode is live, but more units and figures still need structured `people_ids` coverage for broader actor practice.
 - **Keep learning-flow consistency across apps**: Timeline Trainer, Event Recognition, People Recognition, Causality Builder, and History Player should keep aligned setup language and progress expectations.
+- **Finish shared filtering adoption across remaining apps**: People Recognition still has some app-local eligibility logic that could move onto the new shared filter layer next.
 
 ## Roadmap (short)
 

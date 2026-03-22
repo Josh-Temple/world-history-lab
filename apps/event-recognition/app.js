@@ -1,4 +1,5 @@
-import { filterEvents, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
+import { filterDerivedEvents, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
+import { isRecognitionReady } from "../shared/event-filters.js";
 
 const questionElement = document.getElementById("question");
 const choicesElement = document.getElementById("choices");
@@ -13,6 +14,9 @@ const eligibilityHint = document.getElementById("eligibility-hint");
 const progressElement = document.getElementById("progress");
 const sessionStatusElement = document.getElementById("session-status");
 const summaryElement = document.getElementById("summary");
+const nextStepElement = document.getElementById("next-step");
+const nextStepTextElement = document.getElementById("next-step-text");
+const nextStepLinkElement = document.getElementById("next-step-link");
 
 const state = {
   eventsById: new Map(),
@@ -34,22 +38,15 @@ function shuffle(items) {
   return copy;
 }
 
-function isRecognitionEligible(event) {
-  if (!event || !Number.isFinite(event?.time?.year_start)) return false;
-  if (typeof event.summary_short !== "string" || !event.summary_short.trim()) return false;
-  const types = new Set(event.question_types || []);
-  return types.has("what_happened") || types.has("significance") || types.has("cause_and_effect");
-}
-
 function getRecognitionPool() {
-  return filterEvents([...state.eventsById.values()], {
-    reviewedOnly: qualitySelect.value === "reviewed",
-    predicate: isRecognitionEligible,
+  return filterDerivedEvents([...state.eventsById.values()], {
+    status: qualitySelect.value,
+    predicate: isRecognitionReady,
   });
 }
 
 function getScopedPool() {
-  return filterEvents(getRecognitionPool(), {
+  return filterDerivedEvents(getRecognitionPool(), {
     unitId: practiceModeSelect.value === "unit" ? unitSelect.value : null,
   });
 }
@@ -110,6 +107,16 @@ function resetRoundUi() {
   nextButton.disabled = true;
 }
 
+function hideNextStep() {
+  nextStepElement.hidden = true;
+}
+
+function showNextStep() {
+  nextStepTextElement.textContent = "Now practice cause-and-effect relationships in Causality Builder.";
+  nextStepLinkElement.href = "../causality-builder/";
+  nextStepElement.hidden = false;
+}
+
 function showSummary() {
   state.sessionActive = false;
   state.currentQuestion = null;
@@ -129,9 +136,9 @@ function showSummary() {
     <p>${getFeedbackMessage(accuracy)}</p>
     <div class="summary-actions">
       <button type="button" class="summary-button" id="retry-session">Retry session</button>
-      <a class="summary-link" href="../causality-builder/">Next step: Causality Builder</a>
     </div>
   `;
+  showNextStep();
 
   const retryButton = document.getElementById("retry-session");
   if (retryButton) {
@@ -181,6 +188,7 @@ function renderQuestion() {
   questionElement.textContent = buildClue(answer);
   sessionStatusElement.textContent = `Answer the clue, then continue until you finish all ${state.totalQuestions} questions.`;
   summaryElement.hidden = true;
+  hideNextStep();
   nextButton.hidden = false;
   resetRoundUi();
   updateProgress();
@@ -244,6 +252,7 @@ function startSession() {
   state.correctAnswers = 0;
   state.sessionActive = true;
   summaryElement.hidden = true;
+  hideNextStep();
   nextButton.hidden = false;
   renderQuestion();
 }

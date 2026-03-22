@@ -1,4 +1,5 @@
-import { filterEvents, loadDerivedEvents } from "../shared/data-access.js";
+import { filterDerivedEvents, loadDerivedEvents } from "../shared/data-access.js";
+import { isCausalityReady } from "../shared/event-filters.js";
 
 const sourceYearEl = document.getElementById('source-year');
 const sourceLabelEl = document.getElementById('source-label');
@@ -9,6 +10,11 @@ const explanationEl = document.getElementById('explanation');
 const nextButton = document.getElementById('next-button');
 const statusLineEl = document.getElementById('status-line');
 const questionCountEl = document.getElementById('question-count');
+const nextStepEl = document.getElementById('next-step');
+const nextStepTextEl = document.getElementById('next-step-text');
+const nextStepLinkEl = document.getElementById('next-step-link');
+
+const PRACTICE_LOOP_THRESHOLD = 5;
 
 const state = {
   events: [],
@@ -35,10 +41,6 @@ function getEffectIds(event) {
       return null;
     })
     .filter(Boolean);
-}
-
-function isCausal(event) {
-  return getEffectIds(event).length > 0 && Number.isFinite(event?.time?.year_start);
 }
 
 function shareAUnit(leftId, rightId) {
@@ -85,6 +87,17 @@ function setFeedback(message, kind = '') {
   feedbackEl.className = `feedback ${kind}`.trim();
 }
 
+function updateNextStep() {
+  if (state.answered < PRACTICE_LOOP_THRESHOLD) {
+    nextStepEl.hidden = true;
+    return;
+  }
+
+  nextStepTextEl.textContent = 'Review the full narrative sequence next in History Player.';
+  nextStepLinkEl.href = '../history-player/';
+  nextStepEl.hidden = false;
+}
+
 function renderQuestion() {
   const question = generateQuestion(state.pool);
   state.currentQuestion = question;
@@ -98,6 +111,7 @@ function renderQuestion() {
     sourceSummaryEl.textContent = 'The current dataset has causal links, but this slice could not form a full 3-choice question.';
     setFeedback('Unable to generate a question.', 'incorrect');
     statusLineEl.textContent = 'Try refreshing after adding more linked effects.';
+    updateNextStep();
     return;
   }
 
@@ -107,6 +121,7 @@ function renderQuestion() {
   setFeedback('Choose the event that most directly follows from the source event.');
   statusLineEl.textContent = `${state.pool.length} causality-ready source events available.`;
   questionCountEl.textContent = `Question ${state.answered + 1}`;
+  updateNextStep();
 
   for (const option of question.options) {
     const button = document.createElement('button');
@@ -139,6 +154,7 @@ function handleAnswer(selectedButton, option) {
   explanationEl.textContent = `${source.label} (${source.time.year_start}) led toward ${correct.label} (${correct.time.year_start}).`;
   nextButton.disabled = false;
   state.answered += 1;
+  updateNextStep();
 }
 
 async function init() {
@@ -147,9 +163,10 @@ async function init() {
     state.eventMap = new Map(state.events.map((event) => [event.id, event]));
 
     const unresolvedEffects = [];
-    state.pool = filterEvents(state.events, {
+    state.pool = filterDerivedEvents(state.events, {
+      status: "reviewed",
       predicate: (event) => {
-        if (!isCausal(event)) return false;
+        if (!isCausalityReady(event)) return false;
         const resolvableEffects = getEffectIds(event).filter((effectId) => state.eventMap.has(effectId));
         if (resolvableEffects.length === 0) {
           unresolvedEffects.push(event.id);
