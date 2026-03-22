@@ -1,4 +1,4 @@
-export const REVIEWED_PLUS = new Set(["reviewed", "approved"]);
+import { filterEvents, REVIEWED_PLUS } from "./event-filters.js";
 
 function appUrl(relativePath) {
   return new URL(relativePath, window.location.href).toString();
@@ -20,20 +20,13 @@ export async function loadUnitsIndex() {
   return fetchJson("../../derived/index.units.json", "derived units");
 }
 
-export function filterEvents(events, options = {}) {
-  return events.filter((event) => {
-    if (options.reviewedOnly && !REVIEWED_PLUS.has(event.status)) {
-      return false;
-    }
-    if (options.unitId && !Array.isArray(event.unit_ids)) {
-      return false;
-    }
-    if (options.unitId && !event.unit_ids.includes(options.unitId)) {
-      return false;
-    }
-    if (typeof options.predicate === "function" && !options.predicate(event)) {
-      return false;
-    }
-    return true;
+export { filterEvents, REVIEWED_PLUS };
+
+export function filterDerivedEvents(events, options = {}) {
+  return filterEvents(events, {
+    status: options.reviewedOnly ? "reviewed" : options.status,
+    unit: options.unitId,
+    predicate: options.predicate,
+    requireSummary: options.requireSummary,
   });
 }

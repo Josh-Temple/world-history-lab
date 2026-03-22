@@ -1,31 +1,4 @@
-function hasTimelineBeforeAfter(eventRecord) {
-  return (
-    eventRecord &&
-    Array.isArray(eventRecord.question_types) &&
-    eventRecord.question_types.includes("timeline_before_after")
-  );
-}
-
-function hasQuestionType(eventRecord, questionType) {
-  if (!eventRecord || !Array.isArray(eventRecord.question_types)) {
-    return false;
-  }
-
-  if (Array.isArray(questionType)) {
-    return questionType.some((type) => eventRecord.question_types.includes(type));
-  }
-
-  return eventRecord.question_types.includes(questionType);
-}
-
-function hasNumericYearStart(eventRecord) {
-  return (
-    eventRecord &&
-    eventRecord.time &&
-    typeof eventRecord.time.year_start === "number" &&
-    Number.isFinite(eventRecord.time.year_start)
-  );
-}
+import { filterEvents as filterSharedEvents, isTimelineReady } from "../../../shared/event-filters.js";
 
 function randomInt(max) {
   return Math.floor(Math.random() * max);
@@ -80,33 +53,23 @@ export function resolveUnitEvents(unit, eventsById) {
   return { resolvedEvents, missingIds };
 }
 
-function getAllowedStatuses(minStatus) {
-  if (minStatus === "draft") {
-    return new Set(["draft", "reviewed", "approved"]);
-  }
-  return new Set(["reviewed", "approved"]);
-}
-
 export function filterEligibleEvents(events, scope, questionType) {
-  const allowedStatuses = getAllowedStatuses(scope.minStatus);
-  return events.filter((eventRecord) => {
-    return (
-      hasNumericYearStart(eventRecord) &&
-      hasQuestionType(eventRecord, questionType) &&
-      typeof eventRecord.status === "string" &&
-      allowedStatuses.has(eventRecord.status)
-    );
+  return filterSharedEvents(events, {
+    status: scope.minStatus,
+    predicate: (eventRecord) => isTimelineReady(eventRecord, questionType),
   });
 }
 
 export function filterTimelineCandidateEvents(events) {
-  return events.filter((eventRecord) => {
-    return hasTimelineBeforeAfter(eventRecord) && hasNumericYearStart(eventRecord);
+  return filterSharedEvents(events, {
+    predicate: (eventRecord) => isTimelineReady(eventRecord, "timeline_before_after"),
   });
 }
 
 export function filterQuestionTypeCandidates(events, questionType) {
-  return events.filter((eventRecord) => hasNumericYearStart(eventRecord) && hasQuestionType(eventRecord, questionType));
+  return filterSharedEvents(events, {
+    predicate: (eventRecord) => isTimelineReady(eventRecord, questionType),
+  });
 }
 
 export function generateBeforeAfterQuestion(events, options = {}) {

@@ -1,4 +1,5 @@
 import { loadTimelineSeedData } from "./data/loaders.js";
+import { filterEvents as filterSharedEvents } from "../../shared/event-filters.js";
 import {
   createPairKey,
   explainQuestionAnswer,
@@ -107,6 +108,9 @@ const ui = {
   optionB: document.getElementById("option-b"),
   optionC: document.getElementById("option-c"),
   resultText: document.getElementById("result-text"),
+  nextStep: document.getElementById("next-step"),
+  nextStepText: document.getElementById("next-step-text"),
+  nextStepLink: document.getElementById("next-step-link"),
   nextButton: document.getElementById("next-button"),
   statTotal: document.getElementById("stat-total"),
   statCorrect: document.getElementById("stat-correct"),
@@ -123,6 +127,8 @@ const ui = {
   errorText: document.getElementById("error-text"),
   retryButton: document.getElementById("retry-button"),
 };
+
+const PRACTICE_LOOP_THRESHOLD = 5;
 
 function getQuestionTypeLabel(type) {
   if (type === QUESTION_TYPES.EARLIEST_OF_3) {
@@ -175,10 +181,10 @@ function getDifficultyLabelText(difficulty) {
 
 function filterByDifficulty(events, difficulty) {
   if (difficulty === DIFFICULTY.BEGINNER) {
-    return events.filter((event) => event.status === "reviewed" || event.status === "approved").slice(0, BEGINNER_EVENT_LIMIT);
+    return filterSharedEvents(events, { status: "reviewed" }).slice(0, BEGINNER_EVENT_LIMIT);
   }
   if (difficulty === DIFFICULTY.INTERMEDIATE) {
-    return events.filter((event) => typeof event.status === "string");
+    return filterSharedEvents(events, { status: "draft" });
   }
   return events;
 }
@@ -283,6 +289,17 @@ function setResultMessage(message, resultType = "neutral") {
   ui.resultText.classList.toggle("incorrect", resultType === "incorrect");
 }
 
+function updateNextStepVisibility() {
+  if (state.totalAnswered < PRACTICE_LOOP_THRESHOLD) {
+    ui.nextStep.hidden = true;
+    return;
+  }
+
+  ui.nextStepText.textContent = "Now test your recall with Event Recognition.";
+  ui.nextStepLink.href = "../event-recognition/";
+  ui.nextStep.hidden = false;
+}
+
 function setError(message, { allowRetry = false } = {}) {
   ui.errorText.textContent = message;
   ui.errorPanel.hidden = false;
@@ -311,6 +328,7 @@ function updateStats() {
   ui.statEarliestCorrect.textContent = String(state.correctByType[QUESTION_TYPES.EARLIEST_OF_3]);
   ui.statLatestAnswered.textContent = String(state.answeredByType[QUESTION_TYPES.LATEST_OF_3]);
   ui.statLatestCorrect.textContent = String(state.correctByType[QUESTION_TYPES.LATEST_OF_3]);
+  updateNextStepVisibility();
 }
 
 function renderQuestion(question) {
