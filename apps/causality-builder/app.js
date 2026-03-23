@@ -1,5 +1,6 @@
 import { filterDerivedEvents, loadDerivedEvents } from "../shared/data-access.js";
 import { isCausalityReady } from "../shared/event-filters.js";
+import { recordResult } from "../shared/mastery-store.js";
 
 const sourceYearEl = document.getElementById('source-year');
 const sourceLabelEl = document.getElementById('source-label');
@@ -151,6 +152,7 @@ function handleAnswer(selectedButton, option) {
     setFeedback('Incorrect.', 'incorrect');
   }
 
+  recordResult(source.id, isCorrect);
   explanationEl.textContent = `${source.label} (${source.time.year_start}) led toward ${correct.label} (${correct.time.year_start}).`;
   nextButton.disabled = false;
   state.answered += 1;

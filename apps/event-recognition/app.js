@@ -1,5 +1,6 @@
 import { filterDerivedEvents, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
 import { isRecognitionReady } from "../shared/event-filters.js";
+import { getAllStats, recordResult } from "../shared/mastery-store.js";
 
 const questionElement = document.getElementById("question");
 const choicesElement = document.getElementById("choices");
@@ -13,6 +14,8 @@ const sessionLengthSelect = document.getElementById("session-length");
 const eligibilityHint = document.getElementById("eligibility-hint");
 const progressElement = document.getElementById("progress");
 const sessionStatusElement = document.getElementById("session-status");
+const adaptiveModeElement = document.getElementById("adaptive-mode");
+const adaptiveIndicatorElement = document.getElementById("adaptive-indicator");
 const summaryElement = document.getElementById("summary");
 const nextStepElement = document.getElementById("next-step");
 const nextStepTextElement = document.getElementById("next-step-text");
@@ -26,6 +29,7 @@ const state = {
   totalQuestions: 10,
   correctAnswers: 0,
   sessionActive: false,
+  recentAnswerIds: [],
 };
 
 function randomInt(max) { return Math.floor(Math.random() * max); }
@@ -46,9 +50,93 @@ function getRecognitionPool() {
 }
 
 function getScopedPool() {
-  return filterDerivedEvents(getRecognitionPool(), {
+  const scopedEvents = filterDerivedEvents(getRecognitionPool(), {
     unitId: practiceModeSelect.value === "unit" ? unitSelect.value : null,
   });
+
+  if (!adaptiveModeElement.checked) {
+    return { pool: scopedEvents, adaptiveActive: false, adaptiveMessage: "" };
+  }
+
+  const adaptive = getAdaptivePool(scopedEvents);
+  return { pool: adaptive.pool, adaptiveActive: adaptive.active, adaptiveMessage: adaptive.reason };
+}
+
+
+const ADAPTIVE_POOL_SIZE = 10;
+const RECENT_ANSWER_LIMIT = 3;
+
+function getAttemptCount(stats) {
+  return stats.correct + stats.incorrect;
+}
+
+function getAccuracy(stats) {
+  const attempts = getAttemptCount(stats);
+  if (attempts === 0) return null;
+  return stats.correct / attempts;
+}
+
+function rankByWeakness(events) {
+  const stats = getAllStats();
+
+  return [...events].sort((left, right) => {
+    const leftStats = stats[left.id] || { correct: 0, incorrect: 0, last_seen: null };
+    const rightStats = stats[right.id] || { correct: 0, incorrect: 0, last_seen: null };
+    const leftAttempts = getAttemptCount(leftStats);
+    const rightAttempts = getAttemptCount(rightStats);
+
+    if (leftAttempts === 0 && rightAttempts > 0) return 1;
+    if (rightAttempts === 0 && leftAttempts > 0) return -1;
+
+    const leftAccuracy = getAccuracy(leftStats) ?? 1;
+    const rightAccuracy = getAccuracy(rightStats) ?? 1;
+    if (leftAccuracy !== rightAccuracy) return leftAccuracy - rightAccuracy;
+
+    if (leftAttempts !== rightAttempts) return rightAttempts - leftAttempts;
+
+    const leftSeen = leftStats.last_seen ?? 0;
+    const rightSeen = rightStats.last_seen ?? 0;
+    if (leftSeen !== rightSeen) return leftSeen - rightSeen;
+
+    return left.label.localeCompare(right.label);
+  });
+}
+
+function getAdaptivePool(events) {
+  const stats = getAllStats();
+  const attemptedEvents = events.filter((event) => getAttemptCount(stats[event.id] || { correct: 0, incorrect: 0 }) > 0);
+
+  if (attemptedEvents.length < 4) {
+    return {
+      pool: events,
+      active: false,
+      reason: 'Not enough mastery history yet. Using normal random practice.',
+    };
+  }
+
+  const ranked = rankByWeakness(attemptedEvents);
+  const weakestIds = new Set(ranked.slice(0, Math.min(ADAPTIVE_POOL_SIZE, ranked.length)).map((event) => event.id));
+  const recentAnswerIds = new Set(state.recentAnswerIds);
+  const preferred = events.filter((event) => weakestIds.has(event.id) && !recentAnswerIds.has(event.id));
+  const fallbackWeak = events.filter((event) => weakestIds.has(event.id));
+  const finalPool = preferred.length >= 4 ? preferred : fallbackWeak;
+
+  return {
+    pool: finalPool.length >= 4 ? finalPool : events,
+    active: finalPool.length >= 4,
+    reason: finalPool.length >= 4 ? 'Adaptive mode: focusing on weak events.' : 'Adaptive mode requested, but too few weak-event candidates were available. Using the full pool.',
+  };
+}
+
+function updateAdaptiveIndicator(message = '') {
+  if (!adaptiveModeElement.checked) {
+    adaptiveIndicatorElement.hidden = true;
+    adaptiveIndicatorElement.textContent = '';
+    return;
+  }
+
+  adaptiveIndicatorElement.hidden = false;
+  adaptiveIndicatorElement.textContent = message || 'Adaptive mode active.';
 }
 
 function clearChoices() { choicesElement.innerHTML = ""; }
@@ -149,9 +237,10 @@ function showSummary() {
 }
 
 function renderQuestion() {
-  const activePool = getScopedPool();
+  const { pool: activePool, adaptiveActive, adaptiveMessage } = getScopedPool();
   const broaderPool = getRecognitionPool();
   updateEligibilityHint(activePool);
+  updateAdaptiveIndicator(adaptiveMessage);
 
   if (activePool.length < 4) {
     state.sessionActive = false;
@@ -186,7 +275,9 @@ function renderQuestion() {
   const options = shuffle([answer, ...distractors]);
   state.currentQuestion = { answer, options };
   questionElement.textContent = buildClue(answer);
-  sessionStatusElement.textContent = `Answer the clue, then continue until you finish all ${state.totalQuestions} questions.`;
+  sessionStatusElement.textContent = adaptiveActive
+    ? `Adaptive mode is active. Focus on weaker events while you finish all ${state.totalQuestions} questions.`
+    : `Answer the clue, then continue until you finish all ${state.totalQuestions} questions.`;
   summaryElement.hidden = true;
   hideNextStep();
   nextButton.hidden = false;
@@ -226,6 +317,10 @@ function handleChoice(choiceButton, option) {
     if (answerButton) answerButton.classList.add("correct");
   }
 
+  recordResult(answer.id, isCorrect);
+  state.recentAnswerIds.unshift(answer.id);
+  state.recentAnswerIds = state.recentAnswerIds.filter((eventId, index, array) => array.indexOf(eventId) === index).slice(0, RECENT_ANSWER_LIMIT);
+
   answerMetaElement.textContent = `${answer.label} (${answer.time.year_start}) · ${answerUnit?.title || "Unassigned unit"}. ${answer.summary_short.trim()}`;
 }
 
@@ -251,6 +346,7 @@ function startSession() {
   state.currentQuestionIndex = 0;
   state.correctAnswers = 0;
   state.sessionActive = true;
+  state.recentAnswerIds = [];
   summaryElement.hidden = true;
   hideNextStep();
   nextButton.hidden = false;
@@ -294,6 +390,7 @@ nextButton.addEventListener("click", handleAdvance);
 practiceModeSelect.addEventListener("change", handleSetupChange);
 unitSelect.addEventListener("change", handleSetupChange);
 qualitySelect.addEventListener("change", handleSetupChange);
+adaptiveModeElement.addEventListener("change", handleSetupChange);
 sessionLengthSelect.addEventListener("change", startSession);
 
 init();
