@@ -1,4 +1,5 @@
 import { loadTimelineSeedData } from "./data/loaders.js";
+import { recordResult } from "../../shared/mastery-store.js";
 import { filterEvents as filterSharedEvents } from "../../shared/event-filters.js";
 import {
   createPairKey,
@@ -744,6 +745,22 @@ function generateAndRenderNextQuestion() {
   }
 }
 
+function recordTimelineMastery(question, isCorrect) {
+  if (!question || !Array.isArray(question.options)) {
+    return;
+  }
+
+  const seenIds = new Set();
+  for (const option of question.options) {
+    if (!option?.id || seenIds.has(option.id)) {
+      continue;
+    }
+
+    seenIds.add(option.id);
+    recordResult(option.id, isCorrect);
+  }
+}
+
 function handleAnswer(optionIndex) {
   if (!state.currentQuestion || state.hasAnswered) {
     return;
@@ -768,6 +785,8 @@ function handleAnswer(optionIndex) {
   if (state.currentQuestion.isReview) {
     state.reviewAnswered += 1;
   }
+
+  recordTimelineMastery(state.currentQuestion, isCorrect);
 
   if (isCorrect) {
     state.correctAnswered += 1;

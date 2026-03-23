@@ -171,12 +171,19 @@ Next:
 - Upgraded `apps/history-player/` to filter on `importance`, require canonical player fields, and use canonical coordinates for map markers when available.
 - Shipped a first read-only `apps/overview/` route backed by `data/overview/*` so learners can bridge from drill practice into coarse survey learning.
 
+## Recent updates (2026-03-23)
+
+- Added a shared `apps/shared/mastery-store.js` module that persists per-event `{ correct, incorrect, last_seen }` practice stats in `localStorage` with safe empty-state and parse-fallback handling.
+- Integrated mastery recording into Event Recognition, Timeline Trainer, and Causality Builder so retrieval performance now persists across sessions instead of resetting on reload.
+- Added an adaptive **Focus on weak areas** mode to Event Recognition that reuses mastery data to prioritize lower-accuracy events while still falling back safely when history is sparse.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
 - **People links need continued expansion**: the new People Recognition mode is live, but more units and figures still need structured `people_ids` coverage for broader actor practice.
 - **Keep learning-flow consistency across apps**: Timeline Trainer, Event Recognition, People Recognition, Overview, Causality Builder, and History Player should keep aligned setup language and progress expectations.
 - **Finish shared filtering adoption across remaining apps**: People Recognition still has some app-local eligibility logic that could move onto the new shared filter layer next.
+- **Mastery is now local-only**: progress tracking is live in the browser via `localStorage`, but there is still no cross-device sync or true spaced-repetition scheduler yet.
 
 ## Roadmap (short)
 
