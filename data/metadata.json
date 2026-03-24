@@ -9,7 +9,8 @@
       "unit_french_revolution_napoleon",
       "unit_industrial_revolution",
       "unit_meiji_restoration",
-      "unit_age_of_imperialism"
+      "unit_age_of_imperialism",
+      "unit_french_revolution"
     ],
     "notes": "Core dataset now spans four registered units plus a canonical cross-era player slice for timeline, recognition, overview, and player-based practice."
   },

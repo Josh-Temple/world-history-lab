@@ -177,6 +177,13 @@ Next:
 - Integrated mastery recording into Event Recognition, Timeline Trainer, and Causality Builder so retrieval performance now persists across sessions instead of resetting on reload.
 - Added an adaptive **Focus on weak areas** mode to Event Recognition that reuses mastery data to prioritize lower-accuracy events while still falling back safely when history is sparse.
 
+## Recent updates (2026-03-24)
+
+- Added a new reviewed unit file: `data/units/fr_french_revolution.json` with 14 French Revolution events (1789-1799) designed for timeline, recognition, causality, and people-linked practice.
+- Expanded French Revolution event coverage in `data/events.json` with six new reviewed events (including the Women's March on Versailles, Flight to Varennes, and Directory establishment) and explicit causal `effects` links.
+- Expanded people coverage in `data/people.json` with reviewed records for Marie Antoinette and Georges Danton, and promoted existing French Revolution core figures to `reviewed` status for consistent linkage quality.
+- Registered the new unit in `data/units/index.json`, synchronized `data/metadata.json` scope coverage, and regenerated `/derived` artifacts.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
