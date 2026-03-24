@@ -29,3 +29,10 @@
 1. Fill `summary_short` gaps on older Imperialism events to reduce baseline dataset warnings and improve recognition quality.
 2. Add additional French Revolution people for richer person-event distractor quality (for example, `pe_lafayette`, `pe_jean_paul_marat`, `pe_abbe_sieyes`).
 3. Consider adding `source_refs` for the newly added French Revolution events and people to match the richer provenance style used in earlier seed records.
+
+## Incremental update (2026-03-24 · CI question-type fix)
+- Resolved GitHub Action failure in `node scripts/validate.mjs` caused by unknown question type `event_recognition` on six French Revolution events.
+- Updated those six event records in `data/events.json` to use metadata-supported `what_happened`.
+- Updated `data/units/fr_french_revolution.json` (`event-recognition.question_types`) from `event_recognition` to `what_happened` to keep app-profile taxonomy consistent.
+- Re-ran validation and derive scripts to confirm CI-green data integrity after the taxonomy correction.
+
