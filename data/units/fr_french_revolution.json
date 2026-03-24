@@ -61,7 +61,7 @@
     "event-recognition": {
       "enabled": true,
       "question_types": [
-        "event_recognition"
+        "what_happened"
       ],
       "session_defaults": {
         "questions_per_session": 10

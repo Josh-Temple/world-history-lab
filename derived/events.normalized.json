@@ -107,7 +107,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -272,7 +272,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ],
     "people_ids": [
       "pe_louis_xvi"
@@ -574,7 +574,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -757,7 +757,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ],
     "people_ids": [
       "pe_louis_xvi",
@@ -2733,7 +2733,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ],
     "people_ids": [
       "pe_georges_danton"
@@ -3140,7 +3140,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ],
     "people_ids": [
       "pe_louis_xvi",

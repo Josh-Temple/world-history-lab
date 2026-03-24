@@ -2862,7 +2862,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ]
   },
   {
@@ -2884,7 +2884,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ]
   },
   {
@@ -2907,7 +2907,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ]
   },
   {
@@ -2929,7 +2929,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ]
   },
   {
@@ -2951,7 +2951,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ]
   },
   {
@@ -2973,7 +2973,7 @@
       "timeline_before_after",
       "timeline_ordering",
       "causality_chain",
-      "event_recognition"
+      "what_happened"
     ]
   }
 ]

@@ -184,6 +184,12 @@ Next:
 - Expanded people coverage in `data/people.json` with reviewed records for Marie Antoinette and Georges Danton, and promoted existing French Revolution core figures to `reviewed` status for consistent linkage quality.
 - Registered the new unit in `data/units/index.json`, synchronized `data/metadata.json` scope coverage, and regenerated `/derived` artifacts.
 
+
+## Recent updates (2026-03-24 · CI validation fix)
+
+- Fixed question-type taxonomy drift in French Revolution records by replacing the non-enabled `event_recognition` type with the existing metadata-enabled `what_happened` type.
+- Updated `data/units/fr_french_revolution.json` event-recognition app profile to use `what_happened`, keeping unit config aligned with `data/metadata.json` and CI validation rules.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
