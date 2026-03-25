@@ -36,3 +36,21 @@
 - Updated `data/units/fr_french_revolution.json` (`event-recognition.question_types`) from `event_recognition` to `what_happened` to keep app-profile taxonomy consistent.
 - Re-ran validation and derive scripts to confirm CI-green data integrity after the taxonomy correction.
 
+
+## Incremental update (2026-03-25 · Year Estimation mode)
+- Added a new learner-facing app at `apps/year-estimation/` with standalone HTML/CSS/JS for rapid date-guessing practice from `data/events.json`.
+- Implemented year-guess submission flow with numeric input validation, absolute-error calculation, and graded feedback bands:
+  - **Excellent** for ≤5 years
+  - **Close** for ≤20 years
+  - **Far off** for >20 years
+- Added a temporal scoring helper (`scoreFromError`) and passed score/error context into mastery persistence for each attempt.
+- Extended `apps/shared/mastery-store.js` to keep additive temporal metrics (`total_error`, `total_score`, `attempts`) in addition to existing `correct`/`incorrect` counters.
+- Updated `index.html` learning cards to include a direct Year Estimation entry point.
+
+## Validation completed (2026-03-25)
+- `node scripts/derive.mjs` ✅
+
+## Suggested next steps
+1. Add an optional setup control for era/unit scoping in Year Estimation to keep guesses context-focused during targeted review.
+2. Introduce a short fixed-length Year Estimation session mode with summary stats (mean error, best streak) for retention-focused loops.
+3. Consider exposing weak-event weighting in Year Estimation using existing mastery signals so temporal practice aligns with adaptive review across apps.
