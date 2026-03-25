@@ -190,6 +190,14 @@ Next:
 - Fixed question-type taxonomy drift in French Revolution records by replacing the non-enabled `event_recognition` type with the existing metadata-enabled `what_happened` type.
 - Updated `data/units/fr_french_revolution.json` event-recognition app profile to use `what_happened`, keeping unit config aligned with `data/metadata.json` and CI validation rules.
 
+
+## Recent updates (2026-03-25)
+
+- Added a new **Year Estimation** app at `apps/year-estimation/` for fast absolute-time practice through numeric year guessing.
+- Introduced graded temporal feedback bands (excellent/close/far) and error-aware mastery recording for year estimation attempts.
+- Extended shared mastery stats in `apps/shared/mastery-store.js` with aggregate fields (`total_error`, `total_score`, `attempts`) while preserving compatibility with existing apps.
+- Added a new homepage learning card linking directly to Year Estimation so learners can include temporal estimation in their repetition loop.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.

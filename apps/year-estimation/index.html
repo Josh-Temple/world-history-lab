@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="manifest" href="/pwa/manifest.webmanifest" />
+    <link rel="icon" href="/assets/pwa/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/pwa/apple-touch-icon.svg" />
+    <title>Year Estimation</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p><a href="/">← Back to World History Lab</a></p>
+        <h1>Year Estimation</h1>
+        <p class="lead">Estimate when events happened in absolute time to build stronger date intuition, not just relative ordering.</p>
+      </header>
+
+      <section class="card" aria-live="polite">
+        <p class="prompt">Guess the year for this event:</p>
+        <h2 id="event-label">Loading event…</h2>
+        <p id="event-summary" class="muted"></p>
+
+        <label for="year-input">Your year guess</label>
+        <div class="guess-row">
+          <input type="number" id="year-input" placeholder="Enter year" inputmode="numeric" />
+          <button id="submit" type="button">Submit</button>
+          <button id="next" type="button">Next event</button>
+        </div>
+
+        <p id="feedback" class="feedback"></p>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="/pwa/register-sw.js"></script>
+  </body>
+</html>
