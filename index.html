@@ -40,97 +40,49 @@
         margin: 0;
       }
 
+      h2 {
+        margin: 0 0 0.65rem;
+        font-size: 1.35rem;
+      }
+
       .lead {
         color: var(--muted);
-        max-width: 70ch;
+        max-width: 74ch;
         margin-top: 0.75rem;
-        margin-bottom: 1rem;
       }
 
-      .start-here {
-        background: #ecfeff;
-        border: 1px solid #bae6fd;
-        border-radius: 14px;
-        padding: 1rem 1.1rem;
-        margin-bottom: 1.4rem;
-      }
-
-      .start-here p {
-        margin: 0.35rem 0 0;
-        color: var(--muted);
-      }
-
-      h2 {
-        margin: 0 0 0.9rem;
-        font-size: 1.2rem;
-      }
-
-      .learning-path {
-        margin: 0 0 1.6rem;
-      }
-
-      .path-grid,
-      .apps {
-        display: grid;
-        gap: 1rem;
-      }
-
-      .path-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      }
-
-      .path-step,
-      .app-card {
+      .panel {
         background: var(--panel);
         border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 1.1rem 1.15rem;
+        border-radius: 14px;
+        padding: 1rem 1.1rem;
+        margin-top: 1rem;
       }
 
-      .path-step {
-        position: relative;
+      .start-learning {
+        background: #ecfeff;
+        border: 1px solid #bae6fd;
       }
 
-      .step-label {
-        display: inline-flex;
-        align-items: center;
-        padding: 0.2rem 0.55rem;
-        border-radius: 999px;
-        background: var(--accent-soft);
-        color: var(--accent);
-        font-size: 0.85rem;
-        font-weight: 700;
-        letter-spacing: 0.01em;
-      }
-
-      .path-step h3,
-      .app-card h3 {
-        margin: 0.7rem 0 0;
-      }
-
-      .path-step p,
-      .app-card p {
-        margin: 0.6rem 0 0;
+      .section-help {
+        margin: 0.4rem 0 0;
         color: var(--muted);
-      }
-
-      .path-actions {
-        margin-top: 0.9rem;
       }
 
       .primary-btn,
-      .app-link {
+      .link-btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         min-height: 44px;
-        padding: 0.6rem 0.9rem;
+        padding: 0.55rem 0.95rem;
         border-radius: 10px;
         font-weight: 700;
         text-decoration: none;
       }
 
       .primary-btn {
+        margin-top: 0.8rem;
         background: var(--accent);
         color: #fff;
       }
@@ -140,20 +92,54 @@
         background: #115e59;
       }
 
-      .app-link {
-        padding: 0.45rem 0.2rem 0.2rem;
+      .mode-grid,
+      .unit-grid {
+        display: grid;
+        gap: 0.85rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .mode-group,
+      .unit-card {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 0.85rem;
+        background: #fff;
+      }
+
+      .mode-group h3,
+      .unit-card h3 {
+        margin: 0;
+        font-size: 1.02rem;
+      }
+
+      .mode-group p,
+      .unit-card p {
+        margin: 0.45rem 0 0;
+        color: var(--muted);
+      }
+
+      .mode-links {
+        margin-top: 0.55rem;
+        display: grid;
+        gap: 0.35rem;
+      }
+
+      .mode-links a,
+      .link-btn {
         color: var(--accent);
       }
 
-      .app-link:hover,
-      .app-link:focus-visible {
-        text-decoration: underline;
+      .mode-links a {
+        text-decoration: none;
+        font-weight: 600;
       }
 
-      .next-step-hint {
-        margin-top: 0.75rem;
-        font-size: 0.95rem;
-        color: var(--muted);
+      .mode-links a:hover,
+      .mode-links a:focus-visible,
+      .link-btn:hover,
+      .link-btn:focus-visible {
+        text-decoration: underline;
       }
 
       .counts,
@@ -169,14 +155,14 @@
           margin-top: 1.3rem;
         }
 
-        .start-here,
-        .path-step,
-        .app-card {
-          padding: 1rem;
+        .panel,
+        .mode-group,
+        .unit-card {
+          padding: 0.9rem;
         }
 
         .primary-btn,
-        .app-link {
+        .link-btn {
           width: 100%;
         }
       }
@@ -186,122 +172,60 @@
     <main>
       <header>
         <h1>World History Lab</h1>
-        <p class="lead">Build historical intuition with multiple learning modes. Follow a clear sequence to reduce decision fatigue: start with chronology, use the overview bridge to refresh the big picture, deepen understanding through recognition and causality, then review the bigger narrative flow in the player.</p>
+        <p class="lead">Use one guided flow: start with chronology, then move to recall and explanation. If you already know your target unit, jump in through unit-first study below.</p>
       </header>
 
-      <section class="start-here" aria-labelledby="start-here-title">
-        <h2 id="start-here-title">Start here</h2>
-        <p>If you are new, begin with <strong>Timeline Trainer</strong>. It gives you the chronological frame that makes later recognition, causality, and narrative review easier to retain.</p>
-        <div class="path-actions">
-          <a href="apps/timeline-trainer/" class="primary-btn">Start Timeline Trainer</a>
-        </div>
+      <section class="panel start-learning" aria-labelledby="start-learning-heading">
+        <h2 id="start-learning-heading">Start learning</h2>
+        <p class="section-help">Begin with ordering events in time. This gives context that lowers cognitive load in every later mode.</p>
+        <a href="apps/timeline-trainer/" class="primary-btn">Start with Timeline →</a>
       </section>
 
-      <section class="learning-path" aria-labelledby="learning-path-heading">
-        <h2 id="learning-path-heading">Learning path</h2>
-        <div class="path-grid">
-          <article class="path-step">
-            <span class="step-label">Step 1</span>
-            <h3>Build chronology</h3>
-            <p><strong>Use Timeline Trainer</strong> when you need to learn when events happened and build a reliable sense of sequence.</p>
-            <div class="path-actions">
-              <a href="apps/timeline-trainer/" class="primary-btn">Start Timeline Trainer</a>
+      <section class="panel" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Practice by skill</h2>
+        <p class="section-help">Choose a mode by what you want to train right now.</p>
+        <div class="mode-grid">
+          <article class="mode-group">
+            <h3>Chronology</h3>
+            <p>Build order and relative timing first.</p>
+            <div class="mode-links">
+              <a href="apps/timeline-trainer/">Timeline Trainer</a>
+              <a href="apps/year-estimation/">Year Estimation</a>
             </div>
           </article>
 
-          <article class="path-step">
-            <span class="step-label">Step 2</span>
-            <h3>Recognize events</h3>
-            <p><strong>Use Event Recognition</strong> after timeline practice to identify events from clues and reinforce recall with clearer context.</p>
-            <div class="path-actions">
-              <a href="apps/event-recognition/" class="app-link">Go to Event Recognition →</a>
+          <article class="mode-group">
+            <h3>Recall</h3>
+            <p>Identify events and actors from concise clues.</p>
+            <div class="mode-links">
+              <a href="apps/event-recognition/">Event Recognition</a>
+              <a href="apps/people-recognition/">People Recognition</a>
             </div>
           </article>
 
-          <article class="path-step">
-            <span class="step-label">Step 3</span>
-            <h3>Understand causality</h3>
-            <p><strong>Use Causality Builder</strong> once you know the key events and want to understand how one development leads to another.</p>
-            <div class="path-actions">
-              <a href="apps/causality-builder/" class="app-link">Go to Causality Builder →</a>
+          <article class="mode-group">
+            <h3>Understanding</h3>
+            <p>Explain causes and connect events into narrative.</p>
+            <div class="mode-links">
+              <a href="apps/causality-builder/">Causality Builder</a>
+              <a href="apps/history-player/">History Player</a>
             </div>
           </article>
 
-          <article class="path-step">
-            <span class="step-label">Step 4</span>
-            <h3>Connect actors to events</h3>
-            <p><strong>Use People Recognition</strong> after event recognition to practice who did what and attach major figures to major developments.</p>
-            <div class="path-actions">
-              <a href="apps/people-recognition/" class="app-link">Go to People Recognition →</a>
-            </div>
-          </article>
-
-          <article class="path-step">
-            <span class="step-label">Step 5</span>
-            <h3>Survey the big picture</h3>
-            <p><strong>Use Overview</strong> as a read-only bridge when you want a coarse era × region mental map before narrative playback.</p>
-            <div class="path-actions">
-              <a href="apps/overview/" class="app-link">Go to Overview →</a>
-            </div>
-          </article>
-
-          <article class="path-step">
-            <span class="step-label">Step 6</span>
-            <h3>Review narrative</h3>
-            <p><strong>Use History Player</strong> after practice sessions to replay the story in order and reinforce the bigger historical arc.</p>
-            <div class="path-actions">
-              <a href="apps/history-player/" class="app-link">Go to History Player →</a>
+          <article class="mode-group">
+            <h3>Survey bridge</h3>
+            <p>Refresh era × region orientation between drills.</p>
+            <div class="mode-links">
+              <a href="apps/overview/">Overview</a>
             </div>
           </article>
         </div>
       </section>
 
-      <section aria-labelledby="practice-modes-heading">
-        <h2 id="practice-modes-heading">Learning modes</h2>
-        <div class="apps">
-          <article class="app-card">
-            <h3>Timeline Trainer</h3>
-            <p><strong>When to use this:</strong> Start here to build chronological ordering and date intuition before moving into more interpretive practice.</p>
-            <p class="next-step-hint"><strong>Next step:</strong> Event Recognition</p>
-            <a class="app-link" href="apps/timeline-trainer/">Open Timeline Trainer →</a>
-          </article>
-          <article class="app-card">
-            <h3>Year Estimation</h3>
-            <p><strong>When to use this:</strong> Use it for fast, repeatable date-guessing practice so you can estimate absolute years with better confidence.</p>
-            <p class="next-step-hint"><strong>Best after:</strong> Timeline Trainer · <strong>Next step:</strong> Event Recognition</p>
-            <a class="app-link" href="apps/year-estimation/">Open Year Estimation →</a>
-          </article>
-          <article class="app-card">
-            <h3>Event Recognition Trainer</h3>
-            <p><strong>When to use this:</strong> Practice identifying events from concise clues once you already have a rough sense of sequence.</p>
-            <p class="next-step-hint"><strong>Best after:</strong> Timeline Trainer · <strong>Next step:</strong> Causality Builder</p>
-            <a class="app-link" href="apps/event-recognition/">Open Event Recognition →</a>
-          </article>
-          <article class="app-card">
-            <h3>Causality Builder</h3>
-            <p><strong>When to use this:</strong> Use it after recognition practice to connect causes, effects, and historical turning points.</p>
-            <p class="next-step-hint"><strong>Best after:</strong> Event Recognition · <strong>Parallel track:</strong> People Recognition</p>
-            <a class="app-link" href="apps/causality-builder/">Open Causality Builder →</a>
-          </article>
-          <article class="app-card">
-            <h3>People Recognition</h3>
-            <p><strong>When to use this:</strong> Practice connecting historical figures to the event they are most associated with so actor recall supports deeper understanding.</p>
-            <p class="next-step-hint"><strong>Best after:</strong> Event Recognition · <strong>Next step:</strong> History Player</p>
-            <a class="app-link" href="apps/people-recognition/">Open People Recognition →</a>
-          </article>
-          <article class="app-card">
-            <h3>Overview</h3>
-            <p><strong>When to use this:</strong> Use it as a low-pressure survey bridge when you need a coarse era × region mental map before returning to drills.</p>
-            <p class="next-step-hint"><strong>Best after:</strong> Timeline Trainer or Event Recognition · <strong>Next step:</strong> History Player</p>
-            <a class="app-link" href="apps/overview/">Open Overview →</a>
-          </article>
-          <article class="app-card">
-            <h3>History Player</h3>
-            <p><strong>When to use this:</strong> Review a broader narrative sequence after drills so events feel connected instead of isolated.</p>
-            <p class="next-step-hint"><strong>Best after:</strong> Causality Builder or People Recognition · <strong>Next step:</strong> Return to Timeline Trainer for another cycle</p>
-            <a class="app-link" href="apps/history-player/">Open History Player →</a>
-          </article>
-        </div>
+      <section class="panel" id="units" aria-labelledby="units-heading">
+        <h2 id="units-heading">Study by unit</h2>
+        <p class="section-help">Start directly from a unit if you want focused practice.</p>
+        <div id="unit-list" class="unit-grid" aria-live="polite"></div>
       </section>
 
       <p class="counts" aria-live="polite">Dataset: <span id="count-events">…</span> events, <span id="count-people">…</span> people, <span id="count-units">…</span> units (<span id="count-approved">…</span> approved, <span id="count-reviewed">…</span> reviewed+).</p>
@@ -309,34 +233,71 @@
     </main>
 
     <script type="module">
+      const SELECTED_UNIT_KEY = "selected_unit";
+
       async function fetchJson(path) {
         const response = await fetch(path, { cache: "no-store" });
         if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
         return response.json();
       }
 
+      function renderUnitCards(units) {
+        const unitList = document.getElementById("unit-list");
+        unitList.innerHTML = "";
+
+        if (!Array.isArray(units) || units.length === 0) {
+          unitList.innerHTML = '<p class="muted">No units available yet.</p>';
+          return;
+        }
+
+        for (const unit of units) {
+          const card = document.createElement("article");
+          card.className = "unit-card";
+
+          const title = document.createElement("h3");
+          title.textContent = unit.title || unit.label || unit.id;
+
+          const meta = document.createElement("p");
+          meta.textContent = unit.description || "Focused practice set.";
+
+          const startLink = document.createElement("a");
+          startLink.className = "link-btn";
+          startLink.href = "/apps/timeline-trainer/";
+          startLink.textContent = "Start this unit →";
+          startLink.addEventListener("click", () => {
+            localStorage.setItem(SELECTED_UNIT_KEY, unit.id);
+          });
+
+          card.append(title, meta, startLink);
+          unitList.append(card);
+        }
+      }
+
       async function loadCounts() {
         try {
-          const [events, people, unitIndex] = await Promise.all([
+          const [events, people, unitIndexRaw] = await Promise.all([
             fetchJson("/data/events.json"),
             fetchJson("/data/people.json"),
             fetchJson("/data/units/index.json"),
           ]);
 
+          const unitIndex = Array.isArray(unitIndexRaw?.units) ? unitIndexRaw.units : Array.isArray(unitIndexRaw) ? unitIndexRaw : [];
           const eventList = Array.isArray(events) ? events : [];
           const approved = eventList.filter((event) => event.status === "approved").length;
           const reviewedPlus = eventList.filter((event) => event.status === "approved" || event.status === "reviewed").length;
 
           document.getElementById("count-events").textContent = String(eventList.length || "—");
           document.getElementById("count-people").textContent = String(Array.isArray(people) ? people.length : "—");
-          document.getElementById("count-units").textContent = String(unitIndex?.units?.length ?? "—");
+          document.getElementById("count-units").textContent = String(unitIndex.length || "—");
           document.getElementById("count-approved").textContent = String(approved);
           document.getElementById("count-reviewed").textContent = String(reviewedPlus);
 
-          const unitNames = Array.isArray(unitIndex?.units)
-            ? unitIndex.units.map((unit) => unit.id.replace(/^unit_/, "").replaceAll("_", " ")).join(", ")
+          const unitNames = unitIndex.length > 0
+            ? unitIndex.map((unit) => unit.id.replace(/^unit_/, "").replaceAll("_", " ")).join(", ")
             : "—";
           document.getElementById("unit-names").textContent = unitNames;
+
+          renderUnitCards(unitIndex);
         } catch {
           document.getElementById("count-events").textContent = "—";
           document.getElementById("count-people").textContent = "—";
@@ -344,11 +305,12 @@
           document.getElementById("count-approved").textContent = "—";
           document.getElementById("count-reviewed").textContent = "—";
           document.getElementById("unit-names").textContent = "unavailable";
+          renderUnitCards([]);
         }
       }
 
       loadCounts();
     </script>
-      <script type="module" src="/pwa/register-sw.js"></script>
+    <script type="module" src="/pwa/register-sw.js"></script>
   </body>
 </html>

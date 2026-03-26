@@ -198,6 +198,12 @@ Next:
 - Extended shared mastery stats in `apps/shared/mastery-store.js` with aggregate fields (`total_error`, `total_score`, `attempts`) while preserving compatibility with existing apps.
 - Added a new homepage learning card linking directly to Year Estimation so learners can include temporal estimation in their repetition loop.
 
+## Recent updates (2026-03-26)
+
+- Redesigned the homepage into a guided entry layout with a single primary start action, skill-grouped mode cards, and a dynamic **Study by unit** section sourced from `data/units/index.json`.
+- Added cross-app unit-context persistence using `localStorage` (`selected_unit`) so the learner's last-used unit now carries from the homepage and between trainers.
+- Added unit-focus setup controls to **Causality Builder** and **Year Estimation**, including safe all-units fallback and empty-unit handling to avoid runtime dead ends.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.

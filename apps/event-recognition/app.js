@@ -20,6 +20,7 @@ const summaryElement = document.getElementById("summary");
 const nextStepElement = document.getElementById("next-step");
 const nextStepTextElement = document.getElementById("next-step-text");
 const nextStepLinkElement = document.getElementById("next-step-link");
+const SELECTED_UNIT_KEY = "selected_unit";
 
 const state = {
   eventsById: new Map(),
@@ -336,9 +337,15 @@ function populateUnitOptions() {
     option.textContent = unit.title || unit.id;
     unitSelect.appendChild(option);
   }
-  if (state.units.some((unit) => unit.id === "unit_french_revolution_napoleon")) {
-    unitSelect.value = "unit_french_revolution_napoleon";
+  if (state.units.length === 0) {
+    return;
   }
+
+  const savedUnitId = localStorage.getItem(SELECTED_UNIT_KEY);
+  const fallbackUnitId = state.units[0].id;
+  const defaultUnitId = state.units.some((unit) => unit.id === savedUnitId) ? savedUnitId : fallbackUnitId;
+  unitSelect.value = defaultUnitId;
+  localStorage.setItem(SELECTED_UNIT_KEY, defaultUnitId);
 }
 
 function startSession() {
@@ -367,6 +374,9 @@ function handleAdvance() {
 
 function handleSetupChange() {
   refreshUnitVisibility();
+  if (unitSelect.value) {
+    localStorage.setItem(SELECTED_UNIT_KEY, unitSelect.value);
+  }
   startSession();
 }
 
