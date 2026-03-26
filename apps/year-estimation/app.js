@@ -2,11 +2,16 @@ import { recordResult } from '../shared/mastery-store.js';
 
 const eventLabel = document.getElementById('event-label');
 const eventSummary = document.getElementById('event-summary');
+const unitSelect = document.getElementById('unit-select');
+const setupHint = document.getElementById('setup-hint');
 const yearInput = document.getElementById('year-input');
 const submitButton = document.getElementById('submit');
 const nextButton = document.getElementById('next');
 const feedback = document.getElementById('feedback');
+const SELECTED_UNIT_KEY = 'selected_unit';
 
+let allEvents = [];
+let units = [];
 let usableEvents = [];
 let currentEvent = null;
 
@@ -42,6 +47,39 @@ function generateQuestion() {
   return next;
 }
 
+function applyUnitFilter() {
+  const selectedUnitId = unitSelect.value;
+  if (!selectedUnitId) {
+    usableEvents = allEvents.slice();
+    setupHint.textContent = 'Using all units.';
+    return;
+  }
+
+  const selectedUnit = units.find((unit) => unit.id === selectedUnitId);
+  const eventIdSet = new Set(Array.isArray(selectedUnit?.event_ids) ? selectedUnit.event_ids : []);
+  usableEvents = allEvents.filter((event) => eventIdSet.has(event.id));
+  setupHint.textContent = `Focused on ${selectedUnit?.title || selectedUnitId}.`;
+}
+
+function populateUnitOptions() {
+  unitSelect.innerHTML = '';
+  const allOption = document.createElement('option');
+  allOption.value = '';
+  allOption.textContent = 'All units';
+  unitSelect.append(allOption);
+
+  for (const unit of units) {
+    const option = document.createElement('option');
+    option.value = unit.id;
+    option.textContent = unit.title || unit.id;
+    unitSelect.append(option);
+  }
+
+  const savedUnit = localStorage.getItem(SELECTED_UNIT_KEY) || '';
+  const isKnown = units.some((unit) => unit.id === savedUnit);
+  unitSelect.value = isKnown ? savedUnit : '';
+}
+
 function renderQuestion(event) {
   currentEvent = event;
   eventLabel.textContent = event?.label || 'Unknown event';
@@ -71,16 +109,27 @@ function submitGuess() {
 
 async function init() {
   try {
-    const events = await fetch('/data/events.json', { cache: 'no-store' }).then((response) => {
-      if (!response.ok) {
-        throw new Error(`events: HTTP ${response.status}`);
-      }
-      return response.json();
-    });
+    const [events, unitsIndex] = await Promise.all([
+      fetch('/data/events.json', { cache: 'no-store' }).then((response) => {
+        if (!response.ok) {
+          throw new Error(`events: HTTP ${response.status}`);
+        }
+        return response.json();
+      }),
+      fetch('/data/units/index.json', { cache: 'no-store' }).then((response) => {
+        if (!response.ok) {
+          throw new Error(`units: HTTP ${response.status}`);
+        }
+        return response.json();
+      }),
+    ]);
 
-    usableEvents = (Array.isArray(events) ? events : []).filter((event) => (
+    allEvents = (Array.isArray(events) ? events : []).filter((event) => (
       event && Number.isFinite(event?.time?.year_start)
     ));
+    units = Array.isArray(unitsIndex?.units) ? unitsIndex.units : (Array.isArray(unitsIndex) ? unitsIndex : []);
+    populateUnitOptions();
+    applyUnitFilter();
 
     if (usableEvents.length === 0) {
       eventLabel.textContent = 'No events with years available.';
@@ -106,6 +155,21 @@ yearInput.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     submitGuess();
   }
+});
+unitSelect.addEventListener('change', () => {
+  localStorage.setItem(SELECTED_UNIT_KEY, unitSelect.value);
+  applyUnitFilter();
+  if (usableEvents.length === 0) {
+    eventLabel.textContent = 'No events in this unit with numeric years.';
+    eventSummary.textContent = 'Choose a different unit or switch to All units.';
+    submitButton.disabled = true;
+    nextButton.disabled = true;
+    feedback.textContent = '';
+    return;
+  }
+  submitButton.disabled = false;
+  nextButton.disabled = false;
+  renderQuestion(generateQuestion());
 });
 
 init();

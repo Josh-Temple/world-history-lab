@@ -54,3 +54,27 @@
 1. Add an optional setup control for era/unit scoping in Year Estimation to keep guesses context-focused during targeted review.
 2. Introduce a short fixed-length Year Estimation session mode with summary stats (mean error, best streak) for retention-focused loops.
 3. Consider exposing weak-event weighting in Year Estimation using existing mastery signals so temporal practice aligns with adaptive review across apps.
+
+## Incremental update (2026-03-26 · Guided entry + unit-first flow)
+- Reworked `index.html` into a guided homepage with:
+  - clear primary CTA (**Start with Timeline**),
+  - skill-based grouping (Chronology / Recall / Understanding / Survey bridge),
+  - dynamic **Study by unit** cards loaded from `/data/units/index.json`.
+- Added homepage unit cards that store `localStorage.selected_unit` before opening Timeline Trainer, creating an explicit unit-first entry path.
+- Added/standardized unit persistence (`selected_unit`) in:
+  - `apps/timeline-trainer/src/App.js`
+  - `apps/event-recognition/app.js`
+  - `apps/causality-builder/app.js`
+  - `apps/year-estimation/app.js`
+- Added new unit setup UIs for:
+  - `apps/causality-builder/index.html` (+ styles) with filtered causality pool by selected unit.
+  - `apps/year-estimation/index.html` (+ styles) with unit-based event filtering and no-data guardrails.
+
+## Validation completed (2026-03-26)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+
+## Suggested next steps
+1. Consider adding a shared unit-selector helper under `apps/shared/` to reduce repeated setup/persistence logic across apps.
+2. Optionally add query-string support (`?unit=<id>`) so deep links can open directly into a chosen unit without relying on localStorage.
+3. Add a lightweight UX smoke test that checks unit selector presence/behavior across Timeline, Event Recognition, Causality, and Year Estimation.

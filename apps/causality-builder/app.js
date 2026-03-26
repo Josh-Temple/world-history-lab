@@ -1,4 +1,4 @@
-import { filterDerivedEvents, loadDerivedEvents } from "../shared/data-access.js";
+import { filterDerivedEvents, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
 import { isCausalityReady } from "../shared/event-filters.js";
 import { recordResult } from "../shared/mastery-store.js";
 
@@ -14,11 +14,15 @@ const questionCountEl = document.getElementById('question-count');
 const nextStepEl = document.getElementById('next-step');
 const nextStepTextEl = document.getElementById('next-step-text');
 const nextStepLinkEl = document.getElementById('next-step-link');
+const unitSelectEl = document.getElementById('unit-select');
+const setupHintEl = document.getElementById('setup-hint');
+const SELECTED_UNIT_KEY = 'selected_unit';
 
 const PRACTICE_LOOP_THRESHOLD = 5;
 
 const state = {
   events: [],
+  units: [],
   eventMap: new Map(),
   pool: [],
   currentQuestion: null,
@@ -81,6 +85,60 @@ function generateQuestion(pool) {
   }
 
   return null;
+}
+
+function getScopedPool() {
+  const selectedUnitId = unitSelectEl.value || null;
+  const unresolvedEffects = [];
+  const scoped = filterDerivedEvents(state.events, {
+    status: "reviewed",
+    unitId: selectedUnitId,
+    predicate: (event) => {
+      if (!isCausalityReady(event)) return false;
+      const resolvableEffects = getEffectIds(event).filter((effectId) => state.eventMap.has(effectId));
+      if (resolvableEffects.length === 0) {
+        unresolvedEffects.push(event.id);
+        return false;
+      }
+      return true;
+    },
+  });
+
+  if (unresolvedEffects.length > 0) {
+    console.warn('[Causality Builder] skipped events with unresolved effects', unresolvedEffects);
+  }
+
+  return scoped;
+}
+
+function populateUnitOptions() {
+  unitSelectEl.innerHTML = '';
+  const allOption = document.createElement('option');
+  allOption.value = '';
+  allOption.textContent = 'All units';
+  unitSelectEl.append(allOption);
+
+  for (const unit of state.units) {
+    const option = document.createElement('option');
+    option.value = unit.id;
+    option.textContent = unit.title || unit.id;
+    unitSelectEl.append(option);
+  }
+
+  const savedUnitId = localStorage.getItem(SELECTED_UNIT_KEY) || '';
+  const isKnownUnit = state.units.some((unit) => unit.id === savedUnitId);
+  unitSelectEl.value = isKnownUnit ? savedUnitId : '';
+}
+
+function refreshPool() {
+  state.pool = getScopedPool();
+  const selectedUnitId = unitSelectEl.value;
+  localStorage.setItem(SELECTED_UNIT_KEY, selectedUnitId);
+  setupHintEl.textContent = selectedUnitId
+    ? `Focused on ${unitSelectEl.selectedOptions[0]?.textContent || selectedUnitId}.`
+    : 'Using all units.';
+  questionCountEl.textContent = `Question ${state.answered + 1}`;
+  renderQuestion();
 }
 
 function setFeedback(message, kind = '') {
@@ -161,29 +219,12 @@ function handleAnswer(selectedButton, option) {
 
 async function init() {
   try {
-    state.events = await loadDerivedEvents();
+    const [events, units] = await Promise.all([loadDerivedEvents(), loadUnitsIndex()]);
+    state.events = events;
+    state.units = units;
     state.eventMap = new Map(state.events.map((event) => [event.id, event]));
-
-    const unresolvedEffects = [];
-    state.pool = filterDerivedEvents(state.events, {
-      status: "reviewed",
-      predicate: (event) => {
-        if (!isCausalityReady(event)) return false;
-        const resolvableEffects = getEffectIds(event).filter((effectId) => state.eventMap.has(effectId));
-        if (resolvableEffects.length === 0) {
-          unresolvedEffects.push(event.id);
-          return false;
-        }
-        return true;
-      },
-    });
-
-    console.info('[Causality Builder] causal events', state.pool.length);
-    if (unresolvedEffects.length > 0) {
-      console.warn('[Causality Builder] skipped events with unresolved effects', unresolvedEffects);
-    }
-
-    renderQuestion();
+    populateUnitOptions();
+    refreshPool();
   } catch (error) {
     sourceLabelEl.textContent = 'Could not load causality data.';
     sourceSummaryEl.textContent = error.message;
@@ -193,5 +234,9 @@ async function init() {
 }
 
 nextButton.addEventListener('click', renderQuestion);
+unitSelectEl.addEventListener('change', () => {
+  state.answered = 0;
+  refreshPool();
+});
 
 init();

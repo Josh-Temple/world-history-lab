@@ -130,6 +130,7 @@ const ui = {
 };
 
 const PRACTICE_LOOP_THRESHOLD = 5;
+const SELECTED_UNIT_KEY = "selected_unit";
 
 function getQuestionTypeLabel(type) {
   if (type === QUESTION_TYPES.EARLIEST_OF_3) {
@@ -886,6 +887,9 @@ function applyScope(nextScope) {
   }
 
   state.scope = nextScope;
+  if (nextScope.unitId) {
+    localStorage.setItem(SELECTED_UNIT_KEY, nextScope.unitId);
+  }
   syncSettingsUI();
   buildPoolsForScope();
   refreshScopeAvailability();
@@ -976,7 +980,8 @@ export async function startApp() {
     state.unitById = new Map(units.map((unit) => [unit.id, unit]));
 
     populateUnitSelector();
-    const defaultUnitId = units[0]?.id || null;
+    const savedUnitId = localStorage.getItem(SELECTED_UNIT_KEY);
+    const defaultUnitId = units.some((unit) => unit.id === savedUnitId) ? savedUnitId : (units[0]?.id || null);
     state.scope = {
       ...state.scope,
       mode: PRACTICE_MODE.UNIT,

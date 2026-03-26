@@ -31,6 +31,19 @@ body {
 .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.82rem; }
 .lead { max-width: 70ch; color: var(--muted); }
 .back-link { color: var(--accent); }
+.setup-panel label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.setup-panel select {
+  width: 100%;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.65rem;
+  font: inherit;
+}
 .panel {
   background: var(--panel);
   border: 1px solid var(--border);
