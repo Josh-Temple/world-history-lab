@@ -15,6 +15,17 @@ let units = [];
 let usableEvents = [];
 let currentEvent = null;
 
+function isValidEvent(event) {
+  return Boolean(
+    event
+    && typeof event.id === 'string'
+    && typeof event.label === 'string'
+    && Number.isFinite(event?.time?.year_start)
+    && typeof event.summary_short === 'string'
+    && event.summary_short.trim().length > 0
+  );
+}
+
 function randomItem(items) {
   return items[Math.floor(Math.random() * items.length)];
 }
@@ -124,16 +135,14 @@ async function init() {
       }),
     ]);
 
-    allEvents = (Array.isArray(events) ? events : []).filter((event) => (
-      event && Number.isFinite(event?.time?.year_start)
-    ));
+    allEvents = (Array.isArray(events) ? events : []).filter(isValidEvent);
     units = Array.isArray(unitsIndex?.units) ? unitsIndex.units : (Array.isArray(unitsIndex) ? unitsIndex : []);
     populateUnitOptions();
     applyUnitFilter();
 
     if (usableEvents.length === 0) {
-      eventLabel.textContent = 'No events with years available.';
-      eventSummary.textContent = 'Add records with time.year_start to enable this mode.';
+      eventLabel.textContent = 'No valid events available.';
+      eventSummary.textContent = 'Add records with time.year_start and summary_short to enable this mode.';
       submitButton.disabled = true;
       nextButton.disabled = true;
       return;

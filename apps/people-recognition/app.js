@@ -27,6 +27,21 @@ const state = {
   sessionActive: false,
 };
 
+function isValidEvent(event) {
+  return Boolean(
+    event
+    && typeof event.id === "string"
+    && typeof event.label === "string"
+    && Number.isFinite(event?.time?.year_start)
+    && typeof event.summary_short === "string"
+    && event.summary_short.trim().length > 0
+  );
+}
+
+function isValidPerson(person) {
+  return Boolean(person && typeof person.id === "string" && person.id.trim().length > 0);
+}
+
 function randomInt(max) {
   return Math.floor(Math.random() * max);
 }
@@ -331,9 +346,20 @@ async function init() {
       loadUnitsIndex(),
     ]);
 
+    const safeEvents = (Array.isArray(events) ? events : []).filter(isValidEvent);
+    const safePeople = (Array.isArray(people) ? people : []).filter(isValidPerson);
     state.units = Array.isArray(unitsIndex?.units) ? unitsIndex.units : [];
-    state.eventsById = new Map(events.map((event) => [event.id, event]));
-    buildPeopleIndex(events, Array.isArray(people) ? people : []);
+    state.eventsById = new Map(safeEvents.map((event) => [event.id, event]));
+    buildPeopleIndex(safeEvents, safePeople);
+
+    if (safeEvents.length === 0) {
+      personNameElement.textContent = "No valid events available.";
+      personSummaryElement.textContent = "Please regenerate data or add complete records.";
+      feedbackElement.textContent = "No valid events available.";
+      nextButton.disabled = true;
+      return;
+    }
+
     populateUnitOptions();
     refreshUnitVisibility();
     startSession();

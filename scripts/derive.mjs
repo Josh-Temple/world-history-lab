@@ -257,6 +257,45 @@ function validatePeople(people) {
     }
     personIdSet.add(person.id);
   }
+  return personIdSet;
+}
+
+function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
+  for (const unit of units) {
+    for (const eventId of unit.event_ids) {
+      if (!eventIdSet.has(eventId)) {
+        throw new Error(`Invalid event_id in unit ${unit.id}: ${eventId}`);
+      }
+    }
+  }
+
+  for (const event of events) {
+    const effectIds = Array.isArray(event.effects) ? event.effects : [];
+    for (const effectRef of effectIds) {
+      if (typeof effectRef === "string") {
+        if (!eventIdSet.has(effectRef)) {
+          throw new Error(`Invalid effect reference in ${event.id}: ${effectRef}`);
+        }
+        continue;
+      }
+
+      if (effectRef && typeof effectRef === "object" && Object.hasOwn(effectRef, "event_id")) {
+        if (typeof effectRef.event_id !== "string" || effectRef.event_id.trim() === "") {
+          throw new Error(`Invalid effect reference format in ${event.id}: ${JSON.stringify(effectRef)}`);
+        }
+        if (!eventIdSet.has(effectRef.event_id)) {
+          throw new Error(`Invalid effect reference in ${event.id}: ${effectRef.event_id}`);
+        }
+      }
+    }
+
+    const eventPeopleIds = Array.isArray(event.people_ids) ? event.people_ids : [];
+    for (const personId of eventPeopleIds) {
+      if (!peopleIdSet.has(personId)) {
+        throw new Error(`Invalid people_id in ${event.id}: ${personId}`);
+      }
+    }
+  }
 }
 
 function buildUnitIdsByEventId(units) {
@@ -525,7 +564,7 @@ async function main() {
 
   const people = await readJson("data/people.json");
   assertArray(people, "data/people.json");
-  validatePeople(people);
+  const peopleIdSet = validatePeople(people);
 
   const units = await loadUnits();
 
@@ -533,12 +572,14 @@ async function main() {
 
   const normalizedEvents = [];
   const eventLookup = new Map();
+  const eventIdSet = new Set();
   for (const event of events) {
     validateEvent(event);
     if (eventLookup.has(event.id)) {
       throw new Error(`Duplicate event id: ${event.id}`);
     }
     eventLookup.set(event.id, event);
+    eventIdSet.add(event.id);
 
     const normalized = normalizeEvent(event, unitIdsByEventId);
     if (normalized) {
@@ -546,16 +587,10 @@ async function main() {
     }
   }
 
+  validateCrossReferences({ events, eventIdSet, peopleIdSet, units });
+
   normalizedEvents.sort((a, b) => a.id.localeCompare(b.id));
   const normalizedEventLookup = new Map(normalizedEvents.map((event) => [event.id, event]));
-
-  for (const unit of units) {
-    for (const eventId of unit.event_ids) {
-      if (!eventLookup.has(eventId)) {
-        throw new Error(`Missing event reference: ${unit.id} -> ${eventId}`);
-      }
-    }
-  }
 
   const eventsByYear = buildEventsByYear(normalizedEvents);
   const eventsSorted = buildEventsSorted(normalizedEvents);
