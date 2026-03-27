@@ -29,6 +29,17 @@ const state = {
   answered: 0,
 };
 
+function isValidEvent(event) {
+  return Boolean(
+    event
+    && typeof event.id === "string"
+    && typeof event.label === "string"
+    && Number.isFinite(event?.time?.year_start)
+    && typeof event.summary_short === "string"
+    && event.summary_short.trim().length > 0
+  );
+}
+
 function shuffle(items) {
   const copy = [...items];
   for (let index = copy.length - 1; index > 0; index -= 1) {
@@ -220,9 +231,18 @@ function handleAnswer(selectedButton, option) {
 async function init() {
   try {
     const [events, units] = await Promise.all([loadDerivedEvents(), loadUnitsIndex()]);
-    state.events = events;
+    const safeEvents = (Array.isArray(events) ? events : []).filter(isValidEvent);
+    state.events = safeEvents;
     state.units = units;
-    state.eventMap = new Map(state.events.map((event) => [event.id, event]));
+    state.eventMap = new Map(safeEvents.map((event) => [event.id, event]));
+    if (safeEvents.length === 0) {
+      sourceLabelEl.textContent = "No valid events available.";
+      sourceSummaryEl.textContent = "Please regenerate data or add complete records.";
+      setFeedback("No valid events available.", "incorrect");
+      statusLineEl.textContent = "Causality practice is unavailable until valid events are present.";
+      nextButton.disabled = true;
+      return;
+    }
     populateUnitOptions();
     refreshPool();
   } catch (error) {

@@ -132,6 +132,17 @@ const ui = {
 const PRACTICE_LOOP_THRESHOLD = 5;
 const SELECTED_UNIT_KEY = "selected_unit";
 
+function isValidEvent(event) {
+  return Boolean(
+    event
+    && typeof event.id === "string"
+    && typeof event.label === "string"
+    && Number.isFinite(event?.time?.year_start)
+    && typeof event.summary_short === "string"
+    && event.summary_short.trim().length > 0
+  );
+}
+
 function getQuestionTypeLabel(type) {
   if (type === QUESTION_TYPES.EARLIEST_OF_3) {
     return "Earliest of 3";
@@ -975,7 +986,11 @@ export async function startApp() {
     ui.unitTitle.textContent = "Loading units...";
 
     const { events, units } = await loadTimelineSeedData();
-    state.eventsById = new Map(events.map((eventRecord) => [eventRecord.id, eventRecord]));
+    const safeEvents = (Array.isArray(events) ? events : []).filter(isValidEvent);
+    if (safeEvents.length === 0) {
+      throw new Error("No valid events available.");
+    }
+    state.eventsById = new Map(safeEvents.map((eventRecord) => [eventRecord.id, eventRecord]));
     state.units = units;
     state.unitById = new Map(units.map((unit) => [unit.id, unit]));
 

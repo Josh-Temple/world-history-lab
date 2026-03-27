@@ -204,6 +204,16 @@ Next:
 - Added cross-app unit-context persistence using `localStorage` (`selected_unit`) so the learner's last-used unit now carries from the homepage and between trainers.
 - Added unit-focus setup controls to **Causality Builder** and **Year Estimation**, including safe all-units fallback and empty-unit handling to avoid runtime dead ends.
 
+## Recent updates (2026-03-27)
+
+- Strengthened `scripts/derive.mjs` with strict cross-reference checks so derive now fails fast on:
+  - `unit.event_ids` that point to missing events,
+  - `event.effects` links that point to missing events,
+  - `event.people_ids` that point to missing people.
+- Kept derive output deterministic while adding clearer, actionable validation errors for broken references.
+- Added runtime data-safety guards across learner apps (`timeline-trainer`, `event-recognition`, `people-recognition`, `causality-builder`, and `year-estimation`) so malformed/partial events are skipped instead of crashing sessions.
+- Added explicit learner-facing fallback messaging when no valid events remain after runtime filtering.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.

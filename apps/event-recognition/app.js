@@ -33,6 +33,17 @@ const state = {
   recentAnswerIds: [],
 };
 
+function isValidEvent(event) {
+  return Boolean(
+    event
+    && typeof event.id === "string"
+    && typeof event.label === "string"
+    && Number.isFinite(event?.time?.year_start)
+    && typeof event.summary_short === "string"
+    && event.summary_short.trim().length > 0
+  );
+}
+
 function randomInt(max) { return Math.floor(Math.random() * max); }
 function shuffle(items) {
   const copy = items.slice();
@@ -142,7 +153,9 @@ function updateAdaptiveIndicator(message = '') {
 
 function clearChoices() { choicesElement.innerHTML = ""; }
 function disableChoices() { choicesElement.querySelectorAll("button").forEach((button) => { button.disabled = true; }); }
-function buildClue(event) { return `"${event.summary_short.trim()}"`; }
+function buildClue(event) {
+  return `"${typeof event?.summary_short === "string" ? event.summary_short.trim() : "No summary available."}"`;
+}
 function unitForEvent(event) {
   const unitId = Array.isArray(event.unit_ids) ? event.unit_ids[0] : null;
   return state.units.find((candidate) => candidate.id === unitId) || null;
@@ -322,7 +335,8 @@ function handleChoice(choiceButton, option) {
   state.recentAnswerIds.unshift(answer.id);
   state.recentAnswerIds = state.recentAnswerIds.filter((eventId, index, array) => array.indexOf(eventId) === index).slice(0, RECENT_ANSWER_LIMIT);
 
-  answerMetaElement.textContent = `${answer.label} (${answer.time.year_start}) · ${answerUnit?.title || "Unassigned unit"}. ${answer.summary_short.trim()}`;
+  const safeSummary = typeof answer?.summary_short === "string" ? answer.summary_short.trim() : "No summary available.";
+  answerMetaElement.textContent = `${answer.label} (${answer.time.year_start}) · ${answerUnit?.title || "Unassigned unit"}. ${safeSummary}`;
 }
 
 function refreshUnitVisibility() {
@@ -383,7 +397,19 @@ function handleSetupChange() {
 async function init() {
   try {
     const [events, units] = await Promise.all([loadDerivedEvents(), loadUnitsIndex()]);
-    state.eventsById = new Map(events.map((event) => [event.id, event]));
+    const safeEvents = (Array.isArray(events) ? events : []).filter(isValidEvent);
+    const skippedCount = (Array.isArray(events) ? events.length : 0) - safeEvents.length;
+    if (skippedCount > 0) {
+      console.warn(`[Event Recognition] Skipping ${skippedCount} invalid event(s).`);
+    }
+    if (safeEvents.length === 0) {
+      questionElement.textContent = "No valid events available.";
+      feedbackElement.textContent = "No valid events available.";
+      sessionStatusElement.textContent = "Please regenerate data or add complete records.";
+      nextButton.disabled = true;
+      return;
+    }
+    state.eventsById = new Map(safeEvents.map((event) => [event.id, event]));
     state.units = units;
     populateUnitOptions();
     refreshUnitVisibility();

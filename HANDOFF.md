@@ -78,3 +78,27 @@
 1. Consider adding a shared unit-selector helper under `apps/shared/` to reduce repeated setup/persistence logic across apps.
 2. Optionally add query-string support (`?unit=<id>`) so deep links can open directly into a chosen unit without relying on localStorage.
 3. Add a lightweight UX smoke test that checks unit selector presence/behavior across Timeline, Event Recognition, Causality, and Year Estimation.
+
+## Incremental update (2026-03-27 · Validation + runtime reliability)
+- Added strict cross-reference validation in `scripts/derive.mjs` for:
+  - every `unit.event_ids` entry,
+  - every `event.effects` reference (string or object `{ event_id }` form),
+  - every `event.people_ids` reference.
+- Derive now throws descriptive, fail-fast errors for invalid links (for example: invalid unit event id, effect target, or people id).
+- Added runtime event-shape guards to all active practice apps so incomplete events are filtered out before session logic runs:
+  - `apps/timeline-trainer/src/App.js`
+  - `apps/event-recognition/app.js`
+  - `apps/people-recognition/app.js`
+  - `apps/causality-builder/app.js`
+  - `apps/year-estimation/app.js`
+- Added user-facing fallback behavior for empty valid datasets (for example: **No valid events available**) to avoid hard crashes/blank states.
+
+## Validation completed (2026-03-27)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+
+## Suggested next steps
+1. Centralize duplicated runtime event guards into a shared helper (for example `apps/shared/event-guards.js`) to reduce drift.
+2. Add smoke tests for malformed-data scenarios in each app (missing `summary_short`, missing `time.year_start`, broken `people_ids`/`effects`).
+3. Consider showing a consistent inline recovery CTA (for example “Switch unit” / “Include drafts”) on all empty-state fallback screens.
