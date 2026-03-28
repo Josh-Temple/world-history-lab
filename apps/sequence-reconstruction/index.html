@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="manifest" href="/pwa/manifest.webmanifest" />
+    <link rel="icon" href="/assets/pwa/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/pwa/apple-touch-icon.svg" />
+    <title>Sequence Reconstruction</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <p><a class="back-link" href="/">← Back to World History Lab</a></p>
+
+      <header class="page-header">
+        <p class="eyebrow">new learning mode</p>
+        <h1>Sequence Reconstruction</h1>
+        <p class="lead">Rebuild a cause-and-effect chain in the correct order to practice historical narrative synthesis.</p>
+      </header>
+
+      <section class="panel" aria-labelledby="sequence-title">
+        <h2 id="sequence-title">Rebuild the sequence</h2>
+        <p id="prompt" class="muted">Drag events into the most plausible causal order, then check your result.</p>
+        <ul id="event-list" aria-label="Shuffled historical events"></ul>
+        <div class="actions">
+          <button id="check" type="button">Check</button>
+          <button id="next" type="button">New chain</button>
+        </div>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+        <p id="explanation" class="explanation" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="/pwa/register-sw.js"></script>
+  </body>
+</html>

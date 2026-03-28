@@ -214,6 +214,13 @@ Next:
 - Added runtime data-safety guards across learner apps (`timeline-trainer`, `event-recognition`, `people-recognition`, `causality-builder`, and `year-estimation`) so malformed/partial events are skipped instead of crashing sessions.
 - Added explicit learner-facing fallback messaging when no valid events remain after runtime filtering.
 
+## Recent updates (2026-03-28)
+
+- Extended `scripts/derive.mjs` to generate multi-step causal paths (length 3-5) from `event.effects` and emit them as `derived/causality_chains.json`.
+- Added a new learner-facing **Sequence Reconstruction** mode at `apps/sequence-reconstruction/` where shuffled causal chains can be reordered with drag-and-drop and checked against the expected sequence.
+- Integrated Sequence Reconstruction into the homepage under the **Understanding** skill group.
+- Added mastery recording for sequence attempts so chain events now contribute to persisted practice signals.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
@@ -419,6 +426,7 @@ Generated files:
 - `derived/index.events_sorted.json`
 - `derived/index.units.json`
 - `derived/index.unit_event_pool.json`
+- `derived/causality_chains.json`
 
 Unit files are loaded from `data/units/index.json` (with fallback defaults inside the script).
 

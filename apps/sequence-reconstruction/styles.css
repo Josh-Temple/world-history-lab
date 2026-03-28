@@ -1,0 +1,161 @@
+:root {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #dbe2ea;
+  --accent: #0f766e;
+  --accent-soft: #ecfeff;
+  --ok: #065f46;
+  --bad: #991b1b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.page-shell {
+  width: min(820px, calc(100% - 2rem));
+  margin: 1.6rem auto 2.7rem;
+}
+
+.back-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  text-decoration: underline;
+}
+
+.page-header {
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.76rem;
+  color: var(--accent);
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  margin: 0.2rem 0 0.45rem;
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+}
+
+.lead {
+  margin: 0;
+  color: var(--muted);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.muted {
+  margin: 0.45rem 0 0.9rem;
+  color: var(--muted);
+}
+
+#event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.chain-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.65rem 0.75rem;
+  cursor: grab;
+}
+
+.chain-item.dragging {
+  opacity: 0.55;
+}
+
+.chain-item.drag-over {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px #ccfbf1;
+}
+
+.actions {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  min-height: 42px;
+  padding: 0.55rem 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#check {
+  background: var(--accent);
+  color: #fff;
+}
+
+#next {
+  background: var(--accent-soft);
+  color: #134e4a;
+}
+
+.feedback,
+.explanation {
+  margin: 0.75rem 0 0;
+}
+
+.feedback.correct {
+  color: var(--ok);
+  font-weight: 700;
+}
+
+.feedback.incorrect {
+  color: var(--bad);
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: calc(100% - 1.2rem);
+    margin-top: 1rem;
+  }
+
+  .panel {
+    padding: 0.9rem;
+  }
+
+  .actions button {
+    flex: 1 1 100%;
+  }
+}
