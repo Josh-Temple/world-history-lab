@@ -456,6 +456,64 @@ function buildUnitEventPool(units, canonicalEventLookup, normalizedEventLookup, 
   return pool;
 }
 
+function getEffectEventId(effectRef) {
+  if (typeof effectRef === "string") {
+    return effectRef;
+  }
+
+  if (effectRef && typeof effectRef === "object" && typeof effectRef.event_id === "string") {
+    return effectRef.event_id;
+  }
+
+  return null;
+}
+
+function buildCausalityChains(events, minLength = 3, maxLength = 5) {
+  const eventIdSet = new Set(events.map((event) => event.id));
+  const graph = new Map();
+
+  for (const event of events) {
+    const next = (Array.isArray(event.effects) ? event.effects : [])
+      .map(getEffectEventId)
+      .filter((eventId) => typeof eventId === "string" && eventIdSet.has(eventId));
+    graph.set(event.id, Array.from(new Set(next)).sort());
+  }
+
+  const encodedChains = new Set();
+
+  function dfs(currentId, path) {
+    if (path.length >= minLength) {
+      encodedChains.add(path.join(","));
+    }
+
+    if (path.length >= maxLength) {
+      return;
+    }
+
+    const nextIds = graph.get(currentId) || [];
+    for (const nextId of nextIds) {
+      if (path.includes(nextId)) {
+        continue;
+      }
+      dfs(nextId, [...path, nextId]);
+    }
+  }
+
+  for (const event of events) {
+    dfs(event.id, [event.id]);
+  }
+
+  return Array.from(encodedChains)
+    .map((encoded) => encoded.split(","))
+    .filter((chain) => chain.length >= minLength && chain.length <= maxLength)
+    .sort((a, b) => {
+      if (a.length !== b.length) {
+        return a.length - b.length;
+      }
+      return a.join(",").localeCompare(b.join(","));
+    });
+}
+
 function assertArray(value, label) {
   if (!Array.isArray(value)) {
     throw new Error(`${label} must be an array`);
@@ -598,6 +656,7 @@ async function main() {
     .map((unit) => ({ id: unit.id, title: unit.title, event_ids: unit.event_ids.slice() }))
     .sort((a, b) => a.id.localeCompare(b.id));
   const unitEventPool = buildUnitEventPool(units, eventLookup, normalizedEventLookup, enabledQuestionTypeSet);
+  const causalityChains = buildCausalityChains(events);
   const unitEventPoolTypeCount = Object.values(unitEventPool)
     .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
 
@@ -607,9 +666,10 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "index.events_sorted.json"), toJson(eventsSorted), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.units.json"), toJson(unitsIndex), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.unit_event_pool.json"), toJson(unitEventPool), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "causality_chains.json"), toJson(causalityChains), "utf8");
 
   console.log(
-    `[derive] Validation summary: ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events, ${Object.keys(eventsByYear).length} year buckets, and ${unitEventPoolTypeCount} unit/type eligibility pools in /derived.`
+    `[derive] Validation summary: ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events, ${Object.keys(eventsByYear).length} year buckets, ${unitEventPoolTypeCount} unit/type eligibility pools, and ${causalityChains.length} causality chains in /derived.`
   );
 }
 

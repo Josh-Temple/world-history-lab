@@ -102,3 +102,28 @@
 1. Centralize duplicated runtime event guards into a shared helper (for example `apps/shared/event-guards.js`) to reduce drift.
 2. Add smoke tests for malformed-data scenarios in each app (missing `summary_short`, missing `time.year_start`, broken `people_ids`/`effects`).
 3. Consider showing a consistent inline recovery CTA (for example “Switch unit” / “Include drafts”) on all empty-state fallback screens.
+
+## Incremental update (2026-03-28 · Sequence Reconstruction + causality chains)
+- Extended `scripts/derive.mjs` to build deduplicated causality chains from the `effects` graph:
+  - supports effect references in both string form and object `{ event_id }` form,
+  - avoids loops by skipping IDs already present in the current DFS path,
+  - limits output to path lengths 3-5,
+  - writes output to `derived/causality_chains.json`.
+- Added a new learner-facing app at `apps/sequence-reconstruction/`:
+  - loads `derived/causality_chains.json`,
+  - picks a random chain and shuffles it,
+  - supports drag-and-drop reordering in a simple list UI,
+  - checks sequence correctness and shows expected chain feedback,
+  - records mastery results for each event in attempted chains.
+- Updated homepage mode links (`index.html`) to include **Sequence Reconstruction** under the Understanding skill cluster.
+- Updated `README.md` to document the new derive artifact and new learning mode.
+
+## Validation completed (2026-03-28)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+
+## Suggested next steps
+1. Add optional unit-scoped chain selection so sequence reconstruction can follow the same focused-study workflow as other apps.
+2. Add explanatory text enrichment for each chain edge (for example, effect rationale) to improve feedback depth beyond ordering correctness.
+3. Add a lightweight app smoke test that verifies `derived/causality_chains.json` is non-empty and that the sequence route can render at least one playable chain.
