@@ -155,3 +155,35 @@
 1. Migrate remaining derived-data fetches (for example sequence chain loading) behind shared helpers for complete loader consistency.
 2. Expand `session-engine` with optional lifecycle hooks (for example `onQuestionStart`, `onAnswer`) so mastery tracking can be fully plugin-based.
 3. Add a cross-app smoke script that verifies all app entrypoints can load and render at least one question under default setup.
+
+## Incremental update (2026-03-29 · global backbone + onboarding loop)
+- Expanded `data/events.json` with 12 reviewed global-backbone events to broaden non-Eurocentric and pre-/post-modern coverage for shared app reuse:
+  - `ev_mali_mansa_musa_hajj_1324`
+  - `ev_ottoman_conquest_egypt_1517`
+  - `ev_mughal_empire_akbar_consolidation_1570s`
+  - `ev_tokugawa_shogunate_1603`
+  - `ev_haitian_revolution_independence_1804`
+  - `ev_abolition_british_slave_trade_1807`
+  - `ev_qing_first_opium_war_1839`
+  - `ev_indian_revolt_1857`
+  - `ev_berlin_conference_1884`
+  - `ev_pan_african_congress_1945`
+  - `ev_india_independence_1947`
+  - `ev_bandung_conference_1955`
+- Added a new onboarding unit file `data/units/foundations-world-history.json` with 17 cross-era anchor events and app profiles for timeline, event recognition, and causality.
+- Registered the unit in `data/units/index.json` and added it to `data/metadata.json` (`scope.included_units`) so derive/validation include it.
+- Updated `apps/history-player/index.html`:
+  - default canonical slice now starts at 25 events,
+  - added explicit progression cues (era label + next-event preview) for narrative continuity.
+- Updated `index.html` top section to an explicit 3-step learning path and changed primary CTA to start with History Player before drill modes.
+- Updated `README.md` with a new dated section describing the global foundations expansion and player/onboarding changes.
+
+## Validation completed (2026-03-29)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+
+## Suggested next steps
+1. Add people links for new backbone events (for example Mansa Musa, Akbar, Toussaint Louverture, Sukarno, Nehru) to improve People Recognition coverage.
+2. Add at least one regional comparison mode or prompt set (same-century cross-region contrasts) to make comparison learning explicit.
+3. Consider splitting data-only and app-behavior changes into separate PRs in future for faster review cycles.

@@ -19,6 +19,10 @@
     {
       "id": "unit_french_revolution",
       "path": "data/units/fr_french_revolution.json"
+    },
+    {
+      "id": "unit_foundations_world_history",
+      "path": "data/units/foundations-world-history.json"
     }
   ]
 }

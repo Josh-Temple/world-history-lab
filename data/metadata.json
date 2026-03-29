@@ -10,9 +10,10 @@
       "unit_industrial_revolution",
       "unit_meiji_restoration",
       "unit_age_of_imperialism",
-      "unit_french_revolution"
+      "unit_french_revolution",
+      "unit_foundations_world_history"
     ],
-    "notes": "Core dataset now spans four registered units plus a canonical cross-era player slice for timeline, recognition, overview, and player-based practice."
+    "notes": "Core dataset now spans focused modern units plus a foundations world-history backbone for chronology, recognition, causality, and player-based overview learning."
   },
   "source_policy": {
     "structured_data_sources": [
@@ -59,7 +60,7 @@
       "cause_and_effect"
     ]
   },
-  "updated_at": "2026-03-22T00:00:00Z",
+  "updated_at": "2026-03-29T00:00:00Z",
   "maintainer": {
     "name": "Josh",
     "notes": "Personal learning project"

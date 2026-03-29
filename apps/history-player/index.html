@@ -77,8 +77,8 @@
             </select>
             <label for="window-select">Slice</label>
             <select id="window-select">
-              <option value="15" selected>First 15 canonical events</option>
-              <option value="25">First 25 canonical events</option>
+              <option value="15">First 15 canonical events</option>
+              <option value="25" selected>Global backbone (25 events)</option>
               <option value="999">All canonical events</option>
             </select>
             <label for="importance-select">Importance</label>
@@ -104,6 +104,8 @@
           <p id="event-category" class="pill">Category: —</p>
           <p id="event-importance" class="pill">Importance: —</p>
           <p id="event-summary" class="muted">Loading event sequence…</p>
+          <p id="event-progress-cue" class="muted" style="margin:.5rem 0 0">Progress cue: —</p>
+          <p id="event-next-cue" class="muted" style="margin:.2rem 0 0">Next: —</p>
 
           <div class="meta-grid">
             <div class="meta-card">
@@ -137,7 +139,7 @@
         isPlaying: false,
         timer: null,
         speedMs: 1400,
-        sliceSize: 15,
+        sliceSize: 25,
         importanceLevel: 1,
       };
 
@@ -226,8 +228,19 @@
         document.getElementById("timeline-slider").value = String(state.index);
       }
 
+      function eraLabel(year) {
+        if (!Number.isFinite(year)) return "Unknown era";
+        if (year < -500) return "Ancient formations";
+        if (year < 500) return "Classical empires";
+        if (year < 1500) return "Post-classical world";
+        if (year < 1800) return "Early modern transformations";
+        if (year < 1945) return "Industrial and imperial age";
+        return "Decolonization and contemporary era";
+      }
+
       function render() {
         const event = state.filtered[state.index];
+        const next = state.filtered[state.index + 1];
         document.getElementById("position-text").textContent = state.filtered.length
           ? `Event ${state.index + 1} of ${state.filtered.length}`
           : "No events available";
@@ -237,6 +250,12 @@
         document.getElementById("event-category").textContent = event?.category ? `Category: ${event.category}` : "Category: —";
         document.getElementById("event-importance").textContent = Number.isFinite(event?.importance) ? `Importance: ${event.importance}` : "Importance: —";
         document.getElementById("event-summary").textContent = event?.summary_short ?? "Summary unavailable.";
+        document.getElementById("event-progress-cue").textContent = event
+          ? `Progress cue: ${eraLabel(event?.derived?.year_start)} · ${event.derived.year_start}`
+          : "Progress cue: —";
+        document.getElementById("event-next-cue").textContent = next
+          ? `Next: ${next.derived.year_start} · ${next.label}`
+          : "Next: End of current filtered sequence.";
         document.getElementById("event-location").textContent = event?.location?.label ?? "Unknown location";
         document.getElementById("event-location-precision").textContent = event?.location?.precision ?? "—";
 

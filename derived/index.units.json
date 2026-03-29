@@ -33,6 +33,29 @@
     ]
   },
   {
+    "id": "unit_foundations_world_history",
+    "title": "Foundations of World History",
+    "event_ids": [
+      "ev_cyrus_founds_achaemenid_550bce",
+      "ev_buddha_enlightenment_5c_bce",
+      "ev_qin_unification_221bce",
+      "ev_hijra_622",
+      "ev_mali_mansa_musa_hajj_1324",
+      "ev_columbus_1492",
+      "ev_ottoman_conquest_egypt_1517",
+      "ev_mughal_empire_akbar_consolidation_1570s",
+      "ev_tokugawa_shogunate_1603",
+      "ev_haitian_revolution_independence_1804",
+      "ev_abolition_british_slave_trade_1807",
+      "ev_qing_first_opium_war_1839",
+      "ev_indian_revolt_1857",
+      "ev_berlin_conference_1884",
+      "ev_pan_african_congress_1945",
+      "ev_india_independence_1947",
+      "ev_bandung_conference_1955"
+    ]
+  },
+  {
     "id": "unit_french_revolution",
     "title": "French Revolution",
     "event_ids": [
