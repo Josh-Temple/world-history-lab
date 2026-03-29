@@ -127,3 +127,31 @@
 1. Add optional unit-scoped chain selection so sequence reconstruction can follow the same focused-study workflow as other apps.
 2. Add explanatory text enrichment for each chain edge (for example, effect rationale) to improve feedback depth beyond ordering correctness.
 3. Add a lightweight app smoke test that verifies `derived/causality_chains.json` is non-empty and that the sequence route can render at least one playable chain.
+
+## Incremental update (2026-03-29 · shared data layer + session engine)
+- Added `apps/shared/data-store.js` to centralize `/data` loading and caching:
+  - `getAllEvents()`
+  - `getUnits()`
+  - `getUnitById(unitId)`
+  - `getEventsForUnit(unitId)`
+  - `getAllPeople()`
+- Refactored raw-data consumers to use the new shared store:
+  - `apps/year-estimation/app.js`
+  - `apps/people-recognition/app.js`
+  - `apps/timeline-trainer/src/data/loaders.js`
+- Added `apps/shared/session-engine.js` with a reusable session abstraction:
+  - `nextQuestion()`
+  - `submitAnswer(answer)`
+  - `getFeedback()`
+- Migrated Event Recognition (`apps/event-recognition/app.js`) to use the shared session engine for answer evaluation and feedback retrieval while keeping existing UI/session flow.
+- Updated `README.md` to document the new shared infrastructure changes under a new dated update section.
+
+## Validation completed (2026-03-29)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+
+## Suggested next steps
+1. Migrate remaining derived-data fetches (for example sequence chain loading) behind shared helpers for complete loader consistency.
+2. Expand `session-engine` with optional lifecycle hooks (for example `onQuestionStart`, `onAnswer`) so mastery tracking can be fully plugin-based.
+3. Add a cross-app smoke script that verifies all app entrypoints can load and render at least one question under default setup.

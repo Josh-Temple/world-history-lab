@@ -221,6 +221,12 @@ Next:
 - Integrated Sequence Reconstruction into the homepage under the **Understanding** skill group.
 - Added mastery recording for sequence attempts so chain events now contribute to persisted practice signals.
 
+## Recent updates (2026-03-29)
+
+- Added `apps/shared/data-store.js` as a shared data access layer with in-memory caching for events, units, and people plus helper APIs for unit-scoped event retrieval.
+- Updated Year Estimation, People Recognition, and Timeline Trainer loaders to consume the shared data store instead of app-local raw `/data/*` fetch duplication.
+- Added `apps/shared/session-engine.js` and migrated Event Recognition to use the shared session abstraction (`nextQuestion`, `submitAnswer`, `getFeedback`) while preserving existing learner-facing behavior.
+
 ## Current challenges (today)
 
 - **Keep CI green for data integrity**: PRs now run validation + derive checks, so changes must pass both scripts and keep `/derived` reproducible.
