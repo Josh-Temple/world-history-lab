@@ -1,6 +1,7 @@
 import { filterDerivedEvents, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
 import { isRecognitionReady } from "../shared/event-filters.js";
 import { getAllStats, recordResult } from "../shared/mastery-store.js";
+import { createSession } from "../shared/session-engine.js";
 
 const questionElement = document.getElementById("question");
 const choicesElement = document.getElementById("choices");
@@ -31,6 +32,7 @@ const state = {
   correctAnswers: 0,
   sessionActive: false,
   recentAnswerIds: [],
+  session: null,
 };
 
 function isValidEvent(event) {
@@ -287,7 +289,11 @@ function renderQuestion() {
   }
 
   const options = shuffle([answer, ...distractors]);
-  state.currentQuestion = { answer, options };
+  const nextQuestion = { answer, options };
+  state.currentQuestion = nextQuestion;
+  if (state.session) {
+    state.currentQuestion = state.session.nextQuestion() || nextQuestion;
+  }
   questionElement.textContent = buildClue(answer);
   sessionStatusElement.textContent = adaptiveActive
     ? `Adaptive mode is active. Focus on weaker events while you finish all ${state.totalQuestions} questions.`
@@ -318,7 +324,8 @@ function handleChoice(choiceButton, option) {
 
   const { answer } = state.currentQuestion;
   const answerUnit = unitForEvent(answer);
-  const isCorrect = option.id === answer.id;
+  const result = state.session?.submitAnswer(option) || { isCorrect: option.id === answer.id };
+  const isCorrect = Boolean(result.isCorrect);
 
   if (isCorrect) {
     state.correctAnswers += 1;
@@ -335,8 +342,12 @@ function handleChoice(choiceButton, option) {
   state.recentAnswerIds.unshift(answer.id);
   state.recentAnswerIds = state.recentAnswerIds.filter((eventId, index, array) => array.indexOf(eventId) === index).slice(0, RECENT_ANSWER_LIMIT);
 
-  const safeSummary = typeof answer?.summary_short === "string" ? answer.summary_short.trim() : "No summary available.";
-  answerMetaElement.textContent = `${answer.label} (${answer.time.year_start}) · ${answerUnit?.title || "Unassigned unit"}. ${safeSummary}`;
+  const feedbackMeta = state.session?.getFeedback() || {
+    safeSummary: typeof answer?.summary_short === "string" ? answer.summary_short.trim() : "No summary available.",
+    year: answer?.time?.year_start,
+    unitTitle: answerUnit?.title || "Unassigned unit",
+  };
+  answerMetaElement.textContent = `${answer.label} (${feedbackMeta.year}) · ${feedbackMeta.unitTitle}. ${feedbackMeta.safeSummary}`;
 }
 
 function refreshUnitVisibility() {
@@ -368,6 +379,22 @@ function startSession() {
   state.correctAnswers = 0;
   state.sessionActive = true;
   state.recentAnswerIds = [];
+  state.session = createSession({
+    getQuestion: () => state.currentQuestion,
+    evaluate: (question, selectedOption) => ({
+      isCorrect: Boolean(question && selectedOption && selectedOption.id === question.answer.id),
+      answer: question?.answer || null,
+    }),
+    getFeedback: (question) => {
+      const answer = question?.answer;
+      const answerUnit = unitForEvent(answer);
+      return {
+        safeSummary: typeof answer?.summary_short === "string" ? answer.summary_short.trim() : "No summary available.",
+        year: answer?.time?.year_start ?? "—",
+        unitTitle: answerUnit?.title || "Unassigned unit",
+      };
+    },
+  });
   summaryElement.hidden = true;
   hideNextStep();
   nextButton.hidden = false;

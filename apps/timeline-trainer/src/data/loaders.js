@@ -1,26 +1,4 @@
-async function fetchJson(url, label) {
-  console.debug(`[Timeline Trainer] Fetching ${label}: ${url}`);
-  const response = await fetch(url, { cache: "no-store" });
-  console.debug(`[Timeline Trainer] ${label} response status: ${response.status}`);
-  if (!response.ok) {
-    throw new Error(`${label}: HTTP ${response.status}`);
-  }
-
-  try {
-    return await response.json();
-  } catch (error) {
-    throw new Error(`${label}: JSON parse failed (${error.message})`);
-  }
-}
-
-function appUrl(relativePath) {
-  return new URL(relativePath, window.location.href).toString();
-}
-
-const FALLBACK_UNIT_FILES = [
-  "../../data/units/french-revolution-napoleon.json",
-  "../../data/units/industrial-revolution.json",
-];
+import { getAllEvents, getUnitById, getUnits } from "../../../shared/data-store.js";
 
 function assertEventShape(events) {
   if (!Array.isArray(events)) {
@@ -46,56 +24,41 @@ function assertUnitShape(unit, label = "unit") {
   console.debug(`[Timeline Trainer] Parsed unit id=${unit.id} title=${unit.title} event_ids=${unit.event_ids.length}`);
 }
 
-async function resolveUnitFiles() {
-  const registryPath = "../../data/units/index.json";
-  const registryUrl = appUrl(registryPath);
+async function resolveUnits() {
+  const unitsIndex = await getUnits();
+  const unitIds = unitsIndex
+    .map((entry) => (entry && typeof entry.id === "string" ? entry.id : null))
+    .filter(Boolean);
 
-  try {
-    const registry = await fetchJson(registryUrl, "units/index.json");
-    if (!registry || !Array.isArray(registry.units)) {
-      throw new Error("units/index.json must include { units: [] }");
+  const unitResults = await Promise.allSettled(unitIds.map((unitId) => getUnitById(unitId)));
+  const units = [];
+
+  for (const result of unitResults) {
+    if (result.status !== "fulfilled") {
+      console.warn("[Timeline Trainer] Skipping unit due to load error:", result.reason?.message || result.reason);
+      continue;
     }
 
-    const resolved = registry.units
-      .map((entry) => (entry && typeof entry.path === "string" ? entry.path : null))
-      .filter(Boolean)
-      .map((path) => `../../${path.replace(/^\.?\/?/, "")}`);
-
-    if (resolved.length === 0) {
-      throw new Error("units/index.json has no valid unit paths");
+    if (!result.value) {
+      continue;
     }
 
-    return resolved;
-  } catch (error) {
-    console.warn("[Timeline Trainer] Failed to load unit registry. Using fallback unit file list.", error?.message || error);
-    return FALLBACK_UNIT_FILES;
+    try {
+      assertUnitShape(result.value, result.value.id || "unit");
+      units.push(result.value);
+    } catch (error) {
+      console.warn("[Timeline Trainer] Skipping invalid unit shape:", error?.message || error);
+    }
   }
+
+  return units;
 }
 
 export async function loadTimelineSeedData() {
-  const eventsUrl = appUrl("../../data/events.json");
-  const events = await fetchJson(eventsUrl, "events.json");
+  const events = await getAllEvents();
   assertEventShape(events);
 
-  const unitFiles = await resolveUnitFiles();
-  const unitResults = await Promise.allSettled(
-    unitFiles.map(async (unitFile) => {
-      const unitUrl = appUrl(unitFile);
-      const unit = await fetchJson(unitUrl, unitFile.split("/").pop() || unitFile);
-      assertUnitShape(unit, unitFile);
-      return unit;
-    })
-  );
-
-  const units = [];
-  for (const result of unitResults) {
-    if (result.status === "fulfilled") {
-      units.push(result.value);
-      continue;
-    }
-    console.warn("[Timeline Trainer] Skipping unit file:", result.reason?.message || result.reason);
-  }
-
+  const units = await resolveUnits();
   if (units.length === 0) {
     throw new Error("No valid unit files could be loaded.");
   }

@@ -1,4 +1,5 @@
 import { REVIEWED_PLUS, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
+import { getAllPeople } from "../shared/data-store.js";
 
 const personNameElement = document.getElementById("person-name");
 const personSummaryElement = document.getElementById("person-summary");
@@ -53,14 +54,6 @@ function shuffle(items) {
     [copy[index], copy[swapIndex]] = [copy[swapIndex], copy[index]];
   }
   return copy;
-}
-
-async function fetchPeople() {
-  const response = await fetch("/data/people.json", { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error(`people: HTTP ${response.status}`);
-  }
-  return response.json();
 }
 
 function isQualityAllowed(record) {
@@ -341,7 +334,7 @@ function handleAdvance() {
 async function init() {
   try {
     const [people, events, unitsIndex] = await Promise.all([
-      fetchPeople(),
+      getAllPeople(),
       loadDerivedEvents(),
       loadUnitsIndex(),
     ]);

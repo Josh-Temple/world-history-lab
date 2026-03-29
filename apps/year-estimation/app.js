@@ -1,4 +1,5 @@
 import { recordResult } from '../shared/mastery-store.js';
+import { getAllEvents, getUnits } from '../shared/data-store.js';
 
 const eventLabel = document.getElementById('event-label');
 const eventSummary = document.getElementById('event-summary');
@@ -120,23 +121,10 @@ function submitGuess() {
 
 async function init() {
   try {
-    const [events, unitsIndex] = await Promise.all([
-      fetch('/data/events.json', { cache: 'no-store' }).then((response) => {
-        if (!response.ok) {
-          throw new Error(`events: HTTP ${response.status}`);
-        }
-        return response.json();
-      }),
-      fetch('/data/units/index.json', { cache: 'no-store' }).then((response) => {
-        if (!response.ok) {
-          throw new Error(`units: HTTP ${response.status}`);
-        }
-        return response.json();
-      }),
-    ]);
+    const [events, unitsIndex] = await Promise.all([getAllEvents(), getUnits()]);
 
     allEvents = (Array.isArray(events) ? events : []).filter(isValidEvent);
-    units = Array.isArray(unitsIndex?.units) ? unitsIndex.units : (Array.isArray(unitsIndex) ? unitsIndex : []);
+    units = Array.isArray(unitsIndex) ? unitsIndex : [];
     populateUnitOptions();
     applyUnitFilter();
 
