@@ -270,5 +270,37 @@
         "ev_womens_march_versailles_1789"
       ]
     }
+  },
+  "unit_foundations_world_history": {
+    "eligible_ids": {
+      "timeline_before_after": [
+        "ev_abolition_british_slave_trade_1807",
+        "ev_bandung_conference_1955",
+        "ev_berlin_conference_1884",
+        "ev_haitian_revolution_independence_1804",
+        "ev_india_independence_1947",
+        "ev_indian_revolt_1857",
+        "ev_mali_mansa_musa_hajj_1324",
+        "ev_mughal_empire_akbar_consolidation_1570s",
+        "ev_ottoman_conquest_egypt_1517",
+        "ev_pan_african_congress_1945",
+        "ev_qing_first_opium_war_1839",
+        "ev_tokugawa_shogunate_1603"
+      ],
+      "what_happened": [
+        "ev_abolition_british_slave_trade_1807",
+        "ev_bandung_conference_1955",
+        "ev_berlin_conference_1884",
+        "ev_haitian_revolution_independence_1804",
+        "ev_india_independence_1947",
+        "ev_indian_revolt_1857",
+        "ev_mali_mansa_musa_hajj_1324",
+        "ev_mughal_empire_akbar_consolidation_1570s",
+        "ev_ottoman_conquest_egypt_1517",
+        "ev_pan_african_congress_1945",
+        "ev_qing_first_opium_war_1839",
+        "ev_tokugawa_shogunate_1603"
+      ]
+    }
   }
 }

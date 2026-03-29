@@ -1,5 +1,44 @@
 [
   {
+    "id": "ev_abolition_british_slave_trade_1807",
+    "label": "Britain abolishes the transatlantic slave trade",
+    "summary_short": "Britain's 1807 abolition act targeted slave-trade shipping and accelerated international pressure against the Atlantic trade.",
+    "status": "reviewed",
+    "category": "society",
+    "importance": 2,
+    "location": {
+      "label": "London",
+      "lat": 51.5072,
+      "lng": -0.1276,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_qing_first_opium_war_1839"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1807",
+      "end": "1807",
+      "year_start": 1807,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18070101,
+      "sort_end": 18071231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1807
+    }
+  },
+  {
     "id": "ev_alexander_gaugamela_331bce",
     "label": "Alexander defeats Persia at Gaugamela",
     "summary_short": "Macedonian victory accelerated Hellenistic cultural spread.",
@@ -96,6 +135,43 @@
     }
   },
   {
+    "id": "ev_bandung_conference_1955",
+    "label": "Bandung Conference launches Afro-Asian cooperation",
+    "summary_short": "Leaders from Asia and Africa met at Bandung to coordinate postcolonial diplomacy and articulate non-aligned priorities.",
+    "status": "reviewed",
+    "category": "diplomacy",
+    "importance": 1,
+    "location": {
+      "label": "Bandung",
+      "lat": -6.9175,
+      "lng": 107.6191,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1955",
+      "end": "1955",
+      "year_start": 1955,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19550101,
+      "sort_end": 19551231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1955
+    }
+  },
+  {
     "id": "ev_battle_of_valmy_1792",
     "label": "Battle of Valmy",
     "summary_short": "French revolutionary forces halted a Prussian-led invasion, helping secure the Revolution at a critical moment.",
@@ -131,6 +207,45 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1792
+    }
+  },
+  {
+    "id": "ev_berlin_conference_1884",
+    "label": "Berlin Conference sets rules for partitioning Africa",
+    "summary_short": "European powers formalized frameworks for colonial claims in Africa without African representation, accelerating partition.",
+    "status": "reviewed",
+    "category": "diplomacy",
+    "importance": 1,
+    "location": {
+      "label": "Berlin",
+      "lat": 52.52,
+      "lng": 13.405,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_pan_african_congress_1945"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1884",
+      "end": "1884",
+      "year_start": 1884,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18840101,
+      "sort_end": 18841231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1884
     }
   },
   {
@@ -211,7 +326,9 @@
     },
     "question_types": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "effects": [],
     "causes": [],
     "time": {
@@ -313,7 +430,9 @@
     },
     "question_types": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "effects": [],
     "causes": [],
     "time": {
@@ -494,7 +613,9 @@
     },
     "question_types": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "effects": [],
     "causes": [],
     "time": {
@@ -847,6 +968,45 @@
     }
   },
   {
+    "id": "ev_haitian_revolution_independence_1804",
+    "label": "Haiti declares independence",
+    "summary_short": "The Haitian Revolution produced the first independent Black republic and reshaped Atlantic debates about slavery and rights.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 1,
+    "location": {
+      "label": "Saint-Domingue (Haiti)",
+      "lat": 18.9712,
+      "lng": -72.2852,
+      "precision": "country"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_abolition_british_slave_trade_1807"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1804",
+      "end": "1804",
+      "year_start": 1804,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18040101,
+      "sort_end": 18041231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1804
+    }
+  },
+  {
     "id": "ev_han_zhangqian_2c_bce",
     "label": "Han missions open early Silk Road links",
     "summary_short": "Long-distance Afro-Eurasian exchange intensified across overland routes.",
@@ -893,7 +1053,9 @@
     },
     "question_types": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "effects": [],
     "causes": [],
     "time": {
@@ -1878,6 +2040,123 @@
     }
   },
   {
+    "id": "ev_india_independence_1947",
+    "label": "India and Pakistan gain independence",
+    "summary_short": "The end of British rule in South Asia created India and Pakistan while partition triggered mass migration and violence.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 1,
+    "location": {
+      "label": "South Asia",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_bandung_conference_1955"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1947",
+      "end": "1947",
+      "year_start": 1947,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19470101,
+      "sort_end": 19471231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1947
+    }
+  },
+  {
+    "id": "ev_indian_revolt_1857",
+    "label": "Indian Rebellion of 1857",
+    "summary_short": "The 1857 rebellion prompted the end of East India Company rule and the formal expansion of British crown governance in India.",
+    "status": "reviewed",
+    "category": "war",
+    "importance": 1,
+    "location": {
+      "label": "North India",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_berlin_conference_1884"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1857",
+      "end": "1857",
+      "year_start": 1857,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18570101,
+      "sort_end": 18571231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1857
+    }
+  },
+  {
+    "id": "ev_mali_mansa_musa_hajj_1324",
+    "label": "Mansa Musa's pilgrimage highlights Mali's wealth",
+    "summary_short": "Mansa Musa's pilgrimage to Mecca displayed the wealth of Mali and highlighted trans-Saharan trade connections.",
+    "status": "reviewed",
+    "category": "economy",
+    "importance": 2,
+    "location": {
+      "label": "Mali to Mecca route",
+      "lat": 17,
+      "lng": -3,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_ottoman_conquest_egypt_1517"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1324",
+      "end": "1324",
+      "year_start": 1324,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 13240101,
+      "sort_end": 13241231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1324
+    }
+  },
+  {
     "id": "ev_mehmed_constantinople_1453",
     "label": "Ottoman conquest of Constantinople",
     "summary_short": "The conquest reset power balances in eastern Mediterranean geopolitics.",
@@ -2434,6 +2713,45 @@
     }
   },
   {
+    "id": "ev_mughal_empire_akbar_consolidation_1570s",
+    "label": "Akbar consolidates Mughal rule in South Asia",
+    "summary_short": "Akbar's expansion and administrative reforms stabilized Mughal rule and created one of the early modern world's largest empires.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 2,
+    "location": {
+      "label": "Agra region",
+      "lat": 27.1767,
+      "lng": 78.0081,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_tokugawa_shogunate_1603"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1570",
+      "end": "1570",
+      "year_start": 1570,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15700101,
+      "sort_end": 15701231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1570
+    }
+  },
+  {
     "id": "ev_napoleon_coup_18_brumaire_1799",
     "label": "Coup of 18 Brumaire",
     "summary_short": "Napoleon Bonaparte seized power in the Coup of 18 Brumaire, ending the Directory and establishing the Consulate.",
@@ -2540,6 +2858,84 @@
     }
   },
   {
+    "id": "ev_ottoman_conquest_egypt_1517",
+    "label": "Ottoman conquest of Mamluk Egypt",
+    "summary_short": "The Ottoman conquest of Egypt integrated Cairo, the Red Sea, and eastern Mediterranean trade into a larger imperial system.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 2,
+    "location": {
+      "label": "Cairo",
+      "lat": 30.0444,
+      "lng": 31.2357,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_mughal_empire_akbar_consolidation_1570s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1517",
+      "end": "1517",
+      "year_start": 1517,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15170101,
+      "sort_end": 15171231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1517
+    }
+  },
+  {
+    "id": "ev_pan_african_congress_1945",
+    "label": "Fifth Pan-African Congress in Manchester",
+    "summary_short": "The 1945 Pan-African Congress connected anticolonial leaders and strengthened movements that drove postwar independence struggles.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 2,
+    "location": {
+      "label": "Manchester",
+      "lat": 53.4808,
+      "lng": -2.2426,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_india_independence_1947"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1945",
+      "end": "1945",
+      "year_start": 1945,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19450101,
+      "sort_end": 19451231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1945
+    }
+  },
+  {
     "id": "ev_penydarren_locomotive_run_1804",
     "label": "Penydarren steam locomotive run (Trevithick)",
     "summary_short": "A landmark early rail journey powered by a steam locomotive, demonstrating the feasibility of steam traction on rails.",
@@ -2616,7 +3012,9 @@
     },
     "question_types": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "effects": [],
     "causes": [],
     "time": {
@@ -2631,6 +3029,45 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": -221
+    }
+  },
+  {
+    "id": "ev_qing_first_opium_war_1839",
+    "label": "First Opium War begins",
+    "summary_short": "Conflict between Qing China and Britain over trade and opium ended with treaty-port concessions that altered regional power balances.",
+    "status": "reviewed",
+    "category": "war",
+    "importance": 1,
+    "location": {
+      "label": "Pearl River Delta",
+      "lat": 22.5,
+      "lng": 113.5,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_indian_revolt_1857"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1839",
+      "end": "1839",
+      "year_start": 1839,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18390101,
+      "sort_end": 18391231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1839
     }
   },
   {
@@ -3064,6 +3501,45 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1794
+    }
+  },
+  {
+    "id": "ev_tokugawa_shogunate_1603",
+    "label": "Tokugawa shogunate established in Japan",
+    "summary_short": "Tokugawa Ieyasu's victory created a durable shogunate that reorganized political order and social hierarchy in Japan.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 2,
+    "location": {
+      "label": "Edo (Tokyo)",
+      "lat": 35.6762,
+      "lng": 139.6503,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_haitian_revolution_independence_1804"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1603",
+      "end": "1603",
+      "year_start": 1603,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16030101,
+      "sort_end": 16031231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1603
     }
   },
   {

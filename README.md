@@ -449,3 +449,11 @@ TBD
 - Strengthened `scripts/validate-data.mjs` with cross-reference checks for causal links, duplicate ID detection across entity types, unit-event integrity enforcement, and warnings for incomplete event summaries.
 - Extended the derive pipeline so `derived/events.normalized.json` carries status, question types, causal links, and unit membership for downstream apps.
 - Standardized Event Recognition and Causality Builder to read from the derived dataset through a shared app-side data access helper, reducing raw-vs-derived drift across learning modes.
+
+## Recent updates (2026-03-29 · global foundations expansion)
+
+- Added a first **Foundations of World History** unit (`data/units/foundations-world-history.json`) with 17 cross-era events designed for beginner onboarding and immediate use in timeline, recognition, and causality practice.
+- Expanded `data/events.json` with 12 reviewed global-backbone events spanning Africa, South Asia, East Asia, the Middle East, and the Atlantic/decolonization era.
+- Registered the new foundations unit in `data/units/index.json` and synchronized `data/metadata.json` scope so validation/derive include it by default.
+- Upgraded `apps/history-player/` sequencing clarity with progression cues (era + upcoming event preview) and switched the default slice to the larger 25-event global backbone view.
+- Updated the homepage `index.html` start section into an explicit three-step learning path: Overview/Player → Timeline → Recognition/Causality.

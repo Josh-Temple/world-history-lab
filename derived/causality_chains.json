@@ -1,8 +1,18 @@
 [
   [
+    "ev_abolition_british_slave_trade_1807",
+    "ev_qing_first_opium_war_1839",
+    "ev_indian_revolt_1857"
+  ],
+  [
     "ev_battle_of_valmy_1792",
     "ev_reign_of_terror_1793_1794",
     "ev_thermidorian_reaction_1794"
+  ],
+  [
+    "ev_berlin_conference_1884",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947"
   ],
   [
     "ev_civil_constitution_clergy_1790",
@@ -30,9 +40,44 @@
     "ev_execution_louis_xvi_1793"
   ],
   [
+    "ev_haitian_revolution_independence_1804",
+    "ev_abolition_british_slave_trade_1807",
+    "ev_qing_first_opium_war_1839"
+  ],
+  [
+    "ev_indian_revolt_1857",
+    "ev_berlin_conference_1884",
+    "ev_pan_african_congress_1945"
+  ],
+  [
+    "ev_mali_mansa_musa_hajj_1324",
+    "ev_ottoman_conquest_egypt_1517",
+    "ev_mughal_empire_akbar_consolidation_1570s"
+  ],
+  [
+    "ev_mughal_empire_akbar_consolidation_1570s",
+    "ev_tokugawa_shogunate_1603",
+    "ev_haitian_revolution_independence_1804"
+  ],
+  [
     "ev_napoleon_coup_18_brumaire_1799",
     "ev_napoleon_emperor_1804",
     "ev_congress_of_vienna_1814_1815"
+  ],
+  [
+    "ev_ottoman_conquest_egypt_1517",
+    "ev_mughal_empire_akbar_consolidation_1570s",
+    "ev_tokugawa_shogunate_1603"
+  ],
+  [
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_qing_first_opium_war_1839",
+    "ev_indian_revolt_1857",
+    "ev_berlin_conference_1884"
   ],
   [
     "ev_september_massacres_1792",
@@ -45,9 +90,26 @@
     "ev_declaration_rights_man_citizen_1789"
   ],
   [
+    "ev_tokugawa_shogunate_1603",
+    "ev_haitian_revolution_independence_1804",
+    "ev_abolition_british_slave_trade_1807"
+  ],
+  [
     "ev_womens_march_versailles_1789",
     "ev_flight_to_varennes_1791",
     "ev_september_massacres_1792"
+  ],
+  [
+    "ev_abolition_british_slave_trade_1807",
+    "ev_qing_first_opium_war_1839",
+    "ev_indian_revolt_1857",
+    "ev_berlin_conference_1884"
+  ],
+  [
+    "ev_berlin_conference_1884",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947",
+    "ev_bandung_conference_1955"
   ],
   [
     "ev_civil_constitution_clergy_1790",
@@ -74,16 +136,65 @@
     "ev_reign_of_terror_1793_1794"
   ],
   [
+    "ev_haitian_revolution_independence_1804",
+    "ev_abolition_british_slave_trade_1807",
+    "ev_qing_first_opium_war_1839",
+    "ev_indian_revolt_1857"
+  ],
+  [
+    "ev_indian_revolt_1857",
+    "ev_berlin_conference_1884",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947"
+  ],
+  [
+    "ev_mali_mansa_musa_hajj_1324",
+    "ev_ottoman_conquest_egypt_1517",
+    "ev_mughal_empire_akbar_consolidation_1570s",
+    "ev_tokugawa_shogunate_1603"
+  ],
+  [
+    "ev_mughal_empire_akbar_consolidation_1570s",
+    "ev_tokugawa_shogunate_1603",
+    "ev_haitian_revolution_independence_1804",
+    "ev_abolition_british_slave_trade_1807"
+  ],
+  [
+    "ev_ottoman_conquest_egypt_1517",
+    "ev_mughal_empire_akbar_consolidation_1570s",
+    "ev_tokugawa_shogunate_1603",
+    "ev_haitian_revolution_independence_1804"
+  ],
+  [
+    "ev_qing_first_opium_war_1839",
+    "ev_indian_revolt_1857",
+    "ev_berlin_conference_1884",
+    "ev_pan_african_congress_1945"
+  ],
+  [
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793",
     "ev_reign_of_terror_1793_1794",
     "ev_thermidorian_reaction_1794"
   ],
   [
+    "ev_tokugawa_shogunate_1603",
+    "ev_haitian_revolution_independence_1804",
+    "ev_abolition_british_slave_trade_1807",
+    "ev_qing_first_opium_war_1839"
+  ],
+  [
     "ev_womens_march_versailles_1789",
     "ev_flight_to_varennes_1791",
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793"
+  ],
+  [
+    "ev_abolition_british_slave_trade_1807",
+    "ev_qing_first_opium_war_1839",
+    "ev_indian_revolt_1857",
+    "ev_berlin_conference_1884",
+    "ev_pan_african_congress_1945"
   ],
   [
     "ev_civil_constitution_clergy_1790",
@@ -98,6 +209,55 @@
     "ev_execution_louis_xvi_1793",
     "ev_reign_of_terror_1793_1794",
     "ev_thermidorian_reaction_1794"
+  ],
+  [
+    "ev_haitian_revolution_independence_1804",
+    "ev_abolition_british_slave_trade_1807",
+    "ev_qing_first_opium_war_1839",
+    "ev_indian_revolt_1857",
+    "ev_berlin_conference_1884"
+  ],
+  [
+    "ev_indian_revolt_1857",
+    "ev_berlin_conference_1884",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_mali_mansa_musa_hajj_1324",
+    "ev_ottoman_conquest_egypt_1517",
+    "ev_mughal_empire_akbar_consolidation_1570s",
+    "ev_tokugawa_shogunate_1603",
+    "ev_haitian_revolution_independence_1804"
+  ],
+  [
+    "ev_mughal_empire_akbar_consolidation_1570s",
+    "ev_tokugawa_shogunate_1603",
+    "ev_haitian_revolution_independence_1804",
+    "ev_abolition_british_slave_trade_1807",
+    "ev_qing_first_opium_war_1839"
+  ],
+  [
+    "ev_ottoman_conquest_egypt_1517",
+    "ev_mughal_empire_akbar_consolidation_1570s",
+    "ev_tokugawa_shogunate_1603",
+    "ev_haitian_revolution_independence_1804",
+    "ev_abolition_british_slave_trade_1807"
+  ],
+  [
+    "ev_qing_first_opium_war_1839",
+    "ev_indian_revolt_1857",
+    "ev_berlin_conference_1884",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947"
+  ],
+  [
+    "ev_tokugawa_shogunate_1603",
+    "ev_haitian_revolution_independence_1804",
+    "ev_abolition_british_slave_trade_1807",
+    "ev_qing_first_opium_war_1839",
+    "ev_indian_revolt_1857"
   ],
   [
     "ev_womens_march_versailles_1789",

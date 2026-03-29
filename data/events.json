@@ -2975,5 +2975,362 @@
       "causality_chain",
       "what_happened"
     ]
+  },
+  {
+    "id": "ev_mali_mansa_musa_hajj_1324",
+    "label": "Mansa Musa's pilgrimage highlights Mali's wealth",
+    "time": {
+      "year_start": 1324
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "africa",
+      "trade",
+      "islamic_world"
+    ],
+    "summary_short": "Mansa Musa's pilgrimage to Mecca displayed the wealth of Mali and highlighted trans-Saharan trade connections.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "economy",
+    "location": {
+      "label": "Mali to Mecca route",
+      "lat": 17,
+      "lng": -3,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_ottoman_conquest_egypt_1517"
+    ]
+  },
+  {
+    "id": "ev_ottoman_conquest_egypt_1517",
+    "label": "Ottoman conquest of Mamluk Egypt",
+    "time": {
+      "year_start": 1517
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "middle_east",
+      "empire",
+      "trade_routes"
+    ],
+    "summary_short": "The Ottoman conquest of Egypt integrated Cairo, the Red Sea, and eastern Mediterranean trade into a larger imperial system.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "politics",
+    "location": {
+      "label": "Cairo",
+      "lat": 30.0444,
+      "lng": 31.2357,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_mughal_empire_akbar_consolidation_1570s"
+    ]
+  },
+  {
+    "id": "ev_mughal_empire_akbar_consolidation_1570s",
+    "label": "Akbar consolidates Mughal rule in South Asia",
+    "time": {
+      "year_start": 1570
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "south_asia",
+      "empire",
+      "governance"
+    ],
+    "summary_short": "Akbar's expansion and administrative reforms stabilized Mughal rule and created one of the early modern world's largest empires.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "politics",
+    "location": {
+      "label": "Agra region",
+      "lat": 27.1767,
+      "lng": 78.0081,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_tokugawa_shogunate_1603"
+    ]
+  },
+  {
+    "id": "ev_tokugawa_shogunate_1603",
+    "label": "Tokugawa shogunate established in Japan",
+    "time": {
+      "year_start": 1603
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "east_asia",
+      "state_formation",
+      "japan"
+    ],
+    "summary_short": "Tokugawa Ieyasu's victory created a durable shogunate that reorganized political order and social hierarchy in Japan.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "politics",
+    "location": {
+      "label": "Edo (Tokyo)",
+      "lat": 35.6762,
+      "lng": 139.6503,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_haitian_revolution_independence_1804"
+    ]
+  },
+  {
+    "id": "ev_haitian_revolution_independence_1804",
+    "label": "Haiti declares independence",
+    "time": {
+      "year_start": 1804
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "americas",
+      "revolution",
+      "slavery"
+    ],
+    "summary_short": "The Haitian Revolution produced the first independent Black republic and reshaped Atlantic debates about slavery and rights.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "politics",
+    "location": {
+      "label": "Saint-Domingue (Haiti)",
+      "lat": 18.9712,
+      "lng": -72.2852,
+      "precision": "country"
+    },
+    "effects": [
+      "ev_abolition_british_slave_trade_1807"
+    ]
+  },
+  {
+    "id": "ev_abolition_british_slave_trade_1807",
+    "label": "Britain abolishes the transatlantic slave trade",
+    "time": {
+      "year_start": 1807
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "atlantic",
+      "abolition",
+      "law"
+    ],
+    "summary_short": "Britain's 1807 abolition act targeted slave-trade shipping and accelerated international pressure against the Atlantic trade.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "society",
+    "location": {
+      "label": "London",
+      "lat": 51.5072,
+      "lng": -0.1276,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_qing_first_opium_war_1839"
+    ]
+  },
+  {
+    "id": "ev_qing_first_opium_war_1839",
+    "label": "First Opium War begins",
+    "time": {
+      "year_start": 1839
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "east_asia",
+      "imperialism",
+      "trade"
+    ],
+    "summary_short": "Conflict between Qing China and Britain over trade and opium ended with treaty-port concessions that altered regional power balances.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "war",
+    "location": {
+      "label": "Pearl River Delta",
+      "lat": 22.5,
+      "lng": 113.5,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_indian_revolt_1857"
+    ]
+  },
+  {
+    "id": "ev_indian_revolt_1857",
+    "label": "Indian Rebellion of 1857",
+    "time": {
+      "year_start": 1857
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "south_asia",
+      "colonialism",
+      "resistance"
+    ],
+    "summary_short": "The 1857 rebellion prompted the end of East India Company rule and the formal expansion of British crown governance in India.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "war",
+    "location": {
+      "label": "North India",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_berlin_conference_1884"
+    ]
+  },
+  {
+    "id": "ev_berlin_conference_1884",
+    "label": "Berlin Conference sets rules for partitioning Africa",
+    "time": {
+      "year_start": 1884
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "africa",
+      "imperialism",
+      "diplomacy"
+    ],
+    "summary_short": "European powers formalized frameworks for colonial claims in Africa without African representation, accelerating partition.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "diplomacy",
+    "location": {
+      "label": "Berlin",
+      "lat": 52.52,
+      "lng": 13.405,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_pan_african_congress_1945"
+    ]
+  },
+  {
+    "id": "ev_pan_african_congress_1945",
+    "label": "Fifth Pan-African Congress in Manchester",
+    "time": {
+      "year_start": 1945
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "africa",
+      "decolonization",
+      "politics"
+    ],
+    "summary_short": "The 1945 Pan-African Congress connected anticolonial leaders and strengthened movements that drove postwar independence struggles.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "politics",
+    "location": {
+      "label": "Manchester",
+      "lat": 53.4808,
+      "lng": -2.2426,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_india_independence_1947"
+    ]
+  },
+  {
+    "id": "ev_india_independence_1947",
+    "label": "India and Pakistan gain independence",
+    "time": {
+      "year_start": 1947
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "south_asia",
+      "decolonization",
+      "partition"
+    ],
+    "summary_short": "The end of British rule in South Asia created India and Pakistan while partition triggered mass migration and violence.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "politics",
+    "location": {
+      "label": "South Asia",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_bandung_conference_1955"
+    ]
+  },
+  {
+    "id": "ev_bandung_conference_1955",
+    "label": "Bandung Conference launches Afro-Asian cooperation",
+    "time": {
+      "year_start": 1955
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened"
+    ],
+    "tags": [
+      "asia",
+      "africa",
+      "cold_war"
+    ],
+    "summary_short": "Leaders from Asia and Africa met at Bandung to coordinate postcolonial diplomacy and articulate non-aligned priorities.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 1,
+    "category": "diplomacy",
+    "location": {
+      "label": "Bandung",
+      "lat": -6.9175,
+      "lng": 107.6191,
+      "precision": "city"
+    }
   }
 ]
