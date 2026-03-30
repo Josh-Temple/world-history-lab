@@ -605,5 +605,104 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "reviewed"
+  },
+  {
+    "id": "pe_james_watt",
+    "name": "James Watt",
+    "alt_names": [],
+    "birth_year": 1736,
+    "death_year": 1819,
+    "regions": [
+      "reg_britain"
+    ],
+    "roles": [
+      "inventor",
+      "engineer"
+    ],
+    "summary_short": "Scottish engineer whose steam-engine improvements greatly expanded the practical use of steam power in industry and transport.",
+    "related_events": [
+      "ev_watt_steam_engine_1776"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_george_stephenson",
+    "name": "George Stephenson",
+    "alt_names": [],
+    "birth_year": 1781,
+    "death_year": 1848,
+    "regions": [
+      "reg_britain"
+    ],
+    "roles": [
+      "engineer",
+      "inventor"
+    ],
+    "summary_short": "Railway engineer associated with early locomotive development and the spread of rail transport in industrial Britain.",
+    "related_events": [
+      "ev_liverpool_manchester_railway_1830"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_henry_bessemer",
+    "name": "Henry Bessemer",
+    "alt_names": [],
+    "birth_year": 1813,
+    "death_year": 1898,
+    "regions": [
+      "reg_britain"
+    ],
+    "roles": [
+      "inventor",
+      "industrialist"
+    ],
+    "summary_short": "English inventor of the Bessemer steelmaking process, which sharply reduced steel costs and enabled large-scale industrial expansion.",
+    "related_events": [
+      "ev_bessemer_process_1856"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_samuel_morse",
+    "name": "Samuel Morse",
+    "alt_names": [],
+    "birth_year": 1791,
+    "death_year": 1872,
+    "regions": [
+      "reg_north_america"
+    ],
+    "roles": [
+      "inventor"
+    ],
+    "summary_short": "American inventor linked to practical electric telegraphy and Morse code, helping accelerate long-distance communication.",
+    "related_events": [
+      "ev_telegraph_invention_1837"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
   }
 ]

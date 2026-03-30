@@ -38,10 +38,14 @@
   "1733": [
     "ev_flying_shuttle_patent_1733"
   ],
+  "1750": [
+    "ev_enclosure_movement_accelerates_1750s"
+  ],
   "1761": [
     "ev_bridgewater_canal_opens_1761"
   ],
   "1764": [
+    "ev_spinning_jenny_1764",
     "ev_spinning_jenny_invented_1764"
   ],
   "1769": [
@@ -54,10 +58,14 @@
   "1771": [
     "ev_cromford_mill_uses_water_frame_1771"
   ],
+  "1776": [
+    "ev_watt_steam_engine_1776"
+  ],
   "1779": [
     "ev_spinning_mule_invented_1779"
   ],
   "1785": [
+    "ev_factory_system_rise_1780s",
     "ev_power_loom_patented_1785"
   ],
   "1789": [
@@ -91,25 +99,62 @@
   "1799": [
     "ev_napoleon_coup_18_brumaire_1799"
   ],
+  "1803": [
+    "ev_napoleonic_wars_1803_1815"
+  ],
   "1804": [
     "ev_haitian_revolution_independence_1804",
     "ev_napoleon_emperor_1804",
-    "ev_penydarren_locomotive_run_1804"
+    "ev_penydarren_locomotive_run_1804",
+    "ev_steam_power_transport_expansion_1800s"
   ],
   "1807": [
     "ev_abolition_british_slave_trade_1807"
   ],
+  "1811": [
+    "ev_luddite_protests_1811"
+  ],
   "1814": [
     "ev_congress_of_vienna_1814_1815"
+  ],
+  "1815": [
+    "ev_congress_vienna_1815"
+  ],
+  "1818": [
+    "ev_concert_of_europe_1815_1848"
+  ],
+  "1820": [
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_urbanization_accelerates_1800_1850"
   ],
   "1829": [
     "ev_rainhill_trials_rocket_1829"
   ],
+  "1830": [
+    "ev_liverpool_manchester_railway_1830"
+  ],
   "1833": [
     "ev_factory_act_1833"
   ],
+  "1837": [
+    "ev_telegraph_invention_1837"
+  ],
+  "1838": [
+    "ev_labor_movements_1830s_1840s"
+  ],
   "1839": [
     "ev_qing_first_opium_war_1839"
+  ],
+  "1845": [
+    "ev_railway_boom_1840s"
+  ],
+  "1847": [
+    "ev_factory_act_1847_ten_hours"
+  ],
+  "1848": [
+    "ev_communist_manifesto_1848",
+    "ev_public_health_act_1848",
+    "ev_revolutions_1848"
   ],
   "1851": [
     "ev_great_exhibition_opens_1851"
@@ -120,11 +165,24 @@
   "1854": [
     "ev_meiji_kanagawa_treaty_1854"
   ],
+  "1855": [
+    "ev_national_market_integration_1850s"
+  ],
   "1856": [
+    "ev_bessemer_process_1856",
     "ev_bessemer_process_patent_1856"
   ],
   "1857": [
     "ev_indian_revolt_1857"
+  ],
+  "1860": [
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  "1864": [
+    "ev_first_international_1864"
+  ],
+  "1866": [
+    "ev_global_market_coordination_1860s"
   ],
   "1868": [
     "ev_meiji_boshin_war_1868",
@@ -132,6 +190,9 @@
   ],
   "1869": [
     "ev_imperialism_suez_canal_opens_1869"
+  ],
+  "1870": [
+    "ev_second_industrial_revolution_1870s"
   ],
   "1871": [
     "ev_meiji_abolish_han_1871"
@@ -143,6 +204,7 @@
     "ev_imperialism_leopold_congo_project_1876"
   ],
   "1882": [
+    "ev_electric_power_adoption_1880s",
     "ev_imperialism_british_occupation_egypt_1882"
   ],
   "1884": [
@@ -155,9 +217,11 @@
   ],
   "1889": [
     "ev_imperialism_british_south_africa_company_charter_1889",
+    "ev_mass_politics_worker_parties_1880s_1890s",
     "ev_meiji_constitution_1889"
   ],
   "1890": [
+    "ev_mass_production_systems_1890s",
     "ev_meiji_diet_1890"
   ],
   "1894": [

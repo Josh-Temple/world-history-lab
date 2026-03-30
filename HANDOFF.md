@@ -187,3 +187,38 @@
 1. Add people links for new backbone events (for example Mansa Musa, Akbar, Toussaint Louverture, Sukarno, Nehru) to improve People Recognition coverage.
 2. Add at least one regional comparison mode or prompt set (same-century cross-region contrasts) to make comparison learning explicit.
 3. Consider splitting data-only and app-behavior changes into separate PRs in future for faster review cycles.
+
+## Incremental update (2026-03-30 · industrial expansion + cross-unit bridges)
+- Added `data/units/industrial_revolution.json` as a denser replacement config for `unit_industrial_revolution` and updated `data/units/index.json` to point the unit path to the underscore filename.
+- Expanded `data/events.json` with new reviewed Industrial Revolution events and causal links spanning ~1750-1900, including:
+  - textile/steam takeoff (`ev_spinning_jenny_1764`, `ev_watt_steam_engine_1776`, `ev_factory_system_rise_1780s`)
+  - transport + communication (`ev_liverpool_manchester_railway_1830`, `ev_telegraph_invention_1837`, `ev_railway_boom_1840s`)
+  - social/political responses (`ev_labor_movements_1830s_1840s`, `ev_factory_act_1847_ten_hours`, `ev_public_health_act_1848`, `ev_communist_manifesto_1848`)
+  - late-century acceleration (`ev_bessemer_process_1856`, `ev_second_industrial_revolution_1870s`, `ev_electric_power_adoption_1880s`)
+- Added cross-unit bridge events to extend continuity across previously isolated clusters:
+  - `ev_napoleonic_wars_1803_1815`
+  - `ev_congress_vienna_1815`
+  - `ev_concert_of_europe_1815_1848`
+  - `ev_revolutions_1848`
+  - plus market/state bridge nodes (`ev_state_military_fiscal_expansion_1810s_1820s`, `ev_national_market_integration_1850s`, `ev_global_market_coordination_1860s`).
+- Updated unit membership for bridge continuity across:
+  - `data/units/french-revolution-napoleon.json`
+  - `data/units/fr_french_revolution.json`
+  - `data/units/foundations-world-history.json`
+  - `data/units/age-of-imperialism.json`
+- Added reviewed people records in `data/people.json` to support new `people_ids` references:
+  - `pe_james_watt`
+  - `pe_george_stephenson`
+  - `pe_henry_bessemer`
+  - `pe_samuel_morse`
+
+## Validation completed (2026-03-30)
+- `node scripts/validate-data.mjs` ✅ (passes; existing baseline warnings remain in older imperialism/meiji records outside this scope).
+- `node scripts/derive.mjs` ✅
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+- Cross-chain spot-check: 213 derived chains total; chains now include Napoleonic→Industrial multi-step paths.
+
+## Suggested next steps
+1. Backfill missing `summary_short` fields for older imperialism events to reduce warning noise and improve recognition quality.
+2. Add the new bridge events to additional app profiles/question-type taxonomies if stricter mode-level curation is desired.
+3. Consider deprecating or removing the legacy `data/units/industrial-revolution.json` file to avoid filename ambiguity now that the registry uses `industrial_revolution.json`.

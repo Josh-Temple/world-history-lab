@@ -31,7 +31,9 @@
     "ev_thermidorian_reaction_1794",
     "ev_napoleon_coup_18_brumaire_1799",
     "ev_napoleon_emperor_1804",
-    "ev_congress_of_vienna_1814_1815"
+    "ev_congress_of_vienna_1814_1815",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815"
   ],
   "person_ids": [
     "pe_louis_xvi",

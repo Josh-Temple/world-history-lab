@@ -249,6 +249,40 @@
     }
   },
   {
+    "id": "ev_bessemer_process_1856",
+    "label": "Bessemer process patented",
+    "summary_short": "Cheaper mass steel production supports railways, shipbuilding, machinery, and heavy industry growth.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [
+      "pe_henry_bessemer"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_second_industrial_revolution_1870s",
+      "ev_global_market_coordination_1860s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1856",
+      "end": "1856",
+      "year_start": 1856,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18560101,
+      "sort_end": 18561231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1856
+    }
+  },
+  {
     "id": "ev_bessemer_process_patent_1856",
     "label": "Bessemer process patented (mass steel production)",
     "summary_short": "Bessemer’s process enabled cheaper mass production of steel, accelerating industrial expansion in railways, construction, and machinery.",
@@ -263,9 +297,7 @@
       "pe_andrew_carnegie",
       "pe_jp_morgan"
     ],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -450,6 +482,69 @@
     }
   },
   {
+    "id": "ev_communist_manifesto_1848",
+    "label": "The Communist Manifesto published",
+    "summary_short": "Marx and Engels publish a critique of industrial capitalism that shapes global labor and socialist movements.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [
+      "pe_karl_marx",
+      "pe_friedrich_engels"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_first_international_1864"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1848",
+      "end": "1848",
+      "year_start": 1848,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18480101,
+      "sort_end": 18481231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1848
+    }
+  },
+  {
+    "id": "ev_concert_of_europe_1815_1848",
+    "label": "Concert of Europe diplomacy",
+    "summary_short": "Conservative great-power coordination seeks stability while managing revolutionary pressures.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [
+      "ev_revolutions_1848"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1818",
+      "end": "1818",
+      "year_start": 1818,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18180101,
+      "sort_end": 18181231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1818
+    }
+  },
+  {
     "id": "ev_congress_of_vienna_1814_1815",
     "label": "Congress of Vienna",
     "summary_short": "European powers met at Vienna to rebuild order after the Napoleonic Wars, reshaping borders and seeking a balance of power.",
@@ -480,7 +575,8 @@
         "label": "balance-of-power diplomacy as a guiding principle",
         "category": "political",
         "note": null
-      }
+      },
+      "ev_congress_vienna_1815"
     ],
     "causes": [
       {
@@ -502,6 +598,40 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1814
+    }
+  },
+  {
+    "id": "ev_congress_vienna_1815",
+    "label": "Congress of Vienna settlement",
+    "summary_short": "Major powers redraw borders and pursue a balance-of-power order after Napoleon’s defeat.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history",
+      "unit_french_revolution_napoleon",
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_concert_of_europe_1815_1848",
+      "ev_railway_boom_1840s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1815",
+      "end": "1815",
+      "year_start": 1815,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18150101,
+      "sort_end": 18151231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1815
     }
   },
   {
@@ -548,9 +678,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -579,9 +707,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -722,6 +848,70 @@
     }
   },
   {
+    "id": "ev_electric_power_adoption_1880s",
+    "label": "Electric power adoption expands",
+    "summary_short": "Urban electrification and electric motors begin reshaping production, services, and everyday life.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [
+      "pe_thomas_edison"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_mass_production_systems_1890s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1882",
+      "end": "1882",
+      "year_start": 1882,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18820101,
+      "sort_end": 18821231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1882
+    }
+  },
+  {
+    "id": "ev_enclosure_movement_accelerates_1750s",
+    "label": "Enclosure movement accelerates in Britain",
+    "summary_short": "Land enclosure consolidates fields and changes rural labor patterns, feeding urban migration and wage labor.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_factory_system_rise_1780s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1750",
+      "end": "1750",
+      "year_start": 1750,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17500101,
+      "sort_end": 17501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1750
+    }
+  },
+  {
     "id": "ev_estates_general_1789",
     "label": "Convening of the Estates-General",
     "summary_short": "Louis XVI convened the Estates-General in 1789 amid a fiscal crisis, helping trigger the political escalation that became the French Revolution.",
@@ -847,10 +1037,10 @@
       "pe_karl_marx",
       "pe_friedrich_engels"
     ],
-    "unit_ids": [
-      "unit_industrial_revolution"
+    "unit_ids": [],
+    "effects": [
+      "ev_factory_act_1847_ten_hours"
     ],
-    "effects": [],
     "causes": [],
     "time": {
       "start": "1833",
@@ -864,6 +1054,102 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1833
+    }
+  },
+  {
+    "id": "ev_factory_act_1847_ten_hours",
+    "label": "Ten Hours Act limits factory labor time",
+    "summary_short": "British legislation limits working hours for women and young persons in textile mills, reflecting social response to industrial labor conditions.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_public_health_act_1848"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1847",
+      "end": "1847",
+      "year_start": 1847,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18470101,
+      "sort_end": 18471231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1847
+    }
+  },
+  {
+    "id": "ev_factory_system_rise_1780s",
+    "label": "Factory system expands in Britain",
+    "summary_short": "Production shifts into centralized factories, increasing output while transforming labor discipline and social relations.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_urbanization_accelerates_1800_1850",
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1785",
+      "end": "1785",
+      "year_start": 1785,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17850101,
+      "sort_end": 17851231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1785
+    }
+  },
+  {
+    "id": "ev_first_international_1864",
+    "label": "International Workingmen’s Association founded",
+    "summary_short": "The First International links labor and socialist activists across borders in the high-industrial era.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [
+      "pe_karl_marx"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1864",
+      "end": "1864",
+      "year_start": 1864,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18640101,
+      "sort_end": 18641231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1864
     }
   },
   {
@@ -917,9 +1203,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -937,6 +1221,37 @@
     }
   },
   {
+    "id": "ev_global_market_coordination_1860s",
+    "label": "Global market coordination intensifies",
+    "summary_short": "Industrial states increasingly coordinate finance, shipping, and information across long-distance trade networks.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_age_of_imperialism"
+    ],
+    "effects": [
+      "ev_imperialism_berlin_conference_begins_1884"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1866",
+      "end": "1866",
+      "year_start": 1866,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18660101,
+      "sort_end": 18661231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1866
+    }
+  },
+  {
     "id": "ev_great_exhibition_opens_1851",
     "label": "Great Exhibition opens in London (Crystal Palace)",
     "summary_short": "A major international exhibition showcasing industrial and cultural achievements, symbolizing Britain’s industrial prominence.",
@@ -948,9 +1263,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -2118,6 +2431,102 @@
     }
   },
   {
+    "id": "ev_labor_movements_1830s_1840s",
+    "label": "Labor movements and Chartism grow",
+    "summary_short": "Industrial-era labor unrest and reform campaigns push for representation, rights, and safer working conditions.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_factory_act_1847_ten_hours"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1838",
+      "end": "1838",
+      "year_start": 1838,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18380101,
+      "sort_end": 18381231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1838
+    }
+  },
+  {
+    "id": "ev_liverpool_manchester_railway_1830",
+    "label": "Liverpool and Manchester Railway opens",
+    "summary_short": "A landmark intercity railway demonstrates rail’s commercial viability for freight and passengers.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [
+      "pe_george_stephenson"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_railway_boom_1840s",
+      "ev_national_market_integration_1850s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1830",
+      "end": "1830",
+      "year_start": 1830,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18300101,
+      "sort_end": 18301231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1830
+    }
+  },
+  {
+    "id": "ev_luddite_protests_1811",
+    "label": "Luddite protests against mechanization",
+    "summary_short": "Skilled workers attack machinery in protest against wage pressure and job insecurity from mechanized production.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1811",
+      "end": "1811",
+      "year_start": 1811,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18110101,
+      "sort_end": 18111231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1811
+    }
+  },
+  {
     "id": "ev_mali_mansa_musa_hajj_1324",
     "label": "Mansa Musa's pilgrimage highlights Mali's wealth",
     "summary_short": "Mansa Musa's pilgrimage to Mecca displayed the wealth of Mali and highlighted trans-Saharan trade connections.",
@@ -2154,6 +2563,62 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1324
+    }
+  },
+  {
+    "id": "ev_mass_politics_worker_parties_1880s_1890s",
+    "label": "Mass worker parties expand in industrial societies",
+    "summary_short": "Industrial labor movements and socialist parties gain electoral and organizational weight in late nineteenth-century politics.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1889",
+      "end": "1889",
+      "year_start": 1889,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18890101,
+      "sort_end": 18891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1889
+    }
+  },
+  {
+    "id": "ev_mass_production_systems_1890s",
+    "label": "Mass production systems spread",
+    "summary_short": "Standardization and scale economies deepen industrial output and integrate consumer markets.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1890",
+      "end": "1890",
+      "year_start": 1890,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18900101,
+      "sort_end": 18901231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1890
     }
   },
   {
@@ -2681,6 +3146,35 @@
     }
   },
   {
+    "id": "ev_modern_urban_infrastructure_1850s_1870s",
+    "label": "Modern urban infrastructure expands",
+    "summary_short": "Cities invest in sewers, transit, and municipal planning as industrial urbanization deepens.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [
+      "ev_electric_power_adoption_1880s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1860",
+      "end": "1860",
+      "year_start": 1860,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18600101,
+      "sort_end": 18601231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1860
+    }
+  },
+  {
     "id": "ev_mongol_empire_formation_1206",
     "label": "Mongol Empire founded under Chinggis Khan",
     "summary_short": "Steppe conquest built the largest contiguous land empire in history.",
@@ -2779,7 +3273,8 @@
         "label": "centralization of executive power under Napoleon",
         "category": "political",
         "note": null
-      }
+      },
+      "ev_napoleonic_wars_1803_1815"
     ],
     "causes": [
       {
@@ -2833,7 +3328,8 @@
         "category": "military",
         "note": null
       },
-      "ev_congress_of_vienna_1814_1815"
+      "ev_congress_of_vienna_1814_1815",
+      "ev_napoleonic_wars_1803_1815"
     ],
     "causes": [
       "ev_napoleon_coup_18_brumaire_1799",
@@ -2855,6 +3351,71 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1804
+    }
+  },
+  {
+    "id": "ev_napoleonic_wars_1803_1815",
+    "label": "Napoleonic Wars reshape Europe",
+    "summary_short": "Wars across Europe spread revolutionary legacies, mobilization practices, and state restructuring.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [
+      "pe_napoleon_bonaparte"
+    ],
+    "unit_ids": [
+      "unit_foundations_world_history",
+      "unit_french_revolution",
+      "unit_french_revolution_napoleon"
+    ],
+    "effects": [
+      "ev_congress_vienna_1815",
+      "ev_state_military_fiscal_expansion_1810s_1820s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1803",
+      "end": "1803",
+      "year_start": 1803,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18030101,
+      "sort_end": 18031231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1803
+    }
+  },
+  {
+    "id": "ev_national_market_integration_1850s",
+    "label": "National markets integrate through rail and telegraph",
+    "summary_short": "Faster transport and communication reduce regional price gaps and increase coordinated industrial output.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [
+      "ev_global_market_coordination_1860s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1855",
+      "end": "1855",
+      "year_start": 1855,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18550101,
+      "sort_end": 18551231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1855
     }
   },
   {
@@ -2947,9 +3508,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -2978,9 +3537,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -2995,6 +3552,37 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1785
+    }
+  },
+  {
+    "id": "ev_public_health_act_1848",
+    "label": "Public Health Act in Britain",
+    "summary_short": "Urban sanitation reform begins as industrial cities confront disease and overcrowding.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_modern_urban_infrastructure_1850s_1870s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1848",
+      "end": "1848",
+      "year_start": 1848,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18480101,
+      "sort_end": 18481231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1848
     }
   },
   {
@@ -3071,6 +3659,36 @@
     }
   },
   {
+    "id": "ev_railway_boom_1840s",
+    "label": "Railway investment boom in Europe",
+    "summary_short": "Rail construction surges as capital markets and states back network expansion, binding regional economies.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [
+      "ev_national_market_integration_1850s",
+      "ev_second_industrial_revolution_1870s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1845",
+      "end": "1845",
+      "year_start": 1845,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18450101,
+      "sort_end": 18451231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1845
+    }
+  },
+  {
     "id": "ev_rainhill_trials_rocket_1829",
     "label": "Rainhill Trials won by Stephenson’s Rocket",
     "summary_short": "Rocket’s success at the Rainhill Trials helped convince investors and engineers that locomotive-hauled railways were viable at scale.",
@@ -3082,9 +3700,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -3159,6 +3775,71 @@
     }
   },
   {
+    "id": "ev_revolutions_1848",
+    "label": "Revolutions of 1848 across Europe",
+    "summary_short": "A wave of uprisings demands constitutional reforms, national rights, and social change in industrializing societies.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
+    "effects": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1848",
+      "end": "1848",
+      "year_start": 1848,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18480101,
+      "sort_end": 18481231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1848
+    }
+  },
+  {
+    "id": "ev_second_industrial_revolution_1870s",
+    "label": "Second Industrial Revolution accelerates",
+    "summary_short": "Electricity, chemicals, steel, and new corporate forms drive a fresh wave of industrial expansion.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_age_of_imperialism",
+      "unit_foundations_world_history",
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_electric_power_adoption_1880s",
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1870",
+      "end": "1870",
+      "year_start": 1870,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18700101,
+      "sort_end": 18701231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1870
+    }
+  },
+  {
     "id": "ev_september_massacres_1792",
     "label": "September Massacres",
     "summary_short": "Paris crowds killed prisoners amid invasion fears and revolutionary panic, intensifying political radicalization.",
@@ -3229,6 +3910,37 @@
     }
   },
   {
+    "id": "ev_spinning_jenny_1764",
+    "label": "Spinning Jenny introduced",
+    "summary_short": "James Hargreaves’s spinning jenny increases yarn output and intensifies textile mechanization.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_factory_system_rise_1780s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1764",
+      "end": "1764",
+      "year_start": 1764,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17640101,
+      "sort_end": 17641231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1764
+    }
+  },
+  {
     "id": "ev_spinning_jenny_invented_1764",
     "label": "Spinning jenny invented (James Hargreaves)",
     "summary_short": "A multi-spindle spinning machine that greatly increased yarn output and helped propel mechanized textile production.",
@@ -3240,9 +3952,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -3300,9 +4010,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -3317,6 +4025,66 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1779
+    }
+  },
+  {
+    "id": "ev_state_military_fiscal_expansion_1810s_1820s",
+    "label": "Post-Napoleonic states expand fiscal-military capacity",
+    "summary_short": "Governments strengthen taxation, administration, and infrastructure planning after sustained wartime mobilization.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [
+      "ev_national_market_integration_1850s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1820",
+      "end": "1820",
+      "year_start": 1820,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18200101,
+      "sort_end": 18201231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1820
+    }
+  },
+  {
+    "id": "ev_steam_power_transport_expansion_1800s",
+    "label": "Steam power spreads into transport",
+    "summary_short": "Steam engines move from mines and mills into locomotives and shipping, shrinking transport time and cost.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_liverpool_manchester_railway_1830"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1804",
+      "end": "1804",
+      "year_start": 1804,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18040101,
+      "sort_end": 18041231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1804
     }
   },
   {
@@ -3400,6 +4168,39 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 650
+    }
+  },
+  {
+    "id": "ev_telegraph_invention_1837",
+    "label": "Electric telegraph demonstrated",
+    "summary_short": "Practical electric telegraphy begins to transform communication speed for commerce, governance, and news.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [
+      "pe_samuel_morse"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_global_market_coordination_1860s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1837",
+      "end": "1837",
+      "year_start": 1837,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18370101,
+      "sort_end": 18371231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1837
     }
   },
   {
@@ -3543,6 +4344,36 @@
     }
   },
   {
+    "id": "ev_urbanization_accelerates_1800_1850",
+    "label": "Industrial urbanization accelerates in Britain and Europe",
+    "summary_short": "Factory-centered growth pulls populations into expanding cities, intensifying housing, sanitation, and labor pressures.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [],
+    "unit_ids": [],
+    "effects": [
+      "ev_public_health_act_1848",
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1820",
+      "end": "1820",
+      "year_start": 1820,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18200101,
+      "sort_end": 18201231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1820
+    }
+  },
+  {
     "id": "ev_water_frame_patent_1769",
     "label": "Water frame patented (Richard Arkwright)",
     "summary_short": "Arkwright’s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
@@ -3554,9 +4385,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -3585,9 +4414,7 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [
-      "unit_industrial_revolution"
-    ],
+    "unit_ids": [],
     "effects": [],
     "causes": [],
     "time": {
@@ -3602,6 +4429,40 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1769
+    }
+  },
+  {
+    "id": "ev_watt_steam_engine_1776",
+    "label": "Improved Steam Engine by James Watt",
+    "summary_short": "James Watt’s commercially deployed improvements make steam engines more efficient and more widely usable.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [],
+    "people_ids": [
+      "pe_james_watt"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_factory_system_rise_1780s",
+      "ev_steam_power_transport_expansion_1800s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1776",
+      "end": "1776",
+      "year_start": 1776,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17760101,
+      "sort_end": 17761231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1776
     }
   },
   {

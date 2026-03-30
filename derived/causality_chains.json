@@ -15,14 +15,79 @@
     "ev_india_independence_1947"
   ],
   [
+    "ev_bessemer_process_1856",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_bessemer_process_1856",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_bessemer_process_1856",
+    "ev_second_industrial_revolution_1870s",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
     "ev_civil_constitution_clergy_1790",
     "ev_flight_to_varennes_1791",
     "ev_september_massacres_1792"
   ],
   [
+    "ev_communist_manifesto_1848",
+    "ev_first_international_1864",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848"
+  ],
+  [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
     "ev_directory_established_1795",
     "ev_napoleon_coup_18_brumaire_1799",
     "ev_napoleon_emperor_1804"
+  ],
+  [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850"
   ],
   [
     "ev_estates_general_1789",
@@ -35,6 +100,31 @@
     "ev_thermidorian_reaction_1794"
   ],
   [
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848"
+  ],
+  [
     "ev_flight_to_varennes_1791",
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793"
@@ -50,9 +140,39 @@
     "ev_pan_african_congress_1945"
   ],
   [
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_luddite_protests_1811",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
     "ev_mali_mansa_musa_hajj_1324",
     "ev_ottoman_conquest_egypt_1517",
     "ev_mughal_empire_akbar_consolidation_1570s"
+  ],
+  [
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s",
+    "ev_mass_production_systems_1890s"
   ],
   [
     "ev_mughal_empire_akbar_consolidation_1570s",
@@ -65,6 +185,56 @@
     "ev_congress_of_vienna_1814_1815"
   ],
   [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
     "ev_ottoman_conquest_egypt_1517",
     "ev_mughal_empire_akbar_consolidation_1570s",
     "ev_tokugawa_shogunate_1603"
@@ -75,14 +245,69 @@
     "ev_bandung_conference_1955"
   ],
   [
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857",
     "ev_berlin_conference_1884"
   ],
   [
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s",
+    "ev_mass_production_systems_1890s"
+  ],
+  [
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793",
     "ev_reign_of_terror_1793_1794"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850"
+  ],
+  [
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_telegraph_invention_1837",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
   ],
   [
     "ev_tennis_court_oath_1789",
@@ -93,6 +318,31 @@
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830"
   ],
   [
     "ev_womens_march_versailles_1789",
@@ -112,10 +362,58 @@
     "ev_bandung_conference_1955"
   ],
   [
+    "ev_bessemer_process_1856",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s",
+    "ev_mass_production_systems_1890s"
+  ],
+  [
     "ev_civil_constitution_clergy_1790",
     "ev_flight_to_varennes_1791",
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793"
+  ],
+  [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848"
+  ],
+  [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_mass_politics_worker_parties_1880s_1890s"
   ],
   [
     "ev_directory_established_1795",
@@ -124,10 +422,76 @@
     "ev_congress_of_vienna_1814_1815"
   ],
   [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815"
+  ],
+  [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815"
+  ],
+  [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848"
+  ],
+  [
     "ev_estates_general_1789",
     "ev_tennis_court_oath_1789",
     "ev_storming_bastille_1789",
     "ev_declaration_rights_man_citizen_1789"
+  ],
+  [
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
   ],
   [
     "ev_flight_to_varennes_1791",
@@ -148,6 +512,42 @@
     "ev_india_independence_1947"
   ],
   [
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_luddite_protests_1811",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
     "ev_mali_mansa_musa_hajj_1324",
     "ev_ottoman_conquest_egypt_1517",
     "ev_mughal_empire_akbar_consolidation_1570s",
@@ -160,10 +560,106 @@
     "ev_abolition_british_slave_trade_1807"
   ],
   [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
     "ev_ottoman_conquest_egypt_1517",
     "ev_mughal_empire_akbar_consolidation_1570s",
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804"
+  ],
+  [
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s",
+    "ev_mass_production_systems_1890s"
   ],
   [
     "ev_qing_first_opium_war_1839",
@@ -172,16 +668,112 @@
     "ev_pan_african_congress_1945"
   ],
   [
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s",
+    "ev_mass_production_systems_1890s"
+  ],
+  [
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793",
     "ev_reign_of_terror_1793_1794",
     "ev_thermidorian_reaction_1794"
   ],
   [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
   ],
   [
     "ev_womens_march_versailles_1789",
@@ -202,6 +794,146 @@
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793",
     "ev_reign_of_terror_1793_1794"
+  ],
+  [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s",
+    "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815"
+  ],
+  [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815"
+  ],
+  [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s"
+  ],
+  [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848"
+  ],
+  [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_directory_established_1795",
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s",
+    "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s"
   ],
   [
     "ev_flight_to_varennes_1791",
@@ -225,6 +957,34 @@
     "ev_bandung_conference_1955"
   ],
   [
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s",
+    "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_luddite_protests_1811",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
     "ev_mali_mansa_musa_hajj_1324",
     "ev_ottoman_conquest_egypt_1517",
     "ev_mughal_empire_akbar_consolidation_1570s",
@@ -237,6 +997,153 @@
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_napoleon_coup_18_brumaire_1799",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_napoleon_emperor_1804",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_concert_of_europe_1815_1848",
+    "ev_revolutions_1848",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
   ],
   [
     "ev_ottoman_conquest_egypt_1517",
@@ -253,11 +1160,116 @@
     "ev_india_independence_1947"
   ],
   [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_electric_power_adoption_1880s",
+    "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
   ],
   [
     "ev_womens_march_versailles_1789",
