@@ -40,7 +40,11 @@
     "ev_berlin_conference_1884",
     "ev_pan_african_congress_1945",
     "ev_india_independence_1947",
-    "ev_bandung_conference_1955"
+    "ev_bandung_conference_1955",
+    "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_revolutions_1848",
+    "ev_second_industrial_revolution_1870s"
   ],
   "person_ids": [],
   "app_profiles": {

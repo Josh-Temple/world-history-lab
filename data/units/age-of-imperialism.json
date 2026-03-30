@@ -45,7 +45,9 @@
     "ev_imperialism_algeciras_conference_1906",
     "ev_imperialism_japan_annexes_korea_1910",
     "ev_imperialism_agadir_crisis_1911",
-    "ev_imperialism_first_balkan_war_1912"
+    "ev_imperialism_first_balkan_war_1912",
+    "ev_global_market_coordination_1860s",
+    "ev_second_industrial_revolution_1870s"
   ],
   "person_ids": [
     "pe_otto_von_bismarck",

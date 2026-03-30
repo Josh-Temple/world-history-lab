@@ -29,7 +29,9 @@
       "ev_imperialism_algeciras_conference_1906",
       "ev_imperialism_japan_annexes_korea_1910",
       "ev_imperialism_agadir_crisis_1911",
-      "ev_imperialism_first_balkan_war_1912"
+      "ev_imperialism_first_balkan_war_1912",
+      "ev_global_market_coordination_1860s",
+      "ev_second_industrial_revolution_1870s"
     ]
   },
   {
@@ -52,7 +54,11 @@
       "ev_berlin_conference_1884",
       "ev_pan_african_congress_1945",
       "ev_india_independence_1947",
-      "ev_bandung_conference_1955"
+      "ev_bandung_conference_1955",
+      "ev_napoleonic_wars_1803_1815",
+      "ev_congress_vienna_1815",
+      "ev_revolutions_1848",
+      "ev_second_industrial_revolution_1870s"
     ]
   },
   {
@@ -72,7 +78,8 @@
       "ev_reign_of_terror_1793_1794",
       "ev_thermidorian_reaction_1794",
       "ev_directory_established_1795",
-      "ev_napoleon_coup_18_brumaire_1799"
+      "ev_napoleon_coup_18_brumaire_1799",
+      "ev_napoleonic_wars_1803_1815"
     ]
   },
   {
@@ -88,26 +95,33 @@
       "ev_thermidorian_reaction_1794",
       "ev_napoleon_coup_18_brumaire_1799",
       "ev_napoleon_emperor_1804",
-      "ev_congress_of_vienna_1814_1815"
+      "ev_congress_of_vienna_1814_1815",
+      "ev_napoleonic_wars_1803_1815",
+      "ev_congress_vienna_1815"
     ]
   },
   {
     "id": "unit_industrial_revolution",
     "title": "Industrial Revolution",
     "event_ids": [
-      "ev_flying_shuttle_patent_1733",
-      "ev_spinning_jenny_invented_1764",
-      "ev_water_frame_patent_1769",
-      "ev_watt_condenser_patent_1769",
-      "ev_cromford_mill_uses_water_frame_1771",
-      "ev_spinning_mule_invented_1779",
-      "ev_power_loom_patented_1785",
-      "ev_cotton_gin_invented_1793",
-      "ev_penydarren_locomotive_run_1804",
-      "ev_rainhill_trials_rocket_1829",
-      "ev_factory_act_1833",
-      "ev_great_exhibition_opens_1851",
-      "ev_bessemer_process_patent_1856"
+      "ev_enclosure_movement_accelerates_1750s",
+      "ev_spinning_jenny_1764",
+      "ev_watt_steam_engine_1776",
+      "ev_factory_system_rise_1780s",
+      "ev_steam_power_transport_expansion_1800s",
+      "ev_luddite_protests_1811",
+      "ev_congress_vienna_1815",
+      "ev_liverpool_manchester_railway_1830",
+      "ev_telegraph_invention_1837",
+      "ev_labor_movements_1830s_1840s",
+      "ev_factory_act_1847_ten_hours",
+      "ev_communist_manifesto_1848",
+      "ev_public_health_act_1848",
+      "ev_bessemer_process_1856",
+      "ev_first_international_1864",
+      "ev_second_industrial_revolution_1870s",
+      "ev_electric_power_adoption_1880s",
+      "ev_mass_production_systems_1890s"
     ]
   },
   {

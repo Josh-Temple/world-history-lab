@@ -457,3 +457,11 @@ TBD
 - Registered the new foundations unit in `data/units/index.json` and synchronized `data/metadata.json` scope so validation/derive include it by default.
 - Upgraded `apps/history-player/` sequencing clarity with progression cues (era + upcoming event preview) and switched the default slice to the larger 25-event global backbone view.
 - Updated the homepage `index.html` start section into an explicit three-step learning path: Overview/Player → Timeline → Recognition/Causality.
+
+## Recent updates (2026-03-30)
+
+- Added a new dense Industrial Revolution unit file at `data/units/industrial_revolution.json` and repointed the unit registry to this path for `unit_industrial_revolution`.
+- Expanded industrial coverage with multi-mode-ready events (technology, transport, labor, social reform, and electrification) including explicit `effects` chains and `people_ids` links.
+- Added reviewed people records for James Watt, George Stephenson, Henry Bessemer, and Samuel Morse to support people-linked practice.
+- Added cross-unit bridge events from the Napoleonic period into nineteenth-century industrial and political developments, and included selected bridge events in multiple units to improve continuity.
+- Regenerated derived artifacts; `derived/causality_chains.json` now includes longer inter-unit paths (for example Napoleonic Wars → Congress of Vienna → Railway Boom → Second Industrial Revolution).

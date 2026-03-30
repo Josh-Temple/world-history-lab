@@ -774,7 +774,8 @@
         "label": "centralization of executive power under Napoleon",
         "category": "political",
         "note": null
-      }
+      },
+      "ev_napoleonic_wars_1803_1815"
     ],
     "confusions": [],
     "question_types": [
@@ -845,7 +846,8 @@
         "category": "military",
         "note": null
       },
-      "ev_congress_of_vienna_1814_1815"
+      "ev_congress_of_vienna_1814_1815",
+      "ev_napoleonic_wars_1803_1815"
     ],
     "confusions": [],
     "question_types": [
@@ -939,7 +941,8 @@
         "label": "balance-of-power diplomacy as a guiding principle",
         "category": "political",
         "note": null
-      }
+      },
+      "ev_congress_vienna_1815"
     ],
     "confusions": [],
     "question_types": [
@@ -1015,6 +1018,9 @@
     "people_ids": [
       "pe_karl_marx",
       "pe_friedrich_engels"
+    ],
+    "effects": [
+      "ev_factory_act_1847_ten_hours"
     ]
   },
   {
@@ -3332,5 +3338,419 @@
       "lng": 107.6191,
       "precision": "city"
     }
+  },
+  {
+    "id": "ev_enclosure_movement_accelerates_1750s",
+    "label": "Enclosure movement accelerates in Britain",
+    "time": {
+      "year_start": 1750
+    },
+    "summary_short": "Land enclosure consolidates fields and changes rural labor patterns, feeding urban migration and wage labor.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_factory_system_rise_1780s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_spinning_jenny_1764",
+    "label": "Spinning Jenny introduced",
+    "time": {
+      "year_start": 1764
+    },
+    "summary_short": "James Hargreaves’s spinning jenny increases yarn output and intensifies textile mechanization.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_factory_system_rise_1780s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_watt_steam_engine_1776",
+    "label": "Improved Steam Engine by James Watt",
+    "time": {
+      "year_start": 1776
+    },
+    "summary_short": "James Watt’s commercially deployed improvements make steam engines more efficient and more widely usable.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_factory_system_rise_1780s",
+      "ev_steam_power_transport_expansion_1800s"
+    ],
+    "people_ids": [
+      "pe_james_watt"
+    ]
+  },
+  {
+    "id": "ev_factory_system_rise_1780s",
+    "label": "Factory system expands in Britain",
+    "time": {
+      "year_start": 1785
+    },
+    "summary_short": "Production shifts into centralized factories, increasing output while transforming labor discipline and social relations.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_urbanization_accelerates_1800_1850",
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_steam_power_transport_expansion_1800s",
+    "label": "Steam power spreads into transport",
+    "time": {
+      "year_start": 1804
+    },
+    "summary_short": "Steam engines move from mines and mills into locomotives and shipping, shrinking transport time and cost.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_liverpool_manchester_railway_1830"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_luddite_protests_1811",
+    "label": "Luddite protests against mechanization",
+    "time": {
+      "year_start": 1811
+    },
+    "summary_short": "Skilled workers attack machinery in protest against wage pressure and job insecurity from mechanized production.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_liverpool_manchester_railway_1830",
+    "label": "Liverpool and Manchester Railway opens",
+    "time": {
+      "year_start": 1830
+    },
+    "summary_short": "A landmark intercity railway demonstrates rail’s commercial viability for freight and passengers.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_railway_boom_1840s",
+      "ev_national_market_integration_1850s"
+    ],
+    "people_ids": [
+      "pe_george_stephenson"
+    ]
+  },
+  {
+    "id": "ev_telegraph_invention_1837",
+    "label": "Electric telegraph demonstrated",
+    "time": {
+      "year_start": 1837
+    },
+    "summary_short": "Practical electric telegraphy begins to transform communication speed for commerce, governance, and news.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_global_market_coordination_1860s"
+    ],
+    "people_ids": [
+      "pe_samuel_morse"
+    ]
+  },
+  {
+    "id": "ev_labor_movements_1830s_1840s",
+    "label": "Labor movements and Chartism grow",
+    "time": {
+      "year_start": 1838
+    },
+    "summary_short": "Industrial-era labor unrest and reform campaigns push for representation, rights, and safer working conditions.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_factory_act_1847_ten_hours"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_communist_manifesto_1848",
+    "label": "The Communist Manifesto published",
+    "time": {
+      "year_start": 1848
+    },
+    "summary_short": "Marx and Engels publish a critique of industrial capitalism that shapes global labor and socialist movements.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_first_international_1864"
+    ],
+    "people_ids": [
+      "pe_karl_marx",
+      "pe_friedrich_engels"
+    ]
+  },
+  {
+    "id": "ev_factory_act_1847_ten_hours",
+    "label": "Ten Hours Act limits factory labor time",
+    "time": {
+      "year_start": 1847
+    },
+    "summary_short": "British legislation limits working hours for women and young persons in textile mills, reflecting social response to industrial labor conditions.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_public_health_act_1848"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_public_health_act_1848",
+    "label": "Public Health Act in Britain",
+    "time": {
+      "year_start": 1848
+    },
+    "summary_short": "Urban sanitation reform begins as industrial cities confront disease and overcrowding.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_modern_urban_infrastructure_1850s_1870s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_bessemer_process_1856",
+    "label": "Bessemer process patented",
+    "time": {
+      "year_start": 1856
+    },
+    "summary_short": "Cheaper mass steel production supports railways, shipbuilding, machinery, and heavy industry growth.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_second_industrial_revolution_1870s",
+      "ev_global_market_coordination_1860s"
+    ],
+    "people_ids": [
+      "pe_henry_bessemer"
+    ]
+  },
+  {
+    "id": "ev_first_international_1864",
+    "label": "International Workingmen’s Association founded",
+    "time": {
+      "year_start": 1864
+    },
+    "summary_short": "The First International links labor and socialist activists across borders in the high-industrial era.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
+    "people_ids": [
+      "pe_karl_marx"
+    ]
+  },
+  {
+    "id": "ev_second_industrial_revolution_1870s",
+    "label": "Second Industrial Revolution accelerates",
+    "time": {
+      "year_start": 1870
+    },
+    "summary_short": "Electricity, chemicals, steel, and new corporate forms drive a fresh wave of industrial expansion.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_electric_power_adoption_1880s",
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_electric_power_adoption_1880s",
+    "label": "Electric power adoption expands",
+    "time": {
+      "year_start": 1882
+    },
+    "summary_short": "Urban electrification and electric motors begin reshaping production, services, and everyday life.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_mass_production_systems_1890s"
+    ],
+    "people_ids": [
+      "pe_thomas_edison"
+    ]
+  },
+  {
+    "id": "ev_mass_production_systems_1890s",
+    "label": "Mass production systems spread",
+    "time": {
+      "year_start": 1890
+    },
+    "summary_short": "Standardization and scale economies deepen industrial output and integrate consumer markets.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [],
+    "people_ids": []
+  },
+  {
+    "id": "ev_napoleonic_wars_1803_1815",
+    "label": "Napoleonic Wars reshape Europe",
+    "time": {
+      "year_start": 1803
+    },
+    "summary_short": "Wars across Europe spread revolutionary legacies, mobilization practices, and state restructuring.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_congress_vienna_1815",
+      "ev_state_military_fiscal_expansion_1810s_1820s"
+    ],
+    "people_ids": [
+      "pe_napoleon_bonaparte"
+    ]
+  },
+  {
+    "id": "ev_congress_vienna_1815",
+    "label": "Congress of Vienna settlement",
+    "time": {
+      "year_start": 1815
+    },
+    "summary_short": "Major powers redraw borders and pursue a balance-of-power order after Napoleon’s defeat.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_concert_of_europe_1815_1848",
+      "ev_railway_boom_1840s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_concert_of_europe_1815_1848",
+    "label": "Concert of Europe diplomacy",
+    "time": {
+      "year_start": 1818
+    },
+    "summary_short": "Conservative great-power coordination seeks stability while managing revolutionary pressures.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_revolutions_1848"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_revolutions_1848",
+    "label": "Revolutions of 1848 across Europe",
+    "time": {
+      "year_start": 1848
+    },
+    "summary_short": "A wave of uprisings demands constitutional reforms, national rights, and social change in industrializing societies.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_state_military_fiscal_expansion_1810s_1820s",
+    "label": "Post-Napoleonic states expand fiscal-military capacity",
+    "time": {
+      "year_start": 1820
+    },
+    "summary_short": "Governments strengthen taxation, administration, and infrastructure planning after sustained wartime mobilization.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_national_market_integration_1850s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_railway_boom_1840s",
+    "label": "Railway investment boom in Europe",
+    "time": {
+      "year_start": 1845
+    },
+    "summary_short": "Rail construction surges as capital markets and states back network expansion, binding regional economies.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_national_market_integration_1850s",
+      "ev_second_industrial_revolution_1870s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_national_market_integration_1850s",
+    "label": "National markets integrate through rail and telegraph",
+    "time": {
+      "year_start": 1855
+    },
+    "summary_short": "Faster transport and communication reduce regional price gaps and increase coordinated industrial output.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_global_market_coordination_1860s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_global_market_coordination_1860s",
+    "label": "Global market coordination intensifies",
+    "time": {
+      "year_start": 1866
+    },
+    "summary_short": "Industrial states increasingly coordinate finance, shipping, and information across long-distance trade networks.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_imperialism_berlin_conference_begins_1884"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_mass_politics_worker_parties_1880s_1890s",
+    "label": "Mass worker parties expand in industrial societies",
+    "time": {
+      "year_start": 1889
+    },
+    "summary_short": "Industrial labor movements and socialist parties gain electoral and organizational weight in late nineteenth-century politics.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [],
+    "people_ids": []
+  },
+  {
+    "id": "ev_modern_urban_infrastructure_1850s_1870s",
+    "label": "Modern urban infrastructure expands",
+    "time": {
+      "year_start": 1860
+    },
+    "summary_short": "Cities invest in sewers, transit, and municipal planning as industrial urbanization deepens.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_electric_power_adoption_1880s"
+    ],
+    "people_ids": []
+  },
+  {
+    "id": "ev_urbanization_accelerates_1800_1850",
+    "label": "Industrial urbanization accelerates in Britain and Europe",
+    "time": {
+      "year_start": 1820
+    },
+    "summary_short": "Factory-centered growth pulls populations into expanding cities, intensifying housing, sanitation, and labor pressures.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_public_health_act_1848",
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "people_ids": []
   }
 ]
