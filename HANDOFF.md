@@ -256,3 +256,8 @@
 1. Add 2-3 industrial-era public-health/urban-governance events (e.g., sanitation infrastructure milestones) to deepen social policy chains.
 2. Extend people links in non-industrial units so People Recognition gains similar density outside this unit.
 3. Add a small derive check for person-orphan reporting (warning-level) to keep newly added people actively connected to events over time.
+
+## Incremental update (2026-03-31 · CI validation follow-up)
+- Resolved CI failure in `node scripts/validate.mjs` by adding `question_types` arrays to the 33 industrial/bridge events that previously lacked the field.
+- Normalized newly added `question_types` to metadata-enabled values (`timeline_before_after`, `what_happened`, `cause_and_effect`) to keep taxonomy consistent with `data/metadata.json`.
+- Re-ran validation + derive + smoke checks after taxonomy repair.

@@ -469,6 +469,7 @@ TBD
 ## Recent updates (2026-03-31)
 
 - Expanded `data/units/industrial_revolution.json` to a dense 26-event practice pool spanning 1750-1890, including early mechanization, transport, labor reform, and late-century industrial acceleration.
+- Added `question_types` arrays to all Industrial expansion and bridge events so `node scripts/validate.mjs` passes strict metadata-taxonomy checks in CI.
 - Added five reviewed Industrial Revolution events in `data/events.json` (`ev_water_frame_1769`, `ev_cotton_gin_1793`, `ev_stockton_darlington_railway_1825`, `ev_internal_combustion_engine_1876`, `ev_matchgirls_strike_1888`) and strengthened multi-step `effects` chains across technology → transport → labor/politics.
 - Expanded `data/people.json` with 11 reviewed Industrial Revolution figures and linked them through `people_ids` and `related_events` for stronger people-recognition coverage.
 - Regenerated derived artifacts so causality chains and unit indexes reflect the denser industrial dataset.

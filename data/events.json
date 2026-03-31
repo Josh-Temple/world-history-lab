@@ -3352,7 +3352,12 @@
     "effects": [
       "ev_factory_system_rise_1780s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_spinning_jenny_1764",
@@ -3368,6 +3373,11 @@
     ],
     "people_ids": [
       "pe_james_hargreaves"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3385,6 +3395,11 @@
     ],
     "people_ids": [
       "pe_james_watt"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3403,6 +3418,11 @@
     ],
     "people_ids": [
       "pe_richard_arkwright"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3420,6 +3440,11 @@
     ],
     "people_ids": [
       "pe_richard_trevithick"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3434,7 +3459,12 @@
     "effects": [
       "ev_labor_movements_1830s_1840s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_liverpool_manchester_railway_1830",
@@ -3452,6 +3482,11 @@
     "people_ids": [
       "pe_george_stephenson",
       "pe_isambard_kingdom_brunel"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3469,6 +3504,11 @@
     ],
     "people_ids": [
       "pe_samuel_morse"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3486,6 +3526,11 @@
     ],
     "people_ids": [
       "pe_robert_owen"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3503,6 +3548,11 @@
     "people_ids": [
       "pe_karl_marx",
       "pe_friedrich_engels"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3518,7 +3568,12 @@
       "ev_public_health_act_1848",
       "ev_matchgirls_strike_1888"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_public_health_act_1848",
@@ -3532,7 +3587,12 @@
     "effects": [
       "ev_modern_urban_infrastructure_1850s_1870s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_bessemer_process_1856",
@@ -3549,6 +3609,11 @@
     ],
     "people_ids": [
       "pe_henry_bessemer"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3566,6 +3631,11 @@
     "people_ids": [
       "pe_karl_marx",
       "pe_friedrich_engels"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3581,7 +3651,12 @@
       "ev_electric_power_adoption_1880s",
       "ev_mass_politics_worker_parties_1880s_1890s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_electric_power_adoption_1880s",
@@ -3598,6 +3673,11 @@
     "people_ids": [
       "pe_thomas_edison",
       "pe_nikola_tesla"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3612,6 +3692,11 @@
     "effects": [],
     "people_ids": [
       "pe_henry_ford"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3629,6 +3714,11 @@
     ],
     "people_ids": [
       "pe_napoleon_bonaparte"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3644,7 +3734,12 @@
       "ev_concert_of_europe_1815_1848",
       "ev_railway_boom_1840s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_concert_of_europe_1815_1848",
@@ -3658,7 +3753,12 @@
     "effects": [
       "ev_revolutions_1848"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_revolutions_1848",
@@ -3672,7 +3772,12 @@
     "effects": [
       "ev_mass_politics_worker_parties_1880s_1890s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_state_military_fiscal_expansion_1810s_1820s",
@@ -3686,7 +3791,12 @@
     "effects": [
       "ev_national_market_integration_1850s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_railway_boom_1840s",
@@ -3701,7 +3811,12 @@
       "ev_national_market_integration_1850s",
       "ev_second_industrial_revolution_1870s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_national_market_integration_1850s",
@@ -3715,7 +3830,12 @@
     "effects": [
       "ev_global_market_coordination_1860s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_global_market_coordination_1860s",
@@ -3729,7 +3849,12 @@
     "effects": [
       "ev_imperialism_berlin_conference_begins_1884"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_mass_politics_worker_parties_1880s_1890s",
@@ -3741,7 +3866,12 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_modern_urban_infrastructure_1850s_1870s",
@@ -3755,7 +3885,12 @@
     "effects": [
       "ev_electric_power_adoption_1880s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_urbanization_accelerates_1800_1850",
@@ -3770,7 +3905,12 @@
       "ev_public_health_act_1848",
       "ev_labor_movements_1830s_1840s"
     ],
-    "people_ids": []
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_water_frame_1769",
@@ -3786,6 +3926,11 @@
     ],
     "people_ids": [
       "pe_richard_arkwright"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3802,6 +3947,11 @@
     ],
     "people_ids": [
       "pe_eli_whitney"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3818,6 +3968,11 @@
     ],
     "people_ids": [
       "pe_george_stephenson"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3834,6 +3989,11 @@
     ],
     "people_ids": [
       "pe_karl_benz"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -3850,6 +4010,11 @@
     ],
     "people_ids": [
       "pe_annie_besant"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   }
 ]
