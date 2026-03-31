@@ -49,6 +49,7 @@
     "ev_spinning_jenny_invented_1764"
   ],
   "1769": [
+    "ev_water_frame_1769",
     "ev_water_frame_patent_1769",
     "ev_watt_condenser_patent_1769"
   ],
@@ -86,6 +87,7 @@
     "ev_september_massacres_1792"
   ],
   "1793": [
+    "ev_cotton_gin_1793",
     "ev_cotton_gin_invented_1793",
     "ev_execution_louis_xvi_1793",
     "ev_reign_of_terror_1793_1794"
@@ -126,6 +128,9 @@
   "1820": [
     "ev_state_military_fiscal_expansion_1810s_1820s",
     "ev_urbanization_accelerates_1800_1850"
+  ],
+  "1825": [
+    "ev_stockton_darlington_railway_1825"
   ],
   "1829": [
     "ev_rainhill_trials_rocket_1829"
@@ -201,7 +206,8 @@
     "ev_meiji_conscription_1873"
   ],
   "1876": [
-    "ev_imperialism_leopold_congo_project_1876"
+    "ev_imperialism_leopold_congo_project_1876",
+    "ev_internal_combustion_engine_1876"
   ],
   "1882": [
     "ev_electric_power_adoption_1880s",
@@ -214,6 +220,9 @@
   "1885": [
     "ev_imperialism_berlin_conference_ends_1885",
     "ev_imperialism_congo_free_state_established_1885"
+  ],
+  "1888": [
+    "ev_matchgirls_strike_1888"
   ],
   "1889": [
     "ev_imperialism_british_south_africa_company_charter_1889",

@@ -61,7 +61,12 @@
     }
   },
   "unit_industrial_revolution": {
-    "eligible_ids": {}
+    "eligible_ids": {
+      "timeline_before_after": [
+        "ev_factory_act_1833",
+        "ev_great_exhibition_opens_1851"
+      ]
+    }
   },
   "unit_meiji_restoration": {
     "eligible_ids": {

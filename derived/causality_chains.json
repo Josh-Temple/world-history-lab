@@ -70,6 +70,16 @@
     "ev_second_industrial_revolution_1870s"
   ],
   [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830"
+  ],
+  [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825"
+  ],
+  [
     "ev_directory_established_1795",
     "ev_napoleon_coup_18_brumaire_1799",
     "ev_napoleon_emperor_1804"
@@ -83,6 +93,11 @@
     "ev_enclosure_movement_accelerates_1750s",
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825"
   ],
   [
     "ev_enclosure_movement_accelerates_1750s",
@@ -102,7 +117,17 @@
   [
     "ev_factory_act_1833",
     "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848"
+  ],
+  [
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888",
+    "ev_mass_politics_worker_parties_1880s_1890s"
   ],
   [
     "ev_factory_act_1847_ten_hours",
@@ -112,7 +137,17 @@
   [
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830"
   ],
   [
     "ev_factory_system_rise_1780s",
@@ -141,6 +176,16 @@
   ],
   [
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848"
   ],
@@ -158,6 +203,11 @@
     "ev_liverpool_manchester_railway_1830",
     "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_luddite_protests_1811",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
   ],
   [
     "ev_luddite_protests_1811",
@@ -287,6 +337,11 @@
   [
     "ev_spinning_jenny_1764",
     "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
     "ev_urbanization_accelerates_1800_1850"
   ],
   [
@@ -305,9 +360,29 @@
     "ev_railway_boom_1840s"
   ],
   [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
     "ev_telegraph_invention_1837",
     "ev_global_market_coordination_1860s",
     "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_telegraph_invention_1837",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
   ],
   [
     "ev_tennis_court_oath_1789",
@@ -322,6 +397,11 @@
   [
     "ev_urbanization_accelerates_1800_1850",
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours"
   ],
   [
@@ -330,9 +410,29 @@
     "ev_modern_urban_infrastructure_1850s_1870s"
   ],
   [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850"
+  ],
+  [
     "ev_watt_steam_engine_1776",
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825"
   ],
   [
     "ev_watt_steam_engine_1776",
@@ -343,6 +443,11 @@
     "ev_watt_steam_engine_1776",
     "ev_steam_power_transport_expansion_1800s",
     "ev_liverpool_manchester_railway_1830"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825"
   ],
   [
     "ev_womens_march_versailles_1789",
@@ -416,6 +521,24 @@
     "ev_mass_politics_worker_parties_1880s_1890s"
   ],
   [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830"
+  ],
+  [
     "ev_directory_established_1795",
     "ev_napoleon_coup_18_brumaire_1799",
     "ev_napoleon_emperor_1804",
@@ -443,7 +566,19 @@
     "ev_enclosure_movement_accelerates_1750s",
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830"
   ],
   [
     "ev_enclosure_movement_accelerates_1750s",
@@ -466,6 +601,12 @@
   [
     "ev_factory_act_1833",
     "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848",
     "ev_modern_urban_infrastructure_1850s_1870s"
   ],
@@ -478,8 +619,38 @@
   [
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
   ],
   [
     "ev_factory_system_rise_1780s",
@@ -513,6 +684,24 @@
   ],
   [
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848",
     "ev_modern_urban_infrastructure_1850s_1870s"
@@ -540,6 +729,18 @@
     "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s",
     "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_luddite_protests_1811",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_luddite_protests_1811",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
   ],
   [
     "ev_luddite_protests_1811",
@@ -689,7 +890,19 @@
     "ev_spinning_jenny_1764",
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830"
   ],
   [
     "ev_spinning_jenny_1764",
@@ -728,10 +941,58 @@
     "ev_second_industrial_revolution_1870s"
   ],
   [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_telegraph_invention_1837",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
   ],
   [
     "ev_urbanization_accelerates_1800_1850",
@@ -746,10 +1007,52 @@
     "ev_electric_power_adoption_1880s"
   ],
   [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
+  ],
+  [
     "ev_watt_steam_engine_1776",
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830"
   ],
   [
     "ev_watt_steam_engine_1776",
@@ -774,6 +1077,12 @@
     "ev_steam_power_transport_expansion_1800s",
     "ev_liverpool_manchester_railway_1830",
     "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830"
   ],
   [
     "ev_womens_march_versailles_1789",
@@ -838,6 +1147,41 @@
     "ev_mass_production_systems_1890s"
   ],
   [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_cotton_gin_1793",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
     "ev_directory_established_1795",
     "ev_napoleon_coup_18_brumaire_1799",
     "ev_napoleon_emperor_1804",
@@ -883,8 +1227,43 @@
     "ev_enclosure_movement_accelerates_1750s",
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_enclosure_movement_accelerates_1750s",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
   ],
   [
     "ev_enclosure_movement_accelerates_1750s",
@@ -917,9 +1296,65 @@
   [
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848",
     "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
   ],
   [
     "ev_factory_system_rise_1780s",
@@ -958,6 +1393,20 @@
   ],
   [
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848",
     "ev_modern_urban_infrastructure_1850s_1870s",
@@ -976,6 +1425,27 @@
     "ev_second_industrial_revolution_1870s",
     "ev_electric_power_adoption_1880s",
     "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_luddite_protests_1811",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_luddite_protests_1811",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_luddite_protests_1811",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888",
+    "ev_mass_politics_worker_parties_1880s_1890s"
   ],
   [
     "ev_luddite_protests_1811",
@@ -1163,8 +1633,43 @@
     "ev_spinning_jenny_1764",
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_spinning_jenny_1764",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
   ],
   [
     "ev_spinning_jenny_1764",
@@ -1209,11 +1714,81 @@
     "ev_mass_politics_worker_parties_1880s_1890s"
   ],
   [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_electric_power_adoption_1880s"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888",
+    "ev_mass_politics_worker_parties_1880s_1890s"
   ],
   [
     "ev_urbanization_accelerates_1800_1850",
@@ -1230,11 +1805,102 @@
     "ev_mass_production_systems_1890s"
   ],
   [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_public_health_act_1848"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_water_frame_1769",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_public_health_act_1848",
+    "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833",
+    "ev_factory_act_1847_ten_hours"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1847_ten_hours",
+    "ev_matchgirls_strike_1888"
+  ],
+  [
     "ev_watt_steam_engine_1776",
     "ev_factory_system_rise_1780s",
     "ev_labor_movements_1830s_1840s",
     "ev_factory_act_1847_ten_hours",
     "ev_public_health_act_1848"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_factory_system_rise_1780s",
+    "ev_urbanization_accelerates_1800_1850",
+    "ev_labor_movements_1830s_1840s",
+    "ev_factory_act_1833"
   ],
   [
     "ev_watt_steam_engine_1776",
@@ -1270,6 +1936,20 @@
     "ev_liverpool_manchester_railway_1830",
     "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s"
+  ],
+  [
+    "ev_watt_steam_engine_1776",
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s"
   ],
   [
     "ev_womens_march_versailles_1789",
