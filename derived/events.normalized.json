@@ -256,7 +256,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [
       "pe_henry_bessemer"
     ],
@@ -489,7 +493,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [
       "pe_karl_marx",
       "pe_friedrich_engels"
@@ -523,7 +531,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [],
     "effects": [
@@ -608,7 +620,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [
       "unit_foundations_world_history",
@@ -664,6 +680,43 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 313
+    }
+  },
+  {
+    "id": "ev_cotton_gin_1793",
+    "label": "Cotton gin transforms cotton processing",
+    "summary_short": "Eli Whitney’s cotton gin speeds raw cotton processing, accelerating textile supply chains and industrial demand.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_eli_whitney"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_steam_power_transport_expansion_1800s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1793",
+      "end": "1793",
+      "year_start": 1793,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17930101,
+      "sort_end": 17931231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1793
     }
   },
   {
@@ -855,9 +908,14 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [
-      "pe_thomas_edison"
+      "pe_thomas_edison",
+      "pe_nikola_tesla"
     ],
     "unit_ids": [
       "unit_industrial_revolution"
@@ -888,7 +946,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
@@ -1035,9 +1097,12 @@
     ],
     "people_ids": [
       "pe_karl_marx",
-      "pe_friedrich_engels"
+      "pe_friedrich_engels",
+      "pe_lord_shaftesbury"
     ],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "effects": [
       "ev_factory_act_1847_ten_hours"
     ],
@@ -1064,13 +1129,18 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
     "effects": [
-      "ev_public_health_act_1848"
+      "ev_public_health_act_1848",
+      "ev_matchgirls_strike_1888"
     ],
     "causes": [],
     "time": {
@@ -1095,14 +1165,21 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
-    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_richard_arkwright"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
     "effects": [
       "ev_urbanization_accelerates_1800_1850",
-      "ev_labor_movements_1830s_1840s"
+      "ev_labor_movements_1830s_1840s",
+      "ev_stockton_darlington_railway_1825"
     ],
     "causes": [],
     "time": {
@@ -1127,9 +1204,14 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [
-      "pe_karl_marx"
+      "pe_karl_marx",
+      "pe_friedrich_engels"
     ],
     "unit_ids": [
       "unit_industrial_revolution"
@@ -1228,7 +1310,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
@@ -1263,7 +1349,9 @@
       "timeline_before_after"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "effects": [],
     "causes": [],
     "time": {
@@ -2431,6 +2519,43 @@
     }
   },
   {
+    "id": "ev_internal_combustion_engine_1876",
+    "label": "Internal combustion engine breakthrough",
+    "summary_short": "Late-19th-century internal combustion engine advances widen industrial power options beyond steam in transport and manufacturing.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_karl_benz"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_mass_production_systems_1890s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1876",
+      "end": "1876",
+      "year_start": 1876,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18760101,
+      "sort_end": 18761231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1876
+    }
+  },
+  {
     "id": "ev_labor_movements_1830s_1840s",
     "label": "Labor movements and Chartism grow",
     "summary_short": "Industrial-era labor unrest and reform campaigns push for representation, rights, and safer working conditions.",
@@ -2438,13 +2563,20 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
-    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_robert_owen"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
     "effects": [
-      "ev_factory_act_1847_ten_hours"
+      "ev_factory_act_1847_ten_hours",
+      "ev_factory_act_1833"
     ],
     "causes": [],
     "time": {
@@ -2469,9 +2601,14 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [
-      "pe_george_stephenson"
+      "pe_george_stephenson",
+      "pe_isambard_kingdom_brunel"
     ],
     "unit_ids": [
       "unit_industrial_revolution"
@@ -2503,7 +2640,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
@@ -2573,7 +2714,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [],
     "effects": [],
@@ -2600,8 +2745,14 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
-    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_henry_ford"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2619,6 +2770,43 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1890
+    }
+  },
+  {
+    "id": "ev_matchgirls_strike_1888",
+    "label": "Matchgirls strike in London",
+    "summary_short": "Women workers at the Bryant & May factory strike over dangerous conditions, energizing late-century labor reform activism.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_annie_besant"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1888",
+      "end": "1888",
+      "year_start": 1888,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18880101,
+      "sort_end": 18881231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1888
     }
   },
   {
@@ -3153,7 +3341,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [],
     "effects": [
@@ -3361,7 +3553,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [
       "pe_napoleon_bonaparte"
     ],
@@ -3397,9 +3593,15 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "effects": [
       "ev_global_market_coordination_1860s"
     ],
@@ -3562,7 +3764,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
@@ -3666,7 +3872,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [],
     "effects": [
@@ -3782,7 +3992,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
@@ -3813,7 +4027,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism",
@@ -3917,8 +4135,14 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
-    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_james_hargreaves"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -4035,7 +4259,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [],
     "effects": [
@@ -4064,13 +4292,20 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
-    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_richard_trevithick"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
     "effects": [
-      "ev_liverpool_manchester_railway_1830"
+      "ev_liverpool_manchester_railway_1830",
+      "ev_stockton_darlington_railway_1825"
     ],
     "causes": [],
     "time": {
@@ -4085,6 +4320,43 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1804
+    }
+  },
+  {
+    "id": "ev_stockton_darlington_railway_1825",
+    "label": "Stockton and Darlington Railway opens",
+    "summary_short": "The first public railway to use steam locomotives for freight and passengers demonstrates rail transport’s industrial potential.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_george_stephenson"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_liverpool_manchester_railway_1830"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1825",
+      "end": "1825",
+      "year_start": 1825,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18250101,
+      "sort_end": 18251231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1825
     }
   },
   {
@@ -4178,7 +4450,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [
       "pe_samuel_morse"
     ],
@@ -4186,7 +4462,8 @@
       "unit_industrial_revolution"
     ],
     "effects": [
-      "ev_global_market_coordination_1860s"
+      "ev_global_market_coordination_1860s",
+      "ev_national_market_integration_1850s"
     ],
     "causes": [],
     "time": {
@@ -4351,7 +4628,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [],
     "unit_ids": [],
     "effects": [
@@ -4371,6 +4652,43 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1820
+    }
+  },
+  {
+    "id": "ev_water_frame_1769",
+    "label": "Water Frame mechanizes spinning",
+    "summary_short": "Richard Arkwright’s water frame enables larger-scale spinning production and helps shift textiles toward factory organization.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_richard_arkwright"
+    ],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
+    "effects": [
+      "ev_factory_system_rise_1780s"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1769",
+      "end": "1769",
+      "year_start": 1769,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17690101,
+      "sort_end": 17691231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1769
     }
   },
   {
@@ -4439,7 +4757,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "people_ids": [
       "pe_james_watt"
     ],

@@ -222,3 +222,42 @@
 1. Backfill missing `summary_short` fields for older imperialism events to reduce warning noise and improve recognition quality.
 2. Add the new bridge events to additional app profiles/question-type taxonomies if stricter mode-level curation is desired.
 3. Consider deprecating or removing the legacy `data/units/industrial-revolution.json` file to avoid filename ambiguity now that the registry uses `industrial_revolution.json`.
+
+## Incremental update (2026-03-31 · dense industrial unit + people expansion)
+- Expanded `data/units/industrial_revolution.json` from 18 to 26 events to create a high-density unit suitable for timeline, causality, sequence reconstruction, and year-estimation practice.
+- Added five reviewed events to `data/events.json` with linked `effects` and `people_ids`:
+  - `ev_water_frame_1769`
+  - `ev_cotton_gin_1793`
+  - `ev_stockton_darlington_railway_1825`
+  - `ev_internal_combustion_engine_1876`
+  - `ev_matchgirls_strike_1888`
+- Added/strengthened causal links across industrial stages (mechanization → factory growth → rail/telegraph integration → labor reform/mass politics → late-century production systems).
+- Expanded `data/people.json` with 11 reviewed figures and aligned event links:
+  - `pe_richard_arkwright`
+  - `pe_james_hargreaves`
+  - `pe_eli_whitney`
+  - `pe_richard_trevithick`
+  - `pe_isambard_kingdom_brunel`
+  - `pe_robert_owen`
+  - `pe_lord_shaftesbury`
+  - `pe_karl_benz`
+  - `pe_nikola_tesla`
+  - `pe_henry_ford`
+  - `pe_annie_besant`
+- Updated existing industrial events to include additional `people_ids` coverage for technology, labor, and electrification clusters.
+- Updated `README.md` with a new dated project update section for this expansion.
+
+## Validation completed (2026-03-31)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+
+## Suggested next steps
+1. Add 2-3 industrial-era public-health/urban-governance events (e.g., sanitation infrastructure milestones) to deepen social policy chains.
+2. Extend people links in non-industrial units so People Recognition gains similar density outside this unit.
+3. Add a small derive check for person-orphan reporting (warning-level) to keep newly added people actively connected to events over time.
+
+## Incremental update (2026-03-31 · CI validation follow-up)
+- Resolved CI failure in `node scripts/validate.mjs` by adding `question_types` arrays to the 33 industrial/bridge events that previously lacked the field.
+- Normalized newly added `question_types` to metadata-enabled values (`timeline_before_after`, `what_happened`, `cause_and_effect`) to keep taxonomy consistent with `data/metadata.json`.
+- Re-ran validation + derive + smoke checks after taxonomy repair.

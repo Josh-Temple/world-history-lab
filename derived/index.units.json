@@ -106,22 +106,30 @@
     "event_ids": [
       "ev_enclosure_movement_accelerates_1750s",
       "ev_spinning_jenny_1764",
+      "ev_water_frame_1769",
       "ev_watt_steam_engine_1776",
       "ev_factory_system_rise_1780s",
+      "ev_cotton_gin_1793",
       "ev_steam_power_transport_expansion_1800s",
       "ev_luddite_protests_1811",
       "ev_congress_vienna_1815",
+      "ev_stockton_darlington_railway_1825",
       "ev_liverpool_manchester_railway_1830",
+      "ev_factory_act_1833",
       "ev_telegraph_invention_1837",
       "ev_labor_movements_1830s_1840s",
       "ev_factory_act_1847_ten_hours",
       "ev_communist_manifesto_1848",
       "ev_public_health_act_1848",
+      "ev_great_exhibition_opens_1851",
+      "ev_national_market_integration_1850s",
       "ev_bessemer_process_1856",
       "ev_first_international_1864",
       "ev_second_industrial_revolution_1870s",
+      "ev_internal_combustion_engine_1876",
       "ev_electric_power_adoption_1880s",
-      "ev_mass_production_systems_1890s"
+      "ev_mass_production_systems_1890s",
+      "ev_matchgirls_strike_1888"
     ]
   },
   {

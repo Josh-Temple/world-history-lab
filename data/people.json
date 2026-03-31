@@ -704,5 +704,279 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "reviewed"
+  },
+  {
+    "id": "pe_richard_arkwright",
+    "name": "Richard Arkwright",
+    "birth_year": 1732,
+    "death_year": 1792,
+    "roles": [
+      "inventor",
+      "industrialist"
+    ],
+    "summary_short": "English inventor and entrepreneur whose spinning-frame and mill model helped establish factory-scale textile production.",
+    "related_events": [
+      "ev_water_frame_1769",
+      "ev_factory_system_rise_1780s"
+    ],
+    "alt_names": [],
+    "regions": [
+      "reg_britain"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_james_hargreaves",
+    "name": "James Hargreaves",
+    "birth_year": 1720,
+    "death_year": 1778,
+    "roles": [
+      "inventor"
+    ],
+    "summary_short": "English weaver and inventor of the spinning jenny, an early catalyst of textile mechanization.",
+    "related_events": [
+      "ev_spinning_jenny_1764"
+    ],
+    "alt_names": [],
+    "regions": [
+      "reg_britain"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_eli_whitney",
+    "name": "Eli Whitney",
+    "birth_year": 1765,
+    "death_year": 1825,
+    "regions": [
+      "reg_north_america"
+    ],
+    "roles": [
+      "inventor"
+    ],
+    "summary_short": "American inventor of the cotton gin, which accelerated cotton processing and textile supply chains.",
+    "related_events": [
+      "ev_cotton_gin_1793"
+    ],
+    "alt_names": [],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_richard_trevithick",
+    "name": "Richard Trevithick",
+    "birth_year": 1771,
+    "death_year": 1833,
+    "roles": [
+      "engineer",
+      "inventor"
+    ],
+    "summary_short": "Cornish engineer who pioneered high-pressure steam engines and early locomotive applications.",
+    "related_events": [
+      "ev_steam_power_transport_expansion_1800s"
+    ],
+    "alt_names": [],
+    "regions": [
+      "reg_britain"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_isambard_kingdom_brunel",
+    "name": "Isambard Kingdom Brunel",
+    "birth_year": 1806,
+    "death_year": 1859,
+    "roles": [
+      "engineer"
+    ],
+    "summary_short": "British engineer associated with major railway, bridge, and steamship projects in the transport revolution.",
+    "related_events": [
+      "ev_liverpool_manchester_railway_1830"
+    ],
+    "alt_names": [],
+    "regions": [
+      "reg_britain"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_robert_owen",
+    "name": "Robert Owen",
+    "birth_year": 1771,
+    "death_year": 1858,
+    "roles": [
+      "reformer",
+      "industrialist"
+    ],
+    "summary_short": "Welsh social reformer and mill manager who advocated labor protections and cooperative social models.",
+    "related_events": [
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "alt_names": [],
+    "regions": [
+      "reg_britain"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_lord_shaftesbury",
+    "name": "Lord Shaftesbury",
+    "birth_year": 1801,
+    "death_year": 1885,
+    "roles": [
+      "politician",
+      "reformer"
+    ],
+    "summary_short": "British reform politician associated with campaigns for factory and child-labor protections.",
+    "related_events": [
+      "ev_factory_act_1833",
+      "ev_factory_act_1847_ten_hours"
+    ],
+    "alt_names": [],
+    "regions": [
+      "reg_britain"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_karl_benz",
+    "name": "Karl Benz",
+    "birth_year": 1844,
+    "death_year": 1929,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "engineer",
+      "inventor"
+    ],
+    "summary_short": "German engineer associated with practical internal-combustion automotive design in the late 19th century.",
+    "related_events": [
+      "ev_internal_combustion_engine_1876"
+    ],
+    "alt_names": [],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_nikola_tesla",
+    "name": "Nikola Tesla",
+    "birth_year": 1856,
+    "death_year": 1943,
+    "regions": [
+      "reg_europe",
+      "reg_north_america"
+    ],
+    "roles": [
+      "inventor",
+      "engineer"
+    ],
+    "summary_short": "Inventor and electrical engineer linked to alternating-current systems that expanded practical electric-power distribution.",
+    "related_events": [
+      "ev_electric_power_adoption_1880s"
+    ],
+    "alt_names": [],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_henry_ford",
+    "name": "Henry Ford",
+    "birth_year": 1863,
+    "death_year": 1947,
+    "regions": [
+      "reg_north_america"
+    ],
+    "roles": [
+      "industrialist"
+    ],
+    "summary_short": "American industrialist associated with scalable assembly-line manufacturing and modern mass production.",
+    "related_events": [
+      "ev_mass_production_systems_1890s"
+    ],
+    "alt_names": [],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_annie_besant",
+    "name": "Annie Besant",
+    "birth_year": 1847,
+    "death_year": 1933,
+    "regions": [
+      "reg_britain"
+    ],
+    "roles": [
+      "activist",
+      "reformer"
+    ],
+    "summary_short": "British activist who supported the 1888 matchgirls strike and broader labor and social reform campaigns.",
+    "related_events": [
+      "ev_matchgirls_strike_1888"
+    ],
+    "alt_names": [],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
   }
 ]
