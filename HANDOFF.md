@@ -261,3 +261,28 @@
 - Resolved CI failure in `node scripts/validate.mjs` by adding `question_types` arrays to the 33 industrial/bridge events that previously lacked the field.
 - Normalized newly added `question_types` to metadata-enabled values (`timeline_before_after`, `what_happened`, `cause_and_effect`) to keep taxonomy consistent with `data/metadata.json`.
 - Re-ran validation + derive + smoke checks after taxonomy repair.
+
+## Incremental update (2026-04-01 · Event Comparison mode + controlled tags)
+- Added a new learner-facing app at `apps/event-comparison/` with side-by-side event comparison flow:
+  - renders two random events,
+  - asks for a key similarity as multiple choice,
+  - evaluates answer correctness,
+  - shows summary-based explanation for both events,
+  - records mastery results for both events under `mode: event_comparison`.
+- Added route entry file `apps/event-comparison/index.html` and logic file `apps/event-comparison/app.js`.
+- Updated homepage Understanding cluster in `index.html` with a new **Event Comparison** link.
+- Added/standardized controlled classification tags for all events in the Industrial Revolution unit (`data/units/industrial_revolution.json` membership), appending labels such as:
+  - type-like: `invention`, `movement`, `law`, `system`, `infrastructure`
+  - domain-like: `technological`, `economic`, `social`, `political`
+  - theme-like: `industrial`, `labor`, `transport`, `communication`, `public_health`
+- Regenerated derived artifacts so normalized outputs reflect updated event tags.
+
+## Validation completed (2026-04-01)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate-data.mjs` ✅ (passes with existing baseline warnings on older Imperialism/Meiji records outside this task)
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+
+## Suggested next steps
+1. Add unit-scoped comparison setup (All units vs selected unit) so Event Comparison matches the same focused-study workflow as other apps.
+2. Expand controlled comparison tags to non-industrial units for broader cross-unit similarity quality.
+3. Consider adding a second prompt type in Event Comparison ("key difference") for contrast reasoning alongside similarity.

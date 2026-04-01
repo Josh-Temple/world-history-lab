@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="manifest" href="/pwa/manifest.webmanifest" />
+    <link rel="icon" href="/assets/pwa/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/pwa/apple-touch-icon.svg" />
+    <title>Event Comparison</title>
+    <style>
+      body { font-family: Inter, system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+      main { width: min(760px, calc(100% - 2rem)); margin: 2rem auto; }
+      .card { background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; padding: 1rem; }
+      .event { padding: .75rem; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: .65rem; }
+      #choices { display: grid; gap: .5rem; margin: .75rem 0; }
+      #choices button, #next { min-height: 40px; border-radius: 8px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer; }
+      #choices button:hover, #next:hover { background: #f1f5f9; }
+      #feedback { min-height: 1.5rem; }
+      #explanation { color: #475569; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="/">← Back to World History Lab</a></p>
+      <div class="card">
+        <h2>Compare these events</h2>
+        <div id="event-a" class="event"></div>
+        <div id="event-b" class="event"></div>
+
+        <p>What is a key similarity?</p>
+        <div id="choices"></div>
+
+        <p id="feedback" aria-live="polite"></p>
+        <p id="explanation" aria-live="polite"></p>
+        <button id="next" type="button">Next</button>
+      </div>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="/pwa/register-sw.js"></script>
+  </body>
+</html>
