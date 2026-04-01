@@ -1004,7 +1004,8 @@
     "tags": [
       "labor",
       "law",
-      "regulation"
+      "regulation",
+      "social"
     ],
     "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate—an important step toward enforceable workplace regulation.",
     "source_refs": [
@@ -1036,7 +1037,9 @@
     "tags": [
       "exhibition",
       "industry",
-      "culture"
+      "culture",
+      "economic",
+      "industrial"
     ],
     "summary_short": "A major international exhibition showcasing industrial and cultural achievements, symbolizing Britain’s industrial prominence.",
     "source_refs": [
@@ -3357,6 +3360,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "movement",
+      "economic",
+      "industrial"
     ]
   },
   {
@@ -3378,6 +3386,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "invention",
+      "technological",
+      "industrial"
     ]
   },
   {
@@ -3400,6 +3413,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "invention",
+      "technological",
+      "industrial"
     ]
   },
   {
@@ -3423,6 +3441,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "system",
+      "economic",
+      "industrial"
     ]
   },
   {
@@ -3445,6 +3468,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "infrastructure",
+      "technological",
+      "transport"
     ]
   },
   {
@@ -3464,6 +3492,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "movement",
+      "social",
+      "labor"
     ]
   },
   {
@@ -3487,6 +3520,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "infrastructure",
+      "technological",
+      "transport"
     ]
   },
   {
@@ -3509,6 +3547,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "invention",
+      "technological",
+      "communication"
     ]
   },
   {
@@ -3531,6 +3574,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "movement",
+      "social",
+      "labor"
     ]
   },
   {
@@ -3553,6 +3601,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "publication",
+      "political",
+      "ideology"
     ]
   },
   {
@@ -3573,6 +3626,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "law",
+      "social",
+      "labor"
     ]
   },
   {
@@ -3592,6 +3650,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "law",
+      "social",
+      "public_health"
     ]
   },
   {
@@ -3614,6 +3677,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "invention",
+      "technological",
+      "industrial"
     ]
   },
   {
@@ -3636,6 +3704,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "organization",
+      "political",
+      "labor"
     ]
   },
   {
@@ -3656,6 +3729,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "transformation",
+      "economic",
+      "industrial"
     ]
   },
   {
@@ -3678,6 +3756,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "adoption",
+      "technological",
+      "industrial"
     ]
   },
   {
@@ -3697,6 +3780,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "system",
+      "economic",
+      "industrial"
     ]
   },
   {
@@ -3739,6 +3827,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "treaty",
+      "political",
+      "state_order"
     ]
   },
   {
@@ -3835,6 +3928,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "system",
+      "economic",
+      "markets"
     ]
   },
   {
@@ -3931,6 +4029,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "invention",
+      "technological",
+      "industrial"
     ]
   },
   {
@@ -3952,6 +4055,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "invention",
+      "technological",
+      "industrial"
     ]
   },
   {
@@ -3973,6 +4081,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "infrastructure",
+      "technological",
+      "transport"
     ]
   },
   {
@@ -3994,6 +4107,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "invention",
+      "technological",
+      "transport"
     ]
   },
   {
@@ -4015,6 +4133,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "tags": [
+      "movement",
+      "social",
+      "labor"
     ]
   }
 ]

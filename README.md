@@ -218,6 +218,15 @@ Next:
 
 - Extended `scripts/derive.mjs` to generate multi-step causal paths (length 3-5) from `event.effects` and emit them as `derived/causality_chains.json`.
 - Added a new learner-facing **Sequence Reconstruction** mode at `apps/sequence-reconstruction/` where shuffled causal chains can be reordered with drag-and-drop and checked against the expected sequence.
+
+## Recent updates (2026-04-01)
+
+- Added a new learner-facing **Event Comparison** mode at `apps/event-comparison/` for side-by-side similarity practice between two events.
+- Event Comparison loads shared event data through `apps/shared/data-store.js`, asks a multiple-choice similarity question, gives immediate correctness feedback, and shows short summary-based explanations from both events.
+- Event Comparison records mastery outcomes for both compared events via the shared mastery store so comparison performance contributes to adaptive review history.
+- Added Event Comparison to the homepage Understanding skill cluster (`index.html`).
+- Expanded `data/events.json` tagging coverage for all events in the Industrial Revolution unit with controlled comparison-friendly tags (type/domain/theme style labels such as `invention`, `technological`, `economic`, and `social`) while preserving existing tags.
+- Regenerated derived artifacts after the data + app update to keep app-facing outputs in sync.
 - Integrated Sequence Reconstruction into the homepage under the **Understanding** skill group.
 - Added mastery recording for sequence attempts so chain events now contribute to persisted practice signals.
 
