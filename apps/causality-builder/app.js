@@ -1,6 +1,7 @@
 import { filterDerivedEvents, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
 import { isCausalityReady } from "../shared/event-filters.js";
 import { recordResult } from "../shared/mastery-store.js";
+import { showFeedback } from "../shared/feedback.js";
 
 const sourceYearEl = document.getElementById('source-year');
 const sourceLabelEl = document.getElementById('source-label');
@@ -213,12 +214,25 @@ function handleAnswer(selectedButton, option) {
   const isCorrect = option.id === correct.id;
   if (isCorrect) {
     selectedButton.classList.add('correct');
-    setFeedback('Correct.', 'correct');
+    showFeedback(feedbackEl, {
+      correct: true,
+      event: correct,
+      year: correct?.time?.year_start,
+      summary: correct.summary_short,
+      extra: [`From: ${source.label}`],
+    });
   } else {
     selectedButton.classList.add('incorrect');
     const correctIndex = state.currentQuestion.options.findIndex((candidate) => candidate.id === correct.id);
     if (buttons[correctIndex]) buttons[correctIndex].classList.add('correct');
-    setFeedback('Incorrect.', 'incorrect');
+    showFeedback(feedbackEl, {
+      correct: false,
+      event: option,
+      correctAnswer: correct,
+      year: correct?.time?.year_start,
+      summary: correct.summary_short,
+      extra: [`From: ${source.label}`],
+    });
   }
 
   recordResult(source.id, isCorrect);

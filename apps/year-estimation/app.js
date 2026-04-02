@@ -1,5 +1,6 @@
 import { recordResult } from '../shared/mastery-store.js';
 import { getAllEvents, getUnits } from '../shared/data-store.js';
+import { showFeedback } from '../shared/feedback.js';
 
 const eventLabel = document.getElementById('event-label');
 const eventSummary = document.getElementById('event-summary');
@@ -115,7 +116,12 @@ function submitGuess() {
   const score = scoreFromError(error);
   const isCorrect = score >= 0.5;
 
-  feedback.textContent = `${feedbackPrefix(error)} Correct year: ${correctYear}. You were off by ${error} year${error === 1 ? '' : 's'}.`;
+  showFeedback(feedback, {
+    correct: isCorrect,
+    event: currentEvent,
+    year: correctYear,
+    summary: `${feedbackPrefix(error)} You were off by ${error} year${error === 1 ? '' : 's'}.`,
+  });
   recordResult(currentEvent.id, isCorrect, { error, score, mode: 'year_estimation' });
 }
 
