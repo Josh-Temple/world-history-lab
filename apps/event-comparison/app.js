@@ -1,5 +1,6 @@
 import { getAllEvents } from '../shared/data-store.js';
 import { recordResult } from '../shared/mastery-store.js';
+import { showFeedback } from '../shared/feedback.js';
 
 const eventA = document.getElementById('event-a');
 const eventB = document.getElementById('event-b');
@@ -110,7 +111,13 @@ function evaluate(selected) {
   if (!currentPair) return;
 
   const isCorrect = selected === correctTag;
-  feedback.textContent = isCorrect ? 'Correct' : `Incorrect (best answer: ${correctTag}).`;
+  showFeedback(feedback, {
+    correct: isCorrect,
+    event: currentPair.a,
+    correctAnswer: { label: correctTag },
+    summary: `Similarity tag: ${correctTag}.`,
+    extra: [`Event A: ${currentPair.a.label}`, `Event B: ${currentPair.b.label}`],
+  });
 
   const summaryA = currentPair.a.summary_short || 'No summary available.';
   const summaryB = currentPair.b.summary_short || 'No summary available.';

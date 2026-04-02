@@ -92,7 +92,34 @@
         background: #115e59;
       }
 
-      .mode-grid,
+      .learning-path {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .app-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 0.65rem;
+      }
+
+      .app-link {
+        display: block;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0.6rem 0.7rem;
+        text-decoration: none;
+        color: var(--accent);
+        font-weight: 600;
+        background: #fff;
+      }
+
+      .app-link:hover,
+      .app-link:focus-visible {
+        text-decoration: underline;
+      }
+
       .unit-grid {
         display: grid;
         gap: 0.85rem;
@@ -176,56 +203,32 @@
       </header>
 
       <section class="panel start-learning" aria-labelledby="start-learning-heading">
-        <h2 id="start-learning-heading">Start here: learning path</h2>
-        <p class="section-help">Follow this loop for best results: first build overview, then practice chronology, then test recognition and explanation.</p>
-        <ol class="section-help" style="margin:.5rem 0 0 1.1rem; padding:0; display:grid; gap:.3rem;">
-          <li><strong>Overview / Player:</strong> Use History Player for global narrative flow and major turning points.</li>
-          <li><strong>Timeline Trainer:</strong> Build temporal anchors so events are easier to place and compare.</li>
-          <li><strong>Recognition + Causality:</strong> Recall what happened and explain why it mattered.</li>
-        </ol>
-        <a href="apps/history-player/" class="primary-btn">Start with History Player →</a>
+        <h2 id="start-learning-heading">Start here</h2>
+        <p class="section-help">Begin with fast recognition so your core events become familiar before deeper analysis.</p>
+        <div class="app-list">
+          <a href="apps/event-recognition/" class="app-link">Event Recognition</a>
+        </div>
       </section>
 
-      <section class="panel" aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Practice by skill</h2>
-        <p class="section-help">Choose a mode by what you want to train right now.</p>
-        <div class="mode-grid">
-          <article class="mode-group">
-            <h3>Chronology</h3>
-            <p>Build order and relative timing first.</p>
-            <div class="mode-links">
-              <a href="apps/timeline-trainer/">Timeline Trainer</a>
-              <a href="apps/year-estimation/">Year Estimation</a>
-            </div>
-          </article>
+      <section class="panel" aria-labelledby="build-understanding-heading">
+        <h2 id="build-understanding-heading">Build understanding</h2>
+        <p class="section-help">Strengthen chronology and time estimation to place events confidently.</p>
+        <div class="app-list">
+          <a href="apps/timeline-trainer/" class="app-link">Timeline Trainer</a>
+          <a href="apps/year-estimation/" class="app-link">Year Estimation</a>
+        </div>
+      </section>
 
-          <article class="mode-group">
-            <h3>Recall</h3>
-            <p>Identify events and actors from concise clues.</p>
-            <div class="mode-links">
-              <a href="apps/event-recognition/">Event Recognition</a>
-              <a href="apps/people-recognition/">People Recognition</a>
-            </div>
-          </article>
-
-          <article class="mode-group">
-            <h3>Understanding</h3>
-            <p>Explain causes and connect events into narrative.</p>
-            <div class="mode-links">
-              <a href="apps/causality-builder/">Causality Builder</a>
-              <a href="apps/event-comparison/">Event Comparison</a>
-              <a href="apps/sequence-reconstruction/">Sequence Reconstruction</a>
-              <a href="apps/history-player/">History Player</a>
-            </div>
-          </article>
-
-          <article class="mode-group">
-            <h3>Survey bridge</h3>
-            <p>Refresh era × region orientation between drills.</p>
-            <div class="mode-links">
-              <a href="apps/overview/">Overview</a>
-            </div>
-          </article>
+      <section class="panel" aria-labelledby="deep-understanding-heading">
+        <h2 id="deep-understanding-heading">Deep understanding</h2>
+        <p class="section-help">Practice cause-effect reasoning, sequence logic, and cross-event comparison.</p>
+        <div class="app-list">
+          <a href="apps/causality-builder/" class="app-link">Causality Builder</a>
+          <a href="apps/sequence-reconstruction/" class="app-link">Sequence Reconstruction</a>
+          <a href="apps/event-comparison/" class="app-link">Event Comparison</a>
+          <a href="apps/people-recognition/" class="app-link">People Recognition</a>
+          <a href="apps/history-player/" class="app-link">History Player</a>
+          <a href="apps/overview/" class="app-link">Overview</a>
         </div>
       </section>
 

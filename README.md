@@ -482,3 +482,10 @@ TBD
 - Added five reviewed Industrial Revolution events in `data/events.json` (`ev_water_frame_1769`, `ev_cotton_gin_1793`, `ev_stockton_darlington_railway_1825`, `ev_internal_combustion_engine_1876`, `ev_matchgirls_strike_1888`) and strengthened multi-step `effects` chains across technology → transport → labor/politics.
 - Expanded `data/people.json` with 11 reviewed Industrial Revolution figures and linked them through `people_ids` and `related_events` for stronger people-recognition coverage.
 - Regenerated derived artifacts so causality chains and unit indexes reflect the denser industrial dataset.
+
+
+## Recent updates (2026-04-02)
+
+- Reworked the homepage into a staged learning path with three clear progression sections: **Start here**, **Build understanding**, and **Deep understanding**.
+- Replaced flat mode discovery with concise app descriptions and vertically stacked app links to reduce onboarding decision load on desktop and mobile.
+- Added a shared `apps/shared/feedback.js` helper and integrated it across active vanilla JS practice modes so answer feedback now consistently includes correctness, answer context, and short explanation text.

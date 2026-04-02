@@ -286,3 +286,27 @@
 1. Add unit-scoped comparison setup (All units vs selected unit) so Event Comparison matches the same focused-study workflow as other apps.
 2. Expand controlled comparison tags to non-industrial units for broader cross-unit similarity quality.
 3. Consider adding a second prompt type in Event Comparison ("key difference") for contrast reasoning alongside similarity.
+
+
+## Incremental update (2026-04-02 · learning-path navigation + shared feedback UX)
+- Reworked `index.html` app discovery into explicit progression stages:
+  - **Start here**: Event Recognition
+  - **Build understanding**: Timeline Trainer + Year Estimation
+  - **Deep understanding**: Causality Builder, Sequence Reconstruction, Event Comparison, People Recognition, History Player, Overview
+- Added section-level guidance copy and vertically stacked app-link presentation to reduce decision fatigue and improve mobile readability.
+- Added shared feedback renderer `apps/shared/feedback.js` and integrated it into:
+  - `apps/event-recognition/app.js`
+  - `apps/people-recognition/app.js`
+  - `apps/causality-builder/app.js`
+  - `apps/event-comparison/app.js`
+  - `apps/sequence-reconstruction/app.js`
+  - `apps/year-estimation/app.js`
+- Standardized answer feedback to consistently include correctness status, event/answer context, and concise explanation text; incorrect answers now clearly surface the correct answer label.
+
+## Validation completed (2026-04-02)
+- `node scripts/derive.mjs` ✅
+
+## Suggested next steps
+1. Extend the same shared feedback renderer to Timeline Trainer (currently its own message loop) for full parity.
+2. Add a tiny shared style token (for feedback spacing/typography) so per-app feedback containers look identical without duplicating CSS.
+3. Consider a lightweight smoke test that checks every app renders non-empty feedback after a simulated submit action.

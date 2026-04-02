@@ -1,5 +1,6 @@
 import { loadDerivedEvents } from "../shared/data-access.js";
 import { recordResult } from "../shared/mastery-store.js";
+import { showFeedback } from "../shared/feedback.js";
 
 const listEl = document.getElementById("event-list");
 const checkBtn = document.getElementById("check");
@@ -137,12 +138,23 @@ function checkOrder() {
   }
 
   if (correct) {
-    setFeedback("Correct sequence.", "correct");
+    showFeedback(feedbackEl, {
+      correct: true,
+      event: state.eventMap.get(state.chain[0]),
+      summary: "You reconstructed the chain in the correct causal order.",
+      extra: [`Correct order: ${state.chain.map(getEventLabel).join(" → ")}`],
+    });
     explanationEl.textContent = `Chain confirmed: ${explainChain(state.chain)}`;
     return;
   }
 
-  setFeedback("Incorrect order.", "incorrect");
+  showFeedback(feedbackEl, {
+    correct: false,
+    event: state.eventMap.get(userOrder[0]),
+    correctAnswer: state.eventMap.get(state.chain[0]),
+    summary: "The order was not fully causal.",
+    extra: [`Correct order: ${state.chain.map(getEventLabel).join(" → ")}`],
+  });
   explanationEl.textContent = `Expected order: ${explainChain(state.chain)}`;
 }
 

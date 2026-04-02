@@ -1,5 +1,6 @@
 import { REVIEWED_PLUS, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
 import { getAllPeople } from "../shared/data-store.js";
+import { showFeedback } from "../shared/feedback.js";
 
 const personNameElement = document.getElementById("person-name");
 const personSummaryElement = document.getElementById("person-summary");
@@ -283,10 +284,23 @@ function handleChoice(choiceButton, option) {
   if (isCorrect) {
     state.correctAnswers += 1;
     choiceButton.classList.add("correct");
-    feedbackElement.textContent = "Correct.";
+    showFeedback(feedbackElement, {
+      correct: true,
+      event: correct,
+      year: Number.isFinite(eventYear) ? eventYear : undefined,
+      unitTitle: correctUnit?.title,
+      summary: correct.summary_short || "No summary available.",
+    });
   } else {
     choiceButton.classList.add("incorrect");
-    feedbackElement.textContent = `Incorrect. Correct answer: ${correct.label}.`;
+    showFeedback(feedbackElement, {
+      correct: false,
+      event: option,
+      correctAnswer: correct,
+      year: Number.isFinite(eventYear) ? eventYear : undefined,
+      unitTitle: correctUnit?.title,
+      summary: correct.summary_short || "No summary available.",
+    });
     const answerButton = choicesElement.querySelector(`[data-event-id="${CSS.escape(correct.id)}"]`);
     if (answerButton) answerButton.classList.add("correct");
   }

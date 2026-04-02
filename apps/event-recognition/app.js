@@ -2,6 +2,7 @@ import { filterDerivedEvents, loadDerivedEvents, loadUnitsIndex } from "../share
 import { isRecognitionReady } from "../shared/event-filters.js";
 import { getAllStats, recordResult } from "../shared/mastery-store.js";
 import { createSession } from "../shared/session-engine.js";
+import { showFeedback } from "../shared/feedback.js";
 
 const questionElement = document.getElementById("question");
 const choicesElement = document.getElementById("choices");
@@ -326,14 +327,32 @@ function handleChoice(choiceButton, option) {
   const answerUnit = unitForEvent(answer);
   const result = state.session?.submitAnswer(option) || { isCorrect: option.id === answer.id };
   const isCorrect = Boolean(result.isCorrect);
+  const feedbackMeta = state.session?.getFeedback() || {
+    safeSummary: typeof answer?.summary_short === "string" ? answer.summary_short.trim() : "No summary available.",
+    year: answer?.time?.year_start,
+    unitTitle: answerUnit?.title || "Unassigned unit",
+  };
 
   if (isCorrect) {
     state.correctAnswers += 1;
     choiceButton.classList.add("correct");
-    feedbackElement.textContent = "Correct.";
+    showFeedback(feedbackElement, {
+      correct: true,
+      event: answer,
+      year: feedbackMeta.year,
+      unitTitle: feedbackMeta.unitTitle,
+      summary: feedbackMeta.safeSummary,
+    });
   } else {
     choiceButton.classList.add("incorrect");
-    feedbackElement.textContent = `Incorrect. Correct answer: ${answer.label}.`;
+    showFeedback(feedbackElement, {
+      correct: false,
+      event: option,
+      correctAnswer: answer,
+      year: feedbackMeta.year,
+      unitTitle: feedbackMeta.unitTitle,
+      summary: feedbackMeta.safeSummary,
+    });
     const answerButton = choicesElement.querySelector(`[data-event-id="${CSS.escape(answer.id)}"]`);
     if (answerButton) answerButton.classList.add("correct");
   }
@@ -342,11 +361,6 @@ function handleChoice(choiceButton, option) {
   state.recentAnswerIds.unshift(answer.id);
   state.recentAnswerIds = state.recentAnswerIds.filter((eventId, index, array) => array.indexOf(eventId) === index).slice(0, RECENT_ANSWER_LIMIT);
 
-  const feedbackMeta = state.session?.getFeedback() || {
-    safeSummary: typeof answer?.summary_short === "string" ? answer.summary_short.trim() : "No summary available.",
-    year: answer?.time?.year_start,
-    unitTitle: answerUnit?.title || "Unassigned unit",
-  };
   answerMetaElement.textContent = `${answer.label} (${feedbackMeta.year}) · ${feedbackMeta.unitTitle}. ${feedbackMeta.safeSummary}`;
 }
 
