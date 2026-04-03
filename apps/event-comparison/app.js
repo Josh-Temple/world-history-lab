@@ -16,7 +16,18 @@ let currentPair = null;
 let correctTag = null;
 
 function isValidEvent(event) {
-  return Boolean(event && typeof event.id === 'string' && typeof event.label === 'string');
+  return Boolean(
+    event
+    && typeof event.id === 'string'
+    && typeof event.label === 'string'
+    && Number.isFinite(event?.time?.year_start)
+  );
+}
+
+function safeLabel(event) {
+  return typeof event?.label === 'string' && event.label.trim().length > 0
+    ? event.label
+    : 'Unknown event';
 }
 
 function randomItem(items) {
@@ -91,8 +102,8 @@ function renderRound() {
   const { a, b } = currentPair;
   correctTag = currentPair.correct;
 
-  eventA.textContent = a.label;
-  eventB.textContent = b.label;
+  eventA.textContent = safeLabel(a);
+  eventB.textContent = safeLabel(b);
   feedback.textContent = '';
   explanation.textContent = '';
   choices.innerHTML = '';
@@ -116,7 +127,7 @@ function evaluate(selected) {
     event: currentPair.a,
     correctAnswer: { label: correctTag },
     summary: `Similarity tag: ${correctTag}.`,
-    extra: [`Event A: ${currentPair.a.label}`, `Event B: ${currentPair.b.label}`],
+    extra: [`Event A: ${safeLabel(currentPair.a)}`, `Event B: ${safeLabel(currentPair.b)}`],
   });
 
   const summaryA = currentPair.a.summary_short || 'No summary available.';
@@ -134,8 +145,9 @@ async function init() {
     renderRound();
   } catch (error) {
     console.error('[event-comparison] Failed to load events', error);
-    eventA.textContent = 'Could not load events.';
-    eventB.textContent = 'Please reload and try again.';
+    eventA.textContent = 'No data available.';
+    eventB.textContent = 'An error occurred. Please reload.';
+    feedback.textContent = 'Loading failed.';
     nextButton.disabled = true;
   }
 }

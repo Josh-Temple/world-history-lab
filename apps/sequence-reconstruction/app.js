@@ -15,6 +15,15 @@ const state = {
   chain: [],
 };
 
+function isValidEvent(event) {
+  return Boolean(
+    event
+    && typeof event.id === "string"
+    && typeof event.label === "string"
+    && Number.isFinite(event?.time?.year_start)
+  );
+}
+
 function shuffle(items) {
   const copy = [...items];
   for (let i = copy.length - 1; i > 0; i -= 1) {
@@ -40,7 +49,10 @@ function getEventLabel(id) {
   const event = state.eventMap.get(id);
   if (!event) return id;
   const year = Number.isFinite(event?.time?.year_start) ? ` (${event.time.year_start})` : "";
-  return `${event.label}${year}`;
+  const label = typeof event?.label === "string" && event.label.trim().length > 0
+    ? event.label
+    : "Unknown event";
+  return `${label}${year}`;
 }
 
 function createItem(eventId) {
@@ -170,10 +182,12 @@ async function init() {
       }),
     ]);
 
-    const eventList = Array.isArray(events) ? events : [];
+    const eventList = (Array.isArray(events) ? events : []).filter(isValidEvent);
+    if (eventList.length === 0) {
+      throw new Error("No valid events available.");
+    }
     state.eventMap = new Map(
       eventList
-        .filter((event) => event && typeof event.id === "string")
         .map((event) => [event.id, event])
     );
 

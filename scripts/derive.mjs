@@ -4,6 +4,7 @@ import { validateData } from "./validate-data.mjs";
 
 const ROOT = process.cwd();
 const DERIVED_DIR = path.join(ROOT, "derived");
+const ALLOWED_TAGS = new Set(["political", "economic", "technological", "social", "military"]);
 
 const FALLBACK_UNIT_FILES = [
   { id: "unit_french_revolution_napoleon", path: "data/units/french-revolution-napoleon.json" },
@@ -293,6 +294,27 @@ function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
     for (const personId of eventPeopleIds) {
       if (!peopleIdSet.has(personId)) {
         throw new Error(`Invalid people_id in ${event.id}: ${personId}`);
+      }
+    }
+  }
+}
+
+function validateEventTags(events) {
+  for (const event of events) {
+    if (!Object.hasOwn(event, "tags")) {
+      continue;
+    }
+
+    if (!Array.isArray(event.tags)) {
+      throw new Error(`Event ${event.id}: tags must be an array when provided`);
+    }
+
+    for (const tag of event.tags) {
+      if (typeof tag !== "string" || tag.trim() === "") {
+        throw new Error(`Event ${event.id}: tags must contain non-empty strings`);
+      }
+      if (!ALLOWED_TAGS.has(tag)) {
+        console.warn(`[derive] Unknown tag "${tag}" in event ${event.id}`);
       }
     }
   }
@@ -646,6 +668,7 @@ async function main() {
   }
 
   validateCrossReferences({ events, eventIdSet, peopleIdSet, units });
+  validateEventTags(events);
 
   normalizedEvents.sort((a, b) => a.id.localeCompare(b.id));
   const normalizedEventLookup = new Map(normalizedEvents.map((event) => [event.id, event]));
