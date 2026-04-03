@@ -489,3 +489,10 @@ TBD
 - Reworked the homepage into a staged learning path with three clear progression sections: **Start here**, **Build understanding**, and **Deep understanding**.
 - Replaced flat mode discovery with concise app descriptions and vertically stacked app links to reduce onboarding decision load on desktop and mobile.
 - Added a shared `apps/shared/feedback.js` helper and integrated it across active vanilla JS practice modes so answer feedback now consistently includes correctness, answer context, and short explanation text.
+
+## Recent updates (2026-04-03)
+
+- Extended `scripts/derive.mjs` with controlled-tag warnings so unknown event tags are surfaced during derive runs while preserving fail-fast behavior for schema/reference errors.
+- Strengthened runtime reliability in `apps/sequence-reconstruction/app.js` with stricter valid-event filtering, safer fallback labels, and explicit no-valid-data handling.
+- Strengthened runtime reliability in `apps/event-comparison/app.js` with stricter event validation (`time.year_start` required), safe label rendering, and clearer load-failure fallback UI.
+- Re-ran derive/validation/smoke checks to confirm the validation and runtime guard changes integrate cleanly.

@@ -1,5 +1,28 @@
 # Handoff
 
+## Incremental update (2026-04-03 · validation + runtime guard hardening)
+- Updated `scripts/derive.mjs` to add controlled tag vocabulary checks:
+  - warns on unknown tags via `[derive] Unknown tag "..."`
+  - fails fast only for invalid schema/reference issues (unchanged behavior for hard errors).
+- Updated `apps/sequence-reconstruction/app.js`:
+  - added strict event-shape guard (`id`, `label`, `time.year_start`),
+  - added safe fallback label rendering (`Unknown event`),
+  - added explicit no-valid-events error path to avoid fragile rendering states.
+- Updated `apps/event-comparison/app.js`:
+  - tightened event validation to require `time.year_start`,
+  - added `safeLabel()` fallback for option/result rendering,
+  - improved load-failure UI with explicit "No data available" + reload guidance.
+
+## Validation completed (2026-04-03)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate-data.mjs` ✅ (passes with existing baseline warnings on older records)
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+
+## Suggested next steps
+1. Move tag vocabulary from hardcoded derive constant into `data/metadata.json` so content and validation stay aligned in one source of truth.
+2. Add lightweight smoke tests for `event-comparison` and `sequence-reconstruction` empty/malformed-data fallbacks.
+3. Decide whether unknown-tag warnings should eventually become CI-blocking once tag taxonomy is stabilized.
+
 ## What changed (2026-03-24)
 - Added a new French Revolution-focused unit file at `data/units/fr_french_revolution.json` with 14 events spanning 1789-1799 and app profiles for timeline, event recognition, people recognition, and causality builder.
 - Registered the new unit in `data/units/index.json` and synchronized `data/metadata.json` (`scope.included_units`) so validation/derive include it.
