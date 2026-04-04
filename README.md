@@ -496,3 +496,9 @@ TBD
 - Strengthened runtime reliability in `apps/sequence-reconstruction/app.js` with stricter valid-event filtering, safer fallback labels, and explicit no-valid-data handling.
 - Strengthened runtime reliability in `apps/event-comparison/app.js` with stricter event validation (`time.year_start` required), safe label rendering, and clearer load-failure fallback UI.
 - Re-ran derive/validation/smoke checks to confirm the validation and runtime guard changes integrate cleanly.
+
+## Recent updates (2026-04-04)
+
+- Added shared mastery helpers in `apps/shared/mastery-store.js` for adaptive selection (`getAccuracy`, `getWeight`) and weak-event detection (`isWeakEvent`).
+- Added a reusable `weightedPick` helper to `apps/shared/session-engine.js`.
+- Updated Event Recognition to use weighted event sampling and a focused weak-event pool when **Focus on weak areas** is enabled, with safe fallback to the full pool when needed.
