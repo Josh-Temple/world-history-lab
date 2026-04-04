@@ -98,3 +98,25 @@ export function getStats(eventId) {
 export function getAllStats() {
   return load();
 }
+
+export function getAccuracy(eventId) {
+  const stats = getStats(eventId);
+  const total = stats.correct + stats.incorrect;
+  if (total === 0) {
+    return null;
+  }
+  return stats.correct / total;
+}
+
+export function getWeight(eventId) {
+  const accuracy = getAccuracy(eventId);
+  if (accuracy === null) {
+    return 3;
+  }
+  return 1 + (1 - accuracy) * 3;
+}
+
+export function isWeakEvent(eventId, threshold = 0.6) {
+  const accuracy = getAccuracy(eventId);
+  return accuracy === null || accuracy < threshold;
+}

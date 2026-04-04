@@ -1,7 +1,7 @@
 import { filterDerivedEvents, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
 import { isRecognitionReady } from "../shared/event-filters.js";
-import { getAllStats, recordResult } from "../shared/mastery-store.js";
-import { createSession } from "../shared/session-engine.js";
+import { getWeight, isWeakEvent, recordResult } from "../shared/mastery-store.js";
+import { createSession, weightedPick } from "../shared/session-engine.js";
 import { showFeedback } from "../shared/feedback.js";
 
 const questionElement = document.getElementById("question");
@@ -78,68 +78,24 @@ function getScopedPool() {
 }
 
 
-const ADAPTIVE_POOL_SIZE = 10;
 const RECENT_ANSWER_LIMIT = 3;
 
-function getAttemptCount(stats) {
-  return stats.correct + stats.incorrect;
-}
-
-function getAccuracy(stats) {
-  const attempts = getAttemptCount(stats);
-  if (attempts === 0) return null;
-  return stats.correct / attempts;
-}
-
-function rankByWeakness(events) {
-  const stats = getAllStats();
-
-  return [...events].sort((left, right) => {
-    const leftStats = stats[left.id] || { correct: 0, incorrect: 0, last_seen: null };
-    const rightStats = stats[right.id] || { correct: 0, incorrect: 0, last_seen: null };
-    const leftAttempts = getAttemptCount(leftStats);
-    const rightAttempts = getAttemptCount(rightStats);
-
-    if (leftAttempts === 0 && rightAttempts > 0) return 1;
-    if (rightAttempts === 0 && leftAttempts > 0) return -1;
-
-    const leftAccuracy = getAccuracy(leftStats) ?? 1;
-    const rightAccuracy = getAccuracy(rightStats) ?? 1;
-    if (leftAccuracy !== rightAccuracy) return leftAccuracy - rightAccuracy;
-
-    if (leftAttempts !== rightAttempts) return rightAttempts - leftAttempts;
-
-    const leftSeen = leftStats.last_seen ?? 0;
-    const rightSeen = rightStats.last_seen ?? 0;
-    if (leftSeen !== rightSeen) return leftSeen - rightSeen;
-
-    return left.label.localeCompare(right.label);
-  });
-}
-
 function getAdaptivePool(events) {
-  const stats = getAllStats();
-  const attemptedEvents = events.filter((event) => getAttemptCount(stats[event.id] || { correct: 0, incorrect: 0 }) > 0);
-
-  if (attemptedEvents.length < 4) {
+  const weakEvents = events.filter((event) => isWeakEvent(event.id));
+  if (weakEvents.length === 0) {
     return {
       pool: events,
       active: false,
-      reason: 'Not enough mastery history yet. Using normal random practice.',
+      reason: "Focused mode requested, but no weak events found. Using full pool.",
     };
   }
 
-  const ranked = rankByWeakness(attemptedEvents);
-  const weakestIds = new Set(ranked.slice(0, Math.min(ADAPTIVE_POOL_SIZE, ranked.length)).map((event) => event.id));
-  const recentAnswerIds = new Set(state.recentAnswerIds);
-  const preferred = events.filter((event) => weakestIds.has(event.id) && !recentAnswerIds.has(event.id));
-  const fallbackWeak = events.filter((event) => weakestIds.has(event.id));
-  const finalPool = preferred.length >= 4 ? preferred : fallbackWeak;
-
   return {
-    pool: finalPool.length >= 4 ? finalPool : events,
-    active: finalPool.length >= 4,
-    reason: finalPool.length >= 4 ? 'Adaptive mode: focusing on weak events.' : 'Adaptive mode requested, but too few weak-event candidates were available. Using the full pool.',
+    pool: weakEvents.length >= 4 ? weakEvents : events,
+    active: weakEvents.length >= 4,
+    reason: weakEvents.length >= 4
+      ? "Focused mode active: weak events."
+      : "Focused mode requested, but too few weak events were available for 4 choices. Using full pool.",
   };
 }
 
@@ -273,7 +229,7 @@ function renderQuestion() {
     return;
   }
 
-  const answer = activePool[randomInt(activePool.length)];
+  const answer = weightedPick(activePool, (event) => getWeight(event.id));
   const distractors = buildDistractors(answer, activePool, broaderPool).slice(0, 3);
   if (distractors.length < 3) {
     state.sessionActive = false;

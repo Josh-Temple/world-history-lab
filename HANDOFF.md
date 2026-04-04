@@ -333,3 +333,23 @@
 1. Extend the same shared feedback renderer to Timeline Trainer (currently its own message loop) for full parity.
 2. Add a tiny shared style token (for feedback spacing/typography) so per-app feedback containers look identical without duplicating CSS.
 3. Consider a lightweight smoke test that checks every app renders non-empty feedback after a simulated submit action.
+
+## Incremental update (2026-04-04 · weighted repetition + focused weak-mode alignment)
+- Extended `apps/shared/mastery-store.js` with reusable adaptive helpers:
+  - `getAccuracy(eventId)`
+  - `getWeight(eventId)`
+  - `isWeakEvent(eventId, threshold = 0.6)`
+- Extended `apps/shared/session-engine.js` with `weightedPick(items, getWeight)` for shared weighted random selection.
+- Updated `apps/event-recognition/app.js` to:
+  - use weighted answer selection (`weightedPick` + `getWeight`) so low-accuracy/unseen events surface more often,
+  - apply focused weak-event filtering via `isWeakEvent` when **Focus on weak areas** is enabled,
+  - keep graceful fallback to full-pool practice when too few weak events are available to build a 4-option question.
+
+## Validation completed (2026-04-04)
+- `node scripts/validate-data.mjs` ✅ (passes with existing baseline warnings outside this task)
+- `node scripts/derive.mjs` ✅ (passes; existing unknown-tag warnings remain baseline)
+
+## Suggested next steps
+1. Reuse `weightedPick` in additional quiz generators (timeline/causality) to make adaptive weighting cross-app.
+2. Add a lightweight in-app debug panel (dev-only) to show current event weight/accuracy while tuning thresholds.
+3. Consider a mastery reset control in setup for deterministic testing and learner privacy control.
