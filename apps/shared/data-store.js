@@ -2,6 +2,7 @@ let eventsCache = null;
 let unitsIndexCache = null;
 let unitFilesCache = null;
 let peopleCache = null;
+let metadataCache = null;
 
 function isValidEvent(event) {
   return Boolean(
@@ -27,12 +28,72 @@ export async function getAllEvents() {
   return eventsCache;
 }
 
+export async function getMetadata() {
+  if (metadataCache) return metadataCache;
+  metadataCache = await fetchJson("/data/metadata.json", "metadata");
+  return metadataCache;
+}
+
+function buildCurriculumMap(metadata) {
+  const rows = Array.isArray(metadata?.curriculum?.units) ? metadata.curriculum.units : [];
+  const map = new Map();
+
+  for (const row of rows) {
+    if (!row || typeof row.id !== "string") continue;
+    map.set(row.id, {
+      order: Number.isFinite(row.order) ? row.order : Number.MAX_SAFE_INTEGER,
+      era: typeof row.era === "string" ? row.era : "",
+      difficulty: Number.isFinite(row.difficulty) ? row.difficulty : null,
+    });
+  }
+
+  return map;
+}
+
 export async function getUnits() {
   if (unitsIndexCache) return unitsIndexCache;
-  const unitsIndex = await fetchJson("/data/units/index.json", "units index");
-  unitsIndexCache = Array.isArray(unitsIndex?.units)
+
+  const [unitsIndex, metadata] = await Promise.all([
+    fetchJson("/data/units/index.json", "units index"),
+    getMetadata().catch(() => null),
+  ]);
+
+  const unitsRaw = Array.isArray(unitsIndex?.units)
     ? unitsIndex.units
     : (Array.isArray(unitsIndex) ? unitsIndex : []);
+
+  const curriculumById = buildCurriculumMap(metadata);
+
+  const units = await Promise.all(
+    unitsRaw
+      .filter((unit) => unit && typeof unit.id === "string" && typeof unit.path === "string")
+      .map(async (entry) => {
+        const path = `/${String(entry.path).replace(/^\/+/, "")}`;
+        let unitFile = null;
+        try {
+          unitFile = await fetchJson(path, `unit ${entry.id}`);
+        } catch {
+          unitFile = null;
+        }
+
+        const curriculum = curriculumById.get(entry.id) || {};
+        return {
+          ...entry,
+          title: typeof unitFile?.title === "string" ? unitFile.title : entry.id,
+          label: typeof unitFile?.title === "string" ? unitFile.title : entry.id,
+          event_ids: Array.isArray(unitFile?.event_ids) ? unitFile.event_ids : [],
+          order: Number.isFinite(curriculum.order) ? curriculum.order : Number.MAX_SAFE_INTEGER,
+          era: typeof curriculum.era === "string" ? curriculum.era : "",
+          difficulty: Number.isFinite(curriculum.difficulty) ? curriculum.difficulty : null,
+        };
+      })
+  );
+
+  unitsIndexCache = units.sort((a, b) => {
+    if (a.order !== b.order) return a.order - b.order;
+    return a.id.localeCompare(b.id);
+  });
+
   return unitsIndexCache;
 }
 
@@ -76,4 +137,11 @@ export async function getAllPeople() {
   const people = await fetchJson("/data/people.json", "people");
   peopleCache = Array.isArray(people) ? people : [];
   return peopleCache;
+}
+
+export function getNextUnit(units, currentUnitId) {
+  if (!Array.isArray(units) || units.length === 0) return null;
+  const currentIndex = units.findIndex((unit) => unit.id === currentUnitId);
+  if (currentIndex < 0 || currentIndex + 1 >= units.length) return null;
+  return units[currentIndex + 1];
 }

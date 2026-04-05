@@ -22,6 +22,12 @@
 
       <section class="panel" aria-labelledby="sequence-title">
         <h2 id="sequence-title">Rebuild the sequence</h2>
+        <div class="setup">
+          <label for="unit-select">Unit focus</label>
+          <select id="unit-select"></select>
+          <p id="unit-hint" class="muted">Using all units.</p>
+          <p id="next-unit-hint" class="muted"></p>
+        </div>
         <p id="prompt" class="muted">Drag events into the most plausible causal order, then check your result.</p>
         <ul id="event-list" aria-label="Shuffled historical events"></ul>
         <div class="actions">
