@@ -1,4 +1,4 @@
-import { getAllEvents } from '../shared/data-store.js';
+import { getAllEvents, getEventsForUnit, getNextUnit, getUnits } from '../shared/data-store.js';
 import { recordResult } from '../shared/mastery-store.js';
 import { showFeedback } from '../shared/feedback.js';
 
@@ -8,9 +8,15 @@ const choices = document.getElementById('choices');
 const feedback = document.getElementById('feedback');
 const explanation = document.getElementById('explanation');
 const nextButton = document.getElementById('next');
+const unitSelect = document.getElementById('unit-select');
+const unitHint = document.getElementById('unit-hint');
+const nextUnitHint = document.getElementById('next-unit-hint');
 
 const DOMAIN_TAGS = ['political', 'technological', 'economic', 'social'];
+const SELECTED_UNIT_KEY = 'selected_unit';
 
+let allEvents = [];
+let units = [];
 let events = [];
 let currentPair = null;
 let correctTag = null;
@@ -91,7 +97,7 @@ function renderRound() {
 
   if (!currentPair) {
     eventA.textContent = 'Not enough events to compare yet.';
-    eventB.textContent = 'Add more tagged events to enable this mode.';
+    eventB.textContent = 'Select another unit or use All units to continue.';
     choices.innerHTML = '';
     feedback.textContent = '';
     explanation.textContent = '';
@@ -107,6 +113,7 @@ function renderRound() {
   feedback.textContent = '';
   explanation.textContent = '';
   choices.innerHTML = '';
+  nextButton.disabled = false;
 
   const options = generateChoices(correctTag);
   for (const option of options) {
@@ -138,11 +145,64 @@ function evaluate(selected) {
   recordResult(currentPair.b.id, isCorrect, { mode: 'event_comparison', tag: correctTag });
 }
 
+function populateUnitOptions() {
+  unitSelect.innerHTML = '';
+
+  const allOption = document.createElement('option');
+  allOption.value = '';
+  allOption.textContent = 'All units';
+  unitSelect.append(allOption);
+
+  for (const unit of units) {
+    const option = document.createElement('option');
+    option.value = unit.id;
+    option.textContent = unit.era ? `${unit.label} (${unit.era})` : unit.label;
+    unitSelect.append(option);
+  }
+
+  const saved = localStorage.getItem(SELECTED_UNIT_KEY) || '';
+  const known = units.some((unit) => unit.id === saved);
+  unitSelect.value = known ? saved : (units[0]?.id || '');
+}
+
+function updateProgressionHint() {
+  const selectedUnitId = unitSelect.value;
+  const next = getNextUnit(units, selectedUnitId);
+
+  if (!selectedUnitId) {
+    unitHint.textContent = 'Using all units.';
+    nextUnitHint.textContent = units[0] ? `Suggested start: ${units[0].label}.` : '';
+    return;
+  }
+
+  const selected = units.find((unit) => unit.id === selectedUnitId);
+  unitHint.textContent = `Focused on ${selected?.label || selectedUnitId}.`;
+  nextUnitHint.textContent = next ? `Next unit: ${next.label}.` : 'You are on the last unit in the current sequence.';
+}
+
+async function applyUnitSelection() {
+  const selectedUnitId = unitSelect.value;
+
+  if (!selectedUnitId) {
+    events = allEvents.slice();
+  } else {
+    const scopedEvents = await getEventsForUnit(selectedUnitId);
+    events = (Array.isArray(scopedEvents) ? scopedEvents : []).filter(isValidEvent);
+  }
+
+  updateProgressionHint();
+  renderRound();
+}
+
 async function init() {
   try {
-    const loaded = await getAllEvents();
-    events = (Array.isArray(loaded) ? loaded : []).filter(isValidEvent);
-    renderRound();
+    const [loadedEvents, loadedUnits] = await Promise.all([getAllEvents(), getUnits()]);
+    allEvents = (Array.isArray(loadedEvents) ? loadedEvents : []).filter(isValidEvent);
+    units = Array.isArray(loadedUnits) ? loadedUnits : [];
+
+    populateUnitOptions();
+    localStorage.setItem(SELECTED_UNIT_KEY, unitSelect.value);
+    await applyUnitSelection();
   } catch (error) {
     console.error('[event-comparison] Failed to load events', error);
     eventA.textContent = 'No data available.';
@@ -151,6 +211,11 @@ async function init() {
     nextButton.disabled = true;
   }
 }
+
+unitSelect.addEventListener('change', async () => {
+  localStorage.setItem(SELECTED_UNIT_KEY, unitSelect.value);
+  await applyUnitSelection();
+});
 
 nextButton.addEventListener('click', renderRound);
 

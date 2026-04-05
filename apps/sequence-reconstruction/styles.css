@@ -79,6 +79,21 @@ h2 {
   color: var(--muted);
 }
 
+
+.setup {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.setup select {
+  min-height: 2.3rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0 0.55rem;
+  background: #fff;
+}
+
 #event-list {
   list-style: none;
   margin: 0;

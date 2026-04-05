@@ -1,4 +1,5 @@
 import { loadDerivedEvents } from "../shared/data-access.js";
+import { getEventsForUnit, getNextUnit, getUnits } from "../shared/data-store.js";
 import { recordResult } from "../shared/mastery-store.js";
 import { showFeedback } from "../shared/feedback.js";
 
@@ -8,11 +9,17 @@ const nextBtn = document.getElementById("next");
 const feedbackEl = document.getElementById("feedback");
 const explanationEl = document.getElementById("explanation");
 const promptEl = document.getElementById("prompt");
+const unitSelect = document.getElementById("unit-select");
+const unitHint = document.getElementById("unit-hint");
+const nextUnitHint = document.getElementById("next-unit-hint");
+const SELECTED_UNIT_KEY = "selected_unit";
 
 const state = {
   eventMap: new Map(),
+  allChains: [],
   chains: [],
   chain: [],
+  units: [],
 };
 
 function isValidEvent(event) {
@@ -119,11 +126,61 @@ function explainChain(chain) {
     .join(" → ");
 }
 
+function populateUnitOptions() {
+  unitSelect.innerHTML = "";
+
+  const allOption = document.createElement("option");
+  allOption.value = "";
+  allOption.textContent = "All units";
+  unitSelect.append(allOption);
+
+  for (const unit of state.units) {
+    const option = document.createElement("option");
+    option.value = unit.id;
+    option.textContent = unit.era ? `${unit.label} (${unit.era})` : unit.label;
+    unitSelect.append(option);
+  }
+
+  const saved = localStorage.getItem(SELECTED_UNIT_KEY) || "";
+  const known = state.units.some((unit) => unit.id === saved);
+  unitSelect.value = known ? saved : (state.units[0]?.id || "");
+}
+
+function updateProgressionHint() {
+  const selectedUnitId = unitSelect.value;
+  const next = getNextUnit(state.units, selectedUnitId);
+
+  if (!selectedUnitId) {
+    unitHint.textContent = "Using all units.";
+    nextUnitHint.textContent = state.units[0] ? `Suggested start: ${state.units[0].label}.` : "";
+    return;
+  }
+
+  const selected = state.units.find((unit) => unit.id === selectedUnitId);
+  unitHint.textContent = `Focused on ${selected?.label || selectedUnitId}.`;
+  nextUnitHint.textContent = next ? `Next unit: ${next.label}.` : "You are on the last unit in the current sequence.";
+}
+
+async function applyUnitSelection() {
+  const selectedUnitId = unitSelect.value;
+
+  if (!selectedUnitId) {
+    state.chains = state.allChains.slice();
+  } else {
+    const scopedEvents = await getEventsForUnit(selectedUnitId);
+    const scopedIds = new Set((Array.isArray(scopedEvents) ? scopedEvents : []).map((event) => event.id));
+    state.chains = state.allChains.filter((chain) => chain.every((eventId) => scopedIds.has(eventId)));
+  }
+
+  updateProgressionHint();
+  newRound();
+}
+
 function newRound() {
   if (state.chains.length === 0) {
     state.chain = [];
     listEl.innerHTML = "";
-    promptEl.textContent = "No causality chains are available yet. Run derive to generate derived/causality_chains.json.";
+    promptEl.textContent = "No causality chains available for this unit. Try another unit or switch to All units.";
     setFeedback("No chains available.", "incorrect");
     explanationEl.textContent = "";
     checkBtn.disabled = true;
@@ -172,7 +229,7 @@ function checkOrder() {
 
 async function init() {
   try {
-    const [events, chainsRaw] = await Promise.all([
+    const [events, chainsRaw, units] = await Promise.all([
       loadDerivedEvents(),
       fetch("/derived/causality_chains.json", { cache: "no-store" }).then((response) => {
         if (!response.ok) {
@@ -180,6 +237,7 @@ async function init() {
         }
         return response.json();
       }),
+      getUnits(),
     ]);
 
     const eventList = (Array.isArray(events) ? events : []).filter(isValidEvent);
@@ -191,8 +249,12 @@ async function init() {
         .map((event) => [event.id, event])
     );
 
-    state.chains = (Array.isArray(chainsRaw) ? chainsRaw : []).filter(isValidChain);
-    newRound();
+    state.units = Array.isArray(units) ? units : [];
+    state.allChains = (Array.isArray(chainsRaw) ? chainsRaw : []).filter(isValidChain);
+
+    populateUnitOptions();
+    localStorage.setItem(SELECTED_UNIT_KEY, unitSelect.value);
+    await applyUnitSelection();
   } catch (error) {
     console.error("[sequence-reconstruction] load failed", error);
     listEl.innerHTML = "";
@@ -206,5 +268,9 @@ async function init() {
 
 checkBtn.addEventListener("click", checkOrder);
 nextBtn.addEventListener("click", newRound);
+unitSelect.addEventListener("change", async () => {
+  localStorage.setItem(SELECTED_UNIT_KEY, unitSelect.value);
+  await applyUnitSelection();
+});
 
 init();

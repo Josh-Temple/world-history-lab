@@ -1,3 +1,34 @@
+
+## Incremental update (2026-04-05 · curriculum map + unit-guided setup)
+- Added explicit curriculum metadata to `data/metadata.json`:
+  - new `curriculum` section with sequence assumptions,
+  - ordered unit records with `order`, `era`, and `difficulty` for all IDs in `data/units/index.json`.
+- Extended `apps/shared/data-store.js`:
+  - added `getMetadata()` and curriculum-aware unit enrichment,
+  - `getUnits()` now returns ordered units with `label`, `order`, `era`, `difficulty`, and loaded `event_ids`,
+  - added `getNextUnit(units, currentUnitId)` helper for progression hints.
+- Updated `apps/event-comparison/` with unit-aware onboarding flow:
+  - added unit selector UI,
+  - filtered event pool by selected unit,
+  - persisted `selected_unit` in `localStorage`,
+  - added next-unit guidance text.
+- Updated `apps/sequence-reconstruction/` with unit-aware onboarding flow:
+  - added unit selector UI,
+  - filtered causality chains to selected-unit event sets,
+  - persisted `selected_unit` in `localStorage`,
+  - added next-unit guidance text.
+- Updated `README.md` with a new dated section for this curriculum/progression update.
+
+## Validation completed (2026-04-05)
+- `node -e "..."` curriculum cross-check ✅ (`missing: [], extra: [], dup: []`).
+- `node scripts/derive.mjs` ✅ (passes; existing baseline warnings remain for unknown tags and pre-existing summary/category gaps).
+- `node scripts/validate-data.mjs` ✅ (passes with existing baseline warnings outside this task).
+
+## Suggested next steps
+1. Add a small shared unit-selector UI helper under `apps/shared/` so repeated setup rendering/event wiring is not duplicated across apps.
+2. Consider surfacing unit progression status on the homepage (e.g., "current" + "next") using the new curriculum metadata.
+3. Decide whether sequence mode should support partial-unit chains (at least N events in selected unit) instead of strict all-events-in-unit matching.
+
 # Handoff
 
 ## Incremental update (2026-04-03 · validation + runtime guard hardening)

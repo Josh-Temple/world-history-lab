@@ -497,6 +497,14 @@ TBD
 - Strengthened runtime reliability in `apps/event-comparison/app.js` with stricter event validation (`time.year_start` required), safe label rendering, and clearer load-failure fallback UI.
 - Re-ran derive/validation/smoke checks to confirm the validation and runtime guard changes integrate cleanly.
 
+
+## Recent updates (2026-04-05)
+
+- Added curriculum sequencing metadata in `data/metadata.json` under `curriculum.units` with learner-facing `order`, `era`, and `difficulty` fields for every registered unit.
+- Expanded shared unit loading in `apps/shared/data-store.js` so unit lists now include enriched metadata (`label`, `order`, `era`, `difficulty`) and stable curriculum-order sorting.
+- Added unit-focus + progression hints to **Event Comparison** and **Sequence Reconstruction**, including persisted `selected_unit` behavior and next-unit guidance.
+- Regenerated derived artifacts after metadata integration to keep app-facing outputs aligned.
+
 ## Recent updates (2026-04-04)
 
 - Added shared mastery helpers in `apps/shared/mastery-store.js` for adaptive selection (`getAccuracy`, `getWeight`) and weak-event detection (`isWeakEvent`).

@@ -12,6 +12,9 @@
       body { font-family: Inter, system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
       main { width: min(760px, calc(100% - 2rem)); margin: 2rem auto; }
       .card { background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; padding: 1rem; }
+      .setup { display: grid; gap: .35rem; margin-bottom: .8rem; }
+      .setup select { min-height: 2.3rem; border: 1px solid #cbd5e1; border-radius: 8px; padding: 0 .5rem; }
+      .hint { margin: 0; color: #475569; font-size: .95rem; }
       .event { padding: .75rem; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: .65rem; }
       #choices { display: grid; gap: .5rem; margin: .75rem 0; }
       #choices button, #next { min-height: 40px; border-radius: 8px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer; }
@@ -25,6 +28,14 @@
       <p><a href="/">← Back to World History Lab</a></p>
       <div class="card">
         <h2>Compare these events</h2>
+
+        <div class="setup">
+          <label for="unit-select">Unit focus</label>
+          <select id="unit-select"></select>
+          <p id="unit-hint" class="hint">Using all units.</p>
+          <p id="next-unit-hint" class="hint"></p>
+        </div>
+
         <div id="event-a" class="event"></div>
         <div id="event-b" class="event"></div>
 
