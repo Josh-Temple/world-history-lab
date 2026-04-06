@@ -133,6 +133,26 @@
     ]
   },
   {
+    "id": "unit_industrialization_pathways_comparison",
+    "title": "Industrialization Pathways Comparison",
+    "event_ids": [
+      "ev_spinning_jenny_1764",
+      "ev_watt_steam_engine_1776",
+      "ev_factory_system_rise_1780s",
+      "ev_liverpool_manchester_railway_1830",
+      "ev_qing_first_opium_war_1839",
+      "ev_great_exhibition_opens_1851",
+      "ev_meiji_perry_1853",
+      "ev_bessemer_process_1856",
+      "ev_meiji_charter_oath_1868",
+      "ev_meiji_abolish_han_1871",
+      "ev_meiji_conscription_1873",
+      "ev_second_industrial_revolution_1870s",
+      "ev_meiji_sinojapanese_war_1894",
+      "ev_meiji_russojapanese_war_1905"
+    ]
+  },
+  {
     "id": "unit_meiji_restoration",
     "title": "Meiji Restoration and Japan's Modernization",
     "event_ids": [
@@ -148,6 +168,39 @@
       "ev_meiji_russojapanese_war_1905",
       "ev_meiji_annex_korea_1910",
       "ev_meiji_emperor_death_1912"
+    ]
+  },
+  {
+    "id": "unit_world_war_i",
+    "title": "World War I",
+    "event_ids": [
+      "ev_wwi_alliance_system_hardens_1890_1907",
+      "ev_wwi_naval_arms_race_1898_1914",
+      "ev_wwi_balkan_wars_destabilize_1912_1913",
+      "ev_wwi_assassination_franz_ferdinand_1914",
+      "ev_wwi_austria_ultimatum_serbia_1914",
+      "ev_wwi_germany_blank_check_1914",
+      "ev_wwi_russia_mobilizes_1914",
+      "ev_wwi_germany_invades_belgium_1914",
+      "ev_wwi_battle_marne_1914",
+      "ev_wwi_trench_warfare_entrenched_1914",
+      "ev_wwi_first_ypres_1914",
+      "ev_wwi_gallipoli_campaign_1915",
+      "ev_wwi_armenian_genocide_begins_1915",
+      "ev_wwi_verdun_1916",
+      "ev_wwi_somme_1916",
+      "ev_wwi_jutland_1916",
+      "ev_wwi_unrestricted_submarine_1917",
+      "ev_wwi_us_enters_war_1917",
+      "ev_wwi_russian_february_revolution_1917",
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_treaty_brest_litovsk_1918",
+      "ev_wwi_german_spring_offensive_1918",
+      "ev_wwi_hundred_days_offensive_1918",
+      "ev_wwi_armistice_1918",
+      "ev_wwi_paris_peace_conference_1919",
+      "ev_wwi_treaty_versailles_1919",
+      "ev_wwi_league_of_nations_1920"
     ]
   }
 ]

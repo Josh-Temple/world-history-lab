@@ -1,4 +1,4 @@
-import { getAllEvents, getEventsForUnit, getNextUnit, getUnits } from '../shared/data-store.js';
+import { getAllEvents, getEventsForUnit, getNextUnit, getUnitById, getUnits } from '../shared/data-store.js';
 import { recordResult } from '../shared/mastery-store.js';
 import { showFeedback } from '../shared/feedback.js';
 
@@ -7,6 +7,7 @@ const eventB = document.getElementById('event-b');
 const choices = document.getElementById('choices');
 const feedback = document.getElementById('feedback');
 const explanation = document.getElementById('explanation');
+const contrastNoteEl = document.getElementById('contrast-note');
 const nextButton = document.getElementById('next');
 const unitSelect = document.getElementById('unit-select');
 const unitHint = document.getElementById('unit-hint');
@@ -18,6 +19,9 @@ const SELECTED_UNIT_KEY = 'selected_unit';
 let allEvents = [];
 let units = [];
 let events = [];
+let eventById = new Map();
+let activePrompts = [];
+let currentPromptIndex = 0;
 let currentPair = null;
 let correctTag = null;
 
@@ -27,6 +31,16 @@ function isValidEvent(event) {
     && typeof event.id === 'string'
     && typeof event.label === 'string'
     && Number.isFinite(event?.time?.year_start)
+  );
+}
+
+function isValidComparisonPrompt(prompt) {
+  return Boolean(
+    prompt
+    && typeof prompt.event_a_id === 'string'
+    && typeof prompt.event_b_id === 'string'
+    && typeof prompt.focus_tag === 'string'
+    && prompt.focus_tag.trim().length > 0
   );
 }
 
@@ -55,7 +69,29 @@ function getSharedTags(a, b) {
   return aTags.filter((tag) => bTags.has(tag));
 }
 
-function getPair() {
+function getPromptPair() {
+  if (activePrompts.length === 0 || events.length < 2) return null;
+
+  const prompt = activePrompts[currentPromptIndex % activePrompts.length];
+  currentPromptIndex += 1;
+
+  const a = eventById.get(prompt.event_a_id);
+  const b = eventById.get(prompt.event_b_id);
+  if (!a || !b) {
+    return null;
+  }
+
+  const shared = getSharedTags(a, b);
+  return {
+    a,
+    b,
+    shared,
+    correct: prompt.focus_tag,
+    prompt,
+  };
+}
+
+function getRandomPair() {
   if (events.length < 2) return null;
 
   // Prefer pairs with an overlapping domain tag so similarity is meaningful.
@@ -69,7 +105,7 @@ function getPair() {
     const shared = getSharedTags(a, b);
     const domainShared = shared.find((tag) => DOMAIN_TAGS.includes(tag));
     if (domainShared) {
-      return { a, b, shared, correct: domainShared };
+      return { a, b, shared, correct: domainShared, prompt: null };
     }
   }
 
@@ -80,7 +116,11 @@ function getPair() {
   }
   const shared = getSharedTags(a, b);
   const correct = shared[0] || 'historical_change';
-  return { a, b, shared, correct };
+  return { a, b, shared, correct, prompt: null };
+}
+
+function getPair() {
+  return getPromptPair() || getRandomPair();
 }
 
 function generateChoices(correct) {
@@ -101,6 +141,7 @@ function renderRound() {
     choices.innerHTML = '';
     feedback.textContent = '';
     explanation.textContent = '';
+    contrastNoteEl.textContent = '';
     nextButton.disabled = true;
     return;
   }
@@ -112,6 +153,7 @@ function renderRound() {
   eventB.textContent = safeLabel(b);
   feedback.textContent = '';
   explanation.textContent = '';
+  contrastNoteEl.textContent = '';
   choices.innerHTML = '';
   nextButton.disabled = false;
 
@@ -140,6 +182,15 @@ function evaluate(selected) {
   const summaryA = currentPair.a.summary_short || 'No summary available.';
   const summaryB = currentPair.b.summary_short || 'No summary available.';
   explanation.textContent = `Similarity tag: ${correctTag}. Event A: ${summaryA} Event B: ${summaryB}`;
+
+  if (currentPair.prompt?.contrast_note) {
+    const sharedDriver = currentPair.prompt.shared_driver
+      ? `Shared driver: ${currentPair.prompt.shared_driver} `
+      : '';
+    contrastNoteEl.textContent = `${sharedDriver}Contrast: ${currentPair.prompt.contrast_note}`;
+  } else {
+    contrastNoteEl.textContent = '';
+  }
 
   recordResult(currentPair.a.id, isCorrect, { mode: 'event_comparison', tag: correctTag });
   recordResult(currentPair.b.id, isCorrect, { mode: 'event_comparison', tag: correctTag });
@@ -185,9 +236,18 @@ async function applyUnitSelection() {
 
   if (!selectedUnitId) {
     events = allEvents.slice();
+    activePrompts = [];
   } else {
-    const scopedEvents = await getEventsForUnit(selectedUnitId);
+    const [scopedEvents, unit] = await Promise.all([
+      getEventsForUnit(selectedUnitId),
+      getUnitById(selectedUnitId),
+    ]);
+
     events = (Array.isArray(scopedEvents) ? scopedEvents : []).filter(isValidEvent);
+    activePrompts = (Array.isArray(unit?.comparison_prompts) ? unit.comparison_prompts : [])
+      .filter(isValidComparisonPrompt)
+      .filter((prompt) => eventById.has(prompt.event_a_id) && eventById.has(prompt.event_b_id));
+    currentPromptIndex = 0;
   }
 
   updateProgressionHint();
@@ -198,6 +258,7 @@ async function init() {
   try {
     const [loadedEvents, loadedUnits] = await Promise.all([getAllEvents(), getUnits()]);
     allEvents = (Array.isArray(loadedEvents) ? loadedEvents : []).filter(isValidEvent);
+    eventById = new Map(allEvents.map((event) => [event.id, event]));
     units = Array.isArray(loadedUnits) ? loadedUnits : [];
 
     populateUnitOptions();

@@ -265,7 +265,8 @@
       "pe_henry_bessemer"
     ],
     "unit_ids": [
-      "unit_industrial_revolution"
+      "unit_industrial_revolution",
+      "unit_industrialization_pathways_comparison"
     ],
     "effects": [
       "ev_second_industrial_revolution_1870s",
@@ -1174,7 +1175,8 @@
       "pe_richard_arkwright"
     ],
     "unit_ids": [
-      "unit_industrial_revolution"
+      "unit_industrial_revolution",
+      "unit_industrialization_pathways_comparison"
     ],
     "effects": [
       "ev_urbanization_accelerates_1800_1850",
@@ -1320,7 +1322,8 @@
       "unit_age_of_imperialism"
     ],
     "effects": [
-      "ev_imperialism_berlin_conference_begins_1884"
+      "ev_imperialism_berlin_conference_begins_1884",
+      "ev_wwi_alliance_system_hardens_1890_1907"
     ],
     "causes": [],
     "time": {
@@ -1350,7 +1353,8 @@
     ],
     "people_ids": [],
     "unit_ids": [
-      "unit_industrial_revolution"
+      "unit_industrial_revolution",
+      "unit_industrialization_pathways_comparison"
     ],
     "effects": [],
     "causes": [],
@@ -1931,7 +1935,9 @@
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
-    "effects": [],
+    "effects": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
+    ],
     "causes": [],
     "time": {
       "start": "1912",
@@ -1963,7 +1969,9 @@
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
-    "effects": [],
+    "effects": [
+      "ev_wwi_alliance_system_hardens_1890_1907"
+    ],
     "causes": [],
     "time": {
       "start": "1905",
@@ -2180,7 +2188,9 @@
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
-    "effects": [],
+    "effects": [
+      "ev_wwi_naval_arms_race_1898_1914"
+    ],
     "causes": [],
     "time": {
       "start": "1904",
@@ -2611,7 +2621,8 @@
       "pe_isambard_kingdom_brunel"
     ],
     "unit_ids": [
-      "unit_industrial_revolution"
+      "unit_industrial_revolution",
+      "unit_industrialization_pathways_comparison"
     ],
     "effects": [
       "ev_railway_boom_1840s",
@@ -2856,6 +2867,7 @@
     ],
     "people_ids": [],
     "unit_ids": [
+      "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
     ],
     "effects": [
@@ -2979,6 +2991,7 @@
     ],
     "people_ids": [],
     "unit_ids": [
+      "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
     ],
     "effects": [
@@ -3020,6 +3033,7 @@
     ],
     "people_ids": [],
     "unit_ids": [
+      "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
     ],
     "effects": [
@@ -3225,6 +3239,7 @@
     ],
     "people_ids": [],
     "unit_ids": [
+      "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
     ],
     "effects": [
@@ -3266,6 +3281,7 @@
     ],
     "people_ids": [],
     "unit_ids": [
+      "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
     ],
     "effects": [
@@ -3307,6 +3323,7 @@
     ],
     "people_ids": [],
     "unit_ids": [
+      "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
     ],
     "effects": [
@@ -3844,7 +3861,8 @@
     ],
     "people_ids": [],
     "unit_ids": [
-      "unit_foundations_world_history"
+      "unit_foundations_world_history",
+      "unit_industrialization_pathways_comparison"
     ],
     "effects": [
       "ev_indian_revolt_1857"
@@ -4036,11 +4054,13 @@
     "unit_ids": [
       "unit_age_of_imperialism",
       "unit_foundations_world_history",
-      "unit_industrial_revolution"
+      "unit_industrial_revolution",
+      "unit_industrialization_pathways_comparison"
     ],
     "effects": [
       "ev_electric_power_adoption_1880s",
-      "ev_mass_politics_worker_parties_1880s_1890s"
+      "ev_mass_politics_worker_parties_1880s_1890s",
+      "ev_wwi_naval_arms_race_1898_1914"
     ],
     "causes": [],
     "time": {
@@ -4144,7 +4164,8 @@
       "pe_james_hargreaves"
     ],
     "unit_ids": [
-      "unit_industrial_revolution"
+      "unit_industrial_revolution",
+      "unit_industrialization_pathways_comparison"
     ],
     "effects": [
       "ev_factory_system_rise_1780s"
@@ -4766,7 +4787,8 @@
       "pe_james_watt"
     ],
     "unit_ids": [
-      "unit_industrial_revolution"
+      "unit_industrial_revolution",
+      "unit_industrialization_pathways_comparison"
     ],
     "effects": [
       "ev_factory_system_rise_1780s",
@@ -4824,6 +4846,968 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1789
+    }
+  },
+  {
+    "id": "ev_wwi_alliance_system_hardens_1890_1907",
+    "label": "Alliance system hardens across Europe",
+    "summary_short": "Competing alliance blocs (Triple Alliance and Triple Entente) hardened strategic commitments and escalation risks.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_naval_arms_race_1898_1914"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1907",
+      "end": "1907",
+      "year_start": 1907,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19070101,
+      "sort_end": 19071231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1907
+    }
+  },
+  {
+    "id": "ev_wwi_armenian_genocide_begins_1915",
+    "label": "Armenian genocide begins",
+    "summary_short": "Mass deportations and killings of Armenians in the Ottoman Empire marked one of the war's gravest humanitarian catastrophes.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1915",
+      "end": "1915",
+      "year_start": 1915,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19150101,
+      "sort_end": 19151231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1915
+    }
+  },
+  {
+    "id": "ev_wwi_armistice_1918",
+    "label": "Armistice ends fighting on the Western Front",
+    "summary_short": "The November armistice halted combat and opened negotiations over the postwar settlement.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1918",
+      "end": "1918",
+      "year_start": 1918,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19180101,
+      "sort_end": 19181231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1918
+    }
+  },
+  {
+    "id": "ev_wwi_assassination_franz_ferdinand_1914",
+    "label": "Assassination of Archduke Franz Ferdinand",
+    "summary_short": "The Austro-Hungarian heir was assassinated in Sarajevo, triggering the July Crisis.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_franz_ferdinand",
+      "pe_gavrilo_princip"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_austria_ultimatum_serbia_1914"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
+    }
+  },
+  {
+    "id": "ev_wwi_austria_ultimatum_serbia_1914",
+    "label": "Austria-Hungary issues ultimatum to Serbia",
+    "summary_short": "Vienna issued a harsh ultimatum that transformed a regional assassination into a wider diplomatic emergency.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_germany_blank_check_1914"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
+    }
+  },
+  {
+    "id": "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "label": "Balkan Wars destabilize southeastern Europe",
+    "summary_short": "The Balkan Wars weakened Ottoman control and sharpened Austro-Serbian and Russian tensions before 1914.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_assassination_franz_ferdinand_1914"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1913",
+      "end": "1913",
+      "year_start": 1913,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19130101,
+      "sort_end": 19131231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1913
+    }
+  },
+  {
+    "id": "ev_wwi_battle_marne_1914",
+    "label": "First Battle of the Marne halts German advance",
+    "summary_short": "French and British forces stopped the initial German offensive, preventing a rapid German victory.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_trench_warfare_entrenched_1914"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
+    }
+  },
+  {
+    "id": "ev_wwi_bolshevik_revolution_1917",
+    "label": "Bolshevik Revolution",
+    "summary_short": "The Bolsheviks seized power and prioritized ending Russia's role in the war.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_vladimir_lenin"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_treaty_brest_litovsk_1918"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1917",
+      "end": "1917",
+      "year_start": 1917,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19170101,
+      "sort_end": 19171231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1917
+    }
+  },
+  {
+    "id": "ev_wwi_first_ypres_1914",
+    "label": "First Battle of Ypres",
+    "summary_short": "Heavy losses at Ypres confirmed that quick victory was unlikely on the Western Front.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_gallipoli_campaign_1915"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
+    }
+  },
+  {
+    "id": "ev_wwi_gallipoli_campaign_1915",
+    "label": "Gallipoli campaign",
+    "summary_short": "Allied attempts to force the Dardanelles failed, prolonging the war and reshaping Ottoman and imperial politics.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1915",
+      "end": "1915",
+      "year_start": 1915,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19150101,
+      "sort_end": 19151231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1915
+    }
+  },
+  {
+    "id": "ev_wwi_german_spring_offensive_1918",
+    "label": "German Spring Offensive",
+    "summary_short": "Germany launched major offensives before full U.S. mobilization could take effect.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1918",
+      "end": "1918",
+      "year_start": 1918,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19180101,
+      "sort_end": 19181231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1918
+    }
+  },
+  {
+    "id": "ev_wwi_germany_blank_check_1914",
+    "label": "Germany offers Austria-Hungary a 'blank check'",
+    "summary_short": "Berlin's support stiffened Vienna's position and reduced room for de-escalation.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_kaiser_wilhelm_ii"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_russia_mobilizes_1914"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
+    }
+  },
+  {
+    "id": "ev_wwi_germany_invades_belgium_1914",
+    "label": "Germany invades Belgium",
+    "summary_short": "Germany's implementation of war plans through Belgium expanded the war and brought Britain fully into the conflict.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_battle_marne_1914"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
+    }
+  },
+  {
+    "id": "ev_wwi_hundred_days_offensive_1918",
+    "label": "Hundred Days Offensive",
+    "summary_short": "Allied counteroffensives broke German operational capacity in the final phase of the war.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_armistice_1918"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1918",
+      "end": "1918",
+      "year_start": 1918,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19180101,
+      "sort_end": 19181231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1918
+    }
+  },
+  {
+    "id": "ev_wwi_jutland_1916",
+    "label": "Battle of Jutland",
+    "summary_short": "The largest naval battle of the war preserved British naval dominance despite heavy losses on both sides.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_unrestricted_submarine_1917"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1916",
+      "end": "1916",
+      "year_start": 1916,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19160101,
+      "sort_end": 19161231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1916
+    }
+  },
+  {
+    "id": "ev_wwi_league_of_nations_1920",
+    "label": "League of Nations begins operations",
+    "summary_short": "The League institutionalized postwar collective-security goals but lacked enforcement strength.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_bandung_conference_1955"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1920",
+      "end": "1920",
+      "year_start": 1920,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19200101,
+      "sort_end": 19201231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1920
+    }
+  },
+  {
+    "id": "ev_wwi_naval_arms_race_1898_1914",
+    "label": "Naval and armaments race intensifies",
+    "summary_short": "Industrial capacity and naval rivalry, especially between Britain and Germany, deepened war preparedness and mistrust.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_kaiser_wilhelm_ii"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1912",
+      "end": "1912",
+      "year_start": 1912,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19120101,
+      "sort_end": 19121231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1912
+    }
+  },
+  {
+    "id": "ev_wwi_paris_peace_conference_1919",
+    "label": "Paris Peace Conference",
+    "summary_short": "Victorious powers designed the postwar order, redrew borders, and debated collective security.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_woodrow_wilson"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1919",
+      "end": "1919",
+      "year_start": 1919,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19190101,
+      "sort_end": 19191231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1919
+    }
+  },
+  {
+    "id": "ev_wwi_russia_mobilizes_1914",
+    "label": "Russian mobilization accelerates continental escalation",
+    "summary_short": "Russian mobilization in support of Serbia triggered reciprocal German war planning.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_tsar_nicholas_ii"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
+    }
+  },
+  {
+    "id": "ev_wwi_russian_february_revolution_1917",
+    "label": "February Revolution in Russia",
+    "summary_short": "War strain and domestic unrest toppled the Romanov monarchy.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_tsar_nicholas_ii"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_bolshevik_revolution_1917"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1917",
+      "end": "1917",
+      "year_start": 1917,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19170101,
+      "sort_end": 19171231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1917
+    }
+  },
+  {
+    "id": "ev_wwi_somme_1916",
+    "label": "Battle of the Somme",
+    "summary_short": "The Somme offensives inflicted massive casualties while yielding limited territorial gains.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_jutland_1916"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1916",
+      "end": "1916",
+      "year_start": 1916,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19160101,
+      "sort_end": 19161231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1916
+    }
+  },
+  {
+    "id": "ev_wwi_treaty_brest_litovsk_1918",
+    "label": "Treaty of Brest-Litovsk",
+    "summary_short": "Russia exited the war and ceded territory, allowing Germany to shift forces westward.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_vladimir_lenin"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_german_spring_offensive_1918"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1918",
+      "end": "1918",
+      "year_start": 1918,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19180101,
+      "sort_end": 19181231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1918
+    }
+  },
+  {
+    "id": "ev_wwi_treaty_versailles_1919",
+    "label": "Treaty of Versailles",
+    "summary_short": "The treaty imposed reparations and territorial constraints on Germany while embedding unresolved grievances.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_league_of_nations_1920",
+      "ev_pan_african_congress_1945",
+      "ev_india_independence_1947"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1919",
+      "end": "1919",
+      "year_start": 1919,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19190101,
+      "sort_end": 19191231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1919
+    }
+  },
+  {
+    "id": "ev_wwi_trench_warfare_entrenched_1914",
+    "label": "Trench warfare becomes entrenched on the Western Front",
+    "summary_short": "Stalemate and defensive firepower produced long trench lines and a war of attrition.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_first_ypres_1914"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
+    }
+  },
+  {
+    "id": "ev_wwi_unrestricted_submarine_1917",
+    "label": "Germany resumes unrestricted submarine warfare",
+    "summary_short": "Renewed submarine attacks on shipping helped push the United States toward intervention.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1917",
+      "end": "1917",
+      "year_start": 1917,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19170101,
+      "sort_end": 19171231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1917
+    }
+  },
+  {
+    "id": "ev_wwi_us_enters_war_1917",
+    "label": "United States enters the war",
+    "summary_short": "U.S. intervention added industrial, financial, and military resources to the Allied coalition.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_woodrow_wilson"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_german_spring_offensive_1918"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1917",
+      "end": "1917",
+      "year_start": 1917,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19170101,
+      "sort_end": 19171231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1917
+    }
+  },
+  {
+    "id": "ev_wwi_verdun_1916",
+    "label": "Battle of Verdun",
+    "summary_short": "Verdun became a symbol of attritional warfare and the enormous human cost of static fronts.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_somme_1916"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1916",
+      "end": "1916",
+      "year_start": 1916,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19160101,
+      "sort_end": 19161231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1916
     }
   }
 ]

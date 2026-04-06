@@ -23,6 +23,14 @@
     {
       "id": "unit_foundations_world_history",
       "path": "data/units/foundations-world-history.json"
+    },
+    {
+      "id": "unit_industrialization_pathways_comparison",
+      "path": "data/units/industrialization-pathways-comparison.json"
+    },
+    {
+      "id": "unit_world_war_i",
+      "path": "data/units/unit_world_war_i.json"
     }
   ]
 }

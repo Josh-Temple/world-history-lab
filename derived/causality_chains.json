@@ -21,6 +21,11 @@
   ],
   [
     "ev_bessemer_process_1856",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
+  ],
+  [
+    "ev_bessemer_process_1856",
     "ev_second_industrial_revolution_1870s",
     "ev_electric_power_adoption_1880s"
   ],
@@ -28,6 +33,11 @@
     "ev_bessemer_process_1856",
     "ev_second_industrial_revolution_1870s",
     "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_bessemer_process_1856",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914"
   ],
   [
     "ev_civil_constitution_clergy_1790",
@@ -165,9 +175,39 @@
     "ev_execution_louis_xvi_1793"
   ],
   [
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839"
+  ],
+  [
+    "ev_imperialism_anglo_japanese_alliance_1902",
+    "ev_imperialism_russojapanese_war_begins_1904",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
+    "ev_imperialism_first_balkan_war_1912",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
+  ],
+  [
+    "ev_imperialism_first_moroccan_crisis_1905",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
+    "ev_imperialism_russojapanese_war_begins_1904",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
+  ],
+  [
+    "ev_imperialism_triple_intervention_1895",
+    "ev_imperialism_russojapanese_war_begins_1904",
+    "ev_wwi_naval_arms_race_1898_1914"
   ],
   [
     "ev_indian_revolt_1857",
@@ -285,6 +325,11 @@
     "ev_imperialism_berlin_conference_begins_1884"
   ],
   [
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
+  ],
+  [
     "ev_ottoman_conquest_egypt_1517",
     "ev_mughal_empire_akbar_consolidation_1570s",
     "ev_tokugawa_shogunate_1603"
@@ -320,9 +365,19 @@
     "ev_mass_politics_worker_parties_1880s_1890s"
   ],
   [
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
     "ev_second_industrial_revolution_1870s",
     "ev_electric_power_adoption_1880s",
     "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
   ],
   [
     "ev_september_massacres_1792",
@@ -378,6 +433,11 @@
     "ev_telegraph_invention_1837",
     "ev_global_market_coordination_1860s",
     "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_telegraph_invention_1837",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
   ],
   [
     "ev_telegraph_invention_1837",
@@ -455,6 +515,141 @@
     "ev_september_massacres_1792"
   ],
   [
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
+  ],
+  [
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919"
+  ],
+  [
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914"
+  ],
+  [
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914"
+  ],
+  [
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914"
+  ],
+  [
+    "ev_wwi_battle_marne_1914",
+    "ev_wwi_trench_warfare_entrenched_1914",
+    "ev_wwi_first_ypres_1914"
+  ],
+  [
+    "ev_wwi_bolshevik_revolution_1917",
+    "ev_wwi_treaty_brest_litovsk_1918",
+    "ev_wwi_german_spring_offensive_1918"
+  ],
+  [
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918"
+  ],
+  [
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914"
+  ],
+  [
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914",
+    "ev_wwi_trench_warfare_entrenched_1914"
+  ],
+  [
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919"
+  ],
+  [
+    "ev_wwi_jutland_1916",
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917"
+  ],
+  [
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
+  ],
+  [
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_india_independence_1947"
+  ],
+  [
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_pan_african_congress_1945"
+  ],
+  [
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_wwi_league_of_nations_1920"
+  ],
+  [
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914"
+  ],
+  [
+    "ev_wwi_russian_february_revolution_1917",
+    "ev_wwi_bolshevik_revolution_1917",
+    "ev_wwi_treaty_brest_litovsk_1918"
+  ],
+  [
+    "ev_wwi_somme_1916",
+    "ev_wwi_jutland_1916",
+    "ev_wwi_unrestricted_submarine_1917"
+  ],
+  [
+    "ev_wwi_treaty_brest_litovsk_1918",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918"
+  ],
+  [
+    "ev_wwi_treaty_versailles_1919",
+    "ev_india_independence_1947",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_wwi_treaty_versailles_1919",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947"
+  ],
+  [
+    "ev_wwi_treaty_versailles_1919",
+    "ev_wwi_league_of_nations_1920",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_wwi_trench_warfare_entrenched_1914",
+    "ev_wwi_first_ypres_1914",
+    "ev_wwi_gallipoli_campaign_1915"
+  ],
+  [
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_german_spring_offensive_1918"
+  ],
+  [
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918"
+  ],
+  [
+    "ev_wwi_verdun_1916",
+    "ev_wwi_somme_1916",
+    "ev_wwi_jutland_1916"
+  ],
+  [
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857",
@@ -468,9 +663,21 @@
   ],
   [
     "ev_bessemer_process_1856",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
+    "ev_bessemer_process_1856",
     "ev_second_industrial_revolution_1870s",
     "ev_electric_power_adoption_1880s",
     "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_bessemer_process_1856",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
   ],
   [
     "ev_civil_constitution_clergy_1790",
@@ -519,6 +726,12 @@
     "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s",
     "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914"
   ],
   [
     "ev_cotton_gin_1793",
@@ -671,10 +884,46 @@
     "ev_reign_of_terror_1793_1794"
   ],
   [
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
+  ],
+  [
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857"
+  ],
+  [
+    "ev_imperialism_anglo_japanese_alliance_1902",
+    "ev_imperialism_russojapanese_war_begins_1904",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
+  ],
+  [
+    "ev_imperialism_first_balkan_war_1912",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914"
+  ],
+  [
+    "ev_imperialism_first_moroccan_crisis_1905",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
+  ],
+  [
+    "ev_imperialism_russojapanese_war_begins_1904",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
+  ],
+  [
+    "ev_imperialism_triple_intervention_1895",
+    "ev_imperialism_russojapanese_war_begins_1904",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
   ],
   [
     "ev_indian_revolt_1857",
@@ -714,6 +963,12 @@
   ],
   [
     "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
     "ev_railway_boom_1840s",
     "ev_national_market_integration_1850s",
     "ev_global_market_coordination_1860s"
@@ -729,6 +984,12 @@
     "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s",
     "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914"
   ],
   [
     "ev_luddite_protests_1811",
@@ -851,6 +1112,12 @@
     "ev_global_market_coordination_1860s"
   ],
   [
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
     "ev_ottoman_conquest_egypt_1517",
     "ev_mughal_empire_akbar_consolidation_1570s",
     "ev_tokugawa_shogunate_1603",
@@ -876,9 +1143,27 @@
   ],
   [
     "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
+  ],
+  [
+    "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s",
     "ev_electric_power_adoption_1880s",
     "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
+  ],
+  [
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
   ],
   [
     "ev_september_massacres_1792",
@@ -921,6 +1206,12 @@
     "ev_national_market_integration_1850s",
     "ev_global_market_coordination_1860s",
     "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
   ],
   [
     "ev_steam_power_transport_expansion_1800s",
@@ -972,9 +1263,21 @@
   ],
   [
     "ev_telegraph_invention_1837",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
+    "ev_telegraph_invention_1837",
     "ev_national_market_integration_1850s",
     "ev_global_market_coordination_1860s",
     "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_telegraph_invention_1837",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
   ],
   [
     "ev_tokugawa_shogunate_1603",
@@ -1091,11 +1394,181 @@
     "ev_execution_louis_xvi_1793"
   ],
   [
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
+  ],
+  [
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_india_independence_1947"
+  ],
+  [
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_pan_african_congress_1945"
+  ],
+  [
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_wwi_league_of_nations_1920"
+  ],
+  [
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914"
+  ],
+  [
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914"
+  ],
+  [
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914"
+  ],
+  [
+    "ev_wwi_battle_marne_1914",
+    "ev_wwi_trench_warfare_entrenched_1914",
+    "ev_wwi_first_ypres_1914",
+    "ev_wwi_gallipoli_campaign_1915"
+  ],
+  [
+    "ev_wwi_bolshevik_revolution_1917",
+    "ev_wwi_treaty_brest_litovsk_1918",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918"
+  ],
+  [
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919"
+  ],
+  [
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914"
+  ],
+  [
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914",
+    "ev_wwi_trench_warfare_entrenched_1914",
+    "ev_wwi_first_ypres_1914"
+  ],
+  [
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919"
+  ],
+  [
+    "ev_wwi_jutland_1916",
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_german_spring_offensive_1918"
+  ],
+  [
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914"
+  ],
+  [
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_india_independence_1947",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947"
+  ],
+  [
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_wwi_league_of_nations_1920",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914",
+    "ev_wwi_trench_warfare_entrenched_1914"
+  ],
+  [
+    "ev_wwi_russian_february_revolution_1917",
+    "ev_wwi_bolshevik_revolution_1917",
+    "ev_wwi_treaty_brest_litovsk_1918",
+    "ev_wwi_german_spring_offensive_1918"
+  ],
+  [
+    "ev_wwi_somme_1916",
+    "ev_wwi_jutland_1916",
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917"
+  ],
+  [
+    "ev_wwi_treaty_brest_litovsk_1918",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918"
+  ],
+  [
+    "ev_wwi_treaty_versailles_1919",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918"
+  ],
+  [
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918"
+  ],
+  [
+    "ev_wwi_verdun_1916",
+    "ev_wwi_somme_1916",
+    "ev_wwi_jutland_1916",
+    "ev_wwi_unrestricted_submarine_1917"
+  ],
+  [
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857",
     "ev_berlin_conference_1884",
     "ev_pan_african_congress_1945"
+  ],
+  [
+    "ev_bessemer_process_1856",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
+  ],
+  [
+    "ev_bessemer_process_1856",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
   ],
   [
     "ev_civil_constitution_clergy_1790",
@@ -1133,6 +1606,13 @@
     "ev_mass_politics_worker_parties_1880s_1890s"
   ],
   [
+    "ev_congress_of_vienna_1814_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
     "ev_congress_vienna_1815",
     "ev_railway_boom_1840s",
     "ev_national_market_integration_1850s",
@@ -1142,9 +1622,23 @@
   [
     "ev_congress_vienna_1815",
     "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s",
     "ev_electric_power_adoption_1880s",
     "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
   ],
   [
     "ev_cotton_gin_1793",
@@ -1378,11 +1872,53 @@
     "ev_thermidorian_reaction_1794"
   ],
   [
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
+  ],
+  [
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857",
     "ev_berlin_conference_1884"
+  ],
+  [
+    "ev_imperialism_anglo_japanese_alliance_1902",
+    "ev_imperialism_russojapanese_war_begins_1904",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
+  ],
+  [
+    "ev_imperialism_first_balkan_war_1912",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914"
+  ],
+  [
+    "ev_imperialism_first_moroccan_crisis_1905",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
+  ],
+  [
+    "ev_imperialism_russojapanese_war_begins_1904",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914"
+  ],
+  [
+    "ev_imperialism_triple_intervention_1895",
+    "ev_imperialism_russojapanese_war_begins_1904",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
   ],
   [
     "ev_indian_revolt_1857",
@@ -1414,6 +1950,13 @@
   ],
   [
     "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
     "ev_railway_boom_1840s",
     "ev_national_market_integration_1850s",
     "ev_global_market_coordination_1860s",
@@ -1422,9 +1965,23 @@
   [
     "ev_liverpool_manchester_railway_1830",
     "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s",
     "ev_electric_power_adoption_1880s",
     "ev_mass_production_systems_1890s"
+  ],
+  [
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
   ],
   [
     "ev_luddite_protests_1811",
@@ -1610,10 +2167,31 @@
   ],
   [
     "ev_napoleonic_wars_1803_1815",
+    "ev_congress_vienna_1815",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
     "ev_state_military_fiscal_expansion_1810s_1820s",
     "ev_national_market_integration_1850s",
     "ev_global_market_coordination_1860s",
     "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_napoleonic_wars_1803_1815",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
+  ],
+  [
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
   ],
   [
     "ev_ottoman_conquest_egypt_1517",
@@ -1628,6 +2206,27 @@
     "ev_berlin_conference_1884",
     "ev_pan_african_congress_1945",
     "ev_india_independence_1947"
+  ],
+  [
+    "ev_railway_boom_1840s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914"
+  ],
+  [
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914"
   ],
   [
     "ev_spinning_jenny_1764",
@@ -1686,11 +2285,25 @@
     "ev_modern_urban_infrastructure_1850s_1870s"
   ],
   [
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
     "ev_steam_power_transport_expansion_1800s",
     "ev_liverpool_manchester_railway_1830",
     "ev_national_market_integration_1850s",
     "ev_global_market_coordination_1860s",
     "ev_imperialism_berlin_conference_begins_1884"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
   ],
   [
     "ev_steam_power_transport_expansion_1800s",
@@ -1712,6 +2325,13 @@
     "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s",
     "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_steam_power_transport_expansion_1800s",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914"
   ],
   [
     "ev_steam_power_transport_expansion_1800s",
@@ -1744,6 +2364,13 @@
   [
     "ev_stockton_darlington_railway_1825",
     "ev_liverpool_manchester_railway_1830",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
     "ev_railway_boom_1840s",
     "ev_national_market_integration_1850s",
     "ev_global_market_coordination_1860s"
@@ -1761,6 +2388,27 @@
     "ev_railway_boom_1840s",
     "ev_second_industrial_revolution_1870s",
     "ev_mass_politics_worker_parties_1880s_1890s"
+  ],
+  [
+    "ev_stockton_darlington_railway_1825",
+    "ev_liverpool_manchester_railway_1830",
+    "ev_railway_boom_1840s",
+    "ev_second_industrial_revolution_1870s",
+    "ev_wwi_naval_arms_race_1898_1914"
+  ],
+  [
+    "ev_telegraph_invention_1837",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913"
+  ],
+  [
+    "ev_telegraph_invention_1837",
+    "ev_national_market_integration_1850s",
+    "ev_global_market_coordination_1860s",
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914"
   ],
   [
     "ev_tokugawa_shogunate_1603",
@@ -1957,5 +2605,173 @@
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793",
     "ev_reign_of_terror_1793_1794"
+  ],
+  [
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914"
+  ],
+  [
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_india_independence_1947",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947"
+  ],
+  [
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_wwi_league_of_nations_1920",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914"
+  ],
+  [
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914"
+  ],
+  [
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914"
+  ],
+  [
+    "ev_wwi_bolshevik_revolution_1917",
+    "ev_wwi_treaty_brest_litovsk_1918",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918"
+  ],
+  [
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919"
+  ],
+  [
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914",
+    "ev_wwi_trench_warfare_entrenched_1914"
+  ],
+  [
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914",
+    "ev_wwi_trench_warfare_entrenched_1914",
+    "ev_wwi_first_ypres_1914",
+    "ev_wwi_gallipoli_campaign_1915"
+  ],
+  [
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_india_independence_1947"
+  ],
+  [
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_pan_african_congress_1945"
+  ],
+  [
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_wwi_league_of_nations_1920"
+  ],
+  [
+    "ev_wwi_jutland_1916",
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918"
+  ],
+  [
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914"
+  ],
+  [
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_pan_african_congress_1945",
+    "ev_india_independence_1947",
+    "ev_bandung_conference_1955"
+  ],
+  [
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914",
+    "ev_wwi_trench_warfare_entrenched_1914",
+    "ev_wwi_first_ypres_1914"
+  ],
+  [
+    "ev_wwi_russian_february_revolution_1917",
+    "ev_wwi_bolshevik_revolution_1917",
+    "ev_wwi_treaty_brest_litovsk_1918",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918"
+  ],
+  [
+    "ev_wwi_somme_1916",
+    "ev_wwi_jutland_1916",
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_german_spring_offensive_1918"
+  ],
+  [
+    "ev_wwi_treaty_brest_litovsk_1918",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919"
+  ],
+  [
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918"
+  ],
+  [
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919"
+  ],
+  [
+    "ev_wwi_verdun_1916",
+    "ev_wwi_somme_1916",
+    "ev_wwi_jutland_1916",
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917"
   ]
 ]

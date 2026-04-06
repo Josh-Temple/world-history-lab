@@ -1,3 +1,38 @@
+## Incremental update (2026-04-06 · World War I flagship unit + macro causality links)
+- Added `data/units/unit_world_war_i.json` with 27 events and app profiles to serve as a high-density flagship unit across timeline, recognition, causality, sequence, and year estimation modes.
+- Expanded `data/events.json` with 27 reviewed WWI events from long-term preconditions through 1920 settlement outcomes, each with `summary_short`, tags, and explicit causal `effects`.
+- Added reviewed WWI people records to `data/people.json` and linked them to key WWI events via `people_ids`.
+- Added cross-unit causal links from existing Industrial Revolution / Imperialism events into WWI precursors and from WWI outcomes into later global decolonization/diplomacy events.
+- Updated `data/units/index.json` and `data/metadata.json` so `unit_world_war_i` is included in scope and curriculum sequencing.
+
+## Validation completed (2026-04-06)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+
+## Suggested next steps
+1. Add a dedicated WWI comparison prompt set (e.g., Western Front vs Eastern Front vs Ottoman theater) in `event-comparison`-compatible unit metadata.
+2. Add WWI-to-interwar bridge events (1920s–1930s) to make Treaty outcomes less jumpy before 1945 anchors.
+3. Add a small derive-time check for cross-unit link count so macro-causality does not regress silently.
+
+## Incremental update (2026-04-05 · comparison-focused unit + event-comparison reinforcement)
+- Added new unit file `data/units/industrialization-pathways-comparison.json` with 14 events spanning Britain, Qing China, and Meiji Japan for explicit comparative industrialization learning.
+- Added `comparison_prompts` in that unit to encode shared drivers + contrast notes for targeted pairwise practice.
+- Updated `data/units/index.json` and `data/metadata.json` so the new comparison unit is included in scope and curriculum sequencing.
+- Updated `apps/event-comparison/index.html` and `apps/event-comparison/app.js`:
+  - app now loads unit-level comparison prompts when present,
+  - prompt pairs are prioritized over random pairing within the selected unit,
+  - post-answer feedback now includes explicit shared-driver and contrast-note text for deeper "why differences" learning.
+
+## Validation completed (2026-04-05)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+
+## Suggested next steps
+1. Reuse `comparison_prompts` in Causality Builder (e.g., dual-chain entry from selected comparison pair).
+2. Add a second comparison unit (state formation or empire governance) to avoid overfitting comparison practice to industrialization only.
+3. Consider adding optional answer-mode split in Event Comparison: first identify shared driver, then identify key divergence.
+
 
 ## Incremental update (2026-04-05 · curriculum map + unit-guided setup)
 - Added explicit curriculum metadata to `data/metadata.json`:

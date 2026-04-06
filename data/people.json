@@ -978,5 +978,221 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "reviewed"
+  },
+  {
+    "id": "pe_franz_ferdinand",
+    "name": "Franz Ferdinand",
+    "alt_names": [
+      "Archduke Franz Ferdinand"
+    ],
+    "birth_year": 1863,
+    "death_year": 1914,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "archduke",
+      "heir-apparent"
+    ],
+    "summary_short": "Heir to the Austro-Hungarian throne whose assassination in Sarajevo triggered the July Crisis.",
+    "related_events": [
+      "ev_wwi_assassination_franz_ferdinand_1914"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "wwi_person_seed_001",
+        "url": "https://example.com/internal/wwi_person_seed_001",
+        "retrieved_at": "2026-04-06T00:00:00Z",
+        "notes": "WWI unit curation seed."
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_gavrilo_princip",
+    "name": "Gavrilo Princip",
+    "alt_names": [],
+    "birth_year": 1894,
+    "death_year": 1918,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "nationalist",
+      "assassin"
+    ],
+    "summary_short": "Bosnian Serb nationalist who assassinated Franz Ferdinand in Sarajevo in June 1914.",
+    "related_events": [
+      "ev_wwi_assassination_franz_ferdinand_1914"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "wwi_person_seed_002",
+        "url": "https://example.com/internal/wwi_person_seed_002",
+        "retrieved_at": "2026-04-06T00:00:00Z",
+        "notes": "WWI unit curation seed."
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_kaiser_wilhelm_ii",
+    "name": "Wilhelm II",
+    "alt_names": [
+      "Kaiser Wilhelm II"
+    ],
+    "birth_year": 1859,
+    "death_year": 1941,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "emperor",
+      "monarch"
+    ],
+    "summary_short": "German emperor during the prewar arms race and most of World War I.",
+    "related_events": [
+      "ev_wwi_naval_arms_race_1898_1914",
+      "ev_wwi_germany_blank_check_1914"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "wwi_person_seed_003",
+        "url": "https://example.com/internal/wwi_person_seed_003",
+        "retrieved_at": "2026-04-06T00:00:00Z",
+        "notes": "WWI unit curation seed."
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_tsar_nicholas_ii",
+    "name": "Nicholas II",
+    "alt_names": [
+      "Tsar Nicholas II"
+    ],
+    "birth_year": 1868,
+    "death_year": 1918,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "tsar",
+      "monarch"
+    ],
+    "summary_short": "Last tsar of Russia, overthrown in 1917 amid wartime crisis and domestic unrest.",
+    "related_events": [
+      "ev_wwi_russia_mobilizes_1914",
+      "ev_wwi_russian_february_revolution_1917"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "wwi_person_seed_004",
+        "url": "https://example.com/internal/wwi_person_seed_004",
+        "retrieved_at": "2026-04-06T00:00:00Z",
+        "notes": "WWI unit curation seed."
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_woodrow_wilson",
+    "name": "Woodrow Wilson",
+    "alt_names": [],
+    "birth_year": 1856,
+    "death_year": 1924,
+    "regions": [
+      "reg_north_america",
+      "reg_europe"
+    ],
+    "roles": [
+      "president",
+      "statesman"
+    ],
+    "summary_short": "U.S. president during American entry into World War I and a leading figure at Paris in 1919.",
+    "related_events": [
+      "ev_wwi_us_enters_war_1917",
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "wwi_person_seed_005",
+        "url": "https://example.com/internal/wwi_person_seed_005",
+        "retrieved_at": "2026-04-06T00:00:00Z",
+        "notes": "WWI unit curation seed."
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_vladimir_lenin",
+    "name": "Vladimir Lenin",
+    "alt_names": [],
+    "birth_year": 1870,
+    "death_year": 1924,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "revolutionary",
+      "political-leader"
+    ],
+    "summary_short": "Bolshevik leader who helped pull Russia out of World War I and reshape European politics.",
+    "related_events": [
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_treaty_brest_litovsk_1918"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match",
+      "causality_actor_identification"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "wwi_person_seed_006",
+        "url": "https://example.com/internal/wwi_person_seed_006",
+        "retrieved_at": "2026-04-06T00:00:00Z",
+        "notes": "WWI unit curation seed."
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
   }
 ]

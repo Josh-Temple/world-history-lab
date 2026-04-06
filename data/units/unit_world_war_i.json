@@ -1,0 +1,95 @@
+{
+  "id": "unit_world_war_i",
+  "title": "World War I",
+  "label": "World War I",
+  "language": "en",
+  "description": "A high-density flagship unit on World War I, covering long-term causes, the July Crisis, major campaigns, wartime social change, and postwar settlements.",
+  "recommended_level": "middle",
+  "regions": [
+    "reg_europe",
+    "reg_middle_east",
+    "reg_north_america"
+  ],
+  "tags": [
+    "world-war",
+    "wwi",
+    "causality",
+    "modern"
+  ],
+  "learning_goals": [
+    "Trace long-term structural causes and short-term triggers of the war.",
+    "Connect battlefield developments, home-front pressures, and political upheaval.",
+    "Explain how the war settlement shaped later decolonization and global diplomacy."
+  ],
+  "event_ids": [
+    "ev_wwi_alliance_system_hardens_1890_1907",
+    "ev_wwi_naval_arms_race_1898_1914",
+    "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "ev_wwi_assassination_franz_ferdinand_1914",
+    "ev_wwi_austria_ultimatum_serbia_1914",
+    "ev_wwi_germany_blank_check_1914",
+    "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_battle_marne_1914",
+    "ev_wwi_trench_warfare_entrenched_1914",
+    "ev_wwi_first_ypres_1914",
+    "ev_wwi_gallipoli_campaign_1915",
+    "ev_wwi_armenian_genocide_begins_1915",
+    "ev_wwi_verdun_1916",
+    "ev_wwi_somme_1916",
+    "ev_wwi_jutland_1916",
+    "ev_wwi_unrestricted_submarine_1917",
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_russian_february_revolution_1917",
+    "ev_wwi_bolshevik_revolution_1917",
+    "ev_wwi_treaty_brest_litovsk_1918",
+    "ev_wwi_german_spring_offensive_1918",
+    "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_armistice_1918",
+    "ev_wwi_paris_peace_conference_1919",
+    "ev_wwi_treaty_versailles_1919",
+    "ev_wwi_league_of_nations_1920"
+  ],
+  "person_ids": [
+    "pe_franz_ferdinand",
+    "pe_gavrilo_princip",
+    "pe_kaiser_wilhelm_ii",
+    "pe_tsar_nicholas_ii",
+    "pe_woodrow_wilson",
+    "pe_vladimir_lenin"
+  ],
+  "app_profiles": {
+    "timeline-trainer": {
+      "enabled": true,
+      "question_types": [
+        "timeline_before_after",
+        "timeline_ordering"
+      ]
+    },
+    "event-recognition": {
+      "enabled": true,
+      "question_types": [
+        "what_happened",
+        "significance"
+      ]
+    },
+    "causality-builder": {
+      "enabled": true,
+      "question_types": [
+        "causality_direct_effect",
+        "causality_cause_category"
+      ]
+    },
+    "sequence-reconstruction": {
+      "enabled": true
+    },
+    "year-estimation": {
+      "enabled": true,
+      "question_types": [
+        "year_estimation"
+      ]
+    }
+  },
+  "status": "reviewed",
+  "updated_at": "2026-04-06"
+}
