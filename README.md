@@ -105,6 +105,22 @@ Next:
 - [x] Ship first playable Causality Builder route and link it from the homepage.
 
 
+
+## Recent updates (2026-04-06 · World War I flagship + cross-unit causality)
+
+- Added a new reviewed flagship unit: **World War I** (`data/units/unit_world_war_i.json`) with 27 events spanning long-term causes, the July Crisis, major campaigns, revolutions, and postwar settlement outcomes.
+- Expanded `data/events.json` with 27 new WWI events and explicit causal links, including multi-step chains from prewar alliance pressures to the Treaty of Versailles and League of Nations.
+- Added reviewed WWI figures to `data/people.json` and linked them to relevant events for people-aware modes.
+- Added cross-unit causality links from Industrial Revolution / Imperialism events into WWI trigger events, and from WWI settlement events into later decolonization/diplomacy events.
+- Registered `unit_world_war_i` in `data/units/index.json` and synchronized `data/metadata.json` scope/curriculum ordering.
+
+## Recent updates (2026-04-05 · comparison unit + guided contrasts)
+
+- Added a new reviewed unit: **Industrialization Pathways Comparison** (`data/units/industrialization-pathways-comparison.json`) that compares Britain, Japan, and Qing China through a shared industrial-era lens.
+- Added explicit `comparison_prompts` in the new unit so Event Comparison can teach shared drivers + contrast notes (not only generic tag overlap).
+- Registered the unit in `data/units/index.json` and synced `data/metadata.json` scope + curriculum ordering.
+- Extended `apps/event-comparison/` to load unit-level comparison prompts, prioritize those pairs during practice, and show explicit shared-driver / contrast feedback after answers.
+
 ## Recent updates (2026-03-12)
 
 - Timeline Trainer setup flow was refined to reduce cognitive load (clear setup grouping, dynamic mode helper text, eligibility hint, tighter result→next loop, and reduced stats prominence).

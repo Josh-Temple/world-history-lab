@@ -11,9 +11,11 @@
       "unit_meiji_restoration",
       "unit_age_of_imperialism",
       "unit_french_revolution",
-      "unit_foundations_world_history"
+      "unit_foundations_world_history",
+      "unit_industrialization_pathways_comparison",
+      "unit_world_war_i"
     ],
-    "notes": "Core dataset now spans focused modern units plus a foundations world-history backbone for chronology, recognition, causality, and player-based overview learning."
+    "notes": "Core dataset now spans foundations, modern specialized units, a comparison track, and a high-density World War I flagship unit for cross-mode practice."
   },
   "curriculum": {
     "sequence_basis": "Periodization-first path from broad foundations into focused modern-era depth.",
@@ -56,6 +58,18 @@
       {
         "id": "unit_age_of_imperialism",
         "order": 6,
+        "era": "Modern",
+        "difficulty": 2
+      },
+      {
+        "id": "unit_world_war_i",
+        "order": 7,
+        "era": "Modern",
+        "difficulty": 2
+      },
+      {
+        "id": "unit_industrialization_pathways_comparison",
+        "order": 8,
         "era": "Modern",
         "difficulty": 2
       }
@@ -106,7 +120,7 @@
       "cause_and_effect"
     ]
   },
-  "updated_at": "2026-04-05T00:00:00Z",
+  "updated_at": "2026-04-06T00:00:00Z",
   "maintainer": {
     "name": "Josh",
     "notes": "Personal learning project"
