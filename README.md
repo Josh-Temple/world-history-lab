@@ -106,6 +106,15 @@ Next:
 
 
 
+
+## Recent updates (2026-04-07 · WWI density expansion + people linking)
+
+- Expanded `data/units/unit_world_war_i.json` from 27 to **39 events** to improve timeline density and causal practice coverage across prelude, fronts, diplomacy, and home-front dynamics.
+- Added 12 reviewed WWI events in `data/events.json`, including non-European theaters, wartime mobilization/propaganda, and additional 1916-1919 bridge events.
+- Strengthened WWI causality with additional multi-branch `effects` links (not only linear progression) to better support sequence and causality modes.
+- Added 21 reviewed WWI figures to `data/people.json` and linked them into WWI events via `people_ids` for stronger actor-centered recall.
+- Updated `unit_world_war_i` `person_ids` and `updated_at` metadata to reflect the expanded actor graph.
+
 ## Recent updates (2026-04-06 · World War I flagship + cross-unit causality)
 
 - Added a new reviewed flagship unit: **World War I** (`data/units/unit_world_war_i.json`) with 27 events spanning long-term causes, the July Crisis, major campaigns, revolutions, and postwar settlement outcomes.

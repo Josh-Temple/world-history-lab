@@ -297,28 +297,40 @@
     "ev_wwi_first_ypres_1914",
     "ev_wwi_germany_blank_check_1914",
     "ev_wwi_germany_invades_belgium_1914",
+    "ev_wwi_japan_enters_war_1914",
+    "ev_wwi_ottoman_enters_war_1914",
     "ev_wwi_russia_mobilizes_1914",
+    "ev_wwi_tannenberg_1914",
     "ev_wwi_trench_warfare_entrenched_1914"
   ],
   "1915": [
     "ev_wwi_armenian_genocide_begins_1915",
-    "ev_wwi_gallipoli_campaign_1915"
+    "ev_wwi_gallipoli_campaign_1915",
+    "ev_wwi_home_front_total_mobilization_1915",
+    "ev_wwi_italy_enters_war_1915",
+    "ev_wwi_second_battle_ypres_gas_1915",
+    "ev_wwi_state_propaganda_expands_1915"
   ],
   "1916": [
+    "ev_wwi_arab_revolt_1916",
+    "ev_wwi_brusilov_offensive_1916",
     "ev_wwi_jutland_1916",
     "ev_wwi_somme_1916",
     "ev_wwi_verdun_1916"
   ],
   "1917": [
+    "ev_wwi_balfour_declaration_1917",
     "ev_wwi_bolshevik_revolution_1917",
     "ev_wwi_russian_february_revolution_1917",
     "ev_wwi_unrestricted_submarine_1917",
-    "ev_wwi_us_enters_war_1917"
+    "ev_wwi_us_enters_war_1917",
+    "ev_wwi_zimmermann_telegram_1917"
   ],
   "1918": [
     "ev_wwi_armistice_1918",
     "ev_wwi_german_spring_offensive_1918",
     "ev_wwi_hundred_days_offensive_1918",
+    "ev_wwi_spanish_flu_1918",
     "ev_wwi_treaty_brest_litovsk_1918"
   ],
   "1919": [

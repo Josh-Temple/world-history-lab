@@ -1,3 +1,20 @@
+## Incremental update (2026-04-07 · WWI flagship density + people graph expansion)
+- Expanded `data/units/unit_world_war_i.json` from 27 to 39 events to raise replay density for timeline, causality, and sequence modes.
+- Added 12 reviewed WWI events in `data/events.json` covering additional fronts/theaters, home-front mobilization, propaganda, and diplomatic wartime transitions.
+- Added multi-branch WWI causal links (additional `effects` edges on existing records) so chains are less linear and better suited for reconstruction practice.
+- Added 21 reviewed WWI figures to `data/people.json` and linked both new + existing WWI events with richer `people_ids` coverage.
+- Updated WWI unit `person_ids` and `updated_at` to keep unit metadata in sync with content expansion.
+
+## Validation completed (2026-04-07)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- `node scripts/smoke-timeline-trainer.mjs` ✅
+
+## Suggested next steps
+1. Add a derive-time report for per-unit actor-link coverage (e.g., `% of events with people_ids`) to prevent regressions in people integration depth.
+2. Add an explicit WWI comparison prompt set (Western vs Eastern vs Ottoman/front-home interactions) to reuse the new event density in Event Comparison.
+3. Add a dedicated people-centered mode that asks for likely actors from event summaries, leveraging the expanded WWI person graph.
+
 ## Incremental update (2026-04-06 · World War I flagship unit + macro causality links)
 - Added `data/units/unit_world_war_i.json` with 27 events and app profiles to serve as a high-density flagship unit across timeline, recognition, causality, sequence, and year estimation modes.
 - Expanded `data/events.json` with 27 reviewed WWI events from long-term preconditions through 1920 settlement outcomes, each with `summary_short`, tags, and explicit causal `effects`.

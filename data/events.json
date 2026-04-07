@@ -13,7 +13,7 @@
       "weaving",
       "invention"
     ],
-    "summary_short": "John Kay\u2019s flying shuttle sped up weaving and increased demand for spun yarn, helping trigger later spinning innovations.",
+    "summary_short": "John Kay’s flying shuttle sped up weaving and increased demand for spun yarn, helping trigger later spinning innovations.",
     "source_refs": [
       {
         "title": "Flying shuttle (patent year 1733)",
@@ -64,7 +64,7 @@
     "summary_short": "A multi-spindle spinning machine that greatly increased yarn output and helped propel mechanized textile production.",
     "source_refs": [
       {
-        "title": "Spinning jenny (invented 1764\u20131765)",
+        "title": "Spinning jenny (invented 1764–1765)",
         "url": "https://en.wikipedia.org/wiki/Spinning_jenny"
       }
     ],
@@ -85,7 +85,7 @@
       "spinning",
       "patent"
     ],
-    "summary_short": "Arkwright\u2019s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
+    "summary_short": "Arkwright’s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
     "source_refs": [
       {
         "title": "Water frame (patented 1769)",
@@ -97,7 +97,7 @@
   },
   {
     "id": "ev_watt_condenser_patent_1769",
-    "label": "Watt\u2019s separate condenser patented (steam engine efficiency)",
+    "label": "Watt’s separate condenser patented (steam engine efficiency)",
     "time": {
       "year_start": 1769
     },
@@ -109,7 +109,7 @@
       "energy",
       "patent"
     ],
-    "summary_short": "James Watt\u2019s separate condenser greatly improved steam engine efficiency, enabling broader industrial use beyond mines.",
+    "summary_short": "James Watt’s separate condenser greatly improved steam engine efficiency, enabling broader industrial use beyond mines.",
     "source_refs": [
       {
         "title": "Watt steam engine (1769 patent context)",
@@ -157,10 +157,10 @@
       "textiles",
       "water_power"
     ],
-    "summary_short": "Arkwright\u2019s water-powered spinning at Cromford is often cited as a key step toward the factory system in textiles.",
+    "summary_short": "Arkwright’s water-powered spinning at Cromford is often cited as a key step toward the factory system in textiles.",
     "source_refs": [
       {
-        "title": "Arkwright\u2019s water-frame at Cromford (1771)",
+        "title": "Arkwright’s water-frame at Cromford (1771)",
         "url": "https://www.nationalarchives.gov.uk/education/resources/georgian-britain-age-modernity/arkwrights-spinning-frame/"
       }
     ],
@@ -181,10 +181,10 @@
       "spinning",
       "invention"
     ],
-    "summary_short": "Crompton\u2019s spinning mule combined features of earlier spinning machines and enabled large-scale production of high-quality yarn.",
+    "summary_short": "Crompton’s spinning mule combined features of earlier spinning machines and enabled large-scale production of high-quality yarn.",
     "source_refs": [
       {
-        "title": "Crompton\u2019s spinning mule (invented 1779)",
+        "title": "Crompton’s spinning mule (invented 1779)",
         "url": "https://ageofrevolution.org/200-object/cromptons-spinning-mule/"
       }
     ],
@@ -205,7 +205,7 @@
       "weaving",
       "mechanization"
     ],
-    "summary_short": "Cartwright\u2019s power loom mechanized weaving, helping shift textile production further into factories.",
+    "summary_short": "Cartwright’s power loom mechanized weaving, helping shift textile production further into factories.",
     "source_refs": [
       {
         "title": "Patenting of the steam-powered loom (1785)",
@@ -506,7 +506,7 @@
       "invention",
       "supply_chain"
     ],
-    "summary_short": "Whitney\u2019s cotton gin sped seed removal, expanding raw cotton supply feeding textile mills and intensifying the global cotton economy.",
+    "summary_short": "Whitney’s cotton gin sped seed removal, expanding raw cotton supply feeding textile mills and intensifying the global cotton economy.",
     "source_refs": [
       {
         "title": "Cotton gin (invented 1793)",
@@ -596,7 +596,7 @@
       "year_end": 1794,
       "century_label": "18th century CE",
       "precision": "range",
-      "display_text": "1793\u20131794"
+      "display_text": "1793–1794"
     },
     "regions": [
       "reg_france"
@@ -905,7 +905,7 @@
       "year_end": 1815,
       "century_label": "19th century CE",
       "precision": "range",
-      "display_text": "1814\u20131815"
+      "display_text": "1814–1815"
     },
     "regions": [
       "reg_western_europe"
@@ -970,7 +970,7 @@
   },
   {
     "id": "ev_rainhill_trials_rocket_1829",
-    "label": "Rainhill Trials won by Stephenson\u2019s Rocket",
+    "label": "Rainhill Trials won by Stephenson’s Rocket",
     "time": {
       "year_start": 1829
     },
@@ -982,10 +982,10 @@
       "transport",
       "competition"
     ],
-    "summary_short": "Rocket\u2019s success at the Rainhill Trials helped convince investors and engineers that locomotive-hauled railways were viable at scale.",
+    "summary_short": "Rocket’s success at the Rainhill Trials helped convince investors and engineers that locomotive-hauled railways were viable at scale.",
     "source_refs": [
       {
-        "title": "Stephenson\u2019s Rocket (Rainhill Trials, 1829)",
+        "title": "Stephenson’s Rocket (Rainhill Trials, 1829)",
         "url": "https://en.wikipedia.org/wiki/Stephenson%27s_Rocket"
       }
     ],
@@ -1007,7 +1007,7 @@
       "regulation",
       "social"
     ],
-    "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate\u2014an important step toward enforceable workplace regulation.",
+    "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate—an important step toward enforceable workplace regulation.",
     "source_refs": [
       {
         "title": "1833 Factory Act (Parliament; inspectorate)",
@@ -1041,7 +1041,7 @@
       "economic",
       "industrial"
     ],
-    "summary_short": "A major international exhibition showcasing industrial and cultural achievements, symbolizing Britain\u2019s industrial prominence.",
+    "summary_short": "A major international exhibition showcasing industrial and cultural achievements, symbolizing Britain’s industrial prominence.",
     "source_refs": [
       {
         "title": "Great Exhibition (opened 1 May 1851)",
@@ -1183,7 +1183,7 @@
       "manufacturing",
       "invention"
     ],
-    "summary_short": "Bessemer\u2019s process enabled cheaper mass production of steel, accelerating industrial expansion in railways, construction, and machinery.",
+    "summary_short": "Bessemer’s process enabled cheaper mass production of steel, accelerating industrial expansion in railways, construction, and machinery.",
     "source_refs": [
       {
         "title": "Bessemer process (patent 1856)",
@@ -1206,7 +1206,7 @@
       "year_end": 1869,
       "century_label": "19th century CE",
       "precision": "year",
-      "display_text": "1868\u20131869"
+      "display_text": "1868–1869"
     },
     "regions": [
       "reg_japan"
@@ -1223,7 +1223,7 @@
     ],
     "causes": [
       {
-        "label": "Collapse of the k\u014dbu-gattai compromise and intensification of anti-shogunate movements",
+        "label": "Collapse of the kōbu-gattai compromise and intensification of anti-shogunate movements",
         "category": "political",
         "note": null
       }
@@ -1524,7 +1524,7 @@
       "year_end": 1895,
       "century_label": "19th century CE",
       "precision": "year",
-      "display_text": "1894\u20131895"
+      "display_text": "1894–1895"
     },
     "regions": [
       "reg_japan",
@@ -1646,7 +1646,7 @@
       "imperialism",
       "colonialism"
     ],
-    "summary_short": "Through the Japan\u2013Korea Annexation Treaty, Japan colonized the Korean Peninsula and intensified imperial expansion.",
+    "summary_short": "Through the Japan–Korea Annexation Treaty, Japan colonized the Korean Peninsula and intensified imperial expansion.",
     "related_people": [],
     "related_events": [
       "ev_meiji_emperor_death_1912"
@@ -1705,7 +1705,7 @@
     "causes": [],
     "effects": [
       {
-        "label": "Transition to the Taish\u014d era and reconfiguration of political and social challenges",
+        "label": "Transition to the Taishō era and reconfiguration of political and social challenges",
         "category": "political",
         "note": null
       }
@@ -3382,7 +3382,7 @@
     "time": {
       "year_start": 1764
     },
-    "summary_short": "James Hargreaves\u2019s spinning jenny increases yarn output and intensifies textile mechanization.",
+    "summary_short": "James Hargreaves’s spinning jenny increases yarn output and intensifies textile mechanization.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -3408,7 +3408,7 @@
     "time": {
       "year_start": 1776
     },
-    "summary_short": "James Watt\u2019s commercially deployed improvements make steam engines more efficient and more widely usable.",
+    "summary_short": "James Watt’s commercially deployed improvements make steam engines more efficient and more widely usable.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -3514,7 +3514,7 @@
     "time": {
       "year_start": 1830
     },
-    "summary_short": "A landmark intercity railway demonstrates rail\u2019s commercial viability for freight and passengers.",
+    "summary_short": "A landmark intercity railway demonstrates rail’s commercial viability for freight and passengers.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -3695,7 +3695,7 @@
   },
   {
     "id": "ev_first_international_1864",
-    "label": "International Workingmen\u2019s Association founded",
+    "label": "International Workingmen’s Association founded",
     "time": {
       "year_start": 1864
     },
@@ -3825,7 +3825,7 @@
     "time": {
       "year_start": 1815
     },
-    "summary_short": "Major powers redraw borders and pursue a balance-of-power order after Napoleon\u2019s defeat.",
+    "summary_short": "Major powers redraw borders and pursue a balance-of-power order after Napoleon’s defeat.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -4027,7 +4027,7 @@
     "time": {
       "year_start": 1769
     },
-    "summary_short": "Richard Arkwright\u2019s water frame enables larger-scale spinning production and helps shift textiles toward factory organization.",
+    "summary_short": "Richard Arkwright’s water frame enables larger-scale spinning production and helps shift textiles toward factory organization.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -4053,7 +4053,7 @@
     "time": {
       "year_start": 1793
     },
-    "summary_short": "Eli Whitney\u2019s cotton gin speeds raw cotton processing, accelerating textile supply chains and industrial demand.",
+    "summary_short": "Eli Whitney’s cotton gin speeds raw cotton processing, accelerating textile supply chains and industrial demand.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -4079,7 +4079,7 @@
     "time": {
       "year_start": 1825
     },
-    "summary_short": "The first public railway to use steam locomotives for freight and passengers demonstrates rail transport\u2019s industrial potential.",
+    "summary_short": "The first public railway to use steam locomotives for freight and passengers demonstrates rail transport’s industrial potential.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -4260,7 +4260,9 @@
     "effects": [
       "ev_wwi_germany_blank_check_1914"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_franz_joseph_i"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4283,7 +4285,8 @@
       "ev_wwi_russia_mobilizes_1914"
     ],
     "people_ids": [
-      "pe_kaiser_wilhelm_ii"
+      "pe_kaiser_wilhelm_ii",
+      "pe_theobald_von_bethmann_hollweg"
     ],
     "question_types": [
       "timeline_before_after",
@@ -4329,9 +4332,13 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
-      "ev_wwi_battle_marne_1914"
+      "ev_wwi_battle_marne_1914",
+      "ev_wwi_japan_enters_war_1914",
+      "ev_wwi_ottoman_enters_war_1914"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_helmuth_von_moltke_younger"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4354,7 +4361,9 @@
     "effects": [
       "ev_wwi_trench_warfare_entrenched_1914"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_helmuth_von_moltke_younger"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4374,7 +4383,9 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
-      "ev_wwi_first_ypres_1914"
+      "ev_wwi_first_ypres_1914",
+      "ev_wwi_second_battle_ypres_gas_1915",
+      "ev_wwi_home_front_total_mobilization_1915"
     ],
     "people_ids": [],
     "question_types": [
@@ -4397,7 +4408,8 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
-      "ev_wwi_gallipoli_campaign_1915"
+      "ev_wwi_gallipoli_campaign_1915",
+      "ev_wwi_italy_enters_war_1915"
     ],
     "people_ids": [],
     "question_types": [
@@ -4418,8 +4430,13 @@
     "summary_short": "Allied attempts to force the Dardanelles failed, prolonging the war and reshaping Ottoman and imperial politics.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
-    "effects": [],
-    "people_ids": [],
+    "effects": [
+      "ev_wwi_arab_revolt_1916"
+    ],
+    "people_ids": [
+      "pe_mustafa_kemal_ataturk",
+      "pe_winston_churchill"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4461,9 +4478,12 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
-      "ev_wwi_somme_1916"
+      "ev_wwi_somme_1916",
+      "ev_wwi_home_front_total_mobilization_1915"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_philippe_petain"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4486,7 +4506,9 @@
     "effects": [
       "ev_wwi_jutland_1916"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_douglas_haig"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4529,9 +4551,12 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
-      "ev_wwi_us_enters_war_1917"
+      "ev_wwi_us_enters_war_1917",
+      "ev_wwi_zimmermann_telegram_1917"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_alfred_von_tirpitz"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4552,7 +4577,8 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
-      "ev_wwi_german_spring_offensive_1918"
+      "ev_wwi_german_spring_offensive_1918",
+      "ev_wwi_hundred_days_offensive_1918"
     ],
     "people_ids": [
       "pe_woodrow_wilson"
@@ -4577,10 +4603,12 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
-      "ev_wwi_bolshevik_revolution_1917"
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_treaty_brest_litovsk_1918"
     ],
     "people_ids": [
-      "pe_tsar_nicholas_ii"
+      "pe_tsar_nicholas_ii",
+      "pe_alexander_kerensky"
     ],
     "question_types": [
       "timeline_before_after",
@@ -4605,7 +4633,8 @@
       "ev_wwi_treaty_brest_litovsk_1918"
     ],
     "people_ids": [
-      "pe_vladimir_lenin"
+      "pe_vladimir_lenin",
+      "pe_alexander_kerensky"
     ],
     "question_types": [
       "timeline_before_after",
@@ -4654,7 +4683,10 @@
     "effects": [
       "ev_wwi_hundred_days_offensive_1918"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_erich_ludendorff",
+      "pe_paul_von_hindenburg"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4676,7 +4708,12 @@
     "effects": [
       "ev_wwi_armistice_1918"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_ferdinand_foch",
+      "pe_douglas_haig",
+      "pe_john_pershing",
+      "pe_georges_clemenceau"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4696,9 +4733,12 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
-      "ev_wwi_paris_peace_conference_1919"
+      "ev_wwi_paris_peace_conference_1919",
+      "ev_wwi_spanish_flu_1918"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_ferdinand_foch"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4718,10 +4758,14 @@
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
-      "ev_wwi_treaty_versailles_1919"
+      "ev_wwi_treaty_versailles_1919",
+      "ev_wwi_league_of_nations_1920"
     ],
     "people_ids": [
-      "pe_woodrow_wilson"
+      "pe_woodrow_wilson",
+      "pe_david_lloyd_george",
+      "pe_georges_clemenceau",
+      "pe_vittorio_orlando"
     ],
     "question_types": [
       "timeline_before_after",
@@ -4746,7 +4790,11 @@
       "ev_pan_african_congress_1945",
       "ev_india_independence_1947"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_woodrow_wilson",
+      "pe_david_lloyd_george",
+      "pe_georges_clemenceau"
+    ],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4776,6 +4824,298 @@
     ],
     "tags": [
       "political"
+    ]
+  },
+  {
+    "id": "ev_wwi_tannenberg_1914",
+    "label": "Battle of Tannenberg",
+    "time": {
+      "year_start": 1914
+    },
+    "summary_short": "German forces defeated a major Russian invasion in East Prussia, shaping the eastern war dynamic.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_brusilov_offensive_1916"
+    ],
+    "people_ids": [
+      "pe_paul_von_hindenburg",
+      "pe_erich_ludendorff"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "military"
+    ]
+  },
+  {
+    "id": "ev_wwi_japan_enters_war_1914",
+    "label": "Japan enters the war on the Allied side",
+    "time": {
+      "year_start": 1914
+    },
+    "summary_short": "Japan joined the Allies and seized German positions in East Asia, confirming the war's global scope.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "military",
+      "political"
+    ]
+  },
+  {
+    "id": "ev_wwi_ottoman_enters_war_1914",
+    "label": "Ottoman Empire enters World War I",
+    "time": {
+      "year_start": 1914
+    },
+    "summary_short": "Ottoman entry widened the conflict across the Middle East and strategic sea routes.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_gallipoli_campaign_1915",
+      "ev_wwi_armenian_genocide_begins_1915"
+    ],
+    "people_ids": [
+      "pe_mehmed_v",
+      "pe_enver_pasha"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "military",
+      "political"
+    ]
+  },
+  {
+    "id": "ev_wwi_second_battle_ypres_gas_1915",
+    "label": "Second Battle of Ypres and large-scale gas warfare",
+    "time": {
+      "year_start": 1915
+    },
+    "summary_short": "The battle marked major battlefield use of poison gas, reinforcing industrialized attrition.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_verdun_1916"
+    ],
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "military",
+      "technological"
+    ]
+  },
+  {
+    "id": "ev_wwi_italy_enters_war_1915",
+    "label": "Italy enters the war against Austria-Hungary",
+    "time": {
+      "year_start": 1915
+    },
+    "summary_short": "Italy joined the Entente after secret diplomacy, opening additional fronts in Europe.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "people_ids": [
+      "pe_vittorio_orlando"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "military",
+      "political"
+    ]
+  },
+  {
+    "id": "ev_wwi_home_front_total_mobilization_1915",
+    "label": "Home-front total mobilization expands",
+    "time": {
+      "year_start": 1915
+    },
+    "summary_short": "Governments reorganized labor, food supply, and industry for prolonged total war.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_state_propaganda_expands_1915",
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "people_ids": [
+      "pe_david_lloyd_george",
+      "pe_winston_churchill"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "economic",
+      "social",
+      "political"
+    ]
+  },
+  {
+    "id": "ev_wwi_state_propaganda_expands_1915",
+    "label": "State propaganda and censorship expand",
+    "time": {
+      "year_start": 1915
+    },
+    "summary_short": "Mass media and censorship were used to sustain morale, shape opinion, and support wartime policy.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "social",
+      "political"
+    ]
+  },
+  {
+    "id": "ev_wwi_brusilov_offensive_1916",
+    "label": "Brusilov Offensive",
+    "time": {
+      "year_start": 1916
+    },
+    "summary_short": "A major Russian offensive inflicted heavy losses on Austria-Hungary but strained Russia's own capacity.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_russian_february_revolution_1917"
+    ],
+    "people_ids": [
+      "pe_nikolai_brusilov"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "military"
+    ]
+  },
+  {
+    "id": "ev_wwi_arab_revolt_1916",
+    "label": "Arab Revolt begins",
+    "time": {
+      "year_start": 1916
+    },
+    "summary_short": "Arab forces revolted against Ottoman rule with British support, reshaping Middle Eastern wartime politics.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_balfour_declaration_1917"
+    ],
+    "people_ids": [
+      "pe_hussein_bin_ali",
+      "pe_te_lawrence"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "military",
+      "political"
+    ]
+  },
+  {
+    "id": "ev_wwi_zimmermann_telegram_1917",
+    "label": "Zimmermann Telegram",
+    "time": {
+      "year_start": 1917
+    },
+    "summary_short": "Germany's overture to Mexico was intercepted and publicized, intensifying U.S. support for entering the war.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "political"
+    ]
+  },
+  {
+    "id": "ev_wwi_balfour_declaration_1917",
+    "label": "Balfour Declaration",
+    "time": {
+      "year_start": 1917
+    },
+    "summary_short": "Britain endorsed a national home for the Jewish people in Palestine, linking wartime diplomacy to later regional conflict.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "people_ids": [
+      "pe_david_lloyd_george"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "political"
+    ]
+  },
+  {
+    "id": "ev_wwi_spanish_flu_1918",
+    "label": "Influenza pandemic intersects with demobilization",
+    "time": {
+      "year_start": 1918
+    },
+    "summary_short": "The influenza pandemic compounded wartime losses and strained post-armistice societies and governance.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "effects": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "people_ids": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "social"
     ]
   }
 ]

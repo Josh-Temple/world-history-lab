@@ -1194,5 +1194,735 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "reviewed"
+  },
+  {
+    "id": "pe_david_lloyd_george",
+    "name": "David Lloyd George",
+    "alt_names": [],
+    "birth_year": 1863,
+    "death_year": 1945,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "prime-minister",
+      "statesman"
+    ],
+    "summary_short": "British prime minister for most of the war who pushed total mobilization and postwar settlement goals.",
+    "related_events": [
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_david_lloyd_george",
+        "url": "https://example.com/internal/manual_person_pe_david_lloyd_george",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_georges_clemenceau",
+    "name": "Georges Clemenceau",
+    "alt_names": [],
+    "birth_year": 1841,
+    "death_year": 1929,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "prime-minister",
+      "statesman"
+    ],
+    "summary_short": "French wartime leader known for demanding a hard peace settlement after major wartime losses.",
+    "related_events": [
+      "ev_wwi_hundred_days_offensive_1918",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_georges_clemenceau",
+        "url": "https://example.com/internal/manual_person_pe_georges_clemenceau",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_ferdinand_foch",
+    "name": "Ferdinand Foch",
+    "alt_names": [],
+    "birth_year": 1851,
+    "death_year": 1929,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "general",
+      "commander"
+    ],
+    "summary_short": "French marshal who coordinated Allied command in 1918 during the final offensives.",
+    "related_events": [
+      "ev_wwi_hundred_days_offensive_1918",
+      "ev_wwi_armistice_1918"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_ferdinand_foch",
+        "url": "https://example.com/internal/manual_person_pe_ferdinand_foch",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_douglas_haig",
+    "name": "Douglas Haig",
+    "alt_names": [],
+    "birth_year": 1861,
+    "death_year": 1928,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "general",
+      "commander"
+    ],
+    "summary_short": "Senior British commander on the Western Front during major attritional battles.",
+    "related_events": [
+      "ev_wwi_somme_1916",
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_douglas_haig",
+        "url": "https://example.com/internal/manual_person_pe_douglas_haig",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_john_pershing",
+    "name": "John J. Pershing",
+    "alt_names": [],
+    "birth_year": 1860,
+    "death_year": 1948,
+    "regions": [
+      "reg_north_america",
+      "reg_europe"
+    ],
+    "roles": [
+      "general",
+      "commander"
+    ],
+    "summary_short": "Commander of the American Expeditionary Forces after U.S. entry into the war.",
+    "related_events": [
+      "ev_wwi_us_enters_war_1917",
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_john_pershing",
+        "url": "https://example.com/internal/manual_person_pe_john_pershing",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_philippe_petain",
+    "name": "Philippe Pétain",
+    "alt_names": [],
+    "birth_year": 1856,
+    "death_year": 1951,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "general",
+      "commander"
+    ],
+    "summary_short": "French general associated with the defense of Verdun during one of the war's bloodiest campaigns.",
+    "related_events": [
+      "ev_wwi_verdun_1916"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_philippe_petain",
+        "url": "https://example.com/internal/manual_person_pe_philippe_petain",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_erich_ludendorff",
+    "name": "Erich Ludendorff",
+    "alt_names": [],
+    "birth_year": 1865,
+    "death_year": 1937,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "general",
+      "military-strategist"
+    ],
+    "summary_short": "German general who helped shape late-war strategy, including the 1918 spring offensives.",
+    "related_events": [
+      "ev_wwi_tannenberg_1914",
+      "ev_wwi_german_spring_offensive_1918"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_erich_ludendorff",
+        "url": "https://example.com/internal/manual_person_pe_erich_ludendorff",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_paul_von_hindenburg",
+    "name": "Paul von Hindenburg",
+    "alt_names": [],
+    "birth_year": 1847,
+    "death_year": 1934,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "general",
+      "field-marshal"
+    ],
+    "summary_short": "German field marshal celebrated after Tannenberg and later central to wartime command.",
+    "related_events": [
+      "ev_wwi_tannenberg_1914",
+      "ev_wwi_german_spring_offensive_1918"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_paul_von_hindenburg",
+        "url": "https://example.com/internal/manual_person_pe_paul_von_hindenburg",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_helmuth_von_moltke_younger",
+    "name": "Helmuth von Moltke the Younger",
+    "alt_names": [],
+    "birth_year": 1848,
+    "death_year": 1916,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "general",
+      "commander"
+    ],
+    "summary_short": "German chief of staff at the start of the war, associated with early war-planning execution.",
+    "related_events": [
+      "ev_wwi_germany_invades_belgium_1914",
+      "ev_wwi_battle_marne_1914"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_helmuth_von_moltke_younger",
+        "url": "https://example.com/internal/manual_person_pe_helmuth_von_moltke_younger",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_theobald_von_bethmann_hollweg",
+    "name": "Theobald von Bethmann Hollweg",
+    "alt_names": [],
+    "birth_year": 1856,
+    "death_year": 1921,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "chancellor",
+      "statesman"
+    ],
+    "summary_short": "German chancellor during escalation and early war years, involved in July Crisis decision-making.",
+    "related_events": [
+      "ev_wwi_germany_blank_check_1914",
+      "ev_wwi_unrestricted_submarine_1917"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_theobald_von_bethmann_hollweg",
+        "url": "https://example.com/internal/manual_person_pe_theobald_von_bethmann_hollweg",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_franz_joseph_i",
+    "name": "Franz Joseph I",
+    "alt_names": [],
+    "birth_year": 1830,
+    "death_year": 1916,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "emperor",
+      "monarch"
+    ],
+    "summary_short": "Emperor of Austria-Hungary whose state issued the ultimatum to Serbia in 1914.",
+    "related_events": [
+      "ev_wwi_austria_ultimatum_serbia_1914"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_franz_joseph_i",
+        "url": "https://example.com/internal/manual_person_pe_franz_joseph_i",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_mehmed_v",
+    "name": "Mehmed V",
+    "alt_names": [],
+    "birth_year": 1844,
+    "death_year": 1918,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "sultan",
+      "monarch"
+    ],
+    "summary_short": "Ottoman sultan during the empire's wartime alignment with the Central Powers.",
+    "related_events": [
+      "ev_wwi_ottoman_enters_war_1914",
+      "ev_wwi_armenian_genocide_begins_1915"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_mehmed_v",
+        "url": "https://example.com/internal/manual_person_pe_mehmed_v",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_enver_pasha",
+    "name": "Enver Pasha",
+    "alt_names": [],
+    "birth_year": 1881,
+    "death_year": 1922,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "military-leader",
+      "statesman"
+    ],
+    "summary_short": "Ottoman leader tied to wartime strategy and coercive internal wartime policies.",
+    "related_events": [
+      "ev_wwi_ottoman_enters_war_1914",
+      "ev_wwi_armenian_genocide_begins_1915"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_enver_pasha",
+        "url": "https://example.com/internal/manual_person_pe_enver_pasha",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_mustafa_kemal_ataturk",
+    "name": "Mustafa Kemal Atatürk",
+    "alt_names": [],
+    "birth_year": 1881,
+    "death_year": 1938,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "officer",
+      "commander"
+    ],
+    "summary_short": "Ottoman officer whose role at Gallipoli raised his profile before the Turkish national movement.",
+    "related_events": [
+      "ev_wwi_gallipoli_campaign_1915"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_mustafa_kemal_ataturk",
+        "url": "https://example.com/internal/manual_person_pe_mustafa_kemal_ataturk",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_te_lawrence",
+    "name": "T. E. Lawrence",
+    "alt_names": [],
+    "birth_year": 1888,
+    "death_year": 1935,
+    "regions": [
+      "reg_middle_east",
+      "reg_europe"
+    ],
+    "roles": [
+      "officer",
+      "liaison"
+    ],
+    "summary_short": "British liaison figure associated with the Arab Revolt against Ottoman rule.",
+    "related_events": [
+      "ev_wwi_arab_revolt_1916"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_te_lawrence",
+        "url": "https://example.com/internal/manual_person_pe_te_lawrence",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_hussein_bin_ali",
+    "name": "Hussein bin Ali",
+    "alt_names": [],
+    "birth_year": 1854,
+    "death_year": 1931,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "sharif",
+      "political-leader"
+    ],
+    "summary_short": "Sharif of Mecca who launched the Arab Revolt during the war.",
+    "related_events": [
+      "ev_wwi_arab_revolt_1916"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_hussein_bin_ali",
+        "url": "https://example.com/internal/manual_person_pe_hussein_bin_ali",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_nikolai_brusilov",
+    "name": "Nikolai Brusilov",
+    "alt_names": [],
+    "birth_year": 1853,
+    "death_year": 1926,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "general",
+      "commander"
+    ],
+    "summary_short": "Russian general whose 1916 offensive temporarily pressured Austro-Hungarian forces.",
+    "related_events": [
+      "ev_wwi_brusilov_offensive_1916"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_nikolai_brusilov",
+        "url": "https://example.com/internal/manual_person_pe_nikolai_brusilov",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_alexander_kerensky",
+    "name": "Alexander Kerensky",
+    "alt_names": [],
+    "birth_year": 1881,
+    "death_year": 1970,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "political-leader",
+      "statesman"
+    ],
+    "summary_short": "Russian Provisional Government leader between the February and Bolshevik revolutions.",
+    "related_events": [
+      "ev_wwi_russian_february_revolution_1917",
+      "ev_wwi_bolshevik_revolution_1917"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_alexander_kerensky",
+        "url": "https://example.com/internal/manual_person_pe_alexander_kerensky",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_winston_churchill",
+    "name": "Winston Churchill",
+    "alt_names": [],
+    "birth_year": 1874,
+    "death_year": 1965,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "statesman",
+      "minister"
+    ],
+    "summary_short": "British statesman involved in wartime strategy debates, especially around Gallipoli and mobilization.",
+    "related_events": [
+      "ev_wwi_gallipoli_campaign_1915",
+      "ev_wwi_home_front_total_mobilization_1915"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_winston_churchill",
+        "url": "https://example.com/internal/manual_person_pe_winston_churchill",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_vittorio_orlando",
+    "name": "Vittorio Orlando",
+    "alt_names": [],
+    "birth_year": 1860,
+    "death_year": 1952,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "prime-minister",
+      "statesman"
+    ],
+    "summary_short": "Italian prime minister at the Paris Peace Conference representing Italian territorial claims.",
+    "related_events": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_vittorio_orlando",
+        "url": "https://example.com/internal/manual_person_pe_vittorio_orlando",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_alfred_von_tirpitz",
+    "name": "Alfred von Tirpitz",
+    "alt_names": [],
+    "birth_year": 1849,
+    "death_year": 1930,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "admiral",
+      "naval-strategist"
+    ],
+    "summary_short": "German naval strategist linked to prewar and wartime naval expansion policies.",
+    "related_events": [
+      "ev_wwi_naval_arms_race_1898_1914",
+      "ev_wwi_unrestricted_submarine_1917"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_alfred_von_tirpitz",
+        "url": "https://example.com/internal/manual_person_pe_alfred_von_tirpitz",
+        "retrieved_at": "2026-04-07T00:00:00Z",
+        "notes": "WWI expansion curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
   }
 ]
