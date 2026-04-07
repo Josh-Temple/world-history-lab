@@ -200,7 +200,19 @@
       "ev_wwi_armistice_1918",
       "ev_wwi_paris_peace_conference_1919",
       "ev_wwi_treaty_versailles_1919",
-      "ev_wwi_league_of_nations_1920"
+      "ev_wwi_league_of_nations_1920",
+      "ev_wwi_tannenberg_1914",
+      "ev_wwi_japan_enters_war_1914",
+      "ev_wwi_ottoman_enters_war_1914",
+      "ev_wwi_second_battle_ypres_gas_1915",
+      "ev_wwi_italy_enters_war_1915",
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_state_propaganda_expands_1915",
+      "ev_wwi_brusilov_offensive_1916",
+      "ev_wwi_arab_revolt_1916",
+      "ev_wwi_zimmermann_telegram_1917",
+      "ev_wwi_balfour_declaration_1917",
+      "ev_wwi_spanish_flu_1918"
     ]
   }
 ]

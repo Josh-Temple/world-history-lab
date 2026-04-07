@@ -4884,6 +4884,44 @@
     }
   },
   {
+    "id": "ev_wwi_arab_revolt_1916",
+    "label": "Arab Revolt begins",
+    "summary_short": "Arab forces revolted against Ottoman rule with British support, reshaping Middle Eastern wartime politics.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_hussein_bin_ali",
+      "pe_te_lawrence"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_balfour_declaration_1917"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1916",
+      "end": "1916",
+      "year_start": 1916,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19160101,
+      "sort_end": 19161231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1916
+    }
+  },
+  {
     "id": "ev_wwi_armenian_genocide_begins_1915",
     "label": "Armenian genocide begins",
     "summary_short": "Mass deportations and killings of Armenians in the Ottoman Empire marked one of the war's gravest humanitarian catastrophes.",
@@ -4929,12 +4967,15 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_ferdinand_foch"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
     "effects": [
-      "ev_wwi_paris_peace_conference_1919"
+      "ev_wwi_paris_peace_conference_1919",
+      "ev_wwi_spanish_flu_1918"
     ],
     "causes": [],
     "time": {
@@ -5002,7 +5043,9 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_franz_joseph_i"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -5022,6 +5065,43 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1914
+    }
+  },
+  {
+    "id": "ev_wwi_balfour_declaration_1917",
+    "label": "Balfour Declaration",
+    "summary_short": "Britain endorsed a national home for the Jewish people in Palestine, linking wartime diplomacy to later regional conflict.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_david_lloyd_george"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1917",
+      "end": "1917",
+      "year_start": 1917,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19170101,
+      "sort_end": 19171231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1917
     }
   },
   {
@@ -5072,7 +5152,9 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_helmuth_von_moltke_younger"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -5108,7 +5190,8 @@
       "cause_and_effect"
     ],
     "people_ids": [
-      "pe_vladimir_lenin"
+      "pe_vladimir_lenin",
+      "pe_alexander_kerensky"
     ],
     "unit_ids": [
       "unit_world_war_i"
@@ -5132,6 +5215,43 @@
     }
   },
   {
+    "id": "ev_wwi_brusilov_offensive_1916",
+    "label": "Brusilov Offensive",
+    "summary_short": "A major Russian offensive inflicted heavy losses on Austria-Hungary but strained Russia's own capacity.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_nikolai_brusilov"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_russian_february_revolution_1917"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1916",
+      "end": "1916",
+      "year_start": 1916,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19160101,
+      "sort_end": 19161231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1916
+    }
+  },
+  {
     "id": "ev_wwi_first_ypres_1914",
     "label": "First Battle of Ypres",
     "summary_short": "Heavy losses at Ypres confirmed that quick victory was unlikely on the Western Front.",
@@ -5149,7 +5269,8 @@
       "unit_world_war_i"
     ],
     "effects": [
-      "ev_wwi_gallipoli_campaign_1915"
+      "ev_wwi_gallipoli_campaign_1915",
+      "ev_wwi_italy_enters_war_1915"
     ],
     "causes": [],
     "time": {
@@ -5179,11 +5300,16 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_mustafa_kemal_ataturk",
+      "pe_winston_churchill"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
-    "effects": [],
+    "effects": [
+      "ev_wwi_arab_revolt_1916"
+    ],
     "causes": [],
     "time": {
       "start": "1915",
@@ -5212,7 +5338,10 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_erich_ludendorff",
+      "pe_paul_von_hindenburg"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -5248,7 +5377,8 @@
       "cause_and_effect"
     ],
     "people_ids": [
-      "pe_kaiser_wilhelm_ii"
+      "pe_kaiser_wilhelm_ii",
+      "pe_theobald_von_bethmann_hollweg"
     ],
     "unit_ids": [
       "unit_world_war_i"
@@ -5284,12 +5414,16 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_helmuth_von_moltke_younger"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
     "effects": [
-      "ev_wwi_battle_marne_1914"
+      "ev_wwi_battle_marne_1914",
+      "ev_wwi_japan_enters_war_1914",
+      "ev_wwi_ottoman_enters_war_1914"
     ],
     "causes": [],
     "time": {
@@ -5307,6 +5441,45 @@
     }
   },
   {
+    "id": "ev_wwi_home_front_total_mobilization_1915",
+    "label": "Home-front total mobilization expands",
+    "summary_short": "Governments reorganized labor, food supply, and industry for prolonged total war.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_david_lloyd_george",
+      "pe_winston_churchill"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_state_propaganda_expands_1915",
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1915",
+      "end": "1915",
+      "year_start": 1915,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19150101,
+      "sort_end": 19151231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1915
+    }
+  },
+  {
     "id": "ev_wwi_hundred_days_offensive_1918",
     "label": "Hundred Days Offensive",
     "summary_short": "Allied counteroffensives broke German operational capacity in the final phase of the war.",
@@ -5319,7 +5492,12 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_ferdinand_foch",
+      "pe_douglas_haig",
+      "pe_john_pershing",
+      "pe_georges_clemenceau"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -5339,6 +5517,78 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1918
+    }
+  },
+  {
+    "id": "ev_wwi_italy_enters_war_1915",
+    "label": "Italy enters the war against Austria-Hungary",
+    "summary_short": "Italy joined the Entente after secret diplomacy, opening additional fronts in Europe.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_vittorio_orlando"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1915",
+      "end": "1915",
+      "year_start": 1915,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19150101,
+      "sort_end": 19151231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1915
+    }
+  },
+  {
+    "id": "ev_wwi_japan_enters_war_1914",
+    "label": "Japan enters the war on the Allied side",
+    "summary_short": "Japan joined the Allies and seized German positions in East Asia, confirming the war's global scope.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
     }
   },
   {
@@ -5449,6 +5699,45 @@
     }
   },
   {
+    "id": "ev_wwi_ottoman_enters_war_1914",
+    "label": "Ottoman Empire enters World War I",
+    "summary_short": "Ottoman entry widened the conflict across the Middle East and strategic sea routes.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_mehmed_v",
+      "pe_enver_pasha"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_gallipoli_campaign_1915",
+      "ev_wwi_armenian_genocide_begins_1915"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
+    }
+  },
+  {
     "id": "ev_wwi_paris_peace_conference_1919",
     "label": "Paris Peace Conference",
     "summary_short": "Victorious powers designed the postwar order, redrew borders, and debated collective security.",
@@ -5462,13 +5751,17 @@
       "cause_and_effect"
     ],
     "people_ids": [
-      "pe_woodrow_wilson"
+      "pe_woodrow_wilson",
+      "pe_david_lloyd_george",
+      "pe_georges_clemenceau",
+      "pe_vittorio_orlando"
     ],
     "unit_ids": [
       "unit_world_war_i"
     ],
     "effects": [
-      "ev_wwi_treaty_versailles_1919"
+      "ev_wwi_treaty_versailles_1919",
+      "ev_wwi_league_of_nations_1920"
     ],
     "causes": [],
     "time": {
@@ -5536,13 +5829,15 @@
       "cause_and_effect"
     ],
     "people_ids": [
-      "pe_tsar_nicholas_ii"
+      "pe_tsar_nicholas_ii",
+      "pe_alexander_kerensky"
     ],
     "unit_ids": [
       "unit_world_war_i"
     ],
     "effects": [
-      "ev_wwi_bolshevik_revolution_1917"
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_treaty_brest_litovsk_1918"
     ],
     "causes": [],
     "time": {
@@ -5560,6 +5855,41 @@
     }
   },
   {
+    "id": "ev_wwi_second_battle_ypres_gas_1915",
+    "label": "Second Battle of Ypres and large-scale gas warfare",
+    "summary_short": "The battle marked major battlefield use of poison gas, reinforcing industrialized attrition.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_verdun_1916"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1915",
+      "end": "1915",
+      "year_start": 1915,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19150101,
+      "sort_end": 19151231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1915
+    }
+  },
+  {
     "id": "ev_wwi_somme_1916",
     "label": "Battle of the Somme",
     "summary_short": "The Somme offensives inflicted massive casualties while yielding limited territorial gains.",
@@ -5572,7 +5902,9 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_douglas_haig"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -5592,6 +5924,114 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1916
+    }
+  },
+  {
+    "id": "ev_wwi_spanish_flu_1918",
+    "label": "Influenza pandemic intersects with demobilization",
+    "summary_short": "The influenza pandemic compounded wartime losses and strained post-armistice societies and governance.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1918",
+      "end": "1918",
+      "year_start": 1918,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19180101,
+      "sort_end": 19181231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1918
+    }
+  },
+  {
+    "id": "ev_wwi_state_propaganda_expands_1915",
+    "label": "State propaganda and censorship expand",
+    "summary_short": "Mass media and censorship were used to sustain morale, shape opinion, and support wartime policy.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1915",
+      "end": "1915",
+      "year_start": 1915,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19150101,
+      "sort_end": 19151231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1915
+    }
+  },
+  {
+    "id": "ev_wwi_tannenberg_1914",
+    "label": "Battle of Tannenberg",
+    "summary_short": "German forces defeated a major Russian invasion in East Prussia, shaping the eastern war dynamic.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [
+      "pe_paul_von_hindenburg",
+      "pe_erich_ludendorff"
+    ],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_brusilov_offensive_1916"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1914",
+      "end": "1914",
+      "year_start": 1914,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19140101,
+      "sort_end": 19141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1914
     }
   },
   {
@@ -5644,7 +6084,11 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_woodrow_wilson",
+      "pe_david_lloyd_george",
+      "pe_georges_clemenceau"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -5686,7 +6130,9 @@
       "unit_world_war_i"
     ],
     "effects": [
-      "ev_wwi_first_ypres_1914"
+      "ev_wwi_first_ypres_1914",
+      "ev_wwi_second_battle_ypres_gas_1915",
+      "ev_wwi_home_front_total_mobilization_1915"
     ],
     "causes": [],
     "time": {
@@ -5716,12 +6162,15 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_alfred_von_tirpitz"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
     "effects": [
-      "ev_wwi_us_enters_war_1917"
+      "ev_wwi_us_enters_war_1917",
+      "ev_wwi_zimmermann_telegram_1917"
     ],
     "causes": [],
     "time": {
@@ -5758,7 +6207,8 @@
       "unit_world_war_i"
     ],
     "effects": [
-      "ev_wwi_german_spring_offensive_1918"
+      "ev_wwi_german_spring_offensive_1918",
+      "ev_wwi_hundred_days_offensive_1918"
     ],
     "causes": [],
     "time": {
@@ -5788,12 +6238,15 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "people_ids": [],
+    "people_ids": [
+      "pe_philippe_petain"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
     "effects": [
-      "ev_wwi_somme_1916"
+      "ev_wwi_somme_1916",
+      "ev_wwi_home_front_total_mobilization_1915"
     ],
     "causes": [],
     "time": {
@@ -5808,6 +6261,41 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1916
+    }
+  },
+  {
+    "id": "ev_wwi_zimmermann_telegram_1917",
+    "label": "Zimmermann Telegram",
+    "summary_short": "Germany's overture to Mexico was intercepted and publicized, intensifying U.S. support for entering the war.",
+    "status": "reviewed",
+    "category": null,
+    "importance": null,
+    "location": null,
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_world_war_i"
+    ],
+    "effects": [
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "causes": [],
+    "time": {
+      "start": "1917",
+      "end": "1917",
+      "year_start": 1917,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 19170101,
+      "sort_end": 19171231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1917
     }
   }
 ]
