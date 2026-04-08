@@ -1,3 +1,10 @@
+## Incremental update (2026-04-08 · Causal Chain Reconstruction mode)
+
+- Added new learner-facing app route: `apps/causal-chain/` for multi-step causal chain reconstruction using drag-and-drop reordering.
+- App loads precomputed chains from `data/derived/causal_chains.json`, supports unit-scoped filtering, validates chain order, and records per-event mastery outcomes.
+- Extended derive pipeline (`scripts/derive.mjs`) to emit chain data to both `derived/causality_chains.json` and `data/derived/causal_chains.json` for compatibility with new and existing modes.
+- Updated homepage (`index.html`) and offline precache list (`service-worker.js`) to include the new Causal Chain Reconstruction mode.
+
 ## Incremental update (2026-04-07 · WWI flagship density + people graph expansion)
 - Expanded `data/units/unit_world_war_i.json` from 27 to 39 events to raise replay density for timeline, causality, and sequence modes.
 - Added 12 reviewed WWI events in `data/events.json` covering additional fronts/theaters, home-front mobilization, propaganda, and diplomatic wartime transitions.
