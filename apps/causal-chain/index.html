@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="manifest" href="/pwa/manifest.webmanifest" />
+    <link rel="icon" href="/assets/pwa/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/pwa/apple-touch-icon.svg" />
+    <title>Causal Chain Reconstruction</title>
+    <link rel="stylesheet" href="../sequence-reconstruction/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <p><a class="back-link" href="/">← Back to World History Lab</a></p>
+
+      <header class="page-header">
+        <p class="eyebrow">new learning mode</p>
+        <h1>Causal Chain Reconstruction</h1>
+        <p class="lead">Reconstruct a 3-5 step causal chain to practice multi-step historical reasoning.</p>
+      </header>
+
+      <section class="panel" aria-labelledby="chain-title">
+        <h2 id="chain-title">Reconstruct the chain</h2>
+        <div class="setup">
+          <label for="unit-select">Unit focus</label>
+          <select id="unit-select"></select>
+          <p id="unit-hint" class="muted">Using all units.</p>
+          <p id="next-unit-hint" class="muted"></p>
+        </div>
+        <p id="prompt" class="muted">Drag to reorder events into the correct causal sequence, then submit.</p>
+        <ul id="chain-container" aria-label="Shuffled causal chain"></ul>
+        <div class="actions">
+          <button id="submit" type="button">Submit</button>
+          <button id="next" type="button">New chain</button>
+        </div>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="/pwa/register-sw.js"></script>
+  </body>
+</html>

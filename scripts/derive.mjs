@@ -4,6 +4,7 @@ import { validateData } from "./validate-data.mjs";
 
 const ROOT = process.cwd();
 const DERIVED_DIR = path.join(ROOT, "derived");
+const DATA_DERIVED_DIR = path.join(ROOT, "data", "derived");
 const ALLOWED_TAGS = new Set(["political", "economic", "technological", "social", "military"]);
 
 const FALLBACK_UNIT_FILES = [
@@ -684,15 +685,17 @@ async function main() {
     .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
 
   await mkdir(DERIVED_DIR, { recursive: true });
+  await mkdir(DATA_DERIVED_DIR, { recursive: true });
   await writeFile(path.join(DERIVED_DIR, "events.normalized.json"), toJson(normalizedEvents), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.events_by_year.json"), toJson(eventsByYear), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.events_sorted.json"), toJson(eventsSorted), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.units.json"), toJson(unitsIndex), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.unit_event_pool.json"), toJson(unitEventPool), "utf8");
   await writeFile(path.join(DERIVED_DIR, "causality_chains.json"), toJson(causalityChains), "utf8");
+  await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
 
   console.log(
-    `[derive] Validation summary: ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events, ${Object.keys(eventsByYear).length} year buckets, ${unitEventPoolTypeCount} unit/type eligibility pools, and ${causalityChains.length} causality chains in /derived.`
+    `[derive] Validation summary: ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events, ${Object.keys(eventsByYear).length} year buckets, ${unitEventPoolTypeCount} unit/type eligibility pools, and ${causalityChains.length} causality chains in /derived and /data/derived.`
   );
 }
 
