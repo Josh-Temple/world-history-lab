@@ -2,6 +2,7 @@ import { filterDerivedEvents, loadDerivedEvents, loadUnitsIndex } from "../share
 import { isCausalityReady } from "../shared/event-filters.js";
 import { recordResult } from "../shared/mastery-store.js";
 import { showFeedback } from "../shared/feedback.js";
+import { mountHeader } from "../shared/header.js";
 
 const sourceYearEl = document.getElementById('source-year');
 const sourceLabelEl = document.getElementById('source-label');
@@ -29,6 +30,19 @@ const state = {
   currentQuestion: null,
   answered: 0,
 };
+
+const appHeader = mountHeader({
+  container: document.querySelector("main") || document.body,
+  mode: "Causality Builder",
+  progress: "1",
+});
+
+function refreshHeader() {
+  appHeader.update({
+    unit: unitSelectEl.selectedOptions[0]?.textContent || "All units",
+    progress: `${Math.max(state.answered, 0) + 1}`,
+  });
+}
 
 function isValidEvent(event) {
   return Boolean(
@@ -150,6 +164,7 @@ function refreshPool() {
     ? `Focused on ${unitSelectEl.selectedOptions[0]?.textContent || selectedUnitId}.`
     : 'Using all units.';
   questionCountEl.textContent = `Question ${state.answered + 1}`;
+  refreshHeader();
   renderQuestion();
 }
 
@@ -239,6 +254,7 @@ function handleAnswer(selectedButton, option) {
   explanationEl.textContent = `${source.label} (${source.time.year_start}) led toward ${correct.label} (${correct.time.year_start}).`;
   nextButton.disabled = false;
   state.answered += 1;
+  refreshHeader();
   updateNextStep();
 }
 
@@ -274,3 +290,4 @@ unitSelectEl.addEventListener('change', () => {
 });
 
 init();
+refreshHeader();

@@ -1,3 +1,25 @@
+## Incremental update (2026-04-09 · Guided session flow + shared app header)
+
+- Added a new guided route at `apps/session-runner/`:
+  - `apps/session-runner/index.html`
+  - `apps/session-runner/app.js`
+- The guided runner now sequences a one-click flow across Timeline Trainer → Sequence Reconstruction → Causality Builder → Event Recognition with a simple mode/step progress indicator and completion state.
+- Updated `index.html` to replace the previous start card link with a **Start Learning** button that opens `/apps/session-runner/index.html`.
+- Added `apps/shared/header.js` and integrated it across active app scripts so each mode shows consistent, low-weight context for:
+  - selected unit
+  - mode label
+  - progress summary
+- Updated `apps/shared/data-store.js` with `getStoredUnitId()` and `setStoredUnitId()` helpers for safe unit persistence access.
+
+## Validation completed (2026-04-09)
+- `node scripts/derive.mjs` ✅ (passes; existing baseline unknown-tag and content warnings remain)
+- `node scripts/validate-data.mjs` ✅ (passes with existing baseline warnings)
+
+## Suggested next steps
+1. Replace the session runner’s manual **Complete Step** button with app-emitted progress events (`postMessage`) so mode transitions occur automatically when actual question milestones are reached.
+2. Unify header progress semantics (`x/y` consistently) across apps that currently show round/chain descriptors.
+3. Add a lightweight smoke test that loads `/apps/session-runner/` and confirms all guided mode links resolve.
+
 ## Incremental update (2026-04-08 · Causal Chain Reconstruction mode)
 
 - Added new learner-facing app route: `apps/causal-chain/` for multi-step causal chain reconstruction using drag-and-drop reordering.

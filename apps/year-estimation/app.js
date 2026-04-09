@@ -1,6 +1,7 @@
 import { recordResult } from '../shared/mastery-store.js';
 import { getAllEvents, getUnits } from '../shared/data-store.js';
 import { showFeedback } from '../shared/feedback.js';
+import { mountHeader } from '../shared/header.js';
 
 const eventLabel = document.getElementById('event-label');
 const eventSummary = document.getElementById('event-summary');
@@ -16,6 +17,19 @@ let allEvents = [];
 let units = [];
 let usableEvents = [];
 let currentEvent = null;
+
+const appHeader = mountHeader({
+  container: document.querySelector('main') || document.body,
+  mode: 'Year Estimation',
+  progress: 'Practice',
+});
+
+function refreshHeader() {
+  appHeader.update({
+    unit: unitSelect.selectedOptions[0]?.textContent || 'All units',
+    progress: 'Continuous',
+  });
+}
 
 function isValidEvent(event) {
   return Boolean(
@@ -65,6 +79,7 @@ function applyUnitFilter() {
   if (!selectedUnitId) {
     usableEvents = allEvents.slice();
     setupHint.textContent = 'Using all units.';
+    refreshHeader();
     return;
   }
 
@@ -72,6 +87,7 @@ function applyUnitFilter() {
   const eventIdSet = new Set(Array.isArray(selectedUnit?.event_ids) ? selectedUnit.event_ids : []);
   usableEvents = allEvents.filter((event) => eventIdSet.has(event.id));
   setupHint.textContent = `Focused on ${selectedUnit?.title || selectedUnitId}.`;
+  refreshHeader();
 }
 
 function populateUnitOptions() {
@@ -91,6 +107,7 @@ function populateUnitOptions() {
   const savedUnit = localStorage.getItem(SELECTED_UNIT_KEY) || '';
   const isKnown = units.some((unit) => unit.id === savedUnit);
   unitSelect.value = isKnown ? savedUnit : '';
+  refreshHeader();
 }
 
 function renderQuestion(event) {
@@ -176,3 +193,4 @@ unitSelect.addEventListener('change', () => {
 });
 
 init();
+refreshHeader();

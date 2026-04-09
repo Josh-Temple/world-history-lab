@@ -2,6 +2,7 @@ import { loadDerivedEvents } from "../shared/data-access.js";
 import { getEventsForUnit, getNextUnit, getUnits } from "../shared/data-store.js";
 import { recordResult } from "../shared/mastery-store.js";
 import { showFeedback } from "../shared/feedback.js";
+import { mountHeader } from "../shared/header.js";
 
 const listEl = document.getElementById("event-list");
 const checkBtn = document.getElementById("check");
@@ -21,6 +22,19 @@ const state = {
   chain: [],
   units: [],
 };
+
+const appHeader = mountHeader({
+  container: document.querySelector("main") || document.body,
+  mode: "Sequence Reconstruction",
+  progress: "Ready",
+});
+
+function refreshHeader() {
+  appHeader.update({
+    unit: unitSelect.selectedOptions[0]?.textContent || "All units",
+    progress: state.chains.length > 0 ? `Chain ${state.chain.length || 0}` : "No chains",
+  });
+}
 
 function isValidEvent(event) {
   return Boolean(
@@ -185,6 +199,7 @@ function newRound() {
     explanationEl.textContent = "";
     checkBtn.disabled = true;
     nextBtn.disabled = true;
+    refreshHeader();
     return;
   }
 
@@ -194,6 +209,7 @@ function newRound() {
   explanationEl.textContent = "";
   checkBtn.disabled = false;
   nextBtn.disabled = false;
+  refreshHeader();
 }
 
 function checkOrder() {
@@ -274,3 +290,4 @@ unitSelect.addEventListener("change", async () => {
 });
 
 init();
+refreshHeader();
