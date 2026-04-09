@@ -85,6 +85,8 @@
         margin-top: 0.8rem;
         background: var(--accent);
         color: #fff;
+        border: 0;
+        cursor: pointer;
       }
 
       .primary-btn:hover,
@@ -204,10 +206,8 @@
 
       <section class="panel start-learning" aria-labelledby="start-learning-heading">
         <h2 id="start-learning-heading">Start here</h2>
-        <p class="section-help">Begin with fast recognition so your core events become familiar before deeper analysis.</p>
-        <div class="app-list">
-          <a href="apps/event-recognition/" class="app-link">Event Recognition</a>
-        </div>
+        <p class="section-help">Begin with one guided session that automatically moves across modes and keeps your cognitive load low.</p>
+        <button id="start-learning" class="primary-btn" type="button">Start Learning</button>
       </section>
 
       <section class="panel" aria-labelledby="build-understanding-heading">
@@ -319,6 +319,10 @@
           renderUnitCards([]);
         }
       }
+
+      document.getElementById("start-learning")?.addEventListener("click", () => {
+        window.location.href = "/apps/session-runner/index.html";
+      });
 
       loadCounts();
     </script>

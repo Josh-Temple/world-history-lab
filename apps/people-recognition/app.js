@@ -1,6 +1,7 @@
 import { REVIEWED_PLUS, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
 import { getAllPeople } from "../shared/data-store.js";
 import { showFeedback } from "../shared/feedback.js";
+import { mountHeader } from "../shared/header.js";
 
 const personNameElement = document.getElementById("person-name");
 const personSummaryElement = document.getElementById("person-summary");
@@ -28,6 +29,22 @@ const state = {
   correctAnswers: 0,
   sessionActive: false,
 };
+
+const appHeader = mountHeader({
+  container: document.querySelector("main") || document.body,
+  mode: "People Recognition",
+  progress: "0/0",
+});
+
+function refreshHeader() {
+  const unitLabel = practiceModeSelect.value === "unit"
+    ? (unitSelect.selectedOptions[0]?.textContent || "Selected unit")
+    : "All units";
+  appHeader.update({
+    unit: unitLabel,
+    progress: `${Math.min(state.currentQuestionIndex + 1, state.totalQuestions)}/${state.totalQuestions}`,
+  });
+}
 
 function isValidEvent(event) {
   return Boolean(
@@ -166,6 +183,7 @@ function disableChoices() {
 
 function updateProgress() {
   progressElement.textContent = `Question ${Math.min(state.currentQuestionIndex + 1, state.totalQuestions)} of ${state.totalQuestions}`;
+  refreshHeader();
 }
 
 function resetRoundUi() {
@@ -191,6 +209,7 @@ function showSummary() {
   answerMetaElement.textContent = "";
   nextButton.hidden = true;
   progressElement.textContent = `Completed ${state.totalQuestions} of ${state.totalQuestions}`;
+  appHeader.update({ progress: `${state.totalQuestions}/${state.totalQuestions}` });
   sessionStatusElement.textContent = "Use the result to decide whether to repeat people practice or move forward.";
   summaryElement.hidden = false;
   summaryElement.innerHTML = `
@@ -333,6 +352,7 @@ function startSession() {
   summaryElement.hidden = true;
   nextButton.hidden = false;
   renderQuestion();
+  refreshHeader();
 }
 
 function handleAdvance() {
@@ -388,3 +408,4 @@ sessionLengthSelect.addEventListener("change", startSession);
 nextButton.addEventListener("click", handleAdvance);
 
 init();
+refreshHeader();

@@ -145,3 +145,19 @@ export function getNextUnit(units, currentUnitId) {
   if (currentIndex < 0 || currentIndex + 1 >= units.length) return null;
   return units[currentIndex + 1];
 }
+
+export function getStoredUnitId() {
+  try {
+    return localStorage.getItem("selected_unit") || "";
+  } catch {
+    return "";
+  }
+}
+
+export function setStoredUnitId(unitId) {
+  try {
+    localStorage.setItem("selected_unit", unitId || "");
+  } catch {
+    // ignore storage failures (private browsing / disabled storage)
+  }
+}

@@ -1,6 +1,7 @@
 import { loadDerivedEvents } from "../shared/data-access.js";
 import { getEventsForUnit, getNextUnit, getUnits } from "../shared/data-store.js";
 import { recordResult } from "../shared/mastery-store.js";
+import { mountHeader } from "../shared/header.js";
 
 const chainContainer = document.getElementById("chain-container");
 const submitButton = document.getElementById("submit");
@@ -19,6 +20,19 @@ const state = {
   eventMap: new Map(),
   units: [],
 };
+
+const appHeader = mountHeader({
+  container: document.querySelector("main") || document.body,
+  mode: "Causal Chain",
+  progress: "Ready",
+});
+
+function refreshHeader() {
+  appHeader.update({
+    unit: unitSelect.selectedOptions[0]?.textContent || "All units",
+    progress: state.chain.length > 0 ? `${state.chain.length} steps` : "No chain",
+  });
+}
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -147,6 +161,7 @@ function newRound() {
     setFeedback("No chains available.", "incorrect");
     submitButton.disabled = true;
     nextButton.disabled = true;
+    refreshHeader();
     return;
   }
 
@@ -156,6 +171,7 @@ function newRound() {
   setFeedback("Ready. Submit when you finish ordering.");
   submitButton.disabled = false;
   nextButton.disabled = false;
+  refreshHeader();
 }
 
 function submit() {
@@ -226,3 +242,4 @@ unitSelect.addEventListener("change", async () => {
 });
 
 init();
+refreshHeader();

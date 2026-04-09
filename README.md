@@ -114,6 +114,13 @@ Next:
 - Extended derive pipeline (`scripts/derive.mjs`) to emit chain data to both `derived/causality_chains.json` and `data/derived/causal_chains.json` for compatibility with new and existing modes.
 - Updated homepage (`index.html`) and offline precache list (`service-worker.js`) to include the new Causal Chain Reconstruction mode.
 
+## Recent updates (2026-04-09 · Guided session runner + shared context header)
+
+- Added a new guided flow at `apps/session-runner/` that starts from a single homepage CTA and sequences learners through Timeline → Sequence → Causality → Recognition with a simple progress indicator.
+- Updated `index.html` with a one-click **Start Learning** button that opens the guided session runner.
+- Added a shared lightweight header helper at `apps/shared/header.js` and integrated it across active practice apps so learners consistently see unit + mode + progress context.
+- Extended `apps/shared/data-store.js` with safe `getStoredUnitId()` / `setStoredUnitId()` helpers to keep unit continuity stable across flows.
+
 ## Recent updates (2026-04-07 · WWI density expansion + people linking)
 
 - Expanded `data/units/unit_world_war_i.json` from 27 to **39 events** to improve timeline density and causal practice coverage across prelude, fronts, diplomacy, and home-front dynamics.

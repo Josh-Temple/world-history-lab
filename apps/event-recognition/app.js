@@ -3,6 +3,7 @@ import { isRecognitionReady } from "../shared/event-filters.js";
 import { getWeight, isWeakEvent, recordResult } from "../shared/mastery-store.js";
 import { createSession, weightedPick } from "../shared/session-engine.js";
 import { showFeedback } from "../shared/feedback.js";
+import { mountHeader } from "../shared/header.js";
 
 const questionElement = document.getElementById("question");
 const choicesElement = document.getElementById("choices");
@@ -35,6 +36,22 @@ const state = {
   recentAnswerIds: [],
   session: null,
 };
+
+const appHeader = mountHeader({
+  container: document.querySelector("main") || document.body,
+  mode: "Event Recognition",
+  progress: "0/0",
+});
+
+function refreshHeader() {
+  const unitLabel = practiceModeSelect.value === "unit"
+    ? (unitSelect.selectedOptions[0]?.textContent || "Selected unit")
+    : "All units";
+  appHeader.update({
+    unit: unitLabel,
+    progress: `${Math.min(state.currentQuestionIndex + 1, state.totalQuestions)}/${state.totalQuestions}`,
+  });
+}
 
 function isValidEvent(event) {
   return Boolean(
@@ -160,6 +177,7 @@ function getFeedbackMessage(accuracy) {
 
 function updateProgress() {
   progressElement.textContent = `Question ${Math.min(state.currentQuestionIndex + 1, state.totalQuestions)} of ${state.totalQuestions}`;
+  refreshHeader();
 }
 
 function resetRoundUi() {
@@ -188,6 +206,7 @@ function showSummary() {
   answerMetaElement.textContent = "";
   nextButton.hidden = true;
   progressElement.textContent = `Completed ${state.totalQuestions} of ${state.totalQuestions}`;
+  appHeader.update({ progress: `${state.totalQuestions}/${state.totalQuestions}` });
   sessionStatusElement.textContent = "Review your result, then retry or continue to the next learning step.";
   summaryElement.hidden = false;
   summaryElement.innerHTML = `
@@ -388,6 +407,7 @@ function handleSetupChange() {
   if (unitSelect.value) {
     localStorage.setItem(SELECTED_UNIT_KEY, unitSelect.value);
   }
+  refreshHeader();
   startSession();
 }
 
@@ -427,3 +447,4 @@ adaptiveModeElement.addEventListener("change", handleSetupChange);
 sessionLengthSelect.addEventListener("change", startSession);
 
 init();
+refreshHeader();

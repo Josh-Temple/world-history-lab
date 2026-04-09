@@ -1,6 +1,7 @@
 import { getAllEvents, getEventsForUnit, getNextUnit, getUnitById, getUnits } from '../shared/data-store.js';
 import { recordResult } from '../shared/mastery-store.js';
 import { showFeedback } from '../shared/feedback.js';
+import { mountHeader } from '../shared/header.js';
 
 const eventA = document.getElementById('event-a');
 const eventB = document.getElementById('event-b');
@@ -24,6 +25,20 @@ let activePrompts = [];
 let currentPromptIndex = 0;
 let currentPair = null;
 let correctTag = null;
+let roundCount = 0;
+
+const appHeader = mountHeader({
+  container: document.querySelector('main') || document.body,
+  mode: 'Event Comparison',
+  progress: 'Round 0',
+});
+
+function refreshHeader() {
+  appHeader.update({
+    unit: unitSelect.selectedOptions[0]?.textContent || 'All units',
+    progress: `Round ${roundCount}`,
+  });
+}
 
 function isValidEvent(event) {
   return Boolean(
@@ -133,6 +148,7 @@ function generateChoices(correct) {
 }
 
 function renderRound() {
+  roundCount += 1;
   currentPair = getPair();
 
   if (!currentPair) {
@@ -143,6 +159,7 @@ function renderRound() {
     explanation.textContent = '';
     contrastNoteEl.textContent = '';
     nextButton.disabled = true;
+    refreshHeader();
     return;
   }
 
@@ -165,6 +182,7 @@ function renderRound() {
     button.addEventListener('click', () => evaluate(option));
     choices.append(button);
   }
+  refreshHeader();
 }
 
 function evaluate(selected) {
@@ -281,3 +299,4 @@ unitSelect.addEventListener('change', async () => {
 nextButton.addEventListener('click', renderRound);
 
 init();
+refreshHeader();

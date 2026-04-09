@@ -1,6 +1,7 @@
 import { loadTimelineSeedData } from "./data/loaders.js";
 import { recordResult } from "../../shared/mastery-store.js";
 import { filterEvents as filterSharedEvents } from "../../shared/event-filters.js";
+import { mountHeader } from "../../shared/header.js";
 import {
   createPairKey,
   explainQuestionAnswer,
@@ -128,6 +129,22 @@ const ui = {
   errorText: document.getElementById("error-text"),
   retryButton: document.getElementById("retry-button"),
 };
+
+const appHeader = mountHeader({
+  container: document.querySelector(".container") || document.body,
+  mode: "Timeline Trainer",
+  progress: "0 answered",
+});
+
+function refreshHeader() {
+  const unitLabel = state.scope.mode === PRACTICE_MODE.ALL
+    ? "All units"
+    : (state.unitById.get(state.scope.unitId)?.title || "Selected unit");
+  appHeader.update({
+    unit: unitLabel,
+    progress: `${state.totalAnswered} answered`,
+  });
+}
 
 const PRACTICE_LOOP_THRESHOLD = 5;
 const SELECTED_UNIT_KEY = "selected_unit";
@@ -342,6 +359,7 @@ function updateStats() {
   ui.statLatestAnswered.textContent = String(state.answeredByType[QUESTION_TYPES.LATEST_OF_3]);
   ui.statLatestCorrect.textContent = String(state.correctByType[QUESTION_TYPES.LATEST_OF_3]);
   updateNextStepVisibility();
+  refreshHeader();
 }
 
 function renderQuestion(question) {
@@ -1012,6 +1030,7 @@ export async function startApp() {
     updateAvailabilityHint();
     resetSessionState();
     generateAndRenderNextQuestion();
+    refreshHeader();
   } catch (error) {
     ui.unitTitle.textContent = "Unit could not be loaded";
     ui.questionText.textContent = "Question data failed to load.";
