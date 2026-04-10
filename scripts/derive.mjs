@@ -237,11 +237,8 @@ function validateEvent(event) {
   if (typeof event.label !== "string" || event.label.trim() === "") {
     throw new Error(`Event ${event.id}: label is required`);
   }
-
-  const hasYearStart = typeof event.time?.year_start === "number";
-  const hasStart = typeof event.time?.start === "string";
-  if (!hasYearStart && !hasStart) {
-    throw new Error(`Event ${event.id}: requires time.year_start or time.start`);
+  if (typeof event.time?.year_start !== "number") {
+    throw new Error(`Event ${event.id}: time.year_start is required`);
   }
 }
 
@@ -266,7 +263,7 @@ function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
   for (const unit of units) {
     for (const eventId of unit.event_ids) {
       if (!eventIdSet.has(eventId)) {
-        throw new Error(`Invalid event_id in unit ${unit.id}: ${eventId}`);
+        throw new Error(`Unit ${unit.id} references missing event: ${eventId}`);
       }
     }
   }
@@ -294,7 +291,7 @@ function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
     const eventPeopleIds = Array.isArray(event.people_ids) ? event.people_ids : [];
     for (const personId of eventPeopleIds) {
       if (!peopleIdSet.has(personId)) {
-        throw new Error(`Invalid people_id in ${event.id}: ${personId}`);
+        throw new Error(`Invalid people reference in ${event.id}: ${personId}`);
       }
     }
   }
@@ -670,6 +667,7 @@ async function main() {
 
   validateCrossReferences({ events, eventIdSet, peopleIdSet, units });
   validateEventTags(events);
+  console.log("[derive] All data-integrity validation checks passed.");
 
   normalizedEvents.sort((a, b) => a.id.localeCompare(b.id));
   const normalizedEventLookup = new Map(normalizedEvents.map((event) => [event.id, event]));

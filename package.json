@@ -1,0 +1,9 @@
+{
+  "name": "world-history-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "derive": "node scripts/derive.mjs",
+    "smoke": "node scripts/smoke-test.mjs"
+  }
+}
