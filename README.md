@@ -107,6 +107,15 @@ Next:
 
 
 
+## Recent updates (2026-04-10 · derive validation hardening + cross-app smoke test)
+
+- Strengthened derive-time data integrity checks in `scripts/derive.mjs` to hard-fail on missing required event fields (`id`, `label`, `time.year_start`) and invalid cross-file references (`unit.event_ids`, `effects`, `people_ids`).
+- Added explicit derive success log line (`All data-integrity validation checks passed.`) to improve CI/local visibility when validations succeed.
+- Added `scripts/smoke-test.mjs` for cross-app data-flow smoke checks (events/chains presence, random selection validity, full chain reference scan).
+- Added root `package.json` scripts for reliability workflows:
+  - `npm run derive`
+  - `npm run smoke`
+
 ## Recent updates (2026-04-08 · Causal Chain Reconstruction mode)
 
 - Added new learner-facing app route: `apps/causal-chain/` for multi-step causal chain reconstruction using drag-and-drop reordering.

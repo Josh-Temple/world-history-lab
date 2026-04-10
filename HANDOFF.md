@@ -1,3 +1,25 @@
+## Incremental update (2026-04-10 · derive integrity enforcement + smoke test runner)
+- Updated `scripts/derive.mjs` to enforce required event fields (`id`, `label`, `time.year_start`) and fail fast on invalid references across:
+  - `unit.event_ids` → `events.id`
+  - `event.effects` → `events.id`
+  - `event.people_ids` → `people.id`
+- Standardized reference error messages for clearer debugging when data is malformed.
+- Added explicit success confirmation line after derive-time validation checks pass.
+- Added `scripts/smoke-test.mjs` to run basic cross-app data-flow checks against `data/events.json` and `data/derived/causal_chains.json` (non-empty pools, random selection shape, full chain-reference integrity scan).
+- Added root `package.json` scripts for quick workflow commands:
+  - `npm run derive`
+  - `npm run smoke`
+
+## Validation completed (2026-04-10)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+- negative-path validation check (intentional broken people reference) ✅ derive failed as expected
+
+## Suggested next steps
+1. Add this smoke test to CI so data PRs cannot merge with broken chain/event references.
+2. Add a session-runner-focused smoke check that verifies guided mode links and unit handoff state.
+3. Consider emitting a machine-readable validation report JSON from derive for richer PR diagnostics.
+
 ## Incremental update (2026-04-09 · Guided session flow + shared app header)
 
 - Added a new guided route at `apps/session-runner/`:
