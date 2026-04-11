@@ -1,30 +1,31 @@
-import { getAllEvents, getEventsForUnit, getNextUnit, getUnitById, getUnits } from '../shared/data-store.js';
+import {
+  getAllEvents,
+  getEventsForUnit,
+  getNextUnit,
+  getTagClusters,
+  getUnits,
+  getStoredUnitId,
+  setStoredUnitId,
+} from '../shared/data-store.js';
 import { recordResult } from '../shared/mastery-store.js';
 import { showFeedback } from '../shared/feedback.js';
 import { mountHeader } from '../shared/header.js';
 
-const eventA = document.getElementById('event-a');
-const eventB = document.getElementById('event-b');
-const choices = document.getElementById('choices');
-const feedback = document.getElementById('feedback');
-const explanation = document.getElementById('explanation');
-const contrastNoteEl = document.getElementById('contrast-note');
+const questionEl = document.getElementById('question');
+const optionsEl = document.getElementById('options');
+const feedbackEl = document.getElementById('feedback');
+const explanationEl = document.getElementById('explanation');
 const nextButton = document.getElementById('next');
 const unitSelect = document.getElementById('unit-select');
 const unitHint = document.getElementById('unit-hint');
 const nextUnitHint = document.getElementById('next-unit-hint');
 
-const DOMAIN_TAGS = ['political', 'technological', 'economic', 'social'];
-const SELECTED_UNIT_KEY = 'selected_unit';
-
 let allEvents = [];
+let eventsById = new Map();
 let units = [];
-let events = [];
-let eventById = new Map();
-let activePrompts = [];
-let currentPromptIndex = 0;
-let currentPair = null;
-let correctTag = null;
+let currentEvents = [];
+let allClusters = [];
+let currentQuestion = null;
 let roundCount = 0;
 
 const appHeader = mountHeader({
@@ -49,169 +50,129 @@ function isValidEvent(event) {
   );
 }
 
-function isValidComparisonPrompt(prompt) {
-  return Boolean(
-    prompt
-    && typeof prompt.event_a_id === 'string'
-    && typeof prompt.event_b_id === 'string'
-    && typeof prompt.focus_tag === 'string'
-    && prompt.focus_tag.trim().length > 0
-  );
+function randomItem(list) {
+  return list[Math.floor(Math.random() * list.length)];
 }
 
-function safeLabel(event) {
-  return typeof event?.label === 'string' && event.label.trim().length > 0
-    ? event.label
-    : 'Unknown event';
-}
-
-function randomItem(items) {
-  return items[Math.floor(Math.random() * items.length)];
-}
-
-function shuffle(items) {
-  const result = items.slice();
-  for (let i = result.length - 1; i > 0; i -= 1) {
+function shuffle(list) {
+  const items = list.slice();
+  for (let i = items.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
-    [result[i], result[j]] = [result[j], result[i]];
+    [items[i], items[j]] = [items[j], items[i]];
   }
-  return result;
+  return items;
 }
 
-function getSharedTags(a, b) {
-  const aTags = Array.isArray(a.tags) ? a.tags : [];
-  const bTags = new Set(Array.isArray(b.tags) ? b.tags : []);
-  return aTags.filter((tag) => bTags.has(tag));
+function pickEventsFromCluster(cluster) {
+  const scopedIds = new Set(currentEvents.map((event) => event.id));
+  const selected = cluster
+    .filter((id) => scopedIds.has(id))
+    .map((id) => eventsById.get(id))
+    .filter(Boolean)
+    .slice(0, 3);
+
+  return selected.length >= 2 ? selected : [];
 }
 
-function getPromptPair() {
-  if (activePrompts.length === 0 || events.length < 2) return null;
-
-  const prompt = activePrompts[currentPromptIndex % activePrompts.length];
-  currentPromptIndex += 1;
-
-  const a = eventById.get(prompt.event_a_id);
-  const b = eventById.get(prompt.event_b_id);
-  if (!a || !b) {
-    return null;
-  }
-
-  const shared = getSharedTags(a, b);
+function buildChronologyQuestion(selected) {
+  const sorted = selected
+    .slice()
+    .sort((a, b) => a.time.year_start - b.time.year_start || a.id.localeCompare(b.id));
+  const correct = sorted[0];
   return {
-    a,
-    b,
-    shared,
-    correct: prompt.focus_tag,
-    prompt,
+    type: 'chronology',
+    prompt: 'Which event came first?',
+    options: selected,
+    correctId: correct.id,
+    explanation: `${correct.label} came first (${correct.time.year_start}). ${correct.summary_short || 'No summary available.'}`,
   };
 }
 
-function getRandomPair() {
-  if (events.length < 2) return null;
-
-  // Prefer pairs with an overlapping domain tag so similarity is meaningful.
-  for (let i = 0; i < 40; i += 1) {
-    const a = randomItem(events);
-    let b = randomItem(events);
-    while (b.id === a.id) {
-      b = randomItem(events);
-    }
-
-    const shared = getSharedTags(a, b);
-    const domainShared = shared.find((tag) => DOMAIN_TAGS.includes(tag));
-    if (domainShared) {
-      return { a, b, shared, correct: domainShared, prompt: null };
-    }
-  }
-
-  const a = randomItem(events);
-  let b = randomItem(events);
-  while (b.id === a.id) {
-    b = randomItem(events);
-  }
-  const shared = getSharedTags(a, b);
-  const correct = shared[0] || 'historical_change';
-  return { a, b, shared, correct, prompt: null };
+function buildImpactQuestion(selected) {
+  const scored = selected
+    .map((event) => ({ event, score: Number.isFinite(event.importance) ? event.importance : 0 }))
+    .sort((a, b) => b.score - a.score || a.event.id.localeCompare(b.event.id));
+  const correct = scored[0].event;
+  return {
+    type: 'impact',
+    prompt: 'Which event had greater impact in this set?',
+    options: selected,
+    correctId: correct.id,
+    explanation: `${correct.label} is marked as highest impact in this cluster. ${correct.summary_short || 'No summary available.'}`,
+  };
 }
 
-function getPair() {
-  return getPromptPair() || getRandomPair();
+function buildSimilarityQuestion(selected) {
+  const anchor = selected[0];
+  const [correct, ...rest] = selected.slice(1);
+  const options = shuffle([correct, ...rest]);
+  return {
+    type: 'similarity',
+    prompt: `Which event is most similar to ${anchor.label}?`,
+    options,
+    correctId: correct.id,
+    explanation: `${correct.label} shares the same thematic tag cluster as ${anchor.label}. ${correct.summary_short || 'No summary available.'}`,
+    anchor,
+  };
 }
 
-function generateChoices(correct) {
-  const distractors = DOMAIN_TAGS.filter((tag) => tag !== correct);
-  const optionPool = correct && DOMAIN_TAGS.includes(correct)
-    ? [correct, ...distractors]
-    : [correct, ...DOMAIN_TAGS];
-
-  return shuffle(Array.from(new Set(optionPool))).slice(0, 4);
+function buildQuestion(selected) {
+  const builders = [buildChronologyQuestion, buildImpactQuestion, buildSimilarityQuestion];
+  return randomItem(builders)(selected);
 }
 
-function renderRound() {
+function renderQuestion() {
   roundCount += 1;
-  currentPair = getPair();
+  feedbackEl.textContent = '';
+  explanationEl.textContent = '';
+  optionsEl.innerHTML = '';
 
-  if (!currentPair) {
-    eventA.textContent = 'Not enough events to compare yet.';
-    eventB.textContent = 'Select another unit or use All units to continue.';
-    choices.innerHTML = '';
-    feedback.textContent = '';
-    explanation.textContent = '';
-    contrastNoteEl.textContent = '';
+  const viableClusters = allClusters.filter((cluster) => pickEventsFromCluster(cluster).length >= 2);
+  if (viableClusters.length === 0) {
+    questionEl.textContent = 'No comparison clusters are available for this unit yet.';
     nextButton.disabled = true;
     refreshHeader();
     return;
   }
 
-  const { a, b } = currentPair;
-  correctTag = currentPair.correct;
+  const cluster = randomItem(viableClusters);
+  const selected = pickEventsFromCluster(cluster);
+  currentQuestion = buildQuestion(selected);
 
-  eventA.textContent = safeLabel(a);
-  eventB.textContent = safeLabel(b);
-  feedback.textContent = '';
-  explanation.textContent = '';
-  contrastNoteEl.textContent = '';
-  choices.innerHTML = '';
-  nextButton.disabled = false;
-
-  const options = generateChoices(correctTag);
-  for (const option of options) {
+  questionEl.textContent = currentQuestion.prompt;
+  currentQuestion.options.forEach((event) => {
     const button = document.createElement('button');
     button.type = 'button';
-    button.textContent = option;
-    button.addEventListener('click', () => evaluate(option));
-    choices.append(button);
-  }
+    button.textContent = `${event.label} (${event.time.year_start})`;
+    button.addEventListener('click', () => checkAnswer(event.id));
+    optionsEl.append(button);
+  });
+
+  nextButton.disabled = false;
   refreshHeader();
 }
 
-function evaluate(selected) {
-  if (!currentPair) return;
+function checkAnswer(selectedId) {
+  if (!currentQuestion) return;
 
-  const isCorrect = selected === correctTag;
-  showFeedback(feedback, {
+  const selected = eventsById.get(selectedId);
+  const correct = eventsById.get(currentQuestion.correctId);
+  const isCorrect = selectedId === currentQuestion.correctId;
+
+  showFeedback(feedbackEl, {
     correct: isCorrect,
-    event: currentPair.a,
-    correctAnswer: { label: correctTag },
-    summary: `Similarity tag: ${correctTag}.`,
-    extra: [`Event A: ${safeLabel(currentPair.a)}`, `Event B: ${safeLabel(currentPair.b)}`],
+    event: selected || correct,
+    correctAnswer: { label: correct?.label || 'Unknown event' },
+    summary: isCorrect ? 'Correct comparison.' : `Incorrect. ${correct?.label || 'Unknown event'} is correct.`,
   });
+  explanationEl.textContent = currentQuestion.explanation;
 
-  const summaryA = currentPair.a.summary_short || 'No summary available.';
-  const summaryB = currentPair.b.summary_short || 'No summary available.';
-  explanation.textContent = `Similarity tag: ${correctTag}. Event A: ${summaryA} Event B: ${summaryB}`;
-
-  if (currentPair.prompt?.contrast_note) {
-    const sharedDriver = currentPair.prompt.shared_driver
-      ? `Shared driver: ${currentPair.prompt.shared_driver} `
-      : '';
-    contrastNoteEl.textContent = `${sharedDriver}Contrast: ${currentPair.prompt.contrast_note}`;
-  } else {
-    contrastNoteEl.textContent = '';
-  }
-
-  recordResult(currentPair.a.id, isCorrect, { mode: 'event_comparison', tag: correctTag });
-  recordResult(currentPair.b.id, isCorrect, { mode: 'event_comparison', tag: correctTag });
+  currentQuestion.options.forEach((event) => {
+    recordResult(event.id, isCorrect && event.id === currentQuestion.correctId, {
+      mode: `event_comparison_${currentQuestion.type}`,
+      question_type: currentQuestion.type,
+    });
+  });
 }
 
 function populateUnitOptions() {
@@ -222,16 +183,16 @@ function populateUnitOptions() {
   allOption.textContent = 'All units';
   unitSelect.append(allOption);
 
-  for (const unit of units) {
+  units.forEach((unit) => {
     const option = document.createElement('option');
     option.value = unit.id;
     option.textContent = unit.era ? `${unit.label} (${unit.era})` : unit.label;
     unitSelect.append(option);
-  }
+  });
 
-  const saved = localStorage.getItem(SELECTED_UNIT_KEY) || '';
+  const saved = getStoredUnitId();
   const known = units.some((unit) => unit.id === saved);
-  unitSelect.value = known ? saved : (units[0]?.id || '');
+  unitSelect.value = known ? saved : '';
 }
 
 function updateProgressionHint() {
@@ -251,52 +212,42 @@ function updateProgressionHint() {
 
 async function applyUnitSelection() {
   const selectedUnitId = unitSelect.value;
-
-  if (!selectedUnitId) {
-    events = allEvents.slice();
-    activePrompts = [];
-  } else {
-    const [scopedEvents, unit] = await Promise.all([
-      getEventsForUnit(selectedUnitId),
-      getUnitById(selectedUnitId),
-    ]);
-
-    events = (Array.isArray(scopedEvents) ? scopedEvents : []).filter(isValidEvent);
-    activePrompts = (Array.isArray(unit?.comparison_prompts) ? unit.comparison_prompts : [])
-      .filter(isValidComparisonPrompt)
-      .filter((prompt) => eventById.has(prompt.event_a_id) && eventById.has(prompt.event_b_id));
-    currentPromptIndex = 0;
-  }
-
+  currentEvents = selectedUnitId ? await getEventsForUnit(selectedUnitId) : allEvents.slice();
+  currentEvents = currentEvents.filter(isValidEvent);
   updateProgressionHint();
-  renderRound();
+  renderQuestion();
 }
 
 async function init() {
   try {
-    const [loadedEvents, loadedUnits] = await Promise.all([getAllEvents(), getUnits()]);
-    allEvents = (Array.isArray(loadedEvents) ? loadedEvents : []).filter(isValidEvent);
-    eventById = new Map(allEvents.map((event) => [event.id, event]));
+    const [events, loadedUnits, clusters] = await Promise.all([
+      getAllEvents(),
+      getUnits(),
+      getTagClusters(),
+    ]);
+
+    allEvents = (Array.isArray(events) ? events : []).filter(isValidEvent);
+    eventsById = new Map(allEvents.map((event) => [event.id, event]));
     units = Array.isArray(loadedUnits) ? loadedUnits : [];
+    allClusters = Array.isArray(clusters) ? clusters : [];
 
     populateUnitOptions();
-    localStorage.setItem(SELECTED_UNIT_KEY, unitSelect.value);
+    setStoredUnitId(unitSelect.value);
     await applyUnitSelection();
   } catch (error) {
-    console.error('[event-comparison] Failed to load events', error);
-    eventA.textContent = 'No data available.';
-    eventB.textContent = 'An error occurred. Please reload.';
-    feedback.textContent = 'Loading failed.';
+    console.error('[event-comparison] Failed to initialize', error);
+    questionEl.textContent = 'No data available.';
+    feedbackEl.textContent = 'Loading failed. Please reload the page.';
     nextButton.disabled = true;
   }
 }
 
 unitSelect.addEventListener('change', async () => {
-  localStorage.setItem(SELECTED_UNIT_KEY, unitSelect.value);
+  setStoredUnitId(unitSelect.value);
   await applyUnitSelection();
 });
 
-nextButton.addEventListener('click', renderRound);
+nextButton.addEventListener('click', renderQuestion);
 
 init();
 refreshHeader();
