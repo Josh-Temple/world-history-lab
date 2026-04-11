@@ -1,3 +1,21 @@
+## Incremental update (2026-04-11 · structured comparison reasoning + derive tag clusters)
+- Rebuilt `apps/event-comparison/index.html` + `apps/event-comparison/app.js` into a structured comparison mode that now asks forced reasoning questions across related events:
+  - **Chronology**: identify which event came first.
+  - **Impact**: choose which event has greater impact within a cluster.
+  - **Similarity**: select which event is most similar to an anchor event.
+- Added explanatory feedback tied to `summary_short`, and persisted mastery signals for each event shown in a round (`event_comparison_<question_type>` metadata).
+- Extended `apps/shared/data-store.js` with `getTagClusters()` for loading `/data/derived/tag_clusters.json`.
+- Extended `scripts/derive.mjs` with tag-based cluster generation (deduped IDs, min cluster size 3, sorted output) and write-out to `data/derived/tag_clusters.json`.
+
+## Validation completed (2026-04-11)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add weighted cluster selection so under-practiced tags appear more often than already-mastered ones.
+2. Improve impact prompts by introducing explicit comparative rationale fields in event data (beyond raw `importance`).
+3. Add an app-level smoke test for Event Comparison question rendering + answer-key correctness across all three prompt types.
+
 ## Incremental update (2026-04-10 · derive integrity enforcement + smoke test runner)
 - Updated `scripts/derive.mjs` to enforce required event fields (`id`, `label`, `time.year_start`) and fail fast on invalid references across:
   - `unit.event_ids` → `events.id`

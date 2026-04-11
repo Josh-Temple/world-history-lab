@@ -107,6 +107,14 @@ Next:
 
 
 
+
+## Recent updates (2026-04-11 · structured comparison mode + tag clusters)
+
+- Reworked `apps/event-comparison/` into a structured, forced-comparison flow with rotating question types: chronology (which came first), impact (greater impact), and similarity (closest match to anchor event).
+- Added comparison feedback explanations grounded in per-event `summary_short` text and persisted mastery outcomes for every event shown in each comparison round.
+- Added derive-time tag clustering output (`data/derived/tag_clusters.json`) so comparison rounds can draw from meaningful thematic event groups instead of purely random pairs.
+- Extended shared app data access with `getTagClusters()` in `apps/shared/data-store.js` to support cluster-aware learning modes.
+
 ## Recent updates (2026-04-10 · derive validation hardening + cross-app smoke test)
 
 - Strengthened derive-time data integrity checks in `scripts/derive.mjs` to hard-fail on missing required event fields (`id`, `label`, `time.year_start`) and invalid cross-file references (`unit.event_ids`, `effects`, `people_ids`).

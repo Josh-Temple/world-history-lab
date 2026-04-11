@@ -3,6 +3,7 @@ let unitsIndexCache = null;
 let unitFilesCache = null;
 let peopleCache = null;
 let metadataCache = null;
+let tagClustersCache = null;
 
 function isValidEvent(event) {
   return Boolean(
@@ -137,6 +138,15 @@ export async function getAllPeople() {
   const people = await fetchJson("/data/people.json", "people");
   peopleCache = Array.isArray(people) ? people : [];
   return peopleCache;
+}
+
+export async function getTagClusters() {
+  if (tagClustersCache) return tagClustersCache;
+  const clusters = await fetchJson('/data/derived/tag_clusters.json', 'tag clusters');
+  tagClustersCache = (Array.isArray(clusters) ? clusters : [])
+    .map((cluster) => Array.isArray(cluster) ? cluster.filter((id) => typeof id === 'string') : [])
+    .filter((cluster) => cluster.length >= 2);
+  return tagClustersCache;
 }
 
 export function getNextUnit(units, currentUnitId) {
