@@ -505,3 +505,23 @@
 1. Reuse `weightedPick` in additional quiz generators (timeline/causality) to make adaptive weighting cross-app.
 2. Add a lightweight in-app debug panel (dev-only) to show current event weight/accuracy while tuning thresholds.
 3. Consider a mastery reset control in setup for deterministic testing and learner privacy control.
+
+## Incremental update (2026-04-12 · curriculum progression graph + mastery-aware runner flow)
+- Extended `data/metadata.json` curriculum units with explicit progression graph fields:
+  - `prerequisites`
+  - `next_units`
+- Updated `apps/shared/data-store.js` to carry progression metadata into `getUnits()` and upgraded `getNextUnit()` to prefer `next_units` links (with ordered fallback for compatibility).
+- Updated `apps/session-runner/app.js` to:
+  - choose a starting unit using mastery-aware weak-area scoring when no unit is preselected,
+  - display a completion-time **Start next unit** button that advances along curriculum links,
+  - persist progression handoff via shared `setStoredUnitId()`.
+
+## Validation completed (2026-04-12)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+- `node -e "..."` metadata progression reference check ✅ (`metadata progression references OK`)
+
+## Suggested next steps
+1. Pass a lightweight `focus=weak` query hint into each guided mode and implement optional handling in modes that support adaptive pools.
+2. Add a small "path view" component in Session Runner so learners can preview completed/current/next units at a glance.
+3. Add a smoke check for session-runner completion flow that verifies next-unit button visibility and localStorage unit handoff.
