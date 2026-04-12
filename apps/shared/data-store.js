@@ -39,12 +39,18 @@ function buildCurriculumMap(metadata) {
   const rows = Array.isArray(metadata?.curriculum?.units) ? metadata.curriculum.units : [];
   const map = new Map();
 
+  const sanitizeStringList = (value) => (Array.isArray(value)
+    ? value.filter((item) => typeof item === "string" && item.length > 0)
+    : []);
+
   for (const row of rows) {
     if (!row || typeof row.id !== "string") continue;
     map.set(row.id, {
       order: Number.isFinite(row.order) ? row.order : Number.MAX_SAFE_INTEGER,
       era: typeof row.era === "string" ? row.era : "",
       difficulty: Number.isFinite(row.difficulty) ? row.difficulty : null,
+      prerequisites: sanitizeStringList(row.prerequisites),
+      next_units: sanitizeStringList(row.next_units),
     });
   }
 
@@ -86,6 +92,8 @@ export async function getUnits() {
           order: Number.isFinite(curriculum.order) ? curriculum.order : Number.MAX_SAFE_INTEGER,
           era: typeof curriculum.era === "string" ? curriculum.era : "",
           difficulty: Number.isFinite(curriculum.difficulty) ? curriculum.difficulty : null,
+          prerequisites: Array.isArray(curriculum.prerequisites) ? curriculum.prerequisites : [],
+          next_units: Array.isArray(curriculum.next_units) ? curriculum.next_units : [],
         };
       })
   );
@@ -150,8 +158,15 @@ export async function getTagClusters() {
 }
 
 export function getNextUnit(units, currentUnitId) {
-  if (!Array.isArray(units) || units.length === 0) return null;
-  const currentIndex = units.findIndex((unit) => unit.id === currentUnitId);
+  if (!Array.isArray(units) || units.length === 0 || !currentUnitId) return null;
+
+  const currentUnit = units.find((unit) => unit?.id === currentUnitId);
+  const nextFromMetadata = currentUnit?.next_units?.find((unitId) => typeof unitId === "string" && unitId.length > 0);
+  if (nextFromMetadata) {
+    return units.find((unit) => unit?.id === nextFromMetadata) || null;
+  }
+
+  const currentIndex = units.findIndex((unit) => unit?.id === currentUnitId);
   if (currentIndex < 0 || currentIndex + 1 >= units.length) return null;
   return units[currentIndex + 1];
 }

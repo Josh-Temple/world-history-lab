@@ -29,49 +29,93 @@
         "id": "unit_foundations_world_history",
         "order": 1,
         "era": "Ancient to Early Modern",
-        "difficulty": 1
+        "difficulty": 1,
+        "prerequisites": [],
+        "next_units": [
+          "unit_french_revolution"
+        ]
       },
       {
         "id": "unit_french_revolution",
         "order": 2,
         "era": "Early Modern to Modern Transition",
-        "difficulty": 1
+        "difficulty": 1,
+        "prerequisites": [
+          "unit_foundations_world_history"
+        ],
+        "next_units": [
+          "unit_french_revolution_napoleon"
+        ]
       },
       {
         "id": "unit_french_revolution_napoleon",
         "order": 3,
         "era": "Modern",
-        "difficulty": 2
+        "difficulty": 2,
+        "prerequisites": [
+          "unit_french_revolution"
+        ],
+        "next_units": [
+          "unit_industrial_revolution"
+        ]
       },
       {
         "id": "unit_industrial_revolution",
         "order": 4,
         "era": "Modern",
-        "difficulty": 2
+        "difficulty": 2,
+        "prerequisites": [
+          "unit_french_revolution_napoleon"
+        ],
+        "next_units": [
+          "unit_meiji_restoration"
+        ]
       },
       {
         "id": "unit_meiji_restoration",
         "order": 5,
         "era": "Modern",
-        "difficulty": 2
+        "difficulty": 2,
+        "prerequisites": [
+          "unit_industrial_revolution"
+        ],
+        "next_units": [
+          "unit_age_of_imperialism"
+        ]
       },
       {
         "id": "unit_age_of_imperialism",
         "order": 6,
         "era": "Modern",
-        "difficulty": 2
+        "difficulty": 2,
+        "prerequisites": [
+          "unit_meiji_restoration"
+        ],
+        "next_units": [
+          "unit_world_war_i"
+        ]
       },
       {
         "id": "unit_world_war_i",
         "order": 7,
         "era": "Modern",
-        "difficulty": 2
+        "difficulty": 2,
+        "prerequisites": [
+          "unit_age_of_imperialism"
+        ],
+        "next_units": [
+          "unit_industrialization_pathways_comparison"
+        ]
       },
       {
         "id": "unit_industrialization_pathways_comparison",
         "order": 8,
         "era": "Modern",
-        "difficulty": 2
+        "difficulty": 2,
+        "prerequisites": [
+          "unit_world_war_i"
+        ],
+        "next_units": []
       }
     ]
   },
@@ -120,7 +164,7 @@
       "cause_and_effect"
     ]
   },
-  "updated_at": "2026-04-06T00:00:00Z",
+  "updated_at": "2026-04-12T00:00:00Z",
   "maintainer": {
     "name": "Josh",
     "notes": "Personal learning project"

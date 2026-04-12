@@ -566,3 +566,12 @@ TBD
 - Added shared mastery helpers in `apps/shared/mastery-store.js` for adaptive selection (`getAccuracy`, `getWeight`) and weak-event detection (`isWeakEvent`).
 - Added a reusable `weightedPick` helper to `apps/shared/session-engine.js`.
 - Updated Event Recognition to use weighted event sampling and a focused weak-event pool when **Focus on weak areas** is enabled, with safe fallback to the full pool when needed.
+
+## Recent updates (2026-04-12 · curriculum progression + mastery-aware guided start)
+
+- Extended `data/metadata.json` curriculum unit rows with explicit `prerequisites` and `next_units` links to make progression machine-readable.
+- Updated `apps/shared/data-store.js` so curriculum metadata now carries `prerequisites`/`next_units` through `getUnits()` and `getNextUnit()` now prefers metadata-defined links before order fallback.
+- Updated `apps/session-runner/app.js` to:
+  - pick a starting unit using mastery-aware weak-area scoring when no unit is preselected,
+  - show a post-session **Start next unit** action using curriculum `next_units` guidance,
+  - persist the selected/advanced unit with shared storage helpers.
