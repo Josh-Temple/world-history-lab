@@ -141,6 +141,40 @@
       "structured_external",
       "self_written",
       "ai_assisted_self_reviewed"
+    ],
+    "concept_taxonomy": [
+      {
+        "id": "state_formation_governance",
+        "label": "State formation & governance"
+      },
+      {
+        "id": "belief_systems_cultural_exchange",
+        "label": "Belief systems & cultural exchange"
+      },
+      {
+        "id": "trade_networks_economic_exchange",
+        "label": "Trade networks & economic exchange"
+      },
+      {
+        "id": "technology_industrialization",
+        "label": "Technology & industrialization"
+      },
+      {
+        "id": "empire_imperialism",
+        "label": "Empire & imperialism"
+      },
+      {
+        "id": "revolution_reform",
+        "label": "Revolution & reform"
+      },
+      {
+        "id": "war_diplomacy",
+        "label": "War & diplomacy"
+      },
+      {
+        "id": "decolonization_nation_building",
+        "label": "Decolonization & nation-building"
+      }
     ]
   },
   "app_support": {

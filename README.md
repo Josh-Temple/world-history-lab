@@ -115,6 +115,16 @@ Next:
 - Added derive-time tag clustering output (`data/derived/tag_clusters.json`) so comparison rounds can draw from meaningful thematic event groups instead of purely random pairs.
 - Extended shared app data access with `getTagClusters()` in `apps/shared/data-store.js` to support cluster-aware learning modes.
 
+## Recent updates (2026-04-12 · concept layer v1 in data + History Player)
+
+- Added a first explicit concept taxonomy in `data/metadata.json` (`content_policy.concept_taxonomy`) with 8 cross-era themes for comparison and causality scaffolding.
+- Tagged the full canonical History Player backbone (27 events) with `concept_tags` in `data/events.json` to establish a reusable concept layer across units.
+- Extended derive normalization in `scripts/derive.mjs` to carry through `concept_tags` into normalized event payloads and warn on concept tags outside metadata taxonomy.
+- Updated `apps/history-player/index.html` to:
+  - show concept pills on each event,
+  - support concept-based filtering from setup controls,
+  - surface “related events by concept” links to reinforce cross-unit pattern recognition.
+
 ## Recent updates (2026-04-10 · derive validation hardening + cross-app smoke test)
 
 - Strengthened derive-time data integrity checks in `scripts/derive.mjs` to hard-fail on missing required event fields (`id`, `label`, `time.year_start`) and invalid cross-file references (`unit.event_ids`, `effects`, `people_ids`).

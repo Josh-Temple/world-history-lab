@@ -88,6 +88,10 @@
               <option value="3">Levels 1-3</option>
               <option value="4">Levels 1-4</option>
             </select>
+            <label for="concept-select">Concept</label>
+            <select id="concept-select">
+              <option value="">All concepts</option>
+            </select>
           </div>
           <div>
             <label for="timeline-slider" class="muted">Position</label>
@@ -103,6 +107,7 @@
           <p id="event-year" class="pill">—</p>
           <p id="event-category" class="pill">Category: —</p>
           <p id="event-importance" class="pill">Importance: —</p>
+          <div id="event-concepts"></div>
           <p id="event-summary" class="muted">Loading event sequence…</p>
           <p id="event-progress-cue" class="muted" style="margin:.5rem 0 0">Progress cue: —</p>
           <p id="event-next-cue" class="muted" style="margin:.2rem 0 0">Next: —</p>
@@ -121,6 +126,8 @@
           <h3 style="margin:1rem 0 .5rem">Map marker preview</h3>
           <div id="map" class="map" aria-label="Simplified map marker panel"></div>
           <p class="muted" id="map-caption" style="margin:.45rem 0 0">Showing canonical coordinates when present and falling back only if a record lacks location data.</p>
+          <h3 style="margin:1rem 0 .5rem">Related events by concept</h3>
+          <ul id="related-events" class="log"></ul>
         </section>
 
         <section class="panel">
@@ -141,6 +148,18 @@
         speedMs: 1400,
         sliceSize: 25,
         importanceLevel: 1,
+        conceptFilter: "",
+      };
+
+      const CONCEPT_LABELS = {
+        state_formation_governance: "State formation & governance",
+        belief_systems_cultural_exchange: "Belief systems & cultural exchange",
+        trade_networks_economic_exchange: "Trade networks & economic exchange",
+        technology_industrialization: "Technology & industrialization",
+        empire_imperialism: "Empire & imperialism",
+        revolution_reform: "Revolution & reform",
+        war_diplomacy: "War & diplomacy",
+        decolonization_nation_building: "Decolonization & nation-building",
       };
 
       function seededCoordinate(id) {
@@ -177,6 +196,10 @@
         const limit = Number(state.sliceSize);
         state.filtered = state.events
           .filter((event) => event.importance <= state.importanceLevel)
+          .filter((event) => {
+            if (!state.conceptFilter) return true;
+            return Array.isArray(event.concept_tags) && event.concept_tags.includes(state.conceptFilter);
+          })
           .slice(0, limit);
 
         if (state.index >= state.filtered.length) state.index = Math.max(0, state.filtered.length - 1);
@@ -224,6 +247,88 @@
         });
       }
 
+      function conceptLabel(id) {
+        if (!id || typeof id !== "string") return "Uncategorized concept";
+        return CONCEPT_LABELS[id] ?? id.replaceAll("_", " ");
+      }
+
+      function renderConceptPills(event) {
+        const holder = document.getElementById("event-concepts");
+        holder.innerHTML = "";
+        const conceptTags = Array.isArray(event?.concept_tags) ? event.concept_tags : [];
+        if (!conceptTags.length) {
+          holder.innerHTML = '<p class="muted" style="margin:.2rem 0 .5rem">Concepts: none tagged yet.</p>';
+          return;
+        }
+
+        conceptTags.forEach((conceptTag) => {
+          const pill = document.createElement("span");
+          pill.className = "pill";
+          pill.textContent = conceptLabel(conceptTag);
+          holder.append(pill);
+        });
+      }
+
+      function renderRelatedEvents(event) {
+        const relatedRoot = document.getElementById("related-events");
+        relatedRoot.innerHTML = "";
+        if (!event) {
+          relatedRoot.innerHTML = '<li class="muted">No related events available.</li>';
+          return;
+        }
+
+        const conceptTags = Array.isArray(event.concept_tags) ? event.concept_tags : [];
+        const topConcept = conceptTags[0];
+        if (!topConcept) {
+          relatedRoot.innerHTML = '<li class="muted">Add concept tags to surface cross-unit connections.</li>';
+          return;
+        }
+
+        const related = state.events
+          .filter((candidate) => candidate.id !== event.id)
+          .filter((candidate) => Array.isArray(candidate.concept_tags) && candidate.concept_tags.includes(topConcept))
+          .sort((a, b) => a.derived.sort_start - b.derived.sort_start)
+          .slice(0, 3);
+
+        if (!related.length) {
+          relatedRoot.innerHTML = `<li class="muted">No additional events found for ${conceptLabel(topConcept)}.</li>`;
+          return;
+        }
+
+        related.forEach((relatedEvent) => {
+          const item = document.createElement("li");
+          const btn = document.createElement("button");
+          btn.textContent = `${relatedEvent.derived.year_start}: ${relatedEvent.label}`;
+          btn.addEventListener("click", () => {
+            const nextIndex = state.filtered.findIndex((entry) => entry.id === relatedEvent.id);
+            if (nextIndex >= 0) {
+              state.index = nextIndex;
+              syncSlider();
+              render();
+            }
+          });
+          item.append(btn);
+          relatedRoot.append(item);
+        });
+      }
+
+      function syncConceptOptions() {
+        const select = document.getElementById("concept-select");
+        const conceptIds = Array.from(
+          new Set(
+            state.events.flatMap((event) => (Array.isArray(event.concept_tags) ? event.concept_tags : []))
+          )
+        ).sort((a, b) => conceptLabel(a).localeCompare(conceptLabel(b)));
+
+        select.innerHTML = '<option value="">All concepts</option>';
+        conceptIds.forEach((conceptId) => {
+          const option = document.createElement("option");
+          option.value = conceptId;
+          option.textContent = conceptLabel(conceptId);
+          select.append(option);
+        });
+      }
+
       function syncSlider() {
         document.getElementById("timeline-slider").value = String(state.index);
       }
@@ -250,6 +355,7 @@
         document.getElementById("event-category").textContent = event?.category ? `Category: ${event.category}` : "Category: —";
         document.getElementById("event-importance").textContent = Number.isFinite(event?.importance) ? `Importance: ${event.importance}` : "Importance: —";
         document.getElementById("event-summary").textContent = event?.summary_short ?? "Summary unavailable.";
+        renderConceptPills(event);
         document.getElementById("event-progress-cue").textContent = event
           ? `Progress cue: ${eraLabel(event?.derived?.year_start)} · ${event.derived.year_start}`
           : "Progress cue: —";
@@ -262,6 +368,7 @@
         syncSlider();
         renderMapMarkers(event);
         renderLog();
+        renderRelatedEvents(event);
       }
 
       function stopPlayback() {
@@ -306,6 +413,7 @@
           .filter(isCanonicalPlayerEvent)
           .sort((a, b) => a.derived.sort_start - b.derived.sort_start);
 
+        syncConceptOptions();
         applyFilters();
 
         document.getElementById("prev-btn").addEventListener("click", () => {
@@ -334,6 +442,13 @@
 
         document.getElementById("importance-select").addEventListener("change", (event) => {
           state.importanceLevel = Number(event.target.value);
+          stopPlayback();
+          state.index = 0;
+          applyFilters();
+        });
+
+        document.getElementById("concept-select").addEventListener("change", (event) => {
+          state.conceptFilter = event.target.value;
           stopPlayback();
           state.index = 0;
           applyFilters();
