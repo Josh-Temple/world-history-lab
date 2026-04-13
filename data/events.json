@@ -5222,5 +5222,838 @@
     "tags": [
       "social"
     ]
+  },
+  {
+    "id": "ev_munich_agreement_1938",
+    "label": "Munich Agreement",
+    "time": {
+      "year_start": 1938
+    },
+    "summary_short": "Britain and France permit German annexation of Sudetenland in a failed effort to preserve peace.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political"
+    ],
+    "effects": [
+      "ev_molotov_ribbentrop_pact_1939",
+      "ev_invasion_poland_1939"
+    ],
+    "people_ids": [
+      "pe_neville_chamberlain",
+      "pe_adolf_hitler"
+    ]
+  },
+  {
+    "id": "ev_molotov_ribbentrop_pact_1939",
+    "label": "Molotov–Ribbentrop Pact",
+    "time": {
+      "year_start": 1939
+    },
+    "summary_short": "Germany and the Soviet Union sign a nonaggression pact with secret protocols dividing Eastern Europe.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political"
+    ],
+    "effects": [
+      "ev_invasion_poland_1939"
+    ],
+    "people_ids": [
+      "pe_adolf_hitler",
+      "pe_joseph_stalin"
+    ]
+  },
+  {
+    "id": "ev_invasion_poland_1939",
+    "label": "Invasion of Poland",
+    "time": {
+      "year_start": 1939
+    },
+    "summary_short": "Germany invades Poland, triggering the outbreak of World War II in Europe.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "political"
+    ],
+    "effects": [
+      "ev_france_britain_declare_war_1939",
+      "ev_soviet_invasion_eastern_poland_1939"
+    ],
+    "people_ids": [
+      "pe_adolf_hitler"
+    ]
+  },
+  {
+    "id": "ev_france_britain_declare_war_1939",
+    "label": "Britain and France Declare War on Germany",
+    "time": {
+      "year_start": 1939
+    },
+    "summary_short": "Britain and France declare war after Germany refuses to withdraw from Poland.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political",
+      "military"
+    ],
+    "effects": [
+      "ev_fall_of_france_1940",
+      "ev_battle_of_britain_1940"
+    ],
+    "people_ids": [
+      "pe_winston_churchill"
+    ]
+  },
+  {
+    "id": "ev_soviet_invasion_eastern_poland_1939",
+    "label": "Soviet Invasion of Eastern Poland",
+    "time": {
+      "year_start": 1939
+    },
+    "summary_short": "The Soviet Union occupies eastern Poland under secret terms of the German-Soviet pact.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "political"
+    ],
+    "effects": [],
+    "people_ids": [
+      "pe_joseph_stalin"
+    ]
+  },
+  {
+    "id": "ev_fall_of_france_1940",
+    "label": "Fall of France",
+    "time": {
+      "year_start": 1940
+    },
+    "summary_short": "German blitzkrieg defeats France, leading to occupation and the Vichy regime.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "political"
+    ],
+    "effects": [
+      "ev_battle_of_britain_1940",
+      "ev_operation_barbarossa_1941"
+    ],
+    "people_ids": [
+      "pe_adolf_hitler",
+      "pe_charles_de_gaulle"
+    ]
+  },
+  {
+    "id": "ev_battle_of_britain_1940",
+    "label": "Battle of Britain",
+    "time": {
+      "year_start": 1940
+    },
+    "summary_short": "British air defense halts German air superiority plans, preventing invasion.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "people_ids": [
+      "pe_winston_churchill",
+      "pe_adolf_hitler"
+    ]
+  },
+  {
+    "id": "ev_lend_lease_act_1941",
+    "label": "Lend-Lease Act",
+    "time": {
+      "year_start": 1941
+    },
+    "summary_short": "The United States authorizes large-scale military and economic aid to Allied nations.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "economic",
+      "political"
+    ],
+    "effects": [
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "people_ids": [
+      "pe_franklin_d_roosevelt",
+      "pe_winston_churchill"
+    ]
+  },
+  {
+    "id": "ev_operation_barbarossa_1941",
+    "label": "Operation Barbarossa",
+    "time": {
+      "year_start": 1941
+    },
+    "summary_short": "Germany invades the Soviet Union, opening the largest land front of the war.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "political"
+    ],
+    "effects": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_holocaust_widening_killings_1941"
+    ],
+    "people_ids": [
+      "pe_adolf_hitler",
+      "pe_joseph_stalin"
+    ]
+  },
+  {
+    "id": "ev_holocaust_widening_killings_1941",
+    "label": "Mass Shootings Expand in Occupied Eastern Europe",
+    "time": {
+      "year_start": 1941
+    },
+    "summary_short": "Nazi mobile killing units intensify mass shootings, escalating genocidal policy.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "social",
+      "political"
+    ],
+    "effects": [
+      "ev_wannsee_conference_1942"
+    ],
+    "people_ids": [
+      "pe_adolf_hitler"
+    ]
+  },
+  {
+    "id": "ev_pearl_harbor_1941",
+    "label": "Attack on Pearl Harbor",
+    "time": {
+      "year_start": 1941
+    },
+    "summary_short": "Japan attacks Pearl Harbor, drawing the United States directly into World War II.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "political"
+    ],
+    "effects": [
+      "ev_united_states_enters_war_1941",
+      "ev_battle_midway_1942"
+    ],
+    "people_ids": [
+      "pe_hideki_tojo",
+      "pe_franklin_d_roosevelt"
+    ]
+  },
+  {
+    "id": "ev_united_states_enters_war_1941",
+    "label": "United States Enters the War",
+    "time": {
+      "year_start": 1941
+    },
+    "summary_short": "Following Pearl Harbor, the U.S. enters the war against Japan and, soon after, Germany and Italy.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political",
+      "military",
+      "economic"
+    ],
+    "effects": [
+      "ev_wartime_industrial_mobilization_1942_1944",
+      "ev_operation_torch_1942",
+      "ev_battle_midway_1942"
+    ],
+    "people_ids": [
+      "pe_franklin_d_roosevelt"
+    ]
+  },
+  {
+    "id": "ev_wannsee_conference_1942",
+    "label": "Wannsee Conference",
+    "time": {
+      "year_start": 1942
+    },
+    "summary_short": "Senior Nazi officials coordinate bureaucratic implementation of the “Final Solution.”",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political",
+      "social"
+    ],
+    "effects": [
+      "ev_auschwitz_killing_center_expansion_1942"
+    ],
+    "people_ids": [
+      "pe_adolf_hitler"
+    ]
+  },
+  {
+    "id": "ev_auschwitz_killing_center_expansion_1942",
+    "label": "Auschwitz-Birkenau Expansion",
+    "time": {
+      "year_start": 1942
+    },
+    "summary_short": "Auschwitz-Birkenau is expanded as a major site of industrialized mass murder.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "social"
+    ],
+    "effects": [],
+    "people_ids": [
+      "pe_adolf_hitler"
+    ]
+  },
+  {
+    "id": "ev_battle_midway_1942",
+    "label": "Battle of Midway",
+    "time": {
+      "year_start": 1942
+    },
+    "summary_short": "The U.S. Navy defeats Japan at Midway, shifting strategic momentum in the Pacific.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_guadalcanal_campaign_1942_1943",
+      "ev_island_hopping_campaign_1943_1945"
+    ],
+    "people_ids": [
+      "pe_franklin_d_roosevelt",
+      "pe_emperor_hirohito"
+    ]
+  },
+  {
+    "id": "ev_operation_torch_1942",
+    "label": "Operation Torch",
+    "time": {
+      "year_start": 1942
+    },
+    "summary_short": "Allied landings in North Africa open a major front against Axis forces in the Mediterranean.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_battle_el_alamein_1942",
+      "ev_italy_surrenders_1943"
+    ],
+    "people_ids": [
+      "pe_dwight_eisenhower"
+    ]
+  },
+  {
+    "id": "ev_battle_el_alamein_1942",
+    "label": "Second Battle of El Alamein",
+    "time": {
+      "year_start": 1942
+    },
+    "summary_short": "British-led forces halt and reverse Axis advances in North Africa.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_italy_surrenders_1943"
+    ],
+    "people_ids": [
+      "pe_winston_churchill",
+      "pe_benito_mussolini"
+    ]
+  },
+  {
+    "id": "ev_battle_stalingrad_1942_1943",
+    "label": "Battle of Stalingrad",
+    "time": {
+      "year_start": 1942
+    },
+    "summary_short": "A decisive Soviet victory breaks German offensive capacity on the Eastern Front.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "social"
+    ],
+    "effects": [
+      "ev_soviet_counteroffensives_1943_1944",
+      "ev_operation_bagration_1944"
+    ],
+    "people_ids": [
+      "pe_joseph_stalin",
+      "pe_georgy_zhukov",
+      "pe_adolf_hitler"
+    ]
+  },
+  {
+    "id": "ev_guadalcanal_campaign_1942_1943",
+    "label": "Guadalcanal Campaign",
+    "time": {
+      "year_start": 1942
+    },
+    "summary_short": "The first major Allied offensive in the Pacific weakens Japanese expansion.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_island_hopping_campaign_1943_1945"
+    ],
+    "people_ids": [
+      "pe_franklin_d_roosevelt",
+      "pe_emperor_hirohito"
+    ]
+  },
+  {
+    "id": "ev_wartime_industrial_mobilization_1942_1944",
+    "label": "Allied Wartime Industrial Mobilization Peaks",
+    "time": {
+      "year_start": 1943
+    },
+    "summary_short": "Mass production of ships, aircraft, and vehicles gives the Allies decisive material superiority.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "economic",
+      "social"
+    ],
+    "effects": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_allied_strategic_bombing_1943"
+    ],
+    "people_ids": [
+      "pe_franklin_d_roosevelt",
+      "pe_winston_churchill",
+      "pe_joseph_stalin"
+    ]
+  },
+  {
+    "id": "ev_allied_strategic_bombing_1943",
+    "label": "Allied Strategic Bombing Intensifies",
+    "time": {
+      "year_start": 1943
+    },
+    "summary_short": "Allied air campaigns target German industry and infrastructure to reduce war capacity.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "economic"
+    ],
+    "effects": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_berlin_offensive_1945"
+    ],
+    "people_ids": [
+      "pe_winston_churchill",
+      "pe_franklin_d_roosevelt"
+    ]
+  },
+  {
+    "id": "ev_soviet_counteroffensives_1943_1944",
+    "label": "Soviet Counteroffensives Expand",
+    "time": {
+      "year_start": 1943
+    },
+    "summary_short": "Red Army operations recover occupied territory and push westward.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_operation_bagration_1944",
+      "ev_soviet_berlin_offensive_1945"
+    ],
+    "people_ids": [
+      "pe_joseph_stalin",
+      "pe_georgy_zhukov"
+    ]
+  },
+  {
+    "id": "ev_italy_surrenders_1943",
+    "label": "Italy Surrenders",
+    "time": {
+      "year_start": 1943
+    },
+    "summary_short": "Italy exits the Axis camp, though fighting continues in the Italian peninsula.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political",
+      "military"
+    ],
+    "effects": [
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "people_ids": [
+      "pe_benito_mussolini"
+    ]
+  },
+  {
+    "id": "ev_tehran_conference_1943",
+    "label": "Tehran Conference",
+    "time": {
+      "year_start": 1943
+    },
+    "summary_short": "Roosevelt, Churchill, and Stalin coordinate military strategy for defeating Nazi Germany.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political"
+    ],
+    "effects": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_yalta_conference_1945"
+    ],
+    "people_ids": [
+      "pe_franklin_d_roosevelt",
+      "pe_winston_churchill",
+      "pe_joseph_stalin"
+    ]
+  },
+  {
+    "id": "ev_operation_bagration_1944",
+    "label": "Operation Bagration",
+    "time": {
+      "year_start": 1944
+    },
+    "summary_short": "Soviet forces destroy much of Germany’s Army Group Centre in Belarus.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_soviet_berlin_offensive_1945"
+    ],
+    "people_ids": [
+      "pe_georgy_zhukov",
+      "pe_joseph_stalin"
+    ]
+  },
+  {
+    "id": "ev_operation_overlord_d_day_1944",
+    "label": "D-Day (Normandy Landings)",
+    "time": {
+      "year_start": 1944
+    },
+    "summary_short": "Allied forces land in Normandy, opening a sustained Western Front in Europe.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_liberation_paris_1944",
+      "ev_battle_bulge_1944",
+      "ev_germany_surrenders_1945"
+    ],
+    "people_ids": [
+      "pe_dwight_eisenhower",
+      "pe_winston_churchill"
+    ]
+  },
+  {
+    "id": "ev_liberation_paris_1944",
+    "label": "Liberation of Paris",
+    "time": {
+      "year_start": 1944
+    },
+    "summary_short": "Allied and Free French forces liberate Paris from German occupation.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "political",
+      "social"
+    ],
+    "effects": [
+      "ev_germany_surrenders_1945"
+    ],
+    "people_ids": [
+      "pe_charles_de_gaulle"
+    ]
+  },
+  {
+    "id": "ev_battle_bulge_1944",
+    "label": "Battle of the Bulge",
+    "time": {
+      "year_start": 1944
+    },
+    "summary_short": "Germany’s final major offensive in the West fails, accelerating Allied advance into Germany.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_germany_surrenders_1945"
+    ],
+    "people_ids": [
+      "pe_adolf_hitler",
+      "pe_dwight_eisenhower"
+    ]
+  },
+  {
+    "id": "ev_yalta_conference_1945",
+    "label": "Yalta Conference",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "Allied leaders negotiate occupation zones, war aims, and plans for postwar Europe.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political"
+    ],
+    "effects": [
+      "ev_germany_surrenders_1945",
+      "ev_un_charter_signed_1945"
+    ],
+    "people_ids": [
+      "pe_franklin_d_roosevelt",
+      "pe_winston_churchill",
+      "pe_joseph_stalin"
+    ]
+  },
+  {
+    "id": "ev_soviet_berlin_offensive_1945",
+    "label": "Soviet Offensive on Berlin",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "Soviet forces assault Berlin, bringing the European war to its final phase.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_hitler_suicide_1945",
+      "ev_germany_surrenders_1945"
+    ],
+    "people_ids": [
+      "pe_georgy_zhukov",
+      "pe_joseph_stalin"
+    ]
+  },
+  {
+    "id": "ev_hitler_suicide_1945",
+    "label": "Hitler Commits Suicide",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "Adolf Hitler dies in Berlin as Nazi Germany collapses militarily.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political"
+    ],
+    "effects": [
+      "ev_germany_surrenders_1945"
+    ],
+    "people_ids": [
+      "pe_adolf_hitler"
+    ]
+  },
+  {
+    "id": "ev_germany_surrenders_1945",
+    "label": "Germany Surrenders (VE Day)",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "Nazi Germany signs unconditional surrender, ending war in Europe.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "political"
+    ],
+    "effects": [
+      "ev_potsdam_conference_1945",
+      "ev_nuremberg_trials_begin_1945"
+    ],
+    "people_ids": [
+      "pe_harry_s_truman",
+      "pe_joseph_stalin",
+      "pe_winston_churchill"
+    ]
+  },
+  {
+    "id": "ev_potsdam_conference_1945",
+    "label": "Potsdam Conference",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "Allied leaders shape occupation policy in Germany and issue demands to Japan.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political"
+    ],
+    "effects": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_soviet_invasion_manchuria_1945"
+    ],
+    "people_ids": [
+      "pe_harry_s_truman",
+      "pe_joseph_stalin"
+    ]
+  },
+  {
+    "id": "ev_atomic_bomb_hiroshima_1945",
+    "label": "Atomic Bombing of Hiroshima",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "The United States drops an atomic bomb on Hiroshima to force Japanese surrender.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "political",
+      "social"
+    ],
+    "effects": [
+      "ev_atomic_bomb_nagasaki_1945",
+      "ev_japan_surrenders_1945"
+    ],
+    "people_ids": [
+      "pe_harry_s_truman",
+      "pe_emperor_hirohito"
+    ]
+  },
+  {
+    "id": "ev_soviet_invasion_manchuria_1945",
+    "label": "Soviet Invasion of Manchuria",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "Soviet forces rapidly defeat Japanese troops in Manchuria late in the war.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_japan_surrenders_1945"
+    ],
+    "people_ids": [
+      "pe_joseph_stalin",
+      "pe_emperor_hirohito"
+    ]
+  },
+  {
+    "id": "ev_atomic_bomb_nagasaki_1945",
+    "label": "Atomic Bombing of Nagasaki",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "A second U.S. atomic bombing increases pressure on Japan’s leadership to surrender.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "social"
+    ],
+    "effects": [
+      "ev_japan_surrenders_1945"
+    ],
+    "people_ids": [
+      "pe_harry_s_truman",
+      "pe_emperor_hirohito"
+    ]
+  },
+  {
+    "id": "ev_japan_surrenders_1945",
+    "label": "Japan Surrenders (VJ Day)",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "Japan accepts surrender terms, bringing World War II to a close.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military",
+      "political"
+    ],
+    "effects": [
+      "ev_un_charter_signed_1945"
+    ],
+    "people_ids": [
+      "pe_emperor_hirohito",
+      "pe_harry_s_truman"
+    ]
+  },
+  {
+    "id": "ev_un_charter_signed_1945",
+    "label": "United Nations Charter Signed",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "Allied and partner states establish the United Nations framework for postwar diplomacy.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political"
+    ],
+    "effects": [],
+    "people_ids": [
+      "pe_harry_s_truman",
+      "pe_joseph_stalin",
+      "pe_winston_churchill"
+    ]
+  },
+  {
+    "id": "ev_nuremberg_trials_begin_1945",
+    "label": "Nuremberg Trials Begin",
+    "time": {
+      "year_start": 1945
+    },
+    "summary_short": "International tribunals begin prosecuting leading Nazi officials for war crimes.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "political",
+      "social"
+    ],
+    "effects": [],
+    "people_ids": [
+      "pe_harry_s_truman"
+    ]
+  },
+  {
+    "id": "ev_island_hopping_campaign_1943_1945",
+    "label": "Island-Hopping Campaign Advances",
+    "time": {
+      "year_start": 1943
+    },
+    "summary_short": "Allied forces capture key Pacific islands to approach Japan while bypassing some strongholds.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "tags": [
+      "military"
+    ],
+    "effects": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_japan_surrenders_1945"
+    ],
+    "people_ids": [
+      "pe_franklin_d_roosevelt",
+      "pe_emperor_hirohito"
+    ]
   }
 ]

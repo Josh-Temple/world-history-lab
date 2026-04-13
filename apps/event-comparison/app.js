@@ -1,7 +1,6 @@
 import {
   getAllEvents,
-  getEventsForUnit,
-  getNextUnit,
+  getEventUnitMap,
   getTagClusters,
   getUnits,
   getStoredUnitId,
@@ -21,10 +20,10 @@ const unitHint = document.getElementById('unit-hint');
 const nextUnitHint = document.getElementById('next-unit-hint');
 
 let allEvents = [];
-let eventsById = new Map();
 let units = [];
-let currentEvents = [];
 let allClusters = [];
+let unitByEventId = new Map();
+let currentEvents = [];
 let currentQuestion = null;
 let roundCount = 0;
 
@@ -33,13 +32,6 @@ const appHeader = mountHeader({
   mode: 'Event Comparison',
   progress: 'Round 0',
 });
-
-function refreshHeader() {
-  appHeader.update({
-    unit: unitSelect.selectedOptions[0]?.textContent || 'All units',
-    progress: `Round ${roundCount}`,
-  });
-}
 
 function isValidEvent(event) {
   return Boolean(
@@ -63,62 +55,125 @@ function shuffle(list) {
   return items;
 }
 
-function pickEventsFromCluster(cluster) {
-  const scopedIds = new Set(currentEvents.map((event) => event.id));
-  const selected = cluster
-    .filter((id) => scopedIds.has(id))
-    .map((id) => eventsById.get(id))
-    .filter(Boolean)
-    .slice(0, 3);
-
-  return selected.length >= 2 ? selected : [];
+function getSelectedUnitIds() {
+  const raw = unitSelect.value || '';
+  return raw ? raw.split(',').filter(Boolean) : [];
 }
 
-function buildChronologyQuestion(selected) {
-  const sorted = selected
+function formatUnitSelectionLabel(unitIds) {
+  if (!unitIds.length) return 'All units';
+  if (unitIds.length === 1) {
+    const unit = units.find((entry) => entry.id === unitIds[0]);
+    return unit?.label || unitIds[0];
+  }
+  return `${unitIds.length} units`;
+}
+
+function getUnitForEvent(eventId) {
+  const unitId = unitByEventId.get(eventId);
+  const unit = units.find((entry) => entry.id === unitId);
+  return unit?.label || unitId || 'Unknown unit';
+}
+
+function refreshHeader() {
+  const selectedUnitIds = getSelectedUnitIds();
+  appHeader.update({
+    unit: formatUnitSelectionLabel(selectedUnitIds),
+    progress: `Round ${roundCount}`,
+  });
+}
+
+function pickCrossUnitPair(events) {
+  if (events.length < 2) return [];
+  const first = randomItem(events);
+  const firstTags = Array.isArray(first.tags) ? first.tags : [];
+
+  const candidates = events.filter((event) => (
+    event.id !== first.id
+    && getUnitForEvent(event.id) !== getUnitForEvent(first.id)
+    && firstTags.some((tag) => (event.tags || []).includes(tag))
+  ));
+
+  if (!candidates.length) return [];
+  return [first, randomItem(candidates)];
+}
+
+function buildCrossUnitChronologyQuestion(events) {
+  const pair = pickCrossUnitPair(events);
+  if (pair.length < 2) return null;
+
+  const [left, right] = pair;
+  const options = shuffle([left, right]);
+  const correct = left.time.year_start <= right.time.year_start ? left : right;
+  return {
+    type: 'cross_unit_earlier',
+    prompt: 'Which came earlier across units?',
+    options,
+    correctId: correct.id,
+    explanation: `${correct.label} (${getUnitForEvent(correct.id)}) happened in ${correct.time.year_start}.`,
+  };
+}
+
+function buildCrossUnitOwnershipQuestion(events) {
+  const pair = pickCrossUnitPair(events);
+  if (pair.length < 2) return null;
+
+  const target = randomItem(pair);
+  const targetUnitLabel = getUnitForEvent(target.id);
+  const otherUnitLabel = getUnitForEvent(pair.find((event) => event.id !== target.id).id);
+  return {
+    type: 'cross_unit_membership',
+    prompt: `Which war did this event belong to: ${target.label}?`,
+    options: shuffle([
+      { id: `${target.id}::correct`, label: targetUnitLabel, time: { year_start: target.time.year_start }, isLabelOption: true },
+      { id: `${target.id}::distractor`, label: otherUnitLabel, time: { year_start: target.time.year_start }, isLabelOption: true },
+    ]),
+    correctId: `${target.id}::correct`,
+    explanation: `${target.label} belongs to ${targetUnitLabel}.`,
+    targetEventId: target.id,
+  };
+}
+
+function buildClusterQuestion(clusterEvents) {
+  const sorted = clusterEvents
     .slice()
     .sort((a, b) => a.time.year_start - b.time.year_start || a.id.localeCompare(b.id));
   const correct = sorted[0];
   return {
     type: 'chronology',
     prompt: 'Which event came first?',
-    options: selected,
+    options: clusterEvents,
     correctId: correct.id,
-    explanation: `${correct.label} came first (${correct.time.year_start}). ${correct.summary_short || 'No summary available.'}`,
+    explanation: `${correct.label} (${getUnitForEvent(correct.id)}) came first in ${correct.time.year_start}.`,
   };
 }
 
-function buildImpactQuestion(selected) {
-  const scored = selected
-    .map((event) => ({ event, score: Number.isFinite(event.importance) ? event.importance : 0 }))
-    .sort((a, b) => b.score - a.score || a.event.id.localeCompare(b.event.id));
-  const correct = scored[0].event;
-  return {
-    type: 'impact',
-    prompt: 'Which event had greater impact in this set?',
-    options: selected,
-    correctId: correct.id,
-    explanation: `${correct.label} is marked as highest impact in this cluster. ${correct.summary_short || 'No summary available.'}`,
-  };
+function pickClusterEvents(events) {
+  const scopeIds = new Set(events.map((event) => event.id));
+  const candidates = allClusters
+    .map((cluster) => cluster
+      .filter((id) => scopeIds.has(id))
+      .map((id) => events.find((event) => event.id === id))
+      .filter(Boolean))
+    .filter((cluster) => cluster.length >= 2);
+
+  if (!candidates.length) return [];
+  return randomItem(candidates).slice(0, 3);
 }
 
-function buildSimilarityQuestion(selected) {
-  const anchor = selected[0];
-  const [correct, ...rest] = selected.slice(1);
-  const options = shuffle([correct, ...rest]);
-  return {
-    type: 'similarity',
-    prompt: `Which event is most similar to ${anchor.label}?`,
-    options,
-    correctId: correct.id,
-    explanation: `${correct.label} shares the same thematic tag cluster as ${anchor.label}. ${correct.summary_short || 'No summary available.'}`,
-    anchor,
-  };
-}
+function buildQuestion(events) {
+  const crossUnit = getSelectedUnitIds().length >= 2;
 
-function buildQuestion(selected) {
-  const builders = [buildChronologyQuestion, buildImpactQuestion, buildSimilarityQuestion];
-  return randomItem(builders)(selected);
+  if (crossUnit) {
+    const builders = [buildCrossUnitChronologyQuestion, buildCrossUnitOwnershipQuestion];
+    const picked = randomItem(builders)(events);
+    if (picked) return picked;
+  }
+
+  const cluster = pickClusterEvents(events);
+  if (cluster.length >= 2) return buildClusterQuestion(cluster);
+
+  return null;
 }
 
 function renderQuestion() {
@@ -127,24 +182,28 @@ function renderQuestion() {
   explanationEl.textContent = '';
   optionsEl.innerHTML = '';
 
-  const viableClusters = allClusters.filter((cluster) => pickEventsFromCluster(cluster).length >= 2);
-  if (viableClusters.length === 0) {
-    questionEl.textContent = 'No comparison clusters are available for this unit yet.';
+  if (currentEvents.length < 2) {
+    questionEl.textContent = 'Not enough events in the selected units yet.';
     nextButton.disabled = true;
     refreshHeader();
     return;
   }
 
-  const cluster = randomItem(viableClusters);
-  const selected = pickEventsFromCluster(cluster);
-  currentQuestion = buildQuestion(selected);
+  currentQuestion = buildQuestion(currentEvents);
+  if (!currentQuestion) {
+    questionEl.textContent = 'No cross-unit comparison pair is available for this selection yet.';
+    nextButton.disabled = true;
+    refreshHeader();
+    return;
+  }
 
   questionEl.textContent = currentQuestion.prompt;
-  currentQuestion.options.forEach((event) => {
+  currentQuestion.options.forEach((option) => {
     const button = document.createElement('button');
     button.type = 'button';
-    button.textContent = `${event.label} (${event.time.year_start})`;
-    button.addEventListener('click', () => checkAnswer(event.id));
+    const suffix = option.isLabelOption ? '' : ` (${option.time.year_start}) · ${getUnitForEvent(option.id)}`;
+    button.textContent = `${option.label}${suffix}`;
+    button.addEventListener('click', () => checkAnswer(option.id));
     optionsEl.append(button);
   });
 
@@ -155,20 +214,35 @@ function renderQuestion() {
 function checkAnswer(selectedId) {
   if (!currentQuestion) return;
 
-  const selected = eventsById.get(selectedId);
-  const correct = eventsById.get(currentQuestion.correctId);
   const isCorrect = selectedId === currentQuestion.correctId;
+  const correctOption = currentQuestion.options.find((option) => option.id === currentQuestion.correctId);
 
   showFeedback(feedbackEl, {
     correct: isCorrect,
-    event: selected || correct,
-    correctAnswer: { label: correct?.label || 'Unknown event' },
-    summary: isCorrect ? 'Correct comparison.' : `Incorrect. ${correct?.label || 'Unknown event'} is correct.`,
+    event: correctOption,
+    correctAnswer: { label: correctOption?.label || 'Unknown' },
+    summary: isCorrect
+      ? 'Correct comparison.'
+      : `Incorrect. ${correctOption?.label || 'Unknown'} is correct.`,
   });
+
   explanationEl.textContent = currentQuestion.explanation;
 
+  if (currentQuestion.type === 'cross_unit_membership') {
+    const targetId = currentQuestion.targetEventId;
+    if (targetId) {
+      recordResult(targetId, isCorrect, {
+        mode: 'event_comparison_cross_unit_membership',
+        question_type: 'cross_unit_membership',
+      });
+    }
+    return;
+  }
+
   currentQuestion.options.forEach((event) => {
-    recordResult(event.id, isCorrect && event.id === currentQuestion.correctId, {
+    if (event.isLabelOption) return;
+    const correctForEvent = isCorrect && event.id === currentQuestion.correctId;
+    recordResult(event.id, correctForEvent, {
       mode: `event_comparison_${currentQuestion.type}`,
       question_type: currentQuestion.type,
     });
@@ -195,41 +269,52 @@ function populateUnitOptions() {
   unitSelect.value = known ? saved : '';
 }
 
-function updateProgressionHint() {
-  const selectedUnitId = unitSelect.value;
-  const next = getNextUnit(units, selectedUnitId);
-
-  if (!selectedUnitId) {
-    unitHint.textContent = 'Using all units.';
-    nextUnitHint.textContent = units[0] ? `Suggested start: ${units[0].label}.` : '';
+function updateProgressionHint(selectedUnitIds) {
+  if (!selectedUnitIds.length) {
+    unitHint.textContent = 'Using all units (cross-unit pairing enabled).';
+    nextUnitHint.textContent = 'Tip: Shift-select two units for focused cross-war comparison.';
     return;
   }
 
-  const selected = units.find((unit) => unit.id === selectedUnitId);
-  unitHint.textContent = `Focused on ${selected?.label || selectedUnitId}.`;
-  nextUnitHint.textContent = next ? `Next unit: ${next.label}.` : 'You are on the last unit in the current sequence.';
+  if (selectedUnitIds.length === 1) {
+    const selected = units.find((unit) => unit.id === selectedUnitIds[0]);
+    unitHint.textContent = `Focused on ${selected?.label || selectedUnitIds[0]}.`;
+    nextUnitHint.textContent = 'Select multiple units to unlock cross-unit questions.';
+    return;
+  }
+
+  unitHint.textContent = `Cross-unit mode across ${selectedUnitIds.length} units.`;
+  nextUnitHint.textContent = 'Question mix now includes unit-identification and cross-unit chronology.';
 }
 
 async function applyUnitSelection() {
-  const selectedUnitId = unitSelect.value;
-  currentEvents = selectedUnitId ? await getEventsForUnit(selectedUnitId) : allEvents.slice();
+  const selectedUnitIds = getSelectedUnitIds();
+
+  if (!selectedUnitIds.length) {
+    currentEvents = allEvents.slice();
+  } else {
+    const allowed = new Set(selectedUnitIds);
+    currentEvents = allEvents.filter((event) => allowed.has(unitByEventId.get(event.id)));
+  }
+
   currentEvents = currentEvents.filter(isValidEvent);
-  updateProgressionHint();
+  updateProgressionHint(selectedUnitIds);
   renderQuestion();
 }
 
 async function init() {
   try {
-    const [events, loadedUnits, clusters] = await Promise.all([
+    const [events, loadedUnits, clusters, eventMap] = await Promise.all([
       getAllEvents(),
       getUnits(),
       getTagClusters(),
+      getEventUnitMap(),
     ]);
 
     allEvents = (Array.isArray(events) ? events : []).filter(isValidEvent);
-    eventsById = new Map(allEvents.map((event) => [event.id, event]));
     units = Array.isArray(loadedUnits) ? loadedUnits : [];
     allClusters = Array.isArray(clusters) ? clusters : [];
+    unitByEventId = eventMap instanceof Map ? eventMap : new Map();
 
     populateUnitOptions();
     setStoredUnitId(unitSelect.value);
@@ -243,7 +328,11 @@ async function init() {
 }
 
 unitSelect.addEventListener('change', async () => {
-  setStoredUnitId(unitSelect.value);
+  const selected = Array.from(unitSelect.selectedOptions)
+    .map((option) => option.value)
+    .filter(Boolean);
+  const persisted = selected.length === 1 ? selected[0] : '';
+  setStoredUnitId(persisted);
   await applyUnitSelection();
 });
 

@@ -1,0 +1,114 @@
+{
+  "id": "unit_world_war_ii",
+  "title": "World War II",
+  "label": "World War II",
+  "language": "en",
+  "description": "High-density World War II unit spanning causes, global theaters, home-front mobilization, genocide, and postwar settlements.",
+  "recommended_level": "middle",
+  "regions": [
+    "reg_europe",
+    "reg_asia_pacific",
+    "reg_north_america"
+  ],
+  "tags": [
+    "world-war",
+    "wwii",
+    "causality",
+    "modern"
+  ],
+  "learning_goals": [
+    "Trace escalation from prewar diplomacy breakdown to global conflict.",
+    "Connect military turning points with political, social, and economic transformations.",
+    "Explain how wartime outcomes shaped the post-1945 international order."
+  ],
+  "event_ids": [
+    "ev_munich_agreement_1938",
+    "ev_molotov_ribbentrop_pact_1939",
+    "ev_invasion_poland_1939",
+    "ev_france_britain_declare_war_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_fall_of_france_1940",
+    "ev_battle_of_britain_1940",
+    "ev_lend_lease_act_1941",
+    "ev_operation_barbarossa_1941",
+    "ev_holocaust_widening_killings_1941",
+    "ev_pearl_harbor_1941",
+    "ev_united_states_enters_war_1941",
+    "ev_wannsee_conference_1942",
+    "ev_auschwitz_killing_center_expansion_1942",
+    "ev_battle_midway_1942",
+    "ev_operation_torch_1942",
+    "ev_battle_el_alamein_1942",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_italy_surrenders_1943",
+    "ev_tehran_conference_1943",
+    "ev_operation_bagration_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_liberation_paris_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_hitler_suicide_1945",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_soviet_invasion_manchuria_1945",
+    "ev_atomic_bomb_nagasaki_1945",
+    "ev_japan_surrenders_1945",
+    "ev_un_charter_signed_1945",
+    "ev_nuremberg_trials_begin_1945",
+    "ev_island_hopping_campaign_1943_1945"
+  ],
+  "person_ids": [
+    "pe_adolf_hitler",
+    "pe_joseph_stalin",
+    "pe_franklin_d_roosevelt",
+    "pe_harry_s_truman",
+    "pe_winston_churchill",
+    "pe_benito_mussolini",
+    "pe_hideki_tojo",
+    "pe_emperor_hirohito",
+    "pe_charles_de_gaulle",
+    "pe_dwight_eisenhower",
+    "pe_georgy_zhukov",
+    "pe_neville_chamberlain"
+  ],
+  "app_profiles": {
+    "timeline-trainer": {
+      "enabled": true,
+      "question_types": [
+        "timeline_before_after",
+        "timeline_ordering"
+      ]
+    },
+    "event-recognition": {
+      "enabled": true,
+      "question_types": [
+        "what_happened",
+        "significance"
+      ]
+    },
+    "causality-builder": {
+      "enabled": true,
+      "question_types": [
+        "causality_direct_effect",
+        "causality_cause_category"
+      ]
+    },
+    "sequence-reconstruction": {
+      "enabled": true
+    },
+    "year-estimation": {
+      "enabled": true,
+      "question_types": [
+        "year_estimation"
+      ]
+    }
+  },
+  "status": "reviewed",
+  "updated_at": "2026-04-13"
+}

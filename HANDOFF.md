@@ -1,3 +1,20 @@
+## Incremental update (2026-04-13 · WW2 flagship unit + cross-unit comparison support)
+- Added `data/units/unit_world_war_ii.json` with 40 reviewed WW2 events and app profiles aligned to timeline, recognition, causality, sequence, and year-estimation flows.
+- Expanded `data/events.json` with 40 WW2 events (1938-1945) with causal `effects`, multi-tag coverage, and linked `people_ids`.
+- Expanded `data/people.json` with WW2-linked figures required by new event references.
+- Registered `unit_world_war_ii` in `data/units/index.json` and updated `data/metadata.json` (`scope.included_units`, curriculum order/prerequisites/next-units, `updated_at`).
+- Updated `apps/shared/data-store.js` with `getEventUnitMap()` for event→unit lookup support across app modes.
+- Updated `apps/event-comparison/index.html` + `apps/event-comparison/app.js` to enable multi-unit selection and new cross-unit prompt types with unit-aware feedback context.
+
+## Validation completed (2026-04-13)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add a light balancing heuristic in event-comparison so under-practiced units/tags are sampled more often in cross-unit mode.
+2. Add dedicated WWI↔WWII authored comparison prompt pairs for higher-quality reasoning feedback than pure tag-overlap selection.
+3. Extend concept tagging coverage across the new WW2 events so concept-mode features can generalize beyond the canonical backbone.
+
 ## Incremental update (2026-04-12 · concept layer v1 + History Player integration)
 - Added `content_policy.concept_taxonomy` in `data/metadata.json` with 8 fixed concept themes to anchor cross-unit comparison and causal patterning.
 - Tagged 27 canonical backbone events in `data/events.json` with new `concept_tags` so at least one active mode can surface conceptual patterns (not only chronology/category).
