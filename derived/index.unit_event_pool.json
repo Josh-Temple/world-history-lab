@@ -587,5 +587,8 @@
         "ev_wwi_zimmermann_telegram_1917"
       ]
     }
+  },
+  "unit_world_war_ii": {
+    "eligible_ids": {}
   }
 }

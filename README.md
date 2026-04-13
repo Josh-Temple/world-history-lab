@@ -115,6 +115,18 @@ Next:
 - Added derive-time tag clustering output (`data/derived/tag_clusters.json`) so comparison rounds can draw from meaningful thematic event groups instead of purely random pairs.
 - Extended shared app data access with `getTagClusters()` in `apps/shared/data-store.js` to support cluster-aware learning modes.
 
+
+## Recent updates (2026-04-13 · World War II flagship density + cross-unit comparison mode)
+
+- Added a new high-density reviewed unit at `data/units/unit_world_war_ii.json` with **40** World War II events spanning prewar escalation, global theaters, turning points, home-front mobilization, war termination, and postwar legal/institutional outcomes.
+- Expanded `data/events.json` with 40 WW2 events including `summary_short`, tags (`military`, `political`, `economic`, `social`), explicit causal `effects`, and `people_ids` links.
+- Expanded `data/people.json` with WW2-era figures used by the new event graph (for example: Hitler, Stalin, Roosevelt, Truman, de Gaulle, Eisenhower, Zhukov, Hirohito).
+- Registered `unit_world_war_ii` in `data/units/index.json` and synced `data/metadata.json` scope + curriculum sequencing to place WW2 after WW1.
+- Upgraded `apps/event-comparison/` to support **cross-unit comparison** via multi-select unit setup, balanced cross-unit pairing by shared tags, and new prompts:
+  - “Which war did this event belong to?”
+  - “Which came earlier across units?”
+- Added `getEventUnitMap()` in `apps/shared/data-store.js` so comparison mode can resolve event→unit context efficiently for feedback and pairing logic.
+
 ## Recent updates (2026-04-12 · concept layer v1 in data + History Player)
 
 - Added a first explicit concept taxonomy in `data/metadata.json` (`content_policy.concept_taxonomy`) with 8 cross-era themes for comparison and causality scaffolding.

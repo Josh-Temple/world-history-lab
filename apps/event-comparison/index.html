@@ -13,7 +13,7 @@
       main { width: min(760px, calc(100% - 2rem)); margin: 2rem auto; }
       .card { background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; padding: 1rem; }
       .setup { display: grid; gap: .35rem; margin-bottom: .8rem; }
-      .setup select { min-height: 2.3rem; border: 1px solid #cbd5e1; border-radius: 8px; padding: 0 .5rem; }
+      .setup select { min-height: 2.3rem; border: 1px solid #cbd5e1; border-radius: 8px; padding: .35rem .5rem; }
       .hint { margin: 0; color: #475569; font-size: .95rem; }
       #question { margin: .9rem 0; font-weight: 600; }
       #options { display: grid; gap: .5rem; margin: .75rem 0; }
@@ -30,8 +30,8 @@
         <h2>Structured Event Comparison</h2>
 
         <div class="setup">
-          <label for="unit-select">Unit focus</label>
-          <select id="unit-select"></select>
+          <label for="unit-select">Unit focus (multi-select for cross-unit mode)</label>
+          <select id="unit-select" multiple size="8"></select>
           <p id="unit-hint" class="hint">Using all units.</p>
           <p id="next-unit-hint" class="hint"></p>
         </div>

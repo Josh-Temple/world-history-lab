@@ -4,6 +4,7 @@ let unitFilesCache = null;
 let peopleCache = null;
 let metadataCache = null;
 let tagClustersCache = null;
+let eventUnitMapCache = null;
 
 function isValidEvent(event) {
   return Boolean(
@@ -125,6 +126,25 @@ export async function getUnitById(unitId) {
   const unit = await fetchJson(path, `unit ${unitId}`);
   unitFilesCache.set(unitId, unit);
   return unit;
+}
+
+export async function getEventUnitMap() {
+  if (eventUnitMapCache) return eventUnitMapCache;
+
+  const units = await getUnits();
+  const map = new Map();
+
+  for (const unit of units) {
+    const ids = Array.isArray(unit?.event_ids) ? unit.event_ids : [];
+    for (const eventId of ids) {
+      if (typeof eventId === "string" && eventId.length > 0 && !map.has(eventId)) {
+        map.set(eventId, unit.id);
+      }
+    }
+  }
+
+  eventUnitMapCache = map;
+  return eventUnitMapCache;
 }
 
 export async function getEventsForUnit(unitId) {

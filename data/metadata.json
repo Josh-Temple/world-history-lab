@@ -13,9 +13,10 @@
       "unit_french_revolution",
       "unit_foundations_world_history",
       "unit_industrialization_pathways_comparison",
-      "unit_world_war_i"
+      "unit_world_war_i",
+      "unit_world_war_ii"
     ],
-    "notes": "Core dataset now spans foundations, modern specialized units, a comparison track, and a high-density World War I flagship unit for cross-mode practice."
+    "notes": "Core dataset now spans foundations, modern specialized units, comparison tracks, and high-density World War I + II flagship units for cross-mode practice."
   },
   "curriculum": {
     "sequence_basis": "Periodization-first path from broad foundations into focused modern-era depth.",
@@ -104,18 +105,30 @@
           "unit_age_of_imperialism"
         ],
         "next_units": [
-          "unit_industrialization_pathways_comparison"
+          "unit_world_war_ii"
         ]
       },
       {
         "id": "unit_industrialization_pathways_comparison",
-        "order": 8,
+        "order": 9,
         "era": "Modern",
         "difficulty": 2,
         "prerequisites": [
-          "unit_world_war_i"
+          "unit_world_war_ii"
         ],
         "next_units": []
+      },
+      {
+        "id": "unit_world_war_ii",
+        "order": 8,
+        "era": "Modern",
+        "difficulty": 3,
+        "prerequisites": [
+          "unit_world_war_i"
+        ],
+        "next_units": [
+          "unit_industrialization_pathways_comparison"
+        ]
       }
     ]
   },
@@ -198,7 +211,7 @@
       "cause_and_effect"
     ]
   },
-  "updated_at": "2026-04-12T00:00:00Z",
+  "updated_at": "2026-04-13T00:00:00Z",
   "maintainer": {
     "name": "Josh",
     "notes": "Personal learning project"

@@ -31,6 +31,10 @@
     {
       "id": "unit_world_war_i",
       "path": "data/units/unit_world_war_i.json"
+    },
+    {
+      "id": "unit_world_war_ii",
+      "path": "data/units/unit_world_war_ii.json"
     }
   ]
 }

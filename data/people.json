@@ -1924,5 +1924,116 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "reviewed"
+  },
+  {
+    "id": "pe_adolf_hitler",
+    "name": "Adolf Hitler",
+    "roles": [
+      "dictator"
+    ],
+    "summary_short": "Leader of Nazi Germany and central architect of Axis war strategy in Europe.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_joseph_stalin",
+    "name": "Joseph Stalin",
+    "roles": [
+      "dictator"
+    ],
+    "summary_short": "Leader of the Soviet Union during the war on the Eastern Front and postwar settlement negotiations.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_franklin_d_roosevelt",
+    "name": "Franklin D. Roosevelt",
+    "roles": [
+      "president"
+    ],
+    "summary_short": "U.S. president who led American mobilization and grand strategy through most of World War II.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_harry_s_truman",
+    "name": "Harry S. Truman",
+    "roles": [
+      "president"
+    ],
+    "summary_short": "U.S. president in 1945 who oversaw the final phase of the war and early postwar order.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_benito_mussolini",
+    "name": "Benito Mussolini",
+    "roles": [
+      "dictator"
+    ],
+    "summary_short": "Fascist leader of Italy and Axis partner whose regime collapsed in 1943.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_hideki_tojo",
+    "name": "Hideki Tojo",
+    "roles": [
+      "prime-minister"
+    ],
+    "summary_short": "Japanese wartime prime minister associated with expansionist military policy.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_emperor_hirohito",
+    "name": "Emperor Hirohito",
+    "roles": [
+      "emperor"
+    ],
+    "summary_short": "Japanese emperor during World War II and the formal announcement of surrender in 1945.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_charles_de_gaulle",
+    "name": "Charles de Gaulle",
+    "roles": [
+      "general",
+      "statesman"
+    ],
+    "summary_short": "Leader of Free France and major political figure in liberated France.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_dwight_eisenhower",
+    "name": "Dwight D. Eisenhower",
+    "roles": [
+      "general"
+    ],
+    "summary_short": "Supreme Allied commander in Western Europe, including Operation Overlord.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_georgy_zhukov",
+    "name": "Georgy Zhukov",
+    "roles": [
+      "general"
+    ],
+    "summary_short": "Senior Soviet commander in key victories including Stalingrad phase operations and Berlin.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_neville_chamberlain",
+    "name": "Neville Chamberlain",
+    "roles": [
+      "prime-minister"
+    ],
+    "summary_short": "British prime minister associated with appeasement before the war expanded in Europe.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
   }
 ]
