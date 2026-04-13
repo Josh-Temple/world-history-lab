@@ -2509,7 +2509,11 @@
       "lat": 30.2,
       "lng": 53.18,
       "precision": "region"
-    }
+    },
+    "concept_tags": [
+      "state_formation_governance",
+      "empire_imperialism"
+    ]
   },
   {
     "id": "ev_buddha_enlightenment_5c_bce",
@@ -2534,7 +2538,10 @@
       "lat": 24.7,
       "lng": 84.99,
       "precision": "city"
-    }
+    },
+    "concept_tags": [
+      "belief_systems_cultural_exchange"
+    ]
   },
   {
     "id": "ev_alexander_gaugamela_331bce",
@@ -2559,7 +2566,11 @@
       "lat": 36.36,
       "lng": 43.13,
       "precision": "region"
-    }
+    },
+    "concept_tags": [
+      "war_diplomacy",
+      "empire_imperialism"
+    ]
   },
   {
     "id": "ev_ashoka_kalinga_261bce",
@@ -2584,7 +2595,11 @@
       "lat": 20.19,
       "lng": 85.84,
       "precision": "region"
-    }
+    },
+    "concept_tags": [
+      "war_diplomacy",
+      "belief_systems_cultural_exchange"
+    ]
   },
   {
     "id": "ev_qin_unification_221bce",
@@ -2609,7 +2624,10 @@
       "lat": 34.36,
       "lng": 108.71,
       "precision": "region"
-    }
+    },
+    "concept_tags": [
+      "state_formation_governance"
+    ]
   },
   {
     "id": "ev_han_zhangqian_2c_bce",
@@ -2634,7 +2652,11 @@
       "lat": 34.34,
       "lng": 108.94,
       "precision": "city"
-    }
+    },
+    "concept_tags": [
+      "trade_networks_economic_exchange",
+      "belief_systems_cultural_exchange"
+    ]
   },
   {
     "id": "ev_augustus_principate_27bce",
@@ -2659,7 +2681,11 @@
       "lat": 41.9,
       "lng": 12.5,
       "precision": "city"
-    }
+    },
+    "concept_tags": [
+      "state_formation_governance",
+      "empire_imperialism"
+    ]
   },
   {
     "id": "ev_constantine_edict_milan_313",
@@ -2684,7 +2710,11 @@
       "lat": 45.46,
       "lng": 9.19,
       "precision": "city"
-    }
+    },
+    "concept_tags": [
+      "belief_systems_cultural_exchange",
+      "state_formation_governance"
+    ]
   },
   {
     "id": "ev_hijra_622",
@@ -2709,7 +2739,11 @@
       "lat": 24.47,
       "lng": 39.61,
       "precision": "city"
-    }
+    },
+    "concept_tags": [
+      "belief_systems_cultural_exchange",
+      "state_formation_governance"
+    ]
   },
   {
     "id": "ev_tang_peak_7c",
@@ -2734,7 +2768,11 @@
       "lat": 34.34,
       "lng": 108.94,
       "precision": "city"
-    }
+    },
+    "concept_tags": [
+      "trade_networks_economic_exchange",
+      "state_formation_governance"
+    ]
   },
   {
     "id": "ev_charlemagne_crowned_800",
@@ -2759,7 +2797,11 @@
       "lat": 41.9,
       "lng": 12.5,
       "precision": "city"
-    }
+    },
+    "concept_tags": [
+      "state_formation_governance",
+      "belief_systems_cultural_exchange"
+    ]
   },
   {
     "id": "ev_song_commercial_revolution_11c",
@@ -2784,7 +2826,11 @@
       "lat": 34.8,
       "lng": 114.3,
       "precision": "region"
-    }
+    },
+    "concept_tags": [
+      "trade_networks_economic_exchange",
+      "technology_industrialization"
+    ]
   },
   {
     "id": "ev_mongol_empire_formation_1206",
@@ -2809,7 +2855,11 @@
       "lat": 47.7,
       "lng": 109,
       "precision": "region"
-    }
+    },
+    "concept_tags": [
+      "war_diplomacy",
+      "empire_imperialism"
+    ]
   },
   {
     "id": "ev_mehmed_constantinople_1453",
@@ -2834,7 +2884,11 @@
       "lat": 41.01,
       "lng": 28.97,
       "precision": "city"
-    }
+    },
+    "concept_tags": [
+      "war_diplomacy",
+      "state_formation_governance"
+    ]
   },
   {
     "id": "ev_columbus_1492",
@@ -2859,7 +2913,11 @@
       "lat": 24.06,
       "lng": -74.47,
       "precision": "approx"
-    }
+    },
+    "concept_tags": [
+      "trade_networks_economic_exchange",
+      "empire_imperialism"
+    ]
   },
   {
     "id": "ev_womens_march_versailles_1789",
@@ -3023,6 +3081,10 @@
     },
     "effects": [
       "ev_ottoman_conquest_egypt_1517"
+    ],
+    "concept_tags": [
+      "trade_networks_economic_exchange",
+      "belief_systems_cultural_exchange"
     ]
   },
   {
@@ -3053,6 +3115,10 @@
     },
     "effects": [
       "ev_mughal_empire_akbar_consolidation_1570s"
+    ],
+    "concept_tags": [
+      "empire_imperialism",
+      "war_diplomacy"
     ]
   },
   {
@@ -3083,6 +3149,10 @@
     },
     "effects": [
       "ev_tokugawa_shogunate_1603"
+    ],
+    "concept_tags": [
+      "state_formation_governance",
+      "belief_systems_cultural_exchange"
     ]
   },
   {
@@ -3113,6 +3183,9 @@
     },
     "effects": [
       "ev_haitian_revolution_independence_1804"
+    ],
+    "concept_tags": [
+      "state_formation_governance"
     ]
   },
   {
@@ -3143,6 +3216,10 @@
     },
     "effects": [
       "ev_abolition_british_slave_trade_1807"
+    ],
+    "concept_tags": [
+      "revolution_reform",
+      "decolonization_nation_building"
     ]
   },
   {
@@ -3173,6 +3250,10 @@
     },
     "effects": [
       "ev_qing_first_opium_war_1839"
+    ],
+    "concept_tags": [
+      "revolution_reform",
+      "trade_networks_economic_exchange"
     ]
   },
   {
@@ -3203,6 +3284,10 @@
     },
     "effects": [
       "ev_indian_revolt_1857"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "empire_imperialism"
     ]
   },
   {
@@ -3233,6 +3318,10 @@
     },
     "effects": [
       "ev_berlin_conference_1884"
+    ],
+    "concept_tags": [
+      "revolution_reform",
+      "empire_imperialism"
     ]
   },
   {
@@ -3263,6 +3352,10 @@
     },
     "effects": [
       "ev_pan_african_congress_1945"
+    ],
+    "concept_tags": [
+      "empire_imperialism",
+      "war_diplomacy"
     ]
   },
   {
@@ -3293,6 +3386,10 @@
     },
     "effects": [
       "ev_india_independence_1947"
+    ],
+    "concept_tags": [
+      "decolonization_nation_building",
+      "revolution_reform"
     ]
   },
   {
@@ -3323,6 +3420,10 @@
     },
     "effects": [
       "ev_bandung_conference_1955"
+    ],
+    "concept_tags": [
+      "decolonization_nation_building",
+      "state_formation_governance"
     ]
   },
   {
@@ -3350,7 +3451,11 @@
       "lat": -6.9175,
       "lng": 107.6191,
       "precision": "city"
-    }
+    },
+    "concept_tags": [
+      "decolonization_nation_building",
+      "war_diplomacy"
+    ]
   },
   {
     "id": "ev_enclosure_movement_accelerates_1750s",

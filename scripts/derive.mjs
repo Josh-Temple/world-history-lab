@@ -318,6 +318,27 @@ function validateEventTags(events) {
   }
 }
 
+function validateConceptTags(events, allowedConceptTags = new Set()) {
+  for (const event of events) {
+    if (!Object.hasOwn(event, "concept_tags")) {
+      continue;
+    }
+
+    if (!Array.isArray(event.concept_tags)) {
+      throw new Error(`Event ${event.id}: concept_tags must be an array when provided`);
+    }
+
+    for (const conceptTag of event.concept_tags) {
+      if (typeof conceptTag !== "string" || conceptTag.trim() === "") {
+        throw new Error(`Event ${event.id}: concept_tags must contain non-empty strings`);
+      }
+      if (allowedConceptTags.size > 0 && !allowedConceptTags.has(conceptTag)) {
+        console.warn(`[derive] Unknown concept tag "${conceptTag}" in event ${event.id}`);
+      }
+    }
+  }
+}
+
 function buildUnitIdsByEventId(units) {
   const unitIdsByEventId = new Map();
   for (const unit of units) {
@@ -351,6 +372,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map()) {
         importance: Number.isFinite(event.importance) ? event.importance : null,
         location: event.location && typeof event.location === "object" ? event.location : null,
         question_types: Array.isArray(event.question_types) ? event.question_types : [],
+        concept_tags: Array.isArray(event.concept_tags) ? event.concept_tags : [],
         people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
         unit_ids: unitIdsByEventId.get(event.id) || [],
         effects: Array.isArray(event.effects) ? event.effects : [],
@@ -384,6 +406,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map()) {
     importance: Number.isFinite(event.importance) ? event.importance : null,
     location: event.location && typeof event.location === "object" ? event.location : null,
     question_types: Array.isArray(event.question_types) ? event.question_types : [],
+    concept_tags: Array.isArray(event.concept_tags) ? event.concept_tags : [],
     people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
     unit_ids: unitIdsByEventId.get(event.id) || [],
     effects: Array.isArray(event.effects) ? event.effects : [],
@@ -663,6 +686,14 @@ async function main() {
     throw new Error("data/metadata.json must contain app_support.enabled_question_types as an array");
   }
   const enabledQuestionTypeSet = new Set(enabledQuestionTypes);
+  const conceptTaxonomy = metadata?.content_policy?.concept_taxonomy;
+  const allowedConceptTags = Array.isArray(conceptTaxonomy)
+    ? new Set(
+      conceptTaxonomy
+        .map((entry) => (entry && typeof entry.id === "string" ? entry.id : null))
+        .filter((value) => Boolean(value))
+    )
+    : new Set();
 
   const events = await readJson("data/events.json");
   assertArray(events, "data/events.json");
@@ -694,6 +725,7 @@ async function main() {
 
   validateCrossReferences({ events, eventIdSet, peopleIdSet, units });
   validateEventTags(events);
+  validateConceptTags(events, allowedConceptTags);
   console.log("[derive] All data-integrity validation checks passed.");
 
   normalizedEvents.sort((a, b) => a.id.localeCompare(b.id));

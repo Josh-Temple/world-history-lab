@@ -1,3 +1,21 @@
+## Incremental update (2026-04-12 · concept layer v1 + History Player integration)
+- Added `content_policy.concept_taxonomy` in `data/metadata.json` with 8 fixed concept themes to anchor cross-unit comparison and causal patterning.
+- Tagged 27 canonical backbone events in `data/events.json` with new `concept_tags` so at least one active mode can surface conceptual patterns (not only chronology/category).
+- Updated `scripts/derive.mjs` to:
+  - validate `concept_tags` shape,
+  - warn on concept IDs not found in metadata taxonomy,
+  - pass `concept_tags` through into normalized derived events.
+- Updated `apps/history-player/index.html` to surface concept pills, add concept filtering, and show up to 3 related events sharing the current event’s leading concept tag.
+
+## Validation completed (2026-04-12)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Reuse `concept_tags` in Event Comparison prompt generation (cluster by concept first, then subtype by chronology/impact/similarity).
+2. Add a derive artifact for concept links (`data/derived/concept_links.json`) to give timeline/recognition modes cheap cross-unit related-event lookup.
+3. Expand concept tagging beyond the canonical 27 to priority modern units (French Revolution, Industrial Revolution, WWI) with consistency checks by concept density per unit.
+
 ## Incremental update (2026-04-11 · structured comparison reasoning + derive tag clusters)
 - Rebuilt `apps/event-comparison/index.html` + `apps/event-comparison/app.js` into a structured comparison mode that now asks forced reasoning questions across related events:
   - **Chronology**: identify which event came first.
