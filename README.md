@@ -127,6 +127,13 @@ Next:
   - “Which came earlier across units?”
 - Added `getEventUnitMap()` in `apps/shared/data-store.js` so comparison mode can resolve event→unit context efficiently for feedback and pairing logic.
 
+## Recent updates (2026-04-14 · WWII people graph enrichment + deeper causal branching)
+
+- Expanded WW2 actor coverage in `data/people.json` by adding 9 reviewed figures (for example: Molotov, Montgomery, Rommel, MacArthur, Nimitz, Yamamoto, Patton) and backfilling richer biographical fields for existing WW2 figures.
+- Increased event-person relational density in `data/events.json` by adding new `people_ids` links across diplomacy, genocide-policy, North Africa, Pacific theater, and endgame/legal-outcome events.
+- Deepened the WW2 causal graph by adding additional cross-phase `effects` edges so outbreak → expansion → turning points → endgame chains branch more consistently in derive outputs.
+- Updated `data/units/unit_world_war_ii.json` `person_ids` and `updated_at` to keep unit-level metadata synchronized with the expanded actor graph.
+
 ## Recent updates (2026-04-12 · concept layer v1 in data + History Player)
 
 - Added a first explicit concept taxonomy in `data/metadata.json` (`content_policy.concept_taxonomy`) with 8 cross-era themes for comparison and causality scaffolding.

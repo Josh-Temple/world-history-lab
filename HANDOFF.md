@@ -1,3 +1,22 @@
+## Incremental update (2026-04-14 · WWII relational density expansion)
+- Expanded WW2 actor graph in `data/people.json`:
+  - enriched existing WW2 people entries with `birth_year`, `death_year`, `regions`, `related_events`, and question metadata fields used by people-centric modes,
+  - added 9 reviewed WW2 figures (`pe_heinrich_himmler`, `pe_ernst_kaltenbrunner`, `pe_vyacheslav_molotov`, `pe_bernard_montgomery`, `pe_erwin_rommel`, `pe_douglas_macarthur`, `pe_chester_nimitz`, `pe_isoroku_yamamoto`, `pe_george_patton`).
+- Increased event-person linkage density in `data/events.json` across key WW2 arcs (diplomacy, Eastern Front, Holocaust policy chain, Pacific naval campaign, North Africa/Western Front, and war-end settlements).
+- Added additional WW2 causal `effects` edges in `data/events.json` to strengthen multi-step branching and continuity between 1939 outbreak dynamics, 1942–44 turning points, and 1945 outcomes.
+- Updated `data/units/unit_world_war_ii.json`:
+  - expanded `person_ids` to include newly integrated WW2 figures,
+  - bumped `updated_at` to `2026-04-14`.
+
+## Validation completed (2026-04-14)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add a derive-time per-unit people coverage metric (e.g., `% events with >=2 people_ids`) to keep relational density from regressing.
+2. Add a focused WW2 people-recognition distractor strategy (role-aware + theater-aware) to fully exploit new actor coverage.
+3. Add 1930s interwar bridge events in a dedicated prewar unit so Munich/Poland chains can be compared more explicitly against WWI postwar settlement dynamics.
+
 ## Incremental update (2026-04-13 · WW2 flagship unit + cross-unit comparison support)
 - Added `data/units/unit_world_war_ii.json` with 40 reviewed WW2 events and app profiles aligned to timeline, recognition, causality, sequence, and year-estimation flows.
 - Expanded `data/events.json` with 40 WW2 events (1938-1945) with causal `effects`, multi-tag coverage, and linked `people_ids`.

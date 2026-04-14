@@ -37,7 +37,17 @@
   [
     "ev_atomic_bomb_hiroshima_1945",
     "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_japan_surrenders_1945",
     "ev_un_charter_signed_1945"
+  ],
+  [
+    "ev_atomic_bomb_nagasaki_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_atomic_bomb_nagasaki_1945",
@@ -55,9 +65,24 @@
     "ev_potsdam_conference_1945"
   ],
   [
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
+  ],
+  [
     "ev_battle_el_alamein_1942",
     "ev_italy_surrenders_1943",
     "ev_operation_overlord_d_day_1944"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944"
   ],
   [
     "ev_battle_midway_1942",
@@ -103,6 +128,11 @@
     "ev_battle_of_valmy_1792",
     "ev_reign_of_terror_1793_1794",
     "ev_thermidorian_reaction_1794"
+  ],
+  [
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945"
   ],
   [
     "ev_battle_stalingrad_1942_1943",
@@ -341,6 +371,16 @@
   ],
   [
     "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945"
   ],
@@ -410,6 +450,11 @@
     "ev_fall_of_france_1940"
   ],
   [
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941"
+  ],
+  [
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_atomic_bomb_nagasaki_1945"
@@ -418,6 +463,11 @@
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_japan_surrenders_1945"
+  ],
+  [
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_island_hopping_campaign_1943_1945",
@@ -468,6 +518,26 @@
     "ev_lend_lease_act_1941",
     "ev_operation_overlord_d_day_1944",
     "ev_liberation_paris_1944"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_soviet_berlin_offensive_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944"
   ],
   [
     "ev_liberation_paris_1944",
@@ -606,6 +676,16 @@
   ],
   [
     "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_germany_surrenders_1945"
   ],
@@ -633,6 +713,11 @@
     "ev_operation_overlord_d_day_1944",
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
   ],
   [
     "ev_operation_overlord_d_day_1944",
@@ -772,6 +857,11 @@
   [
     "ev_soviet_counteroffensives_1943_1944",
     "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945"
   ],
   [
@@ -783,6 +873,21 @@
     "ev_soviet_counteroffensives_1943_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_hitler_suicide_1945"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_holocaust_widening_killings_1941"
+  ],
+  [
+    "ev_soviet_invasion_manchuria_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_soviet_invasion_manchuria_1945",
@@ -928,6 +1033,11 @@
     "ev_urbanization_accelerates_1800_1850",
     "ev_public_health_act_1848",
     "ev_modern_urban_infrastructure_1850s_1870s"
+  ],
+  [
+    "ev_wannsee_conference_1942",
+    "ev_auschwitz_killing_center_expansion_1942",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_wartime_industrial_mobilization_1942_1944",
@@ -1384,6 +1494,12 @@
   [
     "ev_allied_strategic_bombing_1943",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_allied_strategic_bombing_1943",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
   ],
@@ -1421,6 +1537,12 @@
     "ev_atomic_bomb_hiroshima_1945",
     "ev_atomic_bomb_nagasaki_1945",
     "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_atomic_bomb_nagasaki_1945",
+    "ev_japan_surrenders_1945",
     "ev_un_charter_signed_1945"
   ],
   [
@@ -1434,6 +1556,18 @@
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945",
     "ev_soviet_invasion_manchuria_1945"
+  ],
+  [
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
   ],
   [
     "ev_battle_el_alamein_1942",
@@ -1452,6 +1586,18 @@
     "ev_italy_surrenders_1943",
     "ev_operation_overlord_d_day_1944",
     "ev_liberation_paris_1944"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
   ],
   [
     "ev_battle_midway_1942",
@@ -1476,6 +1622,12 @@
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_japan_surrenders_1945"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_battle_midway_1942",
@@ -1522,6 +1674,12 @@
   [
     "ev_battle_of_britain_1940",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_battle_of_britain_1940",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
   ],
@@ -1540,6 +1698,18 @@
   [
     "ev_battle_stalingrad_1942_1943",
     "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_germany_surrenders_1945"
   ],
@@ -1548,6 +1718,12 @@
     "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_hitler_suicide_1945"
+  ],
+  [
+    "ev_battle_stalingrad_1942_1943",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945"
   ],
   [
     "ev_battle_stalingrad_1942_1943",
@@ -1923,6 +2099,30 @@
   ],
   [
     "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_atomic_bomb_nagasaki_1945"
@@ -1932,6 +2132,12 @@
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_japan_surrenders_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_guadalcanal_campaign_1942_1943",
@@ -1956,6 +2162,12 @@
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945",
     "ev_soviet_invasion_manchuria_1945"
+  ],
+  [
+    "ev_holocaust_widening_killings_1941",
+    "ev_wannsee_conference_1942",
+    "ev_auschwitz_killing_center_expansion_1942",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_imperialism_anglo_japanese_alliance_1902",
@@ -2018,10 +2230,28 @@
     "ev_operation_barbarossa_1941"
   ],
   [
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943"
+  ],
+  [
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_holocaust_widening_killings_1941"
+  ],
+  [
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_atomic_bomb_nagasaki_1945",
     "ev_japan_surrenders_1945"
+  ],
+  [
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_island_hopping_campaign_1943_1945",
@@ -2034,6 +2264,12 @@
     "ev_operation_overlord_d_day_1944",
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_italy_surrenders_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
   ],
   [
     "ev_italy_surrenders_1943",
@@ -2086,6 +2322,12 @@
   [
     "ev_lend_lease_act_1941",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
   ],
@@ -2100,6 +2342,60 @@
     "ev_operation_overlord_d_day_1944",
     "ev_liberation_paris_1944",
     "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_soviet_berlin_offensive_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_hitler_suicide_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943",
+    "ev_operation_overlord_d_day_1944"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943",
+    "ev_soviet_berlin_offensive_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_liberation_paris_1944"
   ],
   [
     "ev_liberation_paris_1944",
@@ -2186,6 +2482,12 @@
     "ev_fall_of_france_1940"
   ],
   [
+    "ev_molotov_ribbentrop_pact_1939",
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941"
+  ],
+  [
     "ev_mughal_empire_akbar_consolidation_1570s",
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804",
@@ -2202,6 +2504,12 @@
     "ev_invasion_poland_1939",
     "ev_france_britain_declare_war_1939",
     "ev_fall_of_france_1940"
+  ],
+  [
+    "ev_munich_agreement_1938",
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941"
   ],
   [
     "ev_munich_agreement_1938",
@@ -2313,6 +2621,18 @@
   ],
   [
     "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945"
+  ],
+  [
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_soviet_invasion_manchuria_1945"
+  ],
+  [
+    "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
@@ -2327,6 +2647,12 @@
     "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_hitler_suicide_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
     "ev_germany_surrenders_1945"
   ],
   [
@@ -2364,6 +2690,18 @@
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
   ],
   [
     "ev_operation_overlord_d_day_1944",
@@ -2418,6 +2756,12 @@
     "ev_mughal_empire_akbar_consolidation_1570s",
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804"
+  ],
+  [
+    "ev_pearl_harbor_1941",
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944"
   ],
   [
     "ev_pearl_harbor_1941",
@@ -2483,7 +2827,19 @@
     "ev_potsdam_conference_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_japan_surrenders_1945",
     "ev_un_charter_signed_1945"
+  ],
+  [
+    "ev_potsdam_conference_1945",
+    "ev_soviet_invasion_manchuria_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_potsdam_conference_1945",
@@ -2566,6 +2922,18 @@
   [
     "ev_soviet_counteroffensives_1943_1944",
     "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_germany_surrenders_1945"
   ],
@@ -2592,6 +2960,24 @@
     "ev_soviet_berlin_offensive_1945",
     "ev_hitler_suicide_1945",
     "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_soviet_counteroffensives_1943_1944"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_holocaust_widening_killings_1941",
+    "ev_wannsee_conference_1942"
   ],
   [
     "ev_spinning_jenny_1764",
@@ -2692,6 +3078,12 @@
   [
     "ev_tehran_conference_1943",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_tehran_conference_1943",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
   ],
@@ -2742,6 +3134,12 @@
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839"
+  ],
+  [
+    "ev_united_states_enters_war_1941",
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944"
   ],
   [
     "ev_united_states_enters_war_1941",
@@ -2862,6 +3260,12 @@
     "ev_operation_overlord_d_day_1944",
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
   ],
   [
     "ev_wartime_industrial_mobilization_1942_1944",
@@ -3589,6 +3993,20 @@
   [
     "ev_allied_strategic_bombing_1943",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_allied_strategic_bombing_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
+  ],
+  [
+    "ev_allied_strategic_bombing_1943",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945",
     "ev_atomic_bomb_hiroshima_1945"
@@ -3664,11 +4082,32 @@
     "ev_japan_surrenders_1945"
   ],
   [
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945"
+  ],
+  [
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_soviet_invasion_manchuria_1945"
+  ],
+  [
     "ev_battle_el_alamein_1942",
     "ev_italy_surrenders_1943",
     "ev_operation_overlord_d_day_1944",
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_battle_el_alamein_1942",
+    "ev_italy_surrenders_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
   ],
   [
     "ev_battle_el_alamein_1942",
@@ -3694,6 +4133,34 @@
   [
     "ev_battle_midway_1942",
     "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_atomic_bomb_nagasaki_1945"
@@ -3704,6 +4171,13 @@
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_japan_surrenders_1945"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_battle_midway_1942",
@@ -3724,6 +4198,13 @@
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_battle_midway_1942",
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_japan_surrenders_1945",
     "ev_un_charter_signed_1945"
   ],
   [
@@ -3732,6 +4213,13 @@
     "ev_operation_overlord_d_day_1944",
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_battle_of_britain_1940",
+    "ev_allied_strategic_bombing_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
   ],
   [
     "ev_battle_of_britain_1940",
@@ -3788,6 +4276,20 @@
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_battle_of_britain_1940",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_battle_of_britain_1940",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
   ],
   [
     "ev_battle_of_britain_1940",
@@ -3820,6 +4322,20 @@
   [
     "ev_battle_stalingrad_1942_1943",
     "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945"
+  ],
+  [
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_soviet_invasion_manchuria_1945"
+  ],
+  [
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
@@ -3837,6 +4353,20 @@
     "ev_soviet_berlin_offensive_1945",
     "ev_hitler_suicide_1945",
     "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_battle_stalingrad_1942_1943",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_battle_stalingrad_1942_1943",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
   ],
   [
     "ev_battle_stalingrad_1942_1943",
@@ -4227,6 +4757,13 @@
     "ev_fall_of_france_1940",
     "ev_battle_of_britain_1940",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_fall_of_france_1940",
+    "ev_battle_of_britain_1940",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
   ],
@@ -4242,6 +4779,13 @@
     "ev_battle_of_britain_1940",
     "ev_operation_overlord_d_day_1944",
     "ev_liberation_paris_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_fall_of_france_1940",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
     "ev_germany_surrenders_1945"
   ],
   [
@@ -4320,6 +4864,13 @@
     "ev_operation_overlord_d_day_1944",
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_france_britain_declare_war_1939",
+    "ev_battle_of_britain_1940",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
   ],
   [
     "ev_france_britain_declare_war_1939",
@@ -4410,7 +4961,21 @@
     "ev_potsdam_conference_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_japan_surrenders_1945",
     "ev_un_charter_signed_1945"
+  ],
+  [
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_soviet_invasion_manchuria_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_germany_surrenders_1945",
@@ -4428,10 +4993,45 @@
   ],
   [
     "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_soviet_invasion_manchuria_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_atomic_bomb_nagasaki_1945",
     "ev_japan_surrenders_1945"
+  ],
+  [
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_guadalcanal_campaign_1942_1943",
@@ -4574,6 +5174,34 @@
     "ev_holocaust_widening_killings_1941"
   ],
   [
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944"
+  ],
+  [
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_soviet_counteroffensives_1943_1944"
+  ],
+  [
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_holocaust_widening_killings_1941",
+    "ev_wannsee_conference_1942"
+  ],
+  [
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_atomic_bomb_nagasaki_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_atomic_bomb_nagasaki_1945",
@@ -4593,6 +5221,20 @@
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_italy_surrenders_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_italy_surrenders_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
   ],
   [
     "ev_italy_surrenders_1943",
@@ -4660,6 +5302,20 @@
   [
     "ev_lend_lease_act_1941",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945",
     "ev_atomic_bomb_hiroshima_1945"
@@ -4684,6 +5340,125 @@
     "ev_liberation_paris_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_hitler_suicide_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_hitler_suicide_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_liberation_paris_1944"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943",
+    "ev_soviet_berlin_offensive_1945",
+    "ev_hitler_suicide_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_lend_lease_act_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_liberation_paris_1944",
+    "ev_germany_surrenders_1945"
   ],
   [
     "ev_liberation_paris_1944",
@@ -4805,6 +5580,20 @@
     "ev_operation_barbarossa_1941"
   ],
   [
+    "ev_molotov_ribbentrop_pact_1939",
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943"
+  ],
+  [
+    "ev_molotov_ribbentrop_pact_1939",
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_holocaust_widening_killings_1941"
+  ],
+  [
     "ev_mughal_empire_akbar_consolidation_1570s",
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804",
@@ -4841,6 +5630,20 @@
   ],
   [
     "ev_munich_agreement_1938",
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943"
+  ],
+  [
+    "ev_munich_agreement_1938",
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_holocaust_widening_killings_1941"
+  ],
+  [
+    "ev_munich_agreement_1938",
     "ev_molotov_ribbentrop_pact_1939",
     "ev_invasion_poland_1939",
     "ev_france_britain_declare_war_1939",
@@ -4852,6 +5655,13 @@
     "ev_invasion_poland_1939",
     "ev_france_britain_declare_war_1939",
     "ev_fall_of_france_1940"
+  ],
+  [
+    "ev_munich_agreement_1938",
+    "ev_molotov_ribbentrop_pact_1939",
+    "ev_invasion_poland_1939",
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941"
   ],
   [
     "ev_napoleon_coup_18_brumaire_1799",
@@ -5023,6 +5833,27 @@
   ],
   [
     "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_atomic_bomb_nagasaki_1945"
+  ],
+  [
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_japan_surrenders_1945"
+  ],
+  [
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_soviet_invasion_manchuria_1945",
+    "ev_japan_surrenders_1945"
+  ],
+  [
+    "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945",
@@ -5053,6 +5884,20 @@
     "ev_operation_barbarossa_1941",
     "ev_battle_stalingrad_1942_1943",
     "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_germany_surrenders_1945"
   ],
@@ -5062,6 +5907,13 @@
     "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_hitler_suicide_1945"
+  ],
+  [
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945"
   ],
   [
     "ev_operation_barbarossa_1941",
@@ -5085,6 +5937,13 @@
     "ev_hitler_suicide_1945"
   ],
   [
+    "ev_operation_barbarossa_1941",
+    "ev_holocaust_widening_killings_1941",
+    "ev_wannsee_conference_1942",
+    "ev_auschwitz_killing_center_expansion_1942",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
     "ev_operation_overlord_d_day_1944",
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945",
@@ -5097,6 +5956,20 @@
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945",
     "ev_soviet_invasion_manchuria_1945"
+  ],
+  [
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945"
   ],
   [
     "ev_operation_overlord_d_day_1944",
@@ -5165,6 +6038,13 @@
     "ev_operation_torch_1942",
     "ev_italy_surrenders_1943",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_operation_torch_1942",
+    "ev_italy_surrenders_1943",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
   ],
@@ -5188,6 +6068,20 @@
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807"
+  ],
+  [
+    "ev_pearl_harbor_1941",
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_pearl_harbor_1941",
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
   ],
   [
     "ev_pearl_harbor_1941",
@@ -5222,7 +6116,21 @@
     "ev_battle_midway_1942",
     "ev_island_hopping_campaign_1943_1945",
     "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_pearl_harbor_1941",
+    "ev_battle_midway_1942",
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_japan_surrenders_1945",
     "ev_un_charter_signed_1945"
+  ],
+  [
+    "ev_pearl_harbor_1941",
+    "ev_united_states_enters_war_1941",
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944"
   ],
   [
     "ev_pearl_harbor_1941",
@@ -5299,6 +6207,13 @@
     "ev_atomic_bomb_hiroshima_1945",
     "ev_atomic_bomb_nagasaki_1945",
     "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
+  ],
+  [
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945",
+    "ev_atomic_bomb_nagasaki_1945",
+    "ev_japan_surrenders_1945",
     "ev_un_charter_signed_1945"
   ],
   [
@@ -5367,6 +6282,20 @@
   [
     "ev_soviet_counteroffensives_1943_1944",
     "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_atomic_bomb_hiroshima_1945"
+  ],
+  [
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945",
+    "ev_potsdam_conference_1945",
+    "ev_soviet_invasion_manchuria_1945"
+  ],
+  [
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944",
     "ev_soviet_berlin_offensive_1945",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
@@ -5412,6 +6341,41 @@
     "ev_hitler_suicide_1945",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_operation_bagration_1944",
+    "ev_soviet_berlin_offensive_1945"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_operation_bagration_1944"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_battle_stalingrad_1942_1943",
+    "ev_soviet_counteroffensives_1943_1944",
+    "ev_soviet_berlin_offensive_1945"
+  ],
+  [
+    "ev_soviet_invasion_eastern_poland_1939",
+    "ev_operation_barbarossa_1941",
+    "ev_holocaust_widening_killings_1941",
+    "ev_wannsee_conference_1942",
+    "ev_auschwitz_killing_center_expansion_1942"
   ],
   [
     "ev_spinning_jenny_1764",
@@ -5598,6 +6562,20 @@
   [
     "ev_tehran_conference_1943",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_tehran_conference_1943",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
+  ],
+  [
+    "ev_tehran_conference_1943",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945",
     "ev_atomic_bomb_hiroshima_1945"
@@ -5662,6 +6640,20 @@
     "ev_united_states_enters_war_1941",
     "ev_battle_midway_1942",
     "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_united_states_enters_war_1941",
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_united_states_enters_war_1941",
+    "ev_battle_midway_1942",
+    "ev_guadalcanal_campaign_1942_1943",
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945"
   ],
@@ -5685,6 +6677,13 @@
     "ev_island_hopping_campaign_1943_1945",
     "ev_atomic_bomb_hiroshima_1945",
     "ev_japan_surrenders_1945"
+  ],
+  [
+    "ev_united_states_enters_war_1941",
+    "ev_battle_midway_1942",
+    "ev_island_hopping_campaign_1943_1945",
+    "ev_japan_surrenders_1945",
+    "ev_nuremberg_trials_begin_1945"
   ],
   [
     "ev_united_states_enters_war_1941",
@@ -5767,6 +6766,13 @@
     "ev_united_states_enters_war_1941",
     "ev_wartime_industrial_mobilization_1942_1944",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_united_states_enters_war_1941",
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
   ],
@@ -5830,6 +6836,13 @@
     "ev_wartime_industrial_mobilization_1942_1944",
     "ev_allied_strategic_bombing_1943",
     "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945"
+  ],
+  [
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_allied_strategic_bombing_1943",
+    "ev_operation_overlord_d_day_1944",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
   ],
@@ -5881,6 +6894,20 @@
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945"
+  ],
+  [
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_germany_surrenders_1945"
+  ],
+  [
+    "ev_wartime_industrial_mobilization_1942_1944",
+    "ev_operation_overlord_d_day_1944",
+    "ev_battle_bulge_1944",
+    "ev_yalta_conference_1945",
+    "ev_un_charter_signed_1945"
   ],
   [
     "ev_wartime_industrial_mobilization_1942_1944",

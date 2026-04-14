@@ -268,12 +268,16 @@
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
-      "pe_adolf_hitler"
+      "pe_adolf_hitler",
+      "pe_heinrich_himmler",
+      "pe_ernst_kaltenbrunner"
     ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
-    "effects": [],
+    "effects": [
+      "ev_nuremberg_trials_begin_1945"
+    ],
     "causes": [],
     "time": {
       "start": "1942",
@@ -342,13 +346,16 @@
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
-      "pe_dwight_eisenhower"
+      "pe_dwight_eisenhower",
+      "pe_george_patton",
+      "pe_bernard_montgomery"
     ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
     "effects": [
-      "ev_germany_surrenders_1945"
+      "ev_germany_surrenders_1945",
+      "ev_yalta_conference_1945"
     ],
     "causes": [],
     "time": {
@@ -377,7 +384,9 @@
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
-      "pe_benito_mussolini"
+      "pe_benito_mussolini",
+      "pe_bernard_montgomery",
+      "pe_erwin_rommel"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -412,7 +421,9 @@
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
-      "pe_emperor_hirohito"
+      "pe_emperor_hirohito",
+      "pe_chester_nimitz",
+      "pe_isoroku_yamamoto"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -1879,13 +1890,16 @@
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
-      "pe_emperor_hirohito"
+      "pe_emperor_hirohito",
+      "pe_chester_nimitz",
+      "pe_douglas_macarthur"
     ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
     "effects": [
-      "ev_island_hopping_campaign_1943_1945"
+      "ev_island_hopping_campaign_1943_1945",
+      "ev_battle_bulge_1944"
     ],
     "causes": [],
     "time": {
@@ -2064,7 +2078,8 @@
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
-      "pe_adolf_hitler"
+      "pe_adolf_hitler",
+      "pe_heinrich_himmler"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -3258,7 +3273,9 @@
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
-      "pe_emperor_hirohito"
+      "pe_emperor_hirohito",
+      "pe_douglas_macarthur",
+      "pe_chester_nimitz"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -3328,13 +3345,15 @@
     "concept_tags": [],
     "people_ids": [
       "pe_emperor_hirohito",
-      "pe_harry_s_truman"
+      "pe_harry_s_truman",
+      "pe_douglas_macarthur"
     ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
     "effects": [
-      "ev_un_charter_signed_1945"
+      "ev_un_charter_signed_1945",
+      "ev_nuremberg_trials_begin_1945"
     ],
     "causes": [],
     "time": {
@@ -3408,7 +3427,9 @@
       "unit_world_war_ii"
     ],
     "effects": [
-      "ev_operation_overlord_d_day_1944"
+      "ev_operation_overlord_d_day_1944",
+      "ev_wartime_industrial_mobilization_1942_1944",
+      "ev_soviet_counteroffensives_1943_1944"
     ],
     "causes": [],
     "time": {
@@ -4277,7 +4298,8 @@
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
-      "pe_joseph_stalin"
+      "pe_joseph_stalin",
+      "pe_vyacheslav_molotov"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -4613,7 +4635,8 @@
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
-      "pe_harry_s_truman"
+      "pe_harry_s_truman",
+      "pe_ernst_kaltenbrunner"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -4652,7 +4675,8 @@
       "unit_world_war_ii"
     ],
     "effects": [
-      "ev_soviet_berlin_offensive_1945"
+      "ev_soviet_berlin_offensive_1945",
+      "ev_germany_surrenders_1945"
     ],
     "causes": [],
     "time": {
@@ -4717,7 +4741,10 @@
     "concept_tags": [],
     "people_ids": [
       "pe_dwight_eisenhower",
-      "pe_winston_churchill"
+      "pe_winston_churchill",
+      "pe_bernard_montgomery",
+      "pe_george_patton",
+      "pe_erwin_rommel"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -4753,7 +4780,9 @@
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
-      "pe_dwight_eisenhower"
+      "pe_dwight_eisenhower",
+      "pe_george_patton",
+      "pe_erwin_rommel"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -4875,7 +4904,8 @@
     "concept_tags": [],
     "people_ids": [
       "pe_hideki_tojo",
-      "pe_franklin_d_roosevelt"
+      "pe_franklin_d_roosevelt",
+      "pe_isoroku_yamamoto"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -4941,7 +4971,8 @@
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
-      "pe_joseph_stalin"
+      "pe_joseph_stalin",
+      "pe_vyacheslav_molotov"
     ],
     "unit_ids": [
       "unit_world_war_ii"
@@ -5470,12 +5501,15 @@
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
-      "pe_joseph_stalin"
+      "pe_joseph_stalin",
+      "pe_vyacheslav_molotov"
     ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
-    "effects": [],
+    "effects": [
+      "ev_operation_barbarossa_1941"
+    ],
     "causes": [],
     "time": {
       "start": "1939",
@@ -6191,7 +6225,9 @@
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
-      "pe_adolf_hitler"
+      "pe_adolf_hitler",
+      "pe_heinrich_himmler",
+      "pe_ernst_kaltenbrunner"
     ],
     "unit_ids": [
       "unit_world_war_ii"
