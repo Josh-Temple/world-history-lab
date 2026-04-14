@@ -1933,7 +1933,33 @@
     ],
     "summary_short": "Leader of Nazi Germany and central architect of Axis war strategy in Europe.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [],
+    "birth_year": 1889,
+    "death_year": 1945,
+    "regions": [
+      "reg_europe"
+    ],
+    "related_events": [
+      "ev_munich_agreement_1938",
+      "ev_invasion_poland_1939",
+      "ev_operation_barbarossa_1941",
+      "ev_hitler_suicide_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_adolf_hitler",
+        "url": "https://example.com/internal/manual_person_pe_adolf_hitler",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_joseph_stalin",
@@ -1943,7 +1969,33 @@
     ],
     "summary_short": "Leader of the Soviet Union during the war on the Eastern Front and postwar settlement negotiations.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [],
+    "birth_year": 1878,
+    "death_year": 1953,
+    "regions": [
+      "reg_europe"
+    ],
+    "related_events": [
+      "ev_molotov_ribbentrop_pact_1939",
+      "ev_battle_stalingrad_1942_1943",
+      "ev_yalta_conference_1945",
+      "ev_soviet_berlin_offensive_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_joseph_stalin",
+        "url": "https://example.com/internal/manual_person_pe_joseph_stalin",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_franklin_d_roosevelt",
@@ -1953,7 +2005,33 @@
     ],
     "summary_short": "U.S. president who led American mobilization and grand strategy through most of World War II.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [],
+    "birth_year": 1882,
+    "death_year": 1945,
+    "regions": [
+      "reg_north_america"
+    ],
+    "related_events": [
+      "ev_lend_lease_act_1941",
+      "ev_united_states_enters_war_1941",
+      "ev_tehran_conference_1943",
+      "ev_yalta_conference_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_franklin_d_roosevelt",
+        "url": "https://example.com/internal/manual_person_pe_franklin_d_roosevelt",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_harry_s_truman",
@@ -1963,7 +2041,33 @@
     ],
     "summary_short": "U.S. president in 1945 who oversaw the final phase of the war and early postwar order.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [],
+    "birth_year": 1884,
+    "death_year": 1972,
+    "regions": [
+      "reg_north_america"
+    ],
+    "related_events": [
+      "ev_potsdam_conference_1945",
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_atomic_bomb_nagasaki_1945",
+      "ev_japan_surrenders_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_harry_s_truman",
+        "url": "https://example.com/internal/manual_person_pe_harry_s_truman",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_benito_mussolini",
@@ -1973,7 +2077,32 @@
     ],
     "summary_short": "Fascist leader of Italy and Axis partner whose regime collapsed in 1943.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [],
+    "birth_year": 1883,
+    "death_year": 1945,
+    "regions": [
+      "reg_europe"
+    ],
+    "related_events": [
+      "ev_munich_agreement_1938",
+      "ev_fall_of_france_1940",
+      "ev_italy_surrenders_1943"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_benito_mussolini",
+        "url": "https://example.com/internal/manual_person_pe_benito_mussolini",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_hideki_tojo",
@@ -1983,7 +2112,34 @@
     ],
     "summary_short": "Japanese wartime prime minister associated with expansionist military policy.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [
+      "Tōjō Hideki"
+    ],
+    "birth_year": 1884,
+    "death_year": 1948,
+    "regions": [
+      "reg_asia_pacific"
+    ],
+    "related_events": [
+      "ev_pearl_harbor_1941",
+      "ev_battle_midway_1942",
+      "ev_japan_surrenders_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_hideki_tojo",
+        "url": "https://example.com/internal/manual_person_pe_hideki_tojo",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_emperor_hirohito",
@@ -1993,7 +2149,34 @@
     ],
     "summary_short": "Japanese emperor during World War II and the formal announcement of surrender in 1945.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [
+      "Shōwa Emperor"
+    ],
+    "birth_year": 1901,
+    "death_year": 1989,
+    "regions": [
+      "reg_asia_pacific"
+    ],
+    "related_events": [
+      "ev_pearl_harbor_1941",
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_japan_surrenders_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_emperor_hirohito",
+        "url": "https://example.com/internal/manual_person_pe_emperor_hirohito",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_charles_de_gaulle",
@@ -2004,7 +2187,32 @@
     ],
     "summary_short": "Leader of Free France and major political figure in liberated France.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [],
+    "birth_year": 1890,
+    "death_year": 1970,
+    "regions": [
+      "reg_europe"
+    ],
+    "related_events": [
+      "ev_fall_of_france_1940",
+      "ev_liberation_paris_1944",
+      "ev_un_charter_signed_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_charles_de_gaulle",
+        "url": "https://example.com/internal/manual_person_pe_charles_de_gaulle",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_dwight_eisenhower",
@@ -2014,7 +2222,32 @@
     ],
     "summary_short": "Supreme Allied commander in Western Europe, including Operation Overlord.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [],
+    "birth_year": 1890,
+    "death_year": 1969,
+    "regions": [
+      "reg_north_america"
+    ],
+    "related_events": [
+      "ev_operation_torch_1942",
+      "ev_operation_overlord_d_day_1944",
+      "ev_germany_surrenders_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_dwight_eisenhower",
+        "url": "https://example.com/internal/manual_person_pe_dwight_eisenhower",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_georgy_zhukov",
@@ -2024,7 +2257,32 @@
     ],
     "summary_short": "Senior Soviet commander in key victories including Stalingrad phase operations and Berlin.",
     "content_origin": "ai_assisted_self_reviewed",
-    "status": "reviewed"
+    "status": "reviewed",
+    "alt_names": [],
+    "birth_year": 1896,
+    "death_year": 1974,
+    "regions": [
+      "reg_europe"
+    ],
+    "related_events": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_operation_bagration_1944",
+      "ev_soviet_berlin_offensive_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_georgy_zhukov",
+        "url": "https://example.com/internal/manual_person_pe_georgy_zhukov",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
   },
   {
     "id": "pe_neville_chamberlain",
@@ -2033,6 +2291,349 @@
       "prime-minister"
     ],
     "summary_short": "British prime minister associated with appeasement before the war expanded in Europe.",
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed",
+    "alt_names": [],
+    "birth_year": 1869,
+    "death_year": 1940,
+    "regions": [
+      "reg_europe"
+    ],
+    "related_events": [
+      "ev_munich_agreement_1938",
+      "ev_france_britain_declare_war_1939"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_neville_chamberlain",
+        "url": "https://example.com/internal/manual_person_pe_neville_chamberlain",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ]
+  },
+  {
+    "id": "pe_heinrich_himmler",
+    "name": "Heinrich Himmler",
+    "alt_names": [],
+    "birth_year": 1900,
+    "death_year": 1945,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "ss-leader"
+    ],
+    "summary_short": "Senior Nazi official central to the SS and genocidal policy implementation.",
+    "related_events": [
+      "ev_holocaust_widening_killings_1941",
+      "ev_wannsee_conference_1942",
+      "ev_auschwitz_killing_center_expansion_1942"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_heinrich_himmler",
+        "url": "https://example.com/internal/manual_person_pe_heinrich_himmler",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_ernst_kaltenbrunner",
+    "name": "Ernst Kaltenbrunner",
+    "alt_names": [],
+    "birth_year": 1903,
+    "death_year": 1946,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "security-official"
+    ],
+    "summary_short": "Nazi security chief tied to later-war repressive and extermination operations.",
+    "related_events": [
+      "ev_wannsee_conference_1942",
+      "ev_auschwitz_killing_center_expansion_1942",
+      "ev_nuremberg_trials_begin_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_ernst_kaltenbrunner",
+        "url": "https://example.com/internal/manual_person_pe_ernst_kaltenbrunner",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_vyacheslav_molotov",
+    "name": "Vyacheslav Molotov",
+    "alt_names": [],
+    "birth_year": 1890,
+    "death_year": 1986,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "foreign-minister"
+    ],
+    "summary_short": "Soviet foreign minister associated with wartime diplomacy and alliance negotiations.",
+    "related_events": [
+      "ev_molotov_ribbentrop_pact_1939",
+      "ev_tehran_conference_1943",
+      "ev_potsdam_conference_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_vyacheslav_molotov",
+        "url": "https://example.com/internal/manual_person_pe_vyacheslav_molotov",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_bernard_montgomery",
+    "name": "Bernard Montgomery",
+    "alt_names": [
+      "Bernard Law Montgomery"
+    ],
+    "birth_year": 1887,
+    "death_year": 1976,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "general"
+    ],
+    "summary_short": "British field marshal associated with El Alamein and the Western European campaign.",
+    "related_events": [
+      "ev_battle_el_alamein_1942",
+      "ev_operation_overlord_d_day_1944",
+      "ev_battle_bulge_1944"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_bernard_montgomery",
+        "url": "https://example.com/internal/manual_person_pe_bernard_montgomery",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_erwin_rommel",
+    "name": "Erwin Rommel",
+    "alt_names": [],
+    "birth_year": 1891,
+    "death_year": 1944,
+    "regions": [
+      "reg_europe"
+    ],
+    "roles": [
+      "general"
+    ],
+    "summary_short": "German commander in North Africa and later in Western Europe defense planning.",
+    "related_events": [
+      "ev_battle_el_alamein_1942",
+      "ev_operation_torch_1942",
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_erwin_rommel",
+        "url": "https://example.com/internal/manual_person_pe_erwin_rommel",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_douglas_macarthur",
+    "name": "Douglas MacArthur",
+    "alt_names": [],
+    "birth_year": 1880,
+    "death_year": 1964,
+    "regions": [
+      "reg_asia_pacific",
+      "reg_north_america"
+    ],
+    "roles": [
+      "general"
+    ],
+    "summary_short": "U.S. commander in the Pacific who directed major island campaigns and occupation planning.",
+    "related_events": [
+      "ev_united_states_enters_war_1941",
+      "ev_island_hopping_campaign_1943_1945",
+      "ev_japan_surrenders_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_douglas_macarthur",
+        "url": "https://example.com/internal/manual_person_pe_douglas_macarthur",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_chester_nimitz",
+    "name": "Chester W. Nimitz",
+    "alt_names": [],
+    "birth_year": 1885,
+    "death_year": 1966,
+    "regions": [
+      "reg_asia_pacific",
+      "reg_north_america"
+    ],
+    "roles": [
+      "admiral"
+    ],
+    "summary_short": "U.S. naval commander in the Pacific, central to Midway and subsequent offensives.",
+    "related_events": [
+      "ev_battle_midway_1942",
+      "ev_guadalcanal_campaign_1942_1943",
+      "ev_island_hopping_campaign_1943_1945"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_chester_nimitz",
+        "url": "https://example.com/internal/manual_person_pe_chester_nimitz",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_isoroku_yamamoto",
+    "name": "Isoroku Yamamoto",
+    "alt_names": [],
+    "birth_year": 1884,
+    "death_year": 1943,
+    "regions": [
+      "reg_asia_pacific"
+    ],
+    "roles": [
+      "admiral"
+    ],
+    "summary_short": "Japanese naval strategist linked to Pearl Harbor and early Pacific naval operations.",
+    "related_events": [
+      "ev_pearl_harbor_1941",
+      "ev_battle_midway_1942"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_isoroku_yamamoto",
+        "url": "https://example.com/internal/manual_person_pe_isoroku_yamamoto",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_george_patton",
+    "name": "George S. Patton",
+    "alt_names": [],
+    "birth_year": 1885,
+    "death_year": 1945,
+    "regions": [
+      "reg_europe",
+      "reg_north_america"
+    ],
+    "roles": [
+      "general"
+    ],
+    "summary_short": "U.S. general known for fast armored advances in North Africa and Western Europe.",
+    "related_events": [
+      "ev_operation_torch_1942",
+      "ev_operation_overlord_d_day_1944",
+      "ev_battle_bulge_1944"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_george_patton",
+        "url": "https://example.com/internal/manual_person_pe_george_patton",
+        "retrieved_at": "2026-04-14T00:00:00Z",
+        "notes": "WWII people enrichment curated learning summary"
+      }
+    ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "reviewed"
   }

@@ -75,7 +75,16 @@
     "pe_charles_de_gaulle",
     "pe_dwight_eisenhower",
     "pe_georgy_zhukov",
-    "pe_neville_chamberlain"
+    "pe_neville_chamberlain",
+    "pe_heinrich_himmler",
+    "pe_ernst_kaltenbrunner",
+    "pe_vyacheslav_molotov",
+    "pe_bernard_montgomery",
+    "pe_erwin_rommel",
+    "pe_douglas_macarthur",
+    "pe_chester_nimitz",
+    "pe_isoroku_yamamoto",
+    "pe_george_patton"
   ],
   "app_profiles": {
     "timeline-trainer": {
@@ -110,5 +119,5 @@
     }
   },
   "status": "reviewed",
-  "updated_at": "2026-04-13"
+  "updated_at": "2026-04-14"
 }

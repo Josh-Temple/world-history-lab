@@ -5261,7 +5261,8 @@
     ],
     "people_ids": [
       "pe_adolf_hitler",
-      "pe_joseph_stalin"
+      "pe_joseph_stalin",
+      "pe_vyacheslav_molotov"
     ]
   },
   {
@@ -5319,9 +5320,12 @@
       "military",
       "political"
     ],
-    "effects": [],
+    "effects": [
+      "ev_operation_barbarossa_1941"
+    ],
     "people_ids": [
-      "pe_joseph_stalin"
+      "pe_joseph_stalin",
+      "pe_vyacheslav_molotov"
     ]
   },
   {
@@ -5381,7 +5385,9 @@
       "political"
     ],
     "effects": [
-      "ev_operation_overlord_d_day_1944"
+      "ev_operation_overlord_d_day_1944",
+      "ev_wartime_industrial_mobilization_1942_1944",
+      "ev_soviet_counteroffensives_1943_1944"
     ],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -5427,7 +5433,8 @@
       "ev_wannsee_conference_1942"
     ],
     "people_ids": [
-      "pe_adolf_hitler"
+      "pe_adolf_hitler",
+      "pe_heinrich_himmler"
     ]
   },
   {
@@ -5449,7 +5456,8 @@
     ],
     "people_ids": [
       "pe_hideki_tojo",
-      "pe_franklin_d_roosevelt"
+      "pe_franklin_d_roosevelt",
+      "pe_isoroku_yamamoto"
     ]
   },
   {
@@ -5492,7 +5500,9 @@
       "ev_auschwitz_killing_center_expansion_1942"
     ],
     "people_ids": [
-      "pe_adolf_hitler"
+      "pe_adolf_hitler",
+      "pe_heinrich_himmler",
+      "pe_ernst_kaltenbrunner"
     ]
   },
   {
@@ -5507,9 +5517,13 @@
     "tags": [
       "social"
     ],
-    "effects": [],
+    "effects": [
+      "ev_nuremberg_trials_begin_1945"
+    ],
     "people_ids": [
-      "pe_adolf_hitler"
+      "pe_adolf_hitler",
+      "pe_heinrich_himmler",
+      "pe_ernst_kaltenbrunner"
     ]
   },
   {
@@ -5530,7 +5544,9 @@
     ],
     "people_ids": [
       "pe_franklin_d_roosevelt",
-      "pe_emperor_hirohito"
+      "pe_emperor_hirohito",
+      "pe_chester_nimitz",
+      "pe_isoroku_yamamoto"
     ]
   },
   {
@@ -5550,7 +5566,9 @@
       "ev_italy_surrenders_1943"
     ],
     "people_ids": [
-      "pe_dwight_eisenhower"
+      "pe_dwight_eisenhower",
+      "pe_george_patton",
+      "pe_erwin_rommel"
     ]
   },
   {
@@ -5570,7 +5588,9 @@
     ],
     "people_ids": [
       "pe_winston_churchill",
-      "pe_benito_mussolini"
+      "pe_benito_mussolini",
+      "pe_bernard_montgomery",
+      "pe_erwin_rommel"
     ]
   },
   {
@@ -5609,11 +5629,14 @@
       "military"
     ],
     "effects": [
-      "ev_island_hopping_campaign_1943_1945"
+      "ev_island_hopping_campaign_1943_1945",
+      "ev_battle_bulge_1944"
     ],
     "people_ids": [
       "pe_franklin_d_roosevelt",
-      "pe_emperor_hirohito"
+      "pe_emperor_hirohito",
+      "pe_chester_nimitz",
+      "pe_douglas_macarthur"
     ]
   },
   {
@@ -5737,7 +5760,8 @@
       "military"
     ],
     "effects": [
-      "ev_soviet_berlin_offensive_1945"
+      "ev_soviet_berlin_offensive_1945",
+      "ev_germany_surrenders_1945"
     ],
     "people_ids": [
       "pe_georgy_zhukov",
@@ -5763,7 +5787,10 @@
     ],
     "people_ids": [
       "pe_dwight_eisenhower",
-      "pe_winston_churchill"
+      "pe_winston_churchill",
+      "pe_bernard_montgomery",
+      "pe_george_patton",
+      "pe_erwin_rommel"
     ]
   },
   {
@@ -5800,11 +5827,14 @@
       "military"
     ],
     "effects": [
-      "ev_germany_surrenders_1945"
+      "ev_germany_surrenders_1945",
+      "ev_yalta_conference_1945"
     ],
     "people_ids": [
       "pe_adolf_hitler",
-      "pe_dwight_eisenhower"
+      "pe_dwight_eisenhower",
+      "pe_george_patton",
+      "pe_bernard_montgomery"
     ]
   },
   {
@@ -5910,7 +5940,8 @@
     ],
     "people_ids": [
       "pe_harry_s_truman",
-      "pe_joseph_stalin"
+      "pe_joseph_stalin",
+      "pe_vyacheslav_molotov"
     ]
   },
   {
@@ -5991,11 +6022,13 @@
       "political"
     ],
     "effects": [
-      "ev_un_charter_signed_1945"
+      "ev_un_charter_signed_1945",
+      "ev_nuremberg_trials_begin_1945"
     ],
     "people_ids": [
       "pe_emperor_hirohito",
-      "pe_harry_s_truman"
+      "pe_harry_s_truman",
+      "pe_douglas_macarthur"
     ]
   },
   {
@@ -6032,7 +6065,8 @@
     ],
     "effects": [],
     "people_ids": [
-      "pe_harry_s_truman"
+      "pe_harry_s_truman",
+      "pe_ernst_kaltenbrunner"
     ]
   },
   {
@@ -6053,7 +6087,9 @@
     ],
     "people_ids": [
       "pe_franklin_d_roosevelt",
-      "pe_emperor_hirohito"
+      "pe_emperor_hirohito",
+      "pe_douglas_macarthur",
+      "pe_chester_nimitz"
     ]
   }
 ]
