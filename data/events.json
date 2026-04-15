@@ -4351,7 +4351,12 @@
     "tags": [
       "political",
       "military"
-    ]
+    ],
+    "location": {
+      "region": "Sarajevo, Bosnia and Herzegovina",
+      "lat": 43.8563,
+      "lon": 18.4131
+    }
   },
   {
     "id": "ev_wwi_austria_ultimatum_serbia_1914",
@@ -4476,7 +4481,12 @@
     ],
     "tags": [
       "military"
-    ]
+    ],
+    "location": {
+      "region": "Marne, France",
+      "lat": 48.95,
+      "lon": 4.37
+    }
   },
   {
     "id": "ev_wwi_trench_warfare_entrenched_1914",
@@ -4550,7 +4560,12 @@
     "tags": [
       "military",
       "political"
-    ]
+    ],
+    "location": {
+      "region": "Gallipoli Peninsula, Ottoman Empire (Turkey)",
+      "lat": 40.2,
+      "lon": 26.4
+    }
   },
   {
     "id": "ev_wwi_armenian_genocide_begins_1915",
@@ -4597,7 +4612,12 @@
     "tags": [
       "military",
       "social"
-    ]
+    ],
+    "location": {
+      "region": "Verdun, France",
+      "lat": 49.159,
+      "lon": 5.384
+    }
   },
   {
     "id": "ev_wwi_somme_1916",
@@ -4621,7 +4641,12 @@
     ],
     "tags": [
       "military"
-    ]
+    ],
+    "location": {
+      "region": "Somme, France",
+      "lat": 50.02,
+      "lon": 2.65
+    }
   },
   {
     "id": "ev_wwi_jutland_1916",
@@ -4644,7 +4669,12 @@
     "tags": [
       "military",
       "technological"
-    ]
+    ],
+    "location": {
+      "region": "North Sea (off Jutland, Denmark)",
+      "lat": 56.5,
+      "lon": 6.2
+    }
   },
   {
     "id": "ev_wwi_unrestricted_submarine_1917",
@@ -4851,7 +4881,12 @@
     ],
     "tags": [
       "political"
-    ]
+    ],
+    "location": {
+      "region": "Compiègne, France",
+      "lat": 49.415,
+      "lon": 2.826
+    }
   },
   {
     "id": "ev_wwi_paris_peace_conference_1919",
@@ -4907,7 +4942,12 @@
     ],
     "tags": [
       "political"
-    ]
+    ],
+    "location": {
+      "region": "Versailles, France",
+      "lat": 48.8049,
+      "lon": 2.1204
+    }
   },
   {
     "id": "ev_wwi_league_of_nations_1920",
@@ -5284,7 +5324,12 @@
     ],
     "people_ids": [
       "pe_adolf_hitler"
-    ]
+    ],
+    "location": {
+      "region": "Poland",
+      "lat": 52,
+      "lon": 19
+    }
   },
   {
     "id": "ev_france_britain_declare_war_1939",
@@ -5326,7 +5371,12 @@
     "people_ids": [
       "pe_joseph_stalin",
       "pe_vyacheslav_molotov"
-    ]
+    ],
+    "location": {
+      "region": "Eastern Poland",
+      "lat": 52,
+      "lon": 24
+    }
   },
   {
     "id": "ev_fall_of_france_1940",
@@ -5458,7 +5508,12 @@
       "pe_hideki_tojo",
       "pe_franklin_d_roosevelt",
       "pe_isoroku_yamamoto"
-    ]
+    ],
+    "location": {
+      "region": "Pearl Harbor, Hawaii, United States",
+      "lat": 21.3656,
+      "lon": -157.95
+    }
   },
   {
     "id": "ev_united_states_enters_war_1941",
@@ -5547,7 +5602,12 @@
       "pe_emperor_hirohito",
       "pe_chester_nimitz",
       "pe_isoroku_yamamoto"
-    ]
+    ],
+    "location": {
+      "region": "Midway Atoll, Pacific Ocean",
+      "lat": 28.2,
+      "lon": -177.35
+    }
   },
   {
     "id": "ev_operation_torch_1942",
@@ -5591,7 +5651,12 @@
       "pe_benito_mussolini",
       "pe_bernard_montgomery",
       "pe_erwin_rommel"
-    ]
+    ],
+    "location": {
+      "region": "El Alamein, Egypt",
+      "lat": 30.83,
+      "lon": 28.95
+    }
   },
   {
     "id": "ev_battle_stalingrad_1942_1943",
@@ -5614,7 +5679,12 @@
       "pe_joseph_stalin",
       "pe_georgy_zhukov",
       "pe_adolf_hitler"
-    ]
+    ],
+    "location": {
+      "region": "Stalingrad (Volgograd), Russia",
+      "lat": 48.708,
+      "lon": 44.514
+    }
   },
   {
     "id": "ev_guadalcanal_campaign_1942_1943",
@@ -5791,7 +5861,12 @@
       "pe_bernard_montgomery",
       "pe_george_patton",
       "pe_erwin_rommel"
-    ]
+    ],
+    "location": {
+      "region": "Normandy, France",
+      "lat": 49.34,
+      "lon": -0.62
+    }
   },
   {
     "id": "ev_liberation_paris_1944",
@@ -5965,7 +6040,12 @@
     "people_ids": [
       "pe_harry_s_truman",
       "pe_emperor_hirohito"
-    ]
+    ],
+    "location": {
+      "region": "Hiroshima, Japan",
+      "lat": 34.3853,
+      "lon": 132.4553
+    }
   },
   {
     "id": "ev_soviet_invasion_manchuria_1945",

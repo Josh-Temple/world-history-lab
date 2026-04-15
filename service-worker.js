@@ -31,6 +31,11 @@ const APP_SHELL_URLS = [
   '/data/derived/causal_chains.json',
   '/apps/history-player/',
   '/apps/history-player/index.html',
+  '/apps/map-quiz/',
+  '/apps/map-quiz/index.html',
+  '/apps/map-quiz/app.js',
+  '/apps/shared/data-store.js',
+  '/apps/shared/header.js',
   '/apps/shared/data-access.js',
   '/derived/events.normalized.json',
   '/data/units/index.json'

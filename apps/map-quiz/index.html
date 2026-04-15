@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="manifest" href="/pwa/manifest.webmanifest" />
+    <link rel="icon" href="/assets/pwa/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/pwa/apple-touch-icon.svg" />
+    <title>Map Quiz</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f8fafc;
+        --panel: #fff;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: #dbe2ea;
+        --accent: #0f766e;
+        --correct: #166534;
+        --wrong: #b91c1c;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      }
+      main {
+        width: min(960px, calc(100% - 2rem));
+        margin: 1.5rem auto 2rem;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+      .lead { color: var(--muted); }
+      #map-wrap { position: relative; width: min(100%, 760px); margin-top: 0.75rem; }
+      #map {
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        display: block;
+        background: #e2e8f0;
+      }
+      #marker {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: #dc2626;
+        border: 2px solid #fff;
+        box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.2);
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+      #question { margin: 0 0 0.75rem; }
+      .options { display: grid; gap: 0.5rem; }
+      .options button {
+        text-align: left;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.55rem 0.65rem;
+        background: #fff;
+        cursor: pointer;
+      }
+      .options button:hover,
+      .options button:focus-visible { border-color: var(--accent); }
+      #feedback { min-height: 1.4rem; margin-top: 0.75rem; font-weight: 600; }
+      #feedback.correct { color: var(--correct); }
+      #feedback.incorrect { color: var(--wrong); }
+      .actions { margin-top: 0.75rem; }
+      .actions button {
+        border: 0;
+        border-radius: 8px;
+        padding: 0.55rem 0.75rem;
+        background: var(--accent);
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p><a href="/">← Back to World History Lab</a></p>
+        <h1>Map Quiz</h1>
+        <p class="lead">Identify the event by location to build geographic memory.</p>
+      </header>
+
+      <section class="card" aria-live="polite">
+        <h2>Where did this happen?</h2>
+        <div id="map-wrap">
+          <svg id="map" viewBox="0 0 800 400" role="img" aria-label="Simplified world map">
+            <rect x="0" y="0" width="800" height="400" fill="#dbeafe" />
+            <g fill="#bbf7d0" stroke="#86efac" stroke-width="1">
+              <ellipse cx="150" cy="170" rx="110" ry="85" />
+              <ellipse cx="300" cy="220" rx="80" ry="120" />
+              <ellipse cx="420" cy="155" rx="130" ry="90" />
+              <ellipse cx="560" cy="200" rx="110" ry="100" />
+              <ellipse cx="700" cy="285" rx="70" ry="50" />
+            </g>
+          </svg>
+          <div id="marker" hidden></div>
+        </div>
+      </section>
+
+      <section class="card" aria-live="polite">
+        <p id="question">Loading question…</p>
+        <div id="options" class="options"></div>
+        <p id="feedback"></p>
+        <div class="actions">
+          <button type="button" id="next" disabled>Next location</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="/pwa/register-sw.js"></script>
+  </body>
+</html>
