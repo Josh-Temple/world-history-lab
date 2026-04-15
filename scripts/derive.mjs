@@ -339,6 +339,38 @@ function validateConceptTags(events, allowedConceptTags = new Set()) {
   }
 }
 
+function validateEventLocations(events) {
+  for (const event of events) {
+    if (!Object.hasOwn(event, "location") || event.location == null) {
+      continue;
+    }
+
+    if (!event.location || typeof event.location !== "object" || Array.isArray(event.location)) {
+      throw new Error(`Event ${event.id}: location must be an object when provided`);
+    }
+
+    const region = typeof event.location.region === "string" && event.location.region.trim() !== ""
+      ? event.location.region
+      : (typeof event.location.label === "string" && event.location.label.trim() !== "" ? event.location.label : null);
+    if (!region) {
+      throw new Error(`Event ${event.id}: location.region (or legacy location.label) must be a non-empty string`);
+    }
+
+    const lat = event.location.lat;
+    const lon = Number.isFinite(event.location.lon) ? event.location.lon : event.location.lng;
+    if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+      throw new Error(`Event ${event.id}: location.lat and location.lon/lng must be finite numbers`);
+    }
+
+    if (lat < -90 || lat > 90) {
+      throw new Error(`Event ${event.id}: location.lat must be between -90 and 90`);
+    }
+    if (lon < -180 || lon > 180) {
+      throw new Error(`Event ${event.id}: location.lon must be between -180 and 180`);
+    }
+  }
+}
+
 function buildUnitIdsByEventId(units) {
   const unitIdsByEventId = new Map();
   for (const unit of units) {
@@ -726,6 +758,7 @@ async function main() {
   validateCrossReferences({ events, eventIdSet, peopleIdSet, units });
   validateEventTags(events);
   validateConceptTags(events, allowedConceptTags);
+  validateEventLocations(events);
   console.log("[derive] All data-integrity validation checks passed.");
 
   normalizedEvents.sort((a, b) => a.id.localeCompare(b.id));

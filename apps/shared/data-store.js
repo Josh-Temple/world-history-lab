@@ -30,6 +30,31 @@ export async function getAllEvents() {
   return eventsCache;
 }
 
+export async function getEventsWithLocation() {
+  const events = await getAllEvents();
+  return events
+    .filter((event) => {
+    const location = event?.location;
+    return Boolean(
+      location
+      && (typeof location.region === "string" || typeof location.label === "string")
+      && Number.isFinite(location.lat)
+      && (Number.isFinite(location.lon) || Number.isFinite(location.lng))
+    );
+    })
+    .map((event) => {
+      const location = event.location || {};
+      return {
+        ...event,
+        location: {
+          ...location,
+          region: typeof location.region === "string" && location.region.trim() !== "" ? location.region : location.label,
+          lon: Number.isFinite(location.lon) ? location.lon : location.lng,
+        },
+      };
+    });
+}
+
 export async function getMetadata() {
   if (metadataCache) return metadataCache;
   metadataCache = await fetchJson("/data/metadata.json", "metadata");

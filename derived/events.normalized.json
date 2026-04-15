@@ -157,7 +157,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Hiroshima, Japan",
+      "lat": 34.3853,
+      "lon": 132.4553
+    },
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
@@ -379,7 +383,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "El Alamein, Egypt",
+      "lat": 30.83,
+      "lon": 28.95
+    },
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
@@ -416,7 +424,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Midway Atoll, Pacific Ocean",
+      "lat": 28.2,
+      "lon": -177.35
+    },
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
@@ -529,7 +541,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Stalingrad (Volgograd), Russia",
+      "lat": 48.708,
+      "lon": 44.514
+    },
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
@@ -3233,7 +3249,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Poland",
+      "lat": 52,
+      "lon": 19
+    },
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
@@ -4736,7 +4756,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Normandy, France",
+      "lat": 49.34,
+      "lon": -0.62
+    },
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
@@ -4899,7 +4923,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Pearl Harbor, Hawaii, United States",
+      "lat": 21.3656,
+      "lon": -157.95
+    },
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
@@ -5497,7 +5525,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Eastern Poland",
+      "lat": 52,
+      "lon": 24
+    },
     "question_types": [],
     "concept_tags": [],
     "people_ids": [
@@ -6581,7 +6613,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Compiègne, France",
+      "lat": 49.415,
+      "lon": 2.826
+    },
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6620,7 +6656,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Sarajevo, Bosnia and Herzegovina",
+      "lat": 43.8563,
+      "lon": 18.4131
+    },
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6771,7 +6811,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Marne, France",
+      "lat": 48.95,
+      "lon": 4.37
+    },
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6923,7 +6967,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Gallipoli Peninsula, Ottoman Empire (Turkey)",
+      "lat": 40.2,
+      "lon": 26.4
+    },
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7235,7 +7283,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "North Sea (off Jutland, Denmark)",
+      "lat": 56.5,
+      "lon": 6.2
+    },
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7541,7 +7593,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Somme, France",
+      "lat": 50.02,
+      "lon": 2.65
+    },
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7728,7 +7784,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Versailles, France",
+      "lat": 48.8049,
+      "lon": 2.1204
+    },
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7886,7 +7946,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "region": "Verdun, France",
+      "lat": 49.159,
+      "lon": 5.384
+    },
     "question_types": [
       "timeline_before_after",
       "what_happened",

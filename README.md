@@ -115,6 +115,20 @@ Next:
 - Added derive-time tag clustering output (`data/derived/tag_clusters.json`) so comparison rounds can draw from meaningful thematic event groups instead of purely random pairs.
 - Extended shared app data access with `getTagClusters()` in `apps/shared/data-store.js` to support cluster-aware learning modes.
 
+## Recent updates (2026-04-15 · location metadata foundation + Map Quiz mode)
+
+- Added `location` metadata (`region`, `lat`, `lon`) to key WWI/WWII events in `data/events.json` (for example: Invasion of Poland, Stalingrad, Midway, D-Day, Hiroshima, Verdun, Somme, Marne, Gallipoli, Jutland).
+- Added derive-time location validation in `scripts/derive.mjs`:
+  - validates `location` object shape when present,
+  - enforces numeric latitude/longitude ranges,
+  - supports legacy location payloads (`label` + `lng`) to remain backward compatible during migration.
+- Added `getEventsWithLocation()` in `apps/shared/data-store.js` to provide normalized location-ready events to map-based apps (including legacy-location normalization to `region`/`lon`).
+- Added new learner-facing app `apps/map-quiz/`:
+  - simple world-map board with event point plotting by coordinates,
+  - multiple-choice prompt: “Which event happened at this location?”,
+  - immediate correctness feedback with location context.
+- Updated homepage `index.html` and `service-worker.js` so the new Map Quiz mode is discoverable and included in offline app-shell caching.
+
 
 ## Recent updates (2026-04-13 · World War II flagship density + cross-unit comparison mode)
 

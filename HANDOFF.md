@@ -1,3 +1,32 @@
+## Incremental update (2026-04-15 · geographic metadata + first map-based learning mode)
+- Added location metadata to key WWI/WWII events in `data/events.json` using a normalized shape:
+  - `location.region` (string)
+  - `location.lat` / `location.lon` (approximate numeric coordinates)
+- Covered key battles and turning points for initial geographic learning density (including Marne, Gallipoli, Verdun, Somme, Jutland, Armistice site, Versailles, Poland invasion, Midway, Stalingrad, Pearl Harbor, El Alamein, D-Day, Hiroshima).
+- Extended derive integrity checks in `scripts/derive.mjs` with `validateEventLocations(events)`:
+  - validates location object structure,
+  - enforces coordinate range bounds,
+  - preserves backward compatibility by accepting legacy `label` + `lng` location records.
+- Extended shared data access in `apps/shared/data-store.js` with `getEventsWithLocation()`:
+  - filters for location-ready events,
+  - normalizes legacy location fields to `region` and `lon` for app consumption.
+- Added new app route `apps/map-quiz/`:
+  - `apps/map-quiz/index.html`
+  - `apps/map-quiz/app.js`
+  - renders a simple world map, plots event point, asks multiple-choice event identification, and provides immediate answer feedback.
+- Updated discoverability/runtime support:
+  - added Map Quiz link to `index.html`,
+  - added map app assets to app-shell pre-cache list in `service-worker.js`.
+
+## Validation completed (2026-04-15)
+- `node scripts/derive.mjs` ✅ (passes; existing baseline warning noise remains for unknown tags/legacy summaries)
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Expand `location` coverage from key WWI/WWII anchors to the broader event corpus so map mode has stronger replay variety.
+2. Add explicit region taxonomy IDs in metadata (separate from free-text `region`) to support future clustering/filtering by continent/theater/front.
+3. Integrate Map Quiz into `apps/session-runner/` as an optional spatial checkpoint after chronology mode.
+
 ## Incremental update (2026-04-14 · WWII relational density expansion)
 - Expanded WW2 actor graph in `data/people.json`:
   - enriched existing WW2 people entries with `birth_year`, `death_year`, `regions`, `related_events`, and question metadata fields used by people-centric modes,
