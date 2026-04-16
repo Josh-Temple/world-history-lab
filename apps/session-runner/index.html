@@ -10,6 +10,7 @@
       .panel { background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; padding: 0.75rem; }
       .row { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
       #progress { color: #334155; font-size: 0.95rem; }
+      #mode-label { color: #0f766e; font-weight: 700; }
       #app { min-height: 72vh; }
       iframe { width: 100%; min-height: 72vh; border: 1px solid #cbd5e1; border-radius: 10px; background: #fff; }
       button { min-height: 42px; border: 0; border-radius: 10px; padding: 0.5rem 0.9rem; font-weight: 700; cursor: pointer; }
@@ -24,13 +25,18 @@
         <div id="progress" aria-live="polite"></div>
       </section>
 
+      <section class="panel row">
+        <p id="mode-help">Finish a few questions, then continue to the next mode.</p>
+        <div id="mode-label" aria-live="polite">Mode: Timeline</div>
+      </section>
+
       <section id="app" class="panel" aria-live="polite"></section>
 
       <section class="panel row">
-        <p id="mode-help">Finish a few questions, then continue to the next mode.</p>
+        <p>Complete each mode block, then continue.</p>
         <div>
           <button id="restart" type="button">Restart Session</button>
-          <button id="next-step" type="button">Complete Step</button>
+          <button id="next-step" type="button">Complete Question</button>
         </div>
       </section>
     </main>
