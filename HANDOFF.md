@@ -608,3 +608,26 @@
 1. Pass a lightweight `focus=weak` query hint into each guided mode and implement optional handling in modes that support adaptive pools.
 2. Add a small "path view" component in Session Runner so learners can preview completed/current/next units at a glance.
 3. Add a smoke check for session-runner completion flow that verifies next-unit button visibility and localStorage unit handoff.
+
+## Session handoff (2026-04-16)
+### What changed
+- Homepage (`index.html`) now uses a session-first entry layout:
+  - one primary CTA: **Start Learning**
+  - CTA routes to `/apps/session-runner/`
+  - secondary “Practice Modes” list with concise mode descriptions.
+- Session Runner (`apps/session-runner/`) now follows a fixed, guided mode sequence:
+  - Timeline → Sequence → Causality → Comparison
+  - transitions after `QUESTIONS_PER_MODE = 5`
+  - visible current mode label added to the UI.
+
+### Why this was done
+- Reduce cognitive load at entry by removing equal-weight app choices.
+- Make session runner the explicit default flow.
+- Improve learning continuity with predictable multi-mode progression.
+
+### Validation run
+- `node scripts/derive.mjs`
+
+### Notes for next session
+- Current runner progression still uses manual **Complete Question** clicks; consider wiring iframe-to-parent events so real question completions trigger transitions automatically.
+- If mode naming should match app labels exactly (e.g., “Sequence Reconstruction” vs “Sequence”), update display strings only (routing is already wired).

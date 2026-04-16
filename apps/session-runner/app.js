@@ -2,34 +2,52 @@ import { getEventsForUnit, getNextUnit, getUnits, setStoredUnitId } from "../sha
 import { getAllStats } from "../shared/mastery-store.js";
 
 const modes = [
-  { name: "Timeline", app: "/apps/timeline-trainer/index.html" },
-  { name: "Sequence", app: "/apps/sequence-reconstruction/index.html" },
-  { name: "Causality", app: "/apps/causality-builder/index.html" },
-  { name: "Recognition", app: "/apps/event-recognition/index.html" },
+  { key: "timeline", name: "Timeline", app: "/apps/timeline-trainer/index.html" },
+  { key: "sequence", name: "Sequence", app: "/apps/sequence-reconstruction/index.html" },
+  { key: "causality", name: "Causality", app: "/apps/causal-chain/index.html" },
+  { key: "comparison", name: "Comparison", app: "/apps/event-comparison/index.html" },
 ];
 
-const STEPS_PER_MODE = 3;
+const QUESTIONS_PER_MODE = 5;
 
 const appContainer = document.getElementById("app");
 const progressEl = document.getElementById("progress");
 const modeHelpEl = document.getElementById("mode-help");
+const modeLabelEl = document.getElementById("mode-label");
 const nextStepButton = document.getElementById("next-step");
 const restartButton = document.getElementById("restart");
 
-let currentMode = 0;
-let step = 0;
+let modeIndex = 0;
+let questionCount = 0;
 let iframe = null;
 let selectedUnitId = "";
 let units = [];
 
-function updateProgress() {
-  const stepLabel = `${Math.min(step + 1, STEPS_PER_MODE)}/${STEPS_PER_MODE}`;
-  if (currentMode >= modes.length) {
-    progressEl.textContent = `Session complete • ${modes.length}/${modes.length} modes finished`;
+function getCurrentMode() {
+  return modes[modeIndex];
+}
+
+function updateModeLabel() {
+  const mode = getCurrentMode();
+  if (!modeLabelEl) return;
+
+  if (!mode) {
+    modeLabelEl.textContent = "Mode: Complete";
     return;
   }
 
-  progressEl.textContent = `Mode ${currentMode + 1}/${modes.length}: ${modes[currentMode].name} • Step ${stepLabel}`;
+  modeLabelEl.textContent = `Mode: ${mode.name}`;
+}
+
+function updateProgress() {
+  if (modeIndex >= modes.length) {
+    progressEl.textContent = `Session complete • ${modes.length}/${modes.length} modes finished`;
+    updateModeLabel();
+    return;
+  }
+
+  progressEl.textContent = `Mode ${modeIndex + 1}/${modes.length} • Question ${questionCount + 1}/${QUESTIONS_PER_MODE}`;
+  updateModeLabel();
 }
 
 function buildIframeSrc(modePath) {
@@ -110,12 +128,19 @@ async function pickBestStartingUnit(loadedUnits) {
 }
 
 function renderMode() {
+  const mode = getCurrentMode();
+  if (!mode) {
+    showCompletion();
+    return;
+  }
+
   appContainer.innerHTML = "";
   iframe = document.createElement("iframe");
-  iframe.title = `Guided mode: ${modes[currentMode].name}`;
-  iframe.src = buildIframeSrc(modes[currentMode].app);
+  iframe.title = `Guided mode: ${mode.name}`;
+  iframe.src = buildIframeSrc(mode.app);
   appContainer.appendChild(iframe);
-  modeHelpEl.textContent = `Mode: ${modes[currentMode].name}. Complete ${STEPS_PER_MODE} short items, then continue.`;
+
+  modeHelpEl.textContent = `Mode: ${mode.name}. Complete ${QUESTIONS_PER_MODE} questions, then continue.`;
   nextStepButton.disabled = false;
   updateProgress();
 }
@@ -153,25 +178,35 @@ function showCompletion() {
   updateProgress();
 }
 
+function advanceMode() {
+  modeIndex += 1;
+  questionCount = 0;
+}
+
 function next() {
-  if (currentMode >= modes.length) return;
-
-  step += 1;
-  if (step >= STEPS_PER_MODE) {
-    currentMode += 1;
-    step = 0;
+  if (modeIndex >= modes.length) {
+    return;
   }
 
-  if (currentMode < modes.length) {
-    renderMode();
-  } else {
+  questionCount += 1;
+
+  if (questionCount >= QUESTIONS_PER_MODE) {
+    advanceMode();
+    if (modeIndex < modes.length) {
+      renderMode();
+      return;
+    }
+
     showCompletion();
+    return;
   }
+
+  updateProgress();
 }
 
 function restart() {
-  currentMode = 0;
-  step = 0;
+  modeIndex = 0;
+  questionCount = 0;
   renderMode();
 }
 

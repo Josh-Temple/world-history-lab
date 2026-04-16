@@ -618,3 +618,20 @@ TBD
   - pick a starting unit using mastery-aware weak-area scoring when no unit is preselected,
   - show a post-session **Start next unit** action using curriculum `next_units` guidance,
   - persist the selected/advanced unit with shared storage helpers.
+
+## Incremental update (2026-04-16 · session-first homepage + sequenced guided runner)
+- Reworked `index.html` into a simpler onboarding-first landing page with one clear primary CTA (**Start Learning**) that routes directly to `apps/session-runner/`.
+- Reduced top-level choice overload by presenting a short secondary **Practice Modes** list (Timeline, Causality, Comparison, Map) with concise purpose text.
+- Updated `apps/session-runner/` guided flow to enforce a fixed multi-mode sequence:
+  - Timeline → Sequence → Causality → Comparison
+  - automatic mode transition every 5 completed questions
+  - persistent visible mode label (`Mode: ...`) during the session.
+- Kept existing unit-selection continuity and next-unit handoff behavior in the session runner while aligning progression framing to the new guided flow.
+
+## Validation completed (2026-04-16)
+- `node scripts/derive.mjs` ✅
+
+## Suggested next steps
+1. Replace the manual “Complete Question” control in Session Runner with message-based completion signals emitted by each embedded app for true question-level progression.
+2. Add a small in-run mini-map/path indicator (completed/current/upcoming modes) to reinforce learner orientation.
+3. Add a smoke check for mode-sequencing behavior (5 clicks per mode, full loop completion, next-unit button visibility).

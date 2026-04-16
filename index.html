@@ -10,14 +10,12 @@
     <title>World History Lab</title>
     <style>
       :root {
-        color-scheme: light;
         --bg: #f8fafc;
         --panel: #ffffff;
         --text: #0f172a;
         --muted: #475569;
-        --border: #dbe2ea;
         --accent: #0f766e;
-        --accent-soft: #ecfeff;
+        --border: #dbe2ea;
       }
 
       * { box-sizing: border-box; }
@@ -27,305 +25,108 @@
         font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
         background: var(--bg);
         color: var(--text);
-        line-height: 1.5;
       }
 
-      main {
-        width: min(980px, calc(100% - 2rem));
-        margin: 2.2rem auto 3rem;
-      }
-
-      h1 {
-        font-size: clamp(1.8rem, 4vw, 2.5rem);
-        margin: 0;
-      }
-
-      h2 {
-        margin: 0 0 0.65rem;
-        font-size: 1.35rem;
-      }
-
-      .lead {
-        color: var(--muted);
-        max-width: 74ch;
-        margin-top: 0.75rem;
-      }
-
-      .panel {
+      #main {
+        width: min(760px, calc(100% - 1.5rem));
+        margin: 2rem auto;
         background: var(--panel);
         border: 1px solid var(--border);
         border-radius: 14px;
-        padding: 1rem 1.1rem;
-        margin-top: 1rem;
+        padding: 1.2rem;
       }
 
-      .start-learning {
-        background: #ecfeff;
-        border: 1px solid #bae6fd;
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
       }
 
-      .section-help {
-        margin: 0.4rem 0 0;
+      #intro {
+        margin: 0.6rem 0 0;
         color: var(--muted);
       }
 
-      .primary-btn,
-      .link-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 44px;
-        padding: 0.55rem 0.95rem;
-        border-radius: 10px;
-        font-weight: 700;
-        text-decoration: none;
+      #primary {
+        margin: 20px 0;
       }
 
-      .primary-btn {
-        margin-top: 0.8rem;
+      #start-btn {
+        font-size: 20px;
+        padding: 12px 24px;
+        border: 0;
+        border-radius: 10px;
         background: var(--accent);
         color: #fff;
-        border: 0;
+        font-weight: 700;
         cursor: pointer;
       }
 
-      .primary-btn:hover,
-      .primary-btn:focus-visible {
+      #start-btn:hover,
+      #start-btn:focus-visible {
         background: #115e59;
       }
 
-      .learning-path {
-        display: grid;
-        gap: 0.85rem;
+      #modes {
+        margin-top: 0.4rem;
       }
 
-      .app-list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin-top: 0.65rem;
-      }
-
-      .app-link {
-        display: block;
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: 0.6rem 0.7rem;
-        text-decoration: none;
-        color: var(--accent);
-        font-weight: 600;
-        background: #fff;
-      }
-
-      .app-link:hover,
-      .app-link:focus-visible {
-        text-decoration: underline;
-      }
-
-      .unit-grid {
-        display: grid;
-        gap: 0.85rem;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      }
-
-      .mode-group,
-      .unit-card {
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 0.85rem;
-        background: #fff;
-      }
-
-      .mode-group h3,
-      .unit-card h3 {
+      #modes h2 {
         margin: 0;
-        font-size: 1.02rem;
+        font-size: 1.2rem;
       }
 
-      .mode-group p,
-      .unit-card p {
-        margin: 0.45rem 0 0;
+      #modes ul {
+        list-style: none;
+        padding: 0;
+        margin: 0.55rem 0 0;
+      }
+
+      #modes li {
+        margin: 8px 0;
         color: var(--muted);
       }
 
-      .mode-links {
-        margin-top: 0.55rem;
-        display: grid;
-        gap: 0.35rem;
-      }
-
-      .mode-links a,
-      .link-btn {
+      #modes a {
         color: var(--accent);
-      }
-
-      .mode-links a {
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      .mode-links a:hover,
-      .mode-links a:focus-visible,
-      .link-btn:hover,
-      .link-btn:focus-visible {
-        text-decoration: underline;
-      }
-
-      .counts,
-      .coverage {
-        margin-top: 1rem;
-        color: var(--muted);
-        font-size: 0.95rem;
+        font-weight: 700;
       }
 
       @media (max-width: 640px) {
-        main {
-          width: calc(100% - 1.2rem);
-          margin-top: 1.3rem;
+        #main {
+          margin: 1rem auto;
+          padding: 1rem;
         }
 
-        .panel,
-        .mode-group,
-        .unit-card {
-          padding: 0.9rem;
-        }
-
-        .primary-btn,
-        .link-btn {
+        #start-btn {
           width: 100%;
         }
       }
     </style>
   </head>
   <body>
-    <main>
-      <header>
-        <h1>World History Lab</h1>
-        <p class="lead">Use one guided flow: start with chronology, then move to recall and explanation. If you already know your target unit, jump in through unit-first study below.</p>
-      </header>
+    <div id="main">
+      <h1>World History Lab</h1>
+      <p id="intro">Start with one guided session, then use focused practice modes to deepen specific skills.</p>
 
-      <section class="panel start-learning" aria-labelledby="start-learning-heading">
-        <h2 id="start-learning-heading">Start here</h2>
-        <p class="section-help">Begin with one guided session that automatically moves across modes and keeps your cognitive load low.</p>
-        <button id="start-learning" class="primary-btn" type="button">Start Learning</button>
-      </section>
+      <div id="primary">
+        <button id="start-btn" type="button">Start Learning</button>
+      </div>
 
-      <section class="panel" aria-labelledby="build-understanding-heading">
-        <h2 id="build-understanding-heading">Build understanding</h2>
-        <p class="section-help">Strengthen chronology and time estimation to place events confidently.</p>
-        <div class="app-list">
-          <a href="apps/timeline-trainer/" class="app-link">Timeline Trainer</a>
-          <a href="apps/year-estimation/" class="app-link">Year Estimation</a>
-          <a href="apps/map-quiz/" class="app-link">Map Quiz</a>
-        </div>
-      </section>
+      <div id="modes">
+        <h2>Practice Modes</h2>
+        <ul>
+          <li><a href="/apps/timeline-trainer/">Timeline</a> – place events in time</li>
+          <li><a href="/apps/causal-chain/">Causality</a> – understand cause and effect</li>
+          <li><a href="/apps/event-comparison/">Comparison</a> – compare events</li>
+          <li><a href="/apps/map-quiz/">Map</a> – learn where events happened</li>
+        </ul>
+      </div>
+    </div>
 
-      <section class="panel" aria-labelledby="deep-understanding-heading">
-        <h2 id="deep-understanding-heading">Deep understanding</h2>
-        <p class="section-help">Practice cause-effect reasoning, sequence logic, and cross-event comparison.</p>
-        <div class="app-list">
-          <a href="apps/causality-builder/" class="app-link">Causality Builder</a>
-          <a href="apps/sequence-reconstruction/" class="app-link">Sequence Reconstruction</a>
-          <a href="apps/causal-chain/" class="app-link">Causal Chain Reconstruction</a>
-          <a href="apps/event-comparison/" class="app-link">Event Comparison</a>
-          <a href="apps/people-recognition/" class="app-link">People Recognition</a>
-          <a href="apps/history-player/" class="app-link">History Player</a>
-          <a href="apps/overview/" class="app-link">Overview</a>
-        </div>
-      </section>
-
-      <section class="panel" id="units" aria-labelledby="units-heading">
-        <h2 id="units-heading">Study by unit</h2>
-        <p class="section-help">Start directly from a unit if you want focused practice.</p>
-        <div id="unit-list" class="unit-grid" aria-live="polite"></div>
-      </section>
-
-      <p class="counts" aria-live="polite">Dataset: <span id="count-events">…</span> events, <span id="count-people">…</span> people, <span id="count-units">…</span> units (<span id="count-approved">…</span> approved, <span id="count-reviewed">…</span> reviewed+).</p>
-      <p class="coverage" aria-live="polite">Current unit coverage: <span id="unit-names">loading…</span>.</p>
-    </main>
-
-    <script type="module">
-      const SELECTED_UNIT_KEY = "selected_unit";
-
-      async function fetchJson(path) {
-        const response = await fetch(path, { cache: "no-store" });
-        if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
-        return response.json();
-      }
-
-      function renderUnitCards(units) {
-        const unitList = document.getElementById("unit-list");
-        unitList.innerHTML = "";
-
-        if (!Array.isArray(units) || units.length === 0) {
-          unitList.innerHTML = '<p class="muted">No units available yet.</p>';
-          return;
-        }
-
-        for (const unit of units) {
-          const card = document.createElement("article");
-          card.className = "unit-card";
-
-          const title = document.createElement("h3");
-          title.textContent = unit.title || unit.label || unit.id;
-
-          const meta = document.createElement("p");
-          meta.textContent = unit.description || "Focused practice set.";
-
-          const startLink = document.createElement("a");
-          startLink.className = "link-btn";
-          startLink.href = "/apps/timeline-trainer/";
-          startLink.textContent = "Start this unit →";
-          startLink.addEventListener("click", () => {
-            localStorage.setItem(SELECTED_UNIT_KEY, unit.id);
-          });
-
-          card.append(title, meta, startLink);
-          unitList.append(card);
-        }
-      }
-
-      async function loadCounts() {
-        try {
-          const [events, people, unitIndexRaw] = await Promise.all([
-            fetchJson("/data/events.json"),
-            fetchJson("/data/people.json"),
-            fetchJson("/data/units/index.json"),
-          ]);
-
-          const unitIndex = Array.isArray(unitIndexRaw?.units) ? unitIndexRaw.units : Array.isArray(unitIndexRaw) ? unitIndexRaw : [];
-          const eventList = Array.isArray(events) ? events : [];
-          const approved = eventList.filter((event) => event.status === "approved").length;
-          const reviewedPlus = eventList.filter((event) => event.status === "approved" || event.status === "reviewed").length;
-
-          document.getElementById("count-events").textContent = String(eventList.length || "—");
-          document.getElementById("count-people").textContent = String(Array.isArray(people) ? people.length : "—");
-          document.getElementById("count-units").textContent = String(unitIndex.length || "—");
-          document.getElementById("count-approved").textContent = String(approved);
-          document.getElementById("count-reviewed").textContent = String(reviewedPlus);
-
-          const unitNames = unitIndex.length > 0
-            ? unitIndex.map((unit) => unit.id.replace(/^unit_/, "").replaceAll("_", " ")).join(", ")
-            : "—";
-          document.getElementById("unit-names").textContent = unitNames;
-
-          renderUnitCards(unitIndex);
-        } catch {
-          document.getElementById("count-events").textContent = "—";
-          document.getElementById("count-people").textContent = "—";
-          document.getElementById("count-units").textContent = "—";
-          document.getElementById("count-approved").textContent = "—";
-          document.getElementById("count-reviewed").textContent = "—";
-          document.getElementById("unit-names").textContent = "unavailable";
-          renderUnitCards([]);
-        }
-      }
-
-      document.getElementById("start-learning")?.addEventListener("click", () => {
-        window.location.href = "/apps/session-runner/index.html";
-      });
-
-      loadCounts();
+    <script>
+      document.getElementById('start-btn').onclick = () => {
+        window.location.href = '/apps/session-runner/';
+      };
     </script>
     <script type="module" src="/pwa/register-sw.js"></script>
   </body>
