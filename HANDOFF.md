@@ -235,6 +235,21 @@
 
 # Handoff
 
+## Incremental update (2026-04-16 · WW2 validation fix for missing question_types)
+- Resolved CI validation failure in `node scripts/validate.mjs` caused by missing `question_types` arrays on 40 World War II events (from `ev_munich_agreement_1938` through `ev_island_hopping_campaign_1943_1945`) in `data/events.json`.
+- Backfilled all missing WW2 records with a consistent question-type set:
+  - `timeline_before_after`
+  - `what_happened`
+  - `cause_and_effect`
+- Added a matching dated update note in `README.md` under recent updates so repository history reflects the schema-alignment fix.
+
+## Validation completed (2026-04-16)
+- `node scripts/validate.mjs` ✅
+
+## Suggested next steps
+1. Add a small derive/validation guard that checks newly added events include `question_types` before merge to avoid repeat regressions.
+2. Consider introducing unit-level defaults in tooling so repetitive fields (like `question_types`) can be auto-filled deterministically.
+
 ## Incremental update (2026-04-03 · validation + runtime guard hardening)
 - Updated `scripts/derive.mjs` to add controlled tag vocabulary checks:
   - warns on unknown tags via `[derive] Unknown tag "..."`

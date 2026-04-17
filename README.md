@@ -115,6 +115,15 @@ Next:
 - Added derive-time tag clustering output (`data/derived/tag_clusters.json`) so comparison rounds can draw from meaningful thematic event groups instead of purely random pairs.
 - Extended shared app data access with `getTagClusters()` in `apps/shared/data-store.js` to support cluster-aware learning modes.
 
+## Recent updates (2026-04-16 · WW2 question type schema alignment)
+
+- Backfilled `question_types` arrays for all 40 World War II events added in the 1938–1945 block of `data/events.json` so they satisfy `scripts/validate.mjs` requirements.
+- Standardized the backfilled WW2 events to include:
+  - `timeline_before_after`
+  - `what_happened`
+  - `cause_and_effect`
+- Restored `node scripts/validate.mjs` to passing status after CI failures reporting missing `question_types` fields on WW2 records.
+
 ## Recent updates (2026-04-15 · location metadata foundation + Map Quiz mode)
 
 - Added `location` metadata (`region`, `lat`, `lon`) to key WWI/WWII events in `data/events.json` (for example: Invasion of Poland, Stalingrad, Midway, D-Day, Hiroshima, Verdun, Somme, Marne, Gallipoli, Jutland).

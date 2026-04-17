@@ -5282,6 +5282,11 @@
     "people_ids": [
       "pe_neville_chamberlain",
       "pe_adolf_hitler"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5303,6 +5308,11 @@
       "pe_adolf_hitler",
       "pe_joseph_stalin",
       "pe_vyacheslav_molotov"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5329,7 +5339,12 @@
       "region": "Poland",
       "lat": 52,
       "lon": 19
-    }
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_france_britain_declare_war_1939",
@@ -5350,6 +5365,11 @@
     ],
     "people_ids": [
       "pe_winston_churchill"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5376,7 +5396,12 @@
       "region": "Eastern Poland",
       "lat": 52,
       "lon": 24
-    }
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_fall_of_france_1940",
@@ -5398,6 +5423,11 @@
     "people_ids": [
       "pe_adolf_hitler",
       "pe_charles_de_gaulle"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5419,6 +5449,11 @@
     "people_ids": [
       "pe_winston_churchill",
       "pe_adolf_hitler"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5442,6 +5477,11 @@
     "people_ids": [
       "pe_franklin_d_roosevelt",
       "pe_winston_churchill"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5464,6 +5504,11 @@
     "people_ids": [
       "pe_adolf_hitler",
       "pe_joseph_stalin"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5485,6 +5530,11 @@
     "people_ids": [
       "pe_adolf_hitler",
       "pe_heinrich_himmler"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5513,7 +5563,12 @@
       "region": "Pearl Harbor, Hawaii, United States",
       "lat": 21.3656,
       "lon": -157.95
-    }
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_united_states_enters_war_1941",
@@ -5536,6 +5591,11 @@
     ],
     "people_ids": [
       "pe_franklin_d_roosevelt"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5558,6 +5618,11 @@
       "pe_adolf_hitler",
       "pe_heinrich_himmler",
       "pe_ernst_kaltenbrunner"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5579,6 +5644,11 @@
       "pe_adolf_hitler",
       "pe_heinrich_himmler",
       "pe_ernst_kaltenbrunner"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5607,7 +5677,12 @@
       "region": "Midway Atoll, Pacific Ocean",
       "lat": 28.2,
       "lon": -177.35
-    }
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_operation_torch_1942",
@@ -5629,6 +5704,11 @@
       "pe_dwight_eisenhower",
       "pe_george_patton",
       "pe_erwin_rommel"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5656,7 +5736,12 @@
       "region": "El Alamein, Egypt",
       "lat": 30.83,
       "lon": 28.95
-    }
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_battle_stalingrad_1942_1943",
@@ -5684,7 +5769,12 @@
       "region": "Stalingrad (Volgograd), Russia",
       "lat": 48.708,
       "lon": 44.514
-    }
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_guadalcanal_campaign_1942_1943",
@@ -5707,6 +5797,11 @@
       "pe_emperor_hirohito",
       "pe_chester_nimitz",
       "pe_douglas_macarthur"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5730,6 +5825,11 @@
       "pe_franklin_d_roosevelt",
       "pe_winston_churchill",
       "pe_joseph_stalin"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5752,6 +5852,11 @@
     "people_ids": [
       "pe_winston_churchill",
       "pe_franklin_d_roosevelt"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5773,6 +5878,11 @@
     "people_ids": [
       "pe_joseph_stalin",
       "pe_georgy_zhukov"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5793,6 +5903,11 @@
     ],
     "people_ids": [
       "pe_benito_mussolini"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5815,6 +5930,11 @@
       "pe_franklin_d_roosevelt",
       "pe_winston_churchill",
       "pe_joseph_stalin"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5836,6 +5956,11 @@
     "people_ids": [
       "pe_georgy_zhukov",
       "pe_joseph_stalin"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5866,7 +5991,12 @@
       "region": "Normandy, France",
       "lat": 49.34,
       "lon": -0.62
-    }
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_liberation_paris_1944",
@@ -5887,6 +6017,11 @@
     ],
     "people_ids": [
       "pe_charles_de_gaulle"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5910,6 +6045,11 @@
       "pe_dwight_eisenhower",
       "pe_george_patton",
       "pe_bernard_montgomery"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5932,6 +6072,11 @@
       "pe_franklin_d_roosevelt",
       "pe_winston_churchill",
       "pe_joseph_stalin"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5953,6 +6098,11 @@
     "people_ids": [
       "pe_georgy_zhukov",
       "pe_joseph_stalin"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5972,6 +6122,11 @@
     ],
     "people_ids": [
       "pe_adolf_hitler"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -5995,6 +6150,11 @@
       "pe_harry_s_truman",
       "pe_joseph_stalin",
       "pe_winston_churchill"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -6017,6 +6177,11 @@
       "pe_harry_s_truman",
       "pe_joseph_stalin",
       "pe_vyacheslav_molotov"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -6045,7 +6210,12 @@
       "region": "Hiroshima, Japan",
       "lat": 34.3853,
       "lon": 132.4553
-    }
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_soviet_invasion_manchuria_1945",
@@ -6065,6 +6235,11 @@
     "people_ids": [
       "pe_joseph_stalin",
       "pe_emperor_hirohito"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -6086,6 +6261,11 @@
     "people_ids": [
       "pe_harry_s_truman",
       "pe_emperor_hirohito"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -6109,6 +6289,11 @@
       "pe_emperor_hirohito",
       "pe_harry_s_truman",
       "pe_douglas_macarthur"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -6128,6 +6313,11 @@
       "pe_harry_s_truman",
       "pe_joseph_stalin",
       "pe_winston_churchill"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -6147,6 +6337,11 @@
     "people_ids": [
       "pe_harry_s_truman",
       "pe_ernst_kaltenbrunner"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   },
   {
@@ -6170,6 +6365,11 @@
       "pe_emperor_hirohito",
       "pe_douglas_macarthur",
       "pe_chester_nimitz"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ]
   }
 ]
