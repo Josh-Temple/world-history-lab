@@ -646,3 +646,26 @@
 ### Notes for next session
 - Current runner progression still uses manual **Complete Question** clicks; consider wiring iframe-to-parent events so real question completions trigger transitions automatically.
 - If mode naming should match app labels exactly (e.g., “Sequence Reconstruction” vs “Sequence”), update display strings only (routing is already wired).
+## Incremental update (2026-04-17 · Friday reliability hardening)
+- Implemented stricter event-schema validation in `scripts/derive.mjs`:
+  - `summary_short` is now required for all events,
+  - `people_ids` must be an array of non-empty strings when present,
+  - `effects` must be an array when present,
+  - effect references now fail on self-reference and malformed entries,
+  - effect entries still support both reference style (`event_id`) and descriptive style (`label`).
+- Expanded app-side resilience in `apps/shared/data-store.js` with normalization utilities:
+  - central `normalizeEvent()` now provides safe defaults,
+  - invalid `effects`/`location` payloads are dropped safely,
+  - one-time console warnings are emitted for malformed records,
+  - added shared `getEventYear()` helper.
+- Backfilled `summary_short` content for 15 Imperialism events in `data/events.json` that previously failed under stricter derive requirements.
+
+## Validation completed (2026-04-17)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add a CI negative-path fixture set (intentional broken `people_ids` / `effects` / `location`) to prove derive hard-fails correctly.
+2. Expand tag taxonomy alignment (or downgrade noisy warnings) so derive output highlights genuinely actionable issues.
+3. Consider applying the same normalization/warning pattern to people + unit payloads in `apps/shared/data-store.js`.

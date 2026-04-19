@@ -237,8 +237,20 @@ function validateEvent(event) {
   if (typeof event.label !== "string" || event.label.trim() === "") {
     throw new Error(`Event ${event.id}: label is required`);
   }
-  if (typeof event.time?.year_start !== "number") {
+  if (!Number.isFinite(event.time?.year_start)) {
     throw new Error(`Event ${event.id}: time.year_start is required`);
+  }
+  if (typeof event.summary_short !== "string" || event.summary_short.trim() === "") {
+    throw new Error(`Event ${event.id}: summary_short is required`);
+  }
+  if (Object.hasOwn(event, "people_ids") && !Array.isArray(event.people_ids)) {
+    throw new Error(`Event ${event.id}: people_ids must be an array when provided`);
+  }
+  if (Array.isArray(event.people_ids) && event.people_ids.some((id) => typeof id !== "string" || id.trim() === "")) {
+    throw new Error(`Event ${event.id}: people_ids must contain non-empty strings`);
+  }
+  if (Object.hasOwn(event, "effects") && !Array.isArray(event.effects)) {
+    throw new Error(`Event ${event.id}: effects must be an array when provided`);
   }
 }
 
@@ -272,6 +284,9 @@ function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
     const effectIds = Array.isArray(event.effects) ? event.effects : [];
     for (const effectRef of effectIds) {
       if (typeof effectRef === "string") {
+        if (effectRef === event.id) {
+          throw new Error(`Invalid effect reference in ${event.id}: self-reference is not allowed`);
+        }
         if (!eventIdSet.has(effectRef)) {
           throw new Error(`Invalid effect reference in ${event.id}: ${effectRef}`);
         }
@@ -282,10 +297,20 @@ function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
         if (typeof effectRef.event_id !== "string" || effectRef.event_id.trim() === "") {
           throw new Error(`Invalid effect reference format in ${event.id}: ${JSON.stringify(effectRef)}`);
         }
+        if (effectRef.event_id === event.id) {
+          throw new Error(`Invalid effect reference in ${event.id}: self-reference is not allowed`);
+        }
         if (!eventIdSet.has(effectRef.event_id)) {
           throw new Error(`Invalid effect reference in ${event.id}: ${effectRef.event_id}`);
         }
+        continue;
       }
+
+      if (effectRef && typeof effectRef === "object" && typeof effectRef.label === "string" && effectRef.label.trim() !== "") {
+        continue;
+      }
+
+      throw new Error(`Invalid effect entry in ${event.id}: ${JSON.stringify(effectRef)}`);
     }
 
     const eventPeopleIds = Array.isArray(event.people_ids) ? event.people_ids : [];

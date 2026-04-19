@@ -115,6 +115,21 @@ Next:
 - Added derive-time tag clustering output (`data/derived/tag_clusters.json`) so comparison rounds can draw from meaningful thematic event groups instead of purely random pairs.
 - Extended shared app data access with `getTagClusters()` in `apps/shared/data-store.js` to support cluster-aware learning modes.
 
+## Recent updates (2026-04-17 · validation hardening + data-store normalization)
+
+- Strengthened derive-time validation in `scripts/derive.mjs`:
+  - requires `summary_short` for every event,
+  - validates `people_ids` shape + string entries,
+  - validates `effects` shape and blocks self-referential effect links,
+  - keeps support for both effect-reference objects (`event_id`) and narrative effect objects (`label`),
+  - keeps strict location validation and existing cross-reference checks.
+- Added a defensive normalization layer in `apps/shared/data-store.js`:
+  - normalizes event shape with safe defaults (`summary_short`, `tags`, `people_ids`, `effects`, `location`),
+  - filters invalid event/effect/location payloads before app consumption,
+  - emits one-time console warnings for malformed records,
+  - adds `getEventYear(event)` helper for safer shared year access.
+- Backfilled missing `summary_short` on the 15 Imperialism timeline events that were previously warning-only so stricter derive validation passes cleanly.
+
 ## Recent updates (2026-04-16 · WW2 question type schema alignment)
 
 - Backfilled `question_types` arrays for all 40 World War II events added in the 1938–1945 block of `data/events.json` so they satisfy `scripts/validate.mjs` requirements.

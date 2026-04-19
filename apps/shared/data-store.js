@@ -5,6 +5,7 @@ let peopleCache = null;
 let metadataCache = null;
 let tagClustersCache = null;
 let eventUnitMapCache = null;
+const warnedEventIds = new Set();
 
 function isValidEvent(event) {
   return Boolean(
@@ -23,36 +24,110 @@ async function fetchJson(path, label) {
   return response.json();
 }
 
+function warnEventIssue(eventId, message) {
+  const key = `${eventId}::${message}`;
+  if (warnedEventIds.has(key)) {
+    return;
+  }
+  warnedEventIds.add(key);
+  console.warn(`[data-store] ${message} (${eventId})`);
+}
+
+function normalizeLocation(location, eventId) {
+  if (!location || typeof location !== "object" || Array.isArray(location)) {
+    return null;
+  }
+
+  const region = typeof location.region === "string" && location.region.trim() !== ""
+    ? location.region
+    : (typeof location.label === "string" && location.label.trim() !== "" ? location.label : "");
+  const lat = Number.isFinite(location.lat) ? location.lat : null;
+  const lon = Number.isFinite(location.lon) ? location.lon : (Number.isFinite(location.lng) ? location.lng : null);
+
+  if (!region || !Number.isFinite(lat) || !Number.isFinite(lon)) {
+    warnEventIssue(eventId, "Invalid location object; ignoring location");
+    return null;
+  }
+
+  return { ...location, region, lat, lon };
+}
+
+function normalizeEffects(effects, eventId) {
+  if (!Array.isArray(effects)) {
+    if (effects != null) {
+      warnEventIssue(eventId, "effects must be an array");
+    }
+    return [];
+  }
+
+  return effects.filter((effectRef) => {
+    const isStringRef = typeof effectRef === "string" && effectRef.trim() !== "";
+    const isObjectRef = effectRef
+      && typeof effectRef === "object"
+      && (
+        (typeof effectRef.event_id === "string" && effectRef.event_id.trim() !== "")
+        || (typeof effectRef.label === "string" && effectRef.label.trim() !== "")
+      );
+    if (!isStringRef && !isObjectRef) {
+      warnEventIssue(eventId, "Dropping invalid effect reference");
+      return false;
+    }
+    return true;
+  });
+}
+
+function normalizeEvent(event) {
+  if (!event || typeof event !== "object" || Array.isArray(event)) {
+    return null;
+  }
+
+  const id = typeof event.id === "string" ? event.id.trim() : "";
+  const label = typeof event.label === "string" && event.label.trim() !== "" ? event.label : "Unknown";
+  const yearStart = Number.isFinite(event?.time?.year_start) ? event.time.year_start : null;
+  if (!id || !Number.isFinite(yearStart)) {
+    return null;
+  }
+
+  const summaryShort = typeof event.summary_short === "string" ? event.summary_short : "";
+  if (!summaryShort) {
+    warnEventIssue(id, "Missing summary_short");
+  }
+
+  const tags = Array.isArray(event.tags)
+    ? event.tags.filter((tag) => typeof tag === "string" && tag.trim() !== "")
+    : [];
+  const peopleIds = Array.isArray(event.people_ids)
+    ? event.people_ids.filter((personId) => typeof personId === "string" && personId.trim() !== "")
+    : [];
+
+  return {
+    ...event,
+    id,
+    label,
+    time: {
+      ...(event.time && typeof event.time === "object" ? event.time : {}),
+      year_start: yearStart,
+    },
+    summary_short: summaryShort,
+    tags,
+    people_ids: peopleIds,
+    effects: normalizeEffects(event.effects, id),
+    location: normalizeLocation(event.location, id),
+  };
+}
+
 export async function getAllEvents() {
   if (eventsCache) return eventsCache;
   const events = await fetchJson("/data/events.json", "events");
-  eventsCache = (Array.isArray(events) ? events : []).filter(isValidEvent);
+  eventsCache = (Array.isArray(events) ? events : [])
+    .map(normalizeEvent)
+    .filter(isValidEvent);
   return eventsCache;
 }
 
 export async function getEventsWithLocation() {
   const events = await getAllEvents();
-  return events
-    .filter((event) => {
-    const location = event?.location;
-    return Boolean(
-      location
-      && (typeof location.region === "string" || typeof location.label === "string")
-      && Number.isFinite(location.lat)
-      && (Number.isFinite(location.lon) || Number.isFinite(location.lng))
-    );
-    })
-    .map((event) => {
-      const location = event.location || {};
-      return {
-        ...event,
-        location: {
-          ...location,
-          region: typeof location.region === "string" && location.region.trim() !== "" ? location.region : location.label,
-          lon: Number.isFinite(location.lon) ? location.lon : location.lng,
-        },
-      };
-    });
+  return events.filter((event) => Boolean(event?.location && Number.isFinite(event.location.lat) && Number.isFinite(event.location.lon)));
 }
 
 export async function getMetadata() {
@@ -230,4 +305,8 @@ export function setStoredUnitId(unitId) {
   } catch {
     // ignore storage failures (private browsing / disabled storage)
   }
+}
+
+export function getEventYear(event) {
+  return Number.isFinite(event?.time?.year_start) ? event.time.year_start : 0;
 }

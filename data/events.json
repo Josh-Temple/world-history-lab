@@ -1754,7 +1754,8 @@
       "pe_leopold_ii",
       "pe_henry_morton_stanley",
       "pe_david_livingstone"
-    ]
+    ],
+    "summary_short": "Leopold II launched a private colonial project that became the Congo Free State, exemplifying exploitative imperial rule in Central Africa."
   },
   {
     "id": "ev_imperialism_british_occupation_egypt_1882",
@@ -1779,7 +1780,8 @@
     "content_origin": "ai_assisted_self_reviewed",
     "people_ids": [
       "pe_queen_victoria"
-    ]
+    ],
+    "summary_short": "Britain occupied Egypt to secure financial interests and the Suez route, tightening European control over a strategic imperial corridor."
   },
   {
     "id": "ev_imperialism_berlin_conference_begins_1884",
@@ -1804,7 +1806,8 @@
     "content_origin": "ai_assisted_self_reviewed",
     "people_ids": [
       "pe_otto_von_bismarck"
-    ]
+    ],
+    "summary_short": "European powers convened in Berlin to set rules for territorial claims in Africa, accelerating formal partition."
   },
   {
     "id": "ev_imperialism_berlin_conference_ends_1885",
@@ -1826,7 +1829,8 @@
       "colonial_partition"
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "summary_short": "The Berlin Conference concluded by codifying principles that legitimized the Scramble for Africa without African representation."
   },
   {
     "id": "ev_imperialism_first_sinojapanese_war_begins_1894",
@@ -1849,7 +1853,8 @@
       "war"
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "summary_short": "War between Qing China and Meiji Japan began over influence in Korea, exposing shifts in East Asian power."
   },
   {
     "id": "ev_imperialism_treaty_shimonoseki_1895",
@@ -1872,7 +1877,8 @@
       "treaty"
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "summary_short": "The Treaty of Shimonoseki ended the war with major Chinese concessions, marking Japan’s rise as an imperial power."
   },
   {
     "id": "ev_imperialism_spanish_american_war_1898",
@@ -1894,7 +1900,8 @@
       "war"
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "summary_short": "The United States defeated Spain and gained overseas territories, signaling a new phase of American imperial expansion."
   },
   {
     "id": "ev_imperialism_second_boer_war_begins_1899",
@@ -1917,7 +1924,8 @@
       "war"
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "summary_short": "Britain and Boer republics entered a major war in southern Africa over sovereignty and resource-rich territory."
   },
   {
     "id": "ev_imperialism_boxer_rebellion_1900",
@@ -1939,7 +1947,8 @@
       "rebellion"
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "summary_short": "An anti-foreign uprising in Qing China drew multinational military intervention and harsher external control."
   },
   {
     "id": "ev_imperialism_boer_war_ends_1902",
@@ -1961,7 +1970,8 @@
       "south_africa"
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "summary_short": "The Boer War ended with British victory, paving the way for a new political order in South Africa under imperial influence."
   },
   {
     "id": "ev_imperialism_russojapanese_war_begins_1904",
@@ -1987,7 +1997,8 @@
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
       "ev_wwi_naval_arms_race_1898_1914"
-    ]
+    ],
+    "summary_short": "Russia and Japan went to war over Manchuria and Korea, showing imperial rivalry in Northeast Asia."
   },
   {
     "id": "ev_imperialism_treaty_portsmouth_1905",
@@ -2010,7 +2021,8 @@
       "treaty"
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "summary_short": "The Treaty of Portsmouth ended the Russo-Japanese War and confirmed expanded Japanese influence in the region."
   },
   {
     "id": "ev_imperialism_first_moroccan_crisis_1905",
@@ -2035,7 +2047,8 @@
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
       "ev_wwi_alliance_system_hardens_1890_1907"
-    ]
+    ],
+    "summary_short": "Germany challenged French influence in Morocco, escalating prewar great-power tensions through colonial rivalry."
   },
   {
     "id": "ev_imperialism_agadir_crisis_1911",
@@ -2057,7 +2070,8 @@
       "gunboat_diplomacy"
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "summary_short": "The Agadir Crisis intensified competition between Germany and France and deepened alliance polarization before World War I."
   },
   {
     "id": "ev_imperialism_first_balkan_war_1912",
@@ -2081,7 +2095,8 @@
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
       "ev_wwi_balkan_wars_destabilize_1912_1913"
-    ]
+    ],
+    "summary_short": "Balkan states attacked Ottoman territories, reshaping regional borders and increasing instability in southeastern Europe."
   },
   {
     "id": "ev_imperialism_suez_canal_opens_1869",

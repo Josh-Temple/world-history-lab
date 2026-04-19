@@ -86,7 +86,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
@@ -162,7 +166,11 @@
       "lat": 34.3853,
       "lon": 132.4553
     },
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -198,7 +206,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -269,7 +281,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -346,7 +362,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -388,7 +408,11 @@
       "lat": 30.83,
       "lon": 28.95
     },
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
@@ -429,7 +453,11 @@
       "lat": 28.2,
       "lon": -177.35
     },
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -467,7 +495,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
@@ -546,7 +578,11 @@
       "lat": 48.708,
       "lon": 44.514
     },
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -1615,7 +1651,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -1760,7 +1800,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill"
@@ -1795,7 +1839,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -1902,7 +1950,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -2057,7 +2109,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler"
@@ -2091,7 +2147,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -2121,7 +2181,7 @@
   {
     "id": "ev_imperialism_agadir_crisis_1911",
     "label": "Agadir Crisis",
-    "summary_short": null,
+    "summary_short": "The Agadir Crisis intensified competition between Germany and France and deepened alliance polarization before World War I.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2276,7 +2336,7 @@
   {
     "id": "ev_imperialism_berlin_conference_begins_1884",
     "label": "Berlin Conference begins",
-    "summary_short": null,
+    "summary_short": "European powers convened in Berlin to set rules for territorial claims in Africa, accelerating formal partition.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2311,7 +2371,7 @@
   {
     "id": "ev_imperialism_berlin_conference_ends_1885",
     "label": "Berlin Conference ends",
-    "summary_short": null,
+    "summary_short": "The Berlin Conference concluded by codifying principles that legitimized the Scramble for Africa without African representation.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2344,7 +2404,7 @@
   {
     "id": "ev_imperialism_boer_war_ends_1902",
     "label": "Boer War ends",
-    "summary_short": null,
+    "summary_short": "The Boer War ended with British victory, paving the way for a new political order in South Africa under imperial influence.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2377,7 +2437,7 @@
   {
     "id": "ev_imperialism_boxer_rebellion_1900",
     "label": "Boxer Rebellion",
-    "summary_short": null,
+    "summary_short": "An anti-foreign uprising in Qing China drew multinational military intervention and harsher external control.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2410,7 +2470,7 @@
   {
     "id": "ev_imperialism_british_occupation_egypt_1882",
     "label": "British occupation of Egypt",
-    "summary_short": null,
+    "summary_short": "Britain occupied Egypt to secure financial interests and the Suez route, tightening European control over a strategic imperial corridor.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2575,7 +2635,7 @@
   {
     "id": "ev_imperialism_first_balkan_war_1912",
     "label": "First Balkan War",
-    "summary_short": null,
+    "summary_short": "Balkan states attacked Ottoman territories, reshaping regional borders and increasing instability in southeastern Europe.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2610,7 +2670,7 @@
   {
     "id": "ev_imperialism_first_moroccan_crisis_1905",
     "label": "First Moroccan Crisis",
-    "summary_short": null,
+    "summary_short": "Germany challenged French influence in Morocco, escalating prewar great-power tensions through colonial rivalry.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2645,7 +2705,7 @@
   {
     "id": "ev_imperialism_first_sinojapanese_war_begins_1894",
     "label": "First Sino-Japanese War begins",
-    "summary_short": null,
+    "summary_short": "War between Qing China and Meiji Japan began over influence in Korea, exposing shifts in East Asian power.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2718,7 +2778,7 @@
   {
     "id": "ev_imperialism_leopold_congo_project_1876",
     "label": "Leopold II begins Congo Free State project",
-    "summary_short": null,
+    "summary_short": "Leopold II launched a private colonial project that became the Congo Free State, exemplifying exploitative imperial rule in Central Africa.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2835,7 +2895,7 @@
   {
     "id": "ev_imperialism_russojapanese_war_begins_1904",
     "label": "Russo-Japanese War begins",
-    "summary_short": null,
+    "summary_short": "Russia and Japan went to war over Manchuria and Korea, showing imperial rivalry in Northeast Asia.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2870,7 +2930,7 @@
   {
     "id": "ev_imperialism_second_boer_war_begins_1899",
     "label": "Second Boer War begins",
-    "summary_short": null,
+    "summary_short": "Britain and Boer republics entered a major war in southern Africa over sovereignty and resource-rich territory.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2903,7 +2963,7 @@
   {
     "id": "ev_imperialism_spanish_american_war_1898",
     "label": "Spanish-American War",
-    "summary_short": null,
+    "summary_short": "The United States defeated Spain and gained overseas territories, signaling a new phase of American imperial expansion.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -2978,7 +3038,7 @@
   {
     "id": "ev_imperialism_treaty_portsmouth_1905",
     "label": "Treaty of Portsmouth",
-    "summary_short": null,
+    "summary_short": "The Treaty of Portsmouth ended the Russo-Japanese War and confirmed expanded Japanese influence in the region.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -3011,7 +3071,7 @@
   {
     "id": "ev_imperialism_treaty_shimonoseki_1895",
     "label": "Treaty of Shimonoseki",
-    "summary_short": null,
+    "summary_short": "The Treaty of Shimonoseki ended the war with major Chinese concessions, marking Japan’s rise as an imperial power.",
     "status": "approved",
     "category": null,
     "importance": null,
@@ -3254,7 +3314,11 @@
       "lat": 52,
       "lon": 19
     },
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler"
@@ -3289,7 +3353,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -3327,7 +3395,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_benito_mussolini"
@@ -3361,7 +3433,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_emperor_hirohito",
@@ -3437,7 +3513,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -3474,7 +3554,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_charles_de_gaulle"
@@ -4314,7 +4398,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -4429,7 +4517,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_neville_chamberlain",
@@ -4652,7 +4744,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -4685,7 +4781,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_georgy_zhukov",
@@ -4721,7 +4821,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -4761,7 +4865,11 @@
       "lat": 49.34,
       "lon": -0.62
     },
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_dwight_eisenhower",
@@ -4801,7 +4909,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_dwight_eisenhower",
@@ -4928,7 +5040,11 @@
       "lat": 21.3656,
       "lon": -157.95
     },
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_hideki_tojo",
@@ -4995,7 +5111,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -5454,7 +5574,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_georgy_zhukov",
@@ -5490,7 +5614,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -5530,7 +5658,11 @@
       "lat": 52,
       "lon": 24
     },
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -5565,7 +5697,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -5928,7 +6064,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -6149,7 +6289,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -6183,7 +6327,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt"
@@ -6254,7 +6402,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -6290,7 +6442,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -8026,7 +8182,11 @@
     "category": null,
     "importance": null,
     "location": null,
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
