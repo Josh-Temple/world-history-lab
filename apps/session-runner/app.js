@@ -1,5 +1,4 @@
-import { getEventsForUnit, getNextUnit, getUnits, setStoredUnitId } from "../shared/data-store.js";
-import { getAllStats } from "../shared/mastery-store.js";
+import { getUnits, setStoredUnitId } from "../shared/data-store.js";
 
 const modes = [
   { key: "timeline", name: "Timeline", app: "/apps/timeline-trainer/index.html" },
@@ -9,11 +8,16 @@ const modes = [
 ];
 
 const QUESTIONS_PER_MODE = 5;
+const COMPLETED_UNITS_KEY = "completed_units";
 
 const appContainer = document.getElementById("app");
 const progressEl = document.getElementById("progress");
 const modeHelpEl = document.getElementById("mode-help");
 const modeLabelEl = document.getElementById("mode-label");
+const unitLabelEl = document.getElementById("unit-label");
+const unitProgressTextEl = document.getElementById("unit-progress-text");
+const progressTrackEl = document.getElementById("progress-track");
+const progressFillEl = document.getElementById("progress-fill");
 const nextStepButton = document.getElementById("next-step");
 const restartButton = document.getElementById("restart");
 
@@ -22,6 +26,7 @@ let questionCount = 0;
 let iframe = null;
 let selectedUnitId = "";
 let units = [];
+let completedUnits = readCompletedUnits();
 
 function getCurrentMode() {
   return modes[modeIndex];
@@ -39,15 +44,75 @@ function updateModeLabel() {
   modeLabelEl.textContent = `Mode: ${mode.name}`;
 }
 
+function readCompletedUnits() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(COMPLETED_UNITS_KEY) || "[]");
+    return Array.isArray(parsed) ? parsed.filter((id) => typeof id === "string" && id.trim() !== "") : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveCompletedUnits() {
+  localStorage.setItem(COMPLETED_UNITS_KEY, JSON.stringify(completedUnits));
+}
+
+function getSelectedUnit() {
+  return units.find((unit) => unit.id === selectedUnitId) || null;
+}
+
+function getTotalQuestionsPerUnit() {
+  return modes.length * QUESTIONS_PER_MODE;
+}
+
+function getAnsweredQuestionCount() {
+  const completedModes = Math.min(modeIndex, modes.length);
+  const answeredInCurrentMode = modeIndex < modes.length ? Math.min(questionCount, QUESTIONS_PER_MODE) : 0;
+  return (completedModes * QUESTIONS_PER_MODE) + answeredInCurrentMode;
+}
+
+function updateUnitProgressUi() {
+  const total = getTotalQuestionsPerUnit();
+  const answered = modeIndex >= modes.length ? total : getAnsweredQuestionCount();
+  const progressRatio = total > 0 ? Math.max(0, Math.min(1, answered / total)) : 0;
+  const progressPercent = Math.round(progressRatio * 100);
+
+  if (progressFillEl) {
+    progressFillEl.style.width = `${progressPercent}%`;
+  }
+  if (progressTrackEl) {
+    progressTrackEl.setAttribute("aria-valuenow", String(progressPercent));
+  }
+  if (unitProgressTextEl) {
+    unitProgressTextEl.textContent = `Progress: ${progressPercent}% (${answered}/${total} questions)`;
+  }
+}
+
+function updateUnitLabel() {
+  if (!unitLabelEl) return;
+  const selectedUnit = getSelectedUnit();
+  if (!selectedUnit) {
+    unitLabelEl.textContent = "Unit: Not selected";
+    return;
+  }
+
+  const status = completedUnits.includes(selectedUnit.id) ? "completed" : "in progress";
+  unitLabelEl.textContent = `Unit: ${selectedUnit.label || selectedUnit.id} (${status})`;
+}
+
 function updateProgress() {
   if (modeIndex >= modes.length) {
     progressEl.textContent = `Session complete • ${modes.length}/${modes.length} modes finished`;
     updateModeLabel();
+    updateUnitProgressUi();
+    updateUnitLabel();
     return;
   }
 
   progressEl.textContent = `Mode ${modeIndex + 1}/${modes.length} • Question ${questionCount + 1}/${QUESTIONS_PER_MODE}`;
   updateModeLabel();
+  updateUnitProgressUi();
+  updateUnitLabel();
 }
 
 function buildIframeSrc(modePath) {
@@ -58,73 +123,54 @@ function buildIframeSrc(modePath) {
   return url.toString();
 }
 
-function scoreUnitWeakness(unit) {
-  if (!unit || !Array.isArray(unit.event_ids) || unit.event_ids.length === 0) {
-    return Number.POSITIVE_INFINITY;
+function isUnitAvailable(unitId, loadedUnits = units) {
+  const unit = loadedUnits.find((candidate) => candidate.id === unitId);
+  if (!unit) return false;
+  const prerequisites = Array.isArray(unit.prerequisites) ? unit.prerequisites : [];
+  if (prerequisites.length === 0) {
+    return true;
   }
-
-  const mastery = getAllStats();
-  const eventsInUnit = unit.event_ids.filter((eventId) => typeof eventId === "string" && eventId.length > 0);
-  if (eventsInUnit.length === 0) {
-    return Number.POSITIVE_INFINITY;
-  }
-
-  const sorted = [...eventsInUnit].sort((left, right) => {
-    const leftStats = mastery[left] || {};
-    const rightStats = mastery[right] || {};
-    const leftAttempts = (leftStats.correct || 0) + (leftStats.incorrect || 0);
-    const rightAttempts = (rightStats.correct || 0) + (rightStats.incorrect || 0);
-    const leftAccuracy = leftAttempts > 0 ? (leftStats.correct || 0) / leftAttempts : 0;
-    const rightAccuracy = rightAttempts > 0 ? (rightStats.correct || 0) / rightAttempts : 0;
-    if (leftAccuracy !== rightAccuracy) {
-      return leftAccuracy - rightAccuracy;
-    }
-    return leftAttempts - rightAttempts;
-  });
-
-  const weakSliceSize = Math.max(1, Math.ceil(sorted.length * 0.4));
-  const weakEventIds = sorted.slice(0, weakSliceSize);
-  const recent = new Set();
-  let weightedWeakness = 0;
-
-  for (let index = 0; index < weakEventIds.length; index += 1) {
-    const eventId = weakEventIds[index];
-    const stats = mastery[eventId] || {};
-    const attempts = (stats.correct || 0) + (stats.incorrect || 0);
-    const accuracy = attempts > 0 ? (stats.correct || 0) / attempts : 0;
-    const seenPenalty = recent.has(eventId) ? 0.15 : 0;
-    weightedWeakness += (1 - accuracy) + seenPenalty;
-
-    recent.add(eventId);
-    if (recent.size > 5) {
-      recent.clear();
-    }
-  }
-
-  return weightedWeakness / weakEventIds.length;
+  return prerequisites.every((id) => completedUnits.includes(id));
 }
 
-async function pickBestStartingUnit(loadedUnits) {
-  if (!Array.isArray(loadedUnits) || loadedUnits.length === 0) {
-    return "";
+function sortUnitsByCurriculum(left, right) {
+  const leftDifficulty = Number.isFinite(left?.difficulty) ? left.difficulty : Number.MAX_SAFE_INTEGER;
+  const rightDifficulty = Number.isFinite(right?.difficulty) ? right.difficulty : Number.MAX_SAFE_INTEGER;
+  if (leftDifficulty !== rightDifficulty) {
+    return leftDifficulty - rightDifficulty;
   }
 
-  const withEvents = await Promise.all(
-    loadedUnits.map(async (unit) => {
-      const events = await getEventsForUnit(unit.id).catch(() => []);
-      return {
-        ...unit,
-        event_ids: Array.isArray(events) ? events.map((event) => event.id) : [],
-      };
-    })
-  );
+  const leftOrder = Number.isFinite(left?.order) ? left.order : Number.MAX_SAFE_INTEGER;
+  const rightOrder = Number.isFinite(right?.order) ? right.order : Number.MAX_SAFE_INTEGER;
+  if (leftOrder !== rightOrder) {
+    return leftOrder - rightOrder;
+  }
 
-  const ranked = withEvents
-    .map((unit) => ({ unit, score: scoreUnitWeakness(unit) }))
-    .filter(({ score }) => Number.isFinite(score))
-    .sort((left, right) => right.score - left.score);
+  return (left?.id || "").localeCompare(right?.id || "");
+}
 
-  return ranked[0]?.unit?.id || loadedUnits[0].id;
+function getAvailableUnits(loadedUnits = units) {
+  return (Array.isArray(loadedUnits) ? loadedUnits : [])
+    .filter((unit) => isUnitAvailable(unit.id, loadedUnits))
+    .sort(sortUnitsByCurriculum);
+}
+
+function completeCurrentUnit() {
+  if (!selectedUnitId || completedUnits.includes(selectedUnitId)) {
+    return;
+  }
+
+  completedUnits = [...completedUnits, selectedUnitId];
+  saveCompletedUnits();
+}
+
+function getNextRecommendedUnitId() {
+  const available = getAvailableUnits(units);
+  const incompleteAvailable = available.filter((unit) => !completedUnits.includes(unit.id));
+  if (incompleteAvailable.length > 0) {
+    return incompleteAvailable[0].id;
+  }
+  return available[0]?.id || "";
 }
 
 function renderMode() {
@@ -146,14 +192,16 @@ function renderMode() {
 }
 
 function showCompletion() {
-  const nextUnit = getNextUnit(units, selectedUnitId);
+  completeCurrentUnit();
+  const nextUnitId = getNextRecommendedUnitId();
+  const nextUnit = units.find((unit) => unit.id === nextUnitId) || null;
 
   appContainer.innerHTML = "";
   const message = document.createElement("div");
   message.textContent = "Session complete. Great work — return home or restart this guided run.";
   appContainer.appendChild(message);
 
-  if (nextUnit?.id) {
+  if (nextUnit?.id && nextUnit.id !== selectedUnitId) {
     const wrap = document.createElement("div");
     wrap.style.marginTop = "0.9rem";
     wrap.innerHTML = `
@@ -215,16 +263,24 @@ async function init() {
   const savedUnit = localStorage.getItem("selected_unit") || "";
   units = await getUnits().catch(() => []);
   const known = new Set((Array.isArray(units) ? units : []).map((unit) => unit.id));
-  selectedUnitId = known.has(urlUnit) ? urlUnit : (known.has(savedUnit) ? savedUnit : "");
+  const canUseUrlUnit = known.has(urlUnit) && isUnitAvailable(urlUnit, units);
+  const canUseSavedUnit = known.has(savedUnit) && isUnitAvailable(savedUnit, units);
+  selectedUnitId = canUseUrlUnit ? urlUnit : (canUseSavedUnit ? savedUnit : "");
 
   if (!selectedUnitId) {
-    selectedUnitId = await pickBestStartingUnit(units);
+    selectedUnitId = getNextRecommendedUnitId();
+  }
+
+  if (!selectedUnitId && Array.isArray(units) && units.length > 0) {
+    selectedUnitId = [...units].sort(sortUnitsByCurriculum)[0].id;
   }
 
   if (selectedUnitId) {
     setStoredUnitId(selectedUnitId);
   }
 
+  updateUnitLabel();
+  updateUnitProgressUi();
   renderMode();
 }
 

@@ -235,6 +235,21 @@
 
 # Handoff
 
+## Incremental update (2026-04-16 · WW2 validation fix for missing question_types)
+- Resolved CI validation failure in `node scripts/validate.mjs` caused by missing `question_types` arrays on 40 World War II events (from `ev_munich_agreement_1938` through `ev_island_hopping_campaign_1943_1945`) in `data/events.json`.
+- Backfilled all missing WW2 records with a consistent question-type set:
+  - `timeline_before_after`
+  - `what_happened`
+  - `cause_and_effect`
+- Added a matching dated update note in `README.md` under recent updates so repository history reflects the schema-alignment fix.
+
+## Validation completed (2026-04-16)
+- `node scripts/validate.mjs` ✅
+
+## Suggested next steps
+1. Add a small derive/validation guard that checks newly added events include `question_types` before merge to avoid repeat regressions.
+2. Consider introducing unit-level defaults in tooling so repetitive fields (like `question_types`) can be auto-filled deterministically.
+
 ## Incremental update (2026-04-03 · validation + runtime guard hardening)
 - Updated `scripts/derive.mjs` to add controlled tag vocabulary checks:
   - warns on unknown tags via `[derive] Unknown tag "..."`
@@ -631,3 +646,72 @@
 ### Notes for next session
 - Current runner progression still uses manual **Complete Question** clicks; consider wiring iframe-to-parent events so real question completions trigger transitions automatically.
 - If mode naming should match app labels exactly (e.g., “Sequence Reconstruction” vs “Sequence”), update display strings only (routing is already wired).
+## Incremental update (2026-04-17 · Friday reliability hardening)
+- Implemented stricter event-schema validation in `scripts/derive.mjs`:
+  - `summary_short` is now required for all events,
+  - `people_ids` must be an array of non-empty strings when present,
+  - `effects` must be an array when present,
+  - effect references now fail on self-reference and malformed entries,
+  - effect entries still support both reference style (`event_id`) and descriptive style (`label`).
+- Expanded app-side resilience in `apps/shared/data-store.js` with normalization utilities:
+  - central `normalizeEvent()` now provides safe defaults,
+  - invalid `effects`/`location` payloads are dropped safely,
+  - one-time console warnings are emitted for malformed records,
+  - added shared `getEventYear()` helper.
+- Backfilled `summary_short` content for 15 Imperialism events in `data/events.json` that previously failed under stricter derive requirements.
+
+## Validation completed (2026-04-17)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add a CI negative-path fixture set (intentional broken `people_ids` / `effects` / `location`) to prove derive hard-fails correctly.
+2. Expand tag taxonomy alignment (or downgrade noisy warnings) so derive output highlights genuinely actionable issues.
+3. Consider applying the same normalization/warning pattern to people + unit payloads in `apps/shared/data-store.js`.
+
+## Incremental update (2026-04-18 · Graph Explorer + reverse causal links)
+- Added new app `apps/graph-explorer/` with:
+  - unit filter,
+  - event-node list (bounded render count),
+  - click-to-focus details panel,
+  - incoming (`caused_by`) + outgoing (`effects`) relationship traversal.
+- Added reverse-link derivation in `scripts/derive.mjs`:
+  - builds `caused_by` from all valid effect links,
+  - deduplicates and sorts incoming IDs per event,
+  - keeps `effects` untouched for backward compatibility.
+- Added `getNormalizedEvents()` in `apps/shared/data-store.js` so graph apps can consume enriched derived event objects (including `unit_ids` and `caused_by`).
+- Updated shell discoverability/caching:
+  - linked Graph Explorer from `/index.html`,
+  - added `/apps/graph-explorer/*` assets to `service-worker.js` pre-cache list.
+
+## Validation completed (2026-04-18)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add a lightweight legend and edge-type toggle in Graph Explorer (effects-only vs full related links) for clearer onboarding.
+2. Add search (event label / tag) to complement unit filtering in large pools.
+3. Consider adding mini-map clustering (by year bucket or unit) when graph size exceeds list-mode readability.
+
+## Incremental update (2026-04-19 · Session runner curriculum progression)
+- Reworked `apps/session-runner/app.js` so unit selection is now curriculum-aware:
+  - checks `prerequisites` before allowing a unit to be selected,
+  - sorts available units by metadata (`difficulty` then `order`),
+  - tracks completed units in local storage (`completed_units`) and marks a unit complete at end-of-session.
+- Added explicit next-unit recommendation based on newly unlocked incomplete units instead of simple flat progression.
+- Added new unit context/progress UI to `apps/session-runner/index.html`:
+  - current unit label + completion state,
+  - per-unit session progress text,
+  - visual progress bar (`#progress-fill`) with ARIA updates.
+
+## Validation completed (2026-04-19)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add a dedicated session-runner smoke test that simulates prerequisite lock/unlock behavior with a mocked localStorage state.
+2. Add a small “Reset progression” button in session-runner settings for easier manual QA and learner control.
+3. Consider blending progression state with mastery signals (e.g., minimum accuracy threshold before marking unit completed).

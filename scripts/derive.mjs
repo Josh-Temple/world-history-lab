@@ -237,8 +237,20 @@ function validateEvent(event) {
   if (typeof event.label !== "string" || event.label.trim() === "") {
     throw new Error(`Event ${event.id}: label is required`);
   }
-  if (typeof event.time?.year_start !== "number") {
+  if (!Number.isFinite(event.time?.year_start)) {
     throw new Error(`Event ${event.id}: time.year_start is required`);
+  }
+  if (typeof event.summary_short !== "string" || event.summary_short.trim() === "") {
+    throw new Error(`Event ${event.id}: summary_short is required`);
+  }
+  if (Object.hasOwn(event, "people_ids") && !Array.isArray(event.people_ids)) {
+    throw new Error(`Event ${event.id}: people_ids must be an array when provided`);
+  }
+  if (Array.isArray(event.people_ids) && event.people_ids.some((id) => typeof id !== "string" || id.trim() === "")) {
+    throw new Error(`Event ${event.id}: people_ids must contain non-empty strings`);
+  }
+  if (Object.hasOwn(event, "effects") && !Array.isArray(event.effects)) {
+    throw new Error(`Event ${event.id}: effects must be an array when provided`);
   }
 }
 
@@ -272,6 +284,9 @@ function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
     const effectIds = Array.isArray(event.effects) ? event.effects : [];
     for (const effectRef of effectIds) {
       if (typeof effectRef === "string") {
+        if (effectRef === event.id) {
+          throw new Error(`Invalid effect reference in ${event.id}: self-reference is not allowed`);
+        }
         if (!eventIdSet.has(effectRef)) {
           throw new Error(`Invalid effect reference in ${event.id}: ${effectRef}`);
         }
@@ -282,10 +297,20 @@ function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
         if (typeof effectRef.event_id !== "string" || effectRef.event_id.trim() === "") {
           throw new Error(`Invalid effect reference format in ${event.id}: ${JSON.stringify(effectRef)}`);
         }
+        if (effectRef.event_id === event.id) {
+          throw new Error(`Invalid effect reference in ${event.id}: self-reference is not allowed`);
+        }
         if (!eventIdSet.has(effectRef.event_id)) {
           throw new Error(`Invalid effect reference in ${event.id}: ${effectRef.event_id}`);
         }
+        continue;
       }
+
+      if (effectRef && typeof effectRef === "object" && typeof effectRef.label === "string" && effectRef.label.trim() !== "") {
+        continue;
+      }
+
+      throw new Error(`Invalid effect entry in ${event.id}: ${JSON.stringify(effectRef)}`);
     }
 
     const eventPeopleIds = Array.isArray(event.people_ids) ? event.people_ids : [];
@@ -389,8 +414,29 @@ function buildUnitIdsByEventId(units) {
   return unitIdsByEventId;
 }
 
-function normalizeEvent(event, unitIdsByEventId = new Map()) {
+function buildCausedByMap(events, eventIdSet) {
+  const causedByMap = new Map();
+
+  for (const event of events) {
+    const effectRefs = Array.isArray(event.effects) ? event.effects : [];
+    for (const effectRef of effectRefs) {
+      const targetId = getEffectEventId(effectRef);
+      if (!targetId || !eventIdSet.has(targetId) || targetId === event.id) {
+        continue;
+      }
+      if (!causedByMap.has(targetId)) {
+        causedByMap.set(targetId, new Set());
+      }
+      causedByMap.get(targetId).add(event.id);
+    }
+  }
+
+  return causedByMap;
+}
+
+function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new Map()) {
   const parsed = parseEventTime(event);
+  const causedBy = Array.from(causedByMap.get(event.id) || []).sort();
   if (!parsed) {
     if (typeof event.time?.year_start === "number") {
       const year = event.time.year_start;
@@ -407,6 +453,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map()) {
         concept_tags: Array.isArray(event.concept_tags) ? event.concept_tags : [],
         people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
         unit_ids: unitIdsByEventId.get(event.id) || [],
+        caused_by: causedBy,
         effects: Array.isArray(event.effects) ? event.effects : [],
         causes: Array.isArray(event.causes) ? event.causes : [],
         time: {
@@ -441,6 +488,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map()) {
     concept_tags: Array.isArray(event.concept_tags) ? event.concept_tags : [],
     people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
     unit_ids: unitIdsByEventId.get(event.id) || [],
+    caused_by: causedBy,
     effects: Array.isArray(event.effects) ? event.effects : [],
     causes: Array.isArray(event.causes) ? event.causes : [],
     time: {
@@ -738,7 +786,6 @@ async function main() {
 
   const unitIdsByEventId = buildUnitIdsByEventId(units);
 
-  const normalizedEvents = [];
   const eventLookup = new Map();
   const eventIdSet = new Set();
   for (const event of events) {
@@ -748,17 +795,21 @@ async function main() {
     }
     eventLookup.set(event.id, event);
     eventIdSet.add(event.id);
-
-    const normalized = normalizeEvent(event, unitIdsByEventId);
-    if (normalized) {
-      normalizedEvents.push(normalized);
-    }
   }
 
   validateCrossReferences({ events, eventIdSet, peopleIdSet, units });
   validateEventTags(events);
   validateConceptTags(events, allowedConceptTags);
   validateEventLocations(events);
+  const causedByMap = buildCausedByMap(events, eventIdSet);
+
+  const normalizedEvents = [];
+  for (const event of events) {
+    const normalized = normalizeEvent(event, unitIdsByEventId, causedByMap);
+    if (normalized) {
+      normalizedEvents.push(normalized);
+    }
+  }
   console.log("[derive] All data-integrity validation checks passed.");
 
   normalizedEvents.sort((a, b) => a.id.localeCompare(b.id));

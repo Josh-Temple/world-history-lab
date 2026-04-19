@@ -115,6 +115,55 @@ Next:
 - Added derive-time tag clustering output (`data/derived/tag_clusters.json`) so comparison rounds can draw from meaningful thematic event groups instead of purely random pairs.
 - Extended shared app data access with `getTagClusters()` in `apps/shared/data-store.js` to support cluster-aware learning modes.
 
+## Recent updates (2026-04-17 · validation hardening + data-store normalization)
+
+- Strengthened derive-time validation in `scripts/derive.mjs`:
+  - requires `summary_short` for every event,
+  - validates `people_ids` shape + string entries,
+  - validates `effects` shape and blocks self-referential effect links,
+  - keeps support for both effect-reference objects (`event_id`) and narrative effect objects (`label`),
+  - keeps strict location validation and existing cross-reference checks.
+- Added a defensive normalization layer in `apps/shared/data-store.js`:
+  - normalizes event shape with safe defaults (`summary_short`, `tags`, `people_ids`, `effects`, `location`),
+  - filters invalid event/effect/location payloads before app consumption,
+  - emits one-time console warnings for malformed records,
+  - adds `getEventYear(event)` helper for safer shared year access.
+- Backfilled missing `summary_short` on the 15 Imperialism timeline events that were previously warning-only so stricter derive validation passes cleanly.
+
+## Recent updates (2026-04-18 · graph explorer mode + reverse causality)
+
+- Added a new exploratory app route `apps/graph-explorer/`:
+  - renders a node-style event list with per-node incoming/outgoing connection counts,
+  - supports unit filtering,
+  - supports click-to-focus event inspection and traversal via related-event links,
+  - displays event summary + bidirectional connection breakdown for graph-based study (not only quiz flow).
+- Extended derive output in `scripts/derive.mjs` by deriving `caused_by` (reverse incoming causal links) from `effects`, deduplicated per event.
+- Extended `apps/shared/data-store.js` with `getNormalizedEvents()` so graph-oriented apps can consume enriched normalized records from `derived/events.normalized.json` (including `caused_by` and `unit_ids`).
+- Updated discoverability/runtime support:
+  - added Graph Explorer link to `index.html`,
+  - added graph explorer files to app-shell pre-cache list in `service-worker.js`.
+
+## Recent updates (2026-04-19 · metadata-driven session progression + unit progress UI)
+
+- Updated `apps/session-runner/app.js` to activate curriculum metadata in runtime unit selection:
+  - respects unit `prerequisites` before selecting runnable units,
+  - prefers lower `difficulty` + earlier `order` when multiple units are available,
+  - persists completed units in local storage (`completed_units`) and unlocks next units after completion.
+- Added fallback behavior so guided sessions still start even if metadata/prerequisites are incomplete (falls back to earliest known unit).
+- Added learner-facing unit context/progress UI in `apps/session-runner/index.html`:
+  - current unit label (with completion state),
+  - unit progress text (`answered/total`),
+  - progress bar with live updates across guided mode blocks.
+
+## Recent updates (2026-04-16 · WW2 question type schema alignment)
+
+- Backfilled `question_types` arrays for all 40 World War II events added in the 1938–1945 block of `data/events.json` so they satisfy `scripts/validate.mjs` requirements.
+- Standardized the backfilled WW2 events to include:
+  - `timeline_before_after`
+  - `what_happened`
+  - `cause_and_effect`
+- Restored `node scripts/validate.mjs` to passing status after CI failures reporting missing `question_types` fields on WW2 records.
+
 ## Recent updates (2026-04-15 · location metadata foundation + Map Quiz mode)
 
 - Added `location` metadata (`region`, `lat`, `lon`) to key WWI/WWII events in `data/events.json` (for example: Invasion of Poland, Stalingrad, Midway, D-Day, Hiroshima, Verdun, Somme, Marne, Gallipoli, Jutland).
