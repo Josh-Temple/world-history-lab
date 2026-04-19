@@ -130,6 +130,19 @@ Next:
   - adds `getEventYear(event)` helper for safer shared year access.
 - Backfilled missing `summary_short` on the 15 Imperialism timeline events that were previously warning-only so stricter derive validation passes cleanly.
 
+## Recent updates (2026-04-18 · graph explorer mode + reverse causality)
+
+- Added a new exploratory app route `apps/graph-explorer/`:
+  - renders a node-style event list with per-node incoming/outgoing connection counts,
+  - supports unit filtering,
+  - supports click-to-focus event inspection and traversal via related-event links,
+  - displays event summary + bidirectional connection breakdown for graph-based study (not only quiz flow).
+- Extended derive output in `scripts/derive.mjs` by deriving `caused_by` (reverse incoming causal links) from `effects`, deduplicated per event.
+- Extended `apps/shared/data-store.js` with `getNormalizedEvents()` so graph-oriented apps can consume enriched normalized records from `derived/events.normalized.json` (including `caused_by` and `unit_ids`).
+- Updated discoverability/runtime support:
+  - added Graph Explorer link to `index.html`,
+  - added graph explorer files to app-shell pre-cache list in `service-worker.js`.
+
 ## Recent updates (2026-04-16 · WW2 question type schema alignment)
 
 - Backfilled `question_types` arrays for all 40 World War II events added in the 1938–1945 block of `data/events.json` so they satisfy `scripts/validate.mjs` requirements.

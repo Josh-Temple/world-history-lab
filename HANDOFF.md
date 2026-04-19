@@ -669,3 +669,28 @@
 1. Add a CI negative-path fixture set (intentional broken `people_ids` / `effects` / `location`) to prove derive hard-fails correctly.
 2. Expand tag taxonomy alignment (or downgrade noisy warnings) so derive output highlights genuinely actionable issues.
 3. Consider applying the same normalization/warning pattern to people + unit payloads in `apps/shared/data-store.js`.
+
+## Incremental update (2026-04-18 · Graph Explorer + reverse causal links)
+- Added new app `apps/graph-explorer/` with:
+  - unit filter,
+  - event-node list (bounded render count),
+  - click-to-focus details panel,
+  - incoming (`caused_by`) + outgoing (`effects`) relationship traversal.
+- Added reverse-link derivation in `scripts/derive.mjs`:
+  - builds `caused_by` from all valid effect links,
+  - deduplicates and sorts incoming IDs per event,
+  - keeps `effects` untouched for backward compatibility.
+- Added `getNormalizedEvents()` in `apps/shared/data-store.js` so graph apps can consume enriched derived event objects (including `unit_ids` and `caused_by`).
+- Updated shell discoverability/caching:
+  - linked Graph Explorer from `/index.html`,
+  - added `/apps/graph-explorer/*` assets to `service-worker.js` pre-cache list.
+
+## Validation completed (2026-04-18)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add a lightweight legend and edge-type toggle in Graph Explorer (effects-only vs full related links) for clearer onboarding.
+2. Add search (event label / tag) to complement unit filtering in large pools.
+3. Consider adding mini-map clustering (by year bucket or unit) when graph size exceeds list-mode readability.

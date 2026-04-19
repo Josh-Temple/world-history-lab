@@ -5,6 +5,7 @@ let peopleCache = null;
 let metadataCache = null;
 let tagClustersCache = null;
 let eventUnitMapCache = null;
+let normalizedEventsCache = null;
 const warnedEventIds = new Set();
 
 function isValidEvent(event) {
@@ -123,6 +124,38 @@ export async function getAllEvents() {
     .map(normalizeEvent)
     .filter(isValidEvent);
   return eventsCache;
+}
+
+function isValidNormalizedEvent(event) {
+  return isValidEvent(event) && typeof event.summary_short === "string";
+}
+
+function normalizeNormalizedEvent(event) {
+  const base = normalizeEvent(event);
+  if (!base) return null;
+
+  const causedBy = Array.isArray(event.caused_by)
+    ? event.caused_by.filter((id) => typeof id === "string" && id.trim() !== "")
+    : [];
+
+  const unitIds = Array.isArray(event.unit_ids)
+    ? event.unit_ids.filter((id) => typeof id === "string" && id.trim() !== "")
+    : [];
+
+  return {
+    ...base,
+    unit_ids: unitIds,
+    caused_by: Array.from(new Set(causedBy)),
+  };
+}
+
+export async function getNormalizedEvents() {
+  if (normalizedEventsCache) return normalizedEventsCache;
+  const normalized = await fetchJson("/derived/events.normalized.json", "normalized events");
+  normalizedEventsCache = (Array.isArray(normalized) ? normalized : [])
+    .map(normalizeNormalizedEvent)
+    .filter(isValidNormalizedEvent);
+  return normalizedEventsCache;
 }
 
 export async function getEventsWithLocation() {
