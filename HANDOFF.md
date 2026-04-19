@@ -694,3 +694,24 @@
 1. Add a lightweight legend and edge-type toggle in Graph Explorer (effects-only vs full related links) for clearer onboarding.
 2. Add search (event label / tag) to complement unit filtering in large pools.
 3. Consider adding mini-map clustering (by year bucket or unit) when graph size exceeds list-mode readability.
+
+## Incremental update (2026-04-19 · Session runner curriculum progression)
+- Reworked `apps/session-runner/app.js` so unit selection is now curriculum-aware:
+  - checks `prerequisites` before allowing a unit to be selected,
+  - sorts available units by metadata (`difficulty` then `order`),
+  - tracks completed units in local storage (`completed_units`) and marks a unit complete at end-of-session.
+- Added explicit next-unit recommendation based on newly unlocked incomplete units instead of simple flat progression.
+- Added new unit context/progress UI to `apps/session-runner/index.html`:
+  - current unit label + completion state,
+  - per-unit session progress text,
+  - visual progress bar (`#progress-fill`) with ARIA updates.
+
+## Validation completed (2026-04-19)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add a dedicated session-runner smoke test that simulates prerequisite lock/unlock behavior with a mocked localStorage state.
+2. Add a small “Reset progression” button in session-runner settings for easier manual QA and learner control.
+3. Consider blending progression state with mastery signals (e.g., minimum accuracy threshold before marking unit completed).

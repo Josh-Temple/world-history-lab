@@ -143,6 +143,18 @@ Next:
   - added Graph Explorer link to `index.html`,
   - added graph explorer files to app-shell pre-cache list in `service-worker.js`.
 
+## Recent updates (2026-04-19 · metadata-driven session progression + unit progress UI)
+
+- Updated `apps/session-runner/app.js` to activate curriculum metadata in runtime unit selection:
+  - respects unit `prerequisites` before selecting runnable units,
+  - prefers lower `difficulty` + earlier `order` when multiple units are available,
+  - persists completed units in local storage (`completed_units`) and unlocks next units after completion.
+- Added fallback behavior so guided sessions still start even if metadata/prerequisites are incomplete (falls back to earliest known unit).
+- Added learner-facing unit context/progress UI in `apps/session-runner/index.html`:
+  - current unit label (with completion state),
+  - unit progress text (`answered/total`),
+  - progress bar with live updates across guided mode blocks.
+
 ## Recent updates (2026-04-16 · WW2 question type schema alignment)
 
 - Backfilled `question_types` arrays for all 40 World War II events added in the 1938–1945 block of `data/events.json` so they satisfy `scripts/validate.mjs` requirements.
