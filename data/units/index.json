@@ -35,6 +35,10 @@
     {
       "id": "unit_world_war_ii",
       "path": "data/units/unit_world_war_ii.json"
+    },
+    {
+      "id": "unit_islamic_expansion",
+      "path": "data/units/islamic_expansion.json"
     }
   ]
 }

@@ -108,6 +108,30 @@ Next:
 
 
 
+## Recent updates (2026-04-21 · Islamic expansion unit + controlled tag normalization)
+
+- Added a new non-European unit at `data/units/islamic_expansion.json` focused on the rise and expansion of Islam in the 7th–8th centuries.
+- Expanded core relational content to support the unit:
+  - added 13 Islamic-expansion events in `data/events.json` (community formation, conquests, and Abbasid transition),
+  - enriched the existing `ev_hijra_622` record for tighter causal/people linkage,
+  - added 10 key people in `data/people.json` and linked them to unit events.
+- Registered the new unit in `data/units/index.json` and integrated it into `data/metadata.json` scope + curriculum sequencing.
+- Upgraded tag handling in `scripts/derive.mjs`:
+  - switched to a controlled theme-tag taxonomy (`war`, `revolution`, `empire`, `religion`, `politics`, `economy`, `exploration`, `colonization`, `state-formation`),
+  - added derive-time tag normalization with alias and category fallback,
+  - guarantees every event is assigned at least one controlled tag in derived outputs.
+
+## Recent updates (2026-04-20 · persistent event tracking + review resurfacing)
+
+- Extended shared mastery persistence in `apps/shared/mastery-store.js`:
+  - formalized `seen` tracking (while preserving compatibility with existing `attempts` reads),
+  - continues to track `correct`, `incorrect`, and `last_seen` per event in local storage,
+  - added a persisted mistake-driven review queue (`whl_review_queue_v1`) that increases on incorrect answers and decays on correct answers.
+- Updated `apps/event-recognition/app.js` to consume the persisted review queue:
+  - prioritized resurfacing of queued mistake events before normal weighted sampling when eligible in the current scope,
+  - added learner-facing session status text when a resurfaced review clue is shown.
+- Result: at least one mode now reuses past mistakes across sessions without manual setup changes, aligning with the persistence/repetition weekly theme.
+
 ## Recent updates (2026-04-11 · structured comparison mode + tag clusters)
 
 - Reworked `apps/event-comparison/` into a structured, forced-comparison flow with rotating question types: chronology (which came first), impact (greater impact), and similarity (closest match to anchor event).

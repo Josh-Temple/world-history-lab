@@ -5,7 +5,65 @@ import { validateData } from "./validate-data.mjs";
 const ROOT = process.cwd();
 const DERIVED_DIR = path.join(ROOT, "derived");
 const DATA_DERIVED_DIR = path.join(ROOT, "data", "derived");
-const ALLOWED_TAGS = new Set(["political", "economic", "technological", "social", "military"]);
+const ALLOWED_TAGS = new Set([
+  "war",
+  "revolution",
+  "empire",
+  "religion",
+  "politics",
+  "economy",
+  "exploration",
+  "colonization",
+  "state-formation",
+]);
+const TAG_ALIASES = new Map([
+  ["political", "politics"],
+  ["state", "state-formation"],
+  ["state-system", "state-formation"],
+  ["constitution", "state-formation"],
+  ["law", "politics"],
+  ["diplomacy", "politics"],
+  ["alliance", "politics"],
+  ["parliament", "politics"],
+  ["governance", "state-formation"],
+  ["political-thought", "politics"],
+  ["political-shift", "politics"],
+  ["state-power", "state-formation"],
+  ["economics", "economy"],
+  ["trade", "economy"],
+  ["trade_routes", "economy"],
+  ["markets", "economy"],
+  ["industry", "economy"],
+  ["industrial", "economy"],
+  ["textiles", "economy"],
+  ["manufacturing", "economy"],
+  ["infrastructure", "economy"],
+  ["transport", "economy"],
+  ["technology", "economy"],
+  ["technological", "economy"],
+  ["communication", "economy"],
+  ["labor", "economy"],
+  ["movement", "revolution"],
+  ["social", "revolution"],
+  ["culture", "religion"],
+  ["warfare", "war"],
+  ["military", "war"],
+  ["violence", "war"],
+  ["rebellion", "revolution"],
+  ["civil_war", "war"],
+  ["campaign", "war"],
+  ["genocide", "war"],
+  ["religious", "religion"],
+  ["christianity", "religion"],
+  ["islam", "religion"],
+  ["buddhism", "religion"],
+  ["islamic_world", "religion"],
+  ["empire_imperialism", "empire"],
+  ["imperialism", "empire"],
+  ["colonialism", "colonization"],
+  ["annexation", "colonization"],
+  ["exploration_routes", "exploration"],
+]);
 
 const FALLBACK_UNIT_FILES = [
   { id: "unit_french_revolution_napoleon", path: "data/units/french-revolution-napoleon.json" },
@@ -323,23 +381,49 @@ function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
 }
 
 function validateEventTags(events) {
-  for (const event of events) {
-    if (!Object.hasOwn(event, "tags")) {
-      continue;
-    }
+  const categoryFallback = {
+    military: "war",
+    politics: "politics",
+    religion: "religion",
+    economy: "economy",
+    technology: "economy",
+    culture: "religion",
+  };
 
-    if (!Array.isArray(event.tags)) {
+  for (const event of events) {
+    const normalizedTags = new Set();
+    const tags = Array.isArray(event.tags) ? event.tags : [];
+    if (Object.hasOwn(event, "tags") && !Array.isArray(event.tags)) {
       throw new Error(`Event ${event.id}: tags must be an array when provided`);
     }
 
-    for (const tag of event.tags) {
+    for (const tag of tags) {
       if (typeof tag !== "string" || tag.trim() === "") {
         throw new Error(`Event ${event.id}: tags must contain non-empty strings`);
       }
-      if (!ALLOWED_TAGS.has(tag)) {
-        console.warn(`[derive] Unknown tag "${tag}" in event ${event.id}`);
+      const trimmed = tag.trim();
+      if (ALLOWED_TAGS.has(trimmed)) {
+        normalizedTags.add(trimmed);
+        continue;
+      }
+
+      const alias = TAG_ALIASES.get(trimmed);
+      if (alias && ALLOWED_TAGS.has(alias)) {
+        normalizedTags.add(alias);
+      } else {
+        console.warn(`[derive] Unknown tag "${trimmed}" in event ${event.id}; attempting category fallback.`);
       }
     }
+
+    const fallback = categoryFallback[event.category] || "economy";
+    if (normalizedTags.size === 0 && fallback) {
+      normalizedTags.add(fallback);
+    }
+    if (normalizedTags.size === 0) {
+      throw new Error(`Event ${event.id}: could not normalize tags to allowed taxonomy`);
+    }
+
+    event.tags = Array.from(normalizedTags).sort();
   }
 }
 

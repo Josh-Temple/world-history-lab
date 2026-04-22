@@ -14,7 +14,8 @@
       "unit_foundations_world_history",
       "unit_industrialization_pathways_comparison",
       "unit_world_war_i",
-      "unit_world_war_ii"
+      "unit_world_war_ii",
+      "unit_islamic_expansion"
     ],
     "notes": "Core dataset now spans foundations, modern specialized units, comparison tracks, and high-density World War I + II flagship units for cross-mode practice."
   },
@@ -33,16 +34,16 @@
         "difficulty": 1,
         "prerequisites": [],
         "next_units": [
-          "unit_french_revolution"
+          "unit_islamic_expansion"
         ]
       },
       {
         "id": "unit_french_revolution",
-        "order": 2,
+        "order": 3,
         "era": "Early Modern to Modern Transition",
         "difficulty": 1,
         "prerequisites": [
-          "unit_foundations_world_history"
+          "unit_islamic_expansion"
         ],
         "next_units": [
           "unit_french_revolution_napoleon"
@@ -50,7 +51,7 @@
       },
       {
         "id": "unit_french_revolution_napoleon",
-        "order": 3,
+        "order": 4,
         "era": "Modern",
         "difficulty": 2,
         "prerequisites": [
@@ -62,7 +63,7 @@
       },
       {
         "id": "unit_industrial_revolution",
-        "order": 4,
+        "order": 5,
         "era": "Modern",
         "difficulty": 2,
         "prerequisites": [
@@ -74,7 +75,7 @@
       },
       {
         "id": "unit_meiji_restoration",
-        "order": 5,
+        "order": 6,
         "era": "Modern",
         "difficulty": 2,
         "prerequisites": [
@@ -86,7 +87,7 @@
       },
       {
         "id": "unit_age_of_imperialism",
-        "order": 6,
+        "order": 7,
         "era": "Modern",
         "difficulty": 2,
         "prerequisites": [
@@ -98,7 +99,7 @@
       },
       {
         "id": "unit_world_war_i",
-        "order": 7,
+        "order": 8,
         "era": "Modern",
         "difficulty": 2,
         "prerequisites": [
@@ -110,7 +111,7 @@
       },
       {
         "id": "unit_industrialization_pathways_comparison",
-        "order": 9,
+        "order": 10,
         "era": "Modern",
         "difficulty": 2,
         "prerequisites": [
@@ -120,7 +121,7 @@
       },
       {
         "id": "unit_world_war_ii",
-        "order": 8,
+        "order": 9,
         "era": "Modern",
         "difficulty": 3,
         "prerequisites": [
@@ -128,6 +129,18 @@
         ],
         "next_units": [
           "unit_industrialization_pathways_comparison"
+        ]
+      },
+      {
+        "id": "unit_islamic_expansion",
+        "order": 2,
+        "era": "Late Antiquity to Early Medieval",
+        "difficulty": 1,
+        "prerequisites": [
+          "unit_foundations_world_history"
+        ],
+        "next_units": [
+          "unit_french_revolution"
         ]
       }
     ]
@@ -211,7 +224,7 @@
       "cause_and_effect"
     ]
   },
-  "updated_at": "2026-04-13T00:00:00Z",
+  "updated_at": "2026-04-21T00:00:00Z",
   "maintainer": {
     "name": "Josh",
     "notes": "Personal learning project"

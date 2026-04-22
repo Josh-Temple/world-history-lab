@@ -2636,5 +2636,370 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "reviewed"
+  },
+  {
+    "id": "pe_muhammad",
+    "name": "Muhammad",
+    "alt_names": [
+      "Muhammad ibn Abdullah"
+    ],
+    "birth_year": 570,
+    "death_year": 632,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "prophet",
+      "political-leader"
+    ],
+    "summary_short": "Prophet of Islam and political leader in Medina whose community-building transformed Arabian religious and political history.",
+    "related_events": [
+      "ev_first_revelation_610",
+      "ev_hijra_622",
+      "ev_conquest_mecca_630",
+      "ev_death_muhammad_632"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_muhammad",
+        "url": "https://example.com/internal/manual_person_pe_muhammad",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_abu_bakr",
+    "name": "Abu Bakr",
+    "alt_names": [
+      "Abu Bakr al-Siddiq"
+    ],
+    "birth_year": 573,
+    "death_year": 634,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "caliph",
+      "political-leader"
+    ],
+    "summary_short": "First caliph after Muhammad who led campaigns to consolidate authority during the Ridda Wars.",
+    "related_events": [
+      "ev_death_muhammad_632",
+      "ev_ridda_wars_begin_632"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_abu_bakr",
+        "url": "https://example.com/internal/manual_person_pe_abu_bakr",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_umar_ibn_al_khattab",
+    "name": "Umar ibn al-Khattab",
+    "alt_names": [
+      "Umar"
+    ],
+    "birth_year": 584,
+    "death_year": 644,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "caliph",
+      "administrator"
+    ],
+    "summary_short": "Second caliph who oversaw major conquests into Byzantine and Sasanian territory.",
+    "related_events": [
+      "ev_battle_yarmouk_636",
+      "ev_conquest_ctesiphon_637",
+      "ev_conquest_jerusalem_638",
+      "ev_conquest_egypt_642"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_umar",
+        "url": "https://example.com/internal/manual_person_pe_umar",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_uthman_ibn_affan",
+    "name": "Uthman ibn Affan",
+    "alt_names": [
+      "Uthman"
+    ],
+    "birth_year": 576,
+    "death_year": 656,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "caliph"
+    ],
+    "summary_short": "Third caliph whose rule saw continued expansion and growing political tensions within the early caliphate.",
+    "related_events": [
+      "ev_conquest_egypt_642"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_uthman",
+        "url": "https://example.com/internal/manual_person_pe_uthman",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_ali_ibn_abi_talib",
+    "name": "Ali ibn Abi Talib",
+    "alt_names": [
+      "Ali"
+    ],
+    "birth_year": 600,
+    "death_year": 661,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "caliph",
+      "military-commander"
+    ],
+    "summary_short": "Early Muslim leader and fourth caliph associated with formative political and religious debates in the community.",
+    "related_events": [
+      "ev_battle_badr_624"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_ali",
+        "url": "https://example.com/internal/manual_person_pe_ali",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_khalid_ibn_al_walid",
+    "name": "Khalid ibn al-Walid",
+    "alt_names": [
+      "Khalid"
+    ],
+    "birth_year": 592,
+    "death_year": 642,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "general"
+    ],
+    "summary_short": "General linked to Ridda and early Levant campaigns that expanded caliphal military control.",
+    "related_events": [
+      "ev_ridda_wars_begin_632",
+      "ev_battle_yarmouk_636"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_khalid",
+        "url": "https://example.com/internal/manual_person_pe_khalid",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_amr_ibn_al_as",
+    "name": "Amr ibn al-As",
+    "alt_names": [],
+    "birth_year": 573,
+    "death_year": 664,
+    "regions": [
+      "reg_middle_east",
+      "reg_north_africa"
+    ],
+    "roles": [
+      "general",
+      "governor"
+    ],
+    "summary_short": "Commander associated with the conquest and administration of Egypt under the Rashidun caliphate.",
+    "related_events": [
+      "ev_conquest_egypt_642"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_amr",
+        "url": "https://example.com/internal/manual_person_pe_amr",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_muawiya_i",
+    "name": "Muawiya I",
+    "alt_names": [
+      "Mu'awiya ibn Abi Sufyan"
+    ],
+    "birth_year": 602,
+    "death_year": 680,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "caliph",
+      "founder"
+    ],
+    "summary_short": "Founder of the Umayyad dynasty who consolidated dynastic rule and imperial administration.",
+    "related_events": [
+      "ev_battle_tours_732"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_muawiya",
+        "url": "https://example.com/internal/manual_person_pe_muawiya",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_abd_al_malik",
+    "name": "Abd al-Malik",
+    "alt_names": [
+      "Abd al-Malik ibn Marwan"
+    ],
+    "birth_year": 646,
+    "death_year": 705,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "caliph",
+      "administrator"
+    ],
+    "summary_short": "Umayyad caliph known for administrative and monetary reforms that strengthened imperial cohesion.",
+    "related_events": [
+      "ev_battle_tours_732"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_abd_al_malik",
+        "url": "https://example.com/internal/manual_person_pe_abd_al_malik",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_abu_al_abbas_al_saffah",
+    "name": "Abu al-Abbas al-Saffah",
+    "alt_names": [
+      "al-Saffah"
+    ],
+    "birth_year": 721,
+    "death_year": 754,
+    "regions": [
+      "reg_middle_east"
+    ],
+    "roles": [
+      "caliph",
+      "revolutionary"
+    ],
+    "summary_short": "First Abbasid caliph who came to power through the Abbasid Revolution.",
+    "related_events": [
+      "ev_abbasid_revolution_750"
+    ],
+    "confusions": [],
+    "question_types": [
+      "person_event_match",
+      "person_role_match"
+    ],
+    "source_refs": [
+      {
+        "source_type": "self",
+        "source_id": "manual_person_pe_saffah",
+        "url": "https://example.com/internal/manual_person_pe_saffah",
+        "retrieved_at": "2026-04-21T00:00:00Z",
+        "notes": "Islamic expansion unit person seed"
+      }
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
   }
 ]
