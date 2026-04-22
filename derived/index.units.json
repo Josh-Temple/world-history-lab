@@ -153,6 +153,26 @@
     ]
   },
   {
+    "id": "unit_islamic_expansion",
+    "title": "Rise and Expansion of Islam (7th–8th century)",
+    "event_ids": [
+      "ev_first_revelation_610",
+      "ev_hijra_622",
+      "ev_constitution_medina_622",
+      "ev_battle_badr_624",
+      "ev_treaty_hudaybiyyah_628",
+      "ev_conquest_mecca_630",
+      "ev_death_muhammad_632",
+      "ev_ridda_wars_begin_632",
+      "ev_battle_yarmouk_636",
+      "ev_conquest_ctesiphon_637",
+      "ev_conquest_jerusalem_638",
+      "ev_conquest_egypt_642",
+      "ev_battle_tours_732",
+      "ev_abbasid_revolution_750"
+    ]
+  },
+  {
     "id": "unit_meiji_restoration",
     "title": "Meiji Restoration and Japan's Modernization",
     "event_ids": [

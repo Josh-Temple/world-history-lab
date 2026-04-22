@@ -1,6 +1,6 @@
 import { filterDerivedEvents, loadDerivedEvents, loadUnitsIndex } from "../shared/data-access.js";
 import { isRecognitionReady } from "../shared/event-filters.js";
-import { getWeight, isWeakEvent, recordResult } from "../shared/mastery-store.js";
+import { getReviewQueueEventIds, getWeight, isWeakEvent, recordResult } from "../shared/mastery-store.js";
 import { createSession, weightedPick } from "../shared/session-engine.js";
 import { showFeedback } from "../shared/feedback.js";
 import { mountHeader } from "../shared/header.js";
@@ -169,6 +169,21 @@ function buildDistractors(answer, activePool, broaderPool) {
   return distractors;
 }
 
+function pickAnswerEvent(activePool) {
+  const reviewIds = getReviewQueueEventIds(25);
+  if (reviewIds.length > 0) {
+    const activeById = new Map(activePool.map((event) => [event.id, event]));
+    const eligibleReviewEvents = reviewIds
+      .map((eventId) => activeById.get(eventId))
+      .filter((event) => Boolean(event) && !state.recentAnswerIds.includes(event.id));
+    if (eligibleReviewEvents.length > 0) {
+      return { event: eligibleReviewEvents[0], fromReviewQueue: true };
+    }
+  }
+
+  return { event: weightedPick(activePool, (event) => getWeight(event.id)), fromReviewQueue: false };
+}
+
 function getFeedbackMessage(accuracy) {
   if (accuracy >= 85) return "Strong recognition. You are ready to move into causality practice.";
   if (accuracy >= 60) return "Good progress. Another short recognition session should make recall feel faster.";
@@ -248,7 +263,7 @@ function renderQuestion() {
     return;
   }
 
-  const answer = weightedPick(activePool, (event) => getWeight(event.id));
+  const { event: answer, fromReviewQueue } = pickAnswerEvent(activePool);
   const distractors = buildDistractors(answer, activePool, broaderPool).slice(0, 3);
   if (distractors.length < 3) {
     state.sessionActive = false;
@@ -273,7 +288,9 @@ function renderQuestion() {
   questionElement.textContent = buildClue(answer);
   sessionStatusElement.textContent = adaptiveActive
     ? `Adaptive mode is active. Focus on weaker events while you finish all ${state.totalQuestions} questions.`
-    : `Answer the clue, then continue until you finish all ${state.totalQuestions} questions.`;
+    : (fromReviewQueue
+      ? `Review resurfacing active: this clue comes from a past mistake.`
+      : `Answer the clue, then continue until you finish all ${state.totalQuestions} questions.`);
   summaryElement.hidden = true;
   hideNextStep();
   nextButton.hidden = false;

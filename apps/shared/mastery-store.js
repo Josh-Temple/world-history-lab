@@ -1,5 +1,7 @@
 const KEY = 'whl_mastery_v1';
+const REVIEW_QUEUE_KEY = 'whl_review_queue_v1';
 const EMPTY_STATS = Object.freeze({
+  seen: 0,
   correct: 0,
   incorrect: 0,
   total_error: 0,
@@ -13,12 +15,16 @@ function canUseStorage() {
 }
 
 function sanitizeStats(stats) {
+  const seen = Number.isFinite(stats?.seen)
+    ? Math.max(0, stats.seen)
+    : (Number.isFinite(stats?.attempts) ? Math.max(0, stats.attempts) : 0);
   return {
+    seen,
     correct: Number.isFinite(stats?.correct) ? Math.max(0, stats.correct) : 0,
     incorrect: Number.isFinite(stats?.incorrect) ? Math.max(0, stats.incorrect) : 0,
     total_error: Number.isFinite(stats?.total_error) ? Math.max(0, stats.total_error) : 0,
     total_score: Number.isFinite(stats?.total_score) ? Math.max(0, stats.total_score) : 0,
-    attempts: Number.isFinite(stats?.attempts) ? Math.max(0, stats.attempts) : 0,
+    attempts: seen,
     last_seen: Number.isFinite(stats?.last_seen) ? stats.last_seen : null,
   };
 }
@@ -62,6 +68,78 @@ function save(data) {
   }
 }
 
+function loadReviewQueue() {
+  if (!canUseStorage()) {
+    return {};
+  }
+
+  try {
+    const raw = window.localStorage.getItem(REVIEW_QUEUE_KEY);
+    if (!raw) {
+      return {};
+    }
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+      return {};
+    }
+
+    return Object.fromEntries(
+      Object.entries(parsed)
+        .filter(([eventId]) => typeof eventId === 'string' && eventId.length > 0)
+        .map(([eventId, row]) => [
+          eventId,
+          {
+            count: Number.isFinite(row?.count) ? Math.max(0, row.count) : 0,
+            last_incorrect: Number.isFinite(row?.last_incorrect) ? row.last_incorrect : null,
+            last_seen: Number.isFinite(row?.last_seen) ? row.last_seen : null,
+          },
+        ])
+        .filter(([, row]) => row.count > 0),
+    );
+  } catch (error) {
+    console.warn('[mastery-store] Falling back to empty review queue.', error);
+    return {};
+  }
+}
+
+function saveReviewQueue(queue) {
+  if (!canUseStorage()) {
+    return;
+  }
+
+  try {
+    window.localStorage.setItem(REVIEW_QUEUE_KEY, JSON.stringify(queue));
+  } catch (error) {
+    console.warn('[mastery-store] Could not persist review queue.', error);
+  }
+}
+
+function updateReviewQueue(eventId, correct) {
+  const queue = loadReviewQueue();
+  const existing = queue[eventId] || { count: 0, last_incorrect: null, last_seen: null };
+  const now = Date.now();
+
+  if (correct) {
+    if (existing.count <= 1) {
+      delete queue[eventId];
+    } else {
+      queue[eventId] = {
+        ...existing,
+        count: existing.count - 1,
+        last_seen: now,
+      };
+    }
+  } else {
+    queue[eventId] = {
+      count: existing.count + 1,
+      last_incorrect: now,
+      last_seen: now,
+    };
+  }
+
+  saveReviewQueue(queue);
+}
+
 export function recordResult(eventId, correct, details = {}) {
   if (typeof eventId !== 'string' || eventId.length === 0) {
     return;
@@ -73,16 +151,18 @@ export function recordResult(eventId, correct, details = {}) {
   const numericScore = Number.isFinite(details?.score) ? Math.max(0, details.score) : (correct ? 1 : 0);
   const next = {
     ...existing,
+    seen: existing.seen + 1,
     correct: existing.correct + (correct ? 1 : 0),
     incorrect: existing.incorrect + (correct ? 0 : 1),
     total_error: existing.total_error + numericError,
     total_score: existing.total_score + numericScore,
-    attempts: existing.attempts + 1,
+    attempts: existing.seen + 1,
     last_seen: Date.now(),
   };
 
   data[eventId] = next;
   save(data);
+  updateReviewQueue(eventId, correct);
   return next;
 }
 
@@ -119,4 +199,12 @@ export function getWeight(eventId) {
 export function isWeakEvent(eventId, threshold = 0.6) {
   const accuracy = getAccuracy(eventId);
   return accuracy === null || accuracy < threshold;
+}
+
+export function getReviewQueueEventIds(limit = 20) {
+  const queue = loadReviewQueue();
+  return Object.entries(queue)
+    .sort(([, left], [, right]) => right.count - left.count || (right.last_incorrect || 0) - (left.last_incorrect || 0))
+    .slice(0, limit)
+    .map(([eventId]) => eventId);
 }

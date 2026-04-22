@@ -1,5 +1,52 @@
 [
   {
+    "id": "ev_abbasid_revolution_750",
+    "label": "Abbasid Revolution",
+    "summary_short": "The Abbasid movement overthrew Umayyad rule and reshaped leadership, administration, and imperial center of gravity.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 3,
+    "location": {
+      "region": "Kufa",
+      "lat": 32.0319,
+      "lon": 44.3354,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "revolution_reform",
+      "state_formation_governance"
+    ],
+    "people_ids": [
+      "pe_abu_al_abbas_al_saffah"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_battle_tours_732"
+    ],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "750",
+      "end": "750",
+      "year_start": 750,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 7500101,
+      "sort_end": 7501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 750
+    }
+  },
+  {
     "id": "ev_abolition_british_slave_trade_1807",
     "label": "Britain abolishes the transatlantic slave trade",
     "summary_short": "Britain's 1807 abolition act targeted slave-trade shipping and accelerated international pressure against the Atlantic trade.",
@@ -379,6 +426,56 @@
     }
   },
   {
+    "id": "ev_battle_badr_624",
+    "label": "Battle of Badr",
+    "summary_short": "An early Muslim military victory at Badr strengthened Medina's position and legitimacy.",
+    "status": "reviewed",
+    "category": "military",
+    "importance": 2,
+    "location": {
+      "region": "Badr",
+      "lat": 23.7833,
+      "lon": 38.7833,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "belief_systems_cultural_exchange"
+    ],
+    "people_ids": [
+      "pe_muhammad",
+      "pe_ali_ibn_abi_talib"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_constitution_medina_622"
+    ],
+    "effects": [
+      "ev_treaty_hudaybiyyah_628"
+    ],
+    "causes": [],
+    "time": {
+      "start": "624",
+      "end": "624",
+      "year_start": 624,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6240101,
+      "sort_end": 6241231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 624
+    }
+  },
+  {
     "id": "ev_battle_bulge_1944",
     "label": "Battle of the Bulge",
     "summary_short": "Germany’s final major offensive in the West fails, accelerating Allied advance into Germany.",
@@ -652,6 +749,105 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1942
+    }
+  },
+  {
+    "id": "ev_battle_tours_732",
+    "label": "Battle of Tours",
+    "summary_short": "The Umayyad defeat near Tours became a key marker in the limits of expansion into Frankish territories.",
+    "status": "reviewed",
+    "category": "military",
+    "importance": 2,
+    "location": {
+      "region": "Tours",
+      "lat": 47.3941,
+      "lon": 0.6848,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "empire_imperialism"
+    ],
+    "people_ids": [
+      "pe_muawiya_i"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_conquest_egypt_642"
+    ],
+    "effects": [
+      "ev_abbasid_revolution_750"
+    ],
+    "causes": [],
+    "time": {
+      "start": "732",
+      "end": "732",
+      "year_start": 732,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 7320101,
+      "sort_end": 7321231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 732
+    }
+  },
+  {
+    "id": "ev_battle_yarmouk_636",
+    "label": "Battle of Yarmouk",
+    "summary_short": "A decisive victory over Byzantine forces opened Syria to sustained caliphal expansion.",
+    "status": "reviewed",
+    "category": "military",
+    "importance": 3,
+    "location": {
+      "region": "Yarmouk",
+      "lat": 32.62,
+      "lon": 35.73,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "empire_imperialism"
+    ],
+    "people_ids": [
+      "pe_umar_ibn_al_khattab",
+      "pe_khalid_ibn_al_walid"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_ridda_wars_begin_632"
+    ],
+    "effects": [
+      "ev_conquest_jerusalem_638"
+    ],
+    "causes": [],
+    "time": {
+      "start": "636",
+      "end": "636",
+      "year_start": 636,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6360101,
+      "sort_end": 6361231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 636
     }
   },
   {
@@ -1141,6 +1337,202 @@
     }
   },
   {
+    "id": "ev_conquest_ctesiphon_637",
+    "label": "Conquest of Ctesiphon",
+    "summary_short": "Forces of the caliphate captured the Sasanian capital zone, accelerating the collapse of imperial resistance in Iraq.",
+    "status": "reviewed",
+    "category": "military",
+    "importance": 2,
+    "location": {
+      "region": "Ctesiphon",
+      "lat": 33.09,
+      "lon": 44.58,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "empire_imperialism"
+    ],
+    "people_ids": [
+      "pe_umar_ibn_al_khattab"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [],
+    "effects": [
+      "ev_conquest_egypt_642"
+    ],
+    "causes": [],
+    "time": {
+      "start": "637",
+      "end": "637",
+      "year_start": 637,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6370101,
+      "sort_end": 6371231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 637
+    }
+  },
+  {
+    "id": "ev_conquest_egypt_642",
+    "label": "Conquest of Egypt",
+    "summary_short": "The takeover of Egypt connected eastern Mediterranean and Red Sea corridors to the expanding caliphate.",
+    "status": "reviewed",
+    "category": "military",
+    "importance": 3,
+    "location": {
+      "region": "Egypt",
+      "lat": 30.0444,
+      "lon": 31.2357,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "empire_imperialism",
+      "trade_networks_economic_exchange"
+    ],
+    "people_ids": [
+      "pe_amr_ibn_al_as",
+      "pe_umar_ibn_al_khattab"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_conquest_ctesiphon_637",
+      "ev_conquest_jerusalem_638"
+    ],
+    "effects": [
+      "ev_battle_tours_732"
+    ],
+    "causes": [],
+    "time": {
+      "start": "642",
+      "end": "642",
+      "year_start": 642,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6420101,
+      "sort_end": 6421231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 642
+    }
+  },
+  {
+    "id": "ev_conquest_jerusalem_638",
+    "label": "Jerusalem Comes Under Rashidun Rule",
+    "summary_short": "Jerusalem's transfer to Rashidun rule marked a symbolic and strategic expansion of the new polity.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 2,
+    "location": {
+      "region": "Jerusalem",
+      "lat": 31.7683,
+      "lon": 35.2137,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "belief_systems_cultural_exchange",
+      "empire_imperialism"
+    ],
+    "people_ids": [
+      "pe_umar_ibn_al_khattab"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_battle_yarmouk_636"
+    ],
+    "effects": [
+      "ev_conquest_egypt_642"
+    ],
+    "causes": [],
+    "time": {
+      "start": "638",
+      "end": "638",
+      "year_start": 638,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6380101,
+      "sort_end": 6381231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 638
+    }
+  },
+  {
+    "id": "ev_conquest_mecca_630",
+    "label": "Conquest of Mecca",
+    "summary_short": "Muhammad and his followers entered Mecca, accelerating religious and political unification across Arabia.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 3,
+    "location": {
+      "region": "Mecca",
+      "lat": 21.3891,
+      "lon": 39.8579,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "belief_systems_cultural_exchange",
+      "state_formation_governance"
+    ],
+    "people_ids": [
+      "pe_muhammad"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_treaty_hudaybiyyah_628"
+    ],
+    "effects": [
+      "ev_death_muhammad_632"
+    ],
+    "causes": [],
+    "time": {
+      "start": "630",
+      "end": "630",
+      "year_start": 630,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6300101,
+      "sort_end": 6301231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 630
+    }
+  },
+  {
     "id": "ev_constantine_edict_milan_313",
     "label": "Edict of Milan",
     "summary_short": "Imperial toleration transformed Christianity's status in the Roman world.",
@@ -1175,6 +1567,54 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 313
+    }
+  },
+  {
+    "id": "ev_constitution_medina_622",
+    "label": "Constitution of Medina",
+    "summary_short": "The Medinan pact set shared obligations between Muslim emigrants, local supporters, and allied tribes under a common political framework.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 2,
+    "location": {
+      "region": "Medina",
+      "lat": 24.47,
+      "lon": 39.61,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "state_formation_governance"
+    ],
+    "people_ids": [
+      "pe_muhammad"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_hijra_622"
+    ],
+    "effects": [
+      "ev_battle_badr_624"
+    ],
+    "causes": [],
+    "time": {
+      "start": "622",
+      "end": "622",
+      "year_start": 622,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6220101,
+      "sort_end": 6221231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 622
     }
   },
   {
@@ -1315,6 +1755,56 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": -550
+    }
+  },
+  {
+    "id": "ev_death_muhammad_632",
+    "label": "Death of Muhammad",
+    "summary_short": "Muhammad's death created a succession challenge that drove early caliphal state consolidation.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 3,
+    "location": {
+      "region": "Medina",
+      "lat": 24.47,
+      "lon": 39.61,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "state_formation_governance",
+      "belief_systems_cultural_exchange"
+    ],
+    "people_ids": [
+      "pe_muhammad",
+      "pe_abu_bakr"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_conquest_mecca_630"
+    ],
+    "effects": [
+      "ev_ridda_wars_begin_632"
+    ],
+    "causes": [],
+    "time": {
+      "start": "632",
+      "end": "632",
+      "year_start": 632,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6320101,
+      "sort_end": 6321231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 632
     }
   },
   {
@@ -1824,6 +2314,53 @@
     }
   },
   {
+    "id": "ev_first_revelation_610",
+    "label": "First Revelation to Muhammad",
+    "summary_short": "Muhammad's first revelations in Mecca mark the beginning of Islam as a new monotheistic movement.",
+    "status": "reviewed",
+    "category": "religion",
+    "importance": 2,
+    "location": {
+      "region": "Mecca",
+      "lat": 21.3891,
+      "lon": 39.8579,
+      "precision": "city"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "belief_systems_cultural_exchange",
+      "state_formation_governance"
+    ],
+    "people_ids": [
+      "pe_muhammad"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [],
+    "effects": [
+      "ev_hijra_622"
+    ],
+    "causes": [],
+    "time": {
+      "start": "610",
+      "end": "610",
+      "year_start": 610,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6100101,
+      "sort_end": 6101231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 610
+    }
+  },
+  {
     "id": "ev_flight_to_varennes_1791",
     "label": "Flight to Varennes",
     "summary_short": "Louis XVI and his family attempted to flee Paris, undermining trust in constitutional monarchy.",
@@ -2197,8 +2734,8 @@
   {
     "id": "ev_hijra_622",
     "label": "Hijra (Muhammad's migration)",
-    "summary_short": "The Islamic community and calendar begin from this turning point.",
-    "status": "approved",
+    "summary_short": "Muhammad and early Muslims migrate from Mecca to Medina, creating a base for a new religious and political community.",
+    "status": "reviewed",
     "category": "religion",
     "importance": 1,
     "location": {
@@ -2207,17 +2744,28 @@
       "lng": 39.61,
       "precision": "city"
     },
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
     ],
-    "people_ids": [],
-    "unit_ids": [
-      "unit_foundations_world_history"
+    "people_ids": [
+      "pe_muhammad"
     ],
-    "caused_by": [],
-    "effects": [],
+    "unit_ids": [
+      "unit_foundations_world_history",
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_first_revelation_610"
+    ],
+    "effects": [
+      "ev_constitution_medina_622"
+    ],
     "causes": [],
     "time": {
       "start": "622",
@@ -5788,6 +6336,56 @@
     }
   },
   {
+    "id": "ev_ridda_wars_begin_632",
+    "label": "Ridda Wars Begin",
+    "summary_short": "The first caliphate fought revolts in Arabia to maintain political unity after Muhammad's death.",
+    "status": "reviewed",
+    "category": "military",
+    "importance": 2,
+    "location": {
+      "region": "Arabia",
+      "lat": 23.8859,
+      "lon": 45.0792,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "state_formation_governance",
+      "war_diplomacy"
+    ],
+    "people_ids": [
+      "pe_abu_bakr",
+      "pe_khalid_ibn_al_walid"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_death_muhammad_632"
+    ],
+    "effects": [
+      "ev_battle_yarmouk_636"
+    ],
+    "causes": [],
+    "time": {
+      "start": "632",
+      "end": "632",
+      "year_start": 632,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6320101,
+      "sort_end": 6321231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 632
+    }
+  },
+  {
     "id": "ev_second_industrial_revolution_1870s",
     "label": "Second Industrial Revolution accelerates",
     "summary_short": "Electricity, chemicals, steel, and new corporate forms drive a fresh wave of industrial expansion.",
@@ -6669,6 +7267,55 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1603
+    }
+  },
+  {
+    "id": "ev_treaty_hudaybiyyah_628",
+    "label": "Treaty of Hudaybiyyah",
+    "summary_short": "A negotiated truce with Meccan leaders created strategic space for broader diplomatic outreach and consolidation.",
+    "status": "reviewed",
+    "category": "politics",
+    "importance": 2,
+    "location": {
+      "region": "Hudaybiyyah",
+      "lat": 21.35,
+      "lon": 39.79,
+      "precision": "regional"
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "state_formation_governance"
+    ],
+    "people_ids": [
+      "pe_muhammad"
+    ],
+    "unit_ids": [
+      "unit_islamic_expansion"
+    ],
+    "caused_by": [
+      "ev_battle_badr_624"
+    ],
+    "effects": [
+      "ev_conquest_mecca_630"
+    ],
+    "causes": [],
+    "time": {
+      "start": "628",
+      "end": "628",
+      "year_start": 628,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6280101,
+      "sort_end": 6281231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 628
     }
   },
   {

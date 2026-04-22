@@ -365,6 +365,7 @@
     "eligible_ids": {
       "cause_and_effect": [
         "ev_congress_vienna_1815",
+        "ev_hijra_622",
         "ev_napoleonic_wars_1803_1815",
         "ev_revolutions_1848",
         "ev_second_industrial_revolution_1870s"
@@ -375,6 +376,7 @@
         "ev_berlin_conference_1884",
         "ev_congress_vienna_1815",
         "ev_haitian_revolution_independence_1804",
+        "ev_hijra_622",
         "ev_india_independence_1947",
         "ev_indian_revolt_1857",
         "ev_mali_mansa_musa_hajj_1324",
@@ -393,6 +395,7 @@
         "ev_berlin_conference_1884",
         "ev_congress_vienna_1815",
         "ev_haitian_revolution_independence_1804",
+        "ev_hijra_622",
         "ev_india_independence_1947",
         "ev_indian_revolt_1857",
         "ev_mali_mansa_musa_hajj_1324",
@@ -715,6 +718,58 @@
         "ev_wannsee_conference_1942",
         "ev_wartime_industrial_mobilization_1942_1944",
         "ev_yalta_conference_1945"
+      ]
+    }
+  },
+  "unit_islamic_expansion": {
+    "eligible_ids": {
+      "cause_and_effect": [
+        "ev_abbasid_revolution_750",
+        "ev_battle_badr_624",
+        "ev_battle_tours_732",
+        "ev_battle_yarmouk_636",
+        "ev_conquest_ctesiphon_637",
+        "ev_conquest_egypt_642",
+        "ev_conquest_jerusalem_638",
+        "ev_conquest_mecca_630",
+        "ev_constitution_medina_622",
+        "ev_death_muhammad_632",
+        "ev_first_revelation_610",
+        "ev_hijra_622",
+        "ev_ridda_wars_begin_632",
+        "ev_treaty_hudaybiyyah_628"
+      ],
+      "timeline_before_after": [
+        "ev_abbasid_revolution_750",
+        "ev_battle_badr_624",
+        "ev_battle_tours_732",
+        "ev_battle_yarmouk_636",
+        "ev_conquest_ctesiphon_637",
+        "ev_conquest_egypt_642",
+        "ev_conquest_jerusalem_638",
+        "ev_conquest_mecca_630",
+        "ev_constitution_medina_622",
+        "ev_death_muhammad_632",
+        "ev_first_revelation_610",
+        "ev_hijra_622",
+        "ev_ridda_wars_begin_632",
+        "ev_treaty_hudaybiyyah_628"
+      ],
+      "what_happened": [
+        "ev_abbasid_revolution_750",
+        "ev_battle_badr_624",
+        "ev_battle_tours_732",
+        "ev_battle_yarmouk_636",
+        "ev_conquest_ctesiphon_637",
+        "ev_conquest_egypt_642",
+        "ev_conquest_jerusalem_638",
+        "ev_conquest_mecca_630",
+        "ev_constitution_medina_622",
+        "ev_death_muhammad_632",
+        "ev_first_revelation_610",
+        "ev_hijra_622",
+        "ev_ridda_wars_begin_632",
+        "ev_treaty_hudaybiyyah_628"
       ]
     }
   }

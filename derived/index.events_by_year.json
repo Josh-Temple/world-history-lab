@@ -2,11 +2,46 @@
   "313": [
     "ev_constantine_edict_milan_313"
   ],
+  "610": [
+    "ev_first_revelation_610"
+  ],
   "622": [
+    "ev_constitution_medina_622",
     "ev_hijra_622"
+  ],
+  "624": [
+    "ev_battle_badr_624"
+  ],
+  "628": [
+    "ev_treaty_hudaybiyyah_628"
+  ],
+  "630": [
+    "ev_conquest_mecca_630"
+  ],
+  "632": [
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632"
+  ],
+  "636": [
+    "ev_battle_yarmouk_636"
+  ],
+  "637": [
+    "ev_conquest_ctesiphon_637"
+  ],
+  "638": [
+    "ev_conquest_jerusalem_638"
+  ],
+  "642": [
+    "ev_conquest_egypt_642"
   ],
   "650": [
     "ev_tang_peak_7c"
+  ],
+  "732": [
+    "ev_battle_tours_732"
+  ],
+  "750": [
+    "ev_abbasid_revolution_750"
   ],
   "800": [
     "ev_charlemagne_crowned_800"

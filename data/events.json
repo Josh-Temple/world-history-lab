@@ -2737,15 +2737,17 @@
     "time": {
       "year_start": 622
     },
-    "question_types": [],
-    "tags": [
-      "islam",
-      "religion",
-      "west-asia",
-      "medieval"
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
     ],
-    "summary_short": "The Islamic community and calendar begin from this turning point.",
-    "status": "approved",
+    "tags": [
+      "religion",
+      "state-formation"
+    ],
+    "summary_short": "Muhammad and early Muslims migrate from Mecca to Medina, creating a base for a new religious and political community.",
+    "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "importance": 1,
     "category": "religion",
@@ -2758,6 +2760,12 @@
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
+    ],
+    "effects": [
+      "ev_constitution_medina_622"
+    ],
+    "people_ids": [
+      "pe_muhammad"
     ]
   },
   {
@@ -6385,6 +6393,489 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ]
+  },
+  {
+    "id": "ev_first_revelation_610",
+    "label": "First Revelation to Muhammad",
+    "time": {
+      "year_start": 610
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "religion",
+      "state-formation"
+    ],
+    "summary_short": "Muhammad's first revelations in Mecca mark the beginning of Islam as a new monotheistic movement.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "religion",
+    "location": {
+      "region": "Mecca",
+      "lat": 21.3891,
+      "lon": 39.8579,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_hijra_622"
+    ],
+    "people_ids": [
+      "pe_muhammad"
+    ],
+    "concept_tags": [
+      "belief_systems_cultural_exchange",
+      "state_formation_governance"
+    ]
+  },
+  {
+    "id": "ev_constitution_medina_622",
+    "label": "Constitution of Medina",
+    "time": {
+      "year_start": 622
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "politics",
+      "state-formation"
+    ],
+    "summary_short": "The Medinan pact set shared obligations between Muslim emigrants, local supporters, and allied tribes under a common political framework.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "politics",
+    "location": {
+      "region": "Medina",
+      "lat": 24.47,
+      "lon": 39.61,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_battle_badr_624"
+    ],
+    "people_ids": [
+      "pe_muhammad"
+    ],
+    "concept_tags": [
+      "state_formation_governance"
+    ]
+  },
+  {
+    "id": "ev_battle_badr_624",
+    "label": "Battle of Badr",
+    "time": {
+      "year_start": 624
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "war",
+      "religion"
+    ],
+    "summary_short": "An early Muslim military victory at Badr strengthened Medina's position and legitimacy.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "military",
+    "location": {
+      "region": "Badr",
+      "lat": 23.7833,
+      "lon": 38.7833,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_treaty_hudaybiyyah_628"
+    ],
+    "people_ids": [
+      "pe_muhammad",
+      "pe_ali_ibn_abi_talib"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "belief_systems_cultural_exchange"
+    ]
+  },
+  {
+    "id": "ev_treaty_hudaybiyyah_628",
+    "label": "Treaty of Hudaybiyyah",
+    "time": {
+      "year_start": 628
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "politics",
+      "religion"
+    ],
+    "summary_short": "A negotiated truce with Meccan leaders created strategic space for broader diplomatic outreach and consolidation.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "politics",
+    "location": {
+      "region": "Hudaybiyyah",
+      "lat": 21.35,
+      "lon": 39.79,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_conquest_mecca_630"
+    ],
+    "people_ids": [
+      "pe_muhammad"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "state_formation_governance"
+    ]
+  },
+  {
+    "id": "ev_conquest_mecca_630",
+    "label": "Conquest of Mecca",
+    "time": {
+      "year_start": 630
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "religion",
+      "state-formation"
+    ],
+    "summary_short": "Muhammad and his followers entered Mecca, accelerating religious and political unification across Arabia.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 3,
+    "category": "politics",
+    "location": {
+      "region": "Mecca",
+      "lat": 21.3891,
+      "lon": 39.8579,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_death_muhammad_632"
+    ],
+    "people_ids": [
+      "pe_muhammad"
+    ],
+    "concept_tags": [
+      "belief_systems_cultural_exchange",
+      "state_formation_governance"
+    ]
+  },
+  {
+    "id": "ev_death_muhammad_632",
+    "label": "Death of Muhammad",
+    "time": {
+      "year_start": 632
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "religion",
+      "politics"
+    ],
+    "summary_short": "Muhammad's death created a succession challenge that drove early caliphal state consolidation.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 3,
+    "category": "politics",
+    "location": {
+      "region": "Medina",
+      "lat": 24.47,
+      "lon": 39.61,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_ridda_wars_begin_632"
+    ],
+    "people_ids": [
+      "pe_muhammad",
+      "pe_abu_bakr"
+    ],
+    "concept_tags": [
+      "state_formation_governance",
+      "belief_systems_cultural_exchange"
+    ]
+  },
+  {
+    "id": "ev_ridda_wars_begin_632",
+    "label": "Ridda Wars Begin",
+    "time": {
+      "year_start": 632
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "war",
+      "state-formation"
+    ],
+    "summary_short": "The first caliphate fought revolts in Arabia to maintain political unity after Muhammad's death.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "military",
+    "location": {
+      "region": "Arabia",
+      "lat": 23.8859,
+      "lon": 45.0792,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_battle_yarmouk_636"
+    ],
+    "people_ids": [
+      "pe_abu_bakr",
+      "pe_khalid_ibn_al_walid"
+    ],
+    "concept_tags": [
+      "state_formation_governance",
+      "war_diplomacy"
+    ]
+  },
+  {
+    "id": "ev_battle_yarmouk_636",
+    "label": "Battle of Yarmouk",
+    "time": {
+      "year_start": 636
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "war",
+      "empire"
+    ],
+    "summary_short": "A decisive victory over Byzantine forces opened Syria to sustained caliphal expansion.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 3,
+    "category": "military",
+    "location": {
+      "region": "Yarmouk",
+      "lat": 32.62,
+      "lon": 35.73,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_conquest_jerusalem_638"
+    ],
+    "people_ids": [
+      "pe_umar_ibn_al_khattab",
+      "pe_khalid_ibn_al_walid"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "empire_imperialism"
+    ]
+  },
+  {
+    "id": "ev_conquest_ctesiphon_637",
+    "label": "Conquest of Ctesiphon",
+    "time": {
+      "year_start": 637
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "war",
+      "empire"
+    ],
+    "summary_short": "Forces of the caliphate captured the Sasanian capital zone, accelerating the collapse of imperial resistance in Iraq.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "military",
+    "location": {
+      "region": "Ctesiphon",
+      "lat": 33.09,
+      "lon": 44.58,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_conquest_egypt_642"
+    ],
+    "people_ids": [
+      "pe_umar_ibn_al_khattab"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "empire_imperialism"
+    ]
+  },
+  {
+    "id": "ev_conquest_jerusalem_638",
+    "label": "Jerusalem Comes Under Rashidun Rule",
+    "time": {
+      "year_start": 638
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "religion",
+      "empire"
+    ],
+    "summary_short": "Jerusalem's transfer to Rashidun rule marked a symbolic and strategic expansion of the new polity.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "politics",
+    "location": {
+      "region": "Jerusalem",
+      "lat": 31.7683,
+      "lon": 35.2137,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_conquest_egypt_642"
+    ],
+    "people_ids": [
+      "pe_umar_ibn_al_khattab"
+    ],
+    "concept_tags": [
+      "belief_systems_cultural_exchange",
+      "empire_imperialism"
+    ]
+  },
+  {
+    "id": "ev_conquest_egypt_642",
+    "label": "Conquest of Egypt",
+    "time": {
+      "year_start": 642
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "war",
+      "empire"
+    ],
+    "summary_short": "The takeover of Egypt connected eastern Mediterranean and Red Sea corridors to the expanding caliphate.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 3,
+    "category": "military",
+    "location": {
+      "region": "Egypt",
+      "lat": 30.0444,
+      "lon": 31.2357,
+      "precision": "regional"
+    },
+    "effects": [
+      "ev_battle_tours_732"
+    ],
+    "people_ids": [
+      "pe_amr_ibn_al_as",
+      "pe_umar_ibn_al_khattab"
+    ],
+    "concept_tags": [
+      "empire_imperialism",
+      "trade_networks_economic_exchange"
+    ]
+  },
+  {
+    "id": "ev_battle_tours_732",
+    "label": "Battle of Tours",
+    "time": {
+      "year_start": 732
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "war",
+      "empire"
+    ],
+    "summary_short": "The Umayyad defeat near Tours became a key marker in the limits of expansion into Frankish territories.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 2,
+    "category": "military",
+    "location": {
+      "region": "Tours",
+      "lat": 47.3941,
+      "lon": 0.6848,
+      "precision": "city"
+    },
+    "effects": [
+      "ev_abbasid_revolution_750"
+    ],
+    "people_ids": [
+      "pe_muawiya_i"
+    ],
+    "concept_tags": [
+      "war_diplomacy",
+      "empire_imperialism"
+    ]
+  },
+  {
+    "id": "ev_abbasid_revolution_750",
+    "label": "Abbasid Revolution",
+    "time": {
+      "year_start": 750
+    },
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "tags": [
+      "revolution",
+      "empire"
+    ],
+    "summary_short": "The Abbasid movement overthrew Umayyad rule and reshaped leadership, administration, and imperial center of gravity.",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "importance": 3,
+    "category": "politics",
+    "location": {
+      "region": "Kufa",
+      "lat": 32.0319,
+      "lon": 44.3354,
+      "precision": "city"
+    },
+    "effects": [],
+    "people_ids": [
+      "pe_abu_al_abbas_al_saffah"
+    ],
+    "concept_tags": [
+      "revolution_reform",
+      "state_formation_governance"
     ]
   }
 ]

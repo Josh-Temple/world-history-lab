@@ -235,6 +235,8 @@
 
 # Handoff
 
+
+
 ## Incremental update (2026-04-16 · WW2 validation fix for missing question_types)
 - Resolved CI validation failure in `node scripts/validate.mjs` caused by missing `question_types` arrays on 40 World War II events (from `ev_munich_agreement_1938` through `ev_island_hopping_campaign_1943_1945`) in `data/events.json`.
 - Backfilled all missing WW2 records with a consistent question-type set:
@@ -715,3 +717,41 @@
 1. Add a dedicated session-runner smoke test that simulates prerequisite lock/unlock behavior with a mocked localStorage state.
 2. Add a small “Reset progression” button in session-runner settings for easier manual QA and learner control.
 3. Consider blending progression state with mastery signals (e.g., minimum accuracy threshold before marking unit completed).
+## Incremental update (2026-04-20 · persistence + review queue baseline)
+- Updated `apps/shared/mastery-store.js` to strengthen longitudinal event tracking:
+  - added explicit `seen` count (with backward compatibility to existing `attempts`),
+  - retained and normalized `correct`, `incorrect`, and `last_seen`,
+  - added persisted review queue storage (`whl_review_queue_v1`) keyed by event id with mistake count and last-incorrect timestamp.
+- Updated `apps/event-recognition/app.js` to introduce automatic cross-session repetition:
+  - imports and checks queued review event IDs at question generation time,
+  - resurfaces eligible queued events before normal weighted selection,
+  - shows session hint text when a question comes from resurfaced mistakes.
+- Practical effect: learners now see previously-missed events reintroduced in later sessions without manually selecting a review mode.
+
+## Validation completed (2026-04-20)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Reuse `getReviewQueueEventIds()` in `apps/timeline-trainer/src/App.js` to surface missed chronology pairs (not only recognition prompts).
+2. Add a tiny diagnostics panel (or debug utility) to inspect/clear mastery + review state for easier QA.
+3. Define an explicit “mastered” threshold (e.g., min seen + min accuracy) and integrate it into weighted selection for all modes.
+
+## Incremental update (2026-04-21 · non-European expansion + tag normalization)
+- Added `data/units/islamic_expansion.json` as a new reviewed unit centered on 7th–8th century Islamic state formation and expansion.
+- Expanded `data/events.json` with 13 new linked events (from first revelation to Abbasid Revolution) and updated `ev_hijra_622` to connect into the new chain.
+- Expanded `data/people.json` with 10 key figures (Muhammad, early caliphs, military and dynastic actors) and connected them via `people_ids` + `related_events`.
+- Updated `data/units/index.json` and `data/metadata.json` to register the new unit and include it in curriculum progression after foundations.
+- Updated `scripts/derive.mjs` tag handling:
+  - moved to controlled theme tags (`war`, `revolution`, `empire`, `religion`, `politics`, `economy`, `exploration`, `colonization`, `state-formation`),
+  - normalizes legacy/free-form tags into controlled tags during derive,
+  - enforces at least one controlled tag per event in derived output.
+
+## Validation completed (2026-04-21)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add app-level UI filters for the controlled tag taxonomy so learners can explicitly practice by theme (e.g., all `empire` or all `religion` events).
+2. Continue non-European data expansion with a companion unit (e.g., Tang-Song transitions or Abbasid-era trade/science) to strengthen cross-unit comparisons.
+3. Gradually replace high-noise legacy tags in `data/events.json` with canonical tags directly at source so derive logs are cleaner.

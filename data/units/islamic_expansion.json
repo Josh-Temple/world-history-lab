@@ -1,0 +1,85 @@
+{
+  "id": "unit_islamic_expansion",
+  "title": "Rise and Expansion of Islam (7th–8th century)",
+  "label": "Rise and Expansion of Islam",
+  "language": "en",
+  "description": "A focused unit on the formation of the early Muslim community and rapid caliphal expansion across West Asia and North Africa.",
+  "recommended_level": "middle",
+  "regions": [
+    "reg_middle_east",
+    "reg_north_africa",
+    "reg_europe"
+  ],
+  "tags": [
+    "religion",
+    "empire",
+    "state-formation"
+  ],
+  "learning_goals": [
+    "Explain how community formation in Medina shaped early Islamic state-building.",
+    "Trace how succession, military campaigns, and administration drove early expansion.",
+    "Compare religiously grounded state formation with other imperial and revolutionary pathways."
+  ],
+  "event_ids": [
+    "ev_first_revelation_610",
+    "ev_hijra_622",
+    "ev_constitution_medina_622",
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636",
+    "ev_conquest_ctesiphon_637",
+    "ev_conquest_jerusalem_638",
+    "ev_conquest_egypt_642",
+    "ev_battle_tours_732",
+    "ev_abbasid_revolution_750"
+  ],
+  "person_ids": [
+    "pe_muhammad",
+    "pe_abu_bakr",
+    "pe_umar_ibn_al_khattab",
+    "pe_uthman_ibn_affan",
+    "pe_ali_ibn_abi_talib",
+    "pe_khalid_ibn_al_walid",
+    "pe_amr_ibn_al_as",
+    "pe_muawiya_i",
+    "pe_abd_al_malik",
+    "pe_abu_al_abbas_al_saffah"
+  ],
+  "app_profiles": {
+    "timeline-trainer": {
+      "enabled": true,
+      "question_types": [
+        "timeline_before_after",
+        "timeline_ordering"
+      ]
+    },
+    "event-recognition": {
+      "enabled": true,
+      "question_types": [
+        "what_happened",
+        "significance"
+      ]
+    },
+    "causality-builder": {
+      "enabled": true,
+      "question_types": [
+        "cause_and_effect",
+        "causality_chain"
+      ]
+    },
+    "sequence-reconstruction": {
+      "enabled": true
+    },
+    "year-estimation": {
+      "enabled": true,
+      "question_types": [
+        "year_estimation"
+      ]
+    }
+  },
+  "status": "reviewed",
+  "updated_at": "2026-04-21"
+}

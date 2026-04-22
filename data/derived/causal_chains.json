@@ -55,6 +55,11 @@
     "ev_un_charter_signed_1945"
   ],
   [
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630"
+  ],
+  [
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945",
     "ev_nuremberg_trials_begin_1945"
@@ -150,6 +155,11 @@
     "ev_soviet_berlin_offensive_1945"
   ],
   [
+    "ev_battle_yarmouk_636",
+    "ev_conquest_jerusalem_638",
+    "ev_conquest_egypt_642"
+  ],
+  [
     "ev_berlin_conference_1884",
     "ev_pan_african_congress_1945",
     "ev_india_independence_1947"
@@ -220,6 +230,31 @@
     "ev_second_industrial_revolution_1870s"
   ],
   [
+    "ev_conquest_ctesiphon_637",
+    "ev_conquest_egypt_642",
+    "ev_battle_tours_732"
+  ],
+  [
+    "ev_conquest_egypt_642",
+    "ev_battle_tours_732",
+    "ev_abbasid_revolution_750"
+  ],
+  [
+    "ev_conquest_jerusalem_638",
+    "ev_conquest_egypt_642",
+    "ev_battle_tours_732"
+  ],
+  [
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632"
+  ],
+  [
+    "ev_constitution_medina_622",
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628"
+  ],
+  [
     "ev_cotton_gin_1793",
     "ev_steam_power_transport_expansion_1800s",
     "ev_liverpool_manchester_railway_1830"
@@ -228,6 +263,11 @@
     "ev_cotton_gin_1793",
     "ev_steam_power_transport_expansion_1800s",
     "ev_stockton_darlington_railway_1825"
+  ],
+  [
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636"
   ],
   [
     "ev_directory_established_1795",
@@ -330,6 +370,11 @@
     "ev_holocaust_widening_killings_1941"
   ],
   [
+    "ev_first_revelation_610",
+    "ev_hijra_622",
+    "ev_constitution_medina_622"
+  ],
+  [
     "ev_flight_to_varennes_1791",
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793"
@@ -393,6 +438,11 @@
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839"
+  ],
+  [
+    "ev_hijra_622",
+    "ev_constitution_medina_622",
+    "ev_battle_badr_624"
   ],
   [
     "ev_hitler_suicide_1945",
@@ -825,6 +875,11 @@
     "ev_wwi_naval_arms_race_1898_1914"
   ],
   [
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636",
+    "ev_conquest_jerusalem_638"
+  ],
+  [
     "ev_second_industrial_revolution_1870s",
     "ev_electric_power_adoption_1880s",
     "ev_mass_production_systems_1890s"
@@ -988,6 +1043,11 @@
     "ev_tokugawa_shogunate_1603",
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807"
+  ],
+  [
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632"
   ],
   [
     "ev_united_states_enters_war_1941",
@@ -1546,6 +1606,12 @@
     "ev_un_charter_signed_1945"
   ],
   [
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632"
+  ],
+  [
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945",
@@ -1744,6 +1810,12 @@
     "ev_hitler_suicide_1945"
   ],
   [
+    "ev_battle_yarmouk_636",
+    "ev_conquest_jerusalem_638",
+    "ev_conquest_egypt_642",
+    "ev_battle_tours_732"
+  ],
+  [
     "ev_berlin_conference_1884",
     "ev_pan_african_congress_1945",
     "ev_india_independence_1947",
@@ -1822,6 +1894,30 @@
     "ev_wwi_naval_arms_race_1898_1914"
   ],
   [
+    "ev_conquest_ctesiphon_637",
+    "ev_conquest_egypt_642",
+    "ev_battle_tours_732",
+    "ev_abbasid_revolution_750"
+  ],
+  [
+    "ev_conquest_jerusalem_638",
+    "ev_conquest_egypt_642",
+    "ev_battle_tours_732",
+    "ev_abbasid_revolution_750"
+  ],
+  [
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636"
+  ],
+  [
+    "ev_constitution_medina_622",
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630"
+  ],
+  [
     "ev_cotton_gin_1793",
     "ev_steam_power_transport_expansion_1800s",
     "ev_liverpool_manchester_railway_1830",
@@ -1838,6 +1934,12 @@
     "ev_steam_power_transport_expansion_1800s",
     "ev_stockton_darlington_railway_1825",
     "ev_liverpool_manchester_railway_1830"
+  ],
+  [
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636",
+    "ev_conquest_jerusalem_638"
   ],
   [
     "ev_directory_established_1795",
@@ -2014,6 +2116,12 @@
     "ev_wannsee_conference_1942"
   ],
   [
+    "ev_first_revelation_610",
+    "ev_hijra_622",
+    "ev_constitution_medina_622",
+    "ev_battle_badr_624"
+  ],
+  [
     "ev_flight_to_varennes_1791",
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793",
@@ -2150,6 +2258,12 @@
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857"
+  ],
+  [
+    "ev_hijra_622",
+    "ev_constitution_medina_622",
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628"
   ],
   [
     "ev_hitler_suicide_1945",
@@ -2884,6 +2998,12 @@
     "ev_wwi_balkan_wars_destabilize_1912_1913"
   ],
   [
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636",
+    "ev_conquest_jerusalem_638",
+    "ev_conquest_egypt_642"
+  ],
+  [
     "ev_second_industrial_revolution_1870s",
     "ev_wwi_naval_arms_race_1898_1914",
     "ev_wwi_balkan_wars_destabilize_1912_1913",
@@ -3134,6 +3254,12 @@
     "ev_haitian_revolution_independence_1804",
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839"
+  ],
+  [
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632"
   ],
   [
     "ev_united_states_enters_war_1941",
@@ -4061,6 +4187,13 @@
     "ev_potsdam_conference_1945"
   ],
   [
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632"
+  ],
+  [
     "ev_battle_bulge_1944",
     "ev_germany_surrenders_1945",
     "ev_potsdam_conference_1945",
@@ -4404,6 +4537,13 @@
     "ev_germany_surrenders_1945"
   ],
   [
+    "ev_battle_yarmouk_636",
+    "ev_conquest_jerusalem_638",
+    "ev_conquest_egypt_642",
+    "ev_battle_tours_732",
+    "ev_abbasid_revolution_750"
+  ],
+  [
     "ev_bessemer_process_1856",
     "ev_global_market_coordination_1860s",
     "ev_wwi_alliance_system_hardens_1890_1907",
@@ -4488,6 +4628,20 @@
     "ev_wwi_balkan_wars_destabilize_1912_1913"
   ],
   [
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636",
+    "ev_conquest_jerusalem_638"
+  ],
+  [
+    "ev_constitution_medina_622",
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632"
+  ],
+  [
     "ev_cotton_gin_1793",
     "ev_steam_power_transport_expansion_1800s",
     "ev_liverpool_manchester_railway_1830",
@@ -4521,6 +4675,13 @@
     "ev_stockton_darlington_railway_1825",
     "ev_liverpool_manchester_railway_1830",
     "ev_railway_boom_1840s"
+  ],
+  [
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636",
+    "ev_conquest_jerusalem_638",
+    "ev_conquest_egypt_642"
   ],
   [
     "ev_directory_established_1795",
@@ -4817,6 +4978,13 @@
     "ev_auschwitz_killing_center_expansion_1942"
   ],
   [
+    "ev_first_revelation_610",
+    "ev_hijra_622",
+    "ev_constitution_medina_622",
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628"
+  ],
+  [
     "ev_flight_to_varennes_1791",
     "ev_september_massacres_1792",
     "ev_execution_louis_xvi_1793",
@@ -5046,6 +5214,13 @@
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857",
     "ev_berlin_conference_1884"
+  ],
+  [
+    "ev_hijra_622",
+    "ev_constitution_medina_622",
+    "ev_battle_badr_624",
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630"
   ],
   [
     "ev_hitler_suicide_1945",
@@ -6238,6 +6413,13 @@
     "ev_wwi_assassination_franz_ferdinand_1914"
   ],
   [
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636",
+    "ev_conquest_jerusalem_638",
+    "ev_conquest_egypt_642",
+    "ev_battle_tours_732"
+  ],
+  [
     "ev_second_industrial_revolution_1870s",
     "ev_wwi_naval_arms_race_1898_1914",
     "ev_wwi_balkan_wars_destabilize_1912_1913",
@@ -6635,6 +6817,13 @@
     "ev_abolition_british_slave_trade_1807",
     "ev_qing_first_opium_war_1839",
     "ev_indian_revolt_1857"
+  ],
+  [
+    "ev_treaty_hudaybiyyah_628",
+    "ev_conquest_mecca_630",
+    "ev_death_muhammad_632",
+    "ev_ridda_wars_begin_632",
+    "ev_battle_yarmouk_636"
   ],
   [
     "ev_united_states_enters_war_1941",
