@@ -6,27 +6,28 @@
     <title>Causality Drill</title>
     <style>
       body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #f8fafc; color: #0f172a; }
-      main { width: min(760px, calc(100% - 1.5rem)); margin: 1rem auto; background: #fff; border: 1px solid #dbe2ea; border-radius: 14px; padding: 1rem; }
-      h1 { margin: 0 0 0.35rem; }
-      #question { margin-top: 0.75rem; font-size: 1.05rem; font-weight: 700; }
-      #options { display: grid; gap: 0.6rem; margin-top: 0.85rem; }
-      #options button { border: 1px solid #cbd5e1; background: #fff; border-radius: 10px; padding: 0.7rem; text-align: left; cursor: pointer; }
-      #options button:hover,
-      #options button:focus-visible { border-color: #0f766e; box-shadow: 0 0 0 2px #99f6e4; outline: none; }
-      #feedback { min-height: 1.4rem; margin-top: 0.7rem; font-weight: 700; }
-      #feedback.correct { color: #065f46; }
-      #feedback.incorrect { color: #991b1b; }
+      main { width: min(760px, calc(100% - 1.5rem)); margin: 1rem auto 1.4rem; }
+      .panel { background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; padding: 0.9rem; }
+      #question { font-size: 1.12rem; font-weight: 700; margin-bottom: 0.8rem; }
+      #options { display: grid; gap: 0.55rem; }
+      #options button { min-height: 44px; border: 1px solid #cbd5e1; border-radius: 10px; text-align: left; padding: 0.6rem 0.7rem; background: #fff; cursor: pointer; }
+      #options button:disabled { cursor: default; opacity: 0.95; }
+      #feedback { margin-top: 0.75rem; min-height: 1.3rem; color: #334155; font-weight: 600; }
+      #feedback.correct { color: #166534; }
+      #feedback.incorrect { color: #b91c1c; }
       .muted { color: #475569; }
     </style>
   </head>
   <body>
     <main>
-      <h1>Causality Drill</h1>
-      <p class="muted">Fast retrieval practice for event relationships. Questions loop continuously.</p>
-      <div id="question"></div>
-      <div id="options"></div>
-      <div id="feedback" aria-live="polite"></div>
+      <section class="panel">
+        <div id="question">Loading…</div>
+        <div id="options"></div>
+        <div id="feedback" aria-live="polite"></div>
+      </section>
+      <p class="muted">Fast loop mode: answer, get feedback, and continue automatically.</p>
     </main>
+
     <script type="module" src="./app.js"></script>
   </body>
 </html>

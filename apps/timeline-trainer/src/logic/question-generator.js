@@ -4,37 +4,54 @@ function randomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-function weightedSample(events) {
-  const totalWeight = events.reduce((sum, eventRecord) => sum + (Number(eventRecord?.weight) || 1), 0);
-  let roll = Math.random() * totalWeight;
-  for (const eventRecord of events) {
-    roll -= Number(eventRecord?.weight) || 1;
-    if (roll <= 0) return eventRecord;
+function getEventWeight(event) {
+  const value = Number(event?.weight);
+  return Number.isFinite(value) && value > 0 ? value : 1;
+}
+
+function weightedPickIndex(events, excludedIndices = new Set()) {
+  const candidates = [];
+  let total = 0;
+
+  for (let index = 0; index < events.length; index += 1) {
+    if (excludedIndices.has(index)) continue;
+    const weight = getEventWeight(events[index]);
+    total += weight;
+    candidates.push({ index, weight });
+  }
+
+  if (candidates.length === 0) {
+    return -1;
+  }
+
+  if (!Number.isFinite(total) || total <= 0) {
+    return candidates[randomInt(candidates.length)].index;
   }
   return events[events.length - 1];
 }
 
-function pickDistinctPair(events) {
-  const first = weightedSample(events);
-  const remaining = events.filter((eventRecord) => eventRecord.id !== first.id);
-  const second = weightedSample(remaining);
-  if (!second) {
-    return [first, events[randomInt(events.length)]];
+  let roll = Math.random() * total;
+  for (const candidate of candidates) {
+    roll -= candidate.weight;
+    if (roll <= 0) {
+      return candidate.index;
+    }
   }
-  return [first, second];
+
+  return candidates[candidates.length - 1].index;
+}
+
+function pickDistinctPair(events) {
+  const firstIndex = weightedPickIndex(events);
+  const secondIndex = weightedPickIndex(events, new Set([firstIndex]));
+
+  return [events[firstIndex], events[secondIndex]];
 }
 
 function pickDistinctTriplet(events) {
-  const remaining = [...events];
-  const picked = [];
-
-  while (picked.length < 3 && remaining.length > 0) {
-    const selected = weightedSample(remaining);
-    picked.push(selected);
-    const selectedIndex = remaining.findIndex((eventRecord) => eventRecord.id === selected.id);
-    if (selectedIndex >= 0) {
-      remaining.splice(selectedIndex, 1);
-    }
+  const pickedIndices = new Set();
+  while (pickedIndices.size < 3) {
+    pickedIndices.add(weightedPickIndex(events, pickedIndices));
   }
   return picked;
 }

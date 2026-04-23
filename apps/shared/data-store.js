@@ -8,55 +8,11 @@ let eventUnitMapCache = null;
 let normalizedEventsCache = null;
 const warnedEventIds = new Set();
 
-function countOutgoingConnections(event) {
-  if (!Array.isArray(event?.effects)) return 0;
-  return event.effects.reduce((sum, effectRef) => {
-    if (typeof effectRef === "string" && effectRef.trim() !== "") return sum + 1;
-    if (
-      effectRef
-      && typeof effectRef === "object"
-      && typeof effectRef.event_id === "string"
-      && effectRef.event_id.trim() !== ""
-    ) {
-      return sum + 1;
-    }
-    return sum;
-  }, 0);
-}
-
-function countIncomingConnections(event) {
-  if (!Array.isArray(event?.caused_by)) return 0;
-  return event.caused_by.reduce(
-    (sum, eventId) => (typeof eventId === "string" && eventId.trim() !== "" ? sum + 1 : sum),
-    0
-  );
-}
-
-export function computeWeight(event) {
-  const connections = countOutgoingConnections(event) + countIncomingConnections(event);
-  return Math.max(1, connections);
-}
-
-export function weightedSample(items, getWeight = (entry) => entry?.weight) {
-  if (!Array.isArray(items) || items.length === 0) {
-    return null;
-  }
-
-  const normalized = items.map((entry) => {
-    const rawWeight = Number(getWeight(entry));
-    return { entry, weight: Number.isFinite(rawWeight) && rawWeight > 0 ? rawWeight : 1 };
-  });
-
-  const totalWeight = normalized.reduce((sum, row) => sum + row.weight, 0);
-  let roll = Math.random() * totalWeight;
-  for (const row of normalized) {
-    roll -= row.weight;
-    if (roll <= 0) {
-      return row.entry;
-    }
-  }
-
-  return normalized[normalized.length - 1].entry;
+function computeWeight(event) {
+  const outgoing = Array.isArray(event?.effects) ? event.effects.length : 0;
+  const incoming = Array.isArray(event?.caused_by) ? event.caused_by.length : 0;
+  const total = outgoing + incoming;
+  return total > 0 ? total : 1;
 }
 
 function isValidEvent(event) {
@@ -164,7 +120,9 @@ function normalizeEvent(event) {
     tags,
     people_ids: peopleIds,
     effects: normalizeEffects(event.effects, id),
-    weight: computeWeight(event),
+    caused_by: Array.isArray(event.caused_by)
+      ? Array.from(new Set(event.caused_by.filter((causeId) => typeof causeId === "string" && causeId.trim() !== "")))
+      : [],
     location: normalizeLocation(event.location, id),
   };
 }
@@ -174,7 +132,11 @@ export async function getAllEvents() {
   const events = await fetchJson("/data/events.json", "events");
   eventsCache = (Array.isArray(events) ? events : [])
     .map(normalizeEvent)
-    .filter(isValidEvent);
+    .filter(isValidEvent)
+    .map((event) => ({
+      ...event,
+      weight: computeWeight(event),
+    }));
   return eventsCache;
 }
 
@@ -395,4 +357,29 @@ export function setStoredUnitId(unitId) {
 
 export function getEventYear(event) {
   return Number.isFinite(event?.time?.year_start) ? event.time.year_start : 0;
+}
+
+export function weightedSample(items, getWeight = (item) => item?.weight) {
+  if (!Array.isArray(items) || items.length === 0) {
+    return null;
+  }
+
+  const weights = items.map((item) => {
+    const value = Number(getWeight(item));
+    return Number.isFinite(value) && value > 0 ? value : 1;
+  });
+  const totalWeight = weights.reduce((sum, value) => sum + value, 0);
+
+  if (!Number.isFinite(totalWeight) || totalWeight <= 0) {
+    return items[Math.floor(Math.random() * items.length)] || null;
+  }
+
+  let cursor = Math.random() * totalWeight;
+  for (let index = 0; index < items.length; index += 1) {
+    cursor -= weights[index];
+    if (cursor <= 0) {
+      return items[index];
+    }
+  }
+  return items[items.length - 1];
 }

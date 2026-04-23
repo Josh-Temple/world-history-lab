@@ -3,7 +3,6 @@ import { getUnits, setStoredUnitId } from "../shared/data-store.js";
 const modes = [
   { key: "timeline", name: "Timeline", app: "/apps/timeline-trainer/index.html" },
   { key: "sequence", name: "Sequence", app: "/apps/sequence-reconstruction/index.html" },
-  { key: "causality", name: "Causality", app: "/apps/causal-chain/index.html" },
   { key: "causality-drill", name: "Causality Drill", app: "/apps/causality-drill/index.html" },
   { key: "comparison", name: "Comparison", app: "/apps/event-comparison/index.html" },
 ];
@@ -15,6 +14,7 @@ const appContainer = document.getElementById("app");
 const progressEl = document.getElementById("progress");
 const modeHelpEl = document.getElementById("mode-help");
 const modeLabelEl = document.getElementById("mode-label");
+const modeSelectorEl = document.getElementById("mode-selector");
 const unitLabelEl = document.getElementById("unit-label");
 const unitProgressTextEl = document.getElementById("unit-progress-text");
 const progressTrackEl = document.getElementById("progress-track");
@@ -23,7 +23,7 @@ const nextStepButton = document.getElementById("next-step");
 const restartButton = document.getElementById("restart");
 
 let modeIndex = 0;
-let questionCount = 0;
+const modeProgress = new Map(modes.map((mode) => [mode.key, 0]));
 let iframe = null;
 let selectedUnitId = "";
 let units = [];
@@ -31,6 +31,12 @@ let completedUnits = readCompletedUnits();
 
 function getCurrentMode() {
   return modes[modeIndex];
+}
+
+function getCurrentQuestionCount() {
+  const currentMode = getCurrentMode();
+  if (!currentMode) return 0;
+  return modeProgress.get(currentMode.key) || 0;
 }
 
 function updateModeLabel() {
@@ -67,9 +73,7 @@ function getTotalQuestionsPerUnit() {
 }
 
 function getAnsweredQuestionCount() {
-  const completedModes = Math.min(modeIndex, modes.length);
-  const answeredInCurrentMode = modeIndex < modes.length ? Math.min(questionCount, QUESTIONS_PER_MODE) : 0;
-  return (completedModes * QUESTIONS_PER_MODE) + answeredInCurrentMode;
+  return modes.reduce((sum, mode) => sum + Math.min(modeProgress.get(mode.key) || 0, QUESTIONS_PER_MODE), 0);
 }
 
 function updateUnitProgressUi() {
@@ -110,8 +114,10 @@ function updateProgress() {
     return;
   }
 
-  progressEl.textContent = `Mode ${modeIndex + 1}/${modes.length} • Question ${questionCount + 1}/${QUESTIONS_PER_MODE}`;
+  const questionCount = getCurrentQuestionCount();
+  progressEl.textContent = `Mode ${modeIndex + 1}/${modes.length} • Question ${Math.min(questionCount + 1, QUESTIONS_PER_MODE)}/${QUESTIONS_PER_MODE}`;
   updateModeLabel();
+  updateModeSelector();
   updateUnitProgressUi();
   updateUnitLabel();
 }
@@ -188,7 +194,7 @@ function renderMode() {
   appContainer.appendChild(iframe);
 
   modeHelpEl.textContent = `Mode: ${mode.name}. Complete ${QUESTIONS_PER_MODE} questions, then continue.`;
-  nextStepButton.disabled = false;
+  nextStepButton.disabled = modeProgress.get(mode.key) >= QUESTIONS_PER_MODE;
   updateProgress();
 }
 
@@ -224,12 +230,19 @@ function showCompletion() {
   }
 
   nextStepButton.disabled = true;
+  updateModeSelector();
   updateProgress();
 }
 
-function advanceMode() {
-  modeIndex += 1;
-  questionCount = 0;
+function findNextIncompleteModeIndex(startIndex = modeIndex) {
+  for (let offset = 1; offset <= modes.length; offset += 1) {
+    const index = (startIndex + offset) % modes.length;
+    const mode = modes[index];
+    if ((modeProgress.get(mode.key) || 0) < QUESTIONS_PER_MODE) {
+      return index;
+    }
+  }
+  return -1;
 }
 
 function next() {
@@ -237,17 +250,39 @@ function next() {
     return;
   }
 
-  questionCount += 1;
+  const mode = getCurrentMode();
+  if (!mode) {
+    return;
+  }
+  const currentCount = modeProgress.get(mode.key) || 0;
+  if (currentCount >= QUESTIONS_PER_MODE) {
+    const nextIndex = findNextIncompleteModeIndex(modeIndex);
+    if (nextIndex < 0) {
+      modeIndex = modes.length;
+      showCompletion();
+    } else {
+      modeIndex = nextIndex;
+      renderMode();
+    }
+    return;
+  }
 
-  if (questionCount >= QUESTIONS_PER_MODE) {
-    advanceMode();
-    if (modeIndex < modes.length) {
+  modeProgress.set(mode.key, currentCount + 1);
+
+  const totalAnswered = getAnsweredQuestionCount();
+  if (totalAnswered >= getTotalQuestionsPerUnit()) {
+    modeIndex = modes.length;
+    showCompletion();
+    return;
+  }
+
+  if ((modeProgress.get(mode.key) || 0) >= QUESTIONS_PER_MODE) {
+    const nextIndex = findNextIncompleteModeIndex(modeIndex);
+    if (nextIndex >= 0) {
+      modeIndex = nextIndex;
       renderMode();
       return;
     }
-
-    showCompletion();
-    return;
   }
 
   updateProgress();
@@ -255,8 +290,35 @@ function next() {
 
 function restart() {
   modeIndex = 0;
-  questionCount = 0;
+  for (const mode of modes) {
+    modeProgress.set(mode.key, 0);
+  }
   renderMode();
+}
+
+function setMode(modeKey) {
+  const index = modes.findIndex((mode) => mode.key === modeKey);
+  if (index < 0 || modeIndex >= modes.length) return;
+  modeIndex = index;
+  renderMode();
+}
+
+function updateModeSelector() {
+  if (!modeSelectorEl) return;
+  const currentMode = getCurrentMode();
+  modeSelectorEl.dataset.mode = currentMode?.key || "complete";
+
+  const html = modes.map((mode) => {
+    const count = Math.min(modeProgress.get(mode.key) || 0, QUESTIONS_PER_MODE);
+    const done = count >= QUESTIONS_PER_MODE ? "✓" : `${count}/${QUESTIONS_PER_MODE}`;
+    const active = currentMode?.key === mode.key ? "mode-chip active" : "mode-chip";
+    return `<button type="button" class="${active}" data-mode-key="${mode.key}">${mode.name} · ${done}</button>`;
+  }).join("");
+
+  modeSelectorEl.innerHTML = html;
+  modeSelectorEl.querySelectorAll("[data-mode-key]").forEach((button) => {
+    button.addEventListener("click", () => setMode(button.getAttribute("data-mode-key") || ""));
+  });
 }
 
 async function init() {
@@ -282,6 +344,7 @@ async function init() {
 
   updateUnitLabel();
   updateUnitProgressUi();
+  updateModeSelector();
   renderMode();
 }
 
