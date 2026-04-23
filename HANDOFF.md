@@ -1,3 +1,29 @@
+## Incremental update (2026-04-22 · causality drill + weighted connectivity sampling)
+- Added new learner-facing route `apps/causality-drill/` with a continuous retrieval loop:
+  - `apps/causality-drill/index.html`
+  - `apps/causality-drill/app.js`
+  - supports both causal directions (`cause → effect` and `effect → cause`) with 4-option MCQ prompts and immediate correctness feedback.
+- Integrated Causality Drill into guided flow:
+  - updated `apps/session-runner/app.js` to include Causality Drill as a first-class guided mode step.
+- Added graph-connectivity weighting utilities in shared data layer:
+  - `computeWeight(event)` counts outgoing + incoming causal links,
+  - `weightedSample(items)` supports weighted random event selection with safe fallback behavior.
+  - both exposed in `apps/shared/data-store.js`; normalized events now include `weight`.
+- Applied weighted sampling in Timeline Trainer question generation:
+  - updated `apps/timeline-trainer/src/data/loaders.js` to source normalized events,
+  - updated `apps/timeline-trainer/src/logic/question-generator.js` so pair/triplet candidate selection uses weighted draws instead of uniform random picks.
+- Added Causality Drill discoverability/support in app shell:
+  - linked new mode from `index.html`,
+  - added new app URLs to `service-worker.js` cache list and bumped shell cache version to `world-history-lab-shell-v2`.
+
+## Validation completed (2026-04-22)
+- `node scripts/derive.mjs` ✅
+
+## Suggested next steps
+1. Add a small distractor-quality heuristic in Causality Drill (same-era or same-tag alternatives) to improve option plausibility.
+2. Consider exposing a per-mode weighting intensity knob so heavily central events do not dominate advanced learners’ sessions.
+3. Add a smoke check that verifies Causality Drill can generate both forward and reverse prompts from current normalized data.
+
 ## Incremental update (2026-04-15 · geographic metadata + first map-based learning mode)
 - Added location metadata to key WWI/WWII events in `data/events.json` using a normalized shape:
   - `location.region` (string)

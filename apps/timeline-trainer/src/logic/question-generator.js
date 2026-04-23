@@ -27,6 +27,8 @@ function weightedPickIndex(events, excludedIndices = new Set()) {
   if (!Number.isFinite(total) || total <= 0) {
     return candidates[randomInt(candidates.length)].index;
   }
+  return events[events.length - 1];
+}
 
   let roll = Math.random() * total;
   for (const candidate of candidates) {
@@ -51,7 +53,7 @@ function pickDistinctTriplet(events) {
   while (pickedIndices.size < 3) {
     pickedIndices.add(weightedPickIndex(events, pickedIndices));
   }
-  return Array.from(pickedIndices).map((index) => events[index]);
+  return picked;
 }
 
 function orderByYear(eventA, eventB) {

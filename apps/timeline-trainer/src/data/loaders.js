@@ -1,4 +1,4 @@
-import { getAllEvents, getUnitById, getUnits } from "../../../shared/data-store.js";
+import { getNormalizedEvents, getUnitById, getUnits } from "../../../shared/data-store.js";
 
 function assertEventShape(events) {
   if (!Array.isArray(events)) {
@@ -55,7 +55,7 @@ async function resolveUnits() {
 }
 
 export async function loadTimelineSeedData() {
-  const events = await getAllEvents();
+  const events = await getNormalizedEvents();
   assertEventShape(events);
 
   const units = await resolveUnits();
