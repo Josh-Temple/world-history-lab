@@ -4,12 +4,44 @@ function randomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-function pickDistinctPair(events) {
-  const firstIndex = randomInt(events.length);
-  let secondIndex = randomInt(events.length - 1);
-  if (secondIndex >= firstIndex) {
-    secondIndex += 1;
+function getEventWeight(event) {
+  const value = Number(event?.weight);
+  return Number.isFinite(value) && value > 0 ? value : 1;
+}
+
+function weightedPickIndex(events, excludedIndices = new Set()) {
+  const candidates = [];
+  let total = 0;
+
+  for (let index = 0; index < events.length; index += 1) {
+    if (excludedIndices.has(index)) continue;
+    const weight = getEventWeight(events[index]);
+    total += weight;
+    candidates.push({ index, weight });
   }
+
+  if (candidates.length === 0) {
+    return -1;
+  }
+
+  if (!Number.isFinite(total) || total <= 0) {
+    return candidates[randomInt(candidates.length)].index;
+  }
+
+  let roll = Math.random() * total;
+  for (const candidate of candidates) {
+    roll -= candidate.weight;
+    if (roll <= 0) {
+      return candidate.index;
+    }
+  }
+
+  return candidates[candidates.length - 1].index;
+}
+
+function pickDistinctPair(events) {
+  const firstIndex = weightedPickIndex(events);
+  const secondIndex = weightedPickIndex(events, new Set([firstIndex]));
 
   return [events[firstIndex], events[secondIndex]];
 }
@@ -17,7 +49,7 @@ function pickDistinctPair(events) {
 function pickDistinctTriplet(events) {
   const pickedIndices = new Set();
   while (pickedIndices.size < 3) {
-    pickedIndices.add(randomInt(events.length));
+    pickedIndices.add(weightedPickIndex(events, pickedIndices));
   }
   return Array.from(pickedIndices).map((index) => events[index]);
 }

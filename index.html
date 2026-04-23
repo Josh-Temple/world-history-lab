@@ -67,28 +67,41 @@
       }
 
       #modes {
-        margin-top: 0.4rem;
+        margin-top: 0.7rem;
+        display: grid;
+        gap: 0.9rem;
       }
 
-      #modes h2 {
+      .mode-group {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 0.75rem;
+        background: #fcfefe;
+      }
+
+      .mode-group h2 {
         margin: 0;
         font-size: 1.2rem;
       }
 
-      #modes ul {
+      .mode-group ul {
         list-style: none;
         padding: 0;
         margin: 0.55rem 0 0;
       }
 
-      #modes li {
+      .mode-group li {
         margin: 8px 0;
         color: var(--muted);
       }
 
-      #modes a {
+      .mode-group a {
         color: var(--accent);
         font-weight: 700;
+      }
+
+      .secondary {
+        opacity: 0.88;
       }
 
       @media (max-width: 640px) {
@@ -113,14 +126,24 @@
       </div>
 
       <div id="modes">
-        <h2>Practice Modes</h2>
-        <ul>
-          <li><a href="/apps/timeline-trainer/">Timeline</a> – place events in time</li>
-          <li><a href="/apps/causal-chain/">Causality</a> – understand cause and effect</li>
-          <li><a href="/apps/event-comparison/">Comparison</a> – compare events</li>
-          <li><a href="/apps/map-quiz/">Map</a> – learn where events happened</li>
-          <li><a href="/apps/graph-explorer/">Graph Explorer</a> – explore incoming/outgoing event links</li>
-        </ul>
+        <section class="mode-group">
+          <h2>Practice</h2>
+          <ul>
+            <li><a href="/apps/timeline-trainer/">Timeline Trainer</a> – place events in time.</li>
+            <li><a href="/apps/sequence-reconstruction/">Sequence</a> – order events correctly.</li>
+            <li><a href="/apps/causality-drill/">Causality Drill</a> – recall cause and effect quickly.</li>
+            <li><a href="/apps/event-comparison/">Comparison</a> – compare events and themes.</li>
+            <li><a href="/apps/map-quiz/">Map Quiz</a> – match events to locations.</li>
+          </ul>
+        </section>
+
+        <section class="mode-group secondary">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="/apps/graph-explorer/">Graph Explorer</a> – inspect incoming and outgoing links.</li>
+            <li><a href="/apps/causal-chain/">Causal Chain</a> – reconstruct full relationship sequences.</li>
+          </ul>
+        </section>
       </div>
     </div>
 
