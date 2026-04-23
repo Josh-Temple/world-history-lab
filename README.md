@@ -110,6 +110,27 @@ Next:
 
 ## Recent updates (2026-04-21 · Islamic expansion unit + controlled tag normalization)
 
+## Recent updates (2026-04-22 · causality drill mode + connectivity-weighted sampling)
+
+- Added a new fast-retrieval app route at `apps/causality-drill/`:
+  - `apps/causality-drill/index.html`
+  - `apps/causality-drill/app.js`
+  - generates continuous multiple-choice causality questions in two directions:
+    - cause → effect (`What happened next after...`)
+    - effect → cause (`What caused...`)
+  - includes immediate answer feedback and automatic next-question loop.
+- Integrated Causality Drill into guided progression:
+  - updated `apps/session-runner/app.js` to include a dedicated `Causality Drill` mode step.
+- Added connectivity-aware weighting in shared data/runtime:
+  - added `computeWeight(event)` and `weightedSample(...)` in `apps/shared/data-store.js`,
+  - event weights now reflect graph connectivity (`effects` + `caused_by`) with safe minimum fallback.
+- Applied weighted event sampling to Timeline Trainer generation:
+  - updated `apps/timeline-trainer/src/data/loaders.js` to load normalized events (including reverse links),
+  - updated `apps/timeline-trainer/src/logic/question-generator.js` so pair/triplet selection favors higher-connectivity events while preserving randomness.
+- Updated discoverability/runtime shell:
+  - added Causality Drill link to `index.html`,
+  - added Causality Drill assets to app-shell pre-cache list in `service-worker.js` and bumped cache version.
+
 - Added a new non-European unit at `data/units/islamic_expansion.json` focused on the rise and expansion of Islam in the 7th–8th centuries.
 - Expanded core relational content to support the unit:
   - added 13 Islamic-expansion events in `data/events.json` (community formation, conquests, and Abbasid transition),

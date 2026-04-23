@@ -1,4 +1,4 @@
-const APP_SHELL_CACHE = 'world-history-lab-shell-v1';
+const APP_SHELL_CACHE = 'world-history-lab-shell-v2';
 const RUNTIME_CACHE = 'world-history-lab-runtime-v1';
 const APP_SHELL_URLS = [
   '/',
@@ -28,6 +28,9 @@ const APP_SHELL_URLS = [
   '/apps/causal-chain/',
   '/apps/causal-chain/index.html',
   '/apps/causal-chain/app.js',
+  '/apps/causality-drill/',
+  '/apps/causality-drill/index.html',
+  '/apps/causality-drill/app.js',
   '/data/derived/causal_chains.json',
   '/apps/history-player/',
   '/apps/history-player/index.html',

@@ -4,22 +4,39 @@ function randomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-function pickDistinctPair(events) {
-  const firstIndex = randomInt(events.length);
-  let secondIndex = randomInt(events.length - 1);
-  if (secondIndex >= firstIndex) {
-    secondIndex += 1;
+function weightedSample(events) {
+  const totalWeight = events.reduce((sum, eventRecord) => sum + (Number(eventRecord?.weight) || 1), 0);
+  let roll = Math.random() * totalWeight;
+  for (const eventRecord of events) {
+    roll -= Number(eventRecord?.weight) || 1;
+    if (roll <= 0) return eventRecord;
   }
+  return events[events.length - 1];
+}
 
-  return [events[firstIndex], events[secondIndex]];
+function pickDistinctPair(events) {
+  const first = weightedSample(events);
+  const remaining = events.filter((eventRecord) => eventRecord.id !== first.id);
+  const second = weightedSample(remaining);
+  if (!second) {
+    return [first, events[randomInt(events.length)]];
+  }
+  return [first, second];
 }
 
 function pickDistinctTriplet(events) {
-  const pickedIndices = new Set();
-  while (pickedIndices.size < 3) {
-    pickedIndices.add(randomInt(events.length));
+  const remaining = [...events];
+  const picked = [];
+
+  while (picked.length < 3 && remaining.length > 0) {
+    const selected = weightedSample(remaining);
+    picked.push(selected);
+    const selectedIndex = remaining.findIndex((eventRecord) => eventRecord.id === selected.id);
+    if (selectedIndex >= 0) {
+      remaining.splice(selectedIndex, 1);
+    }
   }
-  return Array.from(pickedIndices).map((index) => events[index]);
+  return picked;
 }
 
 function orderByYear(eventA, eventB) {

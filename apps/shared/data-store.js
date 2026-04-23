@@ -8,6 +8,57 @@ let eventUnitMapCache = null;
 let normalizedEventsCache = null;
 const warnedEventIds = new Set();
 
+function countOutgoingConnections(event) {
+  if (!Array.isArray(event?.effects)) return 0;
+  return event.effects.reduce((sum, effectRef) => {
+    if (typeof effectRef === "string" && effectRef.trim() !== "") return sum + 1;
+    if (
+      effectRef
+      && typeof effectRef === "object"
+      && typeof effectRef.event_id === "string"
+      && effectRef.event_id.trim() !== ""
+    ) {
+      return sum + 1;
+    }
+    return sum;
+  }, 0);
+}
+
+function countIncomingConnections(event) {
+  if (!Array.isArray(event?.caused_by)) return 0;
+  return event.caused_by.reduce(
+    (sum, eventId) => (typeof eventId === "string" && eventId.trim() !== "" ? sum + 1 : sum),
+    0
+  );
+}
+
+export function computeWeight(event) {
+  const connections = countOutgoingConnections(event) + countIncomingConnections(event);
+  return Math.max(1, connections);
+}
+
+export function weightedSample(items, getWeight = (entry) => entry?.weight) {
+  if (!Array.isArray(items) || items.length === 0) {
+    return null;
+  }
+
+  const normalized = items.map((entry) => {
+    const rawWeight = Number(getWeight(entry));
+    return { entry, weight: Number.isFinite(rawWeight) && rawWeight > 0 ? rawWeight : 1 };
+  });
+
+  const totalWeight = normalized.reduce((sum, row) => sum + row.weight, 0);
+  let roll = Math.random() * totalWeight;
+  for (const row of normalized) {
+    roll -= row.weight;
+    if (roll <= 0) {
+      return row.entry;
+    }
+  }
+
+  return normalized[normalized.length - 1].entry;
+}
+
 function isValidEvent(event) {
   return Boolean(
     event
@@ -113,6 +164,7 @@ function normalizeEvent(event) {
     tags,
     people_ids: peopleIds,
     effects: normalizeEffects(event.effects, id),
+    weight: computeWeight(event),
     location: normalizeLocation(event.location, id),
   };
 }
@@ -146,6 +198,7 @@ function normalizeNormalizedEvent(event) {
     ...base,
     unit_ids: unitIds,
     caused_by: Array.from(new Set(causedBy)),
+    weight: computeWeight({ ...base, caused_by: causedBy }),
   };
 }
 

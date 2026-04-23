@@ -4,6 +4,7 @@ const modes = [
   { key: "timeline", name: "Timeline", app: "/apps/timeline-trainer/index.html" },
   { key: "sequence", name: "Sequence", app: "/apps/sequence-reconstruction/index.html" },
   { key: "causality", name: "Causality", app: "/apps/causal-chain/index.html" },
+  { key: "causality-drill", name: "Causality Drill", app: "/apps/causality-drill/index.html" },
   { key: "comparison", name: "Comparison", app: "/apps/event-comparison/index.html" },
 ];
 

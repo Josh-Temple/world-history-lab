@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Causality Drill</title>
+    <style>
+      body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #f8fafc; color: #0f172a; }
+      main { width: min(760px, calc(100% - 1.5rem)); margin: 1rem auto; background: #fff; border: 1px solid #dbe2ea; border-radius: 14px; padding: 1rem; }
+      h1 { margin: 0 0 0.35rem; }
+      #question { margin-top: 0.75rem; font-size: 1.05rem; font-weight: 700; }
+      #options { display: grid; gap: 0.6rem; margin-top: 0.85rem; }
+      #options button { border: 1px solid #cbd5e1; background: #fff; border-radius: 10px; padding: 0.7rem; text-align: left; cursor: pointer; }
+      #options button:hover,
+      #options button:focus-visible { border-color: #0f766e; box-shadow: 0 0 0 2px #99f6e4; outline: none; }
+      #feedback { min-height: 1.4rem; margin-top: 0.7rem; font-weight: 700; }
+      #feedback.correct { color: #065f46; }
+      #feedback.incorrect { color: #991b1b; }
+      .muted { color: #475569; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Causality Drill</h1>
+      <p class="muted">Fast retrieval practice for event relationships. Questions loop continuously.</p>
+      <div id="question"></div>
+      <div id="options"></div>
+      <div id="feedback" aria-live="polite"></div>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
