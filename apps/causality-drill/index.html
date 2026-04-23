@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Causality Drill</title>
+    <style>
+      body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #f8fafc; color: #0f172a; }
+      main { width: min(760px, calc(100% - 1.5rem)); margin: 1rem auto 1.4rem; }
+      .panel { background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; padding: 0.9rem; }
+      #question { font-size: 1.12rem; font-weight: 700; margin-bottom: 0.8rem; }
+      #options { display: grid; gap: 0.55rem; }
+      #options button { min-height: 44px; border: 1px solid #cbd5e1; border-radius: 10px; text-align: left; padding: 0.6rem 0.7rem; background: #fff; cursor: pointer; }
+      #options button:disabled { cursor: default; opacity: 0.95; }
+      #feedback { margin-top: 0.75rem; min-height: 1.3rem; color: #334155; font-weight: 600; }
+      #feedback.correct { color: #166534; }
+      #feedback.incorrect { color: #b91c1c; }
+      .muted { color: #475569; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <div id="question">Loading…</div>
+        <div id="options"></div>
+        <div id="feedback" aria-live="polite"></div>
+      </section>
+      <p class="muted">Fast loop mode: answer, get feedback, and continue automatically.</p>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

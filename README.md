@@ -708,3 +708,33 @@ TBD
 1. Replace the manual “Complete Question” control in Session Runner with message-based completion signals emitted by each embedded app for true question-level progression.
 2. Add a small in-run mini-map/path indicator (completed/current/upcoming modes) to reinforce learner orientation.
 3. Add a smoke check for mode-sequencing behavior (5 clicks per mode, full loop completion, next-unit button visibility).
+
+
+## Recent updates (2026-04-22 · causality drill mode + connectivity-weighted sampling)
+
+- Added a new rapid-recall app route at `apps/causality-drill/`:
+  - continuously loops causal retrieval prompts with immediate feedback,
+  - supports both forward prompts (“What happened next after…?”) and reverse prompts (“What caused…?”),
+  - builds 3–4 option multiple-choice sets from linked events.
+- Extended shared event normalization in `apps/shared/data-store.js`:
+  - computes per-event `weight` from graph connectivity (`effects` + `caused_by` counts),
+  - exports `weightedSample()` for weighted question/event selection across modes.
+- Applied connectivity weighting to timeline question generation in `apps/timeline-trainer/src/logic/question-generator.js` so higher-connection events are sampled more often while preserving randomness.
+- Integrated Causality Drill into guided sessions by updating `apps/session-runner/app.js` mode routing.
+- Updated discoverability/runtime support:
+  - added Causality Drill link to `index.html`,
+  - added Causality Drill files to offline app-shell caching in `service-worker.js`.
+
+
+## Recent updates (2026-04-23 · onboarding clarity + in-session mode switching)
+
+- Reworked `index.html` to reduce choice overload and make guided flow the clear default:
+  - keeps a prominent **Start Learning** CTA to open `apps/session-runner/`,
+  - groups tools into **Practice** and **Explore** sections,
+  - adds concise one-line role descriptions and de-emphasizes secondary exploratory tools.
+- Extended `apps/session-runner/index.html` and `apps/session-runner/app.js` with a lightweight in-session mode switcher:
+  - adds mode selector chips (Timeline / Sequence / Causality Drill / Comparison),
+  - allows switching modes without leaving the session runner page,
+  - preserves per-mode progress counts when switching,
+  - keeps total session progress and completion logic consistent across manual mode changes.
+

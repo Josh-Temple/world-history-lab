@@ -755,3 +755,52 @@
 1. Add app-level UI filters for the controlled tag taxonomy so learners can explicitly practice by theme (e.g., all `empire` or all `religion` events).
 2. Continue non-European data expansion with a companion unit (e.g., Tang-Song transitions or Abbasid-era trade/science) to strengthen cross-unit comparisons.
 3. Gradually replace high-noise legacy tags in `data/events.json` with canonical tags directly at source so derive logs are cleaner.
+
+
+## Incremental update (2026-04-22 · causality drill + weighted sampling)
+- Added `apps/causality-drill/index.html` and `apps/causality-drill/app.js` for continuous causal recall practice:
+  - forward (`cause → effect`) and reverse (`effect → cause`) prompts,
+  - multiple-choice options (up to 4),
+  - immediate correct/incorrect feedback and auto-advance loop.
+- Updated `apps/shared/data-store.js`:
+  - normalizes `caused_by` on base events,
+  - computes `weight` from graph degree (`effects` + `caused_by`),
+  - exports `weightedSample(items, getWeight?)` helper for weighted selection.
+- Updated `apps/timeline-trainer/src/logic/question-generator.js`:
+  - pair/triplet event sampling now uses weighted selection by event `weight`.
+- Updated guided/discovery flows:
+  - `apps/session-runner/app.js` now includes **Causality Drill** in guided mode list,
+  - `index.html` adds Causality Drill to Practice Modes,
+  - `service-worker.js` precaches Causality Drill assets and bumps shell cache version.
+
+## Validation completed (2026-04-22)
+- `node scripts/derive.mjs` ✅ (passes with existing dataset tag/category warnings)
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add optional distractor-quality filtering in Causality Drill (e.g., same unit/theme distractors first) to reduce trivial options.
+2. Add a tiny in-app mode toggle to force forward-only or reverse-only drills for focused remediation.
+3. Reuse `weightedSample()` in additional modes (e.g., event recognition/comparison) for consistent centrality-aware repetition.
+
+
+## Incremental update (2026-04-23 · onboarding clarity + in-session mode switching)
+- Updated `index.html` to improve onboarding clarity:
+  - retained a dominant **Start Learning** CTA for guided entry,
+  - split mode links into **Practice** vs **Explore**,
+  - added concise role descriptions and visual de-emphasis for secondary tools.
+- Updated `apps/session-runner/index.html` to include a mode selector strip.
+- Updated `apps/session-runner/app.js` to support in-session mode switching without leaving the runner page:
+  - mode switch preserves each mode's question count (`x/5`),
+  - total unit progress remains aggregated across modes,
+  - completion state still triggers when total target questions are met.
+
+## Validation completed (2026-04-23)
+- `node scripts/derive.mjs` ✅ (passes with existing dataset warnings)
+- `node scripts/validate.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Replace manual “Complete Question” clicks with message events emitted from embedded apps to reduce click overhead.
+2. Add optional auto-rotate mode schedule (e.g., every N questions) to encourage varied retrieval practice.
+3. Add a tiny tooltip/help legend explaining what each mode selector chip trains.
+

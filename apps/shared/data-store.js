@@ -8,6 +8,13 @@ let eventUnitMapCache = null;
 let normalizedEventsCache = null;
 const warnedEventIds = new Set();
 
+function computeWeight(event) {
+  const outgoing = Array.isArray(event?.effects) ? event.effects.length : 0;
+  const incoming = Array.isArray(event?.caused_by) ? event.caused_by.length : 0;
+  const total = outgoing + incoming;
+  return total > 0 ? total : 1;
+}
+
 function isValidEvent(event) {
   return Boolean(
     event
@@ -113,6 +120,9 @@ function normalizeEvent(event) {
     tags,
     people_ids: peopleIds,
     effects: normalizeEffects(event.effects, id),
+    caused_by: Array.isArray(event.caused_by)
+      ? Array.from(new Set(event.caused_by.filter((causeId) => typeof causeId === "string" && causeId.trim() !== "")))
+      : [],
     location: normalizeLocation(event.location, id),
   };
 }
@@ -122,7 +132,11 @@ export async function getAllEvents() {
   const events = await fetchJson("/data/events.json", "events");
   eventsCache = (Array.isArray(events) ? events : [])
     .map(normalizeEvent)
-    .filter(isValidEvent);
+    .filter(isValidEvent)
+    .map((event) => ({
+      ...event,
+      weight: computeWeight(event),
+    }));
   return eventsCache;
 }
 
@@ -146,6 +160,7 @@ function normalizeNormalizedEvent(event) {
     ...base,
     unit_ids: unitIds,
     caused_by: Array.from(new Set(causedBy)),
+    weight: computeWeight({ ...base, caused_by: causedBy }),
   };
 }
 
@@ -342,4 +357,29 @@ export function setStoredUnitId(unitId) {
 
 export function getEventYear(event) {
   return Number.isFinite(event?.time?.year_start) ? event.time.year_start : 0;
+}
+
+export function weightedSample(items, getWeight = (item) => item?.weight) {
+  if (!Array.isArray(items) || items.length === 0) {
+    return null;
+  }
+
+  const weights = items.map((item) => {
+    const value = Number(getWeight(item));
+    return Number.isFinite(value) && value > 0 ? value : 1;
+  });
+  const totalWeight = weights.reduce((sum, value) => sum + value, 0);
+
+  if (!Number.isFinite(totalWeight) || totalWeight <= 0) {
+    return items[Math.floor(Math.random() * items.length)] || null;
+  }
+
+  let cursor = Math.random() * totalWeight;
+  for (let index = 0; index < items.length; index += 1) {
+    cursor -= weights[index];
+    if (cursor <= 0) {
+      return items[index];
+    }
+  }
+  return items[items.length - 1];
 }
