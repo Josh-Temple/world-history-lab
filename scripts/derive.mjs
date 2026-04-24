@@ -329,15 +329,7 @@ function validatePeople(people) {
   return personIdSet;
 }
 
-function validateCrossReferences({ events, eventIdSet, peopleIdSet, units }) {
-  for (const unit of units) {
-    for (const eventId of unit.event_ids) {
-      if (!eventIdSet.has(eventId)) {
-        throw new Error(`Unit ${unit.id} references missing event: ${eventId}`);
-      }
-    }
-  }
-
+function validateCrossReferences({ events, eventIdSet, peopleIdSet }) {
   for (const event of events) {
     const effectIds = Array.isArray(event.effects) ? event.effects : [];
     for (const effectRef of effectIds) {
@@ -476,6 +468,45 @@ function validateEventLocations(events) {
     }
     if (lon < -180 || lon > 180) {
       throw new Error(`Event ${event.id}: location.lon must be between -180 and 180`);
+    }
+  }
+}
+
+
+function validateUnitCoverage(events, units, eventIdSet) {
+  const unitEventIds = new Set();
+
+  for (const unit of units) {
+    for (const eventId of unit.event_ids) {
+      if (!eventIdSet.has(eventId)) {
+        throw new Error(`Unit ${unit.id} references missing event: ${eventId}`);
+      }
+      unitEventIds.add(eventId);
+    }
+  }
+
+  for (const event of events) {
+    if (!unitEventIds.has(event.id)) {
+      throw new Error(`Orphan event (not in any unit): ${event.id}`);
+    }
+  }
+}
+
+function validateDerivedCausedByConsistency(events, eventLookup, causedByMap) {
+  for (const event of events) {
+    const incoming = Array.from(causedByMap.get(event.id) || []);
+    for (const sourceId of incoming) {
+      const sourceEvent = eventLookup.get(sourceId);
+      if (!sourceEvent) {
+        throw new Error(`Inconsistent caused_by: missing source event ${sourceId} for ${event.id}`);
+      }
+
+      const sourceEffectIds = (Array.isArray(sourceEvent.effects) ? sourceEvent.effects : [])
+        .map(getEffectEventId)
+        .filter((value) => typeof value === "string");
+      if (!sourceEffectIds.includes(event.id)) {
+        throw new Error(`Inconsistent caused_by: ${sourceId} -> ${event.id}`);
+      }
     }
   }
 }
@@ -881,11 +912,13 @@ async function main() {
     eventIdSet.add(event.id);
   }
 
-  validateCrossReferences({ events, eventIdSet, peopleIdSet, units });
+  validateCrossReferences({ events, eventIdSet, peopleIdSet });
+  validateUnitCoverage(events, units, eventIdSet);
   validateEventTags(events);
   validateConceptTags(events, allowedConceptTags);
   validateEventLocations(events);
   const causedByMap = buildCausedByMap(events, eventIdSet);
+  validateDerivedCausedByConsistency(events, eventLookup, causedByMap);
 
   const normalizedEvents = [];
   for (const event of events) {

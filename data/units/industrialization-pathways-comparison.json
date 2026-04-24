@@ -35,7 +35,13 @@
     "ev_meiji_conscription_1873",
     "ev_second_industrial_revolution_1870s",
     "ev_meiji_sinojapanese_war_1894",
-    "ev_meiji_russojapanese_war_1905"
+    "ev_meiji_russojapanese_war_1905",
+    "ev_concert_of_europe_1815_1848",
+    "ev_state_military_fiscal_expansion_1810s_1820s",
+    "ev_railway_boom_1840s",
+    "ev_mass_politics_worker_parties_1880s_1890s",
+    "ev_modern_urban_infrastructure_1850s_1870s",
+    "ev_urbanization_accelerates_1800_1850"
   ],
   "person_ids": [
     "pe_james_watt",
@@ -98,5 +104,5 @@
     }
   },
   "status": "reviewed",
-  "updated_at": "2026-04-05"
+  "updated_at": "2026-04-24"
 }

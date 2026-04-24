@@ -759,3 +759,16 @@ TBD
   - preserves per-mode progress counts when switching,
   - keeps total session progress and completion logic consistent across manual mode changes.
 
+
+## Recent updates (2026-04-24 · graph integrity validation + sanity runner)
+
+- Strengthened derive-time reliability checks in `scripts/derive.mjs`:
+  - enforces full unit coverage by failing on orphan events that are not referenced by any unit,
+  - validates reverse-link consistency for derived `caused_by` relationships against forward `effects` links,
+  - keeps strict hard-fail behavior for invalid cross-file references.
+- Added lightweight integration validation script `scripts/sanity-check.mjs`:
+  - loads core events + unit registry/unit files,
+  - runs randomized effect-resolution sampling,
+  - verifies unit `event_ids` are non-empty and resolvable,
+  - exits non-zero on any inconsistency for CI/pre-commit usage.
+- Added `npm run sanity` script in `package.json`.

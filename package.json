@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "derive": "node scripts/derive.mjs",
-    "smoke": "node scripts/smoke-test.mjs"
+    "smoke": "node scripts/smoke-test.mjs",
+    "sanity": "node scripts/sanity-check.mjs"
   }
 }
