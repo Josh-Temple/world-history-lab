@@ -111,7 +111,9 @@
       "empire_imperialism"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -192,7 +194,9 @@
       "belief_systems_cultural_exchange"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -319,7 +323,9 @@
       "empire_imperialism"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -953,7 +959,9 @@
       "pe_andrew_carnegie",
       "pe_jp_morgan"
     ],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -984,7 +992,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -1059,7 +1069,9 @@
       "belief_systems_cultural_exchange"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -1211,7 +1223,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrialization_pathways_comparison"
+    ],
     "caused_by": [
       "ev_congress_vienna_1815"
     ],
@@ -1551,7 +1565,9 @@
       "state_formation_governance"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -1669,7 +1685,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -1700,7 +1718,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -2417,7 +2437,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -2713,7 +2735,9 @@
       "belief_systems_cultural_exchange"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -4488,7 +4512,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrialization_pathways_comparison"
+    ],
     "caused_by": [
       "ev_first_international_1864",
       "ev_matchgirls_strike_1888",
@@ -4611,7 +4637,9 @@
       "state_formation_governance"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -5172,7 +5200,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrialization_pathways_comparison"
+    ],
     "caused_by": [
       "ev_public_health_act_1848"
     ],
@@ -5256,7 +5286,9 @@
       "empire_imperialism"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -5946,7 +5978,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -6021,7 +6055,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -6179,7 +6215,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrialization_pathways_comparison"
+    ],
     "caused_by": [
       "ev_congress_vienna_1815",
       "ev_liverpool_manchester_railway_1830"
@@ -6216,7 +6254,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -6491,7 +6531,9 @@
       "technology_industrialization"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -6739,7 +6781,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -6770,7 +6814,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -6801,7 +6847,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -6834,7 +6882,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrialization_pathways_comparison"
+    ],
     "caused_by": [
       "ev_napoleonic_wars_1803_1815"
     ],
@@ -7015,7 +7065,9 @@
       "state_formation_governance"
     ],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_foundations_world_history"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -7418,7 +7470,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrialization_pathways_comparison"
+    ],
     "caused_by": [
       "ev_factory_system_rise_1780s"
     ],
@@ -7581,7 +7635,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],
@@ -7612,7 +7668,9 @@
     ],
     "concept_tags": [],
     "people_ids": [],
-    "unit_ids": [],
+    "unit_ids": [
+      "unit_industrial_revolution"
+    ],
     "caused_by": [],
     "effects": [],
     "causes": [],

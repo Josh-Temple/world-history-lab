@@ -830,3 +830,25 @@
 2. Add optional auto-rotate mode schedule (e.g., every N questions) to encourage varied retrieval practice.
 3. Add a tiny tooltip/help legend explaining what each mode selector chip trains.
 
+
+## Incremental update (2026-04-24 · strict graph validation + sanity integration check)
+- Updated `scripts/derive.mjs` to add stricter graph integrity checks:
+  - validates that every event belongs to at least one unit (orphan detection, hard-fail),
+  - validates derived reverse causality (`caused_by`) remains consistent with source forward links (`effects`),
+  - preserves existing hard-fail behavior for missing effects/people/unit references.
+- Added `scripts/sanity-check.mjs` for lightweight integration coverage:
+  - loads `data/events.json` + unit registry/files,
+  - performs random sampling checks for causal references,
+  - verifies unit event pools are non-empty and fully resolvable,
+  - exits with error code on any runtime-breaking inconsistency.
+- Added npm script entry: `npm run sanity`.
+
+### Validation completed (2026-04-24)
+- `node scripts/derive.mjs` ✅
+- `node scripts/sanity-check.mjs` ✅
+- `npm run smoke` ✅
+
+### Notes for next session
+1. Consider extending `sanity-check.mjs` to include minimal app-data adapters (e.g., normalized events/weights) so it catches regressions in shared data-store assumptions.
+2. Add one negative-path fixture in CI that intentionally breaks a reference and asserts derive/sanity fail as expected.
+3. If validation strictness blocks draft authoring, introduce an explicit draft-only bypass flag rather than weakening default checks.
