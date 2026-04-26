@@ -20,6 +20,8 @@ World History Lab is a personal learning project for studying world history with
   - **Causality Builder** (first playable MVP with direct-effect and cause-category practice).
 - **Overview** (first shipped read-only bridge page under `apps/overview/`, backed by `data/overview/`, for coarse era × region mental-map practice that complements event/timeline learning).
 
+> Note (2026-04-25): The repository has expanded well beyond the early MVP framing above. The current app portfolio includes guided, recognition, chronology, causality, comparison, geographic, graph, and playback modes under `apps/`, and `data/units/` now includes multiple units beyond the original initial pair.
+
 ## Repository structure (high-level)
 
 Current repository status includes seed data files under `data/`.
@@ -109,6 +111,18 @@ Next:
 
 
 ## Recent updates (2026-04-21 · Islamic expansion unit + controlled tag normalization)
+
+## Recent updates (2026-04-25 · landing-page portfolio exposure + geographic metadata expansion)
+
+- Expanded root `index.html` mode navigation so learner-facing routes are explicitly visible and grouped by intent:
+  - **Start**: Session Runner, Overview, History Player
+  - **Practice**: Timeline Trainer, Sequence, Year Estimation, Event Recognition, People Recognition, Map Quiz
+  - **Connections**: Causality Drill, Causality Builder, Causal Chain, Comparison, Graph Explorer
+- Added concise “mode note” guidance and lightweight status badges to reduce top-page discovery friction while keeping **Start Learning** as the primary entry.
+- Added first-pass geographic metadata on a broad set of approved events in `data/events.json`:
+  - filled/normalized `places` and `regions` for core French Revolution, Industrial Revolution, and Meiji events,
+  - added representative `location` anchors (`label`, `lat`, `lon`) for clearly site-bound events,
+  - kept broad patent/invention records conservative by adding region context without forcing misleading precise coordinates.
 
 ## Recent updates (2026-04-22 · causality drill mode + connectivity-weighted sampling)
 

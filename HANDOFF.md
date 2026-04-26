@@ -852,3 +852,24 @@
 1. Consider extending `sanity-check.mjs` to include minimal app-data adapters (e.g., normalized events/weights) so it catches regressions in shared data-store assumptions.
 2. Add one negative-path fixture in CI that intentionally breaks a reference and asserts derive/sanity fail as expected.
 3. If validation strictness blocks draft authoring, introduce an explicit draft-only bypass flag rather than weakening default checks.
+## Incremental update (2026-04-25 · geographic metadata expansion + landing-page IA refresh)
+- Expanded learner-facing route discoverability on the root page (`index.html`):
+  - restructured mode sections to **Start**, **Practice**, and **Connections**,
+  - added route links for existing apps that were previously hidden (Overview, History Player, Year Estimation, Event Recognition, People Recognition, Causality Builder),
+  - added concise per-section helper notes and lightweight status badges (Core/Practice/Explore/Experimental),
+  - preserved the primary CTA behavior: **Start Learning** still routes to `/apps/session-runner/`.
+- Added first-pass geography metadata in `data/events.json` for approved events with clear anchors:
+  - French Revolution/Napoleonic core events now have normalized `places` and representative `location` anchors for Paris/Versailles/Vienna where appropriate,
+  - Industrial Revolution site-bound events now include anchors for Manchester/Cromford/Merthyr Tydfil/Rainhill/London,
+  - Meiji events now include location anchors for Uraga/Shimoda/Kyoto/Tokyo as appropriate,
+  - broad invention/patent records were kept conservative by adding `regions` without forcing ambiguous point coordinates.
+
+## Validation completed (2026-04-25)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- route smoke checks via local server + curl for `/`, `/apps/map-quiz/`, `/apps/history-player/`, and newly linked app routes ✅
+
+## Suggested next steps
+1. Add a small derive/report artifact for location coverage by unit (e.g., `% events with location`) to keep map-readiness from regressing.
+2. Consider showing “ready/not enough location data” messaging in Map Quiz per unit so learners understand sparse geography cases.
+3. If desired, align README’s earlier “MVP focus” section with current portfolio language to reduce historical drift in project docs.

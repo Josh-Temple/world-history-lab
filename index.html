@@ -84,6 +84,12 @@
         font-size: 1.2rem;
       }
 
+      .mode-note {
+        margin: 0.35rem 0 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
       .mode-group ul {
         list-style: none;
         padding: 0;
@@ -98,6 +104,18 @@
       .mode-group a {
         color: var(--accent);
         font-weight: 700;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-left: 0.35rem;
+        padding: 0.1rem 0.4rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 700;
+        vertical-align: middle;
       }
 
       .secondary {
@@ -127,21 +145,37 @@
 
       <div id="modes">
         <section class="mode-group">
-          <h2>Practice</h2>
+          <h2>Start</h2>
+          <p class="mode-note">Choose a mode based on your goal: guided progression, broad survey, focused retrieval, or relationship exploration.</p>
           <ul>
-            <li><a href="/apps/timeline-trainer/">Timeline Trainer</a> – place events in time.</li>
-            <li><a href="/apps/sequence-reconstruction/">Sequence</a> – order events correctly.</li>
-            <li><a href="/apps/causality-drill/">Causality Drill</a> – recall cause and effect quickly.</li>
-            <li><a href="/apps/event-comparison/">Comparison</a> – compare events and themes.</li>
-            <li><a href="/apps/map-quiz/">Map Quiz</a> – match events to locations.</li>
+            <li><a href="/apps/session-runner/">Session Runner</a> <span class="badge">Core</span> – guided mixed practice.</li>
+            <li><a href="/apps/overview/">Overview</a> <span class="badge">Survey</span> – build a coarse world-history map.</li>
+            <li><a href="/apps/history-player/">History Player</a> <span class="badge">Explore</span> – play through events in sequence.</li>
+          </ul>
+        </section>
+
+        <section class="mode-group">
+          <h2>Practice</h2>
+          <p class="mode-note">Use these for focused retrieval and recognition practice.</p>
+          <ul>
+            <li><a href="/apps/timeline-trainer/">Timeline Trainer</a> <span class="badge">Core</span> – place events in time.</li>
+            <li><a href="/apps/sequence-reconstruction/">Sequence</a> <span class="badge">Practice</span> – order events correctly.</li>
+            <li><a href="/apps/year-estimation/">Year Estimation</a> <span class="badge">Practice</span> – recall approximate dates.</li>
+            <li><a href="/apps/event-recognition/">Event Recognition</a> <span class="badge">Practice</span> – identify events from clues.</li>
+            <li><a href="/apps/people-recognition/">People Recognition</a> <span class="badge">Practice</span> – connect people to historical roles.</li>
+            <li><a href="/apps/map-quiz/">Map Quiz</a> <span class="badge">Practice</span> – match events to locations.</li>
           </ul>
         </section>
 
         <section class="mode-group secondary">
-          <h2>Explore</h2>
+          <h2>Connections</h2>
+          <p class="mode-note">Use these to study causes, effects, comparisons, and graph links.</p>
           <ul>
-            <li><a href="/apps/graph-explorer/">Graph Explorer</a> – inspect incoming and outgoing links.</li>
-            <li><a href="/apps/causal-chain/">Causal Chain</a> – reconstruct full relationship sequences.</li>
+            <li><a href="/apps/causality-drill/">Causality Drill</a> <span class="badge">Practice</span> – recall cause and effect quickly.</li>
+            <li><a href="/apps/causality-builder/">Causality Builder</a> <span class="badge">Experimental</span> – build causal relationships.</li>
+            <li><a href="/apps/causal-chain/">Causal Chain</a> <span class="badge">Experimental</span> – reconstruct full relationship sequences.</li>
+            <li><a href="/apps/event-comparison/">Comparison</a> <span class="badge">Practice</span> – compare events and themes.</li>
+            <li><a href="/apps/graph-explorer/">Graph Explorer</a> <span class="badge">Explore</span> – inspect incoming and outgoing links.</li>
           </ul>
         </section>
       </div>

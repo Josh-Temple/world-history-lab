@@ -986,7 +986,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Manchester, United Kingdom",
+      "lat": 53.4808,
+      "lon": -2.2426
+    },
     "question_types": [
       "timeline_before_after"
     ],
@@ -1254,7 +1258,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Vienna, Austria",
+      "lat": 48.2082,
+      "lon": 16.3738
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1712,7 +1720,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Cromford, United Kingdom",
+      "lat": 53.1127,
+      "lon": -1.5602
+    },
     "question_types": [
       "timeline_before_after"
     ],
@@ -1834,7 +1846,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1889,7 +1905,11 @@
     "status": "reviewed",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -2009,7 +2029,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Versailles, France",
+      "lat": 48.8049,
+      "lon": 2.1204
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -2066,7 +2090,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -2126,7 +2154,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "London, United Kingdom",
+      "lat": 51.5072,
+      "lon": -0.1276
+    },
     "question_types": [
       "timeline_before_after"
     ],
@@ -2598,7 +2630,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "London, United Kingdom",
+      "lat": 51.5072,
+      "lon": -0.1276
+    },
     "question_types": [
       "timeline_before_after"
     ],
@@ -4664,7 +4700,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Tokyo, Japan",
+      "lat": 35.6762,
+      "lon": 139.6503
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4751,7 +4791,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Kyoto, Japan",
+      "lat": 35.0116,
+      "lon": 135.7681
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4794,7 +4838,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Kyoto, Japan",
+      "lat": 35.0116,
+      "lon": 135.7681
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4884,7 +4932,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Tokyo, Japan",
+      "lat": 35.6762,
+      "lon": 139.6503
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4927,7 +4979,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Tokyo, Japan",
+      "lat": 35.6762,
+      "lon": 139.6503
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4972,7 +5028,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Tokyo, Japan",
+      "lat": 35.6762,
+      "lon": 139.6503
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5013,7 +5073,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Shimoda, Japan",
+      "lat": 34.6795,
+      "lon": 138.9453
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5059,7 +5123,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Uraga, Japan",
+      "lat": 35.2556,
+      "lon": 139.7068
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5400,7 +5468,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5461,7 +5533,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5972,7 +6048,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Merthyr Tydfil, United Kingdom",
+      "lat": 51.7487,
+      "lon": -3.379
+    },
     "question_types": [
       "timeline_before_after"
     ],
@@ -6248,7 +6328,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Rainhill, United Kingdom",
+      "lat": 53.417,
+      "lon": -2.766
+    },
     "question_types": [
       "timeline_before_after"
     ],
@@ -6281,7 +6365,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -6998,7 +7086,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -7174,7 +7266,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Versailles, France",
+      "lat": 48.8049,
+      "lon": 2.1204
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -7229,7 +7325,11 @@
     "status": "approved",
     "category": null,
     "importance": null,
-    "location": null,
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
