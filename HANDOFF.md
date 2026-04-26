@@ -1,3 +1,23 @@
+## Incremental update (2026-04-26 · unit-event contract hardening + progress schema foundation)
+- Hardened `scripts/validate-data.mjs` cross-reference diagnostics:
+  - duplicate event IDs now report with `data/events.json` context,
+  - required event field failures (`id`, `label`, `time.year_start`) now include source-path-aware messages,
+  - unit-to-event missing references now include both unit file path and canonical event source path in the error text.
+- Added unused-event detection in `scripts/validate-data.mjs`:
+  - emits warnings when an event ID exists in `data/events.json` but is not referenced by any unit in `data/units/index.json`.
+- Introduced a schema-only progress contract in `data/metadata.json`:
+  - new top-level `progress_schema` with event-level keys (`seen`, `correct`, `last_seen`, optional `confidence`) and unit-level keys (`last_accessed`, `completion_estimate`),
+  - no runtime app behavior change in this update.
+
+## Validation completed (2026-04-26)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+
+## Suggested next steps
+1. Add a machine-readable validation report output (JSON) from `validate-data.mjs` to improve CI diagnostics beyond console logs.
+2. Add an optional strict-mode toggle that upgrades unused-event warnings to errors for pre-release data hardening.
+3. When app-level persistence work begins, map `apps/shared/mastery-store.js` fields explicitly to `metadata.progress_schema` for one canonical learner-state contract.
+
 ## Incremental update (2026-04-22 · causality drill + weighted connectivity sampling)
 - Added new learner-facing route `apps/causality-drill/` with a continuous retrieval loop:
   - `apps/causality-drill/index.html`

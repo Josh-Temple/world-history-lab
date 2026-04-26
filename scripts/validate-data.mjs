@@ -125,6 +125,7 @@ export async function validateData({ log = false } = {}) {
   }
 
   const eventIdSet = new Set();
+  const eventSourcePath = "data/events.json";
   if (eventList) {
     for (const [index, event] of eventList.entries()) {
       if (!isObject(event)) {
@@ -134,10 +135,10 @@ export async function validateData({ log = false } = {}) {
 
       const eventLabel = describeRecordId(event, `[index ${index}]`);
       if (typeof event.id !== "string" || event.id.trim() === "") {
-        errors.push(`events[${index}] must include a non-empty id.`);
+        errors.push(`${eventSourcePath} events[${index}] must include a non-empty id.`);
       } else {
         if (eventIdSet.has(event.id)) {
-          errors.push(`Duplicate event id found: ${event.id}`);
+          errors.push(`Duplicate event id found in ${eventSourcePath}: ${event.id}`);
         }
         eventIdSet.add(event.id);
         if (!event.id.startsWith("ev_")) {
@@ -146,10 +147,10 @@ export async function validateData({ log = false } = {}) {
       }
 
       if (typeof event.label !== "string" || event.label.trim() === "") {
-        errors.push(`Event ${eventLabel} is missing a valid label.`);
+        errors.push(`${eventSourcePath} event ${eventLabel} is missing a valid label.`);
       }
       if (!isObject(event.time) || typeof event.time.year_start !== "number") {
-        errors.push(`Event ${eventLabel} must include time.year_start as a number.`);
+        errors.push(`${eventSourcePath} event ${eventLabel} must include time.year_start as a number.`);
       }
       if (typeof event.status !== "string" || !ALLOWED_STATUS.has(event.status)) {
         errors.push(`Event ${eventLabel} has invalid status: ${String(event.status)}`);
@@ -181,7 +182,7 @@ export async function validateData({ log = false } = {}) {
     }
 
     if (eventIdSet.size !== eventList.length) {
-      errors.push(`Duplicate event IDs detected: expected ${eventList.length} unique ids but found ${eventIdSet.size}.`);
+      errors.push(`Duplicate event IDs detected in ${eventSourcePath}: expected ${eventList.length} unique ids but found ${eventIdSet.size}.`);
     }
   }
 
@@ -202,6 +203,7 @@ export async function validateData({ log = false } = {}) {
   }
 
   let unitsCount = 0;
+  const usedEventIds = new Set();
   if (isObject(unitRegistry) && Array.isArray(unitRegistry.units)) {
     unitsCount = unitRegistry.units.length;
     for (const [index, unitEntry] of unitRegistry.units.entries()) {
@@ -238,10 +240,17 @@ export async function validateData({ log = false } = {}) {
           errors.push(`Unit ${unitId} includes duplicate event id: ${eventId}`);
         }
         unitEventIdSet.add(eventId);
+        usedEventIds.add(eventId);
         if (!eventIdSet.has(eventId)) {
-          errors.push(`Unit ${unitId} references missing event ${eventId}`);
+          errors.push(`Unit ${unitId} (${unitEntry.path}) references missing event ${eventId} in ${eventSourcePath}`);
         }
       }
+    }
+  }
+
+  for (const eventId of eventIdSet) {
+    if (!usedEventIds.has(eventId)) {
+      warnings.push(`Unused event id in ${eventSourcePath}: ${eventId}`);
     }
   }
 

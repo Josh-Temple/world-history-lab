@@ -224,7 +224,20 @@
       "cause_and_effect"
     ]
   },
-  "updated_at": "2026-04-21T00:00:00Z",
+  "progress_schema": {
+    "_comment": "Schema-only contract for future persistent mastery/progress tracking. This section does not contain learner data.",
+    "event": {
+      "seen": "number",
+      "correct": "number",
+      "last_seen": "timestamp",
+      "confidence": "number (0-1 optional)"
+    },
+    "unit": {
+      "last_accessed": "timestamp",
+      "completion_estimate": "number (0-1)"
+    }
+  },
+  "updated_at": "2026-04-26T00:00:00Z",
   "maintainer": {
     "name": "Josh",
     "notes": "Personal learning project"

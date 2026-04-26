@@ -112,6 +112,18 @@ Next:
 
 ## Recent updates (2026-04-21 · Islamic expansion unit + controlled tag normalization)
 
+## Recent updates (2026-04-26 · strict unit-event integrity validation + progress schema contract)
+
+- Strengthened `scripts/validate-data.mjs` for explicit unit/event contract checks:
+  - duplicate event ID failures now include `data/events.json` path context,
+  - required event field failures (`id`, `label`, `time.year_start`) now include source file context,
+  - unit-to-event missing-reference failures now include unit file path + canonical event source path,
+  - added warnings for event IDs present in `data/events.json` but unused by any registered unit.
+- Added top-level `progress_schema` to `data/metadata.json`:
+  - schema-only contract for future learner persistence,
+  - defines event-level fields (`seen`, `correct`, `last_seen`, optional `confidence`) and unit-level aggregation fields (`last_accessed`, `completion_estimate`),
+  - no runtime app behavior changes in this update.
+
 ## Recent updates (2026-04-25 · landing-page portfolio exposure + geographic metadata expansion)
 
 - Expanded root `index.html` mode navigation so learner-facing routes are explicitly visible and grouped by intent:
