@@ -21,7 +21,10 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_bridgewater_canal_opens_1761",
@@ -45,7 +48,18 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "places": [
+      "Manchester"
+    ],
+    "location": {
+      "label": "Manchester, United Kingdom",
+      "lat": 53.4808,
+      "lon": -2.2426
+    },
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_spinning_jenny_invented_1764",
@@ -69,7 +83,10 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_water_frame_patent_1769",
@@ -93,7 +110,10 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_watt_condenser_patent_1769",
@@ -117,7 +137,10 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_spinning_jenny_patented_1770",
@@ -141,7 +164,10 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_cromford_mill_uses_water_frame_1771",
@@ -165,7 +191,18 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "places": [
+      "Cromford"
+    ],
+    "location": {
+      "label": "Cromford, United Kingdom",
+      "lat": 53.1127,
+      "lon": -1.5602
+    },
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_spinning_mule_invented_1779",
@@ -189,7 +226,10 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_power_loom_patented_1785",
@@ -213,7 +253,10 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_declaration_rights_man_citizen_1789",
@@ -231,7 +274,9 @@
     "regions": [
       "reg_france"
     ],
-    "places": [],
+    "places": [
+      "Paris"
+    ],
     "tags": [
       "revolution",
       "rights",
@@ -280,7 +325,12 @@
     "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
-    ]
+    ],
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_estates_general_1789",
@@ -298,7 +348,9 @@
     "regions": [
       "reg_france"
     ],
-    "places": [],
+    "places": [
+      "Versailles"
+    ],
     "tags": [
       "revolution",
       "state",
@@ -360,7 +412,12 @@
     "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
-    ]
+    ],
+    "location": {
+      "label": "Versailles, France",
+      "lat": 48.8049,
+      "lon": 2.1204
+    }
   },
   {
     "id": "ev_storming_bastille_1789",
@@ -376,7 +433,9 @@
     "regions": [
       "reg_france"
     ],
-    "places": [],
+    "places": [
+      "Paris"
+    ],
     "tags": [
       "revolution",
       "violence",
@@ -425,7 +484,12 @@
     "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
-    ]
+    ],
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_tennis_court_oath_1789",
@@ -441,7 +505,9 @@
     "regions": [
       "reg_france"
     ],
-    "places": [],
+    "places": [
+      "Versailles"
+    ],
     "tags": [
       "revolution",
       "constitution",
@@ -490,7 +556,12 @@
     "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
-    ]
+    ],
+    "location": {
+      "label": "Versailles, France",
+      "lat": 48.8049,
+      "lon": 2.1204
+    }
   },
   {
     "id": "ev_cotton_gin_invented_1793",
@@ -530,7 +601,9 @@
     "regions": [
       "reg_france"
     ],
-    "places": [],
+    "places": [
+      "Paris"
+    ],
     "tags": [
       "revolution",
       "monarchy",
@@ -585,7 +658,12 @@
     "status": "approved",
     "people_ids": [
       "pe_louis_xvi"
-    ]
+    ],
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_reign_of_terror_1793_1794",
@@ -601,7 +679,9 @@
     "regions": [
       "reg_france"
     ],
-    "places": [],
+    "places": [
+      "Paris"
+    ],
     "tags": [
       "revolution",
       "violence",
@@ -658,7 +738,12 @@
     "status": "approved",
     "people_ids": [
       "pe_maximilien_robespierre"
-    ]
+    ],
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_thermidorian_reaction_1794",
@@ -674,7 +759,9 @@
     "regions": [
       "reg_france"
     ],
-    "places": [],
+    "places": [
+      "Paris"
+    ],
     "tags": [
       "revolution",
       "political-shift",
@@ -724,7 +811,12 @@
     "status": "approved",
     "people_ids": [
       "pe_maximilien_robespierre"
-    ]
+    ],
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_napoleon_coup_18_brumaire_1799",
@@ -742,7 +834,9 @@
     "regions": [
       "reg_france"
     ],
-    "places": [],
+    "places": [
+      "Paris"
+    ],
     "tags": [
       "napoleon",
       "coup",
@@ -799,7 +893,12 @@
     "status": "approved",
     "people_ids": [
       "pe_napoleon_bonaparte"
-    ]
+    ],
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_napoleon_emperor_1804",
@@ -818,7 +917,9 @@
       "reg_france",
       "reg_western_europe"
     ],
-    "places": [],
+    "places": [
+      "Paris"
+    ],
     "tags": [
       "napoleon",
       "empire",
@@ -870,7 +971,12 @@
     "status": "approved",
     "people_ids": [
       "pe_napoleon_bonaparte"
-    ]
+    ],
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_penydarren_locomotive_run_1804",
@@ -894,7 +1000,18 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "places": [
+      "Merthyr Tydfil"
+    ],
+    "location": {
+      "label": "Merthyr Tydfil, United Kingdom",
+      "lat": 51.7487,
+      "lon": -3.379
+    },
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_congress_of_vienna_1814_1815",
@@ -910,7 +1027,9 @@
     "regions": [
       "reg_western_europe"
     ],
-    "places": [],
+    "places": [
+      "Vienna"
+    ],
     "tags": [
       "diplomacy",
       "state-system",
@@ -966,7 +1085,12 @@
     "status": "approved",
     "people_ids": [
       "pe_napoleon_bonaparte"
-    ]
+    ],
+    "location": {
+      "label": "Vienna, Austria",
+      "lat": 48.2082,
+      "lon": 16.3738
+    }
   },
   {
     "id": "ev_rainhill_trials_rocket_1829",
@@ -990,7 +1114,18 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "places": [
+      "Rainhill"
+    ],
+    "location": {
+      "label": "Rainhill, United Kingdom",
+      "lat": 53.417,
+      "lon": -2.766
+    },
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_factory_act_1833",
@@ -1023,6 +1158,17 @@
     ],
     "effects": [
       "ev_factory_act_1847_ten_hours"
+    ],
+    "places": [
+      "London"
+    ],
+    "location": {
+      "label": "London, United Kingdom",
+      "lat": 51.5072,
+      "lon": -0.1276
+    },
+    "regions": [
+      "reg_britain"
     ]
   },
   {
@@ -1049,7 +1195,18 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "places": [
+      "London"
+    ],
+    "location": {
+      "label": "London, United Kingdom",
+      "lat": 51.5072,
+      "lon": -0.1276
+    },
+    "regions": [
+      "reg_britain"
+    ]
   },
   {
     "id": "ev_meiji_perry_1853",
@@ -1106,7 +1263,12 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "location": {
+      "label": "Uraga, Japan",
+      "lat": 35.2556,
+      "lon": 139.7068
+    }
   },
   {
     "id": "ev_meiji_kanagawa_treaty_1854",
@@ -1167,7 +1329,12 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "location": {
+      "label": "Shimoda, Japan",
+      "lat": 34.6795,
+      "lon": 138.9453
+    }
   },
   {
     "id": "ev_bessemer_process_patent_1856",
@@ -1211,7 +1378,10 @@
     "regions": [
       "reg_japan"
     ],
-    "places": [],
+    "places": [
+      "Kyoto",
+      "Edo"
+    ],
     "tags": [
       "meiji",
       "civil_war"
@@ -1248,7 +1418,12 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "location": {
+      "label": "Kyoto, Japan",
+      "lat": 35.0116,
+      "lon": 135.7681
+    }
   },
   {
     "id": "ev_meiji_charter_oath_1868",
@@ -1264,7 +1439,9 @@
     "regions": [
       "reg_japan"
     ],
-    "places": [],
+    "places": [
+      "Kyoto"
+    ],
     "tags": [
       "meiji",
       "political_reform"
@@ -1301,7 +1478,12 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "location": {
+      "label": "Kyoto, Japan",
+      "lat": 35.0116,
+      "lon": 135.7681
+    }
   },
   {
     "id": "ev_meiji_abolish_han_1871",
@@ -1317,7 +1499,9 @@
     "regions": [
       "reg_japan"
     ],
-    "places": [],
+    "places": [
+      "Tokyo"
+    ],
     "tags": [
       "meiji",
       "centralization"
@@ -1354,7 +1538,12 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "location": {
+      "label": "Tokyo, Japan",
+      "lat": 35.6762,
+      "lon": 139.6503
+    }
   },
   {
     "id": "ev_meiji_conscription_1873",
@@ -1423,7 +1612,9 @@
     "regions": [
       "reg_japan"
     ],
-    "places": [],
+    "places": [
+      "Tokyo"
+    ],
     "tags": [
       "meiji",
       "constitution"
@@ -1460,7 +1651,12 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "location": {
+      "label": "Tokyo, Japan",
+      "lat": 35.6762,
+      "lon": 139.6503
+    }
   },
   {
     "id": "ev_meiji_diet_1890",
@@ -1476,7 +1672,9 @@
     "regions": [
       "reg_japan"
     ],
-    "places": [],
+    "places": [
+      "Tokyo"
+    ],
     "tags": [
       "meiji",
       "parliament"
@@ -1513,7 +1711,12 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "location": {
+      "label": "Tokyo, Japan",
+      "lat": 35.6762,
+      "lon": 139.6503
+    }
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
@@ -1694,7 +1897,9 @@
     "regions": [
       "reg_japan"
     ],
-    "places": [],
+    "places": [
+      "Tokyo"
+    ],
     "tags": [
       "meiji",
       "periodization"
@@ -1727,7 +1932,12 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "location": {
+      "label": "Tokyo, Japan",
+      "lat": 35.6762,
+      "lon": 139.6503
+    }
   },
   {
     "id": "ev_imperialism_leopold_congo_project_1876",
@@ -3074,6 +3284,17 @@
       "timeline_ordering",
       "causality_chain",
       "what_happened"
+    ],
+    "places": [
+      "Paris"
+    ],
+    "location": {
+      "label": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
+    "regions": [
+      "reg_france"
     ]
   },
   {
