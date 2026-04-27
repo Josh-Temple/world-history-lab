@@ -1,3 +1,38 @@
+## Incremental update (2026-04-27 · skill tagging foundation + balanced session-runner modes)
+- Added event taxonomy fields to `data/events.json` for 50 seeded events: optional `skills` + `primary_skill` using a fixed 6-skill vocabulary (`timeline`, `causality`, `comparison`, `geography`, `people`, `recognition`).
+- Updated `scripts/validate-data.mjs` to validate optional skills metadata (type checks, dedupe checks, allowed-value checks, and `primary_skill` consistency checks).
+- Updated `scripts/derive.mjs` validation parity for skills metadata so derive-time integrity matches standalone validation behavior.
+- Reworked `apps/session-runner/app.js` session composition:
+  - mode plan is now built per selected unit from event skill distribution (`getEventsForUnit`),
+  - chooses a balanced 4-mode plan with target >=3 distinct skill categories when available,
+  - falls back to safe defaults when skill coverage is sparse, preserving backward compatibility.
+- Added debug-level console output for selected session mode keys + skill distribution to aid tuning.
+
+## Validation completed (2026-04-27)
+- `node scripts/validate-data.mjs` ✅ (passes with existing baseline warnings only)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Expand event skill coverage from 50 seeded events to full priority units so balanced composition has less fallback behavior over time.
+2. Add unit-level skill targets (metadata contract) so session plans can optimize toward explicit curriculum intent rather than only local event frequencies.
+3. Emit session-runner plan diagnostics to UI (not only console) so learners can see why a given mode mix was selected.
+
+## Incremental update (2026-04-26 · next-step engine + cross-mode continuation cues)
+- Added new shared module `apps/shared/next-step-engine.js` with rule-based recommendation output (`modeKey`, `label`, `href`, `reason`).
+- Updated `apps/session-runner/index.html` + `apps/session-runner/app.js` to show an always-visible “next recommended mode” line during guided progression and on completion.
+- Updated `apps/event-recognition/app.js` and `apps/people-recognition/app.js` so summary CTAs are recommendation-driven instead of fixed static links.
+- Updated root `index.html` with a lightweight progress snapshot panel (seen/mastered/weak) and a dynamic “continue where you left off” entry point.
+
+## Validation completed (2026-04-26)
+- `npm run smoke` ✅
+- `node scripts/validate-data.mjs` ✅ (passes with existing baseline warnings only)
+
+## Suggested next steps
+1. Replace placeholder per-mode completion ratio in Session Runner with true per-mode scoring events (`postMessage`) from embedded apps so recommendations use actual performance.
+2. Expand recommendation routing to include unit-aware deep links (e.g., append `?unit=<selected_unit>` for all destination apps).
+3. Standardize summary CTA blocks across remaining modes (timeline, sequence, causality drill, year estimation) to make next-step guidance system-wide.
+
 ## Incremental update (2026-04-26 · unit-event contract hardening + progress schema foundation)
 - Hardened `scripts/validate-data.mjs` cross-reference diagnostics:
   - duplicate event IDs now report with `data/events.json` context,

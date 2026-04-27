@@ -2,6 +2,7 @@ import { REVIEWED_PLUS, loadDerivedEvents, loadUnitsIndex } from "../shared/data
 import { getAllPeople } from "../shared/data-store.js";
 import { showFeedback } from "../shared/feedback.js";
 import { mountHeader } from "../shared/header.js";
+import { recommendNextStep } from "../shared/next-step-engine.js";
 
 const personNameElement = document.getElementById("person-name");
 const personSummaryElement = document.getElementById("person-summary");
@@ -212,14 +213,21 @@ function showSummary() {
   appHeader.update({ progress: `${state.totalQuestions}/${state.totalQuestions}` });
   sessionStatusElement.textContent = "Use the result to decide whether to repeat people practice or move forward.";
   summaryElement.hidden = false;
+  const recommendation = recommendNextStep({
+    currentMode: "people",
+    accuracy: accuracy / 100,
+    reviewQueueCount: 0,
+  });
+
   summaryElement.innerHTML = `
     <h2>Session complete</h2>
     <p><strong>Score:</strong> ${state.correctAnswers}/${state.totalQuestions}</p>
     <p><strong>Accuracy:</strong> ${accuracy}%</p>
     <p>${getFeedbackMessage(accuracy)}</p>
+    <p>${recommendation.reason}</p>
     <div class="summary-actions">
       <button type="button" class="summary-button" id="retry-session">Retry session</button>
-      <a class="summary-link" href="../history-player/">Next step: History Player</a>
+      <a class="summary-link" href="${recommendation.href}">Next step: ${recommendation.label}</a>
     </div>
   `;
 

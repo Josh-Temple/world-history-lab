@@ -1,11 +1,19 @@
-import { getUnits, setStoredUnitId } from "../shared/data-store.js";
+import { getEventsForUnit, getUnits, setStoredUnitId } from "../shared/data-store.js";
+import { getReviewQueueEventIds } from "../shared/mastery-store.js";
+import { getModeMeta, recommendNextStep } from "../shared/next-step-engine.js";
 
-const modes = [
-  { key: "timeline", name: "Timeline", app: "/apps/timeline-trainer/index.html" },
-  { key: "sequence", name: "Sequence", app: "/apps/sequence-reconstruction/index.html" },
-  { key: "causality-drill", name: "Causality Drill", app: "/apps/causality-drill/index.html" },
-  { key: "comparison", name: "Comparison", app: "/apps/event-comparison/index.html" },
-];
+const MODE_LIBRARY = Object.freeze([
+  { key: "timeline", name: "Timeline", app: "/apps/timeline-trainer/index.html", skill: "timeline" },
+  { key: "sequence", name: "Sequence", app: "/apps/sequence-reconstruction/index.html", skill: "timeline" },
+  { key: "causality-drill", name: "Causality Drill", app: "/apps/causality-drill/index.html", skill: "causality" },
+  { key: "comparison", name: "Comparison", app: "/apps/event-comparison/index.html", skill: "comparison" },
+  { key: "event-recognition", name: "Event Recognition", app: "/apps/event-recognition/index.html", skill: "recognition" },
+  { key: "people-recognition", name: "People Recognition", app: "/apps/people-recognition/index.html", skill: "people" },
+  { key: "map-quiz", name: "Map Quiz", app: "/apps/map-quiz/index.html", skill: "geography" },
+]);
+
+const DEFAULT_MODE_KEYS = ["timeline", "causality-drill", "event-recognition", "comparison"];
+const MODE_BY_KEY = new Map(MODE_LIBRARY.map((mode) => [mode.key, mode]));
 
 const QUESTIONS_PER_MODE = 5;
 const COMPLETED_UNITS_KEY = "completed_units";
@@ -13,6 +21,7 @@ const COMPLETED_UNITS_KEY = "completed_units";
 const appContainer = document.getElementById("app");
 const progressEl = document.getElementById("progress");
 const modeHelpEl = document.getElementById("mode-help");
+const nextRecommendationEl = document.getElementById("next-recommendation");
 const modeLabelEl = document.getElementById("mode-label");
 const modeSelectorEl = document.getElementById("mode-selector");
 const unitLabelEl = document.getElementById("unit-label");
@@ -23,14 +32,82 @@ const nextStepButton = document.getElementById("next-step");
 const restartButton = document.getElementById("restart");
 
 let modeIndex = 0;
-const modeProgress = new Map(modes.map((mode) => [mode.key, 0]));
+let sessionModes = DEFAULT_MODE_KEYS.map((key) => MODE_BY_KEY.get(key)).filter(Boolean);
+const modeProgress = new Map();
 let iframe = null;
 let selectedUnitId = "";
 let units = [];
 let completedUnits = readCompletedUnits();
 
+function resetModeProgress() {
+  modeProgress.clear();
+  for (const mode of sessionModes) {
+    modeProgress.set(mode.key, 0);
+  }
+}
+
+function composeBalancedSessionModes(events = []) {
+  const skillCounts = new Map();
+  const recognizedSkills = new Set(["timeline", "causality", "comparison", "geography", "people", "recognition"]);
+
+  for (const event of Array.isArray(events) ? events : []) {
+    const eventSkills = Array.isArray(event?.skills) && event.skills.length > 0
+      ? event.skills
+      : ["timeline"];
+    for (const skill of eventSkills) {
+      if (!recognizedSkills.has(skill)) continue;
+      skillCounts.set(skill, (skillCounts.get(skill) || 0) + 1);
+    }
+  }
+
+  const prioritySkills = Array.from(skillCounts.entries())
+    .sort((left, right) => right[1] - left[1])
+    .map(([skill]) => skill);
+
+  const selected = [];
+  const selectedKeys = new Set();
+  for (const skill of prioritySkills) {
+    const match = MODE_LIBRARY.find((mode) => mode.skill === skill && !selectedKeys.has(mode.key));
+    if (!match) continue;
+    selected.push(match);
+    selectedKeys.add(match.key);
+    if (selected.length >= 4) break;
+  }
+
+  for (const fallbackKey of DEFAULT_MODE_KEYS) {
+    if (selected.length >= 4) break;
+    const fallback = MODE_BY_KEY.get(fallbackKey);
+    if (!fallback || selectedKeys.has(fallback.key)) continue;
+    selected.push(fallback);
+    selectedKeys.add(fallback.key);
+  }
+
+  const selectedSkillCount = new Set(selected.map((mode) => mode.skill)).size;
+  const uniqueSkillCount = new Set(prioritySkills).size;
+  if (selectedSkillCount < 3 && uniqueSkillCount >= 3) {
+    for (const mode of MODE_LIBRARY) {
+      if (selected.length >= 4) break;
+      if (selectedKeys.has(mode.key)) continue;
+      selected.push(mode);
+      selectedKeys.add(mode.key);
+      if (new Set(selected.map((item) => item.skill)).size >= 3) break;
+    }
+  }
+
+  const result = selected.length > 0 ? selected.slice(0, 4) : DEFAULT_MODE_KEYS.map((key) => MODE_BY_KEY.get(key)).filter(Boolean);
+  const sampledSkills = result.map((mode) => mode.skill);
+  console.log('[session-runner] Session skill distribution', {
+    modeKeys: result.map((mode) => mode.key),
+    skills: sampledSkills,
+    distinctSkills: new Set(sampledSkills).size,
+    availableSkills: prioritySkills,
+  });
+  return result;
+}
+
+
 function getCurrentMode() {
-  return modes[modeIndex];
+  return sessionModes[modeIndex];
 }
 
 function getCurrentQuestionCount() {
@@ -69,16 +146,16 @@ function getSelectedUnit() {
 }
 
 function getTotalQuestionsPerUnit() {
-  return modes.length * QUESTIONS_PER_MODE;
+  return sessionModes.length * QUESTIONS_PER_MODE;
 }
 
 function getAnsweredQuestionCount() {
-  return modes.reduce((sum, mode) => sum + Math.min(modeProgress.get(mode.key) || 0, QUESTIONS_PER_MODE), 0);
+  return sessionModes.reduce((sum, mode) => sum + Math.min(modeProgress.get(mode.key) || 0, QUESTIONS_PER_MODE), 0);
 }
 
 function updateUnitProgressUi() {
   const total = getTotalQuestionsPerUnit();
-  const answered = modeIndex >= modes.length ? total : getAnsweredQuestionCount();
+  const answered = modeIndex >= sessionModes.length ? total : getAnsweredQuestionCount();
   const progressRatio = total > 0 ? Math.max(0, Math.min(1, answered / total)) : 0;
   const progressPercent = Math.round(progressRatio * 100);
 
@@ -105,21 +182,48 @@ function updateUnitLabel() {
   unitLabelEl.textContent = `Unit: ${selectedUnit.label || selectedUnit.id} (${status})`;
 }
 
+
+function updateModeRecommendation() {
+  if (!nextRecommendationEl) return;
+  const mode = getCurrentMode();
+  if (!mode) {
+    nextRecommendationEl.innerHTML = "";
+    return;
+  }
+
+  const answered = modeProgress.get(mode.key) || 0;
+  if (answered === 0) {
+    nextRecommendationEl.innerHTML = "";
+    return;
+  }
+
+  const completionRatio = Math.max(0, Math.min(1, answered / QUESTIONS_PER_MODE));
+  const reviewQueueCount = getReviewQueueEventIds(50).length;
+  const nextStep = recommendNextStep({
+    currentMode: mode.key === "comparison" ? "recognition" : mode.key,
+    accuracy: completionRatio,
+    reviewQueueCount,
+  });
+  nextRecommendationEl.innerHTML = `Next recommended mode: <a href="${nextStep.href}">${nextStep.label}</a> · ${nextStep.reason}`;
+}
+
 function updateProgress() {
-  if (modeIndex >= modes.length) {
-    progressEl.textContent = `Session complete • ${modes.length}/${modes.length} modes finished`;
+  if (modeIndex >= sessionModes.length) {
+    progressEl.textContent = `Session complete • ${sessionModes.length}/${sessionModes.length} modes finished`;
     updateModeLabel();
     updateUnitProgressUi();
     updateUnitLabel();
+    updateModeRecommendation();
     return;
   }
 
   const questionCount = getCurrentQuestionCount();
-  progressEl.textContent = `Mode ${modeIndex + 1}/${modes.length} • Question ${Math.min(questionCount + 1, QUESTIONS_PER_MODE)}/${QUESTIONS_PER_MODE}`;
+  progressEl.textContent = `Mode ${modeIndex + 1}/${sessionModes.length} • Question ${Math.min(questionCount + 1, QUESTIONS_PER_MODE)}/${QUESTIONS_PER_MODE}`;
   updateModeLabel();
   updateModeSelector();
   updateUnitProgressUi();
   updateUnitLabel();
+  updateModeRecommendation();
 }
 
 function buildIframeSrc(modePath) {
@@ -193,7 +297,8 @@ function renderMode() {
   iframe.src = buildIframeSrc(mode.app);
   appContainer.appendChild(iframe);
 
-  modeHelpEl.textContent = `Mode: ${mode.name}. Complete ${QUESTIONS_PER_MODE} questions, then continue.`;
+  const canonical = getModeMeta(mode.key);
+  modeHelpEl.textContent = `Mode: ${mode.name}. Complete ${QUESTIONS_PER_MODE} questions, then continue.` + (canonical ? ` (${canonical.label})` : "");
   nextStepButton.disabled = modeProgress.get(mode.key) >= QUESTIONS_PER_MODE;
   updateProgress();
 }
@@ -230,14 +335,19 @@ function showCompletion() {
   }
 
   nextStepButton.disabled = true;
+  if (nextRecommendationEl) {
+    const reviewQueueCount = getReviewQueueEventIds(50).length;
+    const nextStep = recommendNextStep({ currentMode: "recognition", accuracy: 0.9, reviewQueueCount });
+    nextRecommendationEl.innerHTML = `Recommended continuation: <a href="${nextStep.href}">${nextStep.label}</a> · ${nextStep.reason}`;
+  }
   updateModeSelector();
   updateProgress();
 }
 
 function findNextIncompleteModeIndex(startIndex = modeIndex) {
-  for (let offset = 1; offset <= modes.length; offset += 1) {
-    const index = (startIndex + offset) % modes.length;
-    const mode = modes[index];
+  for (let offset = 1; offset <= sessionModes.length; offset += 1) {
+    const index = (startIndex + offset) % sessionModes.length;
+    const mode = sessionModes[index];
     if ((modeProgress.get(mode.key) || 0) < QUESTIONS_PER_MODE) {
       return index;
     }
@@ -246,7 +356,7 @@ function findNextIncompleteModeIndex(startIndex = modeIndex) {
 }
 
 function next() {
-  if (modeIndex >= modes.length) {
+  if (modeIndex >= sessionModes.length) {
     return;
   }
 
@@ -258,7 +368,7 @@ function next() {
   if (currentCount >= QUESTIONS_PER_MODE) {
     const nextIndex = findNextIncompleteModeIndex(modeIndex);
     if (nextIndex < 0) {
-      modeIndex = modes.length;
+      modeIndex = sessionModes.length;
       showCompletion();
     } else {
       modeIndex = nextIndex;
@@ -271,7 +381,7 @@ function next() {
 
   const totalAnswered = getAnsweredQuestionCount();
   if (totalAnswered >= getTotalQuestionsPerUnit()) {
-    modeIndex = modes.length;
+    modeIndex = sessionModes.length;
     showCompletion();
     return;
   }
@@ -290,15 +400,13 @@ function next() {
 
 function restart() {
   modeIndex = 0;
-  for (const mode of modes) {
-    modeProgress.set(mode.key, 0);
-  }
+  resetModeProgress();
   renderMode();
 }
 
 function setMode(modeKey) {
-  const index = modes.findIndex((mode) => mode.key === modeKey);
-  if (index < 0 || modeIndex >= modes.length) return;
+  const index = sessionModes.findIndex((mode) => mode.key === modeKey);
+  if (index < 0 || modeIndex >= sessionModes.length) return;
   modeIndex = index;
   renderMode();
 }
@@ -308,7 +416,7 @@ function updateModeSelector() {
   const currentMode = getCurrentMode();
   modeSelectorEl.dataset.mode = currentMode?.key || "complete";
 
-  const html = modes.map((mode) => {
+  const html = sessionModes.map((mode) => {
     const count = Math.min(modeProgress.get(mode.key) || 0, QUESTIONS_PER_MODE);
     const done = count >= QUESTIONS_PER_MODE ? "✓" : `${count}/${QUESTIONS_PER_MODE}`;
     const active = currentMode?.key === mode.key ? "mode-chip active" : "mode-chip";
@@ -341,6 +449,10 @@ async function init() {
   if (selectedUnitId) {
     setStoredUnitId(selectedUnitId);
   }
+
+  const unitEvents = await getEventsForUnit(selectedUnitId).catch(() => []);
+  sessionModes = composeBalancedSessionModes(unitEvents);
+  resetModeProgress();
 
   updateUnitLabel();
   updateUnitProgressUi();
