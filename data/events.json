@@ -24,7 +24,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_bridgewater_canal_opens_1761",
@@ -86,7 +91,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_water_frame_patent_1769",
@@ -113,7 +123,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_watt_condenser_patent_1769",
@@ -140,7 +155,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_spinning_jenny_patented_1770",
@@ -202,7 +222,12 @@
     },
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_spinning_mule_invented_1779",
@@ -229,7 +254,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_power_loom_patented_1785",
@@ -256,7 +286,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_declaration_rights_man_citizen_1789",
@@ -330,7 +365,16 @@
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people",
+      "comparison",
+      "recognition"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_estates_general_1789",
@@ -417,7 +461,16 @@
       "label": "Versailles, France",
       "lat": 48.8049,
       "lon": 2.1204
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people",
+      "comparison",
+      "recognition"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_storming_bastille_1789",
@@ -489,7 +542,16 @@
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people",
+      "comparison",
+      "recognition"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_tennis_court_oath_1789",
@@ -561,7 +623,16 @@
       "label": "Versailles, France",
       "lat": 48.8049,
       "lon": 2.1204
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people",
+      "comparison",
+      "recognition"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_cotton_gin_invented_1793",
@@ -585,7 +656,12 @@
       }
     ],
     "status": "approved",
-    "content_origin": "ai_assisted_self_reviewed"
+    "content_origin": "ai_assisted_self_reviewed",
+    "skills": [
+      "timeline",
+      "recognition"
+    ],
+    "primary_skill": "recognition"
   },
   {
     "id": "ev_execution_louis_xvi_1793",
@@ -663,7 +739,16 @@
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people",
+      "comparison",
+      "recognition"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_reign_of_terror_1793_1794",
@@ -743,7 +828,16 @@
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people",
+      "comparison",
+      "recognition"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_thermidorian_reaction_1794",
@@ -816,7 +910,16 @@
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people",
+      "comparison",
+      "recognition"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_napoleon_coup_18_brumaire_1799",
@@ -898,7 +1001,14 @@
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_napoleon_emperor_1804",
@@ -976,7 +1086,15 @@
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people",
+      "comparison"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_penydarren_locomotive_run_1804",
@@ -1011,7 +1129,12 @@
     },
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_congress_of_vienna_1814_1815",
@@ -1090,7 +1213,14 @@
       "label": "Vienna, Austria",
       "lat": 48.2082,
       "lon": 16.3738
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_rainhill_trials_rocket_1829",
@@ -1125,7 +1255,12 @@
     },
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_factory_act_1833",
@@ -1169,7 +1304,14 @@
     },
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_great_exhibition_opens_1851",
@@ -1206,7 +1348,12 @@
     },
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "geography"
+    ],
+    "primary_skill": "geography"
   },
   {
     "id": "ev_meiji_perry_1853",
@@ -1268,7 +1415,13 @@
       "label": "Uraga, Japan",
       "lat": 35.2556,
       "lon": 139.7068
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_kanagawa_treaty_1854",
@@ -1334,7 +1487,13 @@
       "label": "Shimoda, Japan",
       "lat": 34.6795,
       "lon": 138.9453
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_bessemer_process_patent_1856",
@@ -1362,7 +1521,12 @@
     "people_ids": [
       "pe_andrew_carnegie",
       "pe_jp_morgan"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "people"
+    ],
+    "primary_skill": "people"
   },
   {
     "id": "ev_meiji_boshin_war_1868",
@@ -1423,7 +1587,13 @@
       "label": "Kyoto, Japan",
       "lat": 35.0116,
       "lon": 135.7681
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_charter_oath_1868",
@@ -1483,7 +1653,13 @@
       "label": "Kyoto, Japan",
       "lat": 35.0116,
       "lon": 135.7681
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_abolish_han_1871",
@@ -1543,7 +1719,13 @@
       "label": "Tokyo, Japan",
       "lat": 35.6762,
       "lon": 139.6503
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_conscription_1873",
@@ -1596,7 +1778,13 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_constitution_1889",
@@ -1656,7 +1844,13 @@
       "label": "Tokyo, Japan",
       "lat": 35.6762,
       "lon": 139.6503
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_diet_1890",
@@ -1716,7 +1910,13 @@
       "label": "Tokyo, Japan",
       "lat": 35.6762,
       "lon": 139.6503
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
@@ -1771,7 +1971,14 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "recognition"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_russojapanese_war_1905",
@@ -1826,7 +2033,14 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "recognition"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_annex_korea_1910",
@@ -1881,7 +2095,13 @@
       }
     ],
     "content_origin": "structured_external",
-    "status": "approved"
+    "status": "approved",
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_meiji_emperor_death_1912",
@@ -1937,7 +2157,13 @@
       "label": "Tokyo, Japan",
       "lat": 35.6762,
       "lon": 139.6503
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_imperialism_leopold_congo_project_1876",
@@ -4166,7 +4392,13 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_congress_vienna_1815",
@@ -4191,7 +4423,12 @@
       "treaty",
       "political",
       "state_order"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_concert_of_europe_1815_1848",
@@ -4520,7 +4757,12 @@
     ],
     "tags": [
       "political"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_naval_arms_race_1898_1914",
@@ -4546,7 +4788,13 @@
       "military",
       "technological",
       "political"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_balkan_wars_destabilize_1912_1913",
@@ -4569,7 +4817,12 @@
     "tags": [
       "military",
       "political"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_assassination_franz_ferdinand_1914",
@@ -4600,7 +4853,14 @@
       "region": "Sarajevo, Bosnia and Herzegovina",
       "lat": 43.8563,
       "lon": 18.4131
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_austria_ultimatum_serbia_1914",
@@ -4624,7 +4884,13 @@
     ],
     "tags": [
       "political"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_germany_blank_check_1914",
@@ -4649,7 +4915,13 @@
     ],
     "tags": [
       "political"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_russia_mobilizes_1914",
@@ -4674,7 +4946,13 @@
     "tags": [
       "military",
       "political"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_germany_invades_belgium_1914",
@@ -4701,7 +4979,13 @@
     "tags": [
       "military",
       "political"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_battle_marne_1914",
@@ -4730,7 +5014,14 @@
       "region": "Marne, France",
       "lat": 48.95,
       "lon": 4.37
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_trench_warfare_entrenched_1914",
@@ -4755,7 +5046,12 @@
     "tags": [
       "military",
       "social"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_first_ypres_1914",
@@ -4778,7 +5074,12 @@
     ],
     "tags": [
       "military"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "causality"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_gallipoli_campaign_1915",
@@ -4809,7 +5110,14 @@
       "region": "Gallipoli Peninsula, Ottoman Empire (Turkey)",
       "lat": 40.2,
       "lon": 26.4
-    }
+    },
+    "skills": [
+      "timeline",
+      "causality",
+      "geography",
+      "people"
+    ],
+    "primary_skill": "causality"
   },
   {
     "id": "ev_wwi_armenian_genocide_begins_1915",
@@ -4830,7 +5138,12 @@
     "tags": [
       "social",
       "political"
-    ]
+    ],
+    "skills": [
+      "timeline",
+      "recognition"
+    ],
+    "primary_skill": "recognition"
   },
   {
     "id": "ev_wwi_verdun_1916",

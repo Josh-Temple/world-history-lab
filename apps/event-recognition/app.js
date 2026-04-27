@@ -4,6 +4,7 @@ import { getReviewQueueEventIds, getWeight, isWeakEvent, recordResult } from "..
 import { createSession, weightedPick } from "../shared/session-engine.js";
 import { showFeedback } from "../shared/feedback.js";
 import { mountHeader } from "../shared/header.js";
+import { recommendNextStep } from "../shared/next-step-engine.js";
 
 const questionElement = document.getElementById("question");
 const choicesElement = document.getElementById("choices");
@@ -205,9 +206,18 @@ function hideNextStep() {
   nextStepElement.hidden = true;
 }
 
-function showNextStep() {
-  nextStepTextElement.textContent = "Now practice cause-and-effect relationships in Causality Builder.";
-  nextStepLinkElement.href = "../causality-builder/";
+function showNextStep(accuracyPercent = 0) {
+  const accuracyRatio = Number.isFinite(accuracyPercent) ? Math.max(0, Math.min(1, accuracyPercent / 100)) : 0;
+  const reviewQueueCount = getReviewQueueEventIds(50).length;
+  const recommendation = recommendNextStep({
+    currentMode: "recognition",
+    accuracy: accuracyRatio,
+    reviewQueueCount,
+  });
+
+  nextStepTextElement.textContent = recommendation.reason;
+  nextStepLinkElement.href = recommendation.href;
+  nextStepLinkElement.textContent = `Next step: ${recommendation.label}`;
   nextStepElement.hidden = false;
 }
 
@@ -233,7 +243,7 @@ function showSummary() {
       <button type="button" class="summary-button" id="retry-session">Retry session</button>
     </div>
   `;
-  showNextStep();
+  showNextStep(accuracy);
 
   const retryButton = document.getElementById("retry-session");
   if (retryButton) {

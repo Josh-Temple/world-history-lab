@@ -112,6 +112,34 @@ Next:
 
 ## Recent updates (2026-04-21 · Islamic expansion unit + controlled tag normalization)
 
+## Recent updates (2026-04-27 · event skill taxonomy + balanced session composition)
+
+- Added optional event-level learning taxonomy fields in `data/events.json` for a first tagged cohort:
+  - `skills` (allowed values: `timeline`, `causality`, `comparison`, `geography`, `people`, `recognition`)
+  - `primary_skill` (single dominant skill, when provided)
+- Tagged 50 events across core units (French Revolution, Industrial Revolution, Meiji, WWI, WWII) to seed structured flow logic without breaking untagged-event compatibility.
+- Extended validation coverage in both `scripts/validate-data.mjs` and `scripts/derive.mjs`:
+  - validates `skills` array shape + allowed values + duplicate prevention,
+  - validates optional `primary_skill` and checks membership within `skills` when both are present.
+- Upgraded `apps/session-runner/app.js` from fixed mode list to skill-aware balanced composition:
+  - derives per-unit skill availability from `getEventsForUnit(unitId)`,
+  - composes a 4-mode session plan targeting at least 3 distinct skills when available,
+  - preserves fallback behavior for untagged units/events,
+  - logs selected mode keys + skill distribution in console for visibility/debugging.
+
+## Recent updates (2026-04-26 · next-step guidance loop + landing progress snapshot)
+
+- Added `apps/shared/next-step-engine.js` to centralize rule-based next-step recommendations across modes.
+- Updated guided flow in `apps/session-runner/`:
+  - shows an in-session recommendation line while progressing through mode blocks,
+  - uses persisted review-queue pressure to nudge learners toward short review loops when needed.
+- Updated end-of-session next-step CTAs in both recognition apps:
+  - `apps/event-recognition/app.js` now uses recommendation rules + review queue count,
+  - `apps/people-recognition/app.js` now uses recommendation rules based on session accuracy.
+- Added top-page progress/motivation signals in `index.html`:
+  - shows events seen / mastered / weak snapshot from persisted mastery data,
+  - adds a dynamic “continue where you left off” link that routes either to guided runner or immediate review recommendation.
+
 ## Recent updates (2026-04-26 · strict unit-event integrity validation + progress schema contract)
 
 - Strengthened `scripts/validate-data.mjs` for explicit unit/event contract checks:

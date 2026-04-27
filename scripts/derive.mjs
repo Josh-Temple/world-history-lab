@@ -65,6 +65,15 @@ const TAG_ALIASES = new Map([
   ["exploration_routes", "exploration"],
 ]);
 
+const ALLOWED_SKILLS = new Set([
+  "timeline",
+  "causality",
+  "comparison",
+  "geography",
+  "people",
+  "recognition",
+]);
+
 const FALLBACK_UNIT_FILES = [
   { id: "unit_french_revolution_napoleon", path: "data/units/french-revolution-napoleon.json" },
   { id: "unit_industrial_revolution", path: "data/units/industrial-revolution.json" },
@@ -309,6 +318,32 @@ function validateEvent(event) {
   }
   if (Object.hasOwn(event, "effects") && !Array.isArray(event.effects)) {
     throw new Error(`Event ${event.id}: effects must be an array when provided`);
+  }
+  if (Object.hasOwn(event, "skills") && !Array.isArray(event.skills)) {
+    throw new Error(`Event ${event.id}: skills must be an array when provided`);
+  }
+  if (Array.isArray(event.skills)) {
+    const seen = new Set();
+    for (const skill of event.skills) {
+      if (typeof skill !== "string" || skill.trim() === "") {
+        throw new Error(`Event ${event.id}: skills must contain non-empty strings`);
+      }
+      if (!ALLOWED_SKILLS.has(skill)) {
+        throw new Error(`Event ${event.id}: invalid skill '${skill}'`);
+      }
+      if (seen.has(skill)) {
+        throw new Error(`Event ${event.id}: duplicate skill '${skill}'`);
+      }
+      seen.add(skill);
+    }
+  }
+  if (Object.hasOwn(event, "primary_skill")) {
+    if (typeof event.primary_skill !== "string" || !ALLOWED_SKILLS.has(event.primary_skill)) {
+      throw new Error(`Event ${event.id}: primary_skill is invalid`);
+    }
+    if (Array.isArray(event.skills) && !event.skills.includes(event.primary_skill)) {
+      throw new Error(`Event ${event.id}: primary_skill must be included in skills`);
+    }
   }
 }
 

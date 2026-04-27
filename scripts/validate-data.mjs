@@ -4,6 +4,15 @@ import { pathToFileURL } from "node:url";
 
 const ROOT = process.cwd();
 const ALLOWED_STATUS = new Set(["draft", "reviewed", "approved"]);
+const ALLOWED_SKILLS = new Set([
+  "timeline",
+  "causality",
+  "comparison",
+  "geography",
+  "people",
+  "recognition",
+]);
+
 const ALLOWED_CAUSAL_CATEGORIES = new Set([
   "political",
   "economic",
@@ -177,6 +186,34 @@ export async function validateData({ log = false } = {}) {
               errors.push(`Event ${eventLabel} references unknown person id in people_ids: ${personId}`);
             }
           }
+        }
+      }
+      if (event.skills !== undefined) {
+        if (!Array.isArray(event.skills)) {
+          errors.push(`Event ${eventLabel} has invalid skills; expected an array.`);
+        } else {
+          const skillsSeen = new Set();
+          for (const skill of event.skills) {
+            if (typeof skill !== "string") {
+              errors.push(`Event ${eventLabel} has non-string skills entry.`);
+              continue;
+            }
+            if (skillsSeen.has(skill)) {
+              errors.push(`Event ${eventLabel} has duplicate skill entry: ${skill}`);
+            }
+            skillsSeen.add(skill);
+            if (!ALLOWED_SKILLS.has(skill)) {
+              errors.push(`Event ${eventLabel} has invalid skill: ${skill}`);
+            }
+          }
+        }
+      }
+
+      if (event.primary_skill !== undefined) {
+        if (typeof event.primary_skill !== "string" || !ALLOWED_SKILLS.has(event.primary_skill)) {
+          errors.push(`Event ${eventLabel} has invalid primary_skill: ${String(event.primary_skill)}`);
+        } else if (Array.isArray(event.skills) && !event.skills.includes(event.primary_skill)) {
+          warnings.push(`Event ${eventLabel} primary_skill is not included in skills array.`);
         }
       }
     }
