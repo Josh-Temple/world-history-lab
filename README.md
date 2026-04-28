@@ -110,6 +110,11 @@ Next:
 
 
 
+## Recent updates (2026-04-28 · session composition guardrail + diagnostics)
+
+- Tightened guided session composition in `apps/session-runner/app.js` so the final mode plan explicitly attempts to maintain at least 3 distinct skill categories when alternatives exist.
+- Expanded session-runner console diagnostics with `availableSkillDistribution` (event-skill frequency map) to make skill-balance tuning easier during development.
+
 ## Recent updates (2026-04-21 · Islamic expansion unit + controlled tag normalization)
 
 ## Recent updates (2026-04-27 · event skill taxonomy + balanced session composition)

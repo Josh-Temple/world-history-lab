@@ -1,3 +1,20 @@
+## Incremental update (2026-04-28 · session-runner balance enforcement hardening)
+- Updated `apps/session-runner/app.js` `composeBalancedSessionModes(events)` to add a post-selection guardrail:
+  - if the chosen 4-mode plan still has fewer than 3 distinct skills, it now attempts a safe replacement from `MODE_LIBRARY` to increase skill diversity.
+  - behavior remains backward-compatible for sparse/untagged datasets via existing fallback defaults.
+- Expanded session diagnostics in the same function:
+  - console output now includes `availableSkillDistribution` (per-skill event counts derived from current unit events), in addition to selected mode keys/skills.
+
+## Validation completed (2026-04-28)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Expose the session plan + skill mix in UI (not only console) so learners can understand why a mode sequence was chosen.
+2. Add a small deterministic test around `composeBalancedSessionModes` to lock in the “>=3 skills when available” contract.
+3. Expand skill tagging coverage beyond seeded events to reduce fallback behavior in lower-density units.
+
 ## Incremental update (2026-04-27 · skill tagging foundation + balanced session-runner modes)
 - Added event taxonomy fields to `data/events.json` for 50 seeded events: optional `skills` + `primary_skill` using a fixed 6-skill vocabulary (`timeline`, `causality`, `comparison`, `geography`, `people`, `recognition`).
 - Updated `scripts/validate-data.mjs` to validate optional skills metadata (type checks, dedupe checks, allowed-value checks, and `primary_skill` consistency checks).
