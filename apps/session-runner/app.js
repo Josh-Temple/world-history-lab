@@ -94,13 +94,31 @@ function composeBalancedSessionModes(events = []) {
     }
   }
 
-  const result = selected.length > 0 ? selected.slice(0, 4) : DEFAULT_MODE_KEYS.map((key) => MODE_BY_KEY.get(key)).filter(Boolean);
-  const sampledSkills = result.map((mode) => mode.skill);
+  let result = selected.length > 0 ? selected.slice(0, 4) : DEFAULT_MODE_KEYS.map((key) => MODE_BY_KEY.get(key)).filter(Boolean);
+  let sampledSkills = result.map((mode) => mode.skill);
+
+  if (new Set(sampledSkills).size < 3) {
+    for (const candidate of MODE_LIBRARY) {
+      if (result.some((mode) => mode.key === candidate.key)) continue;
+      const duplicateSkillIndex = result.findIndex((mode) => mode.skill === candidate.skill);
+      if (duplicateSkillIndex >= 0) continue;
+      result = [...result.slice(0, -1), candidate];
+      sampledSkills = result.map((mode) => mode.skill);
+      if (new Set(sampledSkills).size >= 3) {
+        break;
+      }
+    }
+  }
+
+  const availableSkillDistribution = Object.fromEntries(
+    Array.from(skillCounts.entries()).sort((left, right) => right[1] - left[1]),
+  );
   console.log('[session-runner] Session skill distribution', {
     modeKeys: result.map((mode) => mode.key),
     skills: sampledSkills,
     distinctSkills: new Set(sampledSkills).size,
     availableSkills: prioritySkills,
+    availableSkillDistribution,
   });
   return result;
 }
