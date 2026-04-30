@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Causal Explanation</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 2rem; max-width: 860px; }
+      textarea { width: 100%; max-width: 100%; }
+      .muted { color: #555; }
+      .row { margin-top: 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Causal Explanation</h1>
+    <p class="muted">Explain why one event led to another, then compare with a reference explanation.</p>
+    <div id="prompt" class="row" aria-live="polite"></div>
+    <textarea id="answer" rows="6" cols="50" placeholder="Write your explanation here..."></textarea>
+    <div class="row">
+      <button id="submit-btn" type="button">Submit</button>
+      <button id="next-btn" type="button">Next pair</button>
+    </div>
+    <div id="reference" class="row"></div>
+    <div id="feedback" class="row" aria-live="polite"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

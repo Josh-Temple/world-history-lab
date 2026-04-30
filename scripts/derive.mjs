@@ -741,6 +741,28 @@ function getEffectEventId(effectRef) {
   return null;
 }
 
+
+function buildCausalPairs(events, eventIdSet) {
+  const unique = new Map();
+
+  for (const event of events) {
+    const effectId = event.id;
+    const causes = Array.isArray(event.caused_by) ? event.caused_by : [];
+    for (const causeId of causes) {
+      if (!eventIdSet.has(causeId)) {
+        continue;
+      }
+      const key = `${causeId}->${effectId}`;
+      unique.set(key, { cause_id: causeId, effect_id: effectId });
+    }
+  }
+
+  return Array.from(unique.values()).sort((a, b) => {
+    const causeCmp = a.cause_id.localeCompare(b.cause_id);
+    return causeCmp !== 0 ? causeCmp : a.effect_id.localeCompare(b.effect_id);
+  });
+}
+
 function buildTagClusters(events, eventIdSet) {
   const tagMap = {};
 
@@ -975,6 +997,7 @@ async function main() {
   const unitEventPool = buildUnitEventPool(units, eventLookup, normalizedEventLookup, enabledQuestionTypeSet);
   const causalityChains = buildCausalityChains(events);
   const tagClusters = buildTagClusters(events, eventIdSet);
+  const causalPairs = buildCausalPairs(normalizedEvents, eventIdSet);
   const unitEventPoolTypeCount = Object.values(unitEventPool)
     .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
 
@@ -986,11 +1009,12 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "index.units.json"), toJson(unitsIndex), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.unit_event_pool.json"), toJson(unitEventPool), "utf8");
   await writeFile(path.join(DERIVED_DIR, "causality_chains.json"), toJson(causalityChains), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "index.causal_pairs.json"), toJson(causalPairs), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "tag_clusters.json"), toJson(tagClusters), "utf8");
 
   console.log(
-    `[derive] Validation summary: ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events, ${Object.keys(eventsByYear).length} year buckets, ${unitEventPoolTypeCount} unit/type eligibility pools, and ${causalityChains.length} causality chains plus ${tagClusters.length} tag clusters in /derived and /data/derived.`
+    `[derive] Validation summary: ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events, ${Object.keys(eventsByYear).length} year buckets, ${unitEventPoolTypeCount} unit/type eligibility pools, and ${causalityChains.length} causality chains, ${causalPairs.length} causal pairs, plus ${tagClusters.length} tag clusters in /derived and /data/derived.`
   );
 }
 

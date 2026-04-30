@@ -831,3 +831,16 @@ TBD
   - verifies unit `event_ids` are non-empty and resolvable,
   - exits non-zero on any inconsistency for CI/pre-commit usage.
 - Added `npm run sanity` script in `package.json`.
+
+
+## Recent updates (2026-04-29 · causal explanation mode + reusable causal pair index)
+
+- Added a new learner-facing route at `apps/causal-explanation/`:
+  - prompts open-ended reasoning: “Explain why A led to B”,
+  - shows a lightweight reference explanation after submission,
+  - includes simple self-assessment guidance and local attempt-count persistence.
+- Extended derive pipeline in `scripts/derive.mjs` to generate `derived/index.causal_pairs.json`:
+  - extracts and deduplicates `cause_id -> effect_id` pairs from normalized causal links,
+  - validates references through existing event ID integrity checks,
+  - writes deterministic sorted output for app reuse.
+- Added homepage discoverability link for **Causal Explanation** under Connections.

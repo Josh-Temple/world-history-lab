@@ -1,0 +1,890 @@
+[
+  {
+    "cause_id": "ev_abolition_british_slave_trade_1807",
+    "effect_id": "ev_qing_first_opium_war_1839"
+  },
+  {
+    "cause_id": "ev_allied_strategic_bombing_1943",
+    "effect_id": "ev_operation_overlord_d_day_1944"
+  },
+  {
+    "cause_id": "ev_allied_strategic_bombing_1943",
+    "effect_id": "ev_soviet_berlin_offensive_1945"
+  },
+  {
+    "cause_id": "ev_atomic_bomb_hiroshima_1945",
+    "effect_id": "ev_atomic_bomb_nagasaki_1945"
+  },
+  {
+    "cause_id": "ev_atomic_bomb_hiroshima_1945",
+    "effect_id": "ev_japan_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_atomic_bomb_nagasaki_1945",
+    "effect_id": "ev_japan_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_auschwitz_killing_center_expansion_1942",
+    "effect_id": "ev_nuremberg_trials_begin_1945"
+  },
+  {
+    "cause_id": "ev_battle_badr_624",
+    "effect_id": "ev_treaty_hudaybiyyah_628"
+  },
+  {
+    "cause_id": "ev_battle_bulge_1944",
+    "effect_id": "ev_germany_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_battle_bulge_1944",
+    "effect_id": "ev_yalta_conference_1945"
+  },
+  {
+    "cause_id": "ev_battle_el_alamein_1942",
+    "effect_id": "ev_italy_surrenders_1943"
+  },
+  {
+    "cause_id": "ev_battle_midway_1942",
+    "effect_id": "ev_guadalcanal_campaign_1942_1943"
+  },
+  {
+    "cause_id": "ev_battle_midway_1942",
+    "effect_id": "ev_island_hopping_campaign_1943_1945"
+  },
+  {
+    "cause_id": "ev_battle_of_britain_1940",
+    "effect_id": "ev_allied_strategic_bombing_1943"
+  },
+  {
+    "cause_id": "ev_battle_of_britain_1940",
+    "effect_id": "ev_operation_overlord_d_day_1944"
+  },
+  {
+    "cause_id": "ev_battle_of_valmy_1792",
+    "effect_id": "ev_reign_of_terror_1793_1794"
+  },
+  {
+    "cause_id": "ev_battle_stalingrad_1942_1943",
+    "effect_id": "ev_operation_bagration_1944"
+  },
+  {
+    "cause_id": "ev_battle_stalingrad_1942_1943",
+    "effect_id": "ev_soviet_counteroffensives_1943_1944"
+  },
+  {
+    "cause_id": "ev_battle_tours_732",
+    "effect_id": "ev_abbasid_revolution_750"
+  },
+  {
+    "cause_id": "ev_battle_yarmouk_636",
+    "effect_id": "ev_conquest_jerusalem_638"
+  },
+  {
+    "cause_id": "ev_berlin_conference_1884",
+    "effect_id": "ev_pan_african_congress_1945"
+  },
+  {
+    "cause_id": "ev_bessemer_process_1856",
+    "effect_id": "ev_global_market_coordination_1860s"
+  },
+  {
+    "cause_id": "ev_bessemer_process_1856",
+    "effect_id": "ev_second_industrial_revolution_1870s"
+  },
+  {
+    "cause_id": "ev_civil_constitution_clergy_1790",
+    "effect_id": "ev_flight_to_varennes_1791"
+  },
+  {
+    "cause_id": "ev_communist_manifesto_1848",
+    "effect_id": "ev_first_international_1864"
+  },
+  {
+    "cause_id": "ev_concert_of_europe_1815_1848",
+    "effect_id": "ev_revolutions_1848"
+  },
+  {
+    "cause_id": "ev_congress_of_vienna_1814_1815",
+    "effect_id": "ev_congress_vienna_1815"
+  },
+  {
+    "cause_id": "ev_congress_vienna_1815",
+    "effect_id": "ev_concert_of_europe_1815_1848"
+  },
+  {
+    "cause_id": "ev_congress_vienna_1815",
+    "effect_id": "ev_railway_boom_1840s"
+  },
+  {
+    "cause_id": "ev_conquest_ctesiphon_637",
+    "effect_id": "ev_conquest_egypt_642"
+  },
+  {
+    "cause_id": "ev_conquest_egypt_642",
+    "effect_id": "ev_battle_tours_732"
+  },
+  {
+    "cause_id": "ev_conquest_jerusalem_638",
+    "effect_id": "ev_conquest_egypt_642"
+  },
+  {
+    "cause_id": "ev_conquest_mecca_630",
+    "effect_id": "ev_death_muhammad_632"
+  },
+  {
+    "cause_id": "ev_constitution_medina_622",
+    "effect_id": "ev_battle_badr_624"
+  },
+  {
+    "cause_id": "ev_cotton_gin_1793",
+    "effect_id": "ev_steam_power_transport_expansion_1800s"
+  },
+  {
+    "cause_id": "ev_death_muhammad_632",
+    "effect_id": "ev_ridda_wars_begin_632"
+  },
+  {
+    "cause_id": "ev_directory_established_1795",
+    "effect_id": "ev_napoleon_coup_18_brumaire_1799"
+  },
+  {
+    "cause_id": "ev_electric_power_adoption_1880s",
+    "effect_id": "ev_mass_production_systems_1890s"
+  },
+  {
+    "cause_id": "ev_enclosure_movement_accelerates_1750s",
+    "effect_id": "ev_factory_system_rise_1780s"
+  },
+  {
+    "cause_id": "ev_estates_general_1789",
+    "effect_id": "ev_tennis_court_oath_1789"
+  },
+  {
+    "cause_id": "ev_execution_louis_xvi_1793",
+    "effect_id": "ev_reign_of_terror_1793_1794"
+  },
+  {
+    "cause_id": "ev_factory_act_1833",
+    "effect_id": "ev_factory_act_1847_ten_hours"
+  },
+  {
+    "cause_id": "ev_factory_act_1847_ten_hours",
+    "effect_id": "ev_matchgirls_strike_1888"
+  },
+  {
+    "cause_id": "ev_factory_act_1847_ten_hours",
+    "effect_id": "ev_public_health_act_1848"
+  },
+  {
+    "cause_id": "ev_factory_system_rise_1780s",
+    "effect_id": "ev_labor_movements_1830s_1840s"
+  },
+  {
+    "cause_id": "ev_factory_system_rise_1780s",
+    "effect_id": "ev_stockton_darlington_railway_1825"
+  },
+  {
+    "cause_id": "ev_factory_system_rise_1780s",
+    "effect_id": "ev_urbanization_accelerates_1800_1850"
+  },
+  {
+    "cause_id": "ev_fall_of_france_1940",
+    "effect_id": "ev_battle_of_britain_1940"
+  },
+  {
+    "cause_id": "ev_fall_of_france_1940",
+    "effect_id": "ev_operation_barbarossa_1941"
+  },
+  {
+    "cause_id": "ev_first_international_1864",
+    "effect_id": "ev_mass_politics_worker_parties_1880s_1890s"
+  },
+  {
+    "cause_id": "ev_first_revelation_610",
+    "effect_id": "ev_hijra_622"
+  },
+  {
+    "cause_id": "ev_flight_to_varennes_1791",
+    "effect_id": "ev_september_massacres_1792"
+  },
+  {
+    "cause_id": "ev_france_britain_declare_war_1939",
+    "effect_id": "ev_battle_of_britain_1940"
+  },
+  {
+    "cause_id": "ev_france_britain_declare_war_1939",
+    "effect_id": "ev_fall_of_france_1940"
+  },
+  {
+    "cause_id": "ev_germany_surrenders_1945",
+    "effect_id": "ev_nuremberg_trials_begin_1945"
+  },
+  {
+    "cause_id": "ev_germany_surrenders_1945",
+    "effect_id": "ev_potsdam_conference_1945"
+  },
+  {
+    "cause_id": "ev_global_market_coordination_1860s",
+    "effect_id": "ev_imperialism_berlin_conference_begins_1884"
+  },
+  {
+    "cause_id": "ev_global_market_coordination_1860s",
+    "effect_id": "ev_wwi_alliance_system_hardens_1890_1907"
+  },
+  {
+    "cause_id": "ev_guadalcanal_campaign_1942_1943",
+    "effect_id": "ev_battle_bulge_1944"
+  },
+  {
+    "cause_id": "ev_guadalcanal_campaign_1942_1943",
+    "effect_id": "ev_island_hopping_campaign_1943_1945"
+  },
+  {
+    "cause_id": "ev_haitian_revolution_independence_1804",
+    "effect_id": "ev_abolition_british_slave_trade_1807"
+  },
+  {
+    "cause_id": "ev_hijra_622",
+    "effect_id": "ev_constitution_medina_622"
+  },
+  {
+    "cause_id": "ev_hitler_suicide_1945",
+    "effect_id": "ev_germany_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_holocaust_widening_killings_1941",
+    "effect_id": "ev_wannsee_conference_1942"
+  },
+  {
+    "cause_id": "ev_imperialism_algeciras_conference_1906",
+    "effect_id": "ev_imperialism_agadir_crisis_1911"
+  },
+  {
+    "cause_id": "ev_imperialism_anglo_japanese_alliance_1902",
+    "effect_id": "ev_imperialism_russojapanese_war_begins_1904"
+  },
+  {
+    "cause_id": "ev_imperialism_british_south_africa_company_charter_1889",
+    "effect_id": "ev_imperialism_second_boer_war_begins_1899"
+  },
+  {
+    "cause_id": "ev_imperialism_first_balkan_war_1912",
+    "effect_id": "ev_wwi_balkan_wars_destabilize_1912_1913"
+  },
+  {
+    "cause_id": "ev_imperialism_first_moroccan_crisis_1905",
+    "effect_id": "ev_wwi_alliance_system_hardens_1890_1907"
+  },
+  {
+    "cause_id": "ev_imperialism_open_door_notes_1899",
+    "effect_id": "ev_imperialism_boxer_rebellion_1900"
+  },
+  {
+    "cause_id": "ev_imperialism_russojapanese_war_begins_1904",
+    "effect_id": "ev_wwi_naval_arms_race_1898_1914"
+  },
+  {
+    "cause_id": "ev_imperialism_suez_canal_opens_1869",
+    "effect_id": "ev_imperialism_british_occupation_egypt_1882"
+  },
+  {
+    "cause_id": "ev_imperialism_triple_intervention_1895",
+    "effect_id": "ev_imperialism_russojapanese_war_begins_1904"
+  },
+  {
+    "cause_id": "ev_imperialism_us_annexes_hawaii_1898",
+    "effect_id": "ev_imperialism_philippine_american_war_begins_1899"
+  },
+  {
+    "cause_id": "ev_india_independence_1947",
+    "effect_id": "ev_bandung_conference_1955"
+  },
+  {
+    "cause_id": "ev_indian_revolt_1857",
+    "effect_id": "ev_berlin_conference_1884"
+  },
+  {
+    "cause_id": "ev_internal_combustion_engine_1876",
+    "effect_id": "ev_mass_production_systems_1890s"
+  },
+  {
+    "cause_id": "ev_invasion_poland_1939",
+    "effect_id": "ev_france_britain_declare_war_1939"
+  },
+  {
+    "cause_id": "ev_invasion_poland_1939",
+    "effect_id": "ev_soviet_invasion_eastern_poland_1939"
+  },
+  {
+    "cause_id": "ev_island_hopping_campaign_1943_1945",
+    "effect_id": "ev_atomic_bomb_hiroshima_1945"
+  },
+  {
+    "cause_id": "ev_island_hopping_campaign_1943_1945",
+    "effect_id": "ev_japan_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_italy_surrenders_1943",
+    "effect_id": "ev_operation_overlord_d_day_1944"
+  },
+  {
+    "cause_id": "ev_japan_surrenders_1945",
+    "effect_id": "ev_nuremberg_trials_begin_1945"
+  },
+  {
+    "cause_id": "ev_japan_surrenders_1945",
+    "effect_id": "ev_un_charter_signed_1945"
+  },
+  {
+    "cause_id": "ev_labor_movements_1830s_1840s",
+    "effect_id": "ev_factory_act_1833"
+  },
+  {
+    "cause_id": "ev_labor_movements_1830s_1840s",
+    "effect_id": "ev_factory_act_1847_ten_hours"
+  },
+  {
+    "cause_id": "ev_lend_lease_act_1941",
+    "effect_id": "ev_operation_overlord_d_day_1944"
+  },
+  {
+    "cause_id": "ev_lend_lease_act_1941",
+    "effect_id": "ev_soviet_counteroffensives_1943_1944"
+  },
+  {
+    "cause_id": "ev_lend_lease_act_1941",
+    "effect_id": "ev_wartime_industrial_mobilization_1942_1944"
+  },
+  {
+    "cause_id": "ev_liberation_paris_1944",
+    "effect_id": "ev_germany_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_liverpool_manchester_railway_1830",
+    "effect_id": "ev_national_market_integration_1850s"
+  },
+  {
+    "cause_id": "ev_liverpool_manchester_railway_1830",
+    "effect_id": "ev_railway_boom_1840s"
+  },
+  {
+    "cause_id": "ev_luddite_protests_1811",
+    "effect_id": "ev_labor_movements_1830s_1840s"
+  },
+  {
+    "cause_id": "ev_mali_mansa_musa_hajj_1324",
+    "effect_id": "ev_ottoman_conquest_egypt_1517"
+  },
+  {
+    "cause_id": "ev_matchgirls_strike_1888",
+    "effect_id": "ev_mass_politics_worker_parties_1880s_1890s"
+  },
+  {
+    "cause_id": "ev_meiji_boshin_war_1868",
+    "effect_id": "ev_meiji_charter_oath_1868"
+  },
+  {
+    "cause_id": "ev_meiji_constitution_1889",
+    "effect_id": "ev_meiji_diet_1890"
+  },
+  {
+    "cause_id": "ev_meiji_perry_1853",
+    "effect_id": "ev_meiji_kanagawa_treaty_1854"
+  },
+  {
+    "cause_id": "ev_modern_urban_infrastructure_1850s_1870s",
+    "effect_id": "ev_electric_power_adoption_1880s"
+  },
+  {
+    "cause_id": "ev_molotov_ribbentrop_pact_1939",
+    "effect_id": "ev_invasion_poland_1939"
+  },
+  {
+    "cause_id": "ev_mughal_empire_akbar_consolidation_1570s",
+    "effect_id": "ev_tokugawa_shogunate_1603"
+  },
+  {
+    "cause_id": "ev_munich_agreement_1938",
+    "effect_id": "ev_invasion_poland_1939"
+  },
+  {
+    "cause_id": "ev_munich_agreement_1938",
+    "effect_id": "ev_molotov_ribbentrop_pact_1939"
+  },
+  {
+    "cause_id": "ev_napoleon_coup_18_brumaire_1799",
+    "effect_id": "ev_napoleon_emperor_1804"
+  },
+  {
+    "cause_id": "ev_napoleon_coup_18_brumaire_1799",
+    "effect_id": "ev_napoleonic_wars_1803_1815"
+  },
+  {
+    "cause_id": "ev_napoleon_emperor_1804",
+    "effect_id": "ev_congress_of_vienna_1814_1815"
+  },
+  {
+    "cause_id": "ev_napoleon_emperor_1804",
+    "effect_id": "ev_napoleonic_wars_1803_1815"
+  },
+  {
+    "cause_id": "ev_napoleonic_wars_1803_1815",
+    "effect_id": "ev_congress_vienna_1815"
+  },
+  {
+    "cause_id": "ev_napoleonic_wars_1803_1815",
+    "effect_id": "ev_state_military_fiscal_expansion_1810s_1820s"
+  },
+  {
+    "cause_id": "ev_national_market_integration_1850s",
+    "effect_id": "ev_global_market_coordination_1860s"
+  },
+  {
+    "cause_id": "ev_operation_bagration_1944",
+    "effect_id": "ev_germany_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_operation_bagration_1944",
+    "effect_id": "ev_soviet_berlin_offensive_1945"
+  },
+  {
+    "cause_id": "ev_operation_barbarossa_1941",
+    "effect_id": "ev_battle_stalingrad_1942_1943"
+  },
+  {
+    "cause_id": "ev_operation_barbarossa_1941",
+    "effect_id": "ev_holocaust_widening_killings_1941"
+  },
+  {
+    "cause_id": "ev_operation_overlord_d_day_1944",
+    "effect_id": "ev_battle_bulge_1944"
+  },
+  {
+    "cause_id": "ev_operation_overlord_d_day_1944",
+    "effect_id": "ev_germany_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_operation_overlord_d_day_1944",
+    "effect_id": "ev_liberation_paris_1944"
+  },
+  {
+    "cause_id": "ev_operation_torch_1942",
+    "effect_id": "ev_battle_el_alamein_1942"
+  },
+  {
+    "cause_id": "ev_operation_torch_1942",
+    "effect_id": "ev_italy_surrenders_1943"
+  },
+  {
+    "cause_id": "ev_ottoman_conquest_egypt_1517",
+    "effect_id": "ev_mughal_empire_akbar_consolidation_1570s"
+  },
+  {
+    "cause_id": "ev_pan_african_congress_1945",
+    "effect_id": "ev_india_independence_1947"
+  },
+  {
+    "cause_id": "ev_pearl_harbor_1941",
+    "effect_id": "ev_battle_midway_1942"
+  },
+  {
+    "cause_id": "ev_pearl_harbor_1941",
+    "effect_id": "ev_united_states_enters_war_1941"
+  },
+  {
+    "cause_id": "ev_potsdam_conference_1945",
+    "effect_id": "ev_atomic_bomb_hiroshima_1945"
+  },
+  {
+    "cause_id": "ev_potsdam_conference_1945",
+    "effect_id": "ev_soviet_invasion_manchuria_1945"
+  },
+  {
+    "cause_id": "ev_public_health_act_1848",
+    "effect_id": "ev_modern_urban_infrastructure_1850s_1870s"
+  },
+  {
+    "cause_id": "ev_qing_first_opium_war_1839",
+    "effect_id": "ev_indian_revolt_1857"
+  },
+  {
+    "cause_id": "ev_railway_boom_1840s",
+    "effect_id": "ev_national_market_integration_1850s"
+  },
+  {
+    "cause_id": "ev_railway_boom_1840s",
+    "effect_id": "ev_second_industrial_revolution_1870s"
+  },
+  {
+    "cause_id": "ev_reign_of_terror_1793_1794",
+    "effect_id": "ev_thermidorian_reaction_1794"
+  },
+  {
+    "cause_id": "ev_revolutions_1848",
+    "effect_id": "ev_mass_politics_worker_parties_1880s_1890s"
+  },
+  {
+    "cause_id": "ev_ridda_wars_begin_632",
+    "effect_id": "ev_battle_yarmouk_636"
+  },
+  {
+    "cause_id": "ev_second_industrial_revolution_1870s",
+    "effect_id": "ev_electric_power_adoption_1880s"
+  },
+  {
+    "cause_id": "ev_second_industrial_revolution_1870s",
+    "effect_id": "ev_mass_politics_worker_parties_1880s_1890s"
+  },
+  {
+    "cause_id": "ev_second_industrial_revolution_1870s",
+    "effect_id": "ev_wwi_naval_arms_race_1898_1914"
+  },
+  {
+    "cause_id": "ev_september_massacres_1792",
+    "effect_id": "ev_execution_louis_xvi_1793"
+  },
+  {
+    "cause_id": "ev_soviet_berlin_offensive_1945",
+    "effect_id": "ev_germany_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_soviet_berlin_offensive_1945",
+    "effect_id": "ev_hitler_suicide_1945"
+  },
+  {
+    "cause_id": "ev_soviet_counteroffensives_1943_1944",
+    "effect_id": "ev_operation_bagration_1944"
+  },
+  {
+    "cause_id": "ev_soviet_counteroffensives_1943_1944",
+    "effect_id": "ev_soviet_berlin_offensive_1945"
+  },
+  {
+    "cause_id": "ev_soviet_invasion_eastern_poland_1939",
+    "effect_id": "ev_operation_barbarossa_1941"
+  },
+  {
+    "cause_id": "ev_soviet_invasion_manchuria_1945",
+    "effect_id": "ev_japan_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_spinning_jenny_1764",
+    "effect_id": "ev_factory_system_rise_1780s"
+  },
+  {
+    "cause_id": "ev_state_military_fiscal_expansion_1810s_1820s",
+    "effect_id": "ev_national_market_integration_1850s"
+  },
+  {
+    "cause_id": "ev_steam_power_transport_expansion_1800s",
+    "effect_id": "ev_liverpool_manchester_railway_1830"
+  },
+  {
+    "cause_id": "ev_steam_power_transport_expansion_1800s",
+    "effect_id": "ev_stockton_darlington_railway_1825"
+  },
+  {
+    "cause_id": "ev_stockton_darlington_railway_1825",
+    "effect_id": "ev_liverpool_manchester_railway_1830"
+  },
+  {
+    "cause_id": "ev_storming_bastille_1789",
+    "effect_id": "ev_declaration_rights_man_citizen_1789"
+  },
+  {
+    "cause_id": "ev_tehran_conference_1943",
+    "effect_id": "ev_operation_overlord_d_day_1944"
+  },
+  {
+    "cause_id": "ev_tehran_conference_1943",
+    "effect_id": "ev_yalta_conference_1945"
+  },
+  {
+    "cause_id": "ev_telegraph_invention_1837",
+    "effect_id": "ev_global_market_coordination_1860s"
+  },
+  {
+    "cause_id": "ev_telegraph_invention_1837",
+    "effect_id": "ev_national_market_integration_1850s"
+  },
+  {
+    "cause_id": "ev_tennis_court_oath_1789",
+    "effect_id": "ev_storming_bastille_1789"
+  },
+  {
+    "cause_id": "ev_tokugawa_shogunate_1603",
+    "effect_id": "ev_haitian_revolution_independence_1804"
+  },
+  {
+    "cause_id": "ev_treaty_hudaybiyyah_628",
+    "effect_id": "ev_conquest_mecca_630"
+  },
+  {
+    "cause_id": "ev_united_states_enters_war_1941",
+    "effect_id": "ev_battle_midway_1942"
+  },
+  {
+    "cause_id": "ev_united_states_enters_war_1941",
+    "effect_id": "ev_operation_torch_1942"
+  },
+  {
+    "cause_id": "ev_united_states_enters_war_1941",
+    "effect_id": "ev_wartime_industrial_mobilization_1942_1944"
+  },
+  {
+    "cause_id": "ev_urbanization_accelerates_1800_1850",
+    "effect_id": "ev_labor_movements_1830s_1840s"
+  },
+  {
+    "cause_id": "ev_urbanization_accelerates_1800_1850",
+    "effect_id": "ev_public_health_act_1848"
+  },
+  {
+    "cause_id": "ev_wannsee_conference_1942",
+    "effect_id": "ev_auschwitz_killing_center_expansion_1942"
+  },
+  {
+    "cause_id": "ev_wartime_industrial_mobilization_1942_1944",
+    "effect_id": "ev_allied_strategic_bombing_1943"
+  },
+  {
+    "cause_id": "ev_wartime_industrial_mobilization_1942_1944",
+    "effect_id": "ev_operation_overlord_d_day_1944"
+  },
+  {
+    "cause_id": "ev_water_frame_1769",
+    "effect_id": "ev_factory_system_rise_1780s"
+  },
+  {
+    "cause_id": "ev_watt_steam_engine_1776",
+    "effect_id": "ev_factory_system_rise_1780s"
+  },
+  {
+    "cause_id": "ev_watt_steam_engine_1776",
+    "effect_id": "ev_steam_power_transport_expansion_1800s"
+  },
+  {
+    "cause_id": "ev_womens_march_versailles_1789",
+    "effect_id": "ev_flight_to_varennes_1791"
+  },
+  {
+    "cause_id": "ev_wwi_alliance_system_hardens_1890_1907",
+    "effect_id": "ev_wwi_naval_arms_race_1898_1914"
+  },
+  {
+    "cause_id": "ev_wwi_arab_revolt_1916",
+    "effect_id": "ev_wwi_balfour_declaration_1917"
+  },
+  {
+    "cause_id": "ev_wwi_armistice_1918",
+    "effect_id": "ev_wwi_paris_peace_conference_1919"
+  },
+  {
+    "cause_id": "ev_wwi_armistice_1918",
+    "effect_id": "ev_wwi_spanish_flu_1918"
+  },
+  {
+    "cause_id": "ev_wwi_assassination_franz_ferdinand_1914",
+    "effect_id": "ev_wwi_austria_ultimatum_serbia_1914"
+  },
+  {
+    "cause_id": "ev_wwi_austria_ultimatum_serbia_1914",
+    "effect_id": "ev_wwi_germany_blank_check_1914"
+  },
+  {
+    "cause_id": "ev_wwi_balfour_declaration_1917",
+    "effect_id": "ev_wwi_paris_peace_conference_1919"
+  },
+  {
+    "cause_id": "ev_wwi_balkan_wars_destabilize_1912_1913",
+    "effect_id": "ev_wwi_assassination_franz_ferdinand_1914"
+  },
+  {
+    "cause_id": "ev_wwi_battle_marne_1914",
+    "effect_id": "ev_wwi_trench_warfare_entrenched_1914"
+  },
+  {
+    "cause_id": "ev_wwi_bolshevik_revolution_1917",
+    "effect_id": "ev_wwi_treaty_brest_litovsk_1918"
+  },
+  {
+    "cause_id": "ev_wwi_brusilov_offensive_1916",
+    "effect_id": "ev_wwi_russian_february_revolution_1917"
+  },
+  {
+    "cause_id": "ev_wwi_first_ypres_1914",
+    "effect_id": "ev_wwi_gallipoli_campaign_1915"
+  },
+  {
+    "cause_id": "ev_wwi_first_ypres_1914",
+    "effect_id": "ev_wwi_italy_enters_war_1915"
+  },
+  {
+    "cause_id": "ev_wwi_gallipoli_campaign_1915",
+    "effect_id": "ev_wwi_arab_revolt_1916"
+  },
+  {
+    "cause_id": "ev_wwi_german_spring_offensive_1918",
+    "effect_id": "ev_wwi_hundred_days_offensive_1918"
+  },
+  {
+    "cause_id": "ev_wwi_germany_blank_check_1914",
+    "effect_id": "ev_wwi_russia_mobilizes_1914"
+  },
+  {
+    "cause_id": "ev_wwi_germany_invades_belgium_1914",
+    "effect_id": "ev_wwi_battle_marne_1914"
+  },
+  {
+    "cause_id": "ev_wwi_germany_invades_belgium_1914",
+    "effect_id": "ev_wwi_japan_enters_war_1914"
+  },
+  {
+    "cause_id": "ev_wwi_germany_invades_belgium_1914",
+    "effect_id": "ev_wwi_ottoman_enters_war_1914"
+  },
+  {
+    "cause_id": "ev_wwi_home_front_total_mobilization_1915",
+    "effect_id": "ev_wwi_hundred_days_offensive_1918"
+  },
+  {
+    "cause_id": "ev_wwi_home_front_total_mobilization_1915",
+    "effect_id": "ev_wwi_state_propaganda_expands_1915"
+  },
+  {
+    "cause_id": "ev_wwi_hundred_days_offensive_1918",
+    "effect_id": "ev_wwi_armistice_1918"
+  },
+  {
+    "cause_id": "ev_wwi_italy_enters_war_1915",
+    "effect_id": "ev_wwi_hundred_days_offensive_1918"
+  },
+  {
+    "cause_id": "ev_wwi_japan_enters_war_1914",
+    "effect_id": "ev_wwi_paris_peace_conference_1919"
+  },
+  {
+    "cause_id": "ev_wwi_jutland_1916",
+    "effect_id": "ev_wwi_unrestricted_submarine_1917"
+  },
+  {
+    "cause_id": "ev_wwi_league_of_nations_1920",
+    "effect_id": "ev_bandung_conference_1955"
+  },
+  {
+    "cause_id": "ev_wwi_naval_arms_race_1898_1914",
+    "effect_id": "ev_wwi_balkan_wars_destabilize_1912_1913"
+  },
+  {
+    "cause_id": "ev_wwi_ottoman_enters_war_1914",
+    "effect_id": "ev_wwi_armenian_genocide_begins_1915"
+  },
+  {
+    "cause_id": "ev_wwi_ottoman_enters_war_1914",
+    "effect_id": "ev_wwi_gallipoli_campaign_1915"
+  },
+  {
+    "cause_id": "ev_wwi_paris_peace_conference_1919",
+    "effect_id": "ev_wwi_league_of_nations_1920"
+  },
+  {
+    "cause_id": "ev_wwi_paris_peace_conference_1919",
+    "effect_id": "ev_wwi_treaty_versailles_1919"
+  },
+  {
+    "cause_id": "ev_wwi_russia_mobilizes_1914",
+    "effect_id": "ev_wwi_germany_invades_belgium_1914"
+  },
+  {
+    "cause_id": "ev_wwi_russian_february_revolution_1917",
+    "effect_id": "ev_wwi_bolshevik_revolution_1917"
+  },
+  {
+    "cause_id": "ev_wwi_russian_february_revolution_1917",
+    "effect_id": "ev_wwi_treaty_brest_litovsk_1918"
+  },
+  {
+    "cause_id": "ev_wwi_second_battle_ypres_gas_1915",
+    "effect_id": "ev_wwi_verdun_1916"
+  },
+  {
+    "cause_id": "ev_wwi_somme_1916",
+    "effect_id": "ev_wwi_jutland_1916"
+  },
+  {
+    "cause_id": "ev_wwi_spanish_flu_1918",
+    "effect_id": "ev_wwi_paris_peace_conference_1919"
+  },
+  {
+    "cause_id": "ev_wwi_state_propaganda_expands_1915",
+    "effect_id": "ev_wwi_us_enters_war_1917"
+  },
+  {
+    "cause_id": "ev_wwi_tannenberg_1914",
+    "effect_id": "ev_wwi_brusilov_offensive_1916"
+  },
+  {
+    "cause_id": "ev_wwi_treaty_brest_litovsk_1918",
+    "effect_id": "ev_wwi_german_spring_offensive_1918"
+  },
+  {
+    "cause_id": "ev_wwi_treaty_versailles_1919",
+    "effect_id": "ev_india_independence_1947"
+  },
+  {
+    "cause_id": "ev_wwi_treaty_versailles_1919",
+    "effect_id": "ev_pan_african_congress_1945"
+  },
+  {
+    "cause_id": "ev_wwi_treaty_versailles_1919",
+    "effect_id": "ev_wwi_league_of_nations_1920"
+  },
+  {
+    "cause_id": "ev_wwi_trench_warfare_entrenched_1914",
+    "effect_id": "ev_wwi_first_ypres_1914"
+  },
+  {
+    "cause_id": "ev_wwi_trench_warfare_entrenched_1914",
+    "effect_id": "ev_wwi_home_front_total_mobilization_1915"
+  },
+  {
+    "cause_id": "ev_wwi_trench_warfare_entrenched_1914",
+    "effect_id": "ev_wwi_second_battle_ypres_gas_1915"
+  },
+  {
+    "cause_id": "ev_wwi_unrestricted_submarine_1917",
+    "effect_id": "ev_wwi_us_enters_war_1917"
+  },
+  {
+    "cause_id": "ev_wwi_unrestricted_submarine_1917",
+    "effect_id": "ev_wwi_zimmermann_telegram_1917"
+  },
+  {
+    "cause_id": "ev_wwi_us_enters_war_1917",
+    "effect_id": "ev_wwi_german_spring_offensive_1918"
+  },
+  {
+    "cause_id": "ev_wwi_us_enters_war_1917",
+    "effect_id": "ev_wwi_hundred_days_offensive_1918"
+  },
+  {
+    "cause_id": "ev_wwi_verdun_1916",
+    "effect_id": "ev_wwi_home_front_total_mobilization_1915"
+  },
+  {
+    "cause_id": "ev_wwi_verdun_1916",
+    "effect_id": "ev_wwi_somme_1916"
+  },
+  {
+    "cause_id": "ev_wwi_zimmermann_telegram_1917",
+    "effect_id": "ev_wwi_us_enters_war_1917"
+  },
+  {
+    "cause_id": "ev_yalta_conference_1945",
+    "effect_id": "ev_germany_surrenders_1945"
+  },
+  {
+    "cause_id": "ev_yalta_conference_1945",
+    "effect_id": "ev_un_charter_signed_1945"
+  }
+]
