@@ -115,6 +115,17 @@ Next:
 - Tightened guided session composition in `apps/session-runner/app.js` so the final mode plan explicitly attempts to maintain at least 3 distinct skill categories when alternatives exist.
 - Expanded session-runner console diagnostics with `availableSkillDistribution` (event-skill frequency map) to make skill-balance tuning easier during development.
 
+## Recent updates (2026-04-30 · causal explanation reasoning mode + reusable causal pair index)
+
+- Added new reasoning-first mode at `apps/causal-explanation/`:
+  - prompts open-ended explanation: why one event caused another,
+  - resolves event IDs to labels and shows a lightweight reference explanation after submit,
+  - includes learner self-assessment controls (**Correct / Partial / Incorrect**) with local progress tracking.
+- Added/standardized reusable causal relationship index at `derived/index.causal_pairs.json`:
+  - flattened `cause_id -> effect_id` pairs derived from validated event links,
+  - deterministic sort + deduplication for stable downstream app usage.
+- Causal Explanation mode now reads directly from derived causal pairs (`/derived/index.causal_pairs.json`) and normalized events (`/derived/events.normalized.json`) so the mode can be reused across all units without mode-specific hardcoding.
+
 ## Recent updates (2026-04-21 · Islamic expansion unit + controlled tag normalization)
 
 ## Recent updates (2026-04-27 · event skill taxonomy + balanced session composition)

@@ -3,6 +3,7 @@ let state = {
   eventsById: new Map(),
   currentPair: null,
 };
+const PROGRESS_KEY = 'whl_causal_explanation_progress_v1';
 
 async function fetchJson(url) {
   const response = await fetch(url, { cache: "no-store" });
@@ -36,6 +37,7 @@ function showPrompt(pair) {
   document.getElementById('reference').innerText = '';
   document.getElementById('feedback').innerText = '';
   document.getElementById('answer').value = '';
+  document.getElementById('assessment').hidden = true;
 }
 
 function getReference(pair) {
@@ -57,13 +59,22 @@ function submitAnswer() {
   }
 
   document.getElementById('reference').innerText = getReference(state.currentPair);
-  document.getElementById('feedback').innerText = 'Self-assess: mark your answer as Correct / Partial / Incorrect.';
+  document.getElementById('feedback').innerText = 'Now self-assess your explanation.';
+  document.getElementById('assessment').hidden = false;
 
-  const key = 'whl_causal_explanation_progress_v1';
-  const raw = localStorage.getItem(key);
+  const raw = localStorage.getItem(PROGRESS_KEY);
   const progress = raw ? JSON.parse(raw) : { attempts: 0 };
   progress.attempts += 1;
-  localStorage.setItem(key, JSON.stringify(progress));
+  localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+}
+
+function recordAssessment(rating) {
+  const raw = localStorage.getItem(PROGRESS_KEY);
+  const progress = raw ? JSON.parse(raw) : { attempts: 0, ratings: {} };
+  progress.ratings = progress.ratings || {};
+  progress.ratings[rating] = (progress.ratings[rating] || 0) + 1;
+  localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+  document.getElementById('feedback').innerText = `Saved self-assessment: ${rating}.`;
 }
 
 function showNextPair() {
@@ -84,6 +95,13 @@ function showNextPair() {
 
     document.getElementById('submit-btn').addEventListener('click', submitAnswer);
     document.getElementById('next-btn').addEventListener('click', showNextPair);
+    document.getElementById('assessment').addEventListener('click', (event) => {
+      const rating = event.target?.dataset?.rating;
+      if (!rating) {
+        return;
+      }
+      recordAssessment(rating);
+    });
     showNextPair();
   } catch (error) {
     console.error('[causal-explanation] load failed', error);
