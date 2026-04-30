@@ -945,3 +945,21 @@
 1. Add a small derive/report artifact for location coverage by unit (e.g., `% events with location`) to keep map-readiness from regressing.
 2. Consider showing “ready/not enough location data” messaging in Map Quiz per unit so learners understand sparse geography cases.
 3. If desired, align README’s earlier “MVP focus” section with current portfolio language to reduce historical drift in project docs.
+
+
+## Incremental update (2026-04-29 · Causal Explanation mode + causal pair index)
+- Added new app `apps/causal-explanation/`:
+  - `index.html`: minimal short-answer reasoning UI with prompt, answer box, submit, and next-pair controls.
+  - `main.js`: loads `derived/index.causal_pairs.json`, maps IDs to event labels via `derived/events.normalized.json`, renders causal explanation prompts, shows a reference explanation, and stores local attempt count in `whl_causal_explanation_progress_v1`.
+- Extended `scripts/derive.mjs` to generate `derived/index.causal_pairs.json`:
+  - builds deterministic deduplicated `{ cause_id, effect_id }` pairs from normalized `caused_by` links,
+  - outputs sorted causal pairs for reuse across reasoning-focused apps.
+- Added root navigation link to `index.html` for `/apps/causal-explanation/` in the Connections section.
+
+### Validation completed (2026-04-29)
+- `node scripts/derive.mjs` ✅
+
+### Notes for next session
+1. Add explicit self-assessment buttons (Correct / Partial / Incorrect) and persist outcomes to support reflection analytics.
+2. Integrate causal explanation mode into `apps/session-runner/` as an optional advanced block after causality drill.
+3. Consider adding curated pair difficulty tiers (direct, indirect, multi-hop) derived from graph distance to scaffold reasoning depth.
