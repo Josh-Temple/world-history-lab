@@ -10,6 +10,26 @@
 - `node scripts/derive.mjs` ✅
 - `npm run smoke` ✅
 
+## Incremental update (2026-04-30 · causal explanation mode completed + self-assessment tracking)
+- Confirmed and integrated new learner-facing route `apps/causal-explanation/` as a reasoning-focused mode that asks for short written causal explanations.
+- Updated `apps/causal-explanation/index.html`:
+  - added explicit self-assessment controls (Correct / Partial / Incorrect) that appear after submission.
+- Updated `apps/causal-explanation/main.js`:
+  - continues loading pair data from `/derived/index.causal_pairs.json` and label/context from `/derived/events.normalized.json`,
+  - now reveals self-assessment UI after submit and persists per-rating counts in localStorage (`whl_causal_explanation_progress_v1`),
+  - preserves existing attempt tracking and next-pair flow.
+- README updated with a new `2026-04-30` “Recent updates” section documenting the new mode and derived causal-pair reuse contract.
+
+## Validation completed (2026-04-30)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate-data.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add short rubric hints (e.g., “mechanism”, “intermediate consequence”, “scope”) to make self-assessment more reliable.
+2. Add optional authored explanations per pair for higher-quality feedback than generic summary concatenation.
+3. Integrate Causal Explanation into `apps/session-runner/` as an advanced/Wednesday reasoning checkpoint mode.
+
 ## Suggested next steps
 1. Expose the session plan + skill mix in UI (not only console) so learners can understand why a mode sequence was chosen.
 2. Add a small deterministic test around `composeBalancedSessionModes` to lock in the “>=3 skills when available” contract.
