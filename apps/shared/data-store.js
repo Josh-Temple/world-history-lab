@@ -166,10 +166,21 @@ function normalizeNormalizedEvent(event) {
 
 export async function getNormalizedEvents() {
   if (normalizedEventsCache) return normalizedEventsCache;
-  const normalized = await fetchJson("/derived/events.normalized.json", "normalized events");
-  normalizedEventsCache = (Array.isArray(normalized) ? normalized : [])
-    .map(normalizeNormalizedEvent)
-    .filter(isValidNormalizedEvent);
+  try {
+    const normalized = await fetchJson("/derived/events.normalized.json", "normalized events");
+    normalizedEventsCache = (Array.isArray(normalized) ? normalized : [])
+      .map(normalizeNormalizedEvent)
+      .filter(isValidNormalizedEvent);
+  } catch (error) {
+    console.warn("[data-store] Failed to load /derived/events.normalized.json, falling back to /data/events.json:", error?.message || error);
+    const [events, eventUnitMap] = await Promise.all([getAllEvents(), getEventUnitMap()]);
+    normalizedEventsCache = events.map((event) => ({
+      ...event,
+      unit_ids: eventUnitMap.has(event.id) ? [eventUnitMap.get(event.id)] : [],
+      caused_by: Array.isArray(event.caused_by) ? event.caused_by : [],
+      weight: computeWeight(event),
+    }));
+  }
   return normalizedEventsCache;
 }
 
