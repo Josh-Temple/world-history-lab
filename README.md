@@ -855,3 +855,22 @@ TBD
   - validates references through existing event ID integrity checks,
   - writes deterministic sorted output for app reuse.
 - Added homepage discoverability link for **Causal Explanation** under Connections.
+
+
+## Recent updates (2026-05-01 · derived integrity validation + event normalization hardening)
+
+- Added `scripts/validate-derived.mjs` to validate post-derive artifacts against source truth:
+  - checks normalized/derived IDs against `data/events.json` and `data/people.json`,
+  - fails on orphan causal references in `derived/index.causal_pairs.json`,
+  - verifies chronological ordering assumptions in `derived/index.events_sorted.json`,
+  - validates `derived/index.events_by_year.json` and unit event references remain consistent.
+- Hardened event normalization in `scripts/derive.mjs`:
+  - guarantees array defaults for `places`, `regions`, and `people_ids`,
+  - preserves required `time.year_start` in normalized output,
+  - strips `null`/`undefined` fields from normalized events via deep-cleaning.
+- Added npm script: `npm run validate-derived`.
+
+## Validation completed (2026-05-01)
+- `node scripts/derive.mjs` ✅
+- `node scripts/validate-derived.mjs` ✅
+- `node scripts/validate-data.mjs` ✅
