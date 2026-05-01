@@ -1002,3 +1002,20 @@
 - `node scripts/derive.mjs` ✅
 - `node scripts/validate-derived.mjs` ✅
 - `node scripts/validate-data.mjs` ✅
+
+## Incremental update (2026-05-01 · loading-stall fallback for normalized events)
+- Updated `apps/shared/data-store.js` to make `getNormalizedEvents()` resilient when `/derived/events.normalized.json` is unavailable (404/network/cache mismatch).
+- New behavior:
+  - first attempts to load `/derived/events.normalized.json` as before,
+  - if loading fails, logs a warning and falls back to `/data/events.json` via `getAllEvents()`,
+  - reconstructs minimal normalized fields (`unit_ids`, `caused_by`, `weight`) so timeline and other modes can continue instead of hanging on loading.
+- This addresses broad “stuck on loading” behavior across multiple modes when derived artifacts are temporarily missing or out of sync in the served environment.
+
+### Validation completed (2026-05-01)
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+- `node scripts/validate-derived.mjs` ✅
+
+### Notes for next session
+1. Add a small in-UI non-blocking warning banner when fallback mode is active so users/developers can detect degraded data source quickly.
+2. Consider adding a smoke test variant that temporarily hides `/derived/events.normalized.json` and asserts fallback still yields non-empty event pools.
