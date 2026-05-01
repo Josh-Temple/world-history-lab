@@ -5,6 +5,7 @@
   "scripts": {
     "derive": "node scripts/derive.mjs",
     "smoke": "node scripts/smoke-test.mjs",
-    "sanity": "node scripts/sanity-check.mjs"
+    "sanity": "node scripts/sanity-check.mjs",
+    "validate-derived": "node scripts/validate-derived.mjs"
   }
 }

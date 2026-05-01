@@ -584,6 +584,27 @@ function buildCausedByMap(events, eventIdSet) {
   return causedByMap;
 }
 
+
+function compactArrayStrings(value) {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+  return value.filter((item) => typeof item === "string" && item.trim() !== "");
+}
+
+function deepClean(value) {
+  if (Array.isArray(value)) {
+    return value.map((item) => deepClean(item)).filter((item) => item !== undefined && item !== null);
+  }
+  if (value && typeof value === "object") {
+    const entries = Object.entries(value)
+      .map(([key, item]) => [key, deepClean(item)])
+      .filter(([, item]) => item !== undefined && item !== null);
+    return Object.fromEntries(entries);
+  }
+  return value;
+}
+
 function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new Map()) {
   const parsed = parseEventTime(event);
   const causedBy = Array.from(causedByMap.get(event.id) || []).sort();
@@ -591,7 +612,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
     if (typeof event.time?.year_start === "number") {
       const year = event.time.year_start;
       console.warn(`[derive] Unsupported time string for event ${event.id}; falling back to year_start=${year}`);
-      return {
+      return deepClean({
         id: event.id,
         label: event.label,
         summary_short: typeof event.summary_short === "string" ? event.summary_short : null,
@@ -599,9 +620,11 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
         category: typeof event.category === "string" ? event.category : null,
         importance: Number.isFinite(event.importance) ? event.importance : null,
         location: event.location && typeof event.location === "object" ? event.location : null,
-        question_types: Array.isArray(event.question_types) ? event.question_types : [],
-        concept_tags: Array.isArray(event.concept_tags) ? event.concept_tags : [],
-        people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
+        places: compactArrayStrings(event.places),
+        regions: compactArrayStrings(event.regions),
+        question_types: compactArrayStrings(event.question_types),
+        concept_tags: compactArrayStrings(event.concept_tags),
+        people_ids: compactArrayStrings(event.people_ids),
         unit_ids: unitIdsByEventId.get(event.id) || [],
         caused_by: causedBy,
         effects: Array.isArray(event.effects) ? event.effects : [],
@@ -619,14 +642,14 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
           derived_certainty: "exact",
           year_start: year,
         },
-      };
+      });
     }
 
     console.warn(`[derive] Excluding event ${event.id}: unsupported time format and no fallback year_start.`);
     return null;
   }
 
-  return {
+  return deepClean({
     id: event.id,
     label: event.label,
     summary_short: typeof event.summary_short === "string" ? event.summary_short : null,
@@ -634,9 +657,11 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
     category: typeof event.category === "string" ? event.category : null,
     importance: Number.isFinite(event.importance) ? event.importance : null,
     location: event.location && typeof event.location === "object" ? event.location : null,
-    question_types: Array.isArray(event.question_types) ? event.question_types : [],
-    concept_tags: Array.isArray(event.concept_tags) ? event.concept_tags : [],
-    people_ids: Array.isArray(event.people_ids) ? event.people_ids : [],
+    places: compactArrayStrings(event.places),
+    regions: compactArrayStrings(event.regions),
+    question_types: compactArrayStrings(event.question_types),
+    concept_tags: compactArrayStrings(event.concept_tags),
+    people_ids: compactArrayStrings(event.people_ids),
     unit_ids: unitIdsByEventId.get(event.id) || [],
     caused_by: causedBy,
     effects: Array.isArray(event.effects) ? event.effects : [],
@@ -654,7 +679,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
       derived_certainty: parsed.derived_certainty,
       year_start: typeof event.time?.year_start === "number" ? event.time.year_start : parsed.year_start,
     },
-  };
+  });
 }
 
 function buildEventsByYear(normalizedEvents) {

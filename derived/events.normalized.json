@@ -12,6 +12,8 @@
       "lon": 44.3354,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -59,6 +61,8 @@
       "lng": -0.1276,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -105,6 +109,8 @@
       "lng": 43.13,
       "precision": "region"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "war_diplomacy",
@@ -136,9 +142,8 @@
     "label": "Allied Strategic Bombing Intensifies",
     "summary_short": "Allied air campaigns target German industry and infrastructure to reduce war capacity.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -188,6 +193,8 @@
       "lng": 85.84,
       "precision": "region"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "war_diplomacy",
@@ -219,13 +226,13 @@
     "label": "Atomic Bombing of Hiroshima",
     "summary_short": "The United States drops an atomic bomb on Hiroshima to force Japanese surrender.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Hiroshima, Japan",
       "lat": 34.3853,
       "lon": 132.4553
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -267,9 +274,8 @@
     "label": "Atomic Bombing of Nagasaki",
     "summary_short": "A second U.S. atomic bombing increases pressure on Japan’s leadership to surrender.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -317,6 +323,8 @@
       "lng": 12.5,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "state_formation_governance",
@@ -348,9 +356,8 @@
     "label": "Auschwitz-Birkenau Expansion",
     "summary_short": "Auschwitz-Birkenau is expanded as a major site of industrialized mass murder.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -399,6 +406,8 @@
       "lng": 107.6191,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -444,6 +453,8 @@
       "lon": 38.7833,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -486,9 +497,8 @@
     "label": "Battle of the Bulge",
     "summary_short": "Germany’s final major offensive in the West fails, accelerating Allied advance into Germany.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -532,13 +542,13 @@
     "label": "Second Battle of El Alamein",
     "summary_short": "British-led forces halt and reverse Axis advances in North Africa.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "El Alamein, Egypt",
       "lat": 30.83,
       "lon": 28.95
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -580,13 +590,13 @@
     "label": "Battle of Midway",
     "summary_short": "The U.S. Navy defeats Japan at Midway, shifting strategic momentum in the Pacific.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Midway Atoll, Pacific Ocean",
       "lat": 28.2,
       "lon": -177.35
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -630,9 +640,8 @@
     "label": "Battle of Britain",
     "summary_short": "British air defense halts German air superiority plans, preventing invasion.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -674,9 +683,8 @@
     "label": "Battle of Valmy",
     "summary_short": "French revolutionary forces halted a Prussian-led invasion, helping secure the Revolution at a critical moment.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -714,13 +722,13 @@
     "label": "Battle of Stalingrad",
     "summary_short": "A decisive Soviet victory breaks German offensive capacity on the Eastern Front.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Stalingrad (Volgograd), Russia",
       "lat": 48.708,
       "lon": 44.514
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -770,6 +778,8 @@
       "lon": 0.6848,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -819,6 +829,8 @@
       "lon": 35.73,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -869,6 +881,8 @@
       "lng": 13.405,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -907,9 +921,8 @@
     "label": "Bessemer process patented",
     "summary_short": "Cheaper mass steel production supports railways, shipbuilding, machinery, and heavy industry growth.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -948,9 +961,8 @@
     "label": "Bessemer process patented (mass steel production)",
     "summary_short": "Bessemer’s process enabled cheaper mass production of steel, accelerating industrial expansion in railways, construction, and machinery.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after"
     ],
@@ -984,13 +996,17 @@
     "label": "Bridgewater Canal opens (coal transport to Manchester)",
     "summary_short": "The Bridgewater Canal opened to move coal efficiently, cutting transport costs and accelerating industrial growth.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Manchester, United Kingdom",
       "lat": 53.4808,
       "lon": -2.2426
     },
+    "places": [
+      "Manchester"
+    ],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -1029,6 +1045,8 @@
       "lng": 84.99,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "belief_systems_cultural_exchange"
@@ -1067,6 +1085,8 @@
       "lng": 12.5,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "state_formation_governance",
@@ -1098,9 +1118,8 @@
     "label": "Civil Constitution of the Clergy",
     "summary_short": "The National Assembly reorganized the Catholic Church under state authority, deepening social and religious divisions.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1146,6 +1165,8 @@
       "lng": -74.47,
       "precision": "approx"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "trade_networks_economic_exchange",
@@ -1177,9 +1198,8 @@
     "label": "The Communist Manifesto published",
     "summary_short": "Marx and Engels publish a critique of industrial capitalism that shapes global labor and socialist movements.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1217,9 +1237,8 @@
     "label": "Concert of Europe diplomacy",
     "summary_short": "Conservative great-power coordination seeks stability while managing revolutionary pressures.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1256,13 +1275,17 @@
     "label": "Congress of Vienna",
     "summary_short": "European powers met at Vienna to rebuild order after the Napoleonic Wars, reshaping borders and seeking a balance of power.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Vienna, Austria",
       "lat": 48.2082,
       "lon": 16.3738
     },
+    "places": [
+      "Vienna"
+    ],
+    "regions": [
+      "reg_western_europe"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1283,21 +1306,18 @@
     "effects": [
       {
         "label": "reorganization of European political order",
-        "category": "political",
-        "note": null
+        "category": "political"
       },
       {
         "label": "balance-of-power diplomacy as a guiding principle",
-        "category": "political",
-        "note": null
+        "category": "political"
       },
       "ev_congress_vienna_1815"
     ],
     "causes": [
       {
         "label": "collapse of Napoleonic dominance in Europe",
-        "category": "military",
-        "note": null
+        "category": "military"
       },
       "ev_napoleon_emperor_1804"
     ],
@@ -1320,9 +1340,8 @@
     "label": "Congress of Vienna settlement",
     "summary_short": "Major powers redraw borders and pursue a balance-of-power order after Napoleon’s defeat.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1371,6 +1390,8 @@
       "lon": 44.58,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1418,6 +1439,8 @@
       "lon": 31.2357,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1469,6 +1492,8 @@
       "lon": 35.2137,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1518,6 +1543,8 @@
       "lon": 39.8579,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1567,6 +1594,8 @@
       "lng": 9.19,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "belief_systems_cultural_exchange",
@@ -1606,6 +1635,8 @@
       "lon": 39.61,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1646,9 +1677,8 @@
     "label": "Cotton gin transforms cotton processing",
     "summary_short": "Eli Whitney’s cotton gin speeds raw cotton processing, accelerating textile supply chains and industrial demand.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1685,9 +1715,8 @@
     "label": "Cotton gin invented (Eli Whitney)",
     "summary_short": "Whitney’s cotton gin sped seed removal, expanding raw cotton supply feeding textile mills and intensifying the global cotton economy.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after"
     ],
@@ -1718,13 +1747,17 @@
     "label": "Cromford Mill uses water frame (early factory system)",
     "summary_short": "Arkwright’s water-powered spinning at Cromford is often cited as a key step toward the factory system in textiles.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Cromford, United Kingdom",
       "lat": 53.1127,
       "lon": -1.5602
     },
+    "places": [
+      "Cromford"
+    ],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -1763,6 +1796,8 @@
       "lng": 53.18,
       "precision": "region"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "state_formation_governance",
@@ -1802,6 +1837,8 @@
       "lon": 39.61,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1844,13 +1881,17 @@
     "label": "Declaration of the Rights of Man and of the Citizen",
     "summary_short": "A foundational revolutionary declaration asserting rights, citizenship, and principles of political legitimacy that shaped later constitutional politics.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
     },
+    "places": [
+      "Paris"
+    ],
+    "regions": [
+      "reg_france"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1872,16 +1913,14 @@
     "effects": [
       {
         "label": "provided a rights-based framework for revolutionary politics",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
       "ev_storming_bastille_1789",
       {
         "label": "Enlightenment political ideas",
-        "category": "intellectual",
-        "note": null
+        "category": "intellectual"
       }
     ],
     "time": {
@@ -1903,13 +1942,17 @@
     "label": "Directory Established",
     "summary_short": "A new five-man executive government replaced the Convention, seeking stability after the Terror.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
     },
+    "places": [
+      "Paris"
+    ],
+    "regions": [
+      "reg_france"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -1947,9 +1990,8 @@
     "label": "Electric power adoption expands",
     "summary_short": "Urban electrification and electric motors begin reshaping production, services, and everyday life.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -1990,9 +2032,8 @@
     "label": "Enclosure movement accelerates in Britain",
     "summary_short": "Land enclosure consolidates fields and changes rural labor patterns, feeding urban migration and wage labor.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2027,13 +2068,17 @@
     "label": "Convening of the Estates-General",
     "summary_short": "Louis XVI convened the Estates-General in 1789 amid a fiscal crisis, helping trigger the political escalation that became the French Revolution.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Versailles, France",
       "lat": 48.8049,
       "lon": 2.1204
     },
+    "places": [
+      "Versailles"
+    ],
+    "regions": [
+      "reg_france"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -2053,8 +2098,7 @@
       "ev_tennis_court_oath_1789",
       {
         "label": "escalation of conflict between crown and representatives",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
@@ -2088,13 +2132,17 @@
     "label": "Execution of Louis XVI",
     "summary_short": "The execution of Louis XVI marked a decisive break with monarchy and intensified the radicalization and external conflict surrounding the Revolution.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
     },
+    "places": [
+      "Paris"
+    ],
+    "regions": [
+      "reg_france"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -2117,20 +2165,17 @@
       "ev_reign_of_terror_1793_1794",
       {
         "label": "deepened polarization in revolutionary politics",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
       {
         "label": "collapse of trust between king and revolutionary government",
-        "category": "political",
-        "note": null
+        "category": "political"
       },
       {
         "label": "radicalization under war and internal crisis",
-        "category": "military",
-        "note": null
+        "category": "military"
       }
     ],
     "time": {
@@ -2152,13 +2197,17 @@
     "label": "Factory Act (UK) strengthens child labor regulation and enforcement",
     "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate—an important step toward enforceable workplace regulation.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "London, United Kingdom",
       "lat": 51.5072,
       "lon": -0.1276
     },
+    "places": [
+      "London"
+    ],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -2197,9 +2246,8 @@
     "label": "Ten Hours Act limits factory labor time",
     "summary_short": "British legislation limits working hours for women and young persons in textile mills, reflecting social response to industrial labor conditions.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2238,9 +2286,8 @@
     "label": "Factory system expands in Britain",
     "summary_short": "Production shifts into centralized factories, increasing output while transforming labor discipline and social relations.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2285,9 +2332,8 @@
     "label": "Fall of France",
     "summary_short": "German blitzkrieg defeats France, leading to occupation and the Vichy regime.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2328,9 +2374,8 @@
     "label": "International Workingmen’s Association founded",
     "summary_short": "The First International links labor and socialist activists across borders in the high-industrial era.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2378,6 +2423,8 @@
       "lon": 39.8579,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2417,9 +2464,8 @@
     "label": "Flight to Varennes",
     "summary_short": "Louis XVI and his family attempted to flee Paris, undermining trust in constitutional monarchy.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -2461,9 +2507,10 @@
     "label": "Flying shuttle patented (John Kay)",
     "summary_short": "John Kay’s flying shuttle sped up weaving and increased demand for spun yarn, helping trigger later spinning innovations.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -2494,9 +2541,8 @@
     "label": "Britain and France Declare War on Germany",
     "summary_short": "Britain and France declare war after Germany refuses to withdraw from Poland.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2536,9 +2582,8 @@
     "label": "Germany Surrenders (VE Day)",
     "summary_short": "Nazi Germany signs unconditional surrender, ending war in Europe.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2586,9 +2631,8 @@
     "label": "Global market coordination intensifies",
     "summary_short": "Industrial states increasingly coordinate finance, shipping, and information across long-distance trade networks.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2628,13 +2672,17 @@
     "label": "Great Exhibition opens in London (Crystal Palace)",
     "summary_short": "A major international exhibition showcasing industrial and cultural achievements, symbolizing Britain’s industrial prominence.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "London, United Kingdom",
       "lat": 51.5072,
       "lon": -0.1276
     },
+    "places": [
+      "London"
+    ],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -2666,9 +2714,8 @@
     "label": "Guadalcanal Campaign",
     "summary_short": "The first major Allied offensive in the Pacific weakens Japanese expansion.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2719,6 +2766,8 @@
       "lng": -72.2852,
       "precision": "country"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -2765,6 +2814,8 @@
       "lng": 108.94,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "trade_networks_economic_exchange",
@@ -2804,6 +2855,8 @@
       "lng": 39.61,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2846,9 +2899,8 @@
     "label": "Hitler Commits Suicide",
     "summary_short": "Adolf Hitler dies in Berlin as Nazi Germany collapses militarily.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2887,9 +2939,8 @@
     "label": "Mass Shootings Expand in Occupied Eastern Europe",
     "summary_short": "Nazi mobile killing units intensify mass shootings, escalating genocidal policy.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -2929,9 +2980,11 @@
     "label": "Agadir Crisis",
     "summary_short": "The Agadir Crisis intensified competition between Germany and France and deepened alliance polarization before World War I.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -2965,9 +3018,11 @@
     "label": "Algeciras Conference",
     "summary_short": "European powers and the US met at Algeciras to settle Moroccan disputes, exposing fragile great-power cooperation.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3003,9 +3058,11 @@
     "label": "Anglo-Japanese Alliance signed",
     "summary_short": "Britain and Japan formed an alliance to balance Russian influence in East Asia and protect imperial interests.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3044,9 +3101,11 @@
     "label": "Battle of Adwa",
     "summary_short": "Ethiopian forces defeated Italy at Adwa, becoming a major anti-colonial victory during the Scramble for Africa.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3090,9 +3149,11 @@
     "label": "Berlin Conference begins",
     "summary_short": "European powers convened in Berlin to set rules for territorial claims in Africa, accelerating formal partition.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3128,9 +3189,11 @@
     "label": "Berlin Conference ends",
     "summary_short": "The Berlin Conference concluded by codifying principles that legitimized the Scramble for Africa without African representation.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3162,9 +3225,11 @@
     "label": "Boer War ends",
     "summary_short": "The Boer War ended with British victory, paving the way for a new political order in South Africa under imperial influence.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3196,9 +3261,11 @@
     "label": "Boxer Rebellion",
     "summary_short": "An anti-foreign uprising in Qing China drew multinational military intervention and harsher external control.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3232,9 +3299,11 @@
     "label": "British occupation of Egypt",
     "summary_short": "Britain occupied Egypt to secure financial interests and the Suez route, tightening European control over a strategic imperial corridor.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3270,9 +3339,11 @@
     "label": "British South Africa Company receives royal charter",
     "summary_short": "Britain granted Cecil Rhodes's company authority to administer and expand control in parts of southern Africa.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3313,9 +3384,11 @@
     "label": "Congo Free State established",
     "summary_short": "Leopold II secured international recognition for the Congo Free State under personal rule, intensifying extractive colonial governance.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3357,9 +3430,11 @@
     "label": "Fashoda Incident",
     "summary_short": "French and British forces confronted each other in Sudan, testing imperial rivalry before a negotiated French withdrawal.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3403,9 +3478,10 @@
     "label": "First Balkan War",
     "summary_short": "Balkan states attacked Ottoman territories, reshaping regional borders and increasing instability in southeastern Europe.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3439,9 +3515,11 @@
     "label": "First Moroccan Crisis",
     "summary_short": "Germany challenged French influence in Morocco, escalating prewar great-power tensions through colonial rivalry.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3475,9 +3553,11 @@
     "label": "First Sino-Japanese War begins",
     "summary_short": "War between Qing China and Meiji Japan began over influence in Korea, exposing shifts in East Asian power.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3509,9 +3589,11 @@
     "label": "Japan annexes Korea",
     "summary_short": "Japan formally annexed Korea, consolidating colonial control after years of military and diplomatic pressure.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3550,9 +3632,11 @@
     "label": "Leopold II begins Congo Free State project",
     "summary_short": "Leopold II launched a private colonial project that became the Congo Free State, exemplifying exploitative imperial rule in Central Africa.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3588,9 +3672,11 @@
     "label": "Open Door Notes issued",
     "summary_short": "US diplomatic notes called for equal commercial access in China, reflecting intensifying competition among imperial powers.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3629,9 +3715,11 @@
     "label": "Philippine-American War begins",
     "summary_short": "Conflict broke out between US forces and Filipino nationalists after Spain ceded the Philippines, redefining US imperial policy.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3672,9 +3760,11 @@
     "label": "Russo-Japanese War begins",
     "summary_short": "Russia and Japan went to war over Manchuria and Korea, showing imperial rivalry in Northeast Asia.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3711,9 +3801,11 @@
     "label": "Second Boer War begins",
     "summary_short": "Britain and Boer republics entered a major war in southern Africa over sovereignty and resource-rich territory.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3747,9 +3839,10 @@
     "label": "Spanish-American War",
     "summary_short": "The United States defeated Spain and gained overseas territories, signaling a new phase of American imperial expansion.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3781,9 +3874,11 @@
     "label": "Suez Canal opens to navigation",
     "summary_short": "The Suez Canal created a shorter sea route between Europe and Asia, raising Egypt's strategic importance for imperial powers.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_africa",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3824,9 +3919,11 @@
     "label": "Treaty of Portsmouth",
     "summary_short": "The Treaty of Portsmouth ended the Russo-Japanese War and confirmed expanded Japanese influence in the region.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3858,9 +3955,11 @@
     "label": "Treaty of Shimonoseki",
     "summary_short": "The Treaty of Shimonoseki ended the war with major Chinese concessions, marking Japan’s rise as an imperial power.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3892,9 +3991,11 @@
     "label": "Triple Intervention pressures Japan after Sino-Japanese War",
     "summary_short": "Russia, France, and Germany forced Japan to revise postwar gains, deepening Japanese distrust of European power politics.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_asia",
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3930,9 +4031,10 @@
     "label": "United States annexes Hawaii",
     "summary_short": "The United States formally annexed Hawaii, expanding its strategic position across Pacific imperial networks.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_global"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
@@ -3979,6 +4081,8 @@
       "lng": 77.209,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -4026,6 +4130,8 @@
       "lng": 77.209,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -4064,9 +4170,8 @@
     "label": "Internal combustion engine breakthrough",
     "summary_short": "Late-19th-century internal combustion engine advances widen industrial power options beyond steam in transport and manufacturing.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4103,13 +4208,13 @@
     "label": "Invasion of Poland",
     "summary_short": "Germany invades Poland, triggering the outbreak of World War II in Europe.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Poland",
       "lat": 52,
       "lon": 19
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4150,9 +4255,8 @@
     "label": "Island-Hopping Campaign Advances",
     "summary_short": "Allied forces capture key Pacific islands to approach Japan while bypassing some strongholds.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4196,9 +4300,8 @@
     "label": "Italy Surrenders",
     "summary_short": "Italy exits the Axis camp, though fighting continues in the Italian peninsula.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4238,9 +4341,8 @@
     "label": "Japan Surrenders (VJ Day)",
     "summary_short": "Japan accepts surrender terms, bringing World War II to a close.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4285,9 +4387,8 @@
     "label": "Labor movements and Chartism grow",
     "summary_short": "Industrial-era labor unrest and reform campaigns push for representation, rights, and safer working conditions.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4329,9 +4430,8 @@
     "label": "Lend-Lease Act",
     "summary_short": "The United States authorizes large-scale military and economic aid to Allied nations.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4371,9 +4471,8 @@
     "label": "Liberation of Paris",
     "summary_short": "Allied and Free French forces liberate Paris from German occupation.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4412,9 +4511,8 @@
     "label": "Liverpool and Manchester Railway opens",
     "summary_short": "A landmark intercity railway demonstrates rail’s commercial viability for freight and passengers.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4457,9 +4555,8 @@
     "label": "Luddite protests against mechanization",
     "summary_short": "Skilled workers attack machinery in protest against wage pressure and job insecurity from mechanized production.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4502,6 +4599,8 @@
       "lng": -3,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -4538,9 +4637,8 @@
     "label": "Mass worker parties expand in industrial societies",
     "summary_short": "Industrial labor movements and socialist parties gain electoral and organizational weight in late nineteenth-century politics.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4578,9 +4676,8 @@
     "label": "Mass production systems spread",
     "summary_short": "Standardization and scale economies deepen industrial output and integrate consumer markets.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4618,9 +4715,8 @@
     "label": "Matchgirls strike in London",
     "summary_short": "Women workers at the Bryant & May factory strike over dangerous conditions, energizing late-century labor reform activism.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -4667,6 +4763,8 @@
       "lng": 28.97,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "war_diplomacy",
@@ -4698,13 +4796,17 @@
     "label": "Abolition of domains and establishment of prefectures",
     "summary_short": "The han domains were abolished and replaced by prefectures, establishing a centralized system for modern state-building.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Tokyo, Japan",
       "lat": 35.6762,
       "lon": 139.6503
     },
+    "places": [
+      "Tokyo"
+    ],
+    "regions": [
+      "reg_japan"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4720,8 +4822,7 @@
     "effects": [
       {
         "label": "Advanced nationwide unification of taxation, military organization, and administration",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
@@ -4746,9 +4847,11 @@
     "label": "Annexation of Korea",
     "summary_short": "Through the Japan–Korea Annexation Treaty, Japan colonized the Korean Peninsula and intensified imperial expansion.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_japan",
+      "reg_korea"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4763,8 +4866,7 @@
     "effects": [
       {
         "label": "Heightened anti-colonial movements and tensions across East Asia",
-        "category": "international",
-        "note": null
+        "category": "international"
       }
     ],
     "causes": [
@@ -4789,13 +4891,18 @@
     "label": "Boshin War",
     "summary_short": "A civil war between pro-shogunate and pro-imperial forces ended in victory for the new imperial government, making the regime transition decisive.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Kyoto, Japan",
       "lat": 35.0116,
       "lon": 135.7681
     },
+    "places": [
+      "Kyoto",
+      "Edo"
+    ],
+    "regions": [
+      "reg_japan"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4813,8 +4920,7 @@
     "causes": [
       {
         "label": "Collapse of the kōbu-gattai compromise and intensification of anti-shogunate movements",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "time": {
@@ -4836,13 +4942,17 @@
     "label": "Charter Oath proclaimed",
     "summary_short": "The new government announced guiding principles for national governance, emphasizing broad deliberation and the adoption of knowledge from abroad.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Kyoto, Japan",
       "lat": 35.0116,
       "lon": 135.7681
     },
+    "places": [
+      "Kyoto"
+    ],
+    "regions": [
+      "reg_japan"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4860,8 +4970,7 @@
     "effects": [
       {
         "label": "Created an ideological foundation for later centralization reforms",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
@@ -4886,9 +4995,10 @@
     "label": "Conscription Ordinance issued",
     "summary_short": "The government promulgated conscription to form a modern national army, shifting away from a samurai-centered military system.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_japan"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4904,8 +5014,7 @@
     "effects": [
       {
         "label": "Established a state-led military mobilization system",
-        "category": "military",
-        "note": null
+        "category": "military"
       }
     ],
     "causes": [
@@ -4930,13 +5039,17 @@
     "label": "Promulgation of the Meiji Constitution",
     "summary_short": "The Meiji Constitution was promulgated as the framework of a modern constitutional order, codifying key institutions of governance.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Tokyo, Japan",
       "lat": 35.6762,
       "lon": 139.6503
     },
+    "places": [
+      "Tokyo"
+    ],
+    "regions": [
+      "reg_japan"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -4954,8 +5067,7 @@
     "causes": [
       {
         "label": "Institutional modernization aimed at future treaty revision negotiations",
-        "category": "international",
-        "note": null
+        "category": "international"
       }
     ],
     "time": {
@@ -4977,13 +5089,17 @@
     "label": "Opening of the Imperial Diet",
     "summary_short": "The Imperial Diet convened, beginning electoral and parliamentary politics in national governance.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Tokyo, Japan",
       "lat": 35.6762,
       "lon": 139.6503
     },
+    "places": [
+      "Tokyo"
+    ],
+    "regions": [
+      "reg_japan"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5000,8 +5116,7 @@
     "effects": [
       {
         "label": "Intensified negotiation between political parties and the government",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
@@ -5026,13 +5141,17 @@
     "label": "Death of Emperor Meiji",
     "summary_short": "Emperor Meiji's death marked the end of the Meiji era and a turning point in Japan's first phase of modernization.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Tokyo, Japan",
       "lat": 35.6762,
       "lon": 139.6503
     },
+    "places": [
+      "Tokyo"
+    ],
+    "regions": [
+      "reg_japan"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5047,8 +5166,7 @@
     "effects": [
       {
         "label": "Transition to the Taishō era and reconfiguration of political and social challenges",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [],
@@ -5071,13 +5189,18 @@
     "label": "Treaty of Kanagawa signed",
     "summary_short": "The Treaty of Kanagawa opened Shimoda and Hakodate to U.S. ships, marking a major reorganization of Japan's foreign relations.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Shimoda, Japan",
       "lat": 34.6795,
       "lon": 138.9453
     },
+    "places": [
+      "Shimoda",
+      "Hakodate"
+    ],
+    "regions": [
+      "reg_japan"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5095,8 +5218,7 @@
     "effects": [
       {
         "label": "Expansion of unequal treaty negotiations and domestic political instability",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
@@ -5121,13 +5243,17 @@
     "label": "Arrival of Commodore Perry",
     "summary_short": "Commodore Perry's U.S. fleet arrived and pressured the Tokugawa shogunate to open the country, beginning the shift away from sakoku (closed-country) policy.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Uraga, Japan",
       "lat": 35.2556,
       "lon": 139.7068
     },
+    "places": [
+      "Uraga"
+    ],
+    "regions": [
+      "reg_japan"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5147,8 +5273,7 @@
     "causes": [
       {
         "label": "U.S. need for Pacific routes and supply ports",
-        "category": "international",
-        "note": null
+        "category": "international"
       }
     ],
     "time": {
@@ -5170,9 +5295,11 @@
     "label": "Peace settlement of the Russo-Japanese War (Treaty of Portsmouth)",
     "summary_short": "The peace settlement confirmed Japan's expanded interests internationally and raised its status among the great powers.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_japan",
+      "reg_east_asia"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5188,8 +5315,7 @@
     "effects": [
       {
         "label": "Advanced stronger control over Korea",
-        "category": "international",
-        "note": null
+        "category": "international"
       }
     ],
     "causes": [
@@ -5214,9 +5340,11 @@
     "label": "First Sino-Japanese War",
     "summary_short": "Conflict over the Korean Peninsula led to war with Qing China, and Japan's victory reshaped the East Asian order.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_japan",
+      "reg_east_asia"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5232,8 +5360,7 @@
     "effects": [
       {
         "label": "Territorial and indemnity gains under the Treaty of Shimonoseki",
-        "category": "international",
-        "note": null
+        "category": "international"
       }
     ],
     "causes": [
@@ -5258,9 +5385,8 @@
     "label": "Modern urban infrastructure expands",
     "summary_short": "Cities invest in sewers, transit, and municipal planning as industrial urbanization deepens.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5297,9 +5423,8 @@
     "label": "Molotov–Ribbentrop Pact",
     "summary_short": "Germany and the Soviet Union sign a nonaggression pact with secret protocols dividing Eastern Europe.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5348,6 +5473,8 @@
       "lng": 109,
       "precision": "region"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "war_diplomacy",
@@ -5387,6 +5514,8 @@
       "lng": 78.0081,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -5425,9 +5554,8 @@
     "label": "Munich Agreement",
     "summary_short": "Britain and France permit German annexation of Sudetenland in a failed effort to preserve peace.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5466,13 +5594,17 @@
     "label": "Coup of 18 Brumaire",
     "summary_short": "Napoleon Bonaparte seized power in the Coup of 18 Brumaire, ending the Directory and establishing the Consulate.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
     },
+    "places": [
+      "Paris"
+    ],
+    "regions": [
+      "reg_france"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5495,21 +5627,18 @@
       "ev_napoleon_emperor_1804",
       {
         "label": "centralization of executive power under Napoleon",
-        "category": "political",
-        "note": null
+        "category": "political"
       },
       "ev_napoleonic_wars_1803_1815"
     ],
     "causes": [
       {
         "label": "political instability under the Directory",
-        "category": "political",
-        "note": null
+        "category": "political"
       },
       {
         "label": "Napoleon's military prestige",
-        "category": "military",
-        "note": null
+        "category": "military"
       }
     ],
     "time": {
@@ -5531,13 +5660,18 @@
     "label": "Napoleon Crowned Emperor",
     "summary_short": "Napoleon's coronation as Emperor symbolized a new political order that preserved some revolutionary changes while consolidating personal rule.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
     },
+    "places": [
+      "Paris"
+    ],
+    "regions": [
+      "reg_france",
+      "reg_western_europe"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -5557,8 +5691,7 @@
     "effects": [
       {
         "label": "intensified European conflict with Napoleonic France",
-        "category": "military",
-        "note": null
+        "category": "military"
       },
       "ev_congress_of_vienna_1814_1815",
       "ev_napoleonic_wars_1803_1815"
@@ -5567,8 +5700,7 @@
       "ev_napoleon_coup_18_brumaire_1799",
       {
         "label": "consolidation of Napoleonic authority",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "time": {
@@ -5590,9 +5722,8 @@
     "label": "Napoleonic Wars reshape Europe",
     "summary_short": "Wars across Europe spread revolutionary legacies, mobilization practices, and state restructuring.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5635,9 +5766,8 @@
     "label": "National markets integrate through rail and telegraph",
     "summary_short": "Faster transport and communication reduce regional price gaps and increase coordinated industrial output.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5677,9 +5807,8 @@
     "label": "Nuremberg Trials Begin",
     "summary_short": "International tribunals begin prosecuting leading Nazi officials for war crimes.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5719,9 +5848,8 @@
     "label": "Operation Bagration",
     "summary_short": "Soviet forces destroy much of Germany’s Army Group Centre in Belarus.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5763,9 +5891,8 @@
     "label": "Operation Barbarossa",
     "summary_short": "Germany invades the Soviet Union, opening the largest land front of the war.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5807,13 +5934,13 @@
     "label": "D-Day (Normandy Landings)",
     "summary_short": "Allied forces land in Normandy, opening a sustained Western Front in Europe.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Normandy, France",
       "lat": 49.34,
       "lon": -0.62
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5863,9 +5990,8 @@
     "label": "Operation Torch",
     "summary_short": "Allied landings in North Africa open a major front against Axis forces in the Mediterranean.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -5915,6 +6041,8 @@
       "lng": 31.2357,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -5961,6 +6089,8 @@
       "lng": -2.2426,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -6000,13 +6130,13 @@
     "label": "Attack on Pearl Harbor",
     "summary_short": "Japan attacks Pearl Harbor, drawing the United States directly into World War II.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Pearl Harbor, Hawaii, United States",
       "lat": 21.3656,
       "lon": -157.95
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6046,13 +6176,17 @@
     "label": "Penydarren steam locomotive run (Trevithick)",
     "summary_short": "A landmark early rail journey powered by a steam locomotive, demonstrating the feasibility of steam traction on rails.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Merthyr Tydfil, United Kingdom",
       "lat": 51.7487,
       "lon": -3.379
     },
+    "places": [
+      "Merthyr Tydfil"
+    ],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -6083,9 +6217,8 @@
     "label": "Potsdam Conference",
     "summary_short": "Allied leaders shape occupation policy in Germany and issue demands to Japan.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6127,9 +6260,10 @@
     "label": "Power loom patented (Edmund Cartwright)",
     "summary_short": "Cartwright’s power loom mechanized weaving, helping shift textile production further into factories.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -6160,9 +6294,8 @@
     "label": "Public Health Act in Britain",
     "summary_short": "Urban sanitation reform begins as industrial cities confront disease and overcrowding.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6208,6 +6341,8 @@
       "lng": 108.71,
       "precision": "region"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "state_formation_governance"
@@ -6246,6 +6381,8 @@
       "lng": 113.5,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -6285,9 +6422,8 @@
     "label": "Railway investment boom in Europe",
     "summary_short": "Rail construction surges as capital markets and states back network expansion, binding regional economies.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6326,13 +6462,17 @@
     "label": "Rainhill Trials won by Stephenson’s Rocket",
     "summary_short": "Rocket’s success at the Rainhill Trials helped convince investors and engineers that locomotive-hauled railways were viable at scale.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Rainhill, United Kingdom",
       "lat": 53.417,
       "lon": -2.766
     },
+    "places": [
+      "Rainhill"
+    ],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -6363,13 +6503,17 @@
     "label": "Reign of Terror",
     "summary_short": "A radical phase of the Revolution marked by emergency politics, intense repression, and struggles over how to defend the revolutionary state.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
     },
+    "places": [
+      "Paris"
+    ],
+    "regions": [
+      "reg_france"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -6393,21 +6537,18 @@
       "ev_thermidorian_reaction_1794",
       {
         "label": "legacy of revolutionary violence and political instability",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
       "ev_execution_louis_xvi_1793",
       {
         "label": "war pressure and internal rebellion",
-        "category": "military",
-        "note": null
+        "category": "military"
       },
       {
         "label": "emergency revolutionary governance",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "time": {
@@ -6429,9 +6570,8 @@
     "label": "Revolutions of 1848 across Europe",
     "summary_short": "A wave of uprisings demands constitutional reforms, national rights, and social change in industrializing societies.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6476,6 +6616,8 @@
       "lon": 45.0792,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6518,9 +6660,8 @@
     "label": "Second Industrial Revolution accelerates",
     "summary_short": "Electricity, chemicals, steel, and new corporate forms drive a fresh wave of industrial expansion.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6563,9 +6704,8 @@
     "label": "September Massacres",
     "summary_short": "Paris crowds killed prisoners amid invasion fears and revolutionary panic, intensifying political radicalization.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -6613,6 +6753,8 @@
       "lng": 114.3,
       "precision": "region"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "trade_networks_economic_exchange",
@@ -6644,9 +6786,8 @@
     "label": "Soviet Offensive on Berlin",
     "summary_short": "Soviet forces assault Berlin, bringing the European war to its final phase.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6689,9 +6830,8 @@
     "label": "Soviet Counteroffensives Expand",
     "summary_short": "Red Army operations recover occupied territory and push westward.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6733,13 +6873,13 @@
     "label": "Soviet Invasion of Eastern Poland",
     "summary_short": "The Soviet Union occupies eastern Poland under secret terms of the German-Soviet pact.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Eastern Poland",
       "lat": 52,
       "lon": 24
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6779,9 +6919,8 @@
     "label": "Soviet Invasion of Manchuria",
     "summary_short": "Soviet forces rapidly defeat Japanese troops in Manchuria late in the war.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6821,9 +6960,8 @@
     "label": "Spinning Jenny introduced",
     "summary_short": "James Hargreaves’s spinning jenny increases yarn output and intensifies textile mechanization.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6861,9 +6999,10 @@
     "label": "Spinning jenny invented (James Hargreaves)",
     "summary_short": "A multi-spindle spinning machine that greatly increased yarn output and helped propel mechanized textile production.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -6894,9 +7033,10 @@
     "label": "Spinning jenny patented (James Hargreaves)",
     "summary_short": "Hargreaves secured a patent for the spinning jenny, helping spread multi-spindle spinning as textile production mechanized.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -6927,9 +7067,10 @@
     "label": "Spinning mule invented (Samuel Crompton)",
     "summary_short": "Crompton’s spinning mule combined features of earlier spinning machines and enabled large-scale production of high-quality yarn.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -6960,9 +7101,8 @@
     "label": "Post-Napoleonic states expand fiscal-military capacity",
     "summary_short": "Governments strengthen taxation, administration, and infrastructure planning after sustained wartime mobilization.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -6999,9 +7139,8 @@
     "label": "Steam power spreads into transport",
     "summary_short": "Steam engines move from mines and mills into locomotives and shipping, shrinking transport time and cost.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7042,9 +7181,8 @@
     "label": "Stockton and Darlington Railway opens",
     "summary_short": "The first public railway to use steam locomotives for freight and passengers demonstrates rail transport’s industrial potential.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7084,13 +7222,17 @@
     "label": "Storming of the Bastille",
     "summary_short": "The fall of the Bastille became a powerful symbol of popular action and the weakening of royal authority in revolutionary France.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
     },
+    "places": [
+      "Paris"
+    ],
+    "regions": [
+      "reg_france"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -7112,16 +7254,14 @@
       "ev_declaration_rights_man_citizen_1789",
       {
         "label": "strengthened revolutionary momentum",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
       "ev_tennis_court_oath_1789",
       {
         "label": "urban tension and fear of royal repression",
-        "category": "social",
-        "note": null
+        "category": "social"
       }
     ],
     "time": {
@@ -7151,6 +7291,8 @@
       "lng": 108.94,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [],
     "concept_tags": [
       "trade_networks_economic_exchange",
@@ -7182,9 +7324,8 @@
     "label": "Tehran Conference",
     "summary_short": "Roosevelt, Churchill, and Stalin coordinate military strategy for defeating Nazi Germany.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7224,9 +7365,8 @@
     "label": "Electric telegraph demonstrated",
     "summary_short": "Practical electric telegraphy begins to transform communication speed for commerce, governance, and news.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7264,13 +7404,17 @@
     "label": "Tennis Court Oath",
     "summary_short": "Representatives of the Third Estate pledged not to separate until France had a constitution, marking a decisive break with royal authority.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Versailles, France",
       "lat": 48.8049,
       "lon": 2.1204
     },
+    "places": [
+      "Versailles"
+    ],
+    "regions": [
+      "reg_france"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -7292,16 +7436,14 @@
       "ev_storming_bastille_1789",
       {
         "label": "strengthened revolutionary claims to sovereignty",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
       "ev_estates_general_1789",
       {
         "label": "dispute over representation and legitimacy",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "time": {
@@ -7323,13 +7465,17 @@
     "label": "Thermidorian Reaction",
     "summary_short": "The Thermidorian Reaction marked a political turn after the Terror, including the fall of Robespierre and a shift away from radical Jacobin dominance.",
     "status": "approved",
-    "category": null,
-    "importance": null,
     "location": {
       "label": "Paris, France",
       "lat": 48.8566,
       "lon": 2.3522
     },
+    "places": [
+      "Paris"
+    ],
+    "regions": [
+      "reg_france"
+    ],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -7350,16 +7496,14 @@
     "effects": [
       {
         "label": "weaker revolutionary stability and continued political volatility",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "causes": [
       "ev_reign_of_terror_1793_1794",
       {
         "label": "backlash against radical repression",
-        "category": "political",
-        "note": null
+        "category": "political"
       }
     ],
     "time": {
@@ -7389,6 +7533,8 @@
       "lng": 139.6503,
       "precision": "city"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened"
@@ -7434,6 +7580,8 @@
       "lon": 39.79,
       "precision": "regional"
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7475,9 +7623,8 @@
     "label": "United Nations Charter Signed",
     "summary_short": "Allied and partner states establish the United Nations framework for postwar diplomacy.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7517,9 +7664,8 @@
     "label": "United States Enters the War",
     "summary_short": "Following Pearl Harbor, the U.S. enters the war against Japan and, soon after, Germany and Italy.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7560,9 +7706,8 @@
     "label": "Industrial urbanization accelerates in Britain and Europe",
     "summary_short": "Factory-centered growth pulls populations into expanding cities, intensifying housing, sanitation, and labor pressures.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7600,9 +7745,8 @@
     "label": "Wannsee Conference",
     "summary_short": "Senior Nazi officials coordinate bureaucratic implementation of the “Final Solution.”",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7643,9 +7787,8 @@
     "label": "Allied Wartime Industrial Mobilization Peaks",
     "summary_short": "Mass production of ships, aircraft, and vehicles gives the Allies decisive material superiority.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7688,9 +7831,8 @@
     "label": "Water Frame mechanizes spinning",
     "summary_short": "Richard Arkwright’s water frame enables larger-scale spinning production and helps shift textiles toward factory organization.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7727,9 +7869,10 @@
     "label": "Water frame patented (Richard Arkwright)",
     "summary_short": "Arkwright’s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -7760,9 +7903,10 @@
     "label": "Watt’s separate condenser patented (steam engine efficiency)",
     "summary_short": "James Watt’s separate condenser greatly improved steam engine efficiency, enabling broader industrial use beyond mines.",
     "status": "approved",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [
+      "reg_britain"
+    ],
     "question_types": [
       "timeline_before_after"
     ],
@@ -7793,9 +7937,8 @@
     "label": "Improved Steam Engine by James Watt",
     "summary_short": "James Watt’s commercially deployed improvements make steam engines more efficient and more widely usable.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7834,9 +7977,8 @@
     "label": "Women's March on Versailles",
     "summary_short": "Market women and National Guards marched to Versailles, pressuring the royal family to relocate to Paris.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
@@ -7875,9 +8017,8 @@
     "label": "Alliance system hardens across Europe",
     "summary_short": "Competing alliance blocs (Triple Alliance and Triple Entente) hardened strategic commitments and escalation risks.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7915,9 +8056,8 @@
     "label": "Arab Revolt begins",
     "summary_short": "Arab forces revolted against Ottoman rule with British support, reshaping Middle Eastern wartime politics.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7957,9 +8097,8 @@
     "label": "Armenian genocide begins",
     "summary_short": "Mass deportations and killings of Armenians in the Ottoman Empire marked one of the war's gravest humanitarian catastrophes.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -7994,13 +8133,13 @@
     "label": "Armistice ends fighting on the Western Front",
     "summary_short": "The November armistice halted combat and opened negotiations over the postwar settlement.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Compiègne, France",
       "lat": 49.415,
       "lon": 2.826
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8040,13 +8179,13 @@
     "label": "Assassination of Archduke Franz Ferdinand",
     "summary_short": "The Austro-Hungarian heir was assassinated in Sarajevo, triggering the July Crisis.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Sarajevo, Bosnia and Herzegovina",
       "lat": 43.8563,
       "lon": 18.4131
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8086,9 +8225,8 @@
     "label": "Austria-Hungary issues ultimatum to Serbia",
     "summary_short": "Vienna issued a harsh ultimatum that transformed a regional assassination into a wider diplomatic emergency.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8127,9 +8265,8 @@
     "label": "Balfour Declaration",
     "summary_short": "Britain endorsed a national home for the Jewish people in Palestine, linking wartime diplomacy to later regional conflict.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8168,9 +8305,8 @@
     "label": "Balkan Wars destabilize southeastern Europe",
     "summary_short": "The Balkan Wars weakened Ottoman control and sharpened Austro-Serbian and Russian tensions before 1914.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8208,13 +8344,13 @@
     "label": "First Battle of the Marne halts German advance",
     "summary_short": "French and British forces stopped the initial German offensive, preventing a rapid German victory.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Marne, France",
       "lat": 48.95,
       "lon": 4.37
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8253,9 +8389,8 @@
     "label": "Bolshevik Revolution",
     "summary_short": "The Bolsheviks seized power and prioritized ending Russia's role in the war.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8295,9 +8430,8 @@
     "label": "Brusilov Offensive",
     "summary_short": "A major Russian offensive inflicted heavy losses on Austria-Hungary but strained Russia's own capacity.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8336,9 +8470,8 @@
     "label": "First Battle of Ypres",
     "summary_short": "Heavy losses at Ypres confirmed that quick victory was unlikely on the Western Front.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8376,13 +8509,13 @@
     "label": "Gallipoli campaign",
     "summary_short": "Allied attempts to force the Dardanelles failed, prolonging the war and reshaping Ottoman and imperial politics.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Gallipoli Peninsula, Ottoman Empire (Turkey)",
       "lat": 40.2,
       "lon": 26.4
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8423,9 +8556,8 @@
     "label": "German Spring Offensive",
     "summary_short": "Germany launched major offensives before full U.S. mobilization could take effect.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8466,9 +8598,8 @@
     "label": "Germany offers Austria-Hungary a 'blank check'",
     "summary_short": "Berlin's support stiffened Vienna's position and reduced room for de-escalation.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8508,9 +8639,8 @@
     "label": "Germany invades Belgium",
     "summary_short": "Germany's implementation of war plans through Belgium expanded the war and brought Britain fully into the conflict.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8551,9 +8681,8 @@
     "label": "Home-front total mobilization expands",
     "summary_short": "Governments reorganized labor, food supply, and industry for prolonged total war.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8595,9 +8724,8 @@
     "label": "Hundred Days Offensive",
     "summary_short": "Allied counteroffensives broke German operational capacity in the final phase of the war.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8642,9 +8770,8 @@
     "label": "Italy enters the war against Austria-Hungary",
     "summary_short": "Italy joined the Entente after secret diplomacy, opening additional fronts in Europe.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8683,9 +8810,8 @@
     "label": "Japan enters the war on the Allied side",
     "summary_short": "Japan joined the Allies and seized German positions in East Asia, confirming the war's global scope.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8722,13 +8848,13 @@
     "label": "Battle of Jutland",
     "summary_short": "The largest naval battle of the war preserved British naval dominance despite heavy losses on both sides.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "North Sea (off Jutland, Denmark)",
       "lat": 56.5,
       "lon": 6.2
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8765,9 +8891,8 @@
     "label": "League of Nations begins operations",
     "summary_short": "The League institutionalized postwar collective-security goals but lacked enforcement strength.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8805,9 +8930,8 @@
     "label": "Naval and armaments race intensifies",
     "summary_short": "Industrial capacity and naval rivalry, especially between Britain and Germany, deepened war preparedness and mistrust.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8848,9 +8972,8 @@
     "label": "Ottoman Empire enters World War I",
     "summary_short": "Ottoman entry widened the conflict across the Middle East and strategic sea routes.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8891,9 +9014,8 @@
     "label": "Paris Peace Conference",
     "summary_short": "Victorious powers designed the postwar order, redrew borders, and debated collective security.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8939,9 +9061,8 @@
     "label": "Russian mobilization accelerates continental escalation",
     "summary_short": "Russian mobilization in support of Serbia triggered reciprocal German war planning.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -8980,9 +9101,8 @@
     "label": "February Revolution in Russia",
     "summary_short": "War strain and domestic unrest toppled the Romanov monarchy.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9023,9 +9143,8 @@
     "label": "Second Battle of Ypres and large-scale gas warfare",
     "summary_short": "The battle marked major battlefield use of poison gas, reinforcing industrialized attrition.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9062,13 +9181,13 @@
     "label": "Battle of the Somme",
     "summary_short": "The Somme offensives inflicted massive casualties while yielding limited territorial gains.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Somme, France",
       "lat": 50.02,
       "lon": 2.65
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9107,9 +9226,8 @@
     "label": "Influenza pandemic intersects with demobilization",
     "summary_short": "The influenza pandemic compounded wartime losses and strained post-armistice societies and governance.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9146,9 +9264,8 @@
     "label": "State propaganda and censorship expand",
     "summary_short": "Mass media and censorship were used to sustain morale, shape opinion, and support wartime policy.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9185,9 +9302,8 @@
     "label": "Battle of Tannenberg",
     "summary_short": "German forces defeated a major Russian invasion in East Prussia, shaping the eastern war dynamic.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9225,9 +9341,8 @@
     "label": "Treaty of Brest-Litovsk",
     "summary_short": "Russia exited the war and ceded territory, allowing Germany to shift forces westward.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9267,13 +9382,13 @@
     "label": "Treaty of Versailles",
     "summary_short": "The treaty imposed reparations and territorial constraints on Germany while embedding unresolved grievances.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Versailles, France",
       "lat": 48.8049,
       "lon": 2.1204
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9316,9 +9431,8 @@
     "label": "Trench warfare becomes entrenched on the Western Front",
     "summary_short": "Stalemate and defensive firepower produced long trench lines and a war of attrition.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9357,9 +9471,8 @@
     "label": "Germany resumes unrestricted submarine warfare",
     "summary_short": "Renewed submarine attacks on shipping helped push the United States toward intervention.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9399,9 +9512,8 @@
     "label": "United States enters the war",
     "summary_short": "U.S. intervention added industrial, financial, and military resources to the Allied coalition.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9443,13 +9555,13 @@
     "label": "Battle of Verdun",
     "summary_short": "Verdun became a symbol of attritional warfare and the enormous human cost of static fronts.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
     "location": {
       "region": "Verdun, France",
       "lat": 49.159,
       "lon": 5.384
     },
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9489,9 +9601,8 @@
     "label": "Zimmermann Telegram",
     "summary_short": "Germany's overture to Mexico was intercepted and publicized, intensifying U.S. support for entering the war.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -9528,9 +9639,8 @@
     "label": "Yalta Conference",
     "summary_short": "Allied leaders negotiate occupation zones, war aims, and plans for postwar Europe.",
     "status": "reviewed",
-    "category": null,
-    "importance": null,
-    "location": null,
+    "places": [],
+    "regions": [],
     "question_types": [
       "timeline_before_after",
       "what_happened",
