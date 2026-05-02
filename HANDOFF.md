@@ -1019,3 +1019,21 @@
 ### Notes for next session
 1. Add a small in-UI non-blocking warning banner when fallback mode is active so users/developers can detect degraded data source quickly.
 2. Consider adding a smoke test variant that temporarily hides `/derived/events.normalized.json` and asserts fallback still yields non-empty event pools.
+
+## Incremental update (2026-05-02 · map reasoning + geo metadata)
+- Added new app route `apps/map-reasoning/`:
+  - `index.html` with prompt, map surface, submit/next controls, and feedback area,
+  - `main.js` loading `/derived/events.normalized.json`, filtering geo-enabled events, allowing map-click answer placement, and showing geographic explanation feedback.
+- Added discovery link for Map Reasoning in root `index.html` Practice section.
+- Added `geo` fields to 30 events in `data/events.json` based on existing location anchors (`lat`, `lon`, optional `region`) to support scalable map-first features.
+- Extended `scripts/validate-data.mjs` with `event.geo` validation (type + numeric checks + coordinate bounds).
+
+## Validation completed (2026-05-02)
+- `node scripts/validate-data.mjs` ✅
+- `node scripts/derive.mjs` ✅
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Add authored `geographic_significance` text to priority events so Map Reasoning feedback is event-specific instead of fallback text.
+2. Add distance-based scoring (e.g., km error bands) and lightweight progress tracking for map reasoning attempts.
+3. Add region/theater filters (continent/front/empire-zone) to support focused spatial practice sessions.

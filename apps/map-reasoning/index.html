@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map Reasoning</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 16px; }
+    #map { position: relative; width: 100%; max-width: 720px; aspect-ratio: 2 / 1; border: 1px solid #d1d5db; border-radius: 8px; background: linear-gradient(#e0f2fe, #bae6fd); overflow: hidden; }
+    #map-grid { position: absolute; inset: 0; background-image: linear-gradient(to right, rgba(255,255,255,.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,.35) 1px, transparent 1px); background-size: 10% 10%; }
+    #marker, #answer-marker { position: absolute; width: 14px; height: 14px; border-radius: 50%; transform: translate(-50%, -50%); }
+    #marker { background: #dc2626; box-shadow: 0 0 0 2px #fff; }
+    #answer-marker { background: #2563eb; box-shadow: 0 0 0 2px #fff; }
+    #controls { margin-top: 12px; display: flex; gap: 8px; }
+    button { padding: 8px 12px; }
+    #feedback { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Event Location Reasoning</h1>
+  <div id="prompt"></div>
+  <div id="map" aria-label="Reasoning map surface">
+    <div id="map-grid"></div>
+    <div id="marker" hidden></div>
+    <div id="answer-marker" hidden></div>
+  </div>
+  <div id="controls">
+    <button id="submit-button" type="button">Submit</button>
+    <button id="next-button" type="button">Next event</button>
+  </div>
+  <div id="feedback"></div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -64,7 +64,11 @@
     },
     "regions": [
       "reg_britain"
-    ]
+    ],
+    "geo": {
+      "lat": 53.4808,
+      "lon": -2.2426
+    }
   },
   {
     "id": "ev_spinning_jenny_invented_1764",
@@ -227,7 +231,11 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "geo": {
+      "lat": 53.1127,
+      "lon": -1.5602
+    }
   },
   {
     "id": "ev_spinning_mule_invented_1779",
@@ -374,7 +382,11 @@
       "comparison",
       "recognition"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_estates_general_1789",
@@ -470,7 +482,11 @@
       "comparison",
       "recognition"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.8049,
+      "lon": 2.1204
+    }
   },
   {
     "id": "ev_storming_bastille_1789",
@@ -551,7 +567,11 @@
       "comparison",
       "recognition"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_tennis_court_oath_1789",
@@ -632,7 +652,11 @@
       "comparison",
       "recognition"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.8049,
+      "lon": 2.1204
+    }
   },
   {
     "id": "ev_cotton_gin_invented_1793",
@@ -748,7 +772,11 @@
       "comparison",
       "recognition"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_reign_of_terror_1793_1794",
@@ -837,7 +865,11 @@
       "comparison",
       "recognition"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_thermidorian_reaction_1794",
@@ -919,7 +951,11 @@
       "comparison",
       "recognition"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_napoleon_coup_18_brumaire_1799",
@@ -1008,7 +1044,11 @@
       "geography",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_napoleon_emperor_1804",
@@ -1094,7 +1134,11 @@
       "people",
       "comparison"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_penydarren_locomotive_run_1804",
@@ -1134,7 +1178,11 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "geo": {
+      "lat": 51.7487,
+      "lon": -3.379
+    }
   },
   {
     "id": "ev_congress_of_vienna_1814_1815",
@@ -1220,7 +1268,11 @@
       "geography",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.2082,
+      "lon": 16.3738
+    }
   },
   {
     "id": "ev_rainhill_trials_rocket_1829",
@@ -1260,7 +1312,11 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "geo": {
+      "lat": 53.417,
+      "lon": -2.766
+    }
   },
   {
     "id": "ev_factory_act_1833",
@@ -1311,7 +1367,11 @@
       "geography",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 51.5072,
+      "lon": -0.1276
+    }
   },
   {
     "id": "ev_great_exhibition_opens_1851",
@@ -1353,7 +1413,11 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "geo": {
+      "lat": 51.5072,
+      "lon": -0.1276
+    }
   },
   {
     "id": "ev_meiji_perry_1853",
@@ -1421,7 +1485,11 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 35.2556,
+      "lon": 139.7068
+    }
   },
   {
     "id": "ev_meiji_kanagawa_treaty_1854",
@@ -1493,7 +1561,11 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 34.6795,
+      "lon": 138.9453
+    }
   },
   {
     "id": "ev_bessemer_process_patent_1856",
@@ -1593,7 +1665,11 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 35.0116,
+      "lon": 135.7681
+    }
   },
   {
     "id": "ev_meiji_charter_oath_1868",
@@ -1659,7 +1735,11 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 35.0116,
+      "lon": 135.7681
+    }
   },
   {
     "id": "ev_meiji_abolish_han_1871",
@@ -1725,7 +1805,11 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 35.6762,
+      "lon": 139.6503
+    }
   },
   {
     "id": "ev_meiji_conscription_1873",
@@ -1850,7 +1934,11 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 35.6762,
+      "lon": 139.6503
+    }
   },
   {
     "id": "ev_meiji_diet_1890",
@@ -1916,7 +2004,11 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 35.6762,
+      "lon": 139.6503
+    }
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
@@ -2163,7 +2255,11 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 35.6762,
+      "lon": 139.6503
+    }
   },
   {
     "id": "ev_imperialism_leopold_congo_project_1876",
@@ -3521,7 +3617,11 @@
     },
     "regions": [
       "reg_france"
-    ]
+    ],
+    "geo": {
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
   },
   {
     "id": "ev_mali_mansa_musa_hajj_1324",
@@ -4860,7 +4960,12 @@
       "geography",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 43.8563,
+      "lon": 18.4131,
+      "region": "Sarajevo, Bosnia and Herzegovina"
+    }
   },
   {
     "id": "ev_wwi_austria_ultimatum_serbia_1914",
@@ -5021,7 +5126,12 @@
       "geography",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 48.95,
+      "lon": 4.37,
+      "region": "Marne, France"
+    }
   },
   {
     "id": "ev_wwi_trench_warfare_entrenched_1914",
@@ -5117,7 +5227,12 @@
       "geography",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "geo": {
+      "lat": 40.2,
+      "lon": 26.4,
+      "region": "Gallipoli Peninsula, Ottoman Empire (Turkey)"
+    }
   },
   {
     "id": "ev_wwi_armenian_genocide_begins_1915",
@@ -5174,6 +5289,11 @@
       "region": "Verdun, France",
       "lat": 49.159,
       "lon": 5.384
+    },
+    "geo": {
+      "lat": 49.159,
+      "lon": 5.384,
+      "region": "Verdun, France"
     }
   },
   {
@@ -5203,6 +5323,11 @@
       "region": "Somme, France",
       "lat": 50.02,
       "lon": 2.65
+    },
+    "geo": {
+      "lat": 50.02,
+      "lon": 2.65,
+      "region": "Somme, France"
     }
   },
   {

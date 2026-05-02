@@ -216,6 +216,23 @@ export async function validateData({ log = false } = {}) {
           warnings.push(`Event ${eventLabel} primary_skill is not included in skills array.`);
         }
       }
+
+
+      if (event.geo !== undefined) {
+        if (!isObject(event.geo)) {
+          errors.push(`Event ${eventLabel} has invalid geo; expected an object.`);
+        } else {
+          if (!Number.isFinite(event.geo.lat) || !Number.isFinite(event.geo.lon)) {
+            errors.push(`Event ${eventLabel} has invalid geo coordinates; lat/lon must be numbers.`);
+          }
+          if (Number.isFinite(event.geo.lat) && (event.geo.lat < -90 || event.geo.lat > 90)) {
+            errors.push(`Event ${eventLabel} has geo.lat out of range (-90..90).`);
+          }
+          if (Number.isFinite(event.geo.lon) && (event.geo.lon < -180 || event.geo.lon > 180)) {
+            errors.push(`Event ${eventLabel} has geo.lon out of range (-180..180).`);
+          }
+        }
+      }
     }
 
     if (eventIdSet.size !== eventList.length) {
