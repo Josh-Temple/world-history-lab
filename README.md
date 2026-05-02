@@ -874,3 +874,14 @@ TBD
 - `node scripts/derive.mjs` ✅
 - `node scripts/validate-derived.mjs` ✅
 - `node scripts/validate-data.mjs` ✅
+
+## Recent updates (2026-05-02 · map reasoning mode + geo metadata foundation)
+
+- Added a new learner-facing spatial reasoning mode at `apps/map-reasoning/`:
+  - prompts “Where did this event occur?” for random geo-enabled events,
+  - lets learners place an answer marker directly on a simplified world map,
+  - reveals the correct location marker after submit and shows a short geographic significance explanation.
+- Added landing-page discoverability for the new mode in `index.html` under **Practice**.
+- Added structured `geo` metadata (`lat`, `lon`, optional `region`) to 30 existing location-anchored events in `data/events.json` (backward-compatible with existing `location` fields).
+- Extended `scripts/validate-data.mjs` to validate optional `event.geo` shape and coordinate ranges.
+
