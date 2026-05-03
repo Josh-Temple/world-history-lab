@@ -783,6 +783,15 @@ TBD
   - show a post-session **Start next unit** action using curriculum `next_units` guidance,
   - persist the selected/advanced unit with shared storage helpers.
 
+
+## Recent updates (2026-05-03 · session-runner adaptive weak-skill prioritization)
+
+- Updated `apps/session-runner/app.js` to load persisted mastery stats via `apps/shared/mastery-store.js` during init.
+- Added event-level mastery calculation with safe defaults for unseen items and robust handling for partial/legacy stat shapes.
+- Session mode composition now weights skill availability by weak-event pressure (`1 - mastery`) instead of pure event counts.
+- Preserved fallback behavior: if no persisted history exists, composition behaves like near-uniform weighting and keeps existing diversity guardrails.
+- Extended session diagnostics log with `adaptiveSamplingEnabled` to confirm whether persisted learner history influenced the current guided session mix.
+
 ## Incremental update (2026-04-16 · session-first homepage + sequenced guided runner)
 - Reworked `index.html` into a simpler onboarding-first landing page with one clear primary CTA (**Start Learning**) that routes directly to `apps/session-runner/`.
 - Reduced top-level choice overload by presenting a short secondary **Practice Modes** list (Timeline, Causality, Comparison, Map) with concise purpose text.
