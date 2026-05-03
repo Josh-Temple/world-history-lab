@@ -1046,3 +1046,21 @@
 1. Add authored `geographic_significance` text to priority events so Map Reasoning feedback is event-specific instead of fallback text.
 2. Add distance-based scoring (e.g., km error bands) and lightweight progress tracking for map reasoning attempts.
 3. Add region/theater filters (continent/front/empire-zone) to support focused spatial practice sessions.
+
+
+## Incremental update (2026-05-03 · core-first curriculum alignment)
+- Reframed Timeline Trainer difficulty tiers around curriculum value instead of generic challenge labels:
+  - `core`: reviewed events with `importance <= 1`
+  - `standard`: reviewed events with `importance <= 2` (or missing importance for backward compatibility)
+  - `full`: all eligible events
+- Updated `apps/timeline-trainer/index.html` labels and defaults to communicate core-first progression to learners.
+- Added a clear “Start here” path on root `index.html` with a three-step learning sequence (core timeline → recognition → full set).
+
+## Validation completed (2026-05-03)
+- `node scripts/validate-data.mjs` ✅ (passes with pre-existing warnings)
+- `npm run smoke` ✅
+
+## Suggested next steps
+1. Define and tag a canonical ~25-event core set explicitly (ID list artifact) so core mode does not rely only on `importance <= 1`.
+2. Add the same core/standard/full selector to History Player for consistency across starting modes.
+3. Add one lightweight UI hint in Timeline Trainer showing why an event is included (e.g., “Core importance”).

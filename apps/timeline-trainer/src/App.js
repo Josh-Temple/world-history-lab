@@ -43,16 +43,15 @@ const REVIEW_DELAY_MAX = 4;
 const REVIEW_MAX_ATTEMPTS = 2;
 const MIN_TRIPLET_YEAR_SPAN = 10;
 const DIFFICULTY = {
-  BEGINNER: "beginner",
-  INTERMEDIATE: "intermediate",
+  CORE: "core",
+  STANDARD: "standard",
   FULL: "full",
 };
 const DIFFICULTY_MULTIPLIER = {
-  [DIFFICULTY.BEGINNER]: 1,
-  [DIFFICULTY.INTERMEDIATE]: 1.2,
+  [DIFFICULTY.CORE]: 1,
+  [DIFFICULTY.STANDARD]: 1.2,
   [DIFFICULTY.FULL]: 1.5,
 };
-const BEGINNER_EVENT_LIMIT = 10;
 
 const state = {
   eventsById: new Map(),
@@ -64,7 +63,7 @@ const state = {
     mode: PRACTICE_MODE.UNIT,
     unitId: null,
     minStatus: "reviewed",
-    difficulty: DIFFICULTY.BEGINNER,
+    difficulty: DIFFICULTY.CORE,
     enabledQuestionTypes: [QUESTION_TYPES.BEFORE_AFTER, QUESTION_TYPES.EARLIEST_OF_3, QUESTION_TYPES.LATEST_OF_3],
   },
   currentQuestion: null,
@@ -204,24 +203,30 @@ function getModeHelpText(mode) {
 }
 
 function getDifficultyLabelText(difficulty) {
-  if (difficulty === DIFFICULTY.INTERMEDIATE) return "Intermediate";
-  if (difficulty === DIFFICULTY.FULL) return "Full";
-  return "Beginner";
+  if (difficulty === DIFFICULTY.STANDARD) return "Standard (Core + Secondary)";
+  if (difficulty === DIFFICULTY.FULL) return "Full (All Events)";
+  return "Core Essentials";
 }
 
 function filterByDifficulty(events, difficulty) {
-  if (difficulty === DIFFICULTY.BEGINNER) {
-    return filterSharedEvents(events, { status: "reviewed" }).slice(0, BEGINNER_EVENT_LIMIT);
+  if (difficulty === DIFFICULTY.CORE) {
+    return filterSharedEvents(events, {
+      status: "reviewed",
+      predicate: (event) => Number.isFinite(event?.importance) && event.importance <= 1,
+    });
   }
-  if (difficulty === DIFFICULTY.INTERMEDIATE) {
-    return filterSharedEvents(events, { status: "draft" });
+  if (difficulty === DIFFICULTY.STANDARD) {
+    return filterSharedEvents(events, {
+      status: "reviewed",
+      predicate: (event) => !Number.isFinite(event?.importance) || event.importance <= 2,
+    });
   }
   return events;
 }
 
 function getMinYearSpanForDifficulty(difficulty) {
-  if (difficulty === DIFFICULTY.BEGINNER) return 15;
-  if (difficulty === DIFFICULTY.INTERMEDIATE) return 12;
+  if (difficulty === DIFFICULTY.CORE) return 15;
+  if (difficulty === DIFFICULTY.STANDARD) return 12;
   return MIN_TRIPLET_YEAR_SPAN;
 }
 
@@ -1020,7 +1025,7 @@ export async function startApp() {
       mode: PRACTICE_MODE.UNIT,
       unitId: defaultUnitId,
       minStatus: "reviewed",
-      difficulty: DIFFICULTY.BEGINNER,
+      difficulty: DIFFICULTY.CORE,
       enabledQuestionTypes: getRequestedTypesFromQuestionMode(),
     };
 
