@@ -784,6 +784,16 @@ TBD
   - persist the selected/advanced unit with shared storage helpers.
 
 
+
+## Recent updates (2026-05-03 · core curriculum framing in Timeline Trainer + clearer onboarding)
+
+- Updated `apps/timeline-trainer/` difficulty model to align with curriculum priority levels:
+  - renamed learner-facing tiers to **Core essentials**, **Standard (core + secondary)**, and **Full (all events)**,
+  - Core now filters to reviewed events with `importance <= 1`,
+  - Standard filters to reviewed events with `importance <= 2` (plus compatibility for records without importance),
+  - Full remains unfiltered for complete coverage.
+- Updated top-level `index.html` with an explicit **Start here** 3-step path that points learners to core-first progression before advanced modes.
+
 ## Recent updates (2026-05-03 · session-runner adaptive weak-skill prioritization)
 
 - Updated `apps/session-runner/app.js` to load persisted mastery stats via `apps/shared/mastery-store.js` during init.
