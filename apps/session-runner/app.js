@@ -1,5 +1,5 @@
 import { getEventsForUnit, getUnits, setStoredUnitId } from "../shared/data-store.js";
-import { getReviewQueueEventIds } from "../shared/mastery-store.js";
+import { getAllStats, getReviewQueueEventIds } from "../shared/mastery-store.js";
 import { getModeMeta, recommendNextStep } from "../shared/next-step-engine.js";
 
 const MODE_LIBRARY = Object.freeze([
@@ -46,7 +46,22 @@ function resetModeProgress() {
   }
 }
 
-function composeBalancedSessionModes(events = []) {
+
+function getEventMastery(eventId, progressByEvent) {
+  const stats = progressByEvent?.[eventId];
+  if (!stats) return 0.5;
+  const attempts = Number.isFinite(stats.seen) ? stats.seen : (Number.isFinite(stats.attempts) ? stats.attempts : 0);
+  if (attempts <= 0) return 0.5;
+  const correct = Number.isFinite(stats.correct) ? stats.correct : 0;
+  return Math.max(0, Math.min(1, correct / attempts));
+}
+
+function computeEventWeight(event, progressByEvent) {
+  const mastery = getEventMastery(event?.id, progressByEvent);
+  return Math.max(0.15, 1 - mastery);
+}
+
+function composeBalancedSessionModes(events = [], progressByEvent = {}) {
   const skillCounts = new Map();
   const recognizedSkills = new Set(["timeline", "causality", "comparison", "geography", "people", "recognition"]);
 
@@ -56,7 +71,7 @@ function composeBalancedSessionModes(events = []) {
       : ["timeline"];
     for (const skill of eventSkills) {
       if (!recognizedSkills.has(skill)) continue;
-      skillCounts.set(skill, (skillCounts.get(skill) || 0) + 1);
+      skillCounts.set(skill, (skillCounts.get(skill) || 0) + computeEventWeight(event, progressByEvent));
     }
   }
 
@@ -119,6 +134,7 @@ function composeBalancedSessionModes(events = []) {
     distinctSkills: new Set(sampledSkills).size,
     availableSkills: prioritySkills,
     availableSkillDistribution,
+    adaptiveSamplingEnabled: Object.keys(progressByEvent || {}).length > 0,
   });
   return result;
 }
@@ -469,7 +485,8 @@ async function init() {
   }
 
   const unitEvents = await getEventsForUnit(selectedUnitId).catch(() => []);
-  sessionModes = composeBalancedSessionModes(unitEvents);
+  const progressByEvent = getAllStats();
+  sessionModes = composeBalancedSessionModes(unitEvents, progressByEvent);
   resetModeProgress();
 
   updateUnitLabel();
