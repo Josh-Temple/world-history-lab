@@ -36,14 +36,57 @@
     "ev_thermidorian_reaction_1794",
     "ev_directory_established_1795",
     "ev_napoleon_coup_18_brumaire_1799",
-    "ev_napoleonic_wars_1803_1815"
+    "ev_napoleonic_wars_1803_1815",
+    "ev_notables_assembly_1787",
+    "ev_parlement_paris_refuses_1787",
+    "ev_day_of_tiles_1788",
+    "ev_douai_estates_elections_1789",
+    "ev_national_assembly_declared_1789",
+    "ev_great_fear_1789",
+    "ev_august_decrees_1789",
+    "ev_church_property_nationalized_1789",
+    "ev_assignats_issued_1790",
+    "ev_fete_federation_1790",
+    "ev_chapelier_law_1791",
+    "ev_constitution_1791_adopted",
+    "ev_war_first_coalition_1792",
+    "ev_tuileries_stormed_1792",
+    "ev_national_convention_1792",
+    "ev_execution_marie_antoinette_1793",
+    "ev_levy_en_masse_1793",
+    "ev_committee_public_safety_1793",
+    "ev_vendee_revolt_1793",
+    "ev_law_suspects_1793",
+    "ev_hebertists_executed_1794",
+    "ev_dantonists_executed_1794",
+    "ev_festival_supreme_being_1794",
+    "ev_law_22_prairial_1794",
+    "ev_constitution_year_iii_1795",
+    "ev_13_vendemiaire_1795",
+    "ev_camp_formio_1797",
+    "ev_coup_18_fructidor_1797",
+    "ev_egypt_campaign_1798",
+    "ev_coup_30_prairial_1799",
+    "ev_consulate_established_1799"
   ],
   "person_ids": [
     "pe_louis_xvi",
     "pe_marie_antoinette",
     "pe_maximilien_robespierre",
     "pe_georges_danton",
-    "pe_napoleon_bonaparte"
+    "pe_napoleon_bonaparte",
+    "pe_emmanuel_joseph_sieyes",
+    "pe_lafayette",
+    "pe_jacques_pierre_brissot",
+    "pe_lazare_carnot",
+    "pe_louis_antoine_saint_just",
+    "pe_jacques_rene_hebert",
+    "pe_camille_desmoulins",
+    "pe_paul_barras",
+    "pe_jean_paul_marat",
+    "pe_charles_alexandre_de_calonne",
+    "pe_jacques_necker",
+    "pe_georges_jacques_danton"
   ],
   "app_profiles": {
     "timeline-trainer": {
@@ -93,5 +136,5 @@
     }
   },
   "status": "reviewed",
-  "updated_at": "2026-03-24T00:00:00Z"
+  "updated_at": "2026-05-05T00:00:00Z"
 }

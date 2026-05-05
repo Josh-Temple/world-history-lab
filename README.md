@@ -904,3 +904,10 @@ TBD
 - Added structured `geo` metadata (`lat`, `lon`, optional `region`) to 30 existing location-anchored events in `data/events.json` (backward-compatible with existing `location` fields).
 - Extended `scripts/validate-data.mjs` to validate optional `event.geo` shape and coordinate ranges.
 
+
+## Recent updates (2026-05-05 · French Revolution density expansion + people linkage pass)
+
+- Expanded `unit_french_revolution` (`data/units/fr_french_revolution.json`) with 31 additional, chronologically scoped events spanning pre-1789 fiscal crisis through the 1799 Consulate transition.
+- Added 12 French-Revolution-relevant people records in `data/people.json` and registered them in the unit-level `person_ids` list.
+- Linked new events to key actors via `people_ids` for stronger people-recognition and causality/sequence prompt quality.
+- Regenerated derived outputs through `node scripts/derive.mjs` after passing validation.
