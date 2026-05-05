@@ -3001,5 +3001,77 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "reviewed"
+  },
+  {
+    "id": "pe_emmanuel_joseph_sieyes",
+    "name": "Emmanuel-Joseph Sieyès",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_lafayette",
+    "name": "Marquis de Lafayette",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_jacques_pierre_brissot",
+    "name": "Jacques Pierre Brissot",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_lazare_carnot",
+    "name": "Lazare Carnot",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_louis_antoine_saint_just",
+    "name": "Louis Antoine de Saint-Just",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_jacques_rene_hebert",
+    "name": "Jacques René Hébert",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_camille_desmoulins",
+    "name": "Camille Desmoulins",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_paul_barras",
+    "name": "Paul Barras",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_jean_paul_marat",
+    "name": "Jean-Paul Marat",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_charles_alexandre_de_calonne",
+    "name": "Charles Alexandre de Calonne",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_jacques_necker",
+    "name": "Jacques Necker",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_georges_jacques_danton",
+    "name": "Georges Jacques Danton",
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
   }
 ]

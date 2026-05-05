@@ -1,5 +1,38 @@
 [
   {
+    "id": "ev_13_vendemiaire_1795",
+    "label": "13 Vendémiaire uprising suppressed in Paris",
+    "summary_short": "13 Vendémiaire uprising suppressed in Paris became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_napoleon_bonaparte",
+      "pe_paul_barras"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1795",
+      "end": "1795",
+      "year_start": 1795,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17950101,
+      "sort_end": 17951231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1795
+    }
+  },
+  {
     "id": "ev_abbasid_revolution_750",
     "label": "Abbasid Revolution",
     "summary_short": "The Abbasid movement overthrew Umayyad rule and reshaped leadership, administration, and imperial center of gravity.",
@@ -222,6 +255,36 @@
     }
   },
   {
+    "id": "ev_assignats_issued_1790",
+    "label": "Assignats issued as revolutionary paper currency",
+    "summary_short": "Assignats issued as revolutionary paper currency became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1790",
+      "end": "1790",
+      "year_start": 1790,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17900101,
+      "sort_end": 17901231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1790
+    }
+  },
+  {
     "id": "ev_atomic_bomb_hiroshima_1945",
     "label": "Atomic Bombing of Hiroshima",
     "summary_short": "The United States drops an atomic bomb on Hiroshima to force Japanese surrender.",
@@ -308,6 +371,36 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1945
+    }
+  },
+  {
+    "id": "ev_august_decrees_1789",
+    "label": "August Decrees abolish feudal privileges",
+    "summary_short": "August Decrees abolish feudal privileges became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1789",
+      "end": "1789",
+      "year_start": 1789,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17890101,
+      "sort_end": 17891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1789
     }
   },
   {
@@ -1073,6 +1166,68 @@
     }
   },
   {
+    "id": "ev_camp_formio_1797",
+    "label": "Treaty of Campo Formio expands French influence in Italy",
+    "summary_short": "Treaty of Campo Formio expands French influence in Italy became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_napoleon_bonaparte"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1797",
+      "end": "1797",
+      "year_start": 1797,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17970101,
+      "sort_end": 17971231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1797
+    }
+  },
+  {
+    "id": "ev_chapelier_law_1791",
+    "label": "Le Chapelier Law bans guilds and worker coalitions",
+    "summary_short": "Le Chapelier Law bans guilds and worker coalitions became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1791",
+      "end": "1791",
+      "year_start": 1791,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17910101,
+      "sort_end": 17911231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1791
+    }
+  },
+  {
     "id": "ev_charlemagne_crowned_800",
     "label": "Charlemagne crowned emperor",
     "summary_short": "A new western imperial claim reshaped medieval European politics.",
@@ -1111,6 +1266,36 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 800
+    }
+  },
+  {
+    "id": "ev_church_property_nationalized_1789",
+    "label": "National Assembly nationalizes Church property",
+    "summary_short": "National Assembly nationalizes Church property became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1789",
+      "end": "1789",
+      "year_start": 1789,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17890101,
+      "sort_end": 17891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1789
     }
   },
   {
@@ -1191,6 +1376,40 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1492
+    }
+  },
+  {
+    "id": "ev_committee_public_safety_1793",
+    "label": "Committee of Public Safety dominates wartime governance",
+    "summary_short": "Committee of Public Safety dominates wartime governance became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_maximilien_robespierre",
+      "pe_lazare_carnot",
+      "pe_louis_antoine_saint_just"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1793",
+      "end": "1793",
+      "year_start": 1793,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17930101,
+      "sort_end": 17931231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1793
     }
   },
   {
@@ -1623,6 +1842,38 @@
     }
   },
   {
+    "id": "ev_constitution_1791_adopted",
+    "label": "Constitution of 1791 adopted",
+    "summary_short": "Constitution of 1791 adopted became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_louis_xvi"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1791",
+      "end": "1791",
+      "year_start": 1791,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17910101,
+      "sort_end": 17911231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1791
+    }
+  },
+  {
     "id": "ev_constitution_medina_622",
     "label": "Constitution of Medina",
     "summary_short": "The Medinan pact set shared obligations between Muslim emigrants, local supporters, and allied tribes under a common political framework.",
@@ -1670,6 +1921,71 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 622
+    }
+  },
+  {
+    "id": "ev_constitution_year_iii_1795",
+    "label": "Constitution of Year III establishes bicameral legislature",
+    "summary_short": "Constitution of Year III establishes bicameral legislature became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_paul_barras"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1795",
+      "end": "1795",
+      "year_start": 1795,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17950101,
+      "sort_end": 17951231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1795
+    }
+  },
+  {
+    "id": "ev_consulate_established_1799",
+    "label": "Consulate established after Brumaire coup",
+    "summary_short": "Consulate established after Brumaire coup became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_napoleon_bonaparte",
+      "pe_emmanuel_joseph_sieyes"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1799",
+      "end": "1799",
+      "year_start": 1799,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17990101,
+      "sort_end": 17991231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1799
     }
   },
   {
@@ -1740,6 +2056,70 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1793
+    }
+  },
+  {
+    "id": "ev_coup_18_fructidor_1797",
+    "label": "Coup of 18 Fructidor sidelines royalist deputies",
+    "summary_short": "Coup of 18 Fructidor sidelines royalist deputies became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_paul_barras"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1797",
+      "end": "1797",
+      "year_start": 1797,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17970101,
+      "sort_end": 17971231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1797
+    }
+  },
+  {
+    "id": "ev_coup_30_prairial_1799",
+    "label": "Coup of 30 Prairial weakens the Directory",
+    "summary_short": "Coup of 30 Prairial weakens the Directory became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_emmanuel_joseph_sieyes"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1799",
+      "end": "1799",
+      "year_start": 1799,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17990101,
+      "sort_end": 17991231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1799
     }
   },
   {
@@ -1822,6 +2202,69 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": -550
+    }
+  },
+  {
+    "id": "ev_dantonists_executed_1794",
+    "label": "Danton and allies executed",
+    "summary_short": "Danton and allies executed became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_georges_danton",
+      "pe_camille_desmoulins"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1794",
+      "end": "1794",
+      "year_start": 1794,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17940101,
+      "sort_end": 17941231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1794
+    }
+  },
+  {
+    "id": "ev_day_of_tiles_1788",
+    "label": "Day of the Tiles uprising in Grenoble",
+    "summary_short": "Day of the Tiles uprising in Grenoble became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1788",
+      "end": "1788",
+      "year_start": 1788,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17880101,
+      "sort_end": 17881231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1788
     }
   },
   {
@@ -1983,6 +2426,68 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1795
+    }
+  },
+  {
+    "id": "ev_douai_estates_elections_1789",
+    "label": "Cahiers and elections for Estates-General completed",
+    "summary_short": "Cahiers and elections for Estates-General completed became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1789",
+      "end": "1789",
+      "year_start": 1789,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17890101,
+      "sort_end": 17891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1789
+    }
+  },
+  {
+    "id": "ev_egypt_campaign_1798",
+    "label": "Napoleon launches Egyptian campaign",
+    "summary_short": "Napoleon launches Egyptian campaign became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_napoleon_bonaparte"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1798",
+      "end": "1798",
+      "year_start": 1798,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17980101,
+      "sort_end": 17981231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1798
     }
   },
   {
@@ -2193,6 +2698,38 @@
     }
   },
   {
+    "id": "ev_execution_marie_antoinette_1793",
+    "label": "Marie Antoinette executed",
+    "summary_short": "Marie Antoinette executed became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_marie_antoinette"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1793",
+      "end": "1793",
+      "year_start": 1793,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17930101,
+      "sort_end": 17931231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1793
+    }
+  },
+  {
     "id": "ev_factory_act_1833",
     "label": "Factory Act (UK) strengthens child labor regulation and enforcement",
     "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate—an important step toward enforceable workplace regulation.",
@@ -2367,6 +2904,70 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1940
+    }
+  },
+  {
+    "id": "ev_festival_supreme_being_1794",
+    "label": "Festival of the Supreme Being held in Paris",
+    "summary_short": "Festival of the Supreme Being held in Paris became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_maximilien_robespierre"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1794",
+      "end": "1794",
+      "year_start": 1794,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17940101,
+      "sort_end": 17941231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1794
+    }
+  },
+  {
+    "id": "ev_fete_federation_1790",
+    "label": "Fête de la Fédération celebrates constitutional unity",
+    "summary_short": "Fête de la Fédération celebrates constitutional unity became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_lafayette"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1790",
+      "end": "1790",
+      "year_start": 1790,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17900101,
+      "sort_end": 17901231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1790
     }
   },
   {
@@ -2710,6 +3311,36 @@
     }
   },
   {
+    "id": "ev_great_fear_1789",
+    "label": "Great Fear spreads through the countryside",
+    "summary_short": "Great Fear spreads through the countryside became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1789",
+      "end": "1789",
+      "year_start": 1789,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17890101,
+      "sort_end": 17891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1789
+    }
+  },
+  {
     "id": "ev_guadalcanal_campaign_1942_1943",
     "label": "Guadalcanal Campaign",
     "summary_short": "The first major Allied offensive in the Pacific weakens Japanese expansion.",
@@ -2840,6 +3471,38 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": -130
+    }
+  },
+  {
+    "id": "ev_hebertists_executed_1794",
+    "label": "Hébertists executed during factional purge",
+    "summary_short": "Hébertists executed during factional purge became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_jacques_rene_hebert"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1794",
+      "end": "1794",
+      "year_start": 1794,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17940101,
+      "sort_end": 17941231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1794
     }
   },
   {
@@ -4426,6 +5089,70 @@
     }
   },
   {
+    "id": "ev_law_22_prairial_1794",
+    "label": "Law of 22 Prairial accelerates Revolutionary Tribunal convictions",
+    "summary_short": "Law of 22 Prairial accelerates Revolutionary Tribunal convictions became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_louis_antoine_saint_just"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1794",
+      "end": "1794",
+      "year_start": 1794,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17940101,
+      "sort_end": 17941231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1794
+    }
+  },
+  {
+    "id": "ev_law_suspects_1793",
+    "label": "Law of Suspects broadens revolutionary arrests",
+    "summary_short": "Law of Suspects broadens revolutionary arrests became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_maximilien_robespierre"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1793",
+      "end": "1793",
+      "year_start": 1793,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17930101,
+      "sort_end": 17931231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1793
+    }
+  },
+  {
     "id": "ev_lend_lease_act_1941",
     "label": "Lend-Lease Act",
     "summary_short": "The United States authorizes large-scale military and economic aid to Allied nations.",
@@ -4464,6 +5191,38 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1941
+    }
+  },
+  {
+    "id": "ev_levy_en_masse_1793",
+    "label": "Levée en masse enacts mass conscription",
+    "summary_short": "Levée en masse enacts mass conscription became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_lazare_carnot"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1793",
+      "end": "1793",
+      "year_start": 1793,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17930101,
+      "sort_end": 17931231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1793
     }
   },
   {
@@ -5762,6 +6521,70 @@
     }
   },
   {
+    "id": "ev_national_assembly_declared_1789",
+    "label": "Third Estate declares National Assembly",
+    "summary_short": "Third Estate declares National Assembly became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_emmanuel_joseph_sieyes"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1789",
+      "end": "1789",
+      "year_start": 1789,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17890101,
+      "sort_end": 17891231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1789
+    }
+  },
+  {
+    "id": "ev_national_convention_1792",
+    "label": "National Convention meets and proclaims the republic",
+    "summary_short": "National Convention meets and proclaims the republic became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_georges_danton"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1792",
+      "end": "1792",
+      "year_start": 1792,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17920101,
+      "sort_end": 17921231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1792
+    }
+  },
+  {
     "id": "ev_national_market_integration_1850s",
     "label": "National markets integrate through rail and telegraph",
     "summary_short": "Faster transport and communication reduce regional price gaps and increase coordinated industrial output.",
@@ -5800,6 +6623,38 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1855
+    }
+  },
+  {
+    "id": "ev_notables_assembly_1787",
+    "label": "Assembly of Notables convened",
+    "summary_short": "Assembly of Notables convened became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_charles_alexandre_de_calonne"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1787",
+      "end": "1787",
+      "year_start": 1787,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17870101,
+      "sort_end": 17871231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1787
     }
   },
   {
@@ -6123,6 +6978,38 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1945
+    }
+  },
+  {
+    "id": "ev_parlement_paris_refuses_1787",
+    "label": "Parlement of Paris refuses new taxes",
+    "summary_short": "Parlement of Paris refuses new taxes became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_louis_xvi"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1787",
+      "end": "1787",
+      "year_start": 1787,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17870101,
+      "sort_end": 17871231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1787
     }
   },
   {
@@ -7619,6 +8506,38 @@
     }
   },
   {
+    "id": "ev_tuileries_stormed_1792",
+    "label": "Tuileries Palace stormed; monarchy effectively suspended",
+    "summary_short": "Tuileries Palace stormed; monarchy effectively suspended became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_louis_xvi"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1792",
+      "end": "1792",
+      "year_start": 1792,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17920101,
+      "sort_end": 17921231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1792
+    }
+  },
+  {
     "id": "ev_un_charter_signed_1945",
     "label": "United Nations Charter Signed",
     "summary_short": "Allied and partner states establish the United Nations framework for postwar diplomacy.",
@@ -7741,6 +8660,36 @@
     }
   },
   {
+    "id": "ev_vendee_revolt_1793",
+    "label": "Royalist and Catholic revolt expands in the Vendée",
+    "summary_short": "Royalist and Catholic revolt expands in the Vendée became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1793",
+      "end": "1793",
+      "year_start": 1793,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17930101,
+      "sort_end": 17931231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1793
+    }
+  },
+  {
     "id": "ev_wannsee_conference_1942",
     "label": "Wannsee Conference",
     "summary_short": "Senior Nazi officials coordinate bureaucratic implementation of the “Final Solution.”",
@@ -7780,6 +8729,38 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1942
+    }
+  },
+  {
+    "id": "ev_war_first_coalition_1792",
+    "label": "France declares war on Austria, beginning War of the First Coalition",
+    "summary_short": "France declares war on Austria, beginning War of the First Coalition became a significant turning point in the French Revolution's political trajectory.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "question_types": [],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_jacques_pierre_brissot"
+    ],
+    "unit_ids": [
+      "unit_french_revolution"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1792",
+      "end": "1792",
+      "year_start": 1792,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17920101,
+      "sort_end": 17921231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1792
     }
   },
   {
