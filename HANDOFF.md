@@ -31,3 +31,34 @@
 2. **Add causality edges (`effects` / `caused_by`)** across the newly added French Revolution events for stronger chain-based modes.
 3. **Backfill question metadata** (skills/primary_skill, tags normalization) for better adaptive balancing.
 4. Repeat the same density-first process for next sparse unit (likely `unit_meiji_restoration` or `unit_islamic_expansion`).
+
+
+## Additional fix in this session (2026-05-05)
+
+- Resolved CI validation failure from `node scripts/validate.mjs` caused by missing `question_types` on 31 newly added French Revolution events.
+- Backfilled each affected event with: `timeline_before_after`, `what_happened`, `cause_and_effect`.
+- Re-ran `node scripts/validate.mjs` and confirmed `[validate] OK`.
+
+
+## Additional progress in this session (2026-05-06)
+
+- Implemented `apps/comparison-trainer/` (new historical comparison learning mode):
+  - side-by-side event cards,
+  - same-era / different-era pair generation,
+  - rotating reflection prompts,
+  - explanation helper text showing shared themes and year-gap context.
+- Added root navigation link and service-worker pre-cache entries for the new app.
+- Added controlled `themes` support:
+  - tagged 50 events in `data/events.json`,
+  - added strict `themes` validation in `scripts/validate-data.mjs`,
+  - preserved `themes` in `scripts/derive.mjs` normalized output.
+- Verification completed:
+  - `node scripts/validate-data.mjs` pass,
+  - `node scripts/derive.mjs` pass,
+  - `node scripts/validate.mjs` pass.
+
+## Suggested next session priorities
+
+1. Expand `themes` tagging from 50 events to all reviewed events in high-traffic units.
+2. Add answer-capture UI to `comparison-trainer` (typed reflection or checklist) with local persistence.
+3. Add theme-based pairing controls (e.g., force shared theme vs force contrast theme).

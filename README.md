@@ -911,3 +911,23 @@ TBD
 - Added 12 French-Revolution-relevant people records in `data/people.json` and registered them in the unit-level `person_ids` list.
 - Linked new events to key actors via `people_ids` for stronger people-recognition and causality/sequence prompt quality.
 - Regenerated derived outputs through `node scripts/derive.mjs` after passing validation.
+
+
+## Recent updates (2026-05-05 · French Revolution question_types validation fix)
+
+- Added missing `question_types` arrays to 31 French Revolution events (1787–1799) in `data/events.json`.
+- Standardized those events to include:
+  - `timeline_before_after`
+  - `what_happened`
+  - `cause_and_effect`
+- Restored `node scripts/validate.mjs` to passing status after CI failures reporting missing `question_types` arrays on the newly added French Revolution records.
+
+
+## Recent updates (2026-05-06 · comparison trainer mode + event themes foundation)
+
+- Added a new learner-facing mode at `apps/comparison-trainer/` with side-by-side event cards, rotating reflection prompts, and mode switching for **same era** / **different era** comparisons.
+- Added homepage discoverability for the new mode in `index.html` and included app shell assets in `service-worker.js` pre-cache.
+- Introduced optional `themes` metadata to events with a controlled vocabulary (`revolution`, `imperialism`, `industrialization`, `religion`, `trade`, `war`, `colonialism`, `migration`, `nationalism`, `state_power`, `technology`, `economic_change`).
+- Backfilled `themes` for 50 events in `data/events.json` as a first cross-unit comparative reasoning foundation.
+- Extended validation in `scripts/validate-data.mjs` to enforce `themes` array shape, string entries, duplicate prevention, and allowed-value checks.
+- Updated normalization in `scripts/derive.mjs` so `themes` are preserved in `derived/events.normalized.json`.

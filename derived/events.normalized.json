@@ -6,7 +6,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte",
@@ -52,6 +57,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "revolution_reform",
       "state_formation_governance"
@@ -100,6 +106,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "revolution_reform",
       "trade_networks_economic_exchange"
@@ -145,6 +152,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -182,6 +190,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
@@ -229,6 +238,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "belief_systems_cultural_exchange"
@@ -261,7 +271,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -301,6 +316,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -344,6 +360,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -380,7 +397,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -419,6 +441,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "state_formation_governance",
       "empire_imperialism"
@@ -456,6 +479,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -505,6 +529,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "decolonization_nation_building",
       "war_diplomacy"
@@ -553,6 +578,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "belief_systems_cultural_exchange"
@@ -597,6 +623,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -647,6 +674,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
@@ -695,6 +723,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -740,6 +769,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
@@ -784,6 +814,7 @@
       "causality_chain",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -827,6 +858,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -878,6 +910,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -929,6 +962,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -980,6 +1014,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "empire_imperialism",
       "war_diplomacy"
@@ -1021,6 +1056,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_henry_bessemer"
@@ -1058,6 +1094,9 @@
     "regions": [],
     "question_types": [
       "timeline_before_after"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -1103,6 +1142,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -1141,6 +1183,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "belief_systems_cultural_exchange"
     ],
@@ -1172,7 +1215,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -1204,7 +1252,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -1243,6 +1296,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "state_formation_governance",
       "belief_systems_cultural_exchange"
@@ -1275,7 +1329,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -1311,6 +1370,7 @@
       "causality_chain",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -1353,6 +1413,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "empire_imperialism"
@@ -1385,7 +1446,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_maximilien_robespierre",
@@ -1424,6 +1490,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_karl_marx",
@@ -1463,6 +1530,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -1511,6 +1579,9 @@
       "timeline_century",
       "causality_categorize_causes",
       "causality_match_effects"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -1566,6 +1637,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -1616,6 +1688,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -1665,6 +1738,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "empire_imperialism",
       "trade_networks_economic_exchange"
@@ -1718,6 +1792,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "empire_imperialism"
@@ -1769,6 +1844,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
@@ -1816,6 +1892,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
@@ -1848,7 +1925,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -1893,6 +1975,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "state_formation_governance"
     ],
@@ -1930,7 +2013,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_paul_barras"
@@ -1962,7 +2050,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte",
@@ -2000,6 +2093,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_eli_whitney"
@@ -2036,6 +2130,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -2065,7 +2162,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_paul_barras"
@@ -2097,7 +2199,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_emmanuel_joseph_sieyes"
@@ -2141,6 +2248,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "industrialization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -2179,6 +2289,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "state_formation_governance",
       "empire_imperialism"
@@ -2211,7 +2322,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_georges_danton",
@@ -2244,7 +2360,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -2287,6 +2408,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "state_formation_governance",
       "belief_systems_cultural_exchange"
@@ -2341,6 +2463,9 @@
       "timeline_century",
       "causality_categorize_causes",
       "causality_match_effects"
+    ],
+    "themes": [
+      "revolution"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -2402,6 +2527,7 @@
       "causality_chain",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -2435,7 +2561,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -2465,7 +2596,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -2502,6 +2638,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_thomas_edison",
@@ -2544,6 +2681,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -2589,6 +2727,10 @@
       "timeline_ordering",
       "timeline_century",
       "causality_chain"
+    ],
+    "themes": [
+      "revolution",
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -2655,6 +2797,10 @@
       "causality_chain",
       "causality_match_effects"
     ],
+    "themes": [
+      "revolution",
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -2704,7 +2850,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_marie_antoinette"
@@ -2748,6 +2899,10 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "migration",
+      "industrialization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_karl_marx",
@@ -2790,6 +2945,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -2830,6 +2986,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_richard_arkwright"
@@ -2876,6 +3033,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -2913,7 +3071,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_maximilien_robespierre"
@@ -2945,7 +3108,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_lafayette"
@@ -2982,6 +3150,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_karl_marx",
@@ -3031,6 +3200,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
@@ -3073,6 +3243,7 @@
       "causality_chain",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi",
@@ -3115,6 +3286,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -3149,6 +3323,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill"
@@ -3190,6 +3365,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -3239,6 +3415,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -3287,6 +3464,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "economic_change"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -3317,7 +3497,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -3352,6 +3537,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -3403,6 +3589,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "revolution_reform",
       "decolonization_nation_building"
@@ -3448,6 +3635,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "belief_systems_cultural_exchange"
@@ -3480,7 +3668,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_jacques_rene_hebert"
@@ -3525,6 +3718,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
@@ -3569,6 +3763,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler"
@@ -3609,6 +3804,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -3652,6 +3848,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -3690,6 +3887,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -3730,6 +3928,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -3773,6 +3972,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_menelik_ii"
@@ -3821,6 +4021,9 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_otto_von_bismarck"
@@ -3861,6 +4064,9 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -3897,6 +4103,9 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -3932,6 +4141,9 @@
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -3970,6 +4182,9 @@
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -4011,6 +4226,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_cecil_rhodes"
@@ -4056,6 +4272,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_leopold_ii",
@@ -4102,6 +4319,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_queen_victoria"
@@ -4149,6 +4367,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4186,6 +4405,9 @@
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -4225,6 +4447,9 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [
+      "war"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4261,6 +4486,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4304,6 +4530,9 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_leopold_ii",
@@ -4344,6 +4573,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4387,6 +4617,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4432,6 +4663,9 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [
+      "war"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4473,6 +4707,9 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [
+      "war"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4510,6 +4747,9 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [
+      "war"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4546,6 +4786,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_queen_victoria"
@@ -4591,6 +4832,9 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4626,6 +4870,9 @@
     "question_types": [
       "timeline_before_after",
       "timeline_ordering"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -4663,6 +4910,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4702,6 +4950,7 @@
       "timeline_before_after",
       "timeline_ordering"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -4750,6 +4999,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "decolonization_nation_building",
       "state_formation_governance"
@@ -4799,6 +5049,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "revolution_reform",
       "empire_imperialism"
@@ -4840,6 +5091,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_karl_benz"
@@ -4883,6 +5135,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler"
@@ -4925,6 +5178,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -4970,6 +5224,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_benito_mussolini"
@@ -5011,6 +5266,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_emperor_hirohito",
@@ -5057,6 +5313,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_robert_owen"
@@ -5095,7 +5352,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_antoine_saint_just"
@@ -5127,7 +5389,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_maximilien_robespierre"
@@ -5164,6 +5431,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -5200,7 +5468,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_lazare_carnot"
@@ -5237,6 +5510,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_charles_de_gaulle"
@@ -5277,6 +5551,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_george_stephenson",
@@ -5321,6 +5596,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -5364,6 +5640,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "belief_systems_cultural_exchange"
@@ -5403,6 +5680,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -5442,6 +5720,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_henry_ford"
@@ -5481,6 +5760,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_annie_besant"
@@ -5525,6 +5805,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "state_formation_governance"
@@ -5571,6 +5852,9 @@
       "timeline_ordering",
       "what_happened"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -5615,6 +5899,9 @@
       "timeline_before_after",
       "timeline_ordering",
       "what_happened"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -5667,6 +5954,9 @@
       "timeline_ordering",
       "what_happened"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -5717,6 +6007,9 @@
       "timeline_ordering",
       "significance"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -5762,6 +6055,9 @@
       "timeline_before_after",
       "timeline_ordering",
       "cause_and_effect"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -5814,6 +6110,9 @@
       "timeline_ordering",
       "what_happened"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -5863,6 +6162,9 @@
       "timeline_before_after",
       "timeline_ordering",
       "significance"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -5916,6 +6218,9 @@
       "timeline_ordering",
       "significance"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -5965,6 +6270,9 @@
       "timeline_ordering",
       "what_happened",
       "significance"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -6019,6 +6327,9 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -6063,6 +6374,9 @@
       "timeline_before_after",
       "timeline_ordering",
       "significance"
+    ],
+    "themes": [
+      "war"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -6109,6 +6423,9 @@
       "timeline_ordering",
       "cause_and_effect"
     ],
+    "themes": [
+      "war"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -6151,6 +6468,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -6189,6 +6507,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -6235,6 +6554,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -6279,6 +6599,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "state_formation_governance",
       "belief_systems_cultural_exchange"
@@ -6320,6 +6641,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_neville_chamberlain",
@@ -6370,6 +6692,9 @@
       "timeline_century",
       "causality_chain",
       "causality_match_effects"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -6437,6 +6762,9 @@
       "timeline_century",
       "causality_chain"
     ],
+    "themes": [
+      "imperialism"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -6488,6 +6816,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -6527,7 +6856,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_emmanuel_joseph_sieyes"
@@ -6559,7 +6893,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_georges_danton"
@@ -6596,6 +6935,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -6632,7 +6972,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_charles_alexandre_de_calonne"
@@ -6669,6 +7014,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -6710,6 +7056,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_georgy_zhukov",
@@ -6753,6 +7100,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -6801,6 +7149,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_dwight_eisenhower",
@@ -6852,6 +7201,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_dwight_eisenhower",
@@ -6902,6 +7252,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "empire_imperialism",
       "war_diplomacy"
@@ -6950,6 +7301,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "decolonization_nation_building",
       "revolution_reform"
@@ -6987,7 +7339,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -7029,6 +7386,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_hideki_tojo",
@@ -7077,6 +7435,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "industrialization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -7111,6 +7472,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -7154,6 +7516,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -7188,6 +7553,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -7231,6 +7597,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "state_formation_governance"
     ],
@@ -7274,6 +7641,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -7316,6 +7684,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -7363,6 +7732,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -7407,6 +7779,9 @@
       "timeline_century",
       "causality_chain",
       "causality_categorize_causes"
+    ],
+    "themes": [
+      "revolution"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -7464,6 +7839,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -7510,6 +7886,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "state_formation_governance",
       "war_diplomacy"
@@ -7554,6 +7931,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -7599,6 +7977,7 @@
       "causality_chain",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_georges_danton"
@@ -7643,6 +8022,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "technology_industrialization"
@@ -7680,6 +8060,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_georgy_zhukov",
@@ -7724,6 +8105,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -7772,6 +8154,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -7813,6 +8196,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -7854,6 +8238,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_james_hargreaves"
@@ -7893,6 +8278,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -7926,6 +8314,9 @@
     ],
     "question_types": [
       "timeline_before_after"
+    ],
+    "themes": [
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -7961,6 +8352,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -7995,6 +8389,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -8033,6 +8428,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_richard_trevithick"
@@ -8075,6 +8471,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_george_stephenson"
@@ -8125,6 +8522,9 @@
       "timeline_ordering",
       "timeline_century",
       "causality_chain"
+    ],
+    "themes": [
+      "revolution"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -8181,6 +8581,7 @@
     "places": [],
     "regions": [],
     "question_types": [],
+    "themes": [],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "state_formation_governance"
@@ -8218,6 +8619,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -8259,6 +8661,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_samuel_morse"
@@ -8307,6 +8710,10 @@
       "timeline_ordering",
       "timeline_century",
       "causality_chain"
+    ],
+    "themes": [
+      "revolution",
+      "state_power"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -8369,6 +8776,9 @@
       "timeline_century",
       "causality_chain"
     ],
+    "themes": [
+      "revolution"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_maximilien_robespierre"
@@ -8426,6 +8836,7 @@
       "timeline_before_after",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [
       "state_formation_governance"
     ],
@@ -8474,6 +8885,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [
       "war_diplomacy",
       "state_formation_governance"
@@ -8512,7 +8924,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -8549,6 +8966,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -8590,6 +9008,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt"
@@ -8632,6 +9051,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -8666,7 +9086,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -8701,6 +9126,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -8738,7 +9164,12 @@
     "status": "draft",
     "places": [],
     "regions": [],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_jacques_pierre_brissot"
@@ -8775,6 +9206,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -8819,6 +9251,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_richard_arkwright"
@@ -8857,6 +9290,9 @@
     "question_types": [
       "timeline_before_after"
     ],
+    "themes": [
+      "state_power"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -8890,6 +9326,9 @@
     ],
     "question_types": [
       "timeline_before_after"
+    ],
+    "themes": [
+      "industrialization"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -8925,6 +9364,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_james_watt"
@@ -8966,6 +9406,7 @@
       "causality_chain",
       "what_happened"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi",
@@ -9005,6 +9446,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -9044,6 +9486,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_hussein_bin_ali",
@@ -9085,6 +9528,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -9126,6 +9570,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_ferdinand_foch"
@@ -9172,6 +9617,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franz_ferdinand",
@@ -9213,6 +9659,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franz_joseph_i"
@@ -9253,6 +9700,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_david_lloyd_george"
@@ -9293,6 +9741,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -9337,6 +9786,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_helmuth_von_moltke_younger"
@@ -9377,6 +9827,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_vladimir_lenin",
@@ -9418,6 +9869,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_nikolai_brusilov"
@@ -9458,6 +9910,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -9502,6 +9955,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_mustafa_kemal_ataturk",
@@ -9544,6 +9998,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_erich_ludendorff",
@@ -9586,6 +10041,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_kaiser_wilhelm_ii",
@@ -9627,6 +10083,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_helmuth_von_moltke_younger"
@@ -9669,6 +10126,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_david_lloyd_george",
@@ -9712,6 +10170,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_ferdinand_foch",
@@ -9758,6 +10217,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_vittorio_orlando"
@@ -9798,6 +10258,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -9841,6 +10302,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -9879,6 +10341,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -9918,6 +10381,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_kaiser_wilhelm_ii"
@@ -9960,6 +10424,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_mehmed_v",
@@ -10002,6 +10467,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_woodrow_wilson",
@@ -10049,6 +10515,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_tsar_nicholas_ii"
@@ -10089,6 +10556,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_tsar_nicholas_ii",
@@ -10131,6 +10599,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -10174,6 +10643,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_douglas_haig"
@@ -10214,6 +10684,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -10252,6 +10723,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -10290,6 +10762,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_paul_von_hindenburg",
@@ -10329,6 +10802,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_vladimir_lenin"
@@ -10375,6 +10849,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_woodrow_wilson",
@@ -10419,6 +10894,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -10459,6 +10935,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_alfred_von_tirpitz"
@@ -10500,6 +10977,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_woodrow_wilson"
@@ -10548,6 +11026,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_philippe_petain"
@@ -10589,6 +11068,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [],
     "unit_ids": [
@@ -10627,6 +11107,7 @@
       "what_happened",
       "cause_and_effect"
     ],
+    "themes": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",

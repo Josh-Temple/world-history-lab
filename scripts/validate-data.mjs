@@ -24,6 +24,20 @@ const ALLOWED_CAUSAL_CATEGORIES = new Set([
   "diplomatic",
   "environmental",
 ]);
+const ALLOWED_THEMES = new Set([
+  "revolution",
+  "imperialism",
+  "industrialization",
+  "religion",
+  "trade",
+  "war",
+  "colonialism",
+  "migration",
+  "nationalism",
+  "state_power",
+  "technology",
+  "economic_change",
+]);
 
 async function readJson(relativePath) {
   const absolutePath = path.join(ROOT, relativePath);
@@ -214,6 +228,27 @@ export async function validateData({ log = false } = {}) {
           errors.push(`Event ${eventLabel} has invalid primary_skill: ${String(event.primary_skill)}`);
         } else if (Array.isArray(event.skills) && !event.skills.includes(event.primary_skill)) {
           warnings.push(`Event ${eventLabel} primary_skill is not included in skills array.`);
+        }
+      }
+
+      if (event.themes !== undefined) {
+        if (!Array.isArray(event.themes)) {
+          errors.push(`Event ${eventLabel} has invalid themes; expected an array.`);
+        } else {
+          const themesSeen = new Set();
+          for (const theme of event.themes) {
+            if (typeof theme !== "string") {
+              errors.push(`Event ${eventLabel} has non-string themes entry.`);
+              continue;
+            }
+            if (themesSeen.has(theme)) {
+              errors.push(`Event ${eventLabel} has duplicate theme entry: ${theme}`);
+            }
+            themesSeen.add(theme);
+            if (!ALLOWED_THEMES.has(theme)) {
+              errors.push(`Event ${eventLabel} has invalid theme: ${theme}`);
+            }
+          }
         }
       }
 
