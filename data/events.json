@@ -29,7 +29,10 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_bridgewater_canal_opens_1761",
@@ -68,7 +71,10 @@
     "geo": {
       "lat": 53.4808,
       "lon": -2.2426
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_spinning_jenny_invented_1764",
@@ -100,7 +106,10 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_water_frame_patent_1769",
@@ -132,7 +141,10 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_watt_condenser_patent_1769",
@@ -164,7 +176,10 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "themes": [
+      "industrialization"
+    ]
   },
   {
     "id": "ev_spinning_jenny_patented_1770",
@@ -191,6 +206,9 @@
     "content_origin": "ai_assisted_self_reviewed",
     "regions": [
       "reg_britain"
+    ],
+    "themes": [
+      "state_power"
     ]
   },
   {
@@ -235,7 +253,10 @@
     "geo": {
       "lat": 53.1127,
       "lon": -1.5602
-    }
+    },
+    "themes": [
+      "industrialization"
+    ]
   },
   {
     "id": "ev_spinning_mule_invented_1779",
@@ -267,7 +288,10 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_power_loom_patented_1785",
@@ -299,7 +323,10 @@
       "timeline",
       "geography"
     ],
-    "primary_skill": "geography"
+    "primary_skill": "geography",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_declaration_rights_man_citizen_1789",
@@ -386,7 +413,10 @@
     "geo": {
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "themes": [
+      "revolution"
+    ]
   },
   {
     "id": "ev_estates_general_1789",
@@ -486,7 +516,11 @@
     "geo": {
       "lat": 48.8049,
       "lon": 2.1204
-    }
+    },
+    "themes": [
+      "revolution",
+      "state_power"
+    ]
   },
   {
     "id": "ev_storming_bastille_1789",
@@ -571,7 +605,10 @@
     "geo": {
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "themes": [
+      "revolution"
+    ]
   },
   {
     "id": "ev_tennis_court_oath_1789",
@@ -656,7 +693,11 @@
     "geo": {
       "lat": 48.8049,
       "lon": 2.1204
-    }
+    },
+    "themes": [
+      "revolution",
+      "state_power"
+    ]
   },
   {
     "id": "ev_cotton_gin_invented_1793",
@@ -685,7 +726,10 @@
       "timeline",
       "recognition"
     ],
-    "primary_skill": "recognition"
+    "primary_skill": "recognition",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_execution_louis_xvi_1793",
@@ -776,7 +820,11 @@
     "geo": {
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "themes": [
+      "revolution",
+      "state_power"
+    ]
   },
   {
     "id": "ev_reign_of_terror_1793_1794",
@@ -869,7 +917,10 @@
     "geo": {
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "themes": [
+      "revolution"
+    ]
   },
   {
     "id": "ev_thermidorian_reaction_1794",
@@ -955,7 +1006,10 @@
     "geo": {
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "themes": [
+      "revolution"
+    ]
   },
   {
     "id": "ev_napoleon_coup_18_brumaire_1799",
@@ -1048,7 +1102,10 @@
     "geo": {
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_napoleon_emperor_1804",
@@ -1138,7 +1195,10 @@
     "geo": {
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "themes": [
+      "imperialism"
+    ]
   },
   {
     "id": "ev_penydarren_locomotive_run_1804",
@@ -1182,7 +1242,10 @@
     "geo": {
       "lat": 51.7487,
       "lon": -3.379
-    }
+    },
+    "themes": [
+      "industrialization"
+    ]
   },
   {
     "id": "ev_congress_of_vienna_1814_1815",
@@ -1272,7 +1335,10 @@
     "geo": {
       "lat": 48.2082,
       "lon": 16.3738
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_rainhill_trials_rocket_1829",
@@ -1316,7 +1382,10 @@
     "geo": {
       "lat": 53.417,
       "lon": -2.766
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_factory_act_1833",
@@ -1371,7 +1440,11 @@
     "geo": {
       "lat": 51.5072,
       "lon": -0.1276
-    }
+    },
+    "themes": [
+      "migration",
+      "industrialization"
+    ]
   },
   {
     "id": "ev_great_exhibition_opens_1851",
@@ -1417,7 +1490,10 @@
     "geo": {
       "lat": 51.5072,
       "lon": -0.1276
-    }
+    },
+    "themes": [
+      "economic_change"
+    ]
   },
   {
     "id": "ev_meiji_perry_1853",
@@ -1489,7 +1565,10 @@
     "geo": {
       "lat": 35.2556,
       "lon": 139.7068
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_meiji_kanagawa_treaty_1854",
@@ -1565,7 +1644,10 @@
     "geo": {
       "lat": 34.6795,
       "lon": 138.9453
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_bessemer_process_patent_1856",
@@ -1598,7 +1680,10 @@
       "timeline",
       "people"
     ],
-    "primary_skill": "people"
+    "primary_skill": "people",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_meiji_boshin_war_1868",
@@ -1669,7 +1754,10 @@
     "geo": {
       "lat": 35.0116,
       "lon": 135.7681
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_meiji_charter_oath_1868",
@@ -1739,7 +1827,10 @@
     "geo": {
       "lat": 35.0116,
       "lon": 135.7681
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_meiji_abolish_han_1871",
@@ -1809,7 +1900,10 @@
     "geo": {
       "lat": 35.6762,
       "lon": 139.6503
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_meiji_conscription_1873",
@@ -1868,7 +1962,10 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_meiji_constitution_1889",
@@ -1938,7 +2035,10 @@
     "geo": {
       "lat": 35.6762,
       "lon": 139.6503
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_meiji_diet_1890",
@@ -2008,7 +2108,10 @@
     "geo": {
       "lat": 35.6762,
       "lon": 139.6503
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
@@ -2070,7 +2173,10 @@
       "geography",
       "recognition"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "themes": [
+      "war"
+    ]
   },
   {
     "id": "ev_meiji_russojapanese_war_1905",
@@ -2132,7 +2238,10 @@
       "geography",
       "recognition"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "themes": [
+      "war"
+    ]
   },
   {
     "id": "ev_meiji_annex_korea_1910",
@@ -2193,7 +2302,10 @@
       "causality",
       "geography"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_meiji_emperor_death_1912",
@@ -2259,7 +2371,10 @@
     "geo": {
       "lat": 35.6762,
       "lon": 139.6503
-    }
+    },
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_leopold_congo_project_1876",
@@ -2287,7 +2402,10 @@
       "pe_henry_morton_stanley",
       "pe_david_livingstone"
     ],
-    "summary_short": "Leopold II launched a private colonial project that became the Congo Free State, exemplifying exploitative imperial rule in Central Africa."
+    "summary_short": "Leopold II launched a private colonial project that became the Congo Free State, exemplifying exploitative imperial rule in Central Africa.",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_british_occupation_egypt_1882",
@@ -2313,7 +2431,10 @@
     "people_ids": [
       "pe_queen_victoria"
     ],
-    "summary_short": "Britain occupied Egypt to secure financial interests and the Suez route, tightening European control over a strategic imperial corridor."
+    "summary_short": "Britain occupied Egypt to secure financial interests and the Suez route, tightening European control over a strategic imperial corridor.",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_berlin_conference_begins_1884",
@@ -2339,7 +2460,10 @@
     "people_ids": [
       "pe_otto_von_bismarck"
     ],
-    "summary_short": "European powers convened in Berlin to set rules for territorial claims in Africa, accelerating formal partition."
+    "summary_short": "European powers convened in Berlin to set rules for territorial claims in Africa, accelerating formal partition.",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_berlin_conference_ends_1885",
@@ -2362,7 +2486,10 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "The Berlin Conference concluded by codifying principles that legitimized the Scramble for Africa without African representation."
+    "summary_short": "The Berlin Conference concluded by codifying principles that legitimized the Scramble for Africa without African representation.",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_first_sinojapanese_war_begins_1894",
@@ -2386,7 +2513,10 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "War between Qing China and Meiji Japan began over influence in Korea, exposing shifts in East Asian power."
+    "summary_short": "War between Qing China and Meiji Japan began over influence in Korea, exposing shifts in East Asian power.",
+    "themes": [
+      "war"
+    ]
   },
   {
     "id": "ev_imperialism_treaty_shimonoseki_1895",
@@ -2410,7 +2540,10 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "The Treaty of Shimonoseki ended the war with major Chinese concessions, marking Japan’s rise as an imperial power."
+    "summary_short": "The Treaty of Shimonoseki ended the war with major Chinese concessions, marking Japan’s rise as an imperial power.",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_spanish_american_war_1898",
@@ -2433,7 +2566,10 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "The United States defeated Spain and gained overseas territories, signaling a new phase of American imperial expansion."
+    "summary_short": "The United States defeated Spain and gained overseas territories, signaling a new phase of American imperial expansion.",
+    "themes": [
+      "war"
+    ]
   },
   {
     "id": "ev_imperialism_second_boer_war_begins_1899",
@@ -2457,7 +2593,10 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Britain and Boer republics entered a major war in southern Africa over sovereignty and resource-rich territory."
+    "summary_short": "Britain and Boer republics entered a major war in southern Africa over sovereignty and resource-rich territory.",
+    "themes": [
+      "war"
+    ]
   },
   {
     "id": "ev_imperialism_boxer_rebellion_1900",
@@ -2480,7 +2619,10 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "An anti-foreign uprising in Qing China drew multinational military intervention and harsher external control."
+    "summary_short": "An anti-foreign uprising in Qing China drew multinational military intervention and harsher external control.",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_boer_war_ends_1902",
@@ -2503,7 +2645,10 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "The Boer War ended with British victory, paving the way for a new political order in South Africa under imperial influence."
+    "summary_short": "The Boer War ended with British victory, paving the way for a new political order in South Africa under imperial influence.",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_russojapanese_war_begins_1904",
@@ -2530,7 +2675,10 @@
     "effects": [
       "ev_wwi_naval_arms_race_1898_1914"
     ],
-    "summary_short": "Russia and Japan went to war over Manchuria and Korea, showing imperial rivalry in Northeast Asia."
+    "summary_short": "Russia and Japan went to war over Manchuria and Korea, showing imperial rivalry in Northeast Asia.",
+    "themes": [
+      "war"
+    ]
   },
   {
     "id": "ev_imperialism_treaty_portsmouth_1905",
@@ -2554,7 +2702,10 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "The Treaty of Portsmouth ended the Russo-Japanese War and confirmed expanded Japanese influence in the region."
+    "summary_short": "The Treaty of Portsmouth ended the Russo-Japanese War and confirmed expanded Japanese influence in the region.",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_first_moroccan_crisis_1905",
@@ -2580,7 +2731,10 @@
     "effects": [
       "ev_wwi_alliance_system_hardens_1890_1907"
     ],
-    "summary_short": "Germany challenged French influence in Morocco, escalating prewar great-power tensions through colonial rivalry."
+    "summary_short": "Germany challenged French influence in Morocco, escalating prewar great-power tensions through colonial rivalry.",
+    "themes": [
+      "state_power"
+    ]
   },
   {
     "id": "ev_imperialism_agadir_crisis_1911",
@@ -7548,7 +7702,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Assembly of Notables convened became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Assembly of Notables convened became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_parlement_paris_refuses_1787",
@@ -7561,7 +7720,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Parlement of Paris refuses new taxes became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Parlement of Paris refuses new taxes became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_day_of_tiles_1788",
@@ -7572,7 +7736,12 @@
     "people_ids": [],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Day of the Tiles uprising in Grenoble became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Day of the Tiles uprising in Grenoble became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_douai_estates_elections_1789",
@@ -7583,7 +7752,12 @@
     "people_ids": [],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Cahiers and elections for Estates-General completed became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Cahiers and elections for Estates-General completed became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_national_assembly_declared_1789",
@@ -7596,7 +7770,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Third Estate declares National Assembly became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Third Estate declares National Assembly became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_great_fear_1789",
@@ -7607,7 +7786,12 @@
     "people_ids": [],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Great Fear spreads through the countryside became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Great Fear spreads through the countryside became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_august_decrees_1789",
@@ -7618,7 +7802,12 @@
     "people_ids": [],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "August Decrees abolish feudal privileges became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "August Decrees abolish feudal privileges became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_church_property_nationalized_1789",
@@ -7629,7 +7818,12 @@
     "people_ids": [],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "National Assembly nationalizes Church property became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "National Assembly nationalizes Church property became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_assignats_issued_1790",
@@ -7640,7 +7834,12 @@
     "people_ids": [],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Assignats issued as revolutionary paper currency became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Assignats issued as revolutionary paper currency became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_fete_federation_1790",
@@ -7653,7 +7852,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Fête de la Fédération celebrates constitutional unity became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Fête de la Fédération celebrates constitutional unity became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_chapelier_law_1791",
@@ -7664,7 +7868,12 @@
     "people_ids": [],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Le Chapelier Law bans guilds and worker coalitions became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Le Chapelier Law bans guilds and worker coalitions became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_constitution_1791_adopted",
@@ -7677,7 +7886,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Constitution of 1791 adopted became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Constitution of 1791 adopted became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_war_first_coalition_1792",
@@ -7690,7 +7904,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "France declares war on Austria, beginning War of the First Coalition became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "France declares war on Austria, beginning War of the First Coalition became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_tuileries_stormed_1792",
@@ -7703,7 +7922,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Tuileries Palace stormed; monarchy effectively suspended became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Tuileries Palace stormed; monarchy effectively suspended became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_national_convention_1792",
@@ -7716,7 +7940,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "National Convention meets and proclaims the republic became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "National Convention meets and proclaims the republic became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_execution_marie_antoinette_1793",
@@ -7729,7 +7958,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Marie Antoinette executed became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Marie Antoinette executed became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_levy_en_masse_1793",
@@ -7742,7 +7976,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Levée en masse enacts mass conscription became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Levée en masse enacts mass conscription became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_committee_public_safety_1793",
@@ -7757,7 +7996,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Committee of Public Safety dominates wartime governance became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Committee of Public Safety dominates wartime governance became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_vendee_revolt_1793",
@@ -7768,7 +8012,12 @@
     "people_ids": [],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Royalist and Catholic revolt expands in the Vendée became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Royalist and Catholic revolt expands in the Vendée became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_law_suspects_1793",
@@ -7781,7 +8030,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Law of Suspects broadens revolutionary arrests became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Law of Suspects broadens revolutionary arrests became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_hebertists_executed_1794",
@@ -7794,7 +8048,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Hébertists executed during factional purge became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Hébertists executed during factional purge became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_dantonists_executed_1794",
@@ -7808,7 +8067,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Danton and allies executed became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Danton and allies executed became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_festival_supreme_being_1794",
@@ -7821,7 +8085,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Festival of the Supreme Being held in Paris became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Festival of the Supreme Being held in Paris became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_law_22_prairial_1794",
@@ -7834,7 +8103,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Law of 22 Prairial accelerates Revolutionary Tribunal convictions became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Law of 22 Prairial accelerates Revolutionary Tribunal convictions became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_constitution_year_iii_1795",
@@ -7847,7 +8121,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Constitution of Year III establishes bicameral legislature became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Constitution of Year III establishes bicameral legislature became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_13_vendemiaire_1795",
@@ -7861,7 +8140,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "13 Vendémiaire uprising suppressed in Paris became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "13 Vendémiaire uprising suppressed in Paris became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_camp_formio_1797",
@@ -7874,7 +8158,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Treaty of Campo Formio expands French influence in Italy became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Treaty of Campo Formio expands French influence in Italy became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_coup_18_fructidor_1797",
@@ -7887,7 +8176,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Coup of 18 Fructidor sidelines royalist deputies became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Coup of 18 Fructidor sidelines royalist deputies became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_egypt_campaign_1798",
@@ -7900,7 +8194,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Napoleon launches Egyptian campaign became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Napoleon launches Egyptian campaign became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_coup_30_prairial_1799",
@@ -7913,7 +8212,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Coup of 30 Prairial weakens the Directory became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Coup of 30 Prairial weakens the Directory became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_consulate_established_1799",
@@ -7927,6 +8231,11 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Consulate established after Brumaire coup became a significant turning point in the French Revolution's political trajectory."
+    "summary_short": "Consulate established after Brumaire coup became a significant turning point in the French Revolution's political trajectory.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   }
 ]

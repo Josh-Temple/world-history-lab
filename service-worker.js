@@ -1,4 +1,4 @@
-const APP_SHELL_CACHE = 'world-history-lab-shell-v2';
+const APP_SHELL_CACHE = 'world-history-lab-shell-v3';
 const RUNTIME_CACHE = 'world-history-lab-runtime-v1';
 const APP_SHELL_URLS = [
   '/',
@@ -40,6 +40,9 @@ const APP_SHELL_URLS = [
   '/apps/graph-explorer/',
   '/apps/graph-explorer/index.html',
   '/apps/graph-explorer/app.js',
+  '/apps/comparison-trainer/',
+  '/apps/comparison-trainer/index.html',
+  '/apps/comparison-trainer/main.js',
   '/apps/shared/data-store.js',
   '/apps/shared/header.js',
   '/apps/shared/data-access.js',
