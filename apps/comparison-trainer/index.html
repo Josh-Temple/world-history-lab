@@ -15,12 +15,21 @@
       .prompt, .explanation { margin-top:14px; background:#fff; border:1px solid #cbd5e1; border-radius:10px; padding:12px; }
       button, select { font: inherit; padding:8px 10px; border-radius:8px; border:1px solid #94a3b8; }
       button { background:#0f172a; color:#fff; border-color:#0f172a; }
-      @media (max-width: 720px) { .card-grid { grid-template-columns: 1fr; } }
+            .session-header { display:flex; justify-content:space-between; align-items:center; margin:10px 0 16px; padding-bottom:8px; border-bottom:1px solid #ddd; font-weight:600; }
+      .feedback-correct { color: #166534; }
+      .feedback-incorrect { color: #b00020; }
+      .confidence-buttons { display:flex; gap:8px; flex-wrap:wrap; }
+      .confidence-buttons button { min-height:42px; }
+      @media (max-width: 720px) { .card-grid { grid-template-columns: 1fr; } .confidence-buttons button { flex:1 1 45%; } }
     </style>
   </head>
   <body>
     <main>
       <h1>Historical Comparison</h1>
+      <section class="session-header" aria-live="polite">
+        <div id="session-progress">1 / 10</div>
+        <div id="session-mode">Comparison Trainer</div>
+      </section>
       <div class="toolbar">
         <label>Mode
           <select id="mode">
@@ -43,7 +52,24 @@
 
       <section class="explanation">
         <h2>Explanation Helper</h2>
+        <p id="feedback" class="meta">Choose your answer confidence after reflecting.</p>
         <p id="explanation"></p>
+      </section>
+
+      <section id="confidence-controls" class="prompt">
+        <h2>Confidence</h2>
+        <div class="confidence-buttons">
+          <button type="button" data-confidence="easy">Easy</button>
+          <button type="button" data-confidence="unsure">Unsure</button>
+          <button type="button" data-confidence="guess">Guess</button>
+          <button type="button" data-confidence="skip">Skip</button>
+        </div>
+      </section>
+
+      <section id="session-summary" class="prompt" hidden>
+        <h2>Session Complete</h2>
+        <p id="summary-score"></p>
+        <button id="retry-weak-items" type="button">Practice Weak Items</button>
       </section>
     </main>
     <script src="main.js"></script>

@@ -45,6 +45,8 @@ function buildExplanation(a, b) {
   return `${sharedText} Year gap: ${yearGap} years. Compare institutions, social groups, and outcomes to build a stronger analogy.`;
 }
 
+const SESSION_TARGET = 10;
+
 async function init() {
   const eventAEl = document.getElementById('event-a');
   const eventBEl = document.getElementById('event-b');
@@ -52,16 +54,66 @@ async function init() {
   const explanationEl = document.getElementById('explanation');
   const modeEl = document.getElementById('mode');
   const nextBtn = document.getElementById('next-btn');
+  const progressEl = document.getElementById('session-progress');
+  const summaryEl = document.getElementById('session-summary');
+  const summaryScoreEl = document.getElementById('summary-score');
+  const retryWeakBtn = document.getElementById('retry-weak-items');
+  const feedbackEl = document.getElementById('feedback');
 
   const events = await loadEvents();
+  const results = [];
+  let questionIndex = 0;
+  let currentPair = null;
+
+  function updateProgress() {
+    progressEl.textContent = `${Math.min(questionIndex + 1, SESSION_TARGET)} / ${SESSION_TARGET}`;
+  }
 
   function next() {
+    if (questionIndex >= SESSION_TARGET) return;
     const [a, b] = randomPair(events, modeEl.value);
+    currentPair = [a, b];
     renderEvent(eventAEl, a);
     renderEvent(eventBEl, b);
     promptEl.textContent = sample(PROMPTS);
     explanationEl.textContent = buildExplanation(a, b);
+    feedbackEl.textContent = "Rate your confidence and continue.";
+    feedbackEl.className = "meta";
+    updateProgress();
   }
+
+  function finishSession() {
+    const total = results.length;
+    const weak = results.filter((r) => !r.correct || r.confidence !== "easy");
+    summaryEl.hidden = false;
+    summaryScoreEl.textContent = `${total - weak.length} strong / ${total} total · ${weak.length} weak items`;
+    nextBtn.disabled = true;
+  }
+
+  document.querySelectorAll("[data-confidence]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (!currentPair || questionIndex >= SESSION_TARGET) return;
+      const confidence = btn.dataset.confidence;
+      const correct = confidence === "easy" || confidence === "unsure";
+      results.push({ event_id: currentPair[0].id, correct, confidence });
+      feedbackEl.textContent = correct ? "Saved. Keep going." : "Saved as weak item for review.";
+      feedbackEl.className = correct ? "feedback-correct" : "feedback-incorrect";
+      questionIndex += 1;
+      if (questionIndex >= SESSION_TARGET) {
+        finishSession();
+      } else {
+        next();
+      }
+    });
+  });
+
+  retryWeakBtn.addEventListener("click", () => {
+    questionIndex = 0;
+    results.length = 0;
+    summaryEl.hidden = true;
+    nextBtn.disabled = false;
+    next();
+  });
 
   nextBtn.addEventListener('click', next);
   modeEl.addEventListener('change', next);

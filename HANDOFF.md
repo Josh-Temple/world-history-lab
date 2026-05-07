@@ -62,3 +62,20 @@
 1. Expand `themes` tagging from 50 events to all reviewed events in high-traffic units.
 2. Add answer-capture UI to `comparison-trainer` (typed reflection or checklist) with local persistence.
 3. Add theme-based pairing controls (e.g., force shared theme vs force contrast theme).
+
+## Additional progress in this session (2026-05-07)
+
+- Added session-level confidence capture controls (`Easy`, `Unsure`, `Guess`, optional `Skip`) to `apps/session-runner/`.
+- Added session completion summary and weak-response continuation CTA to `apps/session-runner/`.
+- Upgraded `apps/comparison-trainer/` with:
+  - a visible session header/progress indicator,
+  - lightweight feedback states,
+  - confidence capture controls,
+  - completion summary with weak-item practice restart.
+- Verified repository integrity with validation + derive regeneration.
+
+## Suggested next session priorities
+
+1. Wire confidence captures into shared persistence (`mastery-store`) rather than in-memory session arrays.
+2. Add equivalent session header/summary treatment to `apps/timeline-trainer/` to complete parity.
+3. Replace session-runner manual "Complete Question" gating with embedded app event-based completion signals.

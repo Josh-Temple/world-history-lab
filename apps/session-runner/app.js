@@ -31,6 +31,13 @@ const progressFillEl = document.getElementById("progress-fill");
 const nextStepButton = document.getElementById("next-step");
 const restartButton = document.getElementById("restart");
 
+const feedbackEl = document.getElementById("feedback");
+const summaryEl = document.getElementById("session-summary");
+const summaryScoreEl = document.getElementById("summary-score");
+const retryWeakItemsBtn = document.getElementById("retry-weak-items");
+const confidenceButtons = Array.from(document.querySelectorAll("[data-confidence]"));
+const confidenceResults = [];
+
 let modeIndex = 0;
 let sessionModes = DEFAULT_MODE_KEYS.map((key) => MODE_BY_KEY.get(key)).filter(Boolean);
 const modeProgress = new Map();
@@ -338,6 +345,11 @@ function renderMode() {
 }
 
 function showCompletion() {
+  const weakItems = confidenceResults.filter((item) => item.confidence === "guess" || item.confidence === "unsure");
+  if (summaryEl && summaryScoreEl) {
+    summaryEl.hidden = false;
+    summaryScoreEl.textContent = `${confidenceResults.length - weakItems.length} strong / ${confidenceResults.length} responses · ${weakItems.length} weak`;
+  }
   completeCurrentUnit();
   const nextUnitId = getNextRecommendedUnitId();
   const nextUnit = units.find((unit) => unit.id === nextUnitId) || null;
@@ -499,3 +511,28 @@ nextStepButton.addEventListener("click", next);
 restartButton.addEventListener("click", restart);
 
 init();
+
+
+confidenceButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const mode = getCurrentMode();
+    if (!mode || modeIndex >= sessionModes.length) return;
+    const confidence = btn.dataset.confidence || "skip";
+    const correct = confidence === "easy" || confidence === "unsure";
+    confidenceResults.push({ mode: mode.key, correct, confidence });
+    if (feedbackEl) {
+      feedbackEl.textContent = correct ? "Saved confidence: keep the momentum." : "Saved as weak response for review.";
+      feedbackEl.style.color = correct ? "#166534" : "#b00020";
+    }
+  });
+});
+
+if (retryWeakItemsBtn) {
+  retryWeakItemsBtn.addEventListener("click", () => {
+    modeIndex = 0;
+    for (const [idx,item] of confidenceResults.entries()) { if (item.confidence === "easy") confidenceResults.splice(idx,1); }
+    resetModeProgress();
+    if (summaryEl) summaryEl.hidden = true;
+    renderMode();
+  });
+}

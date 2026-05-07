@@ -57,12 +57,27 @@
 
       <section id="app" class="panel" aria-live="polite"></section>
 
-      <section class="panel row">
+      <section class="panel">
         <p>Complete each mode block, then continue.</p>
-        <div>
-          <button id="restart" type="button">Restart Session</button>
-          <button id="next-step" type="button">Complete Question</button>
+        <p id="feedback" aria-live="polite" style="margin:0.4rem 0;color:#334155;">Mark response quality, then continue.</p>
+        <div id="confidence-controls" style="display:flex;gap:0.45rem;flex-wrap:wrap;margin-bottom:0.65rem;">
+          <button type="button" data-confidence="easy">Easy</button>
+          <button type="button" data-confidence="unsure">Unsure</button>
+          <button type="button" data-confidence="guess">Guess</button>
+          <button type="button" data-confidence="skip">Skip</button>
         </div>
+        <div class="row">
+          <div>
+            <button id="restart" type="button">Restart Session</button>
+            <button id="next-step" type="button">Complete Question</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="session-summary" class="panel" hidden>
+        <h2>Session Complete</h2>
+        <p id="summary-score"></p>
+        <button id="retry-weak-items" type="button">Continue Practicing Weak Items</button>
       </section>
     </main>
 
