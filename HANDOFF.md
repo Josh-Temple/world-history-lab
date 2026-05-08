@@ -79,3 +79,18 @@
 1. Wire confidence captures into shared persistence (`mastery-store`) rather than in-memory session arrays.
 2. Add equivalent session header/summary treatment to `apps/timeline-trainer/` to complete parity.
 3. Replace session-runner manual "Complete Question" gating with embedded app event-based completion signals.
+
+## Additional progress in this session (2026-05-08)
+
+- Upgraded `apps/timeline-trainer/` with session-level UX parity:
+  - added visible session header progress (`x / 10`),
+  - added post-answer confidence capture controls (`Easy`, `Unsure`, `Guess`, `Skip`),
+  - added end-of-session summary with weak-item continuation CTA.
+- Updated timeline trainer behavior so confidence capture is part of the feedback loop before moving on.
+- Kept existing data pipeline healthy by re-running validation and derive.
+
+## Suggested next session priorities
+
+1. Persist timeline-trainer confidence signals to shared mastery persistence for cross-app adaptation.
+2. Align wording/semantics of "weak" vs "incorrect" across timeline/comparison/session-runner summaries.
+3. Replace any remaining manual completion gating in session-runner with child-app completion events for tighter UX continuity.

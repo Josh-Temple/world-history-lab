@@ -89,6 +89,8 @@ const state = {
   recentTripletKeys: [],
   wrongQueue: new Map(),
   questionIndex: 0,
+  confidenceResults: [],
+  pendingConfidence: false,
 };
 
 const ui = {
@@ -127,6 +129,11 @@ const ui = {
   errorPanel: document.getElementById("error-panel"),
   errorText: document.getElementById("error-text"),
   retryButton: document.getElementById("retry-button"),
+  sessionProgress: document.getElementById("session-progress"),
+  confidenceControls: document.getElementById("confidence-controls"),
+  summaryPanel: document.getElementById("session-summary"),
+  summaryScore: document.getElementById("summary-score"),
+  retryWeakItems: document.getElementById("retry-weak-items"),
 };
 
 const appHeader = mountHeader({
@@ -146,6 +153,7 @@ function refreshHeader() {
 }
 
 const PRACTICE_LOOP_THRESHOLD = 5;
+const SESSION_TARGET = 10;
 const SELECTED_UNIT_KEY = "selected_unit";
 
 function isValidEvent(event) {
@@ -765,8 +773,14 @@ function generateFreshQuestion(enabledTypes) {
 }
 
 function generateAndRenderNextQuestion() {
+  if (state.totalAnswered >= SESSION_TARGET) {
+    showSessionSummary();
+    ui.nextButton.disabled = true;
+    return;
+  }
   clearError();
   state.questionIndex += 1;
+  updateSessionProgress();
 
   try {
     const enabledTypes = getEnabledTypesForScope();
@@ -838,7 +852,9 @@ function handleAnswer(optionIndex) {
   updateStats();
   setAnswerButtonsEnabled(false);
   applyAnswerButtonStates();
-  ui.nextButton.disabled = false;
+  state.pendingConfidence = true;
+  showConfidenceControls(true);
+  ui.nextButton.disabled = true;
 
   const explanation = explainQuestionAnswer(state.currentQuestion);
   setResultMessage(`${isCorrect ? "Correct" : "Incorrect"}. ${explanation}`, isCorrect ? "correct" : "incorrect");
@@ -902,6 +918,11 @@ function resetSessionState() {
   state.recentTripletKeys = [];
   state.wrongQueue = new Map();
   state.questionIndex = 0;
+  state.confidenceResults = [];
+  state.pendingConfidence = false;
+  if (ui.summaryPanel) ui.summaryPanel.hidden = true;
+  showConfidenceControls(false);
+  updateSessionProgress();
   updateStats();
 }
 
@@ -932,6 +953,34 @@ function applyScope(nextScope) {
   generateAndRenderNextQuestion();
 }
 
+
+function updateSessionProgress() {
+  if (!ui.sessionProgress) return;
+  ui.sessionProgress.textContent = `${Math.min(state.totalAnswered + 1, SESSION_TARGET)} / ${SESSION_TARGET}`;
+}
+
+function showConfidenceControls(show) {
+  if (!ui.confidenceControls) return;
+  ui.confidenceControls.hidden = !show;
+}
+
+function showSessionSummary() {
+  const total = state.confidenceResults.length;
+  const weak = state.confidenceResults.filter((r) => !r.correct || r.confidence !== "easy");
+  if (ui.summaryPanel) ui.summaryPanel.hidden = false;
+  if (ui.summaryScore) ui.summaryScore.textContent = `${total - weak.length} strong / ${total} total · ${weak.length} weak items`;
+}
+
+function recordConfidence(confidence) {
+  if (!state.currentQuestion || !state.hasAnswered) return;
+  state.confidenceResults.push({
+    question_type: state.currentQuestion.type,
+    correct: state.selectedOptionIndex === state.correctOptionIndex,
+    confidence,
+    event_id: state.currentQuestion.options?.[state.correctOptionIndex]?.id || null,
+  });
+}
+
 function bindEvents() {
   ui.optionA.addEventListener("click", () => {
     handleAnswer(0);
@@ -946,6 +995,30 @@ function bindEvents() {
   });
 
   ui.nextButton.addEventListener("click", () => {
+    if (state.pendingConfidence) return;
+    generateAndRenderNextQuestion();
+  });
+
+  ui.confidenceControls?.querySelectorAll("[data-confidence]").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!state.pendingConfidence) return;
+      recordConfidence(button.dataset.confidence || "skip");
+      state.pendingConfidence = false;
+      showConfidenceControls(false);
+      if (state.totalAnswered >= SESSION_TARGET) {
+        showSessionSummary();
+        ui.nextButton.disabled = true;
+        return;
+      }
+      generateAndRenderNextQuestion();
+    });
+  });
+
+  ui.retryWeakItems?.addEventListener("click", () => {
+    state.pendingConfidence = false;
+    state.confidenceResults = [];
+    if (ui.summaryPanel) ui.summaryPanel.hidden = true;
+    resetSessionState();
     generateAndRenderNextQuestion();
   });
 
@@ -1036,6 +1109,8 @@ export async function startApp() {
     resetSessionState();
     generateAndRenderNextQuestion();
     refreshHeader();
+    updateSessionProgress();
+    showConfidenceControls(false);
   } catch (error) {
     ui.unitTitle.textContent = "Unit could not be loaded";
     ui.questionText.textContent = "Question data failed to load.";
