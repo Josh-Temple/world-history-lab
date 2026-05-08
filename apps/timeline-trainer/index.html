@@ -12,6 +12,11 @@
   </head>
   <body>
     <main class="container">
+      <section class="session-header" aria-live="polite">
+        <div id="session-progress">1 / 10</div>
+        <div id="session-mode">Timeline Trainer</div>
+      </section>
+
       <header class="page-header">
         <p class="eyebrow">engineered play &amp; logic</p>
         <h1>Timeline Trainer</h1>
@@ -81,6 +86,12 @@
       <section class="panel result-actions-panel" id="result-panel">
         <h2>Result</h2>
         <p id="result-text" class="muted">Answer a question to see the result.</p>
+        <div id="confidence-controls" class="confidence-controls" hidden>
+          <button type="button" data-confidence="easy">Easy</button>
+          <button type="button" data-confidence="unsure">Unsure</button>
+          <button type="button" data-confidence="guess">Guess</button>
+          <button type="button" data-confidence="skip">Skip</button>
+        </div>
         <div id="next-step" class="next-step" hidden>
           <h3>Next step</h3>
           <p id="next-step-text"></p>
@@ -89,6 +100,12 @@
         <div class="actions">
           <button id="next-button" type="button" disabled>Next question</button>
         </div>
+      </section>
+
+      <section class="panel" id="session-summary" hidden>
+        <h2>Session Complete</h2>
+        <p id="summary-score"></p>
+        <button id="retry-weak-items" type="button">Continue Practicing Weak Items</button>
       </section>
 
       <section class="panel" id="stats-panel">
