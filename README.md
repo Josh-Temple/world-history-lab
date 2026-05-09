@@ -931,3 +931,19 @@ TBD
 - Backfilled `themes` for 50 events in `data/events.json` as a first cross-unit comparative reasoning foundation.
 - Extended validation in `scripts/validate-data.mjs` to enforce `themes` array shape, string entries, duplicate prevention, and allowed-value checks.
 - Updated normalization in `scripts/derive.mjs` so `themes` are preserved in `derived/events.normalized.json`.
+
+## Recent updates (2026-05-09 · historical spread explorer + regional metadata layer)
+
+- Added new learner-facing app route at `apps/spread-explorer/`:
+  - timeline slider for year-based filtering,
+  - theme mode selector (`empire`, `trade`, `religion`, `migration`),
+  - lightweight region-marker map visualization,
+  - event side panel for filtered historical records,
+  - responsive mobile stacking layout.
+- Added root discoverability link in `index.html` for **Historical Spread Explorer**.
+- Added canonical region registry at `data/regions.json`.
+- Added `region_ids` metadata to geo-tagged events in `data/events.json` (multi-region compatible).
+- Extended `scripts/validate-data.mjs` to validate event `region_ids` values against `data/regions.json`.
+- Extended `scripts/derive.mjs` to preserve `region_ids` in normalized events and generate region index output:
+  - `derived/index.events_by_region.json`
+  - `data/derived/index.events_by_region.json`

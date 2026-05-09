@@ -94,3 +94,29 @@
 1. Persist timeline-trainer confidence signals to shared mastery persistence for cross-app adaptation.
 2. Align wording/semantics of "weak" vs "incorrect" across timeline/comparison/session-runner summaries.
 3. Replace any remaining manual completion gating in session-runner with child-app completion events for tighter UX continuity.
+
+## Additional progress in this session (2026-05-09)
+
+- Implemented `apps/spread-explorer/` (Historical Spread Explorer):
+  - year slider + theme selector,
+  - lightweight region-marker map (no heavy GIS dependency),
+  - filtered event side panel,
+  - mobile-responsive layout.
+- Added root navigation link to `/apps/spread-explorer/`.
+- Added canonical region metadata file `data/regions.json`.
+- Added `region_ids` to geo-tagged events in `data/events.json` (supports multi-region arrays).
+- Added validation for `region_ids` in `scripts/validate-data.mjs` using `data/regions.json` as source-of-truth.
+- Added derived region index output in `scripts/derive.mjs`:
+  - `derived/index.events_by_region.json`
+  - `data/derived/index.events_by_region.json`
+
+## Validation status (this session)
+
+- `node scripts/validate-data.mjs` ✅ pass.
+- `node scripts/derive.mjs` ✅ pass.
+
+## Suggested next session priorities
+
+1. Expand `region_ids` coverage from geo-tagged subset to all high-value global events.
+2. Add optional region-legend toggles and richer overlay semantics (density/paths) to spread explorer.
+3. Integrate spread-explorer with shared app shell caching if offline use is required.

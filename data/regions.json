@@ -1,0 +1,47 @@
+[
+  {
+    "id": "reg_africa",
+    "label": "Africa",
+    "continent": "Global"
+  },
+  {
+    "id": "reg_asia",
+    "label": "Asia",
+    "continent": "Global"
+  },
+  {
+    "id": "reg_britain",
+    "label": "Britain",
+    "continent": "Europe"
+  },
+  {
+    "id": "reg_east_asia",
+    "label": "East Asia",
+    "continent": "Asia"
+  },
+  {
+    "id": "reg_france",
+    "label": "France",
+    "continent": "Europe"
+  },
+  {
+    "id": "reg_global",
+    "label": "Global",
+    "continent": "Global"
+  },
+  {
+    "id": "reg_japan",
+    "label": "Japan",
+    "continent": "Asia"
+  },
+  {
+    "id": "reg_korea",
+    "label": "Korea",
+    "continent": "Global"
+  },
+  {
+    "id": "reg_western_europe",
+    "label": "Western Europe",
+    "continent": "Europe"
+  }
+]

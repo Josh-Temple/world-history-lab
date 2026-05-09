@@ -622,6 +622,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
         location: event.location && typeof event.location === "object" ? event.location : null,
         places: compactArrayStrings(event.places),
         regions: compactArrayStrings(event.regions),
+        region_ids: compactArrayStrings(event.region_ids),
         question_types: compactArrayStrings(event.question_types),
         themes: compactArrayStrings(event.themes),
         concept_tags: compactArrayStrings(event.concept_tags),
@@ -660,6 +661,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
     location: event.location && typeof event.location === "object" ? event.location : null,
     places: compactArrayStrings(event.places),
     regions: compactArrayStrings(event.regions),
+    region_ids: compactArrayStrings(event.region_ids),
     question_types: compactArrayStrings(event.question_types),
     themes: compactArrayStrings(event.themes),
     concept_tags: compactArrayStrings(event.concept_tags),
@@ -712,6 +714,23 @@ function buildEventsSorted(normalizedEvents) {
     .slice()
     .sort((a, b) => (a.derived.sort_start - b.derived.sort_start) || a.id.localeCompare(b.id))
     .map((event) => event.id);
+}
+
+function buildRegionIndex(normalizedEvents) {
+  const byRegion = {};
+  for (const event of normalizedEvents) {
+    const regionIds = Array.isArray(event.region_ids) ? event.region_ids : [];
+    for (const regionId of regionIds) {
+      if (!byRegion[regionId]) {
+        byRegion[regionId] = [];
+      }
+      byRegion[regionId].push(event.id);
+    }
+  }
+  for (const ids of Object.values(byRegion)) {
+    ids.sort();
+  }
+  return Object.fromEntries(Object.entries(byRegion).sort(([a], [b]) => a.localeCompare(b)));
 }
 
 function buildUnitEventPool(units, canonicalEventLookup, normalizedEventLookup, enabledQuestionTypeSet) {
@@ -1018,6 +1037,7 @@ async function main() {
 
   const eventsByYear = buildEventsByYear(normalizedEvents);
   const eventsSorted = buildEventsSorted(normalizedEvents);
+  const eventsByRegion = buildRegionIndex(normalizedEvents);
   const unitsIndex = units
     .map((unit) => ({ id: unit.id, title: unit.title, event_ids: unit.event_ids.slice() }))
     .sort((a, b) => a.id.localeCompare(b.id));
@@ -1032,12 +1052,14 @@ async function main() {
   await mkdir(DATA_DERIVED_DIR, { recursive: true });
   await writeFile(path.join(DERIVED_DIR, "events.normalized.json"), toJson(normalizedEvents), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.events_by_year.json"), toJson(eventsByYear), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.events_sorted.json"), toJson(eventsSorted), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.units.json"), toJson(unitsIndex), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.unit_event_pool.json"), toJson(unitEventPool), "utf8");
   await writeFile(path.join(DERIVED_DIR, "causality_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.causal_pairs.json"), toJson(causalPairs), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
+  await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "tag_clusters.json"), toJson(tagClusters), "utf8");
 
   console.log(

@@ -32,6 +32,9 @@
     "primary_skill": "geography",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -74,6 +77,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -109,6 +115,9 @@
     "primary_skill": "geography",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -144,6 +153,9 @@
     "primary_skill": "geography",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -179,6 +191,9 @@
     "primary_skill": "geography",
     "themes": [
       "industrialization"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -209,6 +224,9 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -256,6 +274,9 @@
     },
     "themes": [
       "industrialization"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -291,6 +312,9 @@
     "primary_skill": "geography",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -326,6 +350,9 @@
     "primary_skill": "geography",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -416,6 +443,9 @@
     },
     "themes": [
       "revolution"
+    ],
+    "region_ids": [
+      "reg_france"
     ]
   },
   {
@@ -520,6 +550,9 @@
     "themes": [
       "revolution",
       "state_power"
+    ],
+    "region_ids": [
+      "reg_france"
     ]
   },
   {
@@ -608,6 +641,9 @@
     },
     "themes": [
       "revolution"
+    ],
+    "region_ids": [
+      "reg_france"
     ]
   },
   {
@@ -697,6 +733,9 @@
     "themes": [
       "revolution",
       "state_power"
+    ],
+    "region_ids": [
+      "reg_france"
     ]
   },
   {
@@ -824,6 +863,9 @@
     "themes": [
       "revolution",
       "state_power"
+    ],
+    "region_ids": [
+      "reg_france"
     ]
   },
   {
@@ -920,6 +962,9 @@
     },
     "themes": [
       "revolution"
+    ],
+    "region_ids": [
+      "reg_france"
     ]
   },
   {
@@ -1009,6 +1054,9 @@
     },
     "themes": [
       "revolution"
+    ],
+    "region_ids": [
+      "reg_france"
     ]
   },
   {
@@ -1105,6 +1153,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_france"
     ]
   },
   {
@@ -1198,6 +1249,10 @@
     },
     "themes": [
       "imperialism"
+    ],
+    "region_ids": [
+      "reg_france",
+      "reg_western_europe"
     ]
   },
   {
@@ -1245,6 +1300,9 @@
     },
     "themes": [
       "industrialization"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -1338,6 +1396,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_western_europe"
     ]
   },
   {
@@ -1385,6 +1446,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -1444,6 +1508,9 @@
     "themes": [
       "migration",
       "industrialization"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -1493,6 +1560,9 @@
     },
     "themes": [
       "economic_change"
+    ],
+    "region_ids": [
+      "reg_britain"
     ]
   },
   {
@@ -1568,6 +1638,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan"
     ]
   },
   {
@@ -1647,6 +1720,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan"
     ]
   },
   {
@@ -1757,6 +1833,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan"
     ]
   },
   {
@@ -1830,6 +1909,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan"
     ]
   },
   {
@@ -1903,6 +1985,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan"
     ]
   },
   {
@@ -1965,6 +2050,9 @@
     "primary_skill": "causality",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan"
     ]
   },
   {
@@ -2038,6 +2126,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan"
     ]
   },
   {
@@ -2111,6 +2202,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan"
     ]
   },
   {
@@ -2176,6 +2270,10 @@
     "primary_skill": "causality",
     "themes": [
       "war"
+    ],
+    "region_ids": [
+      "reg_japan",
+      "reg_east_asia"
     ]
   },
   {
@@ -2241,6 +2339,10 @@
     "primary_skill": "causality",
     "themes": [
       "war"
+    ],
+    "region_ids": [
+      "reg_japan",
+      "reg_east_asia"
     ]
   },
   {
@@ -2305,6 +2407,10 @@
     "primary_skill": "causality",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan",
+      "reg_korea"
     ]
   },
   {
@@ -2374,6 +2480,9 @@
     },
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_japan"
     ]
   },
   {
@@ -2405,6 +2514,10 @@
     "summary_short": "Leopold II launched a private colonial project that became the Congo Free State, exemplifying exploitative imperial rule in Central Africa.",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
     ]
   },
   {
@@ -2434,6 +2547,10 @@
     "summary_short": "Britain occupied Egypt to secure financial interests and the Suez route, tightening European control over a strategic imperial corridor.",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
     ]
   },
   {
@@ -2463,6 +2580,10 @@
     "summary_short": "European powers convened in Berlin to set rules for territorial claims in Africa, accelerating formal partition.",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
     ]
   },
   {
@@ -2489,6 +2610,10 @@
     "summary_short": "The Berlin Conference concluded by codifying principles that legitimized the Scramble for Africa without African representation.",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
     ]
   },
   {
@@ -2516,6 +2641,10 @@
     "summary_short": "War between Qing China and Meiji Japan began over influence in Korea, exposing shifts in East Asian power.",
     "themes": [
       "war"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
     ]
   },
   {
@@ -2543,6 +2672,10 @@
     "summary_short": "The Treaty of Shimonoseki ended the war with major Chinese concessions, marking Japan’s rise as an imperial power.",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
     ]
   },
   {
@@ -2569,6 +2702,9 @@
     "summary_short": "The United States defeated Spain and gained overseas territories, signaling a new phase of American imperial expansion.",
     "themes": [
       "war"
+    ],
+    "region_ids": [
+      "reg_global"
     ]
   },
   {
@@ -2596,6 +2732,10 @@
     "summary_short": "Britain and Boer republics entered a major war in southern Africa over sovereignty and resource-rich territory.",
     "themes": [
       "war"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
     ]
   },
   {
@@ -2622,6 +2762,10 @@
     "summary_short": "An anti-foreign uprising in Qing China drew multinational military intervention and harsher external control.",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
     ]
   },
   {
@@ -2648,6 +2792,10 @@
     "summary_short": "The Boer War ended with British victory, paving the way for a new political order in South Africa under imperial influence.",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
     ]
   },
   {
@@ -2678,6 +2826,10 @@
     "summary_short": "Russia and Japan went to war over Manchuria and Korea, showing imperial rivalry in Northeast Asia.",
     "themes": [
       "war"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
     ]
   },
   {
@@ -2705,6 +2857,10 @@
     "summary_short": "The Treaty of Portsmouth ended the Russo-Japanese War and confirmed expanded Japanese influence in the region.",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
     ]
   },
   {
@@ -2734,6 +2890,10 @@
     "summary_short": "Germany challenged French influence in Morocco, escalating prewar great-power tensions through colonial rivalry.",
     "themes": [
       "state_power"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
     ]
   },
   {
@@ -2757,7 +2917,11 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "The Agadir Crisis intensified competition between Germany and France and deepened alliance polarization before World War I."
+    "summary_short": "The Agadir Crisis intensified competition between Germany and France and deepened alliance polarization before World War I.",
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_first_balkan_war_1912",
@@ -2782,7 +2946,10 @@
     "effects": [
       "ev_wwi_balkan_wars_destabilize_1912_1913"
     ],
-    "summary_short": "Balkan states attacked Ottoman territories, reshaping regional borders and increasing instability in southeastern Europe."
+    "summary_short": "Balkan states attacked Ottoman territories, reshaping regional borders and increasing instability in southeastern Europe.",
+    "region_ids": [
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_suez_canal_opens_1869",
@@ -2817,7 +2984,11 @@
       "pe_queen_victoria"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_congo_free_state_established_1885",
@@ -2853,7 +3024,11 @@
       "pe_henry_morton_stanley"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_british_south_africa_company_charter_1889",
@@ -2888,7 +3063,11 @@
       "pe_cecil_rhodes"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_triple_intervention_1895",
@@ -2917,7 +3096,11 @@
       "ev_imperialism_russojapanese_war_begins_1904"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_battle_of_adwa_1896",
@@ -2955,7 +3138,11 @@
       "pe_menelik_ii"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_fashoda_incident_1898",
@@ -2994,7 +3181,11 @@
       "pe_queen_victoria"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_us_annexes_hawaii_1898",
@@ -3025,7 +3216,10 @@
       "ev_imperialism_philippine_american_war_begins_1899"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_open_door_notes_1899",
@@ -3057,7 +3251,11 @@
       "ev_imperialism_boxer_rebellion_1900"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_philippine_american_war_begins_1899",
@@ -3090,7 +3288,11 @@
       }
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_anglo_japanese_alliance_1902",
@@ -3123,7 +3325,11 @@
       "ev_imperialism_russojapanese_war_begins_1904"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_algeciras_conference_1906",
@@ -3152,7 +3358,11 @@
       "ev_imperialism_agadir_crisis_1911"
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_africa",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_imperialism_japan_annexes_korea_1910",
@@ -3185,7 +3395,11 @@
       }
     ],
     "status": "approved",
-    "content_origin": "structured_external"
+    "content_origin": "structured_external",
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
+    ]
   },
   {
     "id": "ev_cyrus_founds_achaemenid_550bce",
@@ -3775,7 +3989,10 @@
     "geo": {
       "lat": 48.8566,
       "lon": 2.3522
-    }
+    },
+    "region_ids": [
+      "reg_france"
+    ]
   },
   {
     "id": "ev_mali_mansa_musa_hajj_1324",
