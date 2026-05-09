@@ -109,9 +109,12 @@ export async function validateData({ log = false } = {}) {
     readJson("data/units/index.json"),
     readJson("data/metadata.json"),
   ]);
+  const regions = await readJson("data/regions.json");
 
   const eventList = asArray(events);
   const peopleList = asArray(people);
+  const regionList = asArray(regions);
+  const regionIdSet = new Set((regionList || []).map((region) => (isObject(region) ? region.id : null)).filter((id) => typeof id === "string"));
 
   if (!isObject(metadata)) {
     errors.push("data/metadata.json must be an object.");
@@ -121,6 +124,9 @@ export async function validateData({ log = false } = {}) {
   }
   if (!peopleList) {
     errors.push("data/people.json must be an array.");
+  }
+  if (!regionList) {
+    errors.push("data/regions.json must be an array.");
   }
   if (!isObject(unitRegistry) || !Array.isArray(unitRegistry.units)) {
     errors.push("data/units/index.json must be an object with a units array.");
@@ -247,6 +253,26 @@ export async function validateData({ log = false } = {}) {
             themesSeen.add(theme);
             if (!ALLOWED_THEMES.has(theme)) {
               errors.push(`Event ${eventLabel} has invalid theme: ${theme}`);
+            }
+          }
+        }
+      }
+      if (event.region_ids !== undefined) {
+        if (!Array.isArray(event.region_ids)) {
+          errors.push(`Event ${eventLabel} has invalid region_ids; expected an array.`);
+        } else {
+          const seenRegionIds = new Set();
+          for (const regionId of event.region_ids) {
+            if (typeof regionId !== "string") {
+              errors.push(`Event ${eventLabel} has non-string region_ids entry.`);
+              continue;
+            }
+            if (seenRegionIds.has(regionId)) {
+              errors.push(`Event ${eventLabel} has duplicate region_ids entry: ${regionId}`);
+            }
+            seenRegionIds.add(regionId);
+            if (!regionIdSet.has(regionId)) {
+              errors.push(`Event ${eventLabel} references unknown region id in region_ids: ${regionId}`);
             }
           }
         }

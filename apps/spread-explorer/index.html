@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Historical Spread Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Historical Spread Explorer</h1>
+    <div class="controls">
+      <select id="theme-select" aria-label="Spread theme">
+        <option value="empire">Empires</option>
+        <option value="trade">Trade</option>
+        <option value="religion">Religion</option>
+        <option value="migration">Migration</option>
+      </select>
+      <input type="range" id="year-slider" min="-3000" max="2025" value="1500" />
+      <div id="year-display"></div>
+    </div>
+  </header>
+  <main>
+    <div id="map-container" aria-label="Historical spread map"></div>
+    <aside id="event-panel" aria-live="polite"></aside>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
