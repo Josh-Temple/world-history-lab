@@ -947,3 +947,28 @@ TBD
 - Extended `scripts/derive.mjs` to preserve `region_ids` in normalized events and generate region index output:
   - `derived/index.events_by_region.json`
   - `data/derived/index.events_by_region.json`
+
+## Recent updates (2026-05-10 · persistent review store + learner dashboard)
+
+- Added `apps/shared/review-store.js` for lightweight spaced-review persistence:
+  - localStorage-backed review records,
+  - mastery updates from correctness/confidence,
+  - due-item selection and weak-item ranking helpers.
+- Integrated review tracking into `apps/session-runner/app.js`:
+  - confidence buttons now write persistent review updates,
+  - `?mode=review` now surfaces due-review context at session start,
+  - recent practiced units are persisted for cross-session continuity.
+- Added new `apps/dashboard/` learner screen:
+  - due review summary,
+  - weakest tracked items,
+  - recent unit history,
+  - quick launch actions for review and guided practice.
+- Updated root navigation in `index.html` with links to **Review Due Items** and **Learning Dashboard**.
+
+### Follow-up refinement (2026-05-10 · review identity consistency)
+
+- Refined Session Runner review tracking to prefer **canonical event IDs** in `?mode=review` runs by deriving review candidates from:
+  1) due review-store IDs that match the active unit,
+  2) persisted mastery review queue IDs,
+  3) unit event fallback pool.
+- Updated dashboard weak-item rendering to resolve event labels via normalized events and hide synthetic legacy keys when labels are unavailable.

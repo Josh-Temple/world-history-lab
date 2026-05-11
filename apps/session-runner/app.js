@@ -1,6 +1,7 @@
 import { getEventsForUnit, getUnits, setStoredUnitId } from "../shared/data-store.js";
 import { getAllStats, getReviewQueueEventIds } from "../shared/mastery-store.js";
 import { getModeMeta, recommendNextStep } from "../shared/next-step-engine.js";
+import { loadReviewStore, saveReviewStore, updateReviewItem, getDueItems } from "../shared/review-store.js";
 
 const MODE_LIBRARY = Object.freeze([
   { key: "timeline", name: "Timeline", app: "/apps/timeline-trainer/index.html", skill: "timeline" },
@@ -45,7 +46,37 @@ let iframe = null;
 let selectedUnitId = "";
 let units = [];
 let completedUnits = readCompletedUnits();
+let reviewStore = loadReviewStore();
+const isReviewMode = new URLSearchParams(window.location.search).get("mode") === "review";
+let reviewCandidates = [];
+let reviewCursor = 0;
 
+function markRecentUnit(unitId) {
+  if (!unitId) return;
+  try {
+    const raw = JSON.parse(localStorage.getItem("whl_recent_units_v1") || "[]");
+    const arr = Array.isArray(raw) ? raw.filter((id) => id !== unitId) : [];
+    arr.push(unitId);
+    localStorage.setItem("whl_recent_units_v1", JSON.stringify(arr.slice(-20)));
+  } catch {}
+}
+
+
+function buildReviewCandidates(unitEvents = []) {
+  const unitEventIds = new Set((Array.isArray(unitEvents) ? unitEvents : []).map((event) => event?.id).filter(Boolean));
+  const due = getDueItems(reviewStore).filter((id) => unitEventIds.has(id));
+  if (due.length > 0) return due;
+
+  const queued = getReviewQueueEventIds(100).filter((id) => unitEventIds.has(id));
+  if (queued.length > 0) return queued;
+
+  return Array.from(unitEventIds).slice(0, 30);
+}
+
+function getCurrentReviewItemId() {
+  if (!reviewCandidates.length) return "";
+  return reviewCandidates[reviewCursor % reviewCandidates.length] || "";
+}
 function resetModeProgress() {
   modeProgress.clear();
   for (const mode of sessionModes) {
@@ -339,7 +370,8 @@ function renderMode() {
   appContainer.appendChild(iframe);
 
   const canonical = getModeMeta(mode.key);
-  modeHelpEl.textContent = `Mode: ${mode.name}. Complete ${QUESTIONS_PER_MODE} questions, then continue.` + (canonical ? ` (${canonical.label})` : "");
+  const reviewHint = isReviewMode ? ` Review mode prioritizes due and weak items (${reviewCandidates.length} candidates).` : "";
+  modeHelpEl.textContent = `Mode: ${mode.name}. Complete ${QUESTIONS_PER_MODE} questions, then continue.` + (canonical ? ` (${canonical.label})` : "") + reviewHint;
   nextStepButton.disabled = modeProgress.get(mode.key) >= QUESTIONS_PER_MODE;
   updateProgress();
 }
@@ -497,6 +529,9 @@ async function init() {
   }
 
   const unitEvents = await getEventsForUnit(selectedUnitId).catch(() => []);
+  markRecentUnit(selectedUnitId);
+  reviewCandidates = isReviewMode ? buildReviewCandidates(unitEvents) : [];
+  reviewCursor = 0;
   const progressByEvent = getAllStats();
   sessionModes = composeBalancedSessionModes(unitEvents, progressByEvent);
   resetModeProgress();
@@ -510,6 +545,11 @@ async function init() {
 nextStepButton.addEventListener("click", next);
 restartButton.addEventListener("click", restart);
 
+if (isReviewMode && modeHelpEl) {
+  const dueCount = getDueItems(reviewStore).length;
+  modeHelpEl.textContent = `Review mode active: ${dueCount} due items ready.`;
+}
+
 init();
 
 
@@ -520,6 +560,12 @@ confidenceButtons.forEach((btn) => {
     const confidence = btn.dataset.confidence || "skip";
     const correct = confidence === "easy" || confidence === "unsure";
     confidenceResults.push({ mode: mode.key, correct, confidence });
+    const fallbackId = `${selectedUnitId || "global"}::${mode.key}::q${getCurrentQuestionCount() + 1}`;
+    const itemId = getCurrentReviewItemId() || fallbackId;
+    const prev = reviewStore[itemId] || {};
+    reviewStore[itemId] = updateReviewItem(prev, { correct, confidence });
+    if (isReviewMode && reviewCandidates.length > 0) reviewCursor += 1;
+    saveReviewStore(reviewStore);
     if (feedbackEl) {
       feedbackEl.textContent = correct ? "Saved confidence: keep the momentum." : "Saved as weak response for review.";
       feedbackEl.style.color = correct ? "#166534" : "#b00020";

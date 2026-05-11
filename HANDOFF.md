@@ -120,3 +120,46 @@
 1. Expand `region_ids` coverage from geo-tagged subset to all high-value global events.
 2. Add optional region-legend toggles and richer overlay semantics (density/paths) to spread explorer.
 3. Integrate spread-explorer with shared app shell caching if offline use is required.
+
+## Additional progress in this session (2026-05-10)
+
+- Added shared persistent adaptive review infrastructure in `apps/shared/review-store.js`:
+  - localStorage-backed review store (`whl_review_store_v1`),
+  - mastery update logic,
+  - due-item selector,
+  - weak-item sorting helper.
+- Integrated review persistence into `apps/session-runner/app.js`:
+  - confidence captures now update persistent review records,
+  - added lightweight `mode=review` handling with due-item status messaging,
+  - started storing recent unit history (`whl_recent_units_v1`) for dashboard continuity.
+- Added new learner dashboard at `apps/dashboard/`:
+  - due review count,
+  - weak-item list,
+  - recent units,
+  - quick review/guided actions.
+- Updated root `index.html` links:
+  - added **Review Due Items** entry point,
+  - added **Learning Dashboard** entry point.
+
+## Validation status (this session)
+
+- `node scripts/validate-data.mjs` ✅ pass.
+- `node scripts/derive.mjs` ✅ pass.
+
+## Suggested next session priorities
+
+1. Replace synthetic review item keys with canonical event IDs emitted from embedded mode iframes.
+2. Make session-runner review mode actively select and inject due IDs instead of only displaying due status.
+3. Add per-theme and per-region weak-area aggregation to dashboard for stronger planning.
+
+## Follow-up refinement in this session (2026-05-10)
+
+- Addressed review-store integration quality issues from prior patch:
+  - session-runner now builds unit-scoped review candidates and uses canonical event IDs in review mode when possible,
+  - dashboard now resolves weak-item IDs to event labels and suppresses synthetic legacy keys for cleaner learner-facing output.
+- Validation rerun completed after refinement.
+
+## Validation status (follow-up)
+
+- `node scripts/validate-data.mjs` ✅ pass.
+- `node scripts/derive.mjs` ✅ pass.
