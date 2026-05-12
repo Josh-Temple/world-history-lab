@@ -1,6 +1,29 @@
 {
+  "100": [
+    "ev_buddhism_spreads_to_china",
+    "ev_kushan_trade_mediation"
+  ],
+  "150": [
+    "ev_loulan_and_tarim_oasis_trade"
+  ],
+  "200": [
+    "ev_papermaking_central_asia_transfer"
+  ],
+  "300": [
+    "ev_sogdian_merchant_networks_expand"
+  ],
   "313": [
     "ev_constantine_edict_milan_313"
+  ],
+  "400": [
+    "ev_faxian_travels_india_china"
+  ],
+  "500": [
+    "ev_sassanian_indian_ocean_exchange",
+    "ev_silk_road_post_roman_shift"
+  ],
+  "560": [
+    "ev_turkic_khaganate_trade_security"
   ],
   "610": [
     "ev_first_revelation_610"
@@ -31,11 +54,21 @@
   "638": [
     "ev_conquest_jerusalem_638"
   ],
+  "640": [
+    "ev_songtsen_gampo_tibet_links"
+  ],
   "642": [
     "ev_conquest_egypt_642"
   ],
   "650": [
+    "ev_tang_cosmopolitan_changan",
     "ev_tang_peak_7c"
+  ],
+  "696": [
+    "ev_umayyad_coinage_standardization"
+  ],
+  "700": [
+    "ev_islamic_caliphate_trade_expansion"
   ],
   "732": [
     "ev_battle_tours_732"
@@ -43,32 +76,92 @@
   "750": [
     "ev_abbasid_revolution_750"
   ],
+  "751": [
+    "ev_talas_papermaking_transfer"
+  ],
   "800": [
+    "ev_baghdad_translation_movement",
     "ev_charlemagne_crowned_800"
+  ],
+  "900": [
+    "ev_swahili_coast_urban_growth"
+  ],
+  "1000": [
+    "ev_ghaznavid_trade_corridors"
   ],
   "1050": [
     "ev_song_commercial_revolution_11c"
   ],
+  "1100": [
+    "ev_crusader_contact_trade_flows",
+    "ev_song_maritime_commerce_expands"
+  ],
   "1206": [
     "ev_mongol_empire_formation_1206"
   ],
+  "1250": [
+    "ev_mongol_trade_integration"
+  ],
+  "1275": [
+    "ev_marco_polo_travels"
+  ],
+  "1300": [
+    "ev_ilkhanid_knowledge_exchange"
+  ],
   "1324": [
-    "ev_mali_mansa_musa_hajj_1324"
+    "ev_mali_mansa_musa_hajj_1324",
+    "ev_mansa_musa_hajj_gold_flows"
+  ],
+  "1325": [
+    "ev_ibn_battuta_travels"
+  ],
+  "1347": [
+    "ev_black_death_trade_route_transmission"
+  ],
+  "1370": [
+    "ev_ming_maritime_policy_reset"
+  ],
+  "1400": [
+    "ev_timurid_patronage_exchange"
+  ],
+  "1405": [
+    "ev_zheng_he_voyages_begin"
+  ],
+  "1450": [
+    "ev_mamluk_indian_ocean_intermediation"
   ],
   "1453": [
-    "ev_mehmed_constantinople_1453"
+    "ev_mehmed_constantinople_1453",
+    "ev_ottoman_control_eastern_mediterranean"
   ],
   "1492": [
     "ev_columbus_1492"
   ],
+  "1498": [
+    "ev_portuguese_arrive_indian_ocean"
+  ],
   "1517": [
     "ev_ottoman_conquest_egypt_1517"
+  ],
+  "1550": [
+    "ev_safavid_ottoman_mughal_exchange_competition"
   ],
   "1570": [
     "ev_mughal_empire_akbar_consolidation_1570s"
   ],
+  "1600": [
+    "ev_silver_flows_asia_via_oceans"
+  ],
   "1603": [
     "ev_tokugawa_shogunate_1603"
+  ],
+  "1650": [
+    "ev_coffee_trade_red_sea"
+  ],
+  "1700": [
+    "ev_chintz_and_textile_diffusion",
+    "ev_qing_frontier_trade_regulation",
+    "ev_russian_steppe_expansion_trade"
   ],
   "1733": [
     "ev_flying_shuttle_patent_1733"
@@ -196,6 +289,9 @@
   "1815": [
     "ev_congress_vienna_1815"
   ],
+  "1817": [
+    "ev_cholera_trade_routes_1817"
+  ],
   "1818": [
     "ev_concert_of_europe_1815_1848"
   ],
@@ -271,7 +367,8 @@
     "ev_imperialism_suez_canal_opens_1869"
   ],
   "1870": [
-    "ev_second_industrial_revolution_1870s"
+    "ev_second_industrial_revolution_1870s",
+    "ev_steamship_suez_accelerates_exchange"
   ],
   "1871": [
     "ev_meiji_abolish_han_1871"
@@ -493,7 +590,11 @@
     "ev_qin_unification_221bce"
   ],
   "-130": [
-    "ev_han_zhangqian_2c_bce"
+    "ev_han_zhangqian_2c_bce",
+    "ev_zhang_qian_missions_open_routes"
+  ],
+  "-60": [
+    "ev_han_protectorate_western_regions"
   ],
   "-27": [
     "ev_augustus_principate_27bce"

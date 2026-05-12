@@ -3073,5 +3073,137 @@
     "name": "Georges Jacques Danton",
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_zhang_qian",
+    "name": "Zhang Qian",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_kanishka_i",
+    "name": "Kanishka I",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_kumarajiva",
+    "name": "Kumarajiva",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_faxian",
+    "name": "Faxian",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_xuanzang",
+    "name": "Xuanzang",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_anz_lushan",
+    "name": "An Lushan",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_songtsen_gampo",
+    "name": "Songtsen Gampo",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_talas_general_gao_xianzhi",
+    "name": "Gao Xianzhi",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_al_khwarizmi",
+    "name": "Al-Khwarizmi",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_ibn_khordadbeh",
+    "name": "Ibn Khordadbeh",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_al_masudi",
+    "name": "Al-Masudi",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_ibn_battuta",
+    "name": "Ibn Battuta",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_mansa_musa",
+    "name": "Mansa Musa",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_marco_polo",
+    "name": "Marco Polo",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_kublai_khan",
+    "name": "Kublai Khan",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_rashid_al_din",
+    "name": "Rashid al-Din",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_timur",
+    "name": "Timur",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_zheng_he",
+    "name": "Zheng He",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_mehmed_ii",
+    "name": "Mehmed II",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_suleiman_magnificent",
+    "name": "Suleiman the Magnificent",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_akbar",
+    "name": "Akbar",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_ahmad_ibn_majid",
+    "name": "Ahmad ibn Majid",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
   }
 ]

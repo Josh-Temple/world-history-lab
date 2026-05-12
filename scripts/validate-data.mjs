@@ -277,6 +277,23 @@ export async function validateData({ log = false } = {}) {
           }
         }
       }
+      if (event.related_event_ids !== undefined) {
+        if (!Array.isArray(event.related_event_ids)) {
+          errors.push(`Event ${eventLabel} has invalid related_event_ids; expected an array.`);
+        } else {
+          const seenRelatedIds = new Set();
+          for (const relatedId of event.related_event_ids) {
+            if (typeof relatedId !== "string") {
+              errors.push(`Event ${eventLabel} has non-string related_event_ids entry.`);
+              continue;
+            }
+            if (seenRelatedIds.has(relatedId)) {
+              errors.push(`Event ${eventLabel} has duplicate related_event_ids entry: ${relatedId}`);
+            }
+            seenRelatedIds.add(relatedId);
+          }
+        }
+      }
 
 
       if (event.geo !== undefined) {
@@ -302,9 +319,23 @@ export async function validateData({ log = false } = {}) {
   }
 
   if (eventList) {
+    const eventById = new Map(eventList.filter((event) => isObject(event) && typeof event.id === "string").map((event) => [event.id, event]));
     for (const event of eventList) {
       if (!isObject(event) || typeof event.id !== "string" || event.id.trim() === "") {
         continue;
+      }
+      if (Array.isArray(event.related_event_ids)) {
+        for (const relatedId of event.related_event_ids) {
+          if (!eventIdSet.has(relatedId)) {
+            errors.push(`Event ${event.id} invalid related_event_id: ${relatedId}`);
+            continue;
+          }
+          const relatedEvent = eventById.get(relatedId);
+          const reverse = Array.isArray(relatedEvent?.related_event_ids) ? relatedEvent.related_event_ids : [];
+          if (!reverse.includes(event.id)) {
+            warnings.push(`Event ${event.id} links related_event_id ${relatedId} but link is not reciprocal.`);
+          }
+        }
       }
       validateCausalLinks(event, "effects", eventIdSet, errors, warnings);
       validateCausalLinks(event, "causes", eventIdSet, errors, warnings);

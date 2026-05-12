@@ -18,6 +18,7 @@
       "pe_napoleon_bonaparte",
       "pe_paul_barras"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -67,6 +68,7 @@
     "people_ids": [
       "pe_abu_al_abbas_al_saffah"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -115,6 +117,7 @@
       "trade_networks_economic_exchange"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -162,6 +165,7 @@
       "empire_imperialism"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -201,6 +205,7 @@
       "pe_winston_churchill",
       "pe_franklin_d_roosevelt"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -250,6 +255,7 @@
       "belief_systems_cultural_exchange"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -286,6 +292,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -330,6 +337,7 @@
       "pe_harry_s_truman",
       "pe_emperor_hirohito"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -375,6 +383,7 @@
       "pe_harry_s_truman",
       "pe_emperor_hirohito"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -415,6 +424,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -458,6 +468,7 @@
       "empire_imperialism"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -498,6 +509,7 @@
       "pe_heinrich_himmler",
       "pe_ernst_kaltenbrunner"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -520,6 +532,53 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1942
+    }
+  },
+  {
+    "id": "ev_baghdad_translation_movement",
+    "label": "Baghdad translation movement grows",
+    "summary_short": "Baghdad translation movement grows strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "technology",
+      "religion",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_al_khwarizmi"
+    ],
+    "related_event_ids": [
+      "ev_talas_papermaking_transfer"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "800",
+      "end": "800",
+      "year_start": 800,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 8000101,
+      "sort_end": 8001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 800
     }
   },
   {
@@ -548,6 +607,7 @@
       "war_diplomacy"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -601,6 +661,7 @@
       "pe_muhammad",
       "pe_ali_ibn_abi_talib"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -646,6 +707,7 @@
       "pe_george_patton",
       "pe_bernard_montgomery"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -698,6 +760,7 @@
       "pe_bernard_montgomery",
       "pe_erwin_rommel"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -748,6 +811,7 @@
       "pe_chester_nimitz",
       "pe_isoroku_yamamoto"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -793,6 +857,7 @@
       "pe_winston_churchill",
       "pe_adolf_hitler"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -838,6 +903,7 @@
     "people_ids": [
       "pe_napoleon_bonaparte"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -885,6 +951,7 @@
       "pe_georgy_zhukov",
       "pe_adolf_hitler"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -939,6 +1006,7 @@
     "people_ids": [
       "pe_muawiya_i"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -993,6 +1061,7 @@
       "pe_umar_ibn_al_khattab",
       "pe_khalid_ibn_al_walid"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -1043,6 +1112,7 @@
       "war_diplomacy"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -1085,6 +1155,7 @@
     "people_ids": [
       "pe_henry_bessemer"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -1128,6 +1199,7 @@
       "pe_andrew_carnegie",
       "pe_jp_morgan"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -1146,6 +1218,54 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1856
+    }
+  },
+  {
+    "id": "ev_black_death_trade_route_transmission",
+    "label": "Black Death spreads along trade routes",
+    "summary_short": "Black Death spreads along trade routes strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa",
+      "reg_western_europe"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "migration",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_mongol_trade_integration",
+      "ev_ming_maritime_policy_reset",
+      "ev_ottoman_control_eastern_mediterranean"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1347",
+      "end": "1347",
+      "year_start": 1347,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 13470101,
+      "sort_end": 13471231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1347
     }
   },
   {
@@ -1175,6 +1295,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -1217,6 +1338,7 @@
       "belief_systems_cultural_exchange"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -1238,6 +1360,53 @@
     }
   },
   {
+    "id": "ev_buddhism_spreads_to_china",
+    "label": "Buddhism spreads into Han China",
+    "summary_short": "Buddhism spreads into Han China strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_east_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "religion",
+      "trade",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_kushan_trade_mediation",
+      "ev_faxian_travels_india_china"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "100",
+      "end": "100",
+      "year_start": 100,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 1000101,
+      "sort_end": 1001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 100
+    }
+  },
+  {
     "id": "ev_camp_formio_1797",
     "label": "Treaty of Campo Formio expands French influence in Italy",
     "summary_short": "Treaty of Campo Formio expands French influence in Italy became a significant turning point in the French Revolution's political trajectory.",
@@ -1255,6 +1424,7 @@
     "people_ids": [
       "pe_napoleon_bonaparte"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1291,6 +1461,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1334,6 +1505,7 @@
       "belief_systems_cultural_exchange"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -1355,6 +1527,94 @@
     }
   },
   {
+    "id": "ev_chintz_and_textile_diffusion",
+    "label": "Indian cotton textiles reshape Afro-Eurasian consumption",
+    "summary_short": "Indian cotton textiles reshape Afro-Eurasian consumption strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa",
+      "reg_western_europe"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "technology",
+      "economic_change"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1700",
+      "end": "1700",
+      "year_start": 1700,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17000101,
+      "sort_end": 17001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1700
+    }
+  },
+  {
+    "id": "ev_cholera_trade_routes_1817",
+    "label": "First cholera pandemic spreads via trade routes",
+    "summary_short": "First cholera pandemic spreads via trade routes strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "migration",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1817",
+      "end": "1817",
+      "year_start": 1817,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18170101,
+      "sort_end": 18171231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1817
+    }
+  },
+  {
     "id": "ev_church_property_nationalized_1789",
     "label": "National Assembly nationalizes Church property",
     "summary_short": "National Assembly nationalizes Church property became a significant turning point in the French Revolution's political trajectory.",
@@ -1370,6 +1630,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1409,6 +1670,7 @@
     "people_ids": [
       "pe_louis_xvi"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1429,6 +1691,51 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1790
+    }
+  },
+  {
+    "id": "ev_coffee_trade_red_sea",
+    "label": "Coffee trade links Red Sea and Indian Ocean ports",
+    "summary_short": "Coffee trade links Red Sea and Indian Ocean ports strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_zheng_he_voyages_begin"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1650",
+      "end": "1650",
+      "year_start": 1650,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16500101,
+      "sort_end": 16501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1650
     }
   },
   {
@@ -1454,6 +1761,7 @@
       "empire_imperialism"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -1494,6 +1802,7 @@
       "pe_lazare_carnot",
       "pe_louis_antoine_saint_just"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1533,6 +1842,7 @@
       "pe_karl_marx",
       "pe_friedrich_engels"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -1571,6 +1881,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -1628,6 +1939,7 @@
     "people_ids": [
       "pe_napoleon_bonaparte"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution_napoleon"
     ],
@@ -1682,6 +1994,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history",
       "unit_french_revolution_napoleon",
@@ -1739,6 +2052,7 @@
     "people_ids": [
       "pe_umar_ibn_al_khattab"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -1791,6 +2105,7 @@
       "pe_amr_ibn_al_as",
       "pe_umar_ibn_al_khattab"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -1845,6 +2160,7 @@
     "people_ids": [
       "pe_umar_ibn_al_khattab"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -1898,6 +2214,7 @@
     "people_ids": [
       "pe_muhammad"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -1945,6 +2262,7 @@
       "state_formation_governance"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -1983,6 +2301,7 @@
     "people_ids": [
       "pe_louis_xvi"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2031,6 +2350,7 @@
     "people_ids": [
       "pe_muhammad"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -2073,6 +2393,7 @@
     "people_ids": [
       "pe_paul_barras"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2112,6 +2433,7 @@
       "pe_napoleon_bonaparte",
       "pe_emmanuel_joseph_sieyes"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2150,6 +2472,7 @@
     "people_ids": [
       "pe_eli_whitney"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2188,6 +2511,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2226,6 +2550,7 @@
     "people_ids": [
       "pe_paul_barras"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2264,6 +2589,7 @@
     "people_ids": [
       "pe_emmanuel_joseph_sieyes"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2311,6 +2637,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2329,6 +2656,50 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1771
+    }
+  },
+  {
+    "id": "ev_crusader_contact_trade_flows",
+    "label": "Crusader-era contact increases Mediterranean-Asian exchange",
+    "summary_short": "Crusader-era contact increases Mediterranean-Asian exchange strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_western_europe"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "religion",
+      "war"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1100",
+      "end": "1100",
+      "year_start": 1100,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 11000101,
+      "sort_end": 11001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1100
     }
   },
   {
@@ -2354,6 +2725,7 @@
       "empire_imperialism"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -2393,6 +2765,7 @@
       "pe_georges_danton",
       "pe_camille_desmoulins"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2429,6 +2802,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2479,6 +2853,7 @@
       "pe_muhammad",
       "pe_abu_bakr"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -2536,6 +2911,7 @@
     "people_ids": [
       "pe_louis_xvi"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -2600,6 +2976,7 @@
     "people_ids": [
       "pe_napoleon_bonaparte"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2638,6 +3015,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2676,6 +3054,7 @@
     "people_ids": [
       "pe_napoleon_bonaparte"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2715,6 +3094,7 @@
       "pe_thomas_edison",
       "pe_nikola_tesla"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2756,6 +3136,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2811,6 +3192,7 @@
     "people_ids": [
       "pe_louis_xvi"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -2883,6 +3265,7 @@
     "people_ids": [
       "pe_louis_xvi"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -2939,6 +3322,7 @@
     "people_ids": [
       "pe_marie_antoinette"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2991,6 +3375,7 @@
       "pe_friedrich_engels",
       "pe_lord_shaftesbury"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -3031,6 +3416,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -3075,6 +3461,7 @@
     "people_ids": [
       "pe_richard_arkwright"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -3124,6 +3511,7 @@
       "pe_adolf_hitler",
       "pe_charles_de_gaulle"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -3150,6 +3538,53 @@
     }
   },
   {
+    "id": "ev_faxian_travels_india_china",
+    "label": "Faxian travels between India and China",
+    "summary_short": "Faxian travels between India and China strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_east_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "religion",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_faxian"
+    ],
+    "related_event_ids": [
+      "ev_buddhism_spreads_to_china"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "400",
+      "end": "400",
+      "year_start": 400,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 4000101,
+      "sort_end": 4001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 400
+    }
+  },
+  {
     "id": "ev_festival_supreme_being_1794",
     "label": "Festival of the Supreme Being held in Paris",
     "summary_short": "Festival of the Supreme Being held in Paris became a significant turning point in the French Revolution's political trajectory.",
@@ -3167,6 +3602,7 @@
     "people_ids": [
       "pe_maximilien_robespierre"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3205,6 +3641,7 @@
     "people_ids": [
       "pe_lafayette"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3244,6 +3681,7 @@
       "pe_karl_marx",
       "pe_friedrich_engels"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -3297,6 +3735,7 @@
     "people_ids": [
       "pe_muhammad"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -3339,6 +3778,7 @@
       "pe_louis_xvi",
       "pe_marie_antoinette"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3384,6 +3824,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -3422,6 +3863,7 @@
     "people_ids": [
       "pe_winston_churchill"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -3467,6 +3909,7 @@
       "pe_joseph_stalin",
       "pe_winston_churchill"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -3499,6 +3942,48 @@
     }
   },
   {
+    "id": "ev_ghaznavid_trade_corridors",
+    "label": "Ghaznavid corridors connect Iran and India",
+    "summary_short": "Ghaznavid corridors connect Iran and India strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1000",
+      "end": "1000",
+      "year_start": 1000,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 10000101,
+      "sort_end": 10001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1000
+    }
+  },
+  {
     "id": "ev_global_market_coordination_1860s",
     "label": "Global market coordination intensifies",
     "summary_short": "Industrial states increasingly coordinate finance, shipping, and information across long-distance trade networks.",
@@ -3514,6 +3999,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -3568,6 +4054,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -3605,6 +4092,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3646,6 +4134,7 @@
       "pe_chester_nimitz",
       "pe_douglas_macarthur"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -3697,6 +4186,7 @@
       "decolonization_nation_building"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -3722,6 +4212,50 @@
     }
   },
   {
+    "id": "ev_han_protectorate_western_regions",
+    "label": "Han protectorate in Western Regions",
+    "summary_short": "Han protectorate in Western Regions strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_zhang_qian_missions_open_routes"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "-60",
+      "end": "-60",
+      "year_start": -60,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": -599899,
+      "sort_end": -598769,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": -60
+    }
+  },
+  {
     "id": "ev_han_zhangqian_2c_bce",
     "label": "Han missions open early Silk Road links",
     "summary_short": "Long-distance Afro-Eurasian exchange intensified across overland routes.",
@@ -3744,6 +4278,7 @@
       "belief_systems_cultural_exchange"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -3782,6 +4317,7 @@
     "people_ids": [
       "pe_jacques_rene_hebert"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3831,6 +4367,7 @@
     "people_ids": [
       "pe_muhammad"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history",
       "unit_islamic_expansion"
@@ -3874,6 +4411,7 @@
     "people_ids": [
       "pe_adolf_hitler"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -3917,6 +4455,7 @@
       "pe_adolf_hitler",
       "pe_heinrich_himmler"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -3942,6 +4481,96 @@
     }
   },
   {
+    "id": "ev_ibn_battuta_travels",
+    "label": "Ibn Battuta documents Afro-Eurasian circuits",
+    "summary_short": "Ibn Battuta documents Afro-Eurasian circuits strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "migration",
+      "religion"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_ibn_battuta"
+    ],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1325",
+      "end": "1325",
+      "year_start": 1325,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 13250101,
+      "sort_end": 13251231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1325
+    }
+  },
+  {
+    "id": "ev_ilkhanid_knowledge_exchange",
+    "label": "Ilkhanid court promotes cross-cultural scholarship",
+    "summary_short": "Ilkhanid court promotes cross-cultural scholarship strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "technology",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_rashid_al_din"
+    ],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1300",
+      "end": "1300",
+      "year_start": 1300,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 13000101,
+      "sort_end": 13001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1300
+    }
+  },
+  {
     "id": "ev_imperialism_agadir_crisis_1911",
     "label": "Agadir Crisis",
     "summary_short": "The Agadir Crisis intensified competition between Germany and France and deepened alliance polarization before World War I.",
@@ -3962,6 +4591,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4005,6 +4635,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4050,6 +4681,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4100,6 +4732,7 @@
     "people_ids": [
       "pe_menelik_ii"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4155,6 +4788,7 @@
     "people_ids": [
       "pe_otto_von_bismarck"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4200,6 +4834,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4243,6 +4878,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4286,6 +4922,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4333,6 +4970,7 @@
     "people_ids": [
       "pe_queen_victoria"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4378,6 +5016,7 @@
     "people_ids": [
       "pe_cecil_rhodes"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4429,6 +5068,7 @@
       "pe_leopold_ii",
       "pe_henry_morton_stanley"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4479,6 +5119,7 @@
     "people_ids": [
       "pe_queen_victoria"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4528,6 +5169,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4573,6 +5215,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4618,6 +5261,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4659,6 +5303,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4713,6 +5358,7 @@
       "pe_henry_morton_stanley",
       "pe_david_livingstone"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4754,6 +5400,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4802,6 +5449,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4854,6 +5502,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4902,6 +5551,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4945,6 +5595,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4988,6 +5639,7 @@
     "people_ids": [
       "pe_queen_victoria"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5038,6 +5690,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5081,6 +5734,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5122,6 +5776,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5165,6 +5820,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5218,6 +5874,7 @@
       "state_formation_governance"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -5269,6 +5926,7 @@
       "empire_imperialism"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -5311,6 +5969,7 @@
     "people_ids": [
       "pe_karl_benz"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -5356,6 +6015,7 @@
     "people_ids": [
       "pe_adolf_hitler"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -5383,6 +6043,53 @@
     }
   },
   {
+    "id": "ev_islamic_caliphate_trade_expansion",
+    "label": "Caliphate expansion enlarges Afro-Eurasian trade",
+    "summary_short": "Caliphate expansion enlarges Afro-Eurasian trade strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "religion",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_swahili_coast_urban_growth",
+      "ev_mansa_musa_hajj_gold_flows"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "700",
+      "end": "700",
+      "year_start": 700,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 7000101,
+      "sort_end": 7001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 700
+    }
+  },
+  {
     "id": "ev_island_hopping_campaign_1943_1945",
     "label": "Island-Hopping Campaign Advances",
     "summary_short": "Allied forces capture key Pacific islands to approach Japan while bypassing some strongholds.",
@@ -5403,6 +6110,7 @@
       "pe_douglas_macarthur",
       "pe_chester_nimitz"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -5447,6 +6155,7 @@
     "people_ids": [
       "pe_benito_mussolini"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -5492,6 +6201,7 @@
       "pe_harry_s_truman",
       "pe_douglas_macarthur"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -5521,6 +6231,54 @@
     }
   },
   {
+    "id": "ev_kushan_trade_mediation",
+    "label": "Kushan Empire mediates Silk Road exchange",
+    "summary_short": "Kushan Empire mediates Silk Road exchange strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_kanishka_i"
+    ],
+    "related_event_ids": [
+      "ev_zhang_qian_missions_open_routes",
+      "ev_buddhism_spreads_to_china",
+      "ev_sogdian_merchant_networks_expand"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "100",
+      "end": "100",
+      "year_start": 100,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 1000101,
+      "sort_end": 1001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 100
+    }
+  },
+  {
     "id": "ev_labor_movements_1830s_1840s",
     "label": "Labor movements and Chartism grow",
     "summary_short": "Industrial-era labor unrest and reform campaigns push for representation, rights, and safer working conditions.",
@@ -5538,6 +6296,7 @@
     "people_ids": [
       "pe_robert_owen"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -5583,6 +6342,7 @@
     "people_ids": [
       "pe_louis_antoine_saint_just"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -5621,6 +6381,7 @@
     "people_ids": [
       "pe_maximilien_robespierre"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -5660,6 +6421,7 @@
       "pe_franklin_d_roosevelt",
       "pe_winston_churchill"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -5702,6 +6464,7 @@
     "people_ids": [
       "pe_lazare_carnot"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -5740,6 +6503,7 @@
     "people_ids": [
       "pe_charles_de_gaulle"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -5783,6 +6547,7 @@
       "pe_george_stephenson",
       "pe_isambard_kingdom_brunel"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -5811,6 +6576,47 @@
     }
   },
   {
+    "id": "ev_loulan_and_tarim_oasis_trade",
+    "label": "Tarim oasis states support caravan networks",
+    "summary_short": "Tarim oasis states support caravan networks strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "150",
+      "end": "150",
+      "year_start": 150,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 1500101,
+      "sort_end": 1501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 150
+    }
+  },
+  {
     "id": "ev_luddite_protests_1811",
     "label": "Luddite protests against mechanization",
     "summary_short": "Skilled workers attack machinery in protest against wage pressure and job insecurity from mechanized production.",
@@ -5826,6 +6632,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -5874,6 +6681,7 @@
       "belief_systems_cultural_exchange"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -5897,6 +6705,142 @@
     }
   },
   {
+    "id": "ev_mamluk_indian_ocean_intermediation",
+    "label": "Mamluks mediate Red Sea-Indian Ocean commerce",
+    "summary_short": "Mamluks mediate Red Sea-Indian Ocean commerce strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1450",
+      "end": "1450",
+      "year_start": 1450,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14500101,
+      "sort_end": 14501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1450
+    }
+  },
+  {
+    "id": "ev_mansa_musa_hajj_gold_flows",
+    "label": "Mansa Musa hajj publicizes trans-Saharan wealth",
+    "summary_short": "Mansa Musa hajj publicizes trans-Saharan wealth strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_africa"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "religion"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_mansa_musa"
+    ],
+    "related_event_ids": [
+      "ev_islamic_caliphate_trade_expansion"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1324",
+      "end": "1324",
+      "year_start": 1324,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 13240101,
+      "sort_end": 13241231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1324
+    }
+  },
+  {
+    "id": "ev_marco_polo_travels",
+    "label": "Marco Polo travels in Yuan domains",
+    "summary_short": "Marco Polo travels in Yuan domains strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_east_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_marco_polo"
+    ],
+    "related_event_ids": [
+      "ev_mongol_trade_integration"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1275",
+      "end": "1275",
+      "year_start": 1275,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 12750101,
+      "sort_end": 12751231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1275
+    }
+  },
+  {
     "id": "ev_mass_politics_worker_parties_1880s_1890s",
     "label": "Mass worker parties expand in industrial societies",
     "summary_short": "Industrial labor movements and socialist parties gain electoral and organizational weight in late nineteenth-century politics.",
@@ -5912,6 +6856,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -5955,6 +6900,7 @@
     "people_ids": [
       "pe_henry_ford"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -5996,6 +6942,7 @@
     "people_ids": [
       "pe_annie_besant"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -6043,6 +6990,7 @@
       "state_formation_governance"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -6092,6 +7040,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -6144,6 +7093,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -6201,6 +7151,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -6257,6 +7208,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -6309,6 +7261,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -6366,6 +7319,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -6422,6 +7376,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -6480,6 +7435,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -6536,6 +7492,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -6595,6 +7552,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -6647,6 +7605,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -6699,6 +7658,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -6728,6 +7688,51 @@
     }
   },
   {
+    "id": "ev_ming_maritime_policy_reset",
+    "label": "Early Ming resets maritime policy and tribute",
+    "summary_short": "Early Ming resets maritime policy and tribute strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_black_death_trade_route_transmission"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1370",
+      "end": "1370",
+      "year_start": 1370,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 13700101,
+      "sort_end": 13701231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1370
+    }
+  },
+  {
     "id": "ev_modern_urban_infrastructure_1850s_1870s",
     "label": "Modern urban infrastructure expands",
     "summary_short": "Cities invest in sewers, transit, and municipal planning as industrial urbanization deepens.",
@@ -6743,6 +7748,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -6787,6 +7793,7 @@
       "pe_joseph_stalin",
       "pe_vyacheslav_molotov"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -6834,6 +7841,7 @@
       "empire_imperialism"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -6852,6 +7860,57 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1206
+    }
+  },
+  {
+    "id": "ev_mongol_trade_integration",
+    "label": "Mongol conquests integrate Eurasian corridors",
+    "summary_short": "Mongol conquests integrate Eurasian corridors strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_east_asia",
+      "reg_western_europe"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "migration",
+      "war"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_kublai_khan"
+    ],
+    "related_event_ids": [
+      "ev_sogdian_merchant_networks_expand",
+      "ev_marco_polo_travels",
+      "ev_black_death_trade_route_transmission"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1250",
+      "end": "1250",
+      "year_start": 1250,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 12500101,
+      "sort_end": 12501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1250
     }
   },
   {
@@ -6880,6 +7939,7 @@
       "belief_systems_cultural_exchange"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -6923,6 +7983,7 @@
       "pe_neville_chamberlain",
       "pe_adolf_hitler"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -6979,6 +8040,7 @@
     "people_ids": [
       "pe_napoleon_bonaparte"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -7052,6 +8114,7 @@
     "people_ids": [
       "pe_napoleon_bonaparte"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution_napoleon"
     ],
@@ -7105,6 +8168,7 @@
     "people_ids": [
       "pe_napoleon_bonaparte"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history",
       "unit_french_revolution",
@@ -7151,6 +8215,7 @@
     "people_ids": [
       "pe_emmanuel_joseph_sieyes"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -7189,6 +8254,7 @@
     "people_ids": [
       "pe_georges_danton"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -7225,6 +8291,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -7270,6 +8337,7 @@
     "people_ids": [
       "pe_charles_alexandre_de_calonne"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -7309,6 +8377,7 @@
       "pe_harry_s_truman",
       "pe_ernst_kaltenbrunner"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -7352,6 +8421,7 @@
       "pe_georgy_zhukov",
       "pe_joseph_stalin"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -7397,6 +8467,7 @@
       "pe_adolf_hitler",
       "pe_joseph_stalin"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -7450,6 +8521,7 @@
       "pe_george_patton",
       "pe_erwin_rommel"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -7501,6 +8573,7 @@
       "pe_george_patton",
       "pe_erwin_rommel"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -7552,6 +8625,7 @@
       "war_diplomacy"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -7574,6 +8648,54 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1517
+    }
+  },
+  {
+    "id": "ev_ottoman_control_eastern_mediterranean",
+    "label": "Ottoman expansion reshapes eastern Mediterranean routes",
+    "summary_short": "Ottoman expansion reshapes eastern Mediterranean routes strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_western_europe"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "war",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_mehmed_ii"
+    ],
+    "related_event_ids": [
+      "ev_black_death_trade_route_transmission"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1453",
+      "end": "1453",
+      "year_start": 1453,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14530101,
+      "sort_end": 14531231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1453
     }
   },
   {
@@ -7602,6 +8724,7 @@
       "revolution_reform"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -7628,6 +8751,48 @@
     }
   },
   {
+    "id": "ev_papermaking_central_asia_transfer",
+    "label": "Early papermaking techniques circulate westward",
+    "summary_short": "Early papermaking techniques circulate westward strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "technology",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "200",
+      "end": "200",
+      "year_start": 200,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 2000101,
+      "sort_end": 2001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 200
+    }
+  },
+  {
     "id": "ev_parlement_paris_refuses_1787",
     "label": "Parlement of Paris refuses new taxes",
     "summary_short": "Parlement of Paris refuses new taxes became a significant turning point in the French Revolution's political trajectory.",
@@ -7645,6 +8810,7 @@
     "people_ids": [
       "pe_louis_xvi"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -7690,6 +8856,7 @@
       "pe_franklin_d_roosevelt",
       "pe_isoroku_yamamoto"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -7740,6 +8907,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -7758,6 +8926,57 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1804
+    }
+  },
+  {
+    "id": "ev_portuguese_arrive_indian_ocean",
+    "label": "Portuguese arrival disrupts Indian Ocean balance",
+    "summary_short": "Portuguese arrival disrupts Indian Ocean balance strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "war",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_ahmad_ibn_majid"
+    ],
+    "related_event_ids": [
+      "ev_song_maritime_commerce_expands",
+      "ev_zheng_he_voyages_begin",
+      "ev_silver_flows_asia_via_oceans",
+      "ev_steamship_suez_accelerates_exchange"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1498",
+      "end": "1498",
+      "year_start": 1498,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14980101,
+      "sort_end": 14981231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1498
     }
   },
   {
@@ -7780,6 +8999,7 @@
       "pe_joseph_stalin",
       "pe_vyacheslav_molotov"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -7825,6 +9045,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -7861,6 +9082,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -7908,6 +9130,7 @@
       "state_formation_governance"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -7954,6 +9177,7 @@
       "empire_imperialism"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history",
       "unit_industrialization_pathways_comparison"
@@ -7980,6 +9204,49 @@
     }
   },
   {
+    "id": "ev_qing_frontier_trade_regulation",
+    "label": "Qing frontier policy regulates overland trade",
+    "summary_short": "Qing frontier policy regulates overland trade strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1700",
+      "end": "1700",
+      "year_start": 1700,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17000101,
+      "sort_end": 17001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1700
+    }
+  },
+  {
     "id": "ev_railway_boom_1840s",
     "label": "Railway investment boom in Europe",
     "summary_short": "Rail construction surges as capital markets and states back network expansion, binding regional economies.",
@@ -7995,6 +9262,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -8048,6 +9316,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -8101,6 +9370,7 @@
     "people_ids": [
       "pe_maximilien_robespierre"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -8157,6 +9427,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -8211,6 +9482,7 @@
       "pe_abu_bakr",
       "pe_khalid_ibn_al_walid"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -8236,6 +9508,138 @@
     }
   },
   {
+    "id": "ev_russian_steppe_expansion_trade",
+    "label": "Russian expansion alters steppe exchanges",
+    "summary_short": "Russian expansion alters steppe exchanges strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_western_europe"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1700",
+      "end": "1700",
+      "year_start": 1700,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17000101,
+      "sort_end": 17001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1700
+    }
+  },
+  {
+    "id": "ev_safavid_ottoman_mughal_exchange_competition",
+    "label": "Safavid-Ottoman-Mughal rivalry and exchange",
+    "summary_short": "Safavid-Ottoman-Mughal rivalry and exchange strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "war",
+      "religion"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_akbar",
+      "pe_suleiman_magnificent"
+    ],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1550",
+      "end": "1550",
+      "year_start": 1550,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15500101,
+      "sort_end": 15501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1550
+    }
+  },
+  {
+    "id": "ev_sassanian_indian_ocean_exchange",
+    "label": "Sasanian Gulf-Indian Ocean trade intensifies",
+    "summary_short": "Sasanian Gulf-Indian Ocean trade intensifies strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "500",
+      "end": "500",
+      "year_start": 500,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 5000101,
+      "sort_end": 5001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 500
+    }
+  },
+  {
     "id": "ev_second_industrial_revolution_1870s",
     "label": "Second Industrial Revolution accelerates",
     "summary_short": "Electricity, chemicals, steel, and new corporate forms drive a fresh wave of industrial expansion.",
@@ -8251,6 +9655,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism",
       "unit_foundations_world_history",
@@ -8300,6 +9705,7 @@
     "people_ids": [
       "pe_georges_danton"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -8325,6 +9731,140 @@
     }
   },
   {
+    "id": "ev_silk_road_post_roman_shift",
+    "label": "Post-Roman shifts reroute Eurasian commerce",
+    "summary_short": "Post-Roman shifts reroute Eurasian commerce strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "500",
+      "end": "500",
+      "year_start": 500,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 5000101,
+      "sort_end": 5001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 500
+    }
+  },
+  {
+    "id": "ev_silver_flows_asia_via_oceans",
+    "label": "Global silver flows intensify Asian markets",
+    "summary_short": "Global silver flows intensify Asian markets strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_global",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "economic_change",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_portuguese_arrive_indian_ocean"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1600",
+      "end": "1600",
+      "year_start": 1600,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16000101,
+      "sort_end": 16001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1600
+    }
+  },
+  {
+    "id": "ev_sogdian_merchant_networks_expand",
+    "label": "Sogdian merchant networks expand",
+    "summary_short": "Sogdian merchant networks expand strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_kushan_trade_mediation",
+      "ev_tang_cosmopolitan_changan",
+      "ev_mongol_trade_integration"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "300",
+      "end": "300",
+      "year_start": 300,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 3000101,
+      "sort_end": 3001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 300
+    }
+  },
+  {
     "id": "ev_song_commercial_revolution_11c",
     "label": "Song commercial revolution",
     "summary_short": "Monetization and urban markets deepened premodern economic complexity.",
@@ -8347,6 +9887,7 @@
       "technology_industrialization"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -8368,6 +9909,97 @@
     }
   },
   {
+    "id": "ev_song_maritime_commerce_expands",
+    "label": "Song maritime commerce expands",
+    "summary_short": "Song maritime commerce expands strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "technology"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_tang_cosmopolitan_changan",
+      "ev_zheng_he_voyages_begin",
+      "ev_portuguese_arrive_indian_ocean"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1100",
+      "end": "1100",
+      "year_start": 1100,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 11000101,
+      "sort_end": 11001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1100
+    }
+  },
+  {
+    "id": "ev_songtsen_gampo_tibet_links",
+    "label": "Tibetan Empire links plateau exchange routes",
+    "summary_short": "Tibetan Empire links plateau exchange routes strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_songtsen_gampo"
+    ],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "640",
+      "end": "640",
+      "year_start": 640,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6400101,
+      "sort_end": 6401231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 640
+    }
+  },
+  {
     "id": "ev_soviet_berlin_offensive_1945",
     "label": "Soviet Offensive on Berlin",
     "summary_short": "Soviet forces assault Berlin, bringing the European war to its final phase.",
@@ -8386,6 +10018,7 @@
       "pe_georgy_zhukov",
       "pe_joseph_stalin"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -8432,6 +10065,7 @@
       "pe_joseph_stalin",
       "pe_georgy_zhukov"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -8482,6 +10116,7 @@
       "pe_joseph_stalin",
       "pe_vyacheslav_molotov"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -8525,6 +10160,7 @@
       "pe_joseph_stalin",
       "pe_emperor_hirohito"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -8567,6 +10203,7 @@
     "people_ids": [
       "pe_james_hargreaves"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -8610,6 +10247,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -8650,6 +10288,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -8690,6 +10329,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -8726,6 +10366,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -8768,6 +10409,7 @@
     "people_ids": [
       "pe_richard_trevithick"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -8795,6 +10437,52 @@
     }
   },
   {
+    "id": "ev_steamship_suez_accelerates_exchange",
+    "label": "Steamship-Suez era accelerates Afro-Eurasian exchange",
+    "summary_short": "Steamship-Suez era accelerates Afro-Eurasian exchange strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa",
+      "reg_western_europe"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "technology",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_portuguese_arrive_indian_ocean"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1870",
+      "end": "1870",
+      "year_start": 1870,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18700101,
+      "sort_end": 18701231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1870
+    }
+  },
+  {
     "id": "ev_stockton_darlington_railway_1825",
     "label": "Stockton and Darlington Railway opens",
     "summary_short": "The first public railway to use steam locomotives for freight and passengers demonstrates rail transport’s industrial potential.",
@@ -8812,6 +10500,7 @@
     "people_ids": [
       "pe_george_stephenson"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -8869,6 +10558,7 @@
     "people_ids": [
       "pe_louis_xvi"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -8905,6 +10595,147 @@
     }
   },
   {
+    "id": "ev_swahili_coast_urban_growth",
+    "label": "Swahili coast city networks expand",
+    "summary_short": "Swahili coast city networks expand strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_islamic_caliphate_trade_expansion"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "900",
+      "end": "900",
+      "year_start": 900,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 9000101,
+      "sort_end": 9001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 900
+    }
+  },
+  {
+    "id": "ev_talas_papermaking_transfer",
+    "label": "Battle of Talas linked to papermaking transfer",
+    "summary_short": "Battle of Talas linked to papermaking transfer strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "war",
+      "technology",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_talas_general_gao_xianzhi"
+    ],
+    "related_event_ids": [
+      "ev_tang_cosmopolitan_changan",
+      "ev_baghdad_translation_movement"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "751",
+      "end": "751",
+      "year_start": 751,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 7510101,
+      "sort_end": 7511231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 751
+    }
+  },
+  {
+    "id": "ev_tang_cosmopolitan_changan",
+    "label": "Tang Chang'an becomes cosmopolitan hub",
+    "summary_short": "Tang Chang'an becomes cosmopolitan hub strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "migration",
+      "religion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [
+      "ev_sogdian_merchant_networks_expand",
+      "ev_talas_papermaking_transfer",
+      "ev_song_maritime_commerce_expands"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "650",
+      "end": "650",
+      "year_start": 650,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6500101,
+      "sort_end": 6501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 650
+    }
+  },
+  {
     "id": "ev_tang_peak_7c",
     "label": "Tang cosmopolitan expansion",
     "summary_short": "Tang-era networks amplified exchange across East and Central Asia.",
@@ -8927,6 +10758,7 @@
       "state_formation_governance"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -8967,6 +10799,7 @@
       "pe_winston_churchill",
       "pe_joseph_stalin"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9008,6 +10841,7 @@
     "people_ids": [
       "pe_samuel_morse"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -9064,6 +10898,7 @@
     "people_ids": [
       "pe_louis_xvi"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -9131,6 +10966,7 @@
     "people_ids": [
       "pe_maximilien_robespierre"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -9166,6 +11002,50 @@
     }
   },
   {
+    "id": "ev_timurid_patronage_exchange",
+    "label": "Timurid patronage links Persianate scholarly worlds",
+    "summary_short": "Timurid patronage links Persianate scholarly worlds strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "technology",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_timur"
+    ],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1400",
+      "end": "1400",
+      "year_start": 1400,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14000101,
+      "sort_end": 14001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1400
+    }
+  },
+  {
     "id": "ev_tokugawa_shogunate_1603",
     "label": "Tokugawa shogunate established in Japan",
     "summary_short": "Tokugawa Ieyasu's victory created a durable shogunate that reorganized political order and social hierarchy in Japan.",
@@ -9190,6 +11070,7 @@
       "state_formation_governance"
     ],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -9243,6 +11124,7 @@
     "people_ids": [
       "pe_muhammad"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -9285,6 +11167,7 @@
     "people_ids": [
       "pe_louis_xvi"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -9303,6 +11186,91 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1792
+    }
+  },
+  {
+    "id": "ev_turkic_khaganate_trade_security",
+    "label": "Turkic Khaganate secures steppe routes",
+    "summary_short": "Turkic Khaganate secures steppe routes strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "560",
+      "end": "560",
+      "year_start": 560,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 5600101,
+      "sort_end": 5601231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 560
+    }
+  },
+  {
+    "id": "ev_umayyad_coinage_standardization",
+    "label": "Umayyad coinage reforms aid long-distance trade",
+    "summary_short": "Umayyad coinage reforms aid long-distance trade strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "economic_change",
+      "trade"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "696",
+      "end": "696",
+      "year_start": 696,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 6960101,
+      "sort_end": 6961231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 696
     }
   },
   {
@@ -9325,6 +11293,7 @@
       "pe_joseph_stalin",
       "pe_winston_churchill"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9366,6 +11335,7 @@
     "people_ids": [
       "pe_franklin_d_roosevelt"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9408,6 +11378,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -9449,6 +11420,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -9489,6 +11461,7 @@
       "pe_heinrich_himmler",
       "pe_ernst_kaltenbrunner"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9531,6 +11504,7 @@
     "people_ids": [
       "pe_jacques_pierre_brissot"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -9571,6 +11545,7 @@
       "pe_winston_churchill",
       "pe_joseph_stalin"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9615,6 +11590,7 @@
     "people_ids": [
       "pe_richard_arkwright"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -9657,6 +11633,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -9697,6 +11674,7 @@
     ],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -9735,6 +11713,7 @@
     "people_ids": [
       "pe_james_watt"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -9779,6 +11758,7 @@
       "pe_louis_xvi",
       "pe_marie_antoinette"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -9817,6 +11797,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -9861,6 +11842,7 @@
       "pe_hussein_bin_ali",
       "pe_te_lawrence"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -9901,6 +11883,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -9946,6 +11929,7 @@
     "people_ids": [
       "pe_ferdinand_foch"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -9995,6 +11979,7 @@
       "pe_franz_ferdinand",
       "pe_gavrilo_princip"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10037,6 +12022,7 @@
     "people_ids": [
       "pe_franz_joseph_i"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10079,6 +12065,7 @@
     "people_ids": [
       "pe_david_lloyd_george"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10119,6 +12106,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10167,6 +12155,7 @@
     "people_ids": [
       "pe_helmuth_von_moltke_younger"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10210,6 +12199,7 @@
       "pe_vladimir_lenin",
       "pe_alexander_kerensky"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10252,6 +12242,7 @@
     "people_ids": [
       "pe_nikolai_brusilov"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10292,6 +12283,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10341,6 +12333,7 @@
       "pe_mustafa_kemal_ataturk",
       "pe_winston_churchill"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10385,6 +12378,7 @@
       "pe_erich_ludendorff",
       "pe_paul_von_hindenburg"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10429,6 +12423,7 @@
       "pe_kaiser_wilhelm_ii",
       "pe_theobald_von_bethmann_hollweg"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10471,6 +12466,7 @@
     "people_ids": [
       "pe_helmuth_von_moltke_younger"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10516,6 +12512,7 @@
       "pe_david_lloyd_george",
       "pe_winston_churchill"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10563,6 +12560,7 @@
       "pe_john_pershing",
       "pe_georges_clemenceau"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10608,6 +12606,7 @@
     "people_ids": [
       "pe_vittorio_orlando"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10648,6 +12647,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10693,6 +12693,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10733,6 +12734,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10776,6 +12778,7 @@
     "people_ids": [
       "pe_kaiser_wilhelm_ii"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10821,6 +12824,7 @@
       "pe_mehmed_v",
       "pe_enver_pasha"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10867,6 +12871,7 @@
       "pe_georges_clemenceau",
       "pe_vittorio_orlando"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10913,6 +12918,7 @@
     "people_ids": [
       "pe_tsar_nicholas_ii"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10956,6 +12962,7 @@
       "pe_tsar_nicholas_ii",
       "pe_alexander_kerensky"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -10997,6 +13004,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11044,6 +13052,7 @@
     "people_ids": [
       "pe_douglas_haig"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11084,6 +13093,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11124,6 +13134,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11167,6 +13178,7 @@
       "pe_paul_von_hindenburg",
       "pe_erich_ludendorff"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11207,6 +13219,7 @@
     "people_ids": [
       "pe_vladimir_lenin"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11257,6 +13270,7 @@
       "pe_david_lloyd_george",
       "pe_georges_clemenceau"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11299,6 +13313,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11343,6 +13358,7 @@
     "people_ids": [
       "pe_alfred_von_tirpitz"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11386,6 +13402,7 @@
     "people_ids": [
       "pe_woodrow_wilson"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11436,6 +13453,7 @@
     "people_ids": [
       "pe_philippe_petain"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11477,6 +13495,7 @@
     "themes": [],
     "concept_tags": [],
     "people_ids": [],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -11521,6 +13540,7 @@
       "pe_winston_churchill",
       "pe_joseph_stalin"
     ],
+    "related_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -11545,6 +13565,104 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1945
+    }
+  },
+  {
+    "id": "ev_zhang_qian_missions_open_routes",
+    "label": "Zhang Qian missions open overland links",
+    "summary_short": "Zhang Qian missions open overland links strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_zhang_qian"
+    ],
+    "related_event_ids": [
+      "ev_han_protectorate_western_regions",
+      "ev_kushan_trade_mediation"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "-130",
+      "end": "-130",
+      "year_start": -130,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": -1299899,
+      "sort_end": -1298769,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": -130
+    }
+  },
+  {
+    "id": "ev_zheng_he_voyages_begin",
+    "label": "Zheng He voyages begin",
+    "summary_short": "Zheng He voyages begin strengthened interregional connections across Afro-Eurasia.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia",
+      "reg_africa"
+    ],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "themes": [
+      "trade",
+      "migration",
+      "state_power"
+    ],
+    "concept_tags": [],
+    "people_ids": [
+      "pe_zheng_he"
+    ],
+    "related_event_ids": [
+      "ev_song_maritime_commerce_expands",
+      "ev_portuguese_arrive_indian_ocean",
+      "ev_coffee_trade_red_sea"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1405",
+      "end": "1405",
+      "year_start": 1405,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14050101,
+      "sort_end": 14051231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1405
     }
   }
 ]

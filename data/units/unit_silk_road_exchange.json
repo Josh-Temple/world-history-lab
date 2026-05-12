@@ -1,0 +1,118 @@
+{
+  "id": "unit_silk_road_exchange",
+  "label": "Silk Road and Afro-Eurasian Exchange",
+  "status": "reviewed",
+  "content_origin": "ai_assisted_self_reviewed",
+  "event_ids": [
+    "ev_zhang_qian_missions_open_routes",
+    "ev_han_protectorate_western_regions",
+    "ev_kushan_trade_mediation",
+    "ev_buddhism_spreads_to_china",
+    "ev_loulan_and_tarim_oasis_trade",
+    "ev_papermaking_central_asia_transfer",
+    "ev_sogdian_merchant_networks_expand",
+    "ev_faxian_travels_india_china",
+    "ev_sassanian_indian_ocean_exchange",
+    "ev_silk_road_post_roman_shift",
+    "ev_turkic_khaganate_trade_security",
+    "ev_tang_cosmopolitan_changan",
+    "ev_songtsen_gampo_tibet_links",
+    "ev_islamic_caliphate_trade_expansion",
+    "ev_umayyad_coinage_standardization",
+    "ev_talas_papermaking_transfer",
+    "ev_baghdad_translation_movement",
+    "ev_swahili_coast_urban_growth",
+    "ev_ghaznavid_trade_corridors",
+    "ev_song_maritime_commerce_expands",
+    "ev_crusader_contact_trade_flows",
+    "ev_mansa_musa_hajj_gold_flows",
+    "ev_mongol_trade_integration",
+    "ev_marco_polo_travels",
+    "ev_ilkhanid_knowledge_exchange",
+    "ev_black_death_trade_route_transmission",
+    "ev_ibn_battuta_travels",
+    "ev_ming_maritime_policy_reset",
+    "ev_timurid_patronage_exchange",
+    "ev_zheng_he_voyages_begin",
+    "ev_mamluk_indian_ocean_intermediation",
+    "ev_ottoman_control_eastern_mediterranean",
+    "ev_portuguese_arrive_indian_ocean",
+    "ev_safavid_ottoman_mughal_exchange_competition",
+    "ev_silver_flows_asia_via_oceans",
+    "ev_coffee_trade_red_sea",
+    "ev_qing_frontier_trade_regulation",
+    "ev_russian_steppe_expansion_trade",
+    "ev_chintz_and_textile_diffusion",
+    "ev_cholera_trade_routes_1817",
+    "ev_steamship_suez_accelerates_exchange"
+  ],
+  "person_ids": [
+    "pe_zhang_qian",
+    "pe_kanishka_i",
+    "pe_kumarajiva",
+    "pe_faxian",
+    "pe_xuanzang",
+    "pe_anz_lushan",
+    "pe_songtsen_gampo",
+    "pe_talas_general_gao_xianzhi",
+    "pe_al_khwarizmi",
+    "pe_ibn_khordadbeh",
+    "pe_al_masudi",
+    "pe_ibn_battuta",
+    "pe_mansa_musa",
+    "pe_marco_polo",
+    "pe_kublai_khan",
+    "pe_rashid_al_din",
+    "pe_timur",
+    "pe_zheng_he",
+    "pe_mehmed_ii",
+    "pe_suleiman_magnificent",
+    "pe_akbar",
+    "pe_ahmad_ibn_majid"
+  ],
+  "title": "Silk Road and Afro-Eurasian Exchange",
+  "updated_at": "2026-05-12",
+  "language": "en",
+  "description": "Interregional exchange across Silk Road and Indian Ocean systems linking Afro-Eurasia.",
+  "recommended_level": "middle",
+  "regions": [
+    "reg_asia",
+    "reg_east_asia",
+    "reg_africa",
+    "reg_western_europe"
+  ],
+  "tags": [
+    "trade",
+    "religion",
+    "migration",
+    "technology"
+  ],
+  "learning_goals": [
+    "Trace major exchange corridors across Afro-Eurasia.",
+    "Explain how trade networks spread religions, technologies, and disease.",
+    "Compare overland and maritime exchange systems."
+  ],
+  "app_profiles": {
+    "timeline-trainer": {
+      "enabled": true,
+      "question_types": [
+        "timeline_before_after",
+        "timeline_ordering"
+      ]
+    },
+    "event-recognition": {
+      "enabled": true,
+      "question_types": [
+        "what_happened",
+        "significance"
+      ]
+    },
+    "causality-builder": {
+      "enabled": true,
+      "question_types": [
+        "cause_and_effect",
+        "causality_chain"
+      ]
+    }
+  }
+}
