@@ -972,3 +972,13 @@ TBD
   2) persisted mastery review queue IDs,
   3) unit event fallback pool.
 - Updated dashboard weak-item rendering to resolve event labels via normalized events and hide synthetic legacy keys when labels are unavailable.
+
+## Recent updates (2026-05-12 · Silk Road content bundle + explicit related-event graph metadata)
+
+- Added new reviewed unit `data/units/unit_silk_road_exchange.json` focused on Silk Road and broader Afro-Eurasian exchange systems.
+- Added 41 new events in `data/events.json` and 22 new people in `data/people.json` tied to overland/maritime trade, diffusion, and interregional travel.
+- Registered unit in `data/units/index.json` and synced metadata inclusion in `data/metadata.json`.
+- Added optional `related_event_ids` validation in `scripts/validate-data.mjs` with duplicate/unknown checks and reciprocal-link warnings.
+- Extended derive pipeline (`scripts/derive.mjs`) to preserve `related_event_ids` and generate relationship graph artifacts:
+  - `derived/event-relationships.json`
+  - `data/derived/event-relationships.json`

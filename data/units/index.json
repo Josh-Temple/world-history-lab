@@ -39,6 +39,10 @@
     {
       "id": "unit_islamic_expansion",
       "path": "data/units/islamic_expansion.json"
+    },
+    {
+      "id": "unit_silk_road_exchange",
+      "path": "data/units/unit_silk_road_exchange.json"
     }
   ]
 }

@@ -8454,5 +8454,1114 @@
       "what_happened",
       "cause_and_effect"
     ]
+  },
+  {
+    "id": "ev_zhang_qian_missions_open_routes",
+    "label": "Zhang Qian missions open overland links",
+    "time": {
+      "year_start": -130
+    },
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_zhang_qian"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Zhang Qian missions open overland links strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_han_protectorate_western_regions",
+      "ev_kushan_trade_mediation"
+    ]
+  },
+  {
+    "id": "ev_han_protectorate_western_regions",
+    "label": "Han protectorate in Western Regions",
+    "time": {
+      "year_start": -60
+    },
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Han protectorate in Western Regions strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_zhang_qian_missions_open_routes"
+    ]
+  },
+  {
+    "id": "ev_kushan_trade_mediation",
+    "label": "Kushan Empire mediates Silk Road exchange",
+    "time": {
+      "year_start": 100
+    },
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_kanishka_i"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Kushan Empire mediates Silk Road exchange strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_zhang_qian_missions_open_routes",
+      "ev_buddhism_spreads_to_china",
+      "ev_sogdian_merchant_networks_expand"
+    ]
+  },
+  {
+    "id": "ev_buddhism_spreads_to_china",
+    "label": "Buddhism spreads into Han China",
+    "time": {
+      "year_start": 100
+    },
+    "themes": [
+      "religion",
+      "trade",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_east_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Buddhism spreads into Han China strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_kushan_trade_mediation",
+      "ev_faxian_travels_india_china"
+    ]
+  },
+  {
+    "id": "ev_loulan_and_tarim_oasis_trade",
+    "label": "Tarim oasis states support caravan networks",
+    "time": {
+      "year_start": 150
+    },
+    "themes": [
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Tarim oasis states support caravan networks strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_papermaking_central_asia_transfer",
+    "label": "Early papermaking techniques circulate westward",
+    "time": {
+      "year_start": 200
+    },
+    "themes": [
+      "technology",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Early papermaking techniques circulate westward strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_sogdian_merchant_networks_expand",
+    "label": "Sogdian merchant networks expand",
+    "time": {
+      "year_start": 300
+    },
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Sogdian merchant networks expand strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_kushan_trade_mediation",
+      "ev_tang_cosmopolitan_changan",
+      "ev_mongol_trade_integration"
+    ]
+  },
+  {
+    "id": "ev_faxian_travels_india_china",
+    "label": "Faxian travels between India and China",
+    "time": {
+      "year_start": 400
+    },
+    "themes": [
+      "religion",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_east_asia"
+    ],
+    "people_ids": [
+      "pe_faxian"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Faxian travels between India and China strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_buddhism_spreads_to_china"
+    ]
+  },
+  {
+    "id": "ev_sassanian_indian_ocean_exchange",
+    "label": "Sasanian Gulf-Indian Ocean trade intensifies",
+    "time": {
+      "year_start": 500
+    },
+    "themes": [
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Sasanian Gulf-Indian Ocean trade intensifies strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_silk_road_post_roman_shift",
+    "label": "Post-Roman shifts reroute Eurasian commerce",
+    "time": {
+      "year_start": 500
+    },
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_global"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Post-Roman shifts reroute Eurasian commerce strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_turkic_khaganate_trade_security",
+    "label": "Turkic Khaganate secures steppe routes",
+    "time": {
+      "year_start": 560
+    },
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Turkic Khaganate secures steppe routes strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_tang_cosmopolitan_changan",
+    "label": "Tang Chang'an becomes cosmopolitan hub",
+    "time": {
+      "year_start": 650
+    },
+    "themes": [
+      "trade",
+      "migration",
+      "religion"
+    ],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Tang Chang'an becomes cosmopolitan hub strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_sogdian_merchant_networks_expand",
+      "ev_talas_papermaking_transfer",
+      "ev_song_maritime_commerce_expands"
+    ]
+  },
+  {
+    "id": "ev_songtsen_gampo_tibet_links",
+    "label": "Tibetan Empire links plateau exchange routes",
+    "time": {
+      "year_start": 640
+    },
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_songtsen_gampo"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Tibetan Empire links plateau exchange routes strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_islamic_caliphate_trade_expansion",
+    "label": "Caliphate expansion enlarges Afro-Eurasian trade",
+    "time": {
+      "year_start": 700
+    },
+    "themes": [
+      "trade",
+      "religion",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Caliphate expansion enlarges Afro-Eurasian trade strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_swahili_coast_urban_growth",
+      "ev_mansa_musa_hajj_gold_flows"
+    ]
+  },
+  {
+    "id": "ev_umayyad_coinage_standardization",
+    "label": "Umayyad coinage reforms aid long-distance trade",
+    "time": {
+      "year_start": 696
+    },
+    "themes": [
+      "economic_change",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Umayyad coinage reforms aid long-distance trade strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_talas_papermaking_transfer",
+    "label": "Battle of Talas linked to papermaking transfer",
+    "time": {
+      "year_start": 751
+    },
+    "themes": [
+      "war",
+      "technology",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_talas_general_gao_xianzhi"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Battle of Talas linked to papermaking transfer strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_tang_cosmopolitan_changan",
+      "ev_baghdad_translation_movement"
+    ]
+  },
+  {
+    "id": "ev_baghdad_translation_movement",
+    "label": "Baghdad translation movement grows",
+    "time": {
+      "year_start": 800
+    },
+    "themes": [
+      "technology",
+      "religion",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_al_khwarizmi"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Baghdad translation movement grows strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_talas_papermaking_transfer"
+    ]
+  },
+  {
+    "id": "ev_swahili_coast_urban_growth",
+    "label": "Swahili coast city networks expand",
+    "time": {
+      "year_start": 900
+    },
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Swahili coast city networks expand strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_islamic_caliphate_trade_expansion"
+    ]
+  },
+  {
+    "id": "ev_ghaznavid_trade_corridors",
+    "label": "Ghaznavid corridors connect Iran and India",
+    "time": {
+      "year_start": 1000
+    },
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Ghaznavid corridors connect Iran and India strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_song_maritime_commerce_expands",
+    "label": "Song maritime commerce expands",
+    "time": {
+      "year_start": 1100
+    },
+    "themes": [
+      "trade",
+      "technology"
+    ],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Song maritime commerce expands strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_tang_cosmopolitan_changan",
+      "ev_zheng_he_voyages_begin",
+      "ev_portuguese_arrive_indian_ocean"
+    ]
+  },
+  {
+    "id": "ev_crusader_contact_trade_flows",
+    "label": "Crusader-era contact increases Mediterranean-Asian exchange",
+    "time": {
+      "year_start": 1100
+    },
+    "themes": [
+      "trade",
+      "religion",
+      "war"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_western_europe"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Crusader-era contact increases Mediterranean-Asian exchange strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_mansa_musa_hajj_gold_flows",
+    "label": "Mansa Musa hajj publicizes trans-Saharan wealth",
+    "time": {
+      "year_start": 1324
+    },
+    "themes": [
+      "trade",
+      "religion"
+    ],
+    "region_ids": [
+      "reg_africa"
+    ],
+    "people_ids": [
+      "pe_mansa_musa"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Mansa Musa hajj publicizes trans-Saharan wealth strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_islamic_caliphate_trade_expansion"
+    ]
+  },
+  {
+    "id": "ev_mongol_trade_integration",
+    "label": "Mongol conquests integrate Eurasian corridors",
+    "time": {
+      "year_start": 1250
+    },
+    "themes": [
+      "trade",
+      "migration",
+      "war"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_east_asia",
+      "reg_western_europe"
+    ],
+    "people_ids": [
+      "pe_kublai_khan"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Mongol conquests integrate Eurasian corridors strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_sogdian_merchant_networks_expand",
+      "ev_marco_polo_travels",
+      "ev_black_death_trade_route_transmission"
+    ]
+  },
+  {
+    "id": "ev_marco_polo_travels",
+    "label": "Marco Polo travels in Yuan domains",
+    "time": {
+      "year_start": 1275
+    },
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_east_asia"
+    ],
+    "people_ids": [
+      "pe_marco_polo"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Marco Polo travels in Yuan domains strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_mongol_trade_integration"
+    ]
+  },
+  {
+    "id": "ev_ilkhanid_knowledge_exchange",
+    "label": "Ilkhanid court promotes cross-cultural scholarship",
+    "time": {
+      "year_start": 1300
+    },
+    "themes": [
+      "technology",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_rashid_al_din"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Ilkhanid court promotes cross-cultural scholarship strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_black_death_trade_route_transmission",
+    "label": "Black Death spreads along trade routes",
+    "time": {
+      "year_start": 1347
+    },
+    "themes": [
+      "migration",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa",
+      "reg_western_europe"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Black Death spreads along trade routes strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_mongol_trade_integration",
+      "ev_ming_maritime_policy_reset",
+      "ev_ottoman_control_eastern_mediterranean"
+    ]
+  },
+  {
+    "id": "ev_ibn_battuta_travels",
+    "label": "Ibn Battuta documents Afro-Eurasian circuits",
+    "time": {
+      "year_start": 1325
+    },
+    "themes": [
+      "trade",
+      "migration",
+      "religion"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_ibn_battuta"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Ibn Battuta documents Afro-Eurasian circuits strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_ming_maritime_policy_reset",
+    "label": "Early Ming resets maritime policy and tribute",
+    "time": {
+      "year_start": 1370
+    },
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Early Ming resets maritime policy and tribute strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_black_death_trade_route_transmission"
+    ]
+  },
+  {
+    "id": "ev_timurid_patronage_exchange",
+    "label": "Timurid patronage links Persianate scholarly worlds",
+    "time": {
+      "year_start": 1400
+    },
+    "themes": [
+      "technology",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_timur"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Timurid patronage links Persianate scholarly worlds strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_zheng_he_voyages_begin",
+    "label": "Zheng He voyages begin",
+    "time": {
+      "year_start": 1405
+    },
+    "themes": [
+      "trade",
+      "migration",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia",
+      "reg_africa"
+    ],
+    "people_ids": [
+      "pe_zheng_he"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Zheng He voyages begin strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_song_maritime_commerce_expands",
+      "ev_portuguese_arrive_indian_ocean",
+      "ev_coffee_trade_red_sea"
+    ]
+  },
+  {
+    "id": "ev_mamluk_indian_ocean_intermediation",
+    "label": "Mamluks mediate Red Sea-Indian Ocean commerce",
+    "time": {
+      "year_start": 1450
+    },
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Mamluks mediate Red Sea-Indian Ocean commerce strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_ottoman_control_eastern_mediterranean",
+    "label": "Ottoman expansion reshapes eastern Mediterranean routes",
+    "time": {
+      "year_start": 1453
+    },
+    "themes": [
+      "trade",
+      "war",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_western_europe"
+    ],
+    "people_ids": [
+      "pe_mehmed_ii"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Ottoman expansion reshapes eastern Mediterranean routes strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_black_death_trade_route_transmission"
+    ]
+  },
+  {
+    "id": "ev_portuguese_arrive_indian_ocean",
+    "label": "Portuguese arrival disrupts Indian Ocean balance",
+    "time": {
+      "year_start": 1498
+    },
+    "themes": [
+      "trade",
+      "war",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_ahmad_ibn_majid"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Portuguese arrival disrupts Indian Ocean balance strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_song_maritime_commerce_expands",
+      "ev_zheng_he_voyages_begin",
+      "ev_silver_flows_asia_via_oceans",
+      "ev_steamship_suez_accelerates_exchange"
+    ]
+  },
+  {
+    "id": "ev_safavid_ottoman_mughal_exchange_competition",
+    "label": "Safavid-Ottoman-Mughal rivalry and exchange",
+    "time": {
+      "year_start": 1550
+    },
+    "themes": [
+      "trade",
+      "war",
+      "religion"
+    ],
+    "region_ids": [
+      "reg_asia"
+    ],
+    "people_ids": [
+      "pe_akbar",
+      "pe_suleiman_magnificent"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Safavid-Ottoman-Mughal rivalry and exchange strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_silver_flows_asia_via_oceans",
+    "label": "Global silver flows intensify Asian markets",
+    "time": {
+      "year_start": 1600
+    },
+    "themes": [
+      "economic_change",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_global",
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Global silver flows intensify Asian markets strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_portuguese_arrive_indian_ocean"
+    ]
+  },
+  {
+    "id": "ev_coffee_trade_red_sea",
+    "label": "Coffee trade links Red Sea and Indian Ocean ports",
+    "time": {
+      "year_start": 1650
+    },
+    "themes": [
+      "trade",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Coffee trade links Red Sea and Indian Ocean ports strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_zheng_he_voyages_begin"
+    ]
+  },
+  {
+    "id": "ev_qing_frontier_trade_regulation",
+    "label": "Qing frontier policy regulates overland trade",
+    "time": {
+      "year_start": 1700
+    },
+    "themes": [
+      "trade",
+      "state_power"
+    ],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_asia"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Qing frontier policy regulates overland trade strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_russian_steppe_expansion_trade",
+    "label": "Russian expansion alters steppe exchanges",
+    "time": {
+      "year_start": 1700
+    },
+    "themes": [
+      "trade",
+      "state_power",
+      "migration"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_western_europe"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Russian expansion alters steppe exchanges strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_chintz_and_textile_diffusion",
+    "label": "Indian cotton textiles reshape Afro-Eurasian consumption",
+    "time": {
+      "year_start": 1700
+    },
+    "themes": [
+      "trade",
+      "technology",
+      "economic_change"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa",
+      "reg_western_europe"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Indian cotton textiles reshape Afro-Eurasian consumption strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_cholera_trade_routes_1817",
+    "label": "First cholera pandemic spreads via trade routes",
+    "time": {
+      "year_start": 1817
+    },
+    "themes": [
+      "migration",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "First cholera pandemic spreads via trade routes strengthened interregional connections across Afro-Eurasia."
+  },
+  {
+    "id": "ev_steamship_suez_accelerates_exchange",
+    "label": "Steamship-Suez era accelerates Afro-Eurasian exchange",
+    "time": {
+      "year_start": 1870
+    },
+    "themes": [
+      "technology",
+      "trade"
+    ],
+    "region_ids": [
+      "reg_asia",
+      "reg_africa",
+      "reg_western_europe"
+    ],
+    "people_ids": [],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
+    "summary_short": "Steamship-Suez era accelerates Afro-Eurasian exchange strengthened interregional connections across Afro-Eurasia.",
+    "related_event_ids": [
+      "ev_portuguese_arrive_indian_ocean"
+    ]
   }
 ]

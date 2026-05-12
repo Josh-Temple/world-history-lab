@@ -1,0 +1,92 @@
+{
+  "ev_baghdad_translation_movement": [
+    "ev_talas_papermaking_transfer"
+  ],
+  "ev_black_death_trade_route_transmission": [
+    "ev_ming_maritime_policy_reset",
+    "ev_mongol_trade_integration",
+    "ev_ottoman_control_eastern_mediterranean"
+  ],
+  "ev_buddhism_spreads_to_china": [
+    "ev_faxian_travels_india_china",
+    "ev_kushan_trade_mediation"
+  ],
+  "ev_coffee_trade_red_sea": [
+    "ev_zheng_he_voyages_begin"
+  ],
+  "ev_faxian_travels_india_china": [
+    "ev_buddhism_spreads_to_china"
+  ],
+  "ev_han_protectorate_western_regions": [
+    "ev_zhang_qian_missions_open_routes"
+  ],
+  "ev_islamic_caliphate_trade_expansion": [
+    "ev_mansa_musa_hajj_gold_flows",
+    "ev_swahili_coast_urban_growth"
+  ],
+  "ev_kushan_trade_mediation": [
+    "ev_buddhism_spreads_to_china",
+    "ev_sogdian_merchant_networks_expand",
+    "ev_zhang_qian_missions_open_routes"
+  ],
+  "ev_mansa_musa_hajj_gold_flows": [
+    "ev_islamic_caliphate_trade_expansion"
+  ],
+  "ev_marco_polo_travels": [
+    "ev_mongol_trade_integration"
+  ],
+  "ev_ming_maritime_policy_reset": [
+    "ev_black_death_trade_route_transmission"
+  ],
+  "ev_mongol_trade_integration": [
+    "ev_black_death_trade_route_transmission",
+    "ev_marco_polo_travels",
+    "ev_sogdian_merchant_networks_expand"
+  ],
+  "ev_ottoman_control_eastern_mediterranean": [
+    "ev_black_death_trade_route_transmission"
+  ],
+  "ev_portuguese_arrive_indian_ocean": [
+    "ev_silver_flows_asia_via_oceans",
+    "ev_song_maritime_commerce_expands",
+    "ev_steamship_suez_accelerates_exchange",
+    "ev_zheng_he_voyages_begin"
+  ],
+  "ev_silver_flows_asia_via_oceans": [
+    "ev_portuguese_arrive_indian_ocean"
+  ],
+  "ev_sogdian_merchant_networks_expand": [
+    "ev_kushan_trade_mediation",
+    "ev_mongol_trade_integration",
+    "ev_tang_cosmopolitan_changan"
+  ],
+  "ev_song_maritime_commerce_expands": [
+    "ev_portuguese_arrive_indian_ocean",
+    "ev_tang_cosmopolitan_changan",
+    "ev_zheng_he_voyages_begin"
+  ],
+  "ev_steamship_suez_accelerates_exchange": [
+    "ev_portuguese_arrive_indian_ocean"
+  ],
+  "ev_swahili_coast_urban_growth": [
+    "ev_islamic_caliphate_trade_expansion"
+  ],
+  "ev_talas_papermaking_transfer": [
+    "ev_baghdad_translation_movement",
+    "ev_tang_cosmopolitan_changan"
+  ],
+  "ev_tang_cosmopolitan_changan": [
+    "ev_sogdian_merchant_networks_expand",
+    "ev_song_maritime_commerce_expands",
+    "ev_talas_papermaking_transfer"
+  ],
+  "ev_zhang_qian_missions_open_routes": [
+    "ev_han_protectorate_western_regions",
+    "ev_kushan_trade_mediation"
+  ],
+  "ev_zheng_he_voyages_begin": [
+    "ev_coffee_trade_red_sea",
+    "ev_portuguese_arrive_indian_ocean",
+    "ev_song_maritime_commerce_expands"
+  ]
+}

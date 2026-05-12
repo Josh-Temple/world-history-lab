@@ -627,6 +627,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
         themes: compactArrayStrings(event.themes),
         concept_tags: compactArrayStrings(event.concept_tags),
         people_ids: compactArrayStrings(event.people_ids),
+        related_event_ids: compactArrayStrings(event.related_event_ids),
         unit_ids: unitIdsByEventId.get(event.id) || [],
         caused_by: causedBy,
         effects: Array.isArray(event.effects) ? event.effects : [],
@@ -666,6 +667,7 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
     themes: compactArrayStrings(event.themes),
     concept_tags: compactArrayStrings(event.concept_tags),
     people_ids: compactArrayStrings(event.people_ids),
+    related_event_ids: compactArrayStrings(event.related_event_ids),
     unit_ids: unitIdsByEventId.get(event.id) || [],
     caused_by: causedBy,
     effects: Array.isArray(event.effects) ? event.effects : [],
@@ -731,6 +733,20 @@ function buildRegionIndex(normalizedEvents) {
     ids.sort();
   }
   return Object.fromEntries(Object.entries(byRegion).sort(([a], [b]) => a.localeCompare(b)));
+}
+
+function buildRelatedEventGraph(normalizedEvents, eventIdSet) {
+  const graph = {};
+  for (const event of normalizedEvents) {
+    const related = (Array.isArray(event.related_event_ids) ? event.related_event_ids : [])
+      .filter((id) => eventIdSet.has(id))
+      .filter((id, idx, arr) => arr.indexOf(id) === idx)
+      .sort();
+    if (related.length > 0) {
+      graph[event.id] = related;
+    }
+  }
+  return Object.fromEntries(Object.entries(graph).sort(([a], [b]) => a.localeCompare(b)));
 }
 
 function buildUnitEventPool(units, canonicalEventLookup, normalizedEventLookup, enabledQuestionTypeSet) {
@@ -1045,6 +1061,7 @@ async function main() {
   const causalityChains = buildCausalityChains(events);
   const tagClusters = buildTagClusters(events, eventIdSet);
   const causalPairs = buildCausalPairs(normalizedEvents, eventIdSet);
+  const relatedEventGraph = buildRelatedEventGraph(normalizedEvents, eventIdSet);
   const unitEventPoolTypeCount = Object.values(unitEventPool)
     .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
 
@@ -1058,8 +1075,10 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "index.unit_event_pool.json"), toJson(unitEventPool), "utf8");
   await writeFile(path.join(DERIVED_DIR, "causality_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.causal_pairs.json"), toJson(causalPairs), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "event-relationships.json"), toJson(relatedEventGraph), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
+  await writeFile(path.join(DATA_DERIVED_DIR, "event-relationships.json"), toJson(relatedEventGraph), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "tag_clusters.json"), toJson(tagClusters), "utf8");
 
   console.log(

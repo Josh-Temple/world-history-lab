@@ -1,5 +1,10 @@
 {
   "reg_africa": [
+    "ev_black_death_trade_route_transmission",
+    "ev_chintz_and_textile_diffusion",
+    "ev_cholera_trade_routes_1817",
+    "ev_coffee_trade_red_sea",
+    "ev_ibn_battuta_travels",
     "ev_imperialism_agadir_crisis_1911",
     "ev_imperialism_algeciras_conference_1906",
     "ev_imperialism_battle_of_adwa_1896",
@@ -13,9 +18,30 @@
     "ev_imperialism_first_moroccan_crisis_1905",
     "ev_imperialism_leopold_congo_project_1876",
     "ev_imperialism_second_boer_war_begins_1899",
-    "ev_imperialism_suez_canal_opens_1869"
+    "ev_imperialism_suez_canal_opens_1869",
+    "ev_islamic_caliphate_trade_expansion",
+    "ev_mamluk_indian_ocean_intermediation",
+    "ev_mansa_musa_hajj_gold_flows",
+    "ev_portuguese_arrive_indian_ocean",
+    "ev_sassanian_indian_ocean_exchange",
+    "ev_steamship_suez_accelerates_exchange",
+    "ev_swahili_coast_urban_growth",
+    "ev_umayyad_coinage_standardization",
+    "ev_zheng_he_voyages_begin"
   ],
   "reg_asia": [
+    "ev_baghdad_translation_movement",
+    "ev_black_death_trade_route_transmission",
+    "ev_buddhism_spreads_to_china",
+    "ev_chintz_and_textile_diffusion",
+    "ev_cholera_trade_routes_1817",
+    "ev_coffee_trade_red_sea",
+    "ev_crusader_contact_trade_flows",
+    "ev_faxian_travels_india_china",
+    "ev_ghaznavid_trade_corridors",
+    "ev_han_protectorate_western_regions",
+    "ev_ibn_battuta_travels",
+    "ev_ilkhanid_knowledge_exchange",
     "ev_imperialism_anglo_japanese_alliance_1902",
     "ev_imperialism_boxer_rebellion_1900",
     "ev_imperialism_first_sinojapanese_war_begins_1894",
@@ -25,7 +51,35 @@
     "ev_imperialism_russojapanese_war_begins_1904",
     "ev_imperialism_treaty_portsmouth_1905",
     "ev_imperialism_treaty_shimonoseki_1895",
-    "ev_imperialism_triple_intervention_1895"
+    "ev_imperialism_triple_intervention_1895",
+    "ev_islamic_caliphate_trade_expansion",
+    "ev_kushan_trade_mediation",
+    "ev_loulan_and_tarim_oasis_trade",
+    "ev_mamluk_indian_ocean_intermediation",
+    "ev_marco_polo_travels",
+    "ev_ming_maritime_policy_reset",
+    "ev_mongol_trade_integration",
+    "ev_ottoman_control_eastern_mediterranean",
+    "ev_papermaking_central_asia_transfer",
+    "ev_portuguese_arrive_indian_ocean",
+    "ev_qing_frontier_trade_regulation",
+    "ev_russian_steppe_expansion_trade",
+    "ev_safavid_ottoman_mughal_exchange_competition",
+    "ev_sassanian_indian_ocean_exchange",
+    "ev_silk_road_post_roman_shift",
+    "ev_silver_flows_asia_via_oceans",
+    "ev_sogdian_merchant_networks_expand",
+    "ev_song_maritime_commerce_expands",
+    "ev_songtsen_gampo_tibet_links",
+    "ev_steamship_suez_accelerates_exchange",
+    "ev_swahili_coast_urban_growth",
+    "ev_talas_papermaking_transfer",
+    "ev_tang_cosmopolitan_changan",
+    "ev_timurid_patronage_exchange",
+    "ev_turkic_khaganate_trade_security",
+    "ev_umayyad_coinage_standardization",
+    "ev_zhang_qian_missions_open_routes",
+    "ev_zheng_he_voyages_begin"
   ],
   "reg_britain": [
     "ev_bridgewater_canal_opens_1761",
@@ -43,8 +97,17 @@
     "ev_watt_condenser_patent_1769"
   ],
   "reg_east_asia": [
+    "ev_buddhism_spreads_to_china",
+    "ev_faxian_travels_india_china",
+    "ev_marco_polo_travels",
     "ev_meiji_russojapanese_war_1905",
-    "ev_meiji_sinojapanese_war_1894"
+    "ev_meiji_sinojapanese_war_1894",
+    "ev_ming_maritime_policy_reset",
+    "ev_mongol_trade_integration",
+    "ev_qing_frontier_trade_regulation",
+    "ev_song_maritime_commerce_expands",
+    "ev_tang_cosmopolitan_changan",
+    "ev_zheng_he_voyages_begin"
   ],
   "reg_france": [
     "ev_declaration_rights_man_citizen_1789",
@@ -85,7 +148,9 @@
     "ev_imperialism_treaty_portsmouth_1905",
     "ev_imperialism_treaty_shimonoseki_1895",
     "ev_imperialism_triple_intervention_1895",
-    "ev_imperialism_us_annexes_hawaii_1898"
+    "ev_imperialism_us_annexes_hawaii_1898",
+    "ev_silk_road_post_roman_shift",
+    "ev_silver_flows_asia_via_oceans"
   ],
   "reg_japan": [
     "ev_meiji_abolish_han_1871",
@@ -105,7 +170,14 @@
     "ev_meiji_annex_korea_1910"
   ],
   "reg_western_europe": [
+    "ev_black_death_trade_route_transmission",
+    "ev_chintz_and_textile_diffusion",
     "ev_congress_of_vienna_1814_1815",
-    "ev_napoleon_emperor_1804"
+    "ev_crusader_contact_trade_flows",
+    "ev_mongol_trade_integration",
+    "ev_napoleon_emperor_1804",
+    "ev_ottoman_control_eastern_mediterranean",
+    "ev_russian_steppe_expansion_trade",
+    "ev_steamship_suez_accelerates_exchange"
   ]
 }
