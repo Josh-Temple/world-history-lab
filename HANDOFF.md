@@ -1,3 +1,24 @@
+# HANDOFF (2026-05-13)
+
+## What was completed today
+
+- Integrated `related_event_ids` into `apps/graph-explorer/app.js` rendering so users can inspect causal links and broader network links in one place.
+- Added a dedicated **Related events (network)** panel in graph detail view and `rel` counts in node cards.
+- Updated root `README.md` with a new 2026-05-13 recent-updates note documenting graph relationship visibility.
+
+## Validation status
+
+- `node scripts/validate-data.mjs` ✅ pass (existing Meiji category warnings unchanged).
+- `node scripts/derive.mjs` ✅ pass (existing unknown-tag fallback warnings unchanged).
+
+## Suggested next session priorities
+
+1. Add relationship-type metadata (e.g., `diffusion`, `trade`, `intellectual`, `disease`) to strengthen graph filtering and causality pedagogy.
+2. Add UI toggle/filter in Graph Explorer for causal-only vs network-related edges.
+3. Expand `related_event_ids` coverage to older existing units for more even graph density across the curriculum.
+
+---
+
 # HANDOFF (2026-05-12)
 
 ## What was completed today
