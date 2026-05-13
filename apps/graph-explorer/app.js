@@ -38,9 +38,14 @@ function buildConnectedIds(event) {
     .map(getEffectTargetId)
     .filter((id) => typeof id === "string" && state.eventsById.has(id));
   const incoming = Array.isArray(event.caused_by) ? event.caused_by.filter((id) => state.eventsById.has(id)) : [];
+  const related = Array.isArray(event.related_event_ids)
+    ? event.related_event_ids.filter((id) => state.eventsById.has(id))
+    : [];
+
   return {
     outgoing: Array.from(new Set(outgoing)),
     incoming: Array.from(new Set(incoming)),
+    related: Array.from(new Set(related)),
   };
 }
 
@@ -60,8 +65,8 @@ function renderDetails(eventId) {
     return;
   }
 
-  const { incoming, outgoing } = buildConnectedIds(event);
-  const connectionsCount = incoming.length + outgoing.length;
+  const { incoming, outgoing, related } = buildConnectedIds(event);
+  const connectionsCount = incoming.length + outgoing.length + related.length;
   const year = getEventYear(event);
 
   const renderList = (ids) => {
@@ -85,6 +90,8 @@ function renderDetails(eventId) {
     ${renderList(incoming)}
     <h3>Leads to (outgoing)</h3>
     ${renderList(outgoing)}
+    <h3>Related events (network)</h3>
+    ${renderList(related)}
   `;
 
   els.details.querySelectorAll("[data-target-id]").forEach((button) => {
@@ -108,12 +115,12 @@ function renderGraph() {
 
   const html = visible
     .map((event) => {
-      const { incoming, outgoing } = buildConnectedIds(event);
+      const { incoming, outgoing, related } = buildConnectedIds(event);
       const cls = event.id === state.selectedEventId ? "node active" : "node";
       return `
         <button class="${cls}" data-event-id="${event.id}">
           <div class="node-title">${event.label}</div>
-          <div class="node-meta">${getEventYear(event) ?? "?"} · in ${incoming.length} / out ${outgoing.length}</div>
+          <div class="node-meta">${getEventYear(event) ?? "?"} · in ${incoming.length} / out ${outgoing.length} / rel ${related.length}</div>
         </button>
       `;
     })

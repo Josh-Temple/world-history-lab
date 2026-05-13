@@ -110,6 +110,12 @@ Next:
 
 
 
+
+## Recent updates (2026-05-13 · graph explorer relationship visibility)
+
+- Updated `apps/graph-explorer/app.js` to read optional `related_event_ids` on events and display these network links alongside causal incoming/outgoing links.
+- Expanded node metadata to show `in / out / rel` counts, making non-causal exchange-network relationships visible in the graph UI.
+
 ## Recent updates (2026-04-28 · session composition guardrail + diagnostics)
 
 - Tightened guided session composition in `apps/session-runner/app.js` so the final mode plan explicitly attempts to maintain at least 3 distinct skill categories when alternatives exist.
