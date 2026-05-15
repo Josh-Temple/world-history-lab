@@ -35,6 +35,12 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -80,6 +86,15 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -118,6 +133,12 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -156,6 +177,13 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -194,6 +222,10 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -227,6 +259,12 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -277,6 +315,10 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -315,6 +357,12 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -353,6 +401,12 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -446,6 +500,10 @@
     ],
     "region_ids": [
       "reg_france"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -553,6 +611,12 @@
     ],
     "region_ids": [
       "reg_france"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -644,6 +708,10 @@
     ],
     "region_ids": [
       "reg_france"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -736,6 +804,12 @@
     ],
     "region_ids": [
       "reg_france"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -768,6 +842,12 @@
     "primary_skill": "recognition",
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -866,6 +946,12 @@
     ],
     "region_ids": [
       "reg_france"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -965,6 +1051,10 @@
     ],
     "region_ids": [
       "reg_france"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1057,6 +1147,10 @@
     ],
     "region_ids": [
       "reg_france"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1156,6 +1250,12 @@
     ],
     "region_ids": [
       "reg_france"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1253,6 +1353,11 @@
     "region_ids": [
       "reg_france",
       "reg_western_europe"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1303,6 +1408,10 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -1399,6 +1508,12 @@
     ],
     "region_ids": [
       "reg_western_europe"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1449,6 +1564,13 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_technological_diffusion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1511,6 +1633,11 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -1563,6 +1690,11 @@
     ],
     "region_ids": [
       "reg_britain"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -1641,6 +1773,12 @@
     ],
     "region_ids": [
       "reg_japan"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1723,6 +1861,12 @@
     ],
     "region_ids": [
       "reg_japan"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1759,6 +1903,15 @@
     "primary_skill": "people",
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_technological_diffusion",
+      "concept_frontier_expansion",
+      "concept_urbanization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1836,6 +1989,12 @@
     ],
     "region_ids": [
       "reg_japan"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1912,6 +2071,12 @@
     ],
     "region_ids": [
       "reg_japan"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -1988,6 +2153,12 @@
     ],
     "region_ids": [
       "reg_japan"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2053,6 +2224,13 @@
     ],
     "region_ids": [
       "reg_japan"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2129,6 +2307,12 @@
     ],
     "region_ids": [
       "reg_japan"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2205,6 +2389,12 @@
     ],
     "region_ids": [
       "reg_japan"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2274,6 +2464,12 @@
     "region_ids": [
       "reg_japan",
       "reg_east_asia"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -2343,6 +2539,13 @@
     "region_ids": [
       "reg_japan",
       "reg_east_asia"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -2411,6 +2614,13 @@
     "region_ids": [
       "reg_japan",
       "reg_korea"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2483,6 +2693,12 @@
     ],
     "region_ids": [
       "reg_japan"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2518,6 +2734,13 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2551,6 +2774,13 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2584,6 +2814,13 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2614,6 +2851,13 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2645,6 +2889,12 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -2676,6 +2926,13 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2705,6 +2962,13 @@
     ],
     "region_ids": [
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -2736,6 +3000,12 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -2766,6 +3036,14 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2796,6 +3074,13 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2830,6 +3115,12 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -2861,6 +3152,14 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2894,6 +3193,13 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2921,6 +3227,11 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -2949,6 +3260,13 @@
     "summary_short": "Balkan states attacked Ottoman territories, reshaping regional borders and increasing instability in southeastern Europe.",
     "region_ids": [
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -2988,6 +3306,11 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3028,6 +3351,11 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3067,6 +3395,10 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3100,6 +3432,10 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3142,6 +3478,12 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -3185,6 +3527,10 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3219,6 +3565,11 @@
     "content_origin": "structured_external",
     "region_ids": [
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3255,6 +3606,10 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3292,6 +3647,12 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -3329,6 +3690,10 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3362,6 +3727,10 @@
     "region_ids": [
       "reg_africa",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3399,6 +3768,11 @@
     "region_ids": [
       "reg_asia",
       "reg_global"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -3428,6 +3802,9 @@
     "concept_tags": [
       "state_formation_governance",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3456,6 +3833,9 @@
     },
     "concept_tags": [
       "belief_systems_cultural_exchange"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -3485,6 +3865,12 @@
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -3514,6 +3900,10 @@
     "concept_tags": [
       "war_diplomacy",
       "belief_systems_cultural_exchange"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -3571,6 +3961,9 @@
     "concept_tags": [
       "trade_networks_economic_exchange",
       "belief_systems_cultural_exchange"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -3629,6 +4022,9 @@
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -3666,6 +4062,9 @@
     ],
     "people_ids": [
       "pe_muhammad"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -3695,6 +4094,10 @@
     "concept_tags": [
       "trade_networks_economic_exchange",
       "state_formation_governance"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -3753,6 +4156,10 @@
     "concept_tags": [
       "trade_networks_economic_exchange",
       "technology_industrialization"
+    ],
+    "concept_ids": [
+      "concept_urbanization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -3782,6 +4189,12 @@
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -3811,6 +4224,12 @@
     "concept_tags": [
       "war_diplomacy",
       "state_formation_governance"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -3840,6 +4259,9 @@
     "concept_tags": [
       "trade_networks_economic_exchange",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -3885,6 +4307,10 @@
       "timeline_ordering",
       "causality_chain",
       "what_happened"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -3908,6 +4334,9 @@
       "timeline_ordering",
       "causality_chain",
       "what_happened"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
     ]
   },
   {
@@ -3930,6 +4359,10 @@
       "timeline_ordering",
       "causality_chain",
       "what_happened"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -3952,6 +4385,11 @@
       "timeline_ordering",
       "causality_chain",
       "what_happened"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -4026,6 +4464,9 @@
     "concept_tags": [
       "trade_networks_economic_exchange",
       "belief_systems_cultural_exchange"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -4060,6 +4501,10 @@
     "concept_tags": [
       "empire_imperialism",
       "war_diplomacy"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -4094,6 +4539,11 @@
     "concept_tags": [
       "state_formation_governance",
       "belief_systems_cultural_exchange"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -4161,6 +4611,9 @@
     "concept_tags": [
       "revolution_reform",
       "decolonization_nation_building"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -4195,6 +4648,9 @@
     "concept_tags": [
       "revolution_reform",
       "trade_networks_economic_exchange"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -4229,6 +4685,11 @@
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -4263,6 +4724,10 @@
     "concept_tags": [
       "revolution_reform",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -4297,6 +4762,10 @@
     "concept_tags": [
       "empire_imperialism",
       "war_diplomacy"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -4331,6 +4800,9 @@
     "concept_tags": [
       "decolonization_nation_building",
       "revolution_reform"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -4396,6 +4868,9 @@
     "concept_tags": [
       "decolonization_nation_building",
       "war_diplomacy"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -4420,6 +4895,9 @@
       "movement",
       "economic",
       "industrial"
+    ],
+    "concept_ids": [
+      "concept_urbanization"
     ]
   },
   {
@@ -4473,6 +4951,9 @@
       "invention",
       "technological",
       "industrial"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion"
     ]
   },
   {
@@ -4501,6 +4982,11 @@
       "system",
       "economic",
       "industrial"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -4528,6 +5014,10 @@
       "infrastructure",
       "technological",
       "transport"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
     ]
   },
   {
@@ -4552,6 +5042,9 @@
       "movement",
       "social",
       "labor"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -4580,6 +5073,10 @@
       "infrastructure",
       "technological",
       "transport"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -4607,6 +5104,10 @@
       "invention",
       "technological",
       "communication"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
     ]
   },
   {
@@ -4634,6 +5135,12 @@
       "movement",
       "social",
       "labor"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
     ]
   },
   {
@@ -4661,6 +5168,10 @@
       "publication",
       "political",
       "ideology"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -4686,6 +5197,10 @@
       "law",
       "social",
       "labor"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -4710,6 +5225,12 @@
       "law",
       "social",
       "public_health"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
     ]
   },
   {
@@ -4737,6 +5258,10 @@
       "invention",
       "technological",
       "industrial"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
     ]
   },
   {
@@ -4764,6 +5289,10 @@
       "organization",
       "political",
       "labor"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -4790,6 +5319,12 @@
       "transformation",
       "economic",
       "industrial"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_frontier_expansion",
+      "concept_urbanization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -4817,6 +5352,9 @@
       "adoption",
       "technological",
       "industrial"
+    ],
+    "concept_ids": [
+      "concept_urbanization"
     ]
   },
   {
@@ -4841,6 +5379,10 @@
       "system",
       "economic",
       "industrial"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -4869,7 +5411,11 @@
       "causality",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
+    ]
   },
   {
     "id": "ev_congress_vienna_1815",
@@ -4899,7 +5445,10 @@
       "timeline",
       "causality"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ]
   },
   {
     "id": "ev_concert_of_europe_1815_1848",
@@ -4918,6 +5467,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -4937,6 +5489,13 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -4956,6 +5515,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_urbanization",
+      "concept_military_reform"
     ]
   },
   {
@@ -4976,6 +5540,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -5000,6 +5569,11 @@
       "system",
       "economic",
       "markets"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -5020,6 +5594,12 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -5037,6 +5617,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -5056,6 +5640,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -5076,6 +5664,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -5102,6 +5694,10 @@
       "invention",
       "technological",
       "industrial"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -5128,6 +5724,10 @@
       "invention",
       "technological",
       "industrial"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -5154,6 +5754,11 @@
       "infrastructure",
       "technological",
       "transport"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -5180,6 +5785,11 @@
       "invention",
       "technological",
       "transport"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -5206,6 +5816,12 @@
       "movement",
       "social",
       "labor"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
     ]
   },
   {
@@ -5265,7 +5881,11 @@
       "causality",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ]
   },
   {
     "id": "ev_wwi_balkan_wars_destabilize_1912_1913",
@@ -5336,7 +5956,11 @@
       "lat": 43.8563,
       "lon": 18.4131,
       "region": "Sarajevo, Bosnia and Herzegovina"
-    }
+    },
+    "concept_ids": [
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ]
   },
   {
     "id": "ev_wwi_austria_ultimatum_serbia_1914",
@@ -5397,7 +6021,10 @@
       "causality",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ]
   },
   {
     "id": "ev_wwi_russia_mobilizes_1914",
@@ -5428,7 +6055,10 @@
       "causality",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ]
   },
   {
     "id": "ev_wwi_germany_invades_belgium_1914",
@@ -5502,7 +6132,10 @@
       "lat": 48.95,
       "lon": 4.37,
       "region": "Marne, France"
-    }
+    },
+    "concept_ids": [
+      "concept_military_reform"
+    ]
   },
   {
     "id": "ev_wwi_trench_warfare_entrenched_1914",
@@ -5560,7 +6193,10 @@
       "timeline",
       "causality"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "concept_ids": [
+      "concept_military_reform"
+    ]
   },
   {
     "id": "ev_wwi_gallipoli_campaign_1915",
@@ -5629,7 +6265,10 @@
       "timeline",
       "recognition"
     ],
-    "primary_skill": "recognition"
+    "primary_skill": "recognition",
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ]
   },
   {
     "id": "ev_wwi_verdun_1916",
@@ -5665,7 +6304,10 @@
       "lat": 49.159,
       "lon": 5.384,
       "region": "Verdun, France"
-    }
+    },
+    "concept_ids": [
+      "concept_military_reform"
+    ]
   },
   {
     "id": "ev_wwi_somme_1916",
@@ -5699,7 +6341,10 @@
       "lat": 50.02,
       "lon": 2.65,
       "region": "Somme, France"
-    }
+    },
+    "concept_ids": [
+      "concept_military_reform"
+    ]
   },
   {
     "id": "ev_wwi_jutland_1916",
@@ -5727,7 +6372,10 @@
       "region": "North Sea (off Jutland, Denmark)",
       "lat": 56.5,
       "lon": 6.2
-    }
+    },
+    "concept_ids": [
+      "concept_military_reform"
+    ]
   },
   {
     "id": "ev_wwi_unrestricted_submarine_1917",
@@ -5753,6 +6401,9 @@
     "tags": [
       "military",
       "political"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
     ]
   },
   {
@@ -5779,6 +6430,12 @@
     "tags": [
       "military",
       "political"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
     ]
   },
   {
@@ -5806,6 +6463,9 @@
     "tags": [
       "political",
       "social"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -5833,6 +6493,9 @@
       "political",
       "military",
       "social"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -5909,6 +6572,9 @@
     ],
     "tags": [
       "military"
+    ],
+    "concept_ids": [
+      "concept_urbanization"
     ]
   },
   {
@@ -5939,7 +6605,10 @@
       "region": "Compiègne, France",
       "lat": 49.415,
       "lon": 2.826
-    }
+    },
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ]
   },
   {
     "id": "ev_wwi_paris_peace_conference_1919",
@@ -6047,6 +6716,10 @@
     ],
     "tags": [
       "military"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -6120,6 +6793,11 @@
     "tags": [
       "military",
       "technological"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
     ]
   },
   {
@@ -6196,6 +6874,10 @@
     "tags": [
       "social",
       "political"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
     ]
   },
   {
@@ -6220,6 +6902,9 @@
     ],
     "tags": [
       "military"
+    ],
+    "concept_ids": [
+      "concept_urbanization"
     ]
   },
   {
@@ -6246,6 +6931,9 @@
     "tags": [
       "military",
       "political"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -6268,6 +6956,9 @@
     ],
     "tags": [
       "political"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -6340,6 +7031,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -6397,6 +7091,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -6454,6 +7151,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -6481,6 +7181,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch"
     ]
   },
   {
@@ -6507,6 +7210,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -6535,6 +7242,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_military_reform"
     ]
   },
   {
@@ -6621,6 +7332,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
     ]
   },
   {
@@ -6649,6 +7363,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
     ]
   },
   {
@@ -6676,6 +7393,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
     ]
   },
   {
@@ -6702,6 +7422,11 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_frontier_expansion",
+      "concept_urbanization"
     ]
   },
   {
@@ -6735,6 +7460,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_military_reform"
     ]
   },
   {
@@ -6794,6 +7522,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_military_reform"
     ]
   },
   {
@@ -6827,6 +7558,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_urbanization",
+      "concept_military_reform"
     ]
   },
   {
@@ -6855,6 +7590,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -6883,6 +7621,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
     ]
   },
   {
@@ -6910,6 +7652,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_urbanization"
     ]
   },
   {
@@ -6936,6 +7681,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_military_reform"
     ]
   },
   {
@@ -6988,6 +7736,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_military_reform"
     ]
   },
   {
@@ -7014,6 +7766,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_military_reform"
     ]
   },
   {
@@ -7103,6 +7858,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_military_reform"
     ]
   },
   {
@@ -7180,6 +7938,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch"
     ]
   },
   {
@@ -7268,6 +8029,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
     ]
   },
   {
@@ -7293,6 +8057,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -7371,6 +8138,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
     ]
   },
   {
@@ -7460,6 +8230,9 @@
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -7496,6 +8269,10 @@
     ],
     "concept_tags": [
       "state_formation_governance"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
     ]
   },
   {
@@ -7534,6 +8311,14 @@
     "concept_tags": [
       "war_diplomacy",
       "belief_systems_cultural_exchange"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -7571,6 +8356,9 @@
     "concept_tags": [
       "war_diplomacy",
       "state_formation_governance"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -7608,6 +8396,10 @@
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -7646,6 +8438,11 @@
     "concept_tags": [
       "state_formation_governance",
       "belief_systems_cultural_exchange"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_religious_diffusion",
+      "concept_succession_crisis"
     ]
   },
   {
@@ -7684,6 +8481,13 @@
     "concept_tags": [
       "state_formation_governance",
       "war_diplomacy"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -7722,6 +8526,13 @@
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -7759,6 +8570,13 @@
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -7796,6 +8614,10 @@
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -7834,6 +8656,13 @@
     "concept_tags": [
       "empire_imperialism",
       "trade_networks_economic_exchange"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -7871,6 +8700,12 @@
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -7906,6 +8741,10 @@
     "concept_tags": [
       "revolution_reform",
       "state_formation_governance"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -7924,6 +8763,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -7942,6 +8784,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -7958,6 +8803,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -7974,6 +8822,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -7992,6 +8844,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8008,6 +8864,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8024,6 +8883,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8040,6 +8902,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8056,6 +8922,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8074,6 +8943,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8090,6 +8963,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8108,6 +8984,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8126,6 +9006,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8144,6 +9027,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8162,6 +9048,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8180,6 +9069,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8198,6 +9090,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8218,6 +9114,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8234,6 +9133,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8252,6 +9154,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8270,6 +9175,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8289,6 +9197,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8307,6 +9218,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8325,6 +9239,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8343,6 +9260,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8362,6 +9283,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8380,6 +9304,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8398,6 +9325,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8416,6 +9346,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8434,6 +9367,9 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8453,6 +9389,10 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8482,6 +9422,9 @@
     "related_event_ids": [
       "ev_han_protectorate_western_regions",
       "ev_kushan_trade_mediation"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -8508,6 +9451,13 @@
     "summary_short": "Han protectorate in Western Regions strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_zhang_qian_missions_open_routes"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8538,6 +9488,13 @@
       "ev_zhang_qian_missions_open_routes",
       "ev_buddhism_spreads_to_china",
       "ev_sogdian_merchant_networks_expand"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -8567,6 +9524,10 @@
     "related_event_ids": [
       "ev_kushan_trade_mediation",
       "ev_faxian_travels_india_china"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -8589,7 +9550,11 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Tarim oasis states support caravan networks strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Tarim oasis states support caravan networks strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
+    ]
   },
   {
     "id": "ev_papermaking_central_asia_transfer",
@@ -8612,7 +9577,11 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Early papermaking techniques circulate westward strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Early papermaking techniques circulate westward strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ]
   },
   {
     "id": "ev_sogdian_merchant_networks_expand",
@@ -8640,6 +9609,9 @@
       "ev_kushan_trade_mediation",
       "ev_tang_cosmopolitan_changan",
       "ev_mongol_trade_integration"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -8669,6 +9641,10 @@
     "summary_short": "Faxian travels between India and China strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_buddhism_spreads_to_china"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -8692,7 +9668,10 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Sasanian Gulf-Indian Ocean trade intensifies strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Sasanian Gulf-Indian Ocean trade intensifies strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ]
   },
   {
     "id": "ev_silk_road_post_roman_shift",
@@ -8716,7 +9695,14 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Post-Roman shifts reroute Eurasian commerce strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Post-Roman shifts reroute Eurasian commerce strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ]
   },
   {
     "id": "ev_turkic_khaganate_trade_security",
@@ -8739,7 +9725,14 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Turkic Khaganate secures steppe routes strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Turkic Khaganate secures steppe routes strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ]
   },
   {
     "id": "ev_tang_cosmopolitan_changan",
@@ -8769,6 +9762,10 @@
       "ev_sogdian_merchant_networks_expand",
       "ev_talas_papermaking_transfer",
       "ev_song_maritime_commerce_expands"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -8794,7 +9791,14 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Tibetan Empire links plateau exchange routes strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Tibetan Empire links plateau exchange routes strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ]
   },
   {
     "id": "ev_islamic_caliphate_trade_expansion",
@@ -8823,6 +9827,11 @@
     "related_event_ids": [
       "ev_swahili_coast_urban_growth",
       "ev_mansa_musa_hajj_gold_flows"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion",
+      "concept_frontier_expansion"
     ]
   },
   {
@@ -8847,7 +9856,13 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Umayyad coinage reforms aid long-distance trade strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Umayyad coinage reforms aid long-distance trade strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_urbanization",
+      "concept_military_reform"
+    ]
   },
   {
     "id": "ev_talas_papermaking_transfer",
@@ -8877,6 +9892,14 @@
     "related_event_ids": [
       "ev_tang_cosmopolitan_changan",
       "ev_baghdad_translation_movement"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_succession_crisis",
+      "concept_technological_diffusion",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -8906,6 +9929,11 @@
     "summary_short": "Baghdad translation movement grows strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_talas_papermaking_transfer"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion",
+      "concept_technological_diffusion"
     ]
   },
   {
@@ -8933,6 +9961,10 @@
     "summary_short": "Swahili coast city networks expand strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_islamic_caliphate_trade_expansion"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
     ]
   },
   {
@@ -8956,7 +9988,14 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Ghaznavid corridors connect Iran and India strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Ghaznavid corridors connect Iran and India strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ]
   },
   {
     "id": "ev_song_maritime_commerce_expands",
@@ -8985,6 +10024,10 @@
       "ev_tang_cosmopolitan_changan",
       "ev_zheng_he_voyages_begin",
       "ev_portuguese_arrive_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
     ]
   },
   {
@@ -9010,7 +10053,15 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Crusader-era contact increases Mediterranean-Asian exchange strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Crusader-era contact increases Mediterranean-Asian exchange strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ]
   },
   {
     "id": "ev_mansa_musa_hajj_gold_flows",
@@ -9038,6 +10089,10 @@
     "summary_short": "Mansa Musa hajj publicizes trans-Saharan wealth strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_islamic_caliphate_trade_expansion"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
     ]
   },
   {
@@ -9071,6 +10126,13 @@
       "ev_sogdian_merchant_networks_expand",
       "ev_marco_polo_travels",
       "ev_black_death_trade_route_transmission"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -9100,6 +10162,9 @@
     "summary_short": "Marco Polo travels in Yuan domains strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_mongol_trade_integration"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -9125,7 +10190,11 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Ilkhanid court promotes cross-cultural scholarship strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Ilkhanid court promotes cross-cultural scholarship strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ]
   },
   {
     "id": "ev_black_death_trade_route_transmission",
@@ -9155,6 +10224,9 @@
       "ev_mongol_trade_integration",
       "ev_ming_maritime_policy_reset",
       "ev_ottoman_control_eastern_mediterranean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -9182,7 +10254,11 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Ibn Battuta documents Afro-Eurasian circuits strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Ibn Battuta documents Afro-Eurasian circuits strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ]
   },
   {
     "id": "ev_ming_maritime_policy_reset",
@@ -9209,6 +10285,13 @@
     "summary_short": "Early Ming resets maritime policy and tribute strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_black_death_trade_route_transmission"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -9234,7 +10317,11 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Timurid patronage links Persianate scholarly worlds strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Timurid patronage links Persianate scholarly worlds strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ]
   },
   {
     "id": "ev_zheng_he_voyages_begin",
@@ -9267,6 +10354,13 @@
       "ev_song_maritime_commerce_expands",
       "ev_portuguese_arrive_indian_ocean",
       "ev_coffee_trade_red_sea"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -9291,7 +10385,14 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Mamluks mediate Red Sea-Indian Ocean commerce strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Mamluks mediate Red Sea-Indian Ocean commerce strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ]
   },
   {
     "id": "ev_ottoman_control_eastern_mediterranean",
@@ -9321,6 +10422,15 @@
     "summary_short": "Ottoman expansion reshapes eastern Mediterranean routes strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_black_death_trade_route_transmission"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
     ]
   },
   {
@@ -9354,6 +10464,13 @@
       "ev_zheng_he_voyages_begin",
       "ev_silver_flows_asia_via_oceans",
       "ev_steamship_suez_accelerates_exchange"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ]
   },
   {
@@ -9381,7 +10498,15 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Safavid-Ottoman-Mughal rivalry and exchange strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Safavid-Ottoman-Mughal rivalry and exchange strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ]
   },
   {
     "id": "ev_silver_flows_asia_via_oceans",
@@ -9408,6 +10533,10 @@
     "summary_short": "Global silver flows intensify Asian markets strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_portuguese_arrive_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
     ]
   },
   {
@@ -9435,6 +10564,9 @@
     "summary_short": "Coffee trade links Red Sea and Indian Ocean ports strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_zheng_he_voyages_begin"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ]
   },
   {
@@ -9459,7 +10591,15 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Qing frontier policy regulates overland trade strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Qing frontier policy regulates overland trade strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ]
   },
   {
     "id": "ev_russian_steppe_expansion_trade",
@@ -9484,7 +10624,15 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Russian expansion alters steppe exchanges strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Russian expansion alters steppe exchanges strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ]
   },
   {
     "id": "ev_chintz_and_textile_diffusion",
@@ -9510,7 +10658,12 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "Indian cotton textiles reshape Afro-Eurasian consumption strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "Indian cotton textiles reshape Afro-Eurasian consumption strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ]
   },
   {
     "id": "ev_cholera_trade_routes_1817",
@@ -9534,7 +10687,10 @@
       "what_happened",
       "cause_and_effect"
     ],
-    "summary_short": "First cholera pandemic spreads via trade routes strengthened interregional connections across Afro-Eurasia."
+    "summary_short": "First cholera pandemic spreads via trade routes strengthened interregional connections across Afro-Eurasia.",
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ]
   },
   {
     "id": "ev_steamship_suez_accelerates_exchange",
@@ -9562,6 +10718,10 @@
     "summary_short": "Steamship-Suez era accelerates Afro-Eurasian exchange strengthened interregional connections across Afro-Eurasia.",
     "related_event_ids": [
       "ev_portuguese_arrive_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
     ]
   }
 ]

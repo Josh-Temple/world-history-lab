@@ -13,6 +13,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte",
@@ -61,6 +64,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [
       "revolution_reform",
       "state_formation_governance"
@@ -112,6 +119,9 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [
       "revolution_reform",
       "trade_networks_economic_exchange"
@@ -160,6 +170,12 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -200,6 +216,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
@@ -250,6 +269,10 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "belief_systems_cultural_exchange"
@@ -290,6 +313,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -332,6 +358,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -378,6 +407,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -422,6 +452,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -463,6 +496,7 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [
       "state_formation_governance",
       "empire_imperialism"
@@ -503,6 +537,11 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_frontier_expansion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -554,6 +593,11 @@
       "religion",
       "trade"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion",
+      "concept_technological_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_al_khwarizmi"
@@ -602,6 +646,9 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [
       "decolonization_nation_building",
       "war_diplomacy"
@@ -653,6 +700,14 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "belief_systems_cultural_exchange"
@@ -700,6 +755,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -753,6 +811,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
@@ -804,6 +865,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -852,6 +916,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill",
@@ -899,6 +967,11 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -945,6 +1018,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_urbanization",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -999,6 +1076,12 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -1053,6 +1136,13 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -1107,6 +1197,10 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [
       "empire_imperialism",
       "war_diplomacy"
@@ -1151,6 +1245,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_henry_bessemer"
@@ -1193,6 +1291,15 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_technological_diffusion",
+      "concept_frontier_expansion",
+      "concept_urbanization",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -1240,6 +1347,9 @@
     "themes": [
       "migration",
       "trade"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -1293,6 +1403,15 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -1334,6 +1453,9 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [
       "belief_systems_cultural_exchange"
     ],
@@ -1380,6 +1502,10 @@
       "trade",
       "migration"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [
@@ -1420,6 +1546,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -1459,6 +1588,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -1500,6 +1632,7 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [
       "state_formation_governance",
       "belief_systems_cultural_exchange"
@@ -1548,6 +1681,11 @@
       "technology",
       "economic_change"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -1591,6 +1729,9 @@
       "migration",
       "trade"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -1628,6 +1769,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -1666,6 +1811,10 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -1713,6 +1862,9 @@
       "trade",
       "migration"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [
@@ -1756,6 +1908,9 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "empire_imperialism"
@@ -1796,6 +1951,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_maximilien_robespierre",
@@ -1837,6 +1995,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_karl_marx",
@@ -1879,6 +2041,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -1934,6 +2099,12 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -1992,6 +2163,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -2045,6 +2219,13 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -2097,6 +2278,13 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [
       "empire_imperialism",
       "trade_networks_economic_exchange"
@@ -2153,6 +2341,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "empire_imperialism"
@@ -2207,6 +2399,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
@@ -2257,6 +2453,9 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
@@ -2297,6 +2496,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -2344,6 +2547,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [
       "state_formation_governance"
     ],
@@ -2389,6 +2596,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_paul_barras"
@@ -2428,6 +2639,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte",
@@ -2468,6 +2683,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_eli_whitney"
@@ -2509,6 +2728,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -2546,6 +2771,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_paul_barras"
@@ -2585,6 +2813,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_emmanuel_joseph_sieyes"
@@ -2635,6 +2866,10 @@
     "themes": [
       "industrialization"
     ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -2679,6 +2914,14 @@
       "religion",
       "war"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -2720,6 +2963,9 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [
       "state_formation_governance",
       "empire_imperialism"
@@ -2760,6 +3006,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_georges_danton",
@@ -2800,6 +3049,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -2845,6 +3097,11 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_religious_diffusion",
+      "concept_succession_crisis"
+    ],
     "concept_tags": [
       "state_formation_governance",
       "belief_systems_cultural_exchange"
@@ -2906,6 +3163,10 @@
     ],
     "themes": [
       "revolution"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -2972,6 +3233,7 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -3013,6 +3275,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -3050,6 +3316,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -3089,6 +3358,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_thomas_edison",
@@ -3134,6 +3406,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -3187,6 +3462,12 @@
     "themes": [
       "revolution",
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -3261,6 +3542,12 @@
       "revolution",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -3318,6 +3605,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_marie_antoinette"
@@ -3369,6 +3659,11 @@
       "migration",
       "industrialization"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_karl_marx",
@@ -3414,6 +3709,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -3457,6 +3756,11 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_richard_arkwright"
@@ -3506,6 +3810,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -3557,6 +3864,10 @@
       "religion",
       "migration"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_faxian"
@@ -3598,6 +3909,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_maximilien_robespierre"
@@ -3637,6 +3951,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_lafayette"
@@ -3676,6 +3994,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_karl_marx",
@@ -3728,6 +4050,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
@@ -3773,6 +4098,9 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi",
@@ -3822,6 +4150,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -3859,6 +4193,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_winston_churchill"
@@ -3903,6 +4238,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -3960,6 +4296,13 @@
       "trade",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -3997,6 +4340,12 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -4052,6 +4401,11 @@
     "themes": [
       "economic_change"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -4090,6 +4444,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -4127,6 +4484,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -4181,6 +4541,9 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [
       "revolution_reform",
       "decolonization_nation_building"
@@ -4230,6 +4593,13 @@
       "trade",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [
@@ -4273,6 +4643,9 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "belief_systems_cultural_exchange"
@@ -4313,6 +4686,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_jacques_rene_hebert"
@@ -4360,6 +4736,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [
       "belief_systems_cultural_exchange",
       "state_formation_governance"
@@ -4407,6 +4786,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler"
@@ -4450,6 +4832,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -4501,6 +4884,10 @@
       "migration",
       "religion"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_ibn_battuta"
@@ -4544,6 +4931,10 @@
     "themes": [
       "technology",
       "trade"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -4589,6 +4980,11 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -4633,6 +5029,10 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -4679,6 +5079,10 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -4728,6 +5132,12 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_menelik_ii"
@@ -4784,6 +5194,13 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_otto_von_bismarck"
@@ -4832,6 +5249,13 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -4876,6 +5300,13 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -4919,6 +5350,14 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -4966,6 +5405,13 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_queen_victoria"
@@ -5012,6 +5458,10 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_cecil_rhodes"
@@ -5063,6 +5513,11 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_leopold_ii",
@@ -5115,6 +5570,10 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_queen_victoria"
@@ -5167,6 +5626,13 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5212,6 +5678,13 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -5259,6 +5732,12 @@
     "themes": [
       "war"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5301,6 +5780,11 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5352,6 +5836,13 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_leopold_ii",
@@ -5398,6 +5889,10 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5447,6 +5942,12 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5500,6 +6001,12 @@
     "themes": [
       "war"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5549,6 +6056,12 @@
     "themes": [
       "war"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5593,6 +6106,13 @@
     "themes": [
       "war"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5635,6 +6155,11 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_queen_victoria"
@@ -5688,6 +6213,14 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5732,6 +6265,13 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5774,6 +6314,10 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5818,6 +6362,11 @@
       "timeline_ordering"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -5869,6 +6418,7 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [
       "decolonization_nation_building",
       "state_formation_governance"
@@ -5921,6 +6471,10 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [
       "revolution_reform",
       "empire_imperialism"
@@ -5965,6 +6519,11 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_karl_benz"
@@ -6011,6 +6570,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler"
@@ -6063,6 +6625,11 @@
       "religion",
       "migration"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [
@@ -6103,6 +6670,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -6151,6 +6719,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_benito_mussolini"
@@ -6195,6 +6764,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_emperor_hirohito",
@@ -6249,6 +6819,13 @@
       "trade",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_kanishka_i"
@@ -6292,6 +6869,12 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_robert_owen"
@@ -6338,6 +6921,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_antoine_saint_just"
@@ -6377,6 +6963,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_maximilien_robespierre"
@@ -6416,6 +7005,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -6460,6 +7053,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_lazare_carnot"
@@ -6499,6 +7096,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_charles_de_gaulle"
@@ -6542,6 +7140,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_george_stephenson",
@@ -6593,6 +7195,10 @@
     "themes": [
       "trade"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -6630,6 +7236,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -6676,6 +7285,9 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "belief_systems_cultural_exchange"
@@ -6724,6 +7336,13 @@
       "trade",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -6765,6 +7384,10 @@
     "themes": [
       "trade",
       "religion"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -6813,6 +7436,9 @@
       "trade",
       "migration"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_marco_polo"
@@ -6854,6 +7480,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -6896,6 +7526,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_henry_ford"
@@ -6938,6 +7572,12 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_annie_besant"
@@ -6985,6 +7625,12 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "state_formation_governance"
@@ -7038,6 +7684,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -7090,6 +7742,13 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -7149,6 +7808,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -7206,6 +7871,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -7258,6 +7929,13 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -7317,6 +7995,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -7373,6 +8057,12 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -7433,6 +8123,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -7489,6 +8185,12 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -7550,6 +8252,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -7602,6 +8310,13 @@
     ],
     "themes": [
       "war"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -7656,6 +8371,12 @@
     "themes": [
       "war"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -7707,6 +8428,13 @@
       "trade",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [
@@ -7746,6 +8474,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -7787,6 +8519,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -7836,6 +8569,12 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -7883,6 +8622,13 @@
       "trade",
       "migration",
       "war"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -7934,6 +8680,11 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [
       "state_formation_governance",
       "belief_systems_cultural_exchange"
@@ -7978,6 +8729,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_neville_chamberlain",
@@ -8035,6 +8789,12 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -8110,6 +8870,11 @@
     "themes": [
       "imperialism"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -8164,6 +8929,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_napoleon_bonaparte"
@@ -8211,6 +8980,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_emmanuel_joseph_sieyes"
@@ -8250,6 +9023,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_georges_danton"
@@ -8289,6 +9065,11 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -8333,6 +9114,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_charles_alexandre_de_calonne"
@@ -8372,6 +9156,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -8416,6 +9201,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_georgy_zhukov",
@@ -8462,6 +9250,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -8513,6 +9302,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_dwight_eisenhower",
@@ -8567,6 +9357,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_dwight_eisenhower",
@@ -8620,6 +9411,10 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [
       "empire_imperialism",
       "war_diplomacy"
@@ -8671,6 +9466,15 @@
       "war",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_mehmed_ii"
@@ -8719,6 +9523,9 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [
       "decolonization_nation_building",
       "revolution_reform"
@@ -8769,6 +9576,10 @@
       "technology",
       "trade"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -8806,6 +9617,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -8850,6 +9664,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_hideki_tojo",
@@ -8905,6 +9722,10 @@
     "themes": [
       "industrialization"
     ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -8948,6 +9769,13 @@
       "trade",
       "war",
       "migration"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -8993,6 +9821,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -9043,6 +9872,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9080,6 +9915,12 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9126,6 +9967,7 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [
       "state_formation_governance"
     ],
@@ -9172,6 +10014,11 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "empire_imperialism"
@@ -9223,6 +10070,14 @@
       "trade",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9260,6 +10115,11 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9314,6 +10174,13 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_technological_diffusion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9365,6 +10232,10 @@
     ],
     "themes": [
       "revolution"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -9425,6 +10296,13 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9474,6 +10352,13 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [
       "state_formation_governance",
       "war_diplomacy"
@@ -9528,6 +10413,14 @@
       "state_power",
       "migration"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9570,6 +10463,14 @@
       "trade",
       "war",
       "religion"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion",
+      "concept_succession_crisis",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -9616,6 +10517,9 @@
     "themes": [
       "trade"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9653,6 +10557,12 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_frontier_expansion",
+      "concept_urbanization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9701,6 +10611,10 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_georges_danton"
@@ -9750,6 +10664,13 @@
       "trade",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -9792,6 +10713,10 @@
     "themes": [
       "economic_change",
       "trade"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -9836,6 +10761,9 @@
     "themes": [
       "trade",
       "migration"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -9882,6 +10810,10 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_urbanization",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "technology_industrialization"
@@ -9927,6 +10859,10 @@
     "themes": [
       "trade",
       "technology"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -9974,6 +10910,13 @@
       "trade",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_songtsen_gampo"
@@ -10013,6 +10956,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_georgy_zhukov",
@@ -10060,6 +11004,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -10111,6 +11058,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -10155,6 +11105,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_joseph_stalin",
@@ -10199,6 +11152,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_james_hargreaves"
@@ -10245,6 +11199,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -10285,6 +11245,12 @@
     ],
     "themes": [
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [],
@@ -10327,6 +11293,12 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -10364,6 +11336,11 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_urbanization",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -10405,6 +11382,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_richard_trevithick"
@@ -10457,6 +11438,10 @@
       "technology",
       "trade"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [
@@ -10496,6 +11481,11 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_george_stephenson"
@@ -10553,6 +11543,10 @@
     ],
     "themes": [
       "revolution"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -10614,6 +11608,10 @@
       "trade",
       "migration"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [
@@ -10658,6 +11656,14 @@
       "war",
       "technology",
       "trade"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_succession_crisis",
+      "concept_technological_diffusion",
+      "concept_frontier_expansion",
+      "concept_military_reform"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -10708,6 +11714,10 @@
       "migration",
       "religion"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [
@@ -10753,6 +11763,10 @@
     "region_ids": [],
     "question_types": [],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [
       "trade_networks_economic_exchange",
       "state_formation_governance"
@@ -10793,6 +11807,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -10837,6 +11855,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_samuel_morse"
@@ -10893,6 +11915,12 @@
     "themes": [
       "revolution",
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [
@@ -10962,6 +11990,10 @@
     "themes": [
       "revolution"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_maximilien_robespierre"
@@ -11020,6 +12052,10 @@
       "technology",
       "trade"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_timur"
@@ -11066,6 +12102,7 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [
       "state_formation_governance"
     ],
@@ -11117,6 +12154,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion"
+    ],
     "concept_tags": [
       "war_diplomacy",
       "state_formation_governance"
@@ -11163,6 +12203,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi"
@@ -11207,6 +12250,13 @@
       "trade",
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -11250,6 +12300,12 @@
       "economic_change",
       "trade"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_urbanization",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -11287,6 +12343,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_harry_s_truman",
@@ -11331,6 +12390,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt"
@@ -11376,6 +12438,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -11418,6 +12484,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -11455,6 +12524,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_adolf_hitler",
@@ -11500,6 +12572,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_jacques_pierre_brissot"
@@ -11539,6 +12614,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -11586,6 +12665,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_richard_arkwright"
@@ -11631,6 +12714,13 @@
     "themes": [
       "state_power"
     ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -11672,6 +12762,10 @@
     "themes": [
       "industrialization"
     ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -11709,6 +12803,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_james_watt"
@@ -11753,6 +12850,7 @@
       "what_happened"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_louis_xvi",
@@ -11795,6 +12893,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -11837,6 +12936,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_hussein_bin_ali",
@@ -11881,6 +12983,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -11925,6 +13030,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_ferdinand_foch"
@@ -11974,6 +13082,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_franz_ferdinand",
@@ -12018,6 +13130,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franz_joseph_i"
@@ -12061,6 +13174,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_david_lloyd_george"
@@ -12104,6 +13218,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -12151,6 +13266,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_helmuth_von_moltke_younger"
@@ -12194,6 +13312,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_vladimir_lenin",
@@ -12238,6 +13359,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_nikolai_brusilov"
@@ -12281,6 +13405,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -12328,6 +13455,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_mustafa_kemal_ataturk",
@@ -12373,6 +13501,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_erich_ludendorff",
@@ -12418,6 +13547,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_kaiser_wilhelm_ii",
@@ -12462,6 +13594,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_helmuth_von_moltke_younger"
@@ -12507,6 +13640,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_david_lloyd_george",
@@ -12553,6 +13687,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_ferdinand_foch",
@@ -12602,6 +13739,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_vittorio_orlando"
@@ -12645,6 +13783,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -12691,6 +13830,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -12732,6 +13874,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -12774,6 +13917,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_kaiser_wilhelm_ii"
@@ -12819,6 +13966,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_mehmed_v",
@@ -12864,6 +14012,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_woodrow_wilson",
@@ -12914,6 +14063,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_tsar_nicholas_ii"
@@ -12957,6 +14109,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_tsar_nicholas_ii",
@@ -13002,6 +14157,11 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -13048,6 +14208,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_douglas_haig"
@@ -13091,6 +14254,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -13132,6 +14296,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -13173,6 +14341,10 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_paul_von_hindenburg",
@@ -13215,6 +14387,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_vladimir_lenin"
@@ -13264,6 +14437,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_woodrow_wilson",
@@ -13311,6 +14485,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -13354,6 +14529,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_alfred_von_tirpitz"
@@ -13398,6 +14576,12 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_technological_diffusion",
+      "concept_urbanization",
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_woodrow_wilson"
@@ -13449,6 +14633,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_military_reform"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_philippe_petain"
@@ -13493,6 +14680,9 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -13534,6 +14724,7 @@
       "cause_and_effect"
     ],
     "themes": [],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_franklin_d_roosevelt",
@@ -13586,6 +14777,9 @@
       "trade",
       "migration"
     ],
+    "concept_ids": [
+      "concept_trade_network_expansion"
+    ],
     "concept_tags": [],
     "people_ids": [
       "pe_zhang_qian"
@@ -13635,6 +14829,13 @@
       "trade",
       "migration",
       "state_power"
+    ],
+    "concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization",
+      "concept_succession_crisis",
+      "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
     "people_ids": [
