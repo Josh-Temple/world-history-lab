@@ -2,6 +2,21 @@
 
 World History Lab is a personal learning project for studying world history with practice formats that go beyond standard flashcards. The goal is to build stronger understanding of chronology, causality, and historical connections by using structured data that can power multiple mini apps in one repository.
 
+
+## Recent updates (2026-05-14 · historical patterns explorer + concept metadata layer)
+
+- Added new concept-centered learning mode at `apps/historical-patterns/` with:
+  - concept selector,
+  - concept summary panel,
+  - comparative event cards sorted chronologically for each selected pattern.
+- Added reusable concept registry at `data/concepts.json` and integrated event-level `concept_ids` usage for abstraction-first learning flows.
+- Backfilled `concept_ids` on existing events in `data/events.json` to seed cross-era pattern exploration at scale.
+- Extended validation in `scripts/validate-data.mjs` to enforce `concept_ids` shape, duplicate prevention, and concept-reference integrity.
+- Extended derive pipeline in `scripts/derive.mjs` to preserve `concept_ids` in normalized events and generate concept indexes:
+  - `derived/index.events_by_concept.json`
+  - `data/derived/index.events_by_concept.json`
+- Added root discoverability link for **Historical Patterns Explorer** in `index.html`.
+
 ## Core idea / approach
 
 - **One shared dataset, many mini apps**: this repository is intended to host multiple mini apps in the same repo, all using the same core data and schemas.

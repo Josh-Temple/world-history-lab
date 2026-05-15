@@ -103,18 +103,21 @@ export async function validateData({ log = false } = {}) {
   const errors = [];
   const warnings = [];
 
-  const [events, people, unitRegistry, metadata] = await Promise.all([
+  const [events, people, unitRegistry, metadata, regions, concepts] = await Promise.all([
     readJson("data/events.json"),
     readJson("data/people.json"),
     readJson("data/units/index.json"),
     readJson("data/metadata.json"),
+    readJson("data/regions.json"),
+    readJson("data/concepts.json"),
   ]);
-  const regions = await readJson("data/regions.json");
 
   const eventList = asArray(events);
   const peopleList = asArray(people);
   const regionList = asArray(regions);
+  const conceptList = asArray(concepts);
   const regionIdSet = new Set((regionList || []).map((region) => (isObject(region) ? region.id : null)).filter((id) => typeof id === "string"));
+  const conceptIdSet = new Set((conceptList || []).map((concept) => (isObject(concept) ? concept.id : null)).filter((id) => typeof id === "string"));
 
   if (!isObject(metadata)) {
     errors.push("data/metadata.json must be an object.");
@@ -127,6 +130,9 @@ export async function validateData({ log = false } = {}) {
   }
   if (!regionList) {
     errors.push("data/regions.json must be an array.");
+  }
+  if (!conceptList) {
+    errors.push("data/concepts.json must be an array.");
   }
   if (!isObject(unitRegistry) || !Array.isArray(unitRegistry.units)) {
     errors.push("data/units/index.json must be an object with a units array.");
@@ -204,6 +210,27 @@ export async function validateData({ log = false } = {}) {
             peopleIdsSeen.add(personId);
             if (!personIdSet.has(personId)) {
               errors.push(`Event ${eventLabel} references unknown person id in people_ids: ${personId}`);
+            }
+          }
+        }
+      }
+
+      if (event.concept_ids !== undefined) {
+        if (!Array.isArray(event.concept_ids)) {
+          errors.push(`Event ${eventLabel} has invalid concept_ids; expected an array.`);
+        } else {
+          const conceptIdsSeen = new Set();
+          for (const conceptId of event.concept_ids) {
+            if (typeof conceptId !== "string") {
+              errors.push(`Event ${eventLabel} has a non-string concept_ids entry.`);
+              continue;
+            }
+            if (conceptIdsSeen.has(conceptId)) {
+              errors.push(`Event ${eventLabel} includes duplicate concept_ids entry: ${conceptId}`);
+            }
+            conceptIdsSeen.add(conceptId);
+            if (!conceptIdSet.has(conceptId)) {
+              errors.push(`Event ${eventLabel} references unknown concept id in concept_ids: ${conceptId}`);
             }
           }
         }

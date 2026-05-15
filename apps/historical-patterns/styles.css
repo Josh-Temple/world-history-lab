@@ -1,0 +1,10 @@
+body { font-family: Inter, system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+header { padding: 16px; border-bottom: 1px solid #dbe2ea; background: #fff; position: sticky; top: 0; }
+header h1 { margin: 0 0 8px; font-size: clamp(1.25rem, 3vw, 1.8rem); }
+header label { font-size: .9rem; color: #475569; margin-right: 8px; }
+#concept-select { width: min(460px, 100%); padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; }
+main { max-width: 1000px; margin: auto; padding: 16px; }
+#concept-summary { background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+.event-card { background: #fff; border: 1px solid #ddd; padding: 12px; margin-bottom: 12px; border-radius: 10px; }
+.event-card h3 { margin: 0 0 6px; }
+.meta { color: #475569; font-size: .9rem; }
