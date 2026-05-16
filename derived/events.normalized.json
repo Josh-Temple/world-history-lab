@@ -22,6 +22,8 @@
       "pe_paul_barras"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -76,6 +78,10 @@
       "pe_abu_al_abbas_al_saffah"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_tours_732"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -128,6 +134,12 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_haitian_revolution_independence_1804"
+    ],
+    "consequence_event_ids": [
+      "ev_qing_first_opium_war_1839"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -182,6 +194,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -225,6 +239,14 @@
       "pe_franklin_d_roosevelt"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_of_britain_1940",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_berlin_offensive_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -279,6 +301,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -319,6 +343,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -367,6 +393,14 @@
       "pe_emperor_hirohito"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_island_hopping_campaign_1943_1945",
+      "ev_potsdam_conference_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_atomic_bomb_nagasaki_1945",
+      "ev_japan_surrenders_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -414,6 +448,12 @@
       "pe_emperor_hirohito"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_atomic_bomb_hiroshima_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_japan_surrenders_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -458,6 +498,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -503,6 +545,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -549,6 +593,12 @@
       "pe_ernst_kaltenbrunner"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wannsee_conference_1942"
+    ],
+    "consequence_event_ids": [
+      "ev_nuremberg_trials_begin_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -605,6 +655,8 @@
     "related_event_ids": [
       "ev_talas_papermaking_transfer"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -655,6 +707,11 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_india_independence_1947",
+      "ev_wwi_league_of_nations_1920"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -717,6 +774,12 @@
       "pe_ali_ibn_abi_talib"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_constitution_medina_622"
+    ],
+    "consequence_event_ids": [
+      "ev_treaty_hudaybiyyah_628"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -766,6 +829,14 @@
       "pe_bernard_montgomery"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_guadalcanal_campaign_1942_1943",
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945",
+      "ev_yalta_conference_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -822,6 +893,12 @@
       "pe_erwin_rommel"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_operation_torch_1942"
+    ],
+    "consequence_event_ids": [
+      "ev_italy_surrenders_1943"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -876,6 +953,14 @@
       "pe_isoroku_yamamoto"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_pearl_harbor_1941",
+      "ev_united_states_enters_war_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_guadalcanal_campaign_1942_1943",
+      "ev_island_hopping_campaign_1943_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -926,6 +1011,14 @@
       "pe_adolf_hitler"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_fall_of_france_1940",
+      "ev_france_britain_declare_war_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_overlord_d_day_1944"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -977,6 +1070,10 @@
       "pe_napoleon_bonaparte"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_reign_of_terror_1793_1794"
+    ],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1029,6 +1126,13 @@
       "pe_adolf_hitler"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_operation_barbarossa_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_bagration_1944",
+      "ev_soviet_counteroffensives_1943_1944"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -1090,6 +1194,12 @@
       "pe_muawiya_i"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_conquest_egypt_642"
+    ],
+    "consequence_event_ids": [
+      "ev_abbasid_revolution_750"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -1152,6 +1262,12 @@
       "pe_khalid_ibn_al_walid"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_ridda_wars_begin_632"
+    ],
+    "consequence_event_ids": [
+      "ev_conquest_jerusalem_638"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -1207,6 +1323,12 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_indian_revolt_1857"
+    ],
+    "consequence_event_ids": [
+      "ev_pan_african_congress_1945"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -1254,6 +1376,11 @@
       "pe_henry_bessemer"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_global_market_coordination_1860s",
+      "ev_second_industrial_revolution_1870s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -1307,6 +1434,8 @@
       "pe_jp_morgan"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -1358,6 +1487,8 @@
       "ev_ming_maritime_policy_reset",
       "ev_ottoman_control_eastern_mediterranean"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -1415,6 +1546,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -1461,6 +1594,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -1512,6 +1647,8 @@
       "ev_kushan_trade_mediation",
       "ev_faxian_travels_india_china"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -1554,6 +1691,8 @@
       "pe_napoleon_bonaparte"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1594,6 +1733,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1639,6 +1780,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -1689,6 +1832,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -1735,6 +1880,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -1776,6 +1923,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1820,6 +1969,10 @@
       "pe_louis_xvi"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_flight_to_varennes_1791"
+    ],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -1870,6 +2023,8 @@
     "related_event_ids": [
       "ev_zheng_he_voyages_begin"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -1917,6 +2072,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -1961,6 +2118,8 @@
       "pe_louis_antoine_saint_just"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2005,6 +2164,10 @@
       "pe_friedrich_engels"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_first_international_1864"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2047,6 +2210,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_congress_vienna_1815"
+    ],
+    "consequence_event_ids": [
+      "ev_revolutions_1848"
+    ],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -2111,6 +2280,12 @@
       "pe_napoleon_bonaparte"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_napoleon_emperor_1804"
+    ],
+    "consequence_event_ids": [
+      "ev_congress_vienna_1815"
+    ],
     "unit_ids": [
       "unit_french_revolution_napoleon"
     ],
@@ -2169,6 +2344,14 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_congress_of_vienna_1814_1815",
+      "ev_napoleonic_wars_1803_1815"
+    ],
+    "consequence_event_ids": [
+      "ev_concert_of_europe_1815_1848",
+      "ev_railway_boom_1840s"
+    ],
     "unit_ids": [
       "unit_foundations_world_history",
       "unit_french_revolution_napoleon",
@@ -2234,6 +2417,10 @@
       "pe_umar_ibn_al_khattab"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_conquest_egypt_642"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -2294,6 +2481,13 @@
       "pe_umar_ibn_al_khattab"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_conquest_ctesiphon_637",
+      "ev_conquest_jerusalem_638"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_tours_732"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -2353,6 +2547,12 @@
       "pe_umar_ibn_al_khattab"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_yarmouk_636"
+    ],
+    "consequence_event_ids": [
+      "ev_conquest_egypt_642"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -2411,6 +2611,12 @@
       "pe_muhammad"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_treaty_hudaybiyyah_628"
+    ],
+    "consequence_event_ids": [
+      "ev_death_muhammad_632"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -2462,6 +2668,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -2505,6 +2713,8 @@
       "pe_louis_xvi"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2558,6 +2768,12 @@
       "pe_muhammad"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_hijra_622"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_badr_624"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -2605,6 +2821,8 @@
       "pe_paul_barras"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2649,6 +2867,8 @@
       "pe_emmanuel_joseph_sieyes"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2692,6 +2912,10 @@
       "pe_eli_whitney"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_steam_power_transport_expansion_1800s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2737,6 +2961,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2779,6 +3005,8 @@
       "pe_paul_barras"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2821,6 +3049,8 @@
       "pe_emmanuel_joseph_sieyes"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -2873,6 +3103,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -2925,6 +3157,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -2972,6 +3206,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -3015,6 +3251,8 @@
       "pe_camille_desmoulins"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3055,6 +3293,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3111,6 +3351,12 @@
       "pe_abu_bakr"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_conquest_mecca_630"
+    ],
+    "consequence_event_ids": [
+      "ev_ridda_wars_begin_632"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -3173,6 +3419,10 @@
       "pe_louis_xvi"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_storming_bastille_1789"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -3239,6 +3489,10 @@
       "pe_napoleon_bonaparte"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_napoleon_coup_18_brumaire_1799"
+    ],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3282,6 +3536,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3324,6 +3580,8 @@
       "pe_napoleon_bonaparte"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3367,6 +3625,13 @@
       "pe_nikola_tesla"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_modern_urban_infrastructure_1850s_1870s",
+      "ev_second_industrial_revolution_1870s"
+    ],
+    "consequence_event_ids": [
+      "ev_mass_production_systems_1890s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -3412,6 +3677,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_factory_system_rise_1780s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -3474,6 +3743,10 @@
       "pe_louis_xvi"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_tennis_court_oath_1789"
+    ],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -3553,6 +3826,12 @@
       "pe_louis_xvi"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_september_massacres_1792"
+    ],
+    "consequence_event_ids": [
+      "ev_reign_of_terror_1793_1794"
+    ],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -3613,6 +3892,8 @@
       "pe_marie_antoinette"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3671,6 +3952,12 @@
       "pe_lord_shaftesbury"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "consequence_event_ids": [
+      "ev_factory_act_1847_ten_hours"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -3716,6 +4003,14 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_factory_act_1833",
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "consequence_event_ids": [
+      "ev_matchgirls_strike_1888",
+      "ev_public_health_act_1848"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -3766,6 +4061,17 @@
       "pe_richard_arkwright"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_enclosure_movement_accelerates_1750s",
+      "ev_spinning_jenny_1764",
+      "ev_water_frame_1769",
+      "ev_watt_steam_engine_1776"
+    ],
+    "consequence_event_ids": [
+      "ev_labor_movements_1830s_1840s",
+      "ev_stockton_darlington_railway_1825",
+      "ev_urbanization_accelerates_1800_1850"
+    ],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -3819,6 +4125,13 @@
       "pe_charles_de_gaulle"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_france_britain_declare_war_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_of_britain_1940",
+      "ev_operation_barbarossa_1941"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -3875,6 +4188,8 @@
     "related_event_ids": [
       "ev_buddhism_spreads_to_china"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -3917,6 +4232,8 @@
       "pe_maximilien_robespierre"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -3960,6 +4277,8 @@
       "pe_lafayette"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -4004,6 +4323,12 @@
       "pe_friedrich_engels"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_communist_manifesto_1848"
+    ],
+    "consequence_event_ids": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -4061,6 +4386,10 @@
       "pe_muhammad"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_hijra_622"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -4107,6 +4436,13 @@
       "pe_marie_antoinette"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_civil_constitution_clergy_1790",
+      "ev_womens_march_versailles_1789"
+    ],
+    "consequence_event_ids": [
+      "ev_september_massacres_1792"
+    ],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -4159,6 +4495,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -4199,6 +4537,13 @@
       "pe_winston_churchill"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_invasion_poland_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_of_britain_1940",
+      "ev_fall_of_france_1940"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -4246,6 +4591,19 @@
       "pe_winston_churchill"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_bulge_1944",
+      "ev_hitler_suicide_1945",
+      "ev_liberation_paris_1944",
+      "ev_operation_bagration_1944",
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_berlin_offensive_1945",
+      "ev_yalta_conference_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_nuremberg_trials_begin_1945",
+      "ev_potsdam_conference_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -4306,6 +4664,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -4349,6 +4709,15 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_bessemer_process_1856",
+      "ev_national_market_integration_1850s",
+      "ev_telegraph_invention_1837"
+    ],
+    "consequence_event_ids": [
+      "ev_imperialism_berlin_conference_begins_1884",
+      "ev_wwi_alliance_system_hardens_1890_1907"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -4409,6 +4778,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -4450,6 +4821,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -4495,6 +4868,13 @@
       "pe_douglas_macarthur"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_midway_1942"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_bulge_1944",
+      "ev_island_hopping_campaign_1943_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -4550,6 +4930,12 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_tokugawa_shogunate_1603"
+    ],
+    "consequence_event_ids": [
+      "ev_abolition_british_slave_trade_1807"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -4605,6 +4991,8 @@
     "related_event_ids": [
       "ev_zhang_qian_missions_open_routes"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -4652,6 +5040,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -4694,6 +5084,8 @@
       "pe_jacques_rene_hebert"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -4747,6 +5139,12 @@
       "pe_muhammad"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_first_revelation_610"
+    ],
+    "consequence_event_ids": [
+      "ev_constitution_medina_622"
+    ],
     "unit_ids": [
       "unit_foundations_world_history",
       "unit_islamic_expansion"
@@ -4794,6 +5192,12 @@
       "pe_adolf_hitler"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_soviet_berlin_offensive_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -4839,6 +5243,12 @@
       "pe_heinrich_himmler"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_operation_barbarossa_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_wannsee_conference_1942"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -4893,6 +5303,8 @@
       "pe_ibn_battuta"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -4941,6 +5353,8 @@
       "pe_rashid_al_din"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -4988,6 +5402,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_imperialism_algeciras_conference_1906"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5036,6 +5454,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_agadir_crisis_1911"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5086,6 +5508,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_russojapanese_war_begins_1904"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5143,6 +5569,8 @@
       "pe_menelik_ii"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5206,6 +5634,10 @@
       "pe_otto_von_bismarck"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_global_market_coordination_1860s"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5259,6 +5691,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5310,6 +5744,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5362,6 +5798,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_imperialism_open_door_notes_1899"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5417,6 +5857,10 @@
       "pe_queen_victoria"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_imperialism_suez_canal_opens_1869"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5467,6 +5911,10 @@
       "pe_cecil_rhodes"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_second_boer_war_begins_1899"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5524,6 +5972,8 @@
       "pe_henry_morton_stanley"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5579,6 +6029,8 @@
       "pe_queen_victoria"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5636,6 +6088,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5689,6 +6145,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_wwi_alliance_system_hardens_1890_1907"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5741,6 +6201,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5788,6 +6250,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5850,6 +6314,8 @@
       "pe_david_livingstone"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5896,6 +6362,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_boxer_rebellion_1900"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -5951,6 +6421,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_imperialism_us_annexes_hawaii_1898"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -6010,6 +6484,13 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_imperialism_anglo_japanese_alliance_1902",
+      "ev_imperialism_triple_intervention_1895"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_naval_arms_race_1898_1914"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -6065,6 +6546,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_imperialism_british_south_africa_company_charter_1889"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -6116,6 +6601,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -6165,6 +6652,10 @@
       "pe_queen_victoria"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_british_occupation_egypt_1882"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -6224,6 +6715,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -6275,6 +6768,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -6321,6 +6816,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_russojapanese_war_begins_1904"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -6370,6 +6869,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_philippine_american_war_begins_1899"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism"
     ],
@@ -6425,6 +6928,13 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_pan_african_congress_1945",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "consequence_event_ids": [
+      "ev_bandung_conference_1955"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -6481,6 +6991,12 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_qing_first_opium_war_1839"
+    ],
+    "consequence_event_ids": [
+      "ev_berlin_conference_1884"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -6529,6 +7045,10 @@
       "pe_karl_benz"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_mass_production_systems_1890s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -6578,6 +7098,14 @@
       "pe_adolf_hitler"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_molotov_ribbentrop_pact_1939",
+      "ev_munich_agreement_1938"
+    ],
+    "consequence_event_ids": [
+      "ev_france_britain_declare_war_1939",
+      "ev_soviet_invasion_eastern_poland_1939"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -6636,6 +7164,8 @@
       "ev_swahili_coast_urban_growth",
       "ev_mansa_musa_hajj_gold_flows"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -6679,6 +7209,14 @@
       "pe_chester_nimitz"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_midway_1942",
+      "ev_guadalcanal_campaign_1942_1943"
+    ],
+    "consequence_event_ids": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_japan_surrenders_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -6725,6 +7263,13 @@
       "pe_benito_mussolini"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_el_alamein_1942",
+      "ev_operation_torch_1942"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_overlord_d_day_1944"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -6772,6 +7317,16 @@
       "pe_douglas_macarthur"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_atomic_bomb_nagasaki_1945",
+      "ev_island_hopping_campaign_1943_1945",
+      "ev_soviet_invasion_manchuria_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_nuremberg_trials_begin_1945",
+      "ev_un_charter_signed_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -6835,6 +7390,8 @@
       "ev_buddhism_spreads_to_china",
       "ev_sogdian_merchant_networks_expand"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -6880,6 +7437,15 @@
       "pe_robert_owen"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_factory_system_rise_1780s",
+      "ev_luddite_protests_1811",
+      "ev_urbanization_accelerates_1800_1850"
+    ],
+    "consequence_event_ids": [
+      "ev_factory_act_1833",
+      "ev_factory_act_1847_ten_hours"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -6929,6 +7495,8 @@
       "pe_louis_antoine_saint_just"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -6971,6 +7539,8 @@
       "pe_maximilien_robespierre"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -7015,6 +7585,12 @@
       "pe_winston_churchill"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_counteroffensives_1943_1944",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -7062,6 +7638,8 @@
       "pe_lazare_carnot"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -7102,6 +7680,12 @@
       "pe_charles_de_gaulle"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -7150,6 +7734,14 @@
       "pe_isambard_kingdom_brunel"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_steam_power_transport_expansion_1800s",
+      "ev_stockton_darlington_railway_1825"
+    ],
+    "consequence_event_ids": [
+      "ev_national_market_integration_1850s",
+      "ev_railway_boom_1840s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -7202,6 +7794,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -7242,6 +7836,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_labor_movements_1830s_1840s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -7294,6 +7892,10 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_ottoman_conquest_egypt_1517"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -7346,6 +7948,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -7396,6 +8000,8 @@
     "related_event_ids": [
       "ev_islamic_caliphate_trade_expansion"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -7446,6 +8052,8 @@
     "related_event_ids": [
       "ev_mongol_trade_integration"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -7487,6 +8095,13 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_first_international_1864",
+      "ev_matchgirls_strike_1888",
+      "ev_revolutions_1848",
+      "ev_second_industrial_revolution_1870s"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -7535,6 +8150,11 @@
       "pe_henry_ford"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_electric_power_adoption_1880s",
+      "ev_internal_combustion_engine_1876"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -7583,6 +8203,12 @@
       "pe_annie_besant"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_factory_act_1847_ten_hours"
+    ],
+    "consequence_event_ids": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -7637,6 +8263,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -7693,6 +8321,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -7753,6 +8383,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -7817,6 +8449,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_meiji_charter_oath_1868"
+    ],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -7880,6 +8516,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_meiji_boshin_war_1868"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -7940,6 +8580,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -8004,6 +8646,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_meiji_diet_1890"
+    ],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -8067,6 +8713,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_meiji_constitution_1889"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -8132,6 +8782,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -8195,6 +8847,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_meiji_perry_1853"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_meiji_restoration"
     ],
@@ -8261,6 +8917,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_meiji_kanagawa_treaty_1854"
+    ],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -8321,6 +8981,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -8380,6 +9042,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrialization_pathways_comparison",
       "unit_meiji_restoration"
@@ -8440,6 +9104,8 @@
     "related_event_ids": [
       "ev_black_death_trade_route_transmission"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -8481,6 +9147,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_public_health_act_1848"
+    ],
+    "consequence_event_ids": [
+      "ev_electric_power_adoption_1880s"
+    ],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -8527,6 +9199,12 @@
       "pe_vyacheslav_molotov"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_munich_agreement_1938"
+    ],
+    "consequence_event_ids": [
+      "ev_invasion_poland_1939"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -8581,6 +9259,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -8639,6 +9319,8 @@
       "ev_marco_polo_travels",
       "ev_black_death_trade_route_transmission"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -8691,6 +9373,12 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_ottoman_conquest_egypt_1517"
+    ],
+    "consequence_event_ids": [
+      "ev_tokugawa_shogunate_1603"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -8738,6 +9426,11 @@
       "pe_adolf_hitler"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_invasion_poland_1939",
+      "ev_molotov_ribbentrop_pact_1939"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -8801,6 +9494,13 @@
       "pe_napoleon_bonaparte"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_directory_established_1795"
+    ],
+    "consequence_event_ids": [
+      "ev_napoleon_emperor_1804",
+      "ev_napoleonic_wars_1803_1815"
+    ],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -8880,6 +9580,13 @@
       "pe_napoleon_bonaparte"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_napoleon_coup_18_brumaire_1799"
+    ],
+    "consequence_event_ids": [
+      "ev_congress_of_vienna_1814_1815",
+      "ev_napoleonic_wars_1803_1815"
+    ],
     "unit_ids": [
       "unit_french_revolution_napoleon"
     ],
@@ -8938,6 +9645,14 @@
       "pe_napoleon_bonaparte"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_napoleon_coup_18_brumaire_1799",
+      "ev_napoleon_emperor_1804"
+    ],
+    "consequence_event_ids": [
+      "ev_congress_vienna_1815",
+      "ev_state_military_fiscal_expansion_1810s_1820s"
+    ],
     "unit_ids": [
       "unit_foundations_world_history",
       "unit_french_revolution",
@@ -8989,6 +9704,8 @@
       "pe_emmanuel_joseph_sieyes"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -9031,6 +9748,8 @@
       "pe_georges_danton"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -9073,6 +9792,15 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_liverpool_manchester_railway_1830",
+      "ev_railway_boom_1840s",
+      "ev_state_military_fiscal_expansion_1810s_1820s",
+      "ev_telegraph_invention_1837"
+    ],
+    "consequence_event_ids": [
+      "ev_global_market_coordination_1860s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -9122,6 +9850,8 @@
       "pe_charles_alexandre_de_calonne"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -9163,6 +9893,12 @@
       "pe_ernst_kaltenbrunner"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_auschwitz_killing_center_expansion_1942",
+      "ev_germany_surrenders_1945",
+      "ev_japan_surrenders_1945"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9210,6 +9946,14 @@
       "pe_joseph_stalin"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_soviet_counteroffensives_1943_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945",
+      "ev_soviet_berlin_offensive_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9257,6 +10001,14 @@
       "pe_joseph_stalin"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_fall_of_france_1940",
+      "ev_soviet_invasion_eastern_poland_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_holocaust_widening_killings_1941"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9312,6 +10064,19 @@
       "pe_erwin_rommel"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_battle_of_britain_1940",
+      "ev_italy_surrenders_1943",
+      "ev_lend_lease_act_1941",
+      "ev_tehran_conference_1943",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_bulge_1944",
+      "ev_germany_surrenders_1945",
+      "ev_liberation_paris_1944"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9365,6 +10130,13 @@
       "pe_erwin_rommel"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_united_states_enters_war_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_el_alamein_1942",
+      "ev_italy_surrenders_1943"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9421,6 +10193,12 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_mali_mansa_musa_hajj_1324"
+    ],
+    "consequence_event_ids": [
+      "ev_mughal_empire_akbar_consolidation_1570s"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -9482,6 +10260,8 @@
     "related_event_ids": [
       "ev_black_death_trade_route_transmission"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -9532,6 +10312,13 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_berlin_conference_1884",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "consequence_event_ids": [
+      "ev_india_independence_1947"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -9583,6 +10370,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -9625,6 +10414,8 @@
       "pe_louis_xvi"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -9674,6 +10465,11 @@
       "pe_isoroku_yamamoto"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_battle_midway_1942",
+      "ev_united_states_enters_war_1941"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9729,6 +10525,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -9787,6 +10585,8 @@
       "ev_silver_flows_asia_via_oceans",
       "ev_steamship_suez_accelerates_exchange"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -9829,6 +10629,13 @@
       "pe_vyacheslav_molotov"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_germany_surrenders_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_soviet_invasion_manchuria_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -9881,6 +10688,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -9924,6 +10733,13 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_factory_act_1847_ten_hours",
+      "ev_urbanization_accelerates_1800_1850"
+    ],
+    "consequence_event_ids": [
+      "ev_modern_urban_infrastructure_1850s_1870s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -9973,6 +10789,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -10025,6 +10843,12 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_abolition_british_slave_trade_1807"
+    ],
+    "consequence_event_ids": [
+      "ev_indian_revolt_1857"
+    ],
     "unit_ids": [
       "unit_foundations_world_history",
       "unit_industrialization_pathways_comparison"
@@ -10081,6 +10905,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -10123,6 +10949,14 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_congress_vienna_1815",
+      "ev_liverpool_manchester_railway_1830"
+    ],
+    "consequence_event_ids": [
+      "ev_national_market_integration_1850s",
+      "ev_second_industrial_revolution_1870s"
+    ],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -10184,6 +11018,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -10242,6 +11078,13 @@
       "pe_maximilien_robespierre"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_of_valmy_1792",
+      "ev_execution_louis_xvi_1793"
+    ],
+    "consequence_event_ids": [
+      "ev_thermidorian_reaction_1794"
+    ],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -10306,6 +11149,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_concert_of_europe_1815_1848"
+    ],
+    "consequence_event_ids": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -10368,6 +11217,12 @@
       "pe_khalid_ibn_al_walid"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_death_muhammad_632"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_yarmouk_636"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -10424,6 +11279,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -10478,6 +11335,8 @@
       "pe_suleiman_magnificent"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -10523,6 +11382,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -10566,6 +11427,15 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_bessemer_process_1856",
+      "ev_railway_boom_1840s"
+    ],
+    "consequence_event_ids": [
+      "ev_electric_power_adoption_1880s",
+      "ev_mass_politics_worker_parties_1880s_1890s",
+      "ev_wwi_naval_arms_race_1898_1914"
+    ],
     "unit_ids": [
       "unit_age_of_imperialism",
       "unit_foundations_world_history",
@@ -10620,6 +11490,12 @@
       "pe_georges_danton"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_flight_to_varennes_1791"
+    ],
+    "consequence_event_ids": [
+      "ev_execution_louis_xvi_1793"
+    ],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -10674,6 +11550,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -10723,6 +11601,8 @@
     "related_event_ids": [
       "ev_portuguese_arrive_indian_ocean"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -10772,6 +11652,8 @@
       "ev_tang_cosmopolitan_changan",
       "ev_mongol_trade_integration"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -10820,6 +11702,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -10871,6 +11755,8 @@
       "ev_zheng_he_voyages_begin",
       "ev_portuguese_arrive_indian_ocean"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -10922,6 +11808,8 @@
       "pe_songtsen_gampo"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -10963,6 +11851,15 @@
       "pe_joseph_stalin"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_bagration_1944",
+      "ev_soviet_counteroffensives_1943_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945",
+      "ev_hitler_suicide_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -11013,6 +11910,14 @@
       "pe_georgy_zhukov"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_lend_lease_act_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_bagration_1944",
+      "ev_soviet_berlin_offensive_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -11067,6 +11972,12 @@
       "pe_vyacheslav_molotov"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_invasion_poland_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_barbarossa_1941"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -11114,6 +12025,12 @@
       "pe_emperor_hirohito"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_potsdam_conference_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_japan_surrenders_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -11158,6 +12075,10 @@
       "pe_james_hargreaves"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_factory_system_rise_1780s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -11208,6 +12129,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -11255,6 +12178,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -11302,6 +12227,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -11344,6 +12271,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_napoleonic_wars_1803_1815"
+    ],
+    "consequence_event_ids": [
+      "ev_national_market_integration_1850s"
+    ],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -11391,6 +12324,14 @@
       "pe_richard_trevithick"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_cotton_gin_1793",
+      "ev_watt_steam_engine_1776"
+    ],
+    "consequence_event_ids": [
+      "ev_liverpool_manchester_railway_1830",
+      "ev_stockton_darlington_railway_1825"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -11447,6 +12388,8 @@
     "related_event_ids": [
       "ev_portuguese_arrive_indian_ocean"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -11491,6 +12434,13 @@
       "pe_george_stephenson"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_factory_system_rise_1780s",
+      "ev_steam_power_transport_expansion_1800s"
+    ],
+    "consequence_event_ids": [
+      "ev_liverpool_manchester_railway_1830"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -11553,6 +12503,12 @@
       "pe_louis_xvi"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_tennis_court_oath_1789"
+    ],
+    "consequence_event_ids": [
+      "ev_declaration_rights_man_citizen_1789"
+    ],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -11617,6 +12573,8 @@
     "related_event_ids": [
       "ev_islamic_caliphate_trade_expansion"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -11673,6 +12631,8 @@
       "ev_tang_cosmopolitan_changan",
       "ev_baghdad_translation_movement"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -11725,6 +12685,8 @@
       "ev_talas_papermaking_transfer",
       "ev_song_maritime_commerce_expands"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -11773,6 +12735,8 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -11818,6 +12782,11 @@
       "pe_joseph_stalin"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_yalta_conference_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -11864,6 +12833,11 @@
       "pe_samuel_morse"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_global_market_coordination_1860s",
+      "ev_national_market_integration_1850s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -11927,6 +12901,12 @@
       "pe_louis_xvi"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_estates_general_1789"
+    ],
+    "consequence_event_ids": [
+      "ev_storming_bastille_1789"
+    ],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -11999,6 +12979,10 @@
       "pe_maximilien_robespierre"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_reign_of_terror_1793_1794"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution",
       "unit_french_revolution_napoleon"
@@ -12061,6 +13045,8 @@
       "pe_timur"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -12108,6 +13094,12 @@
     ],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_mughal_empire_akbar_consolidation_1570s"
+    ],
+    "consequence_event_ids": [
+      "ev_haitian_revolution_independence_1804"
+    ],
     "unit_ids": [
       "unit_foundations_world_history"
     ],
@@ -12165,6 +13157,12 @@
       "pe_muhammad"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_badr_624"
+    ],
+    "consequence_event_ids": [
+      "ev_conquest_mecca_630"
+    ],
     "unit_ids": [
       "unit_islamic_expansion"
     ],
@@ -12211,6 +13209,8 @@
       "pe_louis_xvi"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -12260,6 +13260,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -12309,6 +13311,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -12353,6 +13357,11 @@
       "pe_winston_churchill"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_japan_surrenders_1945",
+      "ev_yalta_conference_1945"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -12398,6 +13407,14 @@
       "pe_franklin_d_roosevelt"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_pearl_harbor_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_midway_1942",
+      "ev_operation_torch_1942",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -12445,6 +13462,13 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_factory_system_rise_1780s"
+    ],
+    "consequence_event_ids": [
+      "ev_labor_movements_1830s_1840s",
+      "ev_public_health_act_1848"
+    ],
     "unit_ids": [
       "unit_industrialization_pathways_comparison"
     ],
@@ -12490,6 +13514,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -12534,6 +13560,12 @@
       "pe_ernst_kaltenbrunner"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_holocaust_widening_killings_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_auschwitz_killing_center_expansion_1942"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -12580,6 +13612,8 @@
       "pe_jacques_pierre_brissot"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -12625,6 +13659,14 @@
       "pe_joseph_stalin"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_lend_lease_act_1941",
+      "ev_united_states_enters_war_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_overlord_d_day_1944"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -12674,6 +13716,10 @@
       "pe_richard_arkwright"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_factory_system_rise_1780s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -12724,6 +13770,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -12769,6 +13817,8 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_industrial_revolution"
     ],
@@ -12811,6 +13861,11 @@
       "pe_james_watt"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_factory_system_rise_1780s",
+      "ev_steam_power_transport_expansion_1800s"
+    ],
     "unit_ids": [
       "unit_industrial_revolution",
       "unit_industrialization_pathways_comparison"
@@ -12857,6 +13912,10 @@
       "pe_marie_antoinette"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_flight_to_varennes_1791"
+    ],
     "unit_ids": [
       "unit_french_revolution"
     ],
@@ -12897,6 +13956,13 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_global_market_coordination_1860s",
+      "ev_imperialism_first_moroccan_crisis_1905"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_naval_arms_race_1898_1914"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -12945,6 +14011,12 @@
       "pe_te_lawrence"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_gallipoli_campaign_1915"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_balfour_declaration_1917"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -12989,6 +14061,10 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_ottoman_enters_war_1914"
+    ],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13038,6 +14114,13 @@
       "pe_ferdinand_foch"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_paris_peace_conference_1919",
+      "ev_wwi_spanish_flu_1918"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13092,6 +14175,12 @@
       "pe_gavrilo_princip"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_austria_ultimatum_serbia_1914"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13136,6 +14225,12 @@
       "pe_franz_joseph_i"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_assassination_franz_ferdinand_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_germany_blank_check_1914"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13180,6 +14275,12 @@
       "pe_david_lloyd_george"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_arab_revolt_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13222,6 +14323,13 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_imperialism_first_balkan_war_1912",
+      "ev_wwi_naval_arms_race_1898_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_assassination_franz_ferdinand_1914"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13274,6 +14382,12 @@
       "pe_helmuth_von_moltke_younger"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_trench_warfare_entrenched_1914"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13321,6 +14435,12 @@
       "pe_alexander_kerensky"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_russian_february_revolution_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_treaty_brest_litovsk_1918"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13367,6 +14487,12 @@
       "pe_nikolai_brusilov"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_tannenberg_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_russian_february_revolution_1917"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13411,6 +14537,13 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_trench_warfare_entrenched_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_gallipoli_campaign_1915",
+      "ev_wwi_italy_enters_war_1915"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13462,6 +14595,13 @@
       "pe_winston_churchill"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_first_ypres_1914",
+      "ev_wwi_ottoman_enters_war_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_arab_revolt_1916"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13508,6 +14648,13 @@
       "pe_paul_von_hindenburg"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_treaty_brest_litovsk_1918",
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13556,6 +14703,12 @@
       "pe_theobald_von_bethmann_hollweg"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_austria_ultimatum_serbia_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_russia_mobilizes_1914"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13600,6 +14753,14 @@
       "pe_helmuth_von_moltke_younger"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_russia_mobilizes_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_battle_marne_1914",
+      "ev_wwi_japan_enters_war_1914",
+      "ev_wwi_ottoman_enters_war_1914"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13647,6 +14808,14 @@
       "pe_winston_churchill"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_trench_warfare_entrenched_1914",
+      "ev_wwi_verdun_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_hundred_days_offensive_1918",
+      "ev_wwi_state_propaganda_expands_1915"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13698,6 +14867,15 @@
       "pe_georges_clemenceau"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_german_spring_offensive_1918",
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_italy_enters_war_1915",
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_armistice_1918"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13745,6 +14923,12 @@
       "pe_vittorio_orlando"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_first_ypres_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13787,6 +14971,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13836,6 +15026,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_somme_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_unrestricted_submarine_1917"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13878,6 +15074,13 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_paris_peace_conference_1919",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "consequence_event_ids": [
+      "ev_bandung_conference_1955"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13926,6 +15129,14 @@
       "pe_kaiser_wilhelm_ii"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_imperialism_russojapanese_war_begins_1904",
+      "ev_second_industrial_revolution_1870s",
+      "ev_wwi_alliance_system_hardens_1890_1907"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -13973,6 +15184,13 @@
       "pe_enver_pasha"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_armenian_genocide_begins_1915",
+      "ev_wwi_gallipoli_campaign_1915"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14021,6 +15239,16 @@
       "pe_vittorio_orlando"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_armistice_1918",
+      "ev_wwi_balfour_declaration_1917",
+      "ev_wwi_japan_enters_war_1914",
+      "ev_wwi_spanish_flu_1918"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_league_of_nations_1920",
+      "ev_wwi_treaty_versailles_1919"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14071,6 +15299,12 @@
       "pe_tsar_nicholas_ii"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_germany_blank_check_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14118,6 +15352,13 @@
       "pe_alexander_kerensky"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_brusilov_offensive_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_treaty_brest_litovsk_1918"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14165,6 +15406,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_trench_warfare_entrenched_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_verdun_1916"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14216,6 +15463,12 @@
       "pe_douglas_haig"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_verdun_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_jutland_1916"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14258,6 +15511,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_armistice_1918"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14303,6 +15562,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_home_front_total_mobilization_1915"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_us_enters_war_1917"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14351,6 +15616,10 @@
       "pe_erich_ludendorff"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_wwi_brusilov_offensive_1916"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14393,6 +15662,13 @@
       "pe_vladimir_lenin"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_russian_february_revolution_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_german_spring_offensive_1918"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14445,6 +15721,14 @@
       "pe_georges_clemenceau"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "consequence_event_ids": [
+      "ev_india_independence_1947",
+      "ev_pan_african_congress_1945",
+      "ev_wwi_league_of_nations_1920"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14489,6 +15773,14 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_battle_marne_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_first_ypres_1914",
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_second_battle_ypres_gas_1915"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14537,6 +15829,13 @@
       "pe_alfred_von_tirpitz"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_jutland_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_us_enters_war_1917",
+      "ev_wwi_zimmermann_telegram_1917"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14587,6 +15886,15 @@
       "pe_woodrow_wilson"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_state_propaganda_expands_1915",
+      "ev_wwi_unrestricted_submarine_1917",
+      "ev_wwi_zimmermann_telegram_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_german_spring_offensive_1918",
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14641,6 +15949,13 @@
       "pe_philippe_petain"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_second_battle_ypres_gas_1915"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_somme_1916"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14686,6 +16001,12 @@
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_wwi_unrestricted_submarine_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_us_enters_war_1917"
+    ],
     "unit_ids": [
       "unit_world_war_i"
     ],
@@ -14732,6 +16053,14 @@
       "pe_joseph_stalin"
     ],
     "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_bulge_1944",
+      "ev_tehran_conference_1943"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945",
+      "ev_un_charter_signed_1945"
+    ],
     "unit_ids": [
       "unit_world_war_ii"
     ],
@@ -14788,6 +16117,8 @@
       "ev_han_protectorate_western_regions",
       "ev_kushan_trade_mediation"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],
@@ -14846,6 +16177,8 @@
       "ev_portuguese_arrive_indian_ocean",
       "ev_coffee_trade_red_sea"
     ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
     "unit_ids": [
       "unit_silk_road_exchange"
     ],

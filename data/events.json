@@ -41,7 +41,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_bridgewater_canal_opens_1761",
@@ -95,7 +97,9 @@
       "concept_technological_diffusion",
       "concept_urbanization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_spinning_jenny_invented_1764",
@@ -139,7 +143,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_water_frame_patent_1769",
@@ -184,7 +190,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_watt_condenser_patent_1769",
@@ -226,7 +234,9 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_spinning_jenny_patented_1770",
@@ -265,7 +275,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_cromford_mill_uses_water_frame_1771",
@@ -319,7 +331,9 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_spinning_mule_invented_1779",
@@ -363,7 +377,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_power_loom_patented_1785",
@@ -407,7 +423,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_declaration_rights_man_citizen_1789",
@@ -504,7 +522,11 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_storming_bastille_1789"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_estates_general_1789",
@@ -617,6 +639,10 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_tennis_court_oath_1789"
     ]
   },
   {
@@ -712,6 +738,12 @@
     "concept_ids": [
       "concept_imperial_overstretch",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_tennis_court_oath_1789"
+    ],
+    "consequence_event_ids": [
+      "ev_declaration_rights_man_citizen_1789"
     ]
   },
   {
@@ -810,6 +842,12 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_estates_general_1789"
+    ],
+    "consequence_event_ids": [
+      "ev_storming_bastille_1789"
     ]
   },
   {
@@ -848,7 +886,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_execution_louis_xvi_1793",
@@ -952,6 +992,12 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_september_massacres_1792"
+    ],
+    "consequence_event_ids": [
+      "ev_reign_of_terror_1793_1794"
     ]
   },
   {
@@ -1055,6 +1101,13 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_of_valmy_1792",
+      "ev_execution_louis_xvi_1793"
+    ],
+    "consequence_event_ids": [
+      "ev_thermidorian_reaction_1794"
     ]
   },
   {
@@ -1151,7 +1204,11 @@
     "concept_ids": [
       "concept_imperial_overstretch",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_reign_of_terror_1793_1794"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_napoleon_coup_18_brumaire_1799",
@@ -1256,6 +1313,13 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_directory_established_1795"
+    ],
+    "consequence_event_ids": [
+      "ev_napoleon_emperor_1804",
+      "ev_napoleonic_wars_1803_1815"
     ]
   },
   {
@@ -1358,6 +1422,13 @@
       "concept_imperial_overstretch",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_napoleon_coup_18_brumaire_1799"
+    ],
+    "consequence_event_ids": [
+      "ev_congress_of_vienna_1814_1815",
+      "ev_napoleonic_wars_1803_1815"
     ]
   },
   {
@@ -1412,7 +1483,9 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_congress_of_vienna_1814_1815",
@@ -1514,6 +1587,12 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_napoleon_emperor_1804"
+    ],
+    "consequence_event_ids": [
+      "ev_congress_vienna_1815"
     ]
   },
   {
@@ -1571,7 +1650,9 @@
       "concept_succession_crisis",
       "concept_technological_diffusion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_factory_act_1833",
@@ -1638,6 +1719,12 @@
       "concept_trade_network_expansion",
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "consequence_event_ids": [
+      "ev_factory_act_1847_ten_hours"
     ]
   },
   {
@@ -1695,7 +1782,9 @@
       "concept_trade_network_expansion",
       "concept_technological_diffusion",
       "concept_urbanization"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_meiji_perry_1853",
@@ -1779,6 +1868,10 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_meiji_kanagawa_treaty_1854"
     ]
   },
   {
@@ -1867,7 +1960,11 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_meiji_perry_1853"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_bessemer_process_patent_1856",
@@ -1912,7 +2009,9 @@
       "concept_frontier_expansion",
       "concept_urbanization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_meiji_boshin_war_1868",
@@ -1995,6 +2094,10 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_meiji_charter_oath_1868"
     ]
   },
   {
@@ -2077,7 +2180,11 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_meiji_boshin_war_1868"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_meiji_abolish_han_1871",
@@ -2159,7 +2266,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_meiji_conscription_1873",
@@ -2231,7 +2340,9 @@
       "concept_succession_crisis",
       "concept_military_reform",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_meiji_constitution_1889",
@@ -2313,6 +2424,10 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_meiji_diet_1890"
     ]
   },
   {
@@ -2395,7 +2510,11 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_meiji_constitution_1889"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
@@ -2470,7 +2589,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_meiji_russojapanese_war_1905",
@@ -2546,7 +2667,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_meiji_annex_korea_1910",
@@ -2621,7 +2744,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_meiji_emperor_death_1912",
@@ -2699,7 +2824,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_leopold_congo_project_1876",
@@ -2741,7 +2868,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_british_occupation_egypt_1882",
@@ -2781,7 +2910,11 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_imperialism_suez_canal_opens_1869"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_berlin_conference_begins_1884",
@@ -2821,7 +2954,11 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_global_market_coordination_1860s"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_berlin_conference_ends_1885",
@@ -2858,7 +2995,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_first_sinojapanese_war_begins_1894",
@@ -2895,7 +3034,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_treaty_shimonoseki_1895",
@@ -2933,7 +3074,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_spanish_american_war_1898",
@@ -2969,7 +3112,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_second_boer_war_begins_1899",
@@ -3006,7 +3151,11 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_imperialism_british_south_africa_company_charter_1889"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_boxer_rebellion_1900",
@@ -3044,7 +3193,11 @@
       "concept_frontier_expansion",
       "concept_military_reform",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_imperialism_open_door_notes_1899"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_boer_war_ends_1902",
@@ -3081,7 +3234,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_russojapanese_war_begins_1904",
@@ -3121,6 +3276,13 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_imperialism_anglo_japanese_alliance_1902",
+      "ev_imperialism_triple_intervention_1895"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_naval_arms_race_1898_1914"
     ]
   },
   {
@@ -3160,7 +3322,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_first_moroccan_crisis_1905",
@@ -3200,6 +3364,10 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_wwi_alliance_system_hardens_1890_1907"
     ]
   },
   {
@@ -3232,7 +3400,11 @@
       "concept_imperial_overstretch",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_imperialism_algeciras_conference_1906"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_first_balkan_war_1912",
@@ -3267,6 +3439,10 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
     ]
   },
   {
@@ -3311,6 +3487,10 @@
       "concept_imperial_overstretch",
       "concept_trade_network_expansion",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_british_occupation_egypt_1882"
     ]
   },
   {
@@ -3356,7 +3536,9 @@
       "concept_imperial_overstretch",
       "concept_bureaucratic_centralization",
       "concept_frontier_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_british_south_africa_company_charter_1889",
@@ -3399,6 +3581,10 @@
     "concept_ids": [
       "concept_imperial_overstretch",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_second_boer_war_begins_1899"
     ]
   },
   {
@@ -3436,6 +3622,10 @@
     "concept_ids": [
       "concept_imperial_overstretch",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_russojapanese_war_begins_1904"
     ]
   },
   {
@@ -3484,7 +3674,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_fashoda_incident_1898",
@@ -3531,7 +3723,9 @@
     "concept_ids": [
       "concept_imperial_overstretch",
       "concept_frontier_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_us_annexes_hawaii_1898",
@@ -3570,6 +3764,10 @@
       "concept_imperial_overstretch",
       "concept_bureaucratic_centralization",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_philippine_american_war_begins_1899"
     ]
   },
   {
@@ -3610,6 +3808,10 @@
     "concept_ids": [
       "concept_imperial_overstretch",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_boxer_rebellion_1900"
     ]
   },
   {
@@ -3653,7 +3855,11 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_imperialism_us_annexes_hawaii_1898"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_imperialism_anglo_japanese_alliance_1902",
@@ -3694,6 +3900,10 @@
     "concept_ids": [
       "concept_imperial_overstretch",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_russojapanese_war_begins_1904"
     ]
   },
   {
@@ -3731,6 +3941,10 @@
     "concept_ids": [
       "concept_imperial_overstretch",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_imperialism_agadir_crisis_1911"
     ]
   },
   {
@@ -3773,7 +3987,9 @@
       "concept_imperial_overstretch",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_cyrus_founds_achaemenid_550bce",
@@ -3805,7 +4021,9 @@
     ],
     "concept_ids": [
       "concept_frontier_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_buddha_enlightenment_5c_bce",
@@ -3836,7 +4054,9 @@
     ],
     "concept_ids": [
       "concept_religious_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_alexander_gaugamela_331bce",
@@ -3871,7 +4091,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_ashoka_kalinga_261bce",
@@ -3904,7 +4126,9 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_religious_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_qin_unification_221bce",
@@ -3932,7 +4156,9 @@
     },
     "concept_tags": [
       "state_formation_governance"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_han_zhangqian_2c_bce",
@@ -3964,7 +4190,9 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_augustus_principate_27bce",
@@ -3993,7 +4221,9 @@
     "concept_tags": [
       "state_formation_governance",
       "empire_imperialism"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_constantine_edict_milan_313",
@@ -4025,7 +4255,9 @@
     ],
     "concept_ids": [
       "concept_religious_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_hijra_622",
@@ -4065,6 +4297,12 @@
     ],
     "concept_ids": [
       "concept_religious_diffusion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_first_revelation_610"
+    ],
+    "consequence_event_ids": [
+      "ev_constitution_medina_622"
     ]
   },
   {
@@ -4098,7 +4336,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_frontier_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_charlemagne_crowned_800",
@@ -4127,7 +4367,9 @@
     "concept_tags": [
       "state_formation_governance",
       "belief_systems_cultural_exchange"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_song_commercial_revolution_11c",
@@ -4160,7 +4402,9 @@
     "concept_ids": [
       "concept_urbanization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_mongol_empire_formation_1206",
@@ -4195,7 +4439,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_mehmed_constantinople_1453",
@@ -4230,7 +4476,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_columbus_1492",
@@ -4262,7 +4510,9 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_womens_march_versailles_1789",
@@ -4285,6 +4535,10 @@
       "timeline_ordering",
       "causality_chain",
       "what_happened"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_flight_to_varennes_1791"
     ]
   },
   {
@@ -4311,6 +4565,10 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_religious_diffusion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_flight_to_varennes_1791"
     ]
   },
   {
@@ -4337,6 +4595,13 @@
     ],
     "concept_ids": [
       "concept_bureaucratic_centralization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_civil_constitution_clergy_1790",
+      "ev_womens_march_versailles_1789"
+    ],
+    "consequence_event_ids": [
+      "ev_september_massacres_1792"
     ]
   },
   {
@@ -4363,6 +4628,12 @@
     "concept_ids": [
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_flight_to_varennes_1791"
+    ],
+    "consequence_event_ids": [
+      "ev_execution_louis_xvi_1793"
     ]
   },
   {
@@ -4390,6 +4661,10 @@
       "concept_frontier_expansion",
       "concept_military_reform",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_reign_of_terror_1793_1794"
     ]
   },
   {
@@ -4430,6 +4705,10 @@
     },
     "region_ids": [
       "reg_france"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_napoleon_coup_18_brumaire_1799"
     ]
   },
   {
@@ -4467,6 +4746,10 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_ottoman_conquest_egypt_1517"
     ]
   },
   {
@@ -4505,6 +4788,12 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_mali_mansa_musa_hajj_1324"
+    ],
+    "consequence_event_ids": [
+      "ev_mughal_empire_akbar_consolidation_1570s"
     ]
   },
   {
@@ -4544,6 +4833,12 @@
       "concept_bureaucratic_centralization",
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_ottoman_conquest_egypt_1517"
+    ],
+    "consequence_event_ids": [
+      "ev_tokugawa_shogunate_1603"
     ]
   },
   {
@@ -4577,6 +4872,12 @@
     ],
     "concept_tags": [
       "state_formation_governance"
+    ],
+    "prerequisite_event_ids": [
+      "ev_mughal_empire_akbar_consolidation_1570s"
+    ],
+    "consequence_event_ids": [
+      "ev_haitian_revolution_independence_1804"
     ]
   },
   {
@@ -4614,6 +4915,12 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_tokugawa_shogunate_1603"
+    ],
+    "consequence_event_ids": [
+      "ev_abolition_british_slave_trade_1807"
     ]
   },
   {
@@ -4651,6 +4958,12 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_haitian_revolution_independence_1804"
+    ],
+    "consequence_event_ids": [
+      "ev_qing_first_opium_war_1839"
     ]
   },
   {
@@ -4690,6 +5003,12 @@
       "concept_imperial_overstretch",
       "concept_trade_network_expansion",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_abolition_british_slave_trade_1807"
+    ],
+    "consequence_event_ids": [
+      "ev_indian_revolt_1857"
     ]
   },
   {
@@ -4728,6 +5047,12 @@
     "concept_ids": [
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_qing_first_opium_war_1839"
+    ],
+    "consequence_event_ids": [
+      "ev_berlin_conference_1884"
     ]
   },
   {
@@ -4766,6 +5091,12 @@
     "concept_ids": [
       "concept_imperial_overstretch",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_indian_revolt_1857"
+    ],
+    "consequence_event_ids": [
+      "ev_pan_african_congress_1945"
     ]
   },
   {
@@ -4803,6 +5134,13 @@
     ],
     "concept_ids": [
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_berlin_conference_1884",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "consequence_event_ids": [
+      "ev_india_independence_1947"
     ]
   },
   {
@@ -4837,6 +5175,13 @@
     "concept_tags": [
       "decolonization_nation_building",
       "state_formation_governance"
+    ],
+    "prerequisite_event_ids": [
+      "ev_pan_african_congress_1945",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "consequence_event_ids": [
+      "ev_bandung_conference_1955"
     ]
   },
   {
@@ -4871,7 +5216,12 @@
     ],
     "concept_ids": [
       "concept_frontier_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_india_independence_1947",
+      "ev_wwi_league_of_nations_1920"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_enclosure_movement_accelerates_1750s",
@@ -4898,6 +5248,10 @@
     ],
     "concept_ids": [
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_factory_system_rise_1780s"
     ]
   },
   {
@@ -4924,6 +5278,10 @@
       "invention",
       "technological",
       "industrial"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_factory_system_rise_1780s"
     ]
   },
   {
@@ -4954,6 +5312,11 @@
     ],
     "concept_ids": [
       "concept_technological_diffusion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_factory_system_rise_1780s",
+      "ev_steam_power_transport_expansion_1800s"
     ]
   },
   {
@@ -4987,6 +5350,17 @@
       "concept_bureaucratic_centralization",
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_enclosure_movement_accelerates_1750s",
+      "ev_spinning_jenny_1764",
+      "ev_water_frame_1769",
+      "ev_watt_steam_engine_1776"
+    ],
+    "consequence_event_ids": [
+      "ev_labor_movements_1830s_1840s",
+      "ev_stockton_darlington_railway_1825",
+      "ev_urbanization_accelerates_1800_1850"
     ]
   },
   {
@@ -5018,6 +5392,14 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_technological_diffusion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_cotton_gin_1793",
+      "ev_watt_steam_engine_1776"
+    ],
+    "consequence_event_ids": [
+      "ev_liverpool_manchester_railway_1830",
+      "ev_stockton_darlington_railway_1825"
     ]
   },
   {
@@ -5045,6 +5427,10 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_labor_movements_1830s_1840s"
     ]
   },
   {
@@ -5077,6 +5463,14 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_steam_power_transport_expansion_1800s",
+      "ev_stockton_darlington_railway_1825"
+    ],
+    "consequence_event_ids": [
+      "ev_national_market_integration_1850s",
+      "ev_railway_boom_1840s"
     ]
   },
   {
@@ -5108,6 +5502,11 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_technological_diffusion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_global_market_coordination_1860s",
+      "ev_national_market_integration_1850s"
     ]
   },
   {
@@ -5141,6 +5540,15 @@
       "concept_technological_diffusion",
       "concept_urbanization",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_factory_system_rise_1780s",
+      "ev_luddite_protests_1811",
+      "ev_urbanization_accelerates_1800_1850"
+    ],
+    "consequence_event_ids": [
+      "ev_factory_act_1833",
+      "ev_factory_act_1847_ten_hours"
     ]
   },
   {
@@ -5172,6 +5580,10 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_first_international_1864"
     ]
   },
   {
@@ -5201,6 +5613,14 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_factory_act_1833",
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "consequence_event_ids": [
+      "ev_matchgirls_strike_1888",
+      "ev_public_health_act_1848"
     ]
   },
   {
@@ -5231,6 +5651,13 @@
       "concept_technological_diffusion",
       "concept_urbanization",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_factory_act_1847_ten_hours",
+      "ev_urbanization_accelerates_1800_1850"
+    ],
+    "consequence_event_ids": [
+      "ev_modern_urban_infrastructure_1850s_1870s"
     ]
   },
   {
@@ -5262,6 +5689,11 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_technological_diffusion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_global_market_coordination_1860s",
+      "ev_second_industrial_revolution_1870s"
     ]
   },
   {
@@ -5293,6 +5725,12 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_communist_manifesto_1848"
+    ],
+    "consequence_event_ids": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
     ]
   },
   {
@@ -5325,6 +5763,15 @@
       "concept_frontier_expansion",
       "concept_urbanization",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_bessemer_process_1856",
+      "ev_railway_boom_1840s"
+    ],
+    "consequence_event_ids": [
+      "ev_electric_power_adoption_1880s",
+      "ev_mass_politics_worker_parties_1880s_1890s",
+      "ev_wwi_naval_arms_race_1898_1914"
     ]
   },
   {
@@ -5355,6 +5802,13 @@
     ],
     "concept_ids": [
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_modern_urban_infrastructure_1850s_1870s",
+      "ev_second_industrial_revolution_1870s"
+    ],
+    "consequence_event_ids": [
+      "ev_mass_production_systems_1890s"
     ]
   },
   {
@@ -5383,7 +5837,12 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_electric_power_adoption_1880s",
+      "ev_internal_combustion_engine_1876"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_napoleonic_wars_1803_1815",
@@ -5415,6 +5874,14 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_napoleon_coup_18_brumaire_1799",
+      "ev_napoleon_emperor_1804"
+    ],
+    "consequence_event_ids": [
+      "ev_congress_vienna_1815",
+      "ev_state_military_fiscal_expansion_1810s_1820s"
     ]
   },
   {
@@ -5448,6 +5915,14 @@
     "primary_skill": "causality",
     "concept_ids": [
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_congress_of_vienna_1814_1815",
+      "ev_napoleonic_wars_1803_1815"
+    ],
+    "consequence_event_ids": [
+      "ev_concert_of_europe_1815_1848",
+      "ev_railway_boom_1840s"
     ]
   },
   {
@@ -5470,6 +5945,12 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_congress_vienna_1815"
+    ],
+    "consequence_event_ids": [
+      "ev_revolutions_1848"
     ]
   },
   {
@@ -5496,6 +5977,12 @@
       "concept_urbanization",
       "concept_military_reform",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_concert_of_europe_1815_1848"
+    ],
+    "consequence_event_ids": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
     ]
   },
   {
@@ -5520,6 +6007,12 @@
       "concept_bureaucratic_centralization",
       "concept_urbanization",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_napoleonic_wars_1803_1815"
+    ],
+    "consequence_event_ids": [
+      "ev_national_market_integration_1850s"
     ]
   },
   {
@@ -5545,6 +6038,14 @@
       "concept_bureaucratic_centralization",
       "concept_technological_diffusion",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_congress_vienna_1815",
+      "ev_liverpool_manchester_railway_1830"
+    ],
+    "consequence_event_ids": [
+      "ev_national_market_integration_1850s",
+      "ev_second_industrial_revolution_1870s"
     ]
   },
   {
@@ -5574,6 +6075,15 @@
       "concept_trade_network_expansion",
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_liverpool_manchester_railway_1830",
+      "ev_railway_boom_1840s",
+      "ev_state_military_fiscal_expansion_1810s_1820s",
+      "ev_telegraph_invention_1837"
+    ],
+    "consequence_event_ids": [
+      "ev_global_market_coordination_1860s"
     ]
   },
   {
@@ -5600,6 +6110,15 @@
       "concept_bureaucratic_centralization",
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_bessemer_process_1856",
+      "ev_national_market_integration_1850s",
+      "ev_telegraph_invention_1837"
+    ],
+    "consequence_event_ids": [
+      "ev_imperialism_berlin_conference_begins_1884",
+      "ev_wwi_alliance_system_hardens_1890_1907"
     ]
   },
   {
@@ -5621,7 +6140,14 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_first_international_1864",
+      "ev_matchgirls_strike_1888",
+      "ev_revolutions_1848",
+      "ev_second_industrial_revolution_1870s"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_modern_urban_infrastructure_1850s_1870s",
@@ -5644,6 +6170,12 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_public_health_act_1848"
+    ],
+    "consequence_event_ids": [
+      "ev_electric_power_adoption_1880s"
     ]
   },
   {
@@ -5668,6 +6200,13 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_factory_system_rise_1780s"
+    ],
+    "consequence_event_ids": [
+      "ev_labor_movements_1830s_1840s",
+      "ev_public_health_act_1848"
     ]
   },
   {
@@ -5698,6 +6237,10 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_factory_system_rise_1780s"
     ]
   },
   {
@@ -5728,6 +6271,10 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_steam_power_transport_expansion_1800s"
     ]
   },
   {
@@ -5759,6 +6306,13 @@
       "concept_trade_network_expansion",
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_factory_system_rise_1780s",
+      "ev_steam_power_transport_expansion_1800s"
+    ],
+    "consequence_event_ids": [
+      "ev_liverpool_manchester_railway_1830"
     ]
   },
   {
@@ -5790,6 +6344,10 @@
       "concept_trade_network_expansion",
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_mass_production_systems_1890s"
     ]
   },
   {
@@ -5822,6 +6380,12 @@
       "concept_technological_diffusion",
       "concept_urbanization",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_factory_act_1847_ten_hours"
+    ],
+    "consequence_event_ids": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
     ]
   },
   {
@@ -5849,7 +6413,14 @@
       "timeline",
       "causality"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "prerequisite_event_ids": [
+      "ev_global_market_coordination_1860s",
+      "ev_imperialism_first_moroccan_crisis_1905"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_naval_arms_race_1898_1914"
+    ]
   },
   {
     "id": "ev_wwi_naval_arms_race_1898_1914",
@@ -5885,6 +6456,14 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_imperialism_russojapanese_war_begins_1904",
+      "ev_second_industrial_revolution_1870s",
+      "ev_wwi_alliance_system_hardens_1890_1907"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
     ]
   },
   {
@@ -5913,7 +6492,14 @@
       "timeline",
       "causality"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "prerequisite_event_ids": [
+      "ev_imperialism_first_balkan_war_1912",
+      "ev_wwi_naval_arms_race_1898_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_assassination_franz_ferdinand_1914"
+    ]
   },
   {
     "id": "ev_wwi_assassination_franz_ferdinand_1914",
@@ -5960,6 +6546,12 @@
     "concept_ids": [
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_austria_ultimatum_serbia_1914"
     ]
   },
   {
@@ -5990,7 +6582,13 @@
       "causality",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "prerequisite_event_ids": [
+      "ev_wwi_assassination_franz_ferdinand_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_germany_blank_check_1914"
+    ]
   },
   {
     "id": "ev_wwi_germany_blank_check_1914",
@@ -6024,6 +6622,12 @@
     "primary_skill": "causality",
     "concept_ids": [
       "concept_trade_network_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_austria_ultimatum_serbia_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_russia_mobilizes_1914"
     ]
   },
   {
@@ -6058,6 +6662,12 @@
     "primary_skill": "causality",
     "concept_ids": [
       "concept_trade_network_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_germany_blank_check_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_germany_invades_belgium_1914"
     ]
   },
   {
@@ -6091,7 +6701,15 @@
       "causality",
       "people"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "prerequisite_event_ids": [
+      "ev_wwi_russia_mobilizes_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_battle_marne_1914",
+      "ev_wwi_japan_enters_war_1914",
+      "ev_wwi_ottoman_enters_war_1914"
+    ]
   },
   {
     "id": "ev_wwi_battle_marne_1914",
@@ -6135,6 +6753,12 @@
     },
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_trench_warfare_entrenched_1914"
     ]
   },
   {
@@ -6165,7 +6789,15 @@
       "timeline",
       "causality"
     ],
-    "primary_skill": "causality"
+    "primary_skill": "causality",
+    "prerequisite_event_ids": [
+      "ev_wwi_battle_marne_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_first_ypres_1914",
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_second_battle_ypres_gas_1915"
+    ]
   },
   {
     "id": "ev_wwi_first_ypres_1914",
@@ -6196,6 +6828,13 @@
     "primary_skill": "causality",
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_trench_warfare_entrenched_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_gallipoli_campaign_1915",
+      "ev_wwi_italy_enters_war_1915"
     ]
   },
   {
@@ -6239,7 +6878,14 @@
       "lat": 40.2,
       "lon": 26.4,
       "region": "Gallipoli Peninsula, Ottoman Empire (Turkey)"
-    }
+    },
+    "prerequisite_event_ids": [
+      "ev_wwi_first_ypres_1914",
+      "ev_wwi_ottoman_enters_war_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_arab_revolt_1916"
+    ]
   },
   {
     "id": "ev_wwi_armenian_genocide_begins_1915",
@@ -6268,7 +6914,11 @@
     "primary_skill": "recognition",
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_ottoman_enters_war_1914"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_wwi_verdun_1916",
@@ -6307,6 +6957,13 @@
     },
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_second_battle_ypres_gas_1915"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_somme_1916"
     ]
   },
   {
@@ -6344,6 +7001,12 @@
     },
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_verdun_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_jutland_1916"
     ]
   },
   {
@@ -6375,6 +7038,12 @@
     },
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_somme_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_unrestricted_submarine_1917"
     ]
   },
   {
@@ -6404,6 +7073,13 @@
     ],
     "concept_ids": [
       "concept_bureaucratic_centralization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_jutland_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_us_enters_war_1917",
+      "ev_wwi_zimmermann_telegram_1917"
     ]
   },
   {
@@ -6436,6 +7112,15 @@
       "concept_technological_diffusion",
       "concept_urbanization",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_state_propaganda_expands_1915",
+      "ev_wwi_unrestricted_submarine_1917",
+      "ev_wwi_zimmermann_telegram_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_german_spring_offensive_1918",
+      "ev_wwi_hundred_days_offensive_1918"
     ]
   },
   {
@@ -6466,6 +7151,13 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_brusilov_offensive_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_treaty_brest_litovsk_1918"
     ]
   },
   {
@@ -6496,6 +7188,12 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_russian_february_revolution_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_treaty_brest_litovsk_1918"
     ]
   },
   {
@@ -6520,6 +7218,13 @@
     ],
     "tags": [
       "political"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_russian_february_revolution_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_german_spring_offensive_1918"
     ]
   },
   {
@@ -6545,6 +7250,13 @@
     ],
     "tags": [
       "military"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_treaty_brest_litovsk_1918",
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_hundred_days_offensive_1918"
     ]
   },
   {
@@ -6575,6 +7287,15 @@
     ],
     "concept_ids": [
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_german_spring_offensive_1918",
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_italy_enters_war_1915",
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_armistice_1918"
     ]
   },
   {
@@ -6608,6 +7329,13 @@
     },
     "concept_ids": [
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_paris_peace_conference_1919",
+      "ev_wwi_spanish_flu_1918"
     ]
   },
   {
@@ -6636,6 +7364,16 @@
     ],
     "tags": [
       "political"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_armistice_1918",
+      "ev_wwi_balfour_declaration_1917",
+      "ev_wwi_japan_enters_war_1914",
+      "ev_wwi_spanish_flu_1918"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_league_of_nations_1920",
+      "ev_wwi_treaty_versailles_1919"
     ]
   },
   {
@@ -6669,7 +7407,15 @@
       "region": "Versailles, France",
       "lat": 48.8049,
       "lon": 2.1204
-    }
+    },
+    "prerequisite_event_ids": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "consequence_event_ids": [
+      "ev_india_independence_1947",
+      "ev_pan_african_congress_1945",
+      "ev_wwi_league_of_nations_1920"
+    ]
   },
   {
     "id": "ev_wwi_league_of_nations_1920",
@@ -6691,6 +7437,13 @@
     ],
     "tags": [
       "political"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_paris_peace_conference_1919",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "consequence_event_ids": [
+      "ev_bandung_conference_1955"
     ]
   },
   {
@@ -6720,6 +7473,10 @@
     "concept_ids": [
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_wwi_brusilov_offensive_1916"
     ]
   },
   {
@@ -6743,6 +7500,12 @@
     "tags": [
       "military",
       "political"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_paris_peace_conference_1919"
     ]
   },
   {
@@ -6770,6 +7533,13 @@
     "tags": [
       "military",
       "political"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_armenian_genocide_begins_1915",
+      "ev_wwi_gallipoli_campaign_1915"
     ]
   },
   {
@@ -6798,6 +7568,12 @@
       "concept_technological_diffusion",
       "concept_urbanization",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_trench_warfare_entrenched_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_verdun_1916"
     ]
   },
   {
@@ -6823,6 +7599,12 @@
     "tags": [
       "military",
       "political"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_first_ypres_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_hundred_days_offensive_1918"
     ]
   },
   {
@@ -6851,6 +7633,14 @@
       "economic",
       "social",
       "political"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_trench_warfare_entrenched_1914",
+      "ev_wwi_verdun_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_hundred_days_offensive_1918",
+      "ev_wwi_state_propaganda_expands_1915"
     ]
   },
   {
@@ -6878,6 +7668,12 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_bureaucratic_centralization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_home_front_total_mobilization_1915"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_us_enters_war_1917"
     ]
   },
   {
@@ -6905,6 +7701,12 @@
     ],
     "concept_ids": [
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_tannenberg_1914"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_russian_february_revolution_1917"
     ]
   },
   {
@@ -6934,6 +7736,12 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_gallipoli_campaign_1915"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_balfour_declaration_1917"
     ]
   },
   {
@@ -6959,6 +7767,12 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_unrestricted_submarine_1917"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_us_enters_war_1917"
     ]
   },
   {
@@ -6983,6 +7797,12 @@
     ],
     "tags": [
       "political"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_arab_revolt_1916"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_paris_peace_conference_1919"
     ]
   },
   {
@@ -7005,6 +7825,12 @@
     ],
     "tags": [
       "social"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wwi_armistice_1918"
+    ],
+    "consequence_event_ids": [
+      "ev_wwi_paris_peace_conference_1919"
     ]
   },
   {
@@ -7034,6 +7860,11 @@
     ],
     "concept_ids": [
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_invasion_poland_1939",
+      "ev_molotov_ribbentrop_pact_1939"
     ]
   },
   {
@@ -7060,6 +7891,12 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_munich_agreement_1938"
+    ],
+    "consequence_event_ids": [
+      "ev_invasion_poland_1939"
     ]
   },
   {
@@ -7094,6 +7931,14 @@
     ],
     "concept_ids": [
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_molotov_ribbentrop_pact_1939",
+      "ev_munich_agreement_1938"
+    ],
+    "consequence_event_ids": [
+      "ev_france_britain_declare_war_1939",
+      "ev_soviet_invasion_eastern_poland_1939"
     ]
   },
   {
@@ -7120,6 +7965,13 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_invasion_poland_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_of_britain_1940",
+      "ev_fall_of_france_1940"
     ]
   },
   {
@@ -7154,6 +8006,12 @@
     ],
     "concept_ids": [
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_invasion_poland_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_barbarossa_1941"
     ]
   },
   {
@@ -7184,6 +8042,13 @@
     ],
     "concept_ids": [
       "concept_imperial_overstretch"
+    ],
+    "prerequisite_event_ids": [
+      "ev_france_britain_declare_war_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_of_britain_1940",
+      "ev_operation_barbarossa_1941"
     ]
   },
   {
@@ -7214,6 +8079,14 @@
     "concept_ids": [
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_fall_of_france_1940",
+      "ev_france_britain_declare_war_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_overlord_d_day_1944"
     ]
   },
   {
@@ -7246,6 +8119,12 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_counteroffensives_1943_1944",
+      "ev_wartime_industrial_mobilization_1942_1944"
     ]
   },
   {
@@ -7273,6 +8152,14 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_fall_of_france_1940",
+      "ev_soviet_invasion_eastern_poland_1939"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_holocaust_widening_killings_1941"
     ]
   },
   {
@@ -7299,6 +8186,12 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_operation_barbarossa_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_wannsee_conference_1942"
     ]
   },
   {
@@ -7335,6 +8228,11 @@
     ],
     "concept_ids": [
       "concept_bureaucratic_centralization"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_battle_midway_1942",
+      "ev_united_states_enters_war_1941"
     ]
   },
   {
@@ -7366,6 +8264,14 @@
     ],
     "concept_ids": [
       "concept_bureaucratic_centralization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_pearl_harbor_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_midway_1942",
+      "ev_operation_torch_1942",
+      "ev_wartime_industrial_mobilization_1942_1944"
     ]
   },
   {
@@ -7396,6 +8302,12 @@
     ],
     "concept_ids": [
       "concept_bureaucratic_centralization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_holocaust_widening_killings_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_auschwitz_killing_center_expansion_1942"
     ]
   },
   {
@@ -7427,6 +8339,12 @@
       "concept_technological_diffusion",
       "concept_frontier_expansion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_wannsee_conference_1942"
+    ],
+    "consequence_event_ids": [
+      "ev_nuremberg_trials_begin_1945"
     ]
   },
   {
@@ -7463,6 +8381,14 @@
     ],
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_pearl_harbor_1941",
+      "ev_united_states_enters_war_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_guadalcanal_campaign_1942_1943",
+      "ev_island_hopping_campaign_1943_1945"
     ]
   },
   {
@@ -7490,6 +8416,13 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_united_states_enters_war_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_el_alamein_1942",
+      "ev_italy_surrenders_1943"
     ]
   },
   {
@@ -7525,6 +8458,12 @@
     ],
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_operation_torch_1942"
+    ],
+    "consequence_event_ids": [
+      "ev_italy_surrenders_1943"
     ]
   },
   {
@@ -7562,6 +8501,13 @@
     "concept_ids": [
       "concept_urbanization",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_operation_barbarossa_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_bagration_1944",
+      "ev_soviet_counteroffensives_1943_1944"
     ]
   },
   {
@@ -7593,6 +8539,13 @@
     ],
     "concept_ids": [
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_midway_1942"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_bulge_1944",
+      "ev_island_hopping_campaign_1943_1945"
     ]
   },
   {
@@ -7625,6 +8578,14 @@
     "concept_ids": [
       "concept_technological_diffusion",
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_lend_lease_act_1941",
+      "ev_united_states_enters_war_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_overlord_d_day_1944"
     ]
   },
   {
@@ -7655,6 +8616,14 @@
     ],
     "concept_ids": [
       "concept_urbanization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_of_britain_1940",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_berlin_offensive_1945"
     ]
   },
   {
@@ -7684,6 +8653,14 @@
     ],
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_lend_lease_act_1941"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_bagration_1944",
+      "ev_soviet_berlin_offensive_1945"
     ]
   },
   {
@@ -7709,6 +8686,13 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_el_alamein_1942",
+      "ev_operation_torch_1942"
+    ],
+    "consequence_event_ids": [
+      "ev_operation_overlord_d_day_1944"
     ]
   },
   {
@@ -7740,6 +8724,11 @@
     "concept_ids": [
       "concept_religious_diffusion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_yalta_conference_1945"
     ]
   },
   {
@@ -7769,6 +8758,14 @@
     ],
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_soviet_counteroffensives_1943_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945",
+      "ev_soviet_berlin_offensive_1945"
     ]
   },
   {
@@ -7804,6 +8801,19 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_battle_of_britain_1940",
+      "ev_italy_surrenders_1943",
+      "ev_lend_lease_act_1941",
+      "ev_tehran_conference_1943",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_bulge_1944",
+      "ev_germany_surrenders_1945",
+      "ev_liberation_paris_1944"
     ]
   },
   {
@@ -7830,6 +8840,12 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945"
     ]
   },
   {
@@ -7861,6 +8877,14 @@
     ],
     "concept_ids": [
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_guadalcanal_campaign_1942_1943",
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945",
+      "ev_yalta_conference_1945"
     ]
   },
   {
@@ -7888,6 +8912,14 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_bulge_1944",
+      "ev_tehran_conference_1943"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945",
+      "ev_un_charter_signed_1945"
     ]
   },
   {
@@ -7914,6 +8946,15 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_bagration_1944",
+      "ev_soviet_counteroffensives_1943_1944"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945",
+      "ev_hitler_suicide_1945"
     ]
   },
   {
@@ -7941,6 +8982,12 @@
     ],
     "concept_ids": [
       "concept_imperial_overstretch"
+    ],
+    "prerequisite_event_ids": [
+      "ev_soviet_berlin_offensive_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_germany_surrenders_1945"
     ]
   },
   {
@@ -7969,6 +9016,19 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_bulge_1944",
+      "ev_hitler_suicide_1945",
+      "ev_liberation_paris_1944",
+      "ev_operation_bagration_1944",
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_berlin_offensive_1945",
+      "ev_yalta_conference_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_nuremberg_trials_begin_1945",
+      "ev_potsdam_conference_1945"
     ]
   },
   {
@@ -7996,6 +9056,13 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_germany_surrenders_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_soviet_invasion_manchuria_1945"
     ]
   },
   {
@@ -8032,6 +9099,14 @@
     ],
     "concept_ids": [
       "concept_bureaucratic_centralization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_island_hopping_campaign_1943_1945",
+      "ev_potsdam_conference_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_atomic_bomb_nagasaki_1945",
+      "ev_japan_surrenders_1945"
     ]
   },
   {
@@ -8060,6 +9135,12 @@
     ],
     "concept_ids": [
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_potsdam_conference_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_japan_surrenders_1945"
     ]
   },
   {
@@ -8086,6 +9167,12 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_atomic_bomb_hiroshima_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_japan_surrenders_1945"
     ]
   },
   {
@@ -8114,6 +9201,16 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_atomic_bomb_nagasaki_1945",
+      "ev_island_hopping_campaign_1943_1945",
+      "ev_soviet_invasion_manchuria_1945"
+    ],
+    "consequence_event_ids": [
+      "ev_nuremberg_trials_begin_1945",
+      "ev_un_charter_signed_1945"
     ]
   },
   {
@@ -8141,7 +9238,12 @@
     ],
     "concept_ids": [
       "concept_bureaucratic_centralization"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_japan_surrenders_1945",
+      "ev_yalta_conference_1945"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_nuremberg_trials_begin_1945",
@@ -8165,7 +9267,13 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_auschwitz_killing_center_expansion_1942",
+      "ev_germany_surrenders_1945",
+      "ev_japan_surrenders_1945"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_island_hopping_campaign_1943_1945",
@@ -8193,6 +9301,14 @@
       "timeline_before_after",
       "what_happened",
       "cause_and_effect"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_midway_1942",
+      "ev_guadalcanal_campaign_1942_1943"
+    ],
+    "consequence_event_ids": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_japan_surrenders_1945"
     ]
   },
   {
@@ -8233,6 +9349,10 @@
     ],
     "concept_ids": [
       "concept_religious_diffusion"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_hijra_622"
     ]
   },
   {
@@ -8273,6 +9393,12 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_bureaucratic_centralization"
+    ],
+    "prerequisite_event_ids": [
+      "ev_hijra_622"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_badr_624"
     ]
   },
   {
@@ -8319,6 +9445,12 @@
       "concept_frontier_expansion",
       "concept_military_reform",
       "concept_legitimacy_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_constitution_medina_622"
+    ],
+    "consequence_event_ids": [
+      "ev_treaty_hudaybiyyah_628"
     ]
   },
   {
@@ -8359,6 +9491,12 @@
     ],
     "concept_ids": [
       "concept_religious_diffusion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_badr_624"
+    ],
+    "consequence_event_ids": [
+      "ev_conquest_mecca_630"
     ]
   },
   {
@@ -8400,6 +9538,12 @@
     "concept_ids": [
       "concept_religious_diffusion",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_treaty_hudaybiyyah_628"
+    ],
+    "consequence_event_ids": [
+      "ev_death_muhammad_632"
     ]
   },
   {
@@ -8443,6 +9587,12 @@
       "concept_bureaucratic_centralization",
       "concept_religious_diffusion",
       "concept_succession_crisis"
+    ],
+    "prerequisite_event_ids": [
+      "ev_conquest_mecca_630"
+    ],
+    "consequence_event_ids": [
+      "ev_ridda_wars_begin_632"
     ]
   },
   {
@@ -8488,6 +9638,12 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_death_muhammad_632"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_yarmouk_636"
     ]
   },
   {
@@ -8533,6 +9689,12 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_ridda_wars_begin_632"
+    ],
+    "consequence_event_ids": [
+      "ev_conquest_jerusalem_638"
     ]
   },
   {
@@ -8577,6 +9739,10 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [
+      "ev_conquest_egypt_642"
     ]
   },
   {
@@ -8618,6 +9784,12 @@
     "concept_ids": [
       "concept_religious_diffusion",
       "concept_frontier_expansion"
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_yarmouk_636"
+    ],
+    "consequence_event_ids": [
+      "ev_conquest_egypt_642"
     ]
   },
   {
@@ -8663,6 +9835,13 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_conquest_ctesiphon_637",
+      "ev_conquest_jerusalem_638"
+    ],
+    "consequence_event_ids": [
+      "ev_battle_tours_732"
     ]
   },
   {
@@ -8706,6 +9885,12 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
+    ],
+    "prerequisite_event_ids": [
+      "ev_conquest_egypt_642"
+    ],
+    "consequence_event_ids": [
+      "ev_abbasid_revolution_750"
     ]
   },
   {
@@ -8745,7 +9930,11 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [
+      "ev_battle_tours_732"
+    ],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_notables_assembly_1787",
@@ -8766,7 +9955,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_parlement_paris_refuses_1787",
@@ -8787,7 +9978,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_day_of_tiles_1788",
@@ -8806,7 +9999,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_douai_estates_elections_1789",
@@ -8826,7 +10021,9 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_national_assembly_declared_1789",
@@ -8848,7 +10045,9 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_great_fear_1789",
@@ -8867,7 +10066,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_august_decrees_1789",
@@ -8886,7 +10087,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_church_property_nationalized_1789",
@@ -8906,7 +10109,9 @@
     "concept_ids": [
       "concept_religious_diffusion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_assignats_issued_1790",
@@ -8925,7 +10130,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_fete_federation_1790",
@@ -8947,7 +10154,9 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_chapelier_law_1791",
@@ -8966,7 +10175,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_constitution_1791_adopted",
@@ -8988,7 +10199,9 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_war_first_coalition_1792",
@@ -9009,7 +10222,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_tuileries_stormed_1792",
@@ -9030,7 +10245,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_national_convention_1792",
@@ -9051,7 +10268,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_execution_marie_antoinette_1793",
@@ -9072,7 +10291,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_levy_en_masse_1793",
@@ -9094,7 +10315,9 @@
     "concept_ids": [
       "concept_military_reform",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_committee_public_safety_1793",
@@ -9117,7 +10340,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_vendee_revolt_1793",
@@ -9136,7 +10361,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_law_suspects_1793",
@@ -9157,7 +10384,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_hebertists_executed_1794",
@@ -9178,7 +10407,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_dantonists_executed_1794",
@@ -9200,7 +10431,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_festival_supreme_being_1794",
@@ -9221,7 +10454,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_law_22_prairial_1794",
@@ -9242,7 +10477,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_constitution_year_iii_1795",
@@ -9264,7 +10501,9 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_13_vendemiaire_1795",
@@ -9286,7 +10525,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_camp_formio_1797",
@@ -9307,7 +10548,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_coup_18_fructidor_1797",
@@ -9328,7 +10571,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_egypt_campaign_1798",
@@ -9349,7 +10594,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_coup_30_prairial_1799",
@@ -9370,7 +10617,9 @@
     ],
     "concept_ids": [
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_consulate_established_1799",
@@ -9393,7 +10642,9 @@
     "concept_ids": [
       "concept_bureaucratic_centralization",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_zhang_qian_missions_open_routes",
@@ -9425,7 +10676,9 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_han_protectorate_western_regions",
@@ -9458,7 +10711,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_kushan_trade_mediation",
@@ -9495,7 +10750,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_buddhism_spreads_to_china",
@@ -9528,7 +10785,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_religious_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_loulan_and_tarim_oasis_trade",
@@ -9554,7 +10813,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_bureaucratic_centralization"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_papermaking_central_asia_transfer",
@@ -9581,7 +10842,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_technological_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_sogdian_merchant_networks_expand",
@@ -9612,7 +10875,9 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_faxian_travels_india_china",
@@ -9645,7 +10910,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_religious_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_sassanian_indian_ocean_exchange",
@@ -9671,7 +10938,9 @@
     "summary_short": "Sasanian Gulf-Indian Ocean trade intensifies strengthened interregional connections across Afro-Eurasia.",
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_silk_road_post_roman_shift",
@@ -9702,7 +10971,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_turkic_khaganate_trade_security",
@@ -9732,7 +11003,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_tang_cosmopolitan_changan",
@@ -9766,7 +11039,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_religious_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_songtsen_gampo_tibet_links",
@@ -9798,7 +11073,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_islamic_caliphate_trade_expansion",
@@ -9832,7 +11109,9 @@
       "concept_trade_network_expansion",
       "concept_religious_diffusion",
       "concept_frontier_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_umayyad_coinage_standardization",
@@ -9862,7 +11141,9 @@
       "concept_bureaucratic_centralization",
       "concept_urbanization",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_talas_papermaking_transfer",
@@ -9900,7 +11181,9 @@
       "concept_technological_diffusion",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_baghdad_translation_movement",
@@ -9934,7 +11217,9 @@
       "concept_trade_network_expansion",
       "concept_religious_diffusion",
       "concept_technological_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_swahili_coast_urban_growth",
@@ -9965,7 +11250,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_urbanization"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_ghaznavid_trade_corridors",
@@ -9995,7 +11282,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_song_maritime_commerce_expands",
@@ -10028,7 +11317,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_technological_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_crusader_contact_trade_flows",
@@ -10061,7 +11352,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_mansa_musa_hajj_gold_flows",
@@ -10093,7 +11386,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_religious_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_mongol_trade_integration",
@@ -10133,7 +11428,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_marco_polo_travels",
@@ -10165,7 +11462,9 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_ilkhanid_knowledge_exchange",
@@ -10194,7 +11493,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_technological_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_black_death_trade_route_transmission",
@@ -10227,7 +11528,9 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_ibn_battuta_travels",
@@ -10258,7 +11561,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_religious_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_ming_maritime_policy_reset",
@@ -10292,7 +11597,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_timurid_patronage_exchange",
@@ -10321,7 +11628,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_technological_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_zheng_he_voyages_begin",
@@ -10361,7 +11670,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_mamluk_indian_ocean_intermediation",
@@ -10392,7 +11703,9 @@
       "concept_bureaucratic_centralization",
       "concept_succession_crisis",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_ottoman_control_eastern_mediterranean",
@@ -10431,7 +11744,9 @@
       "concept_frontier_expansion",
       "concept_military_reform",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_portuguese_arrive_indian_ocean",
@@ -10471,7 +11786,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_safavid_ottoman_mughal_exchange_competition",
@@ -10506,7 +11823,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_military_reform"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_silver_flows_asia_via_oceans",
@@ -10537,7 +11856,9 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_urbanization"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_coffee_trade_red_sea",
@@ -10567,7 +11888,9 @@
     ],
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_qing_frontier_trade_regulation",
@@ -10599,7 +11922,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_russian_steppe_expansion_trade",
@@ -10632,7 +11957,9 @@
       "concept_succession_crisis",
       "concept_frontier_expansion",
       "concept_legitimacy_crisis"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_chintz_and_textile_diffusion",
@@ -10663,7 +11990,9 @@
       "concept_trade_network_expansion",
       "concept_technological_diffusion",
       "concept_urbanization"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_cholera_trade_routes_1817",
@@ -10690,7 +12019,9 @@
     "summary_short": "First cholera pandemic spreads via trade routes strengthened interregional connections across Afro-Eurasia.",
     "concept_ids": [
       "concept_trade_network_expansion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   },
   {
     "id": "ev_steamship_suez_accelerates_exchange",
@@ -10722,6 +12053,8 @@
     "concept_ids": [
       "concept_trade_network_expansion",
       "concept_technological_diffusion"
-    ]
+    ],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": []
   }
 ]

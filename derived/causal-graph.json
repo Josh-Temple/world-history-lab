@@ -1,0 +1,1923 @@
+{
+  "ev_13_vendemiaire_1795": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_abbasid_revolution_750": {
+    "prerequisites": [
+      "ev_battle_tours_732"
+    ],
+    "consequences": []
+  },
+  "ev_abolition_british_slave_trade_1807": {
+    "prerequisites": [
+      "ev_haitian_revolution_independence_1804"
+    ],
+    "consequences": [
+      "ev_qing_first_opium_war_1839"
+    ]
+  },
+  "ev_alexander_gaugamela_331bce": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_allied_strategic_bombing_1943": {
+    "prerequisites": [
+      "ev_battle_of_britain_1940",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ],
+    "consequences": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_berlin_offensive_1945"
+    ]
+  },
+  "ev_ashoka_kalinga_261bce": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_assignats_issued_1790": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_atomic_bomb_hiroshima_1945": {
+    "prerequisites": [
+      "ev_island_hopping_campaign_1943_1945",
+      "ev_potsdam_conference_1945"
+    ],
+    "consequences": [
+      "ev_atomic_bomb_nagasaki_1945",
+      "ev_japan_surrenders_1945"
+    ]
+  },
+  "ev_atomic_bomb_nagasaki_1945": {
+    "prerequisites": [
+      "ev_atomic_bomb_hiroshima_1945"
+    ],
+    "consequences": [
+      "ev_japan_surrenders_1945"
+    ]
+  },
+  "ev_august_decrees_1789": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_augustus_principate_27bce": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_auschwitz_killing_center_expansion_1942": {
+    "prerequisites": [
+      "ev_wannsee_conference_1942"
+    ],
+    "consequences": [
+      "ev_nuremberg_trials_begin_1945"
+    ]
+  },
+  "ev_baghdad_translation_movement": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_bandung_conference_1955": {
+    "prerequisites": [
+      "ev_india_independence_1947",
+      "ev_wwi_league_of_nations_1920"
+    ],
+    "consequences": []
+  },
+  "ev_battle_badr_624": {
+    "prerequisites": [
+      "ev_constitution_medina_622"
+    ],
+    "consequences": [
+      "ev_treaty_hudaybiyyah_628"
+    ]
+  },
+  "ev_battle_bulge_1944": {
+    "prerequisites": [
+      "ev_guadalcanal_campaign_1942_1943",
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "consequences": [
+      "ev_germany_surrenders_1945",
+      "ev_yalta_conference_1945"
+    ]
+  },
+  "ev_battle_el_alamein_1942": {
+    "prerequisites": [
+      "ev_operation_torch_1942"
+    ],
+    "consequences": [
+      "ev_italy_surrenders_1943"
+    ]
+  },
+  "ev_battle_midway_1942": {
+    "prerequisites": [
+      "ev_pearl_harbor_1941",
+      "ev_united_states_enters_war_1941"
+    ],
+    "consequences": [
+      "ev_guadalcanal_campaign_1942_1943",
+      "ev_island_hopping_campaign_1943_1945"
+    ]
+  },
+  "ev_battle_of_britain_1940": {
+    "prerequisites": [
+      "ev_fall_of_france_1940",
+      "ev_france_britain_declare_war_1939"
+    ],
+    "consequences": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_overlord_d_day_1944"
+    ]
+  },
+  "ev_battle_of_valmy_1792": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_reign_of_terror_1793_1794"
+    ]
+  },
+  "ev_battle_stalingrad_1942_1943": {
+    "prerequisites": [
+      "ev_operation_barbarossa_1941"
+    ],
+    "consequences": [
+      "ev_operation_bagration_1944",
+      "ev_soviet_counteroffensives_1943_1944"
+    ]
+  },
+  "ev_battle_tours_732": {
+    "prerequisites": [
+      "ev_conquest_egypt_642"
+    ],
+    "consequences": [
+      "ev_abbasid_revolution_750"
+    ]
+  },
+  "ev_battle_yarmouk_636": {
+    "prerequisites": [
+      "ev_ridda_wars_begin_632"
+    ],
+    "consequences": [
+      "ev_conquest_jerusalem_638"
+    ]
+  },
+  "ev_berlin_conference_1884": {
+    "prerequisites": [
+      "ev_indian_revolt_1857"
+    ],
+    "consequences": [
+      "ev_pan_african_congress_1945"
+    ]
+  },
+  "ev_bessemer_process_1856": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_global_market_coordination_1860s",
+      "ev_second_industrial_revolution_1870s"
+    ]
+  },
+  "ev_bessemer_process_patent_1856": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_black_death_trade_route_transmission": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_bridgewater_canal_opens_1761": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_buddha_enlightenment_5c_bce": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_buddhism_spreads_to_china": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_camp_formio_1797": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_chapelier_law_1791": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_charlemagne_crowned_800": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_chintz_and_textile_diffusion": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_cholera_trade_routes_1817": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_church_property_nationalized_1789": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_civil_constitution_clergy_1790": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_flight_to_varennes_1791"
+    ]
+  },
+  "ev_coffee_trade_red_sea": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_columbus_1492": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_committee_public_safety_1793": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_communist_manifesto_1848": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_first_international_1864"
+    ]
+  },
+  "ev_concert_of_europe_1815_1848": {
+    "prerequisites": [
+      "ev_congress_vienna_1815"
+    ],
+    "consequences": [
+      "ev_revolutions_1848"
+    ]
+  },
+  "ev_congress_of_vienna_1814_1815": {
+    "prerequisites": [
+      "ev_napoleon_emperor_1804"
+    ],
+    "consequences": [
+      "ev_congress_vienna_1815"
+    ]
+  },
+  "ev_congress_vienna_1815": {
+    "prerequisites": [
+      "ev_congress_of_vienna_1814_1815",
+      "ev_napoleonic_wars_1803_1815"
+    ],
+    "consequences": [
+      "ev_concert_of_europe_1815_1848",
+      "ev_railway_boom_1840s"
+    ]
+  },
+  "ev_conquest_ctesiphon_637": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_conquest_egypt_642"
+    ]
+  },
+  "ev_conquest_egypt_642": {
+    "prerequisites": [
+      "ev_conquest_ctesiphon_637",
+      "ev_conquest_jerusalem_638"
+    ],
+    "consequences": [
+      "ev_battle_tours_732"
+    ]
+  },
+  "ev_conquest_jerusalem_638": {
+    "prerequisites": [
+      "ev_battle_yarmouk_636"
+    ],
+    "consequences": [
+      "ev_conquest_egypt_642"
+    ]
+  },
+  "ev_conquest_mecca_630": {
+    "prerequisites": [
+      "ev_treaty_hudaybiyyah_628"
+    ],
+    "consequences": [
+      "ev_death_muhammad_632"
+    ]
+  },
+  "ev_constantine_edict_milan_313": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_constitution_1791_adopted": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_constitution_medina_622": {
+    "prerequisites": [
+      "ev_hijra_622"
+    ],
+    "consequences": [
+      "ev_battle_badr_624"
+    ]
+  },
+  "ev_constitution_year_iii_1795": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_consulate_established_1799": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_cotton_gin_1793": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_steam_power_transport_expansion_1800s"
+    ]
+  },
+  "ev_cotton_gin_invented_1793": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_coup_18_fructidor_1797": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_coup_30_prairial_1799": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_cromford_mill_uses_water_frame_1771": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_crusader_contact_trade_flows": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_cyrus_founds_achaemenid_550bce": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_dantonists_executed_1794": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_day_of_tiles_1788": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_death_muhammad_632": {
+    "prerequisites": [
+      "ev_conquest_mecca_630"
+    ],
+    "consequences": [
+      "ev_ridda_wars_begin_632"
+    ]
+  },
+  "ev_declaration_rights_man_citizen_1789": {
+    "prerequisites": [
+      "ev_storming_bastille_1789"
+    ],
+    "consequences": []
+  },
+  "ev_directory_established_1795": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_napoleon_coup_18_brumaire_1799"
+    ]
+  },
+  "ev_douai_estates_elections_1789": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_egypt_campaign_1798": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_electric_power_adoption_1880s": {
+    "prerequisites": [
+      "ev_modern_urban_infrastructure_1850s_1870s",
+      "ev_second_industrial_revolution_1870s"
+    ],
+    "consequences": [
+      "ev_mass_production_systems_1890s"
+    ]
+  },
+  "ev_enclosure_movement_accelerates_1750s": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_factory_system_rise_1780s"
+    ]
+  },
+  "ev_estates_general_1789": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_tennis_court_oath_1789"
+    ]
+  },
+  "ev_execution_louis_xvi_1793": {
+    "prerequisites": [
+      "ev_september_massacres_1792"
+    ],
+    "consequences": [
+      "ev_reign_of_terror_1793_1794"
+    ]
+  },
+  "ev_execution_marie_antoinette_1793": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_factory_act_1833": {
+    "prerequisites": [
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "consequences": [
+      "ev_factory_act_1847_ten_hours"
+    ]
+  },
+  "ev_factory_act_1847_ten_hours": {
+    "prerequisites": [
+      "ev_factory_act_1833",
+      "ev_labor_movements_1830s_1840s"
+    ],
+    "consequences": [
+      "ev_matchgirls_strike_1888",
+      "ev_public_health_act_1848"
+    ]
+  },
+  "ev_factory_system_rise_1780s": {
+    "prerequisites": [
+      "ev_enclosure_movement_accelerates_1750s",
+      "ev_spinning_jenny_1764",
+      "ev_water_frame_1769",
+      "ev_watt_steam_engine_1776"
+    ],
+    "consequences": [
+      "ev_labor_movements_1830s_1840s",
+      "ev_stockton_darlington_railway_1825",
+      "ev_urbanization_accelerates_1800_1850"
+    ]
+  },
+  "ev_fall_of_france_1940": {
+    "prerequisites": [
+      "ev_france_britain_declare_war_1939"
+    ],
+    "consequences": [
+      "ev_battle_of_britain_1940",
+      "ev_operation_barbarossa_1941"
+    ]
+  },
+  "ev_faxian_travels_india_china": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_festival_supreme_being_1794": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_fete_federation_1790": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_first_international_1864": {
+    "prerequisites": [
+      "ev_communist_manifesto_1848"
+    ],
+    "consequences": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ]
+  },
+  "ev_first_revelation_610": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_hijra_622"
+    ]
+  },
+  "ev_flight_to_varennes_1791": {
+    "prerequisites": [
+      "ev_civil_constitution_clergy_1790",
+      "ev_womens_march_versailles_1789"
+    ],
+    "consequences": [
+      "ev_september_massacres_1792"
+    ]
+  },
+  "ev_flying_shuttle_patent_1733": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_france_britain_declare_war_1939": {
+    "prerequisites": [
+      "ev_invasion_poland_1939"
+    ],
+    "consequences": [
+      "ev_battle_of_britain_1940",
+      "ev_fall_of_france_1940"
+    ]
+  },
+  "ev_germany_surrenders_1945": {
+    "prerequisites": [
+      "ev_battle_bulge_1944",
+      "ev_hitler_suicide_1945",
+      "ev_liberation_paris_1944",
+      "ev_operation_bagration_1944",
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_berlin_offensive_1945",
+      "ev_yalta_conference_1945"
+    ],
+    "consequences": [
+      "ev_nuremberg_trials_begin_1945",
+      "ev_potsdam_conference_1945"
+    ]
+  },
+  "ev_ghaznavid_trade_corridors": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_global_market_coordination_1860s": {
+    "prerequisites": [
+      "ev_bessemer_process_1856",
+      "ev_national_market_integration_1850s",
+      "ev_telegraph_invention_1837"
+    ],
+    "consequences": [
+      "ev_imperialism_berlin_conference_begins_1884",
+      "ev_wwi_alliance_system_hardens_1890_1907"
+    ]
+  },
+  "ev_great_exhibition_opens_1851": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_great_fear_1789": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_guadalcanal_campaign_1942_1943": {
+    "prerequisites": [
+      "ev_battle_midway_1942"
+    ],
+    "consequences": [
+      "ev_battle_bulge_1944",
+      "ev_island_hopping_campaign_1943_1945"
+    ]
+  },
+  "ev_haitian_revolution_independence_1804": {
+    "prerequisites": [
+      "ev_tokugawa_shogunate_1603"
+    ],
+    "consequences": [
+      "ev_abolition_british_slave_trade_1807"
+    ]
+  },
+  "ev_han_protectorate_western_regions": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_han_zhangqian_2c_bce": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_hebertists_executed_1794": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_hijra_622": {
+    "prerequisites": [
+      "ev_first_revelation_610"
+    ],
+    "consequences": [
+      "ev_constitution_medina_622"
+    ]
+  },
+  "ev_hitler_suicide_1945": {
+    "prerequisites": [
+      "ev_soviet_berlin_offensive_1945"
+    ],
+    "consequences": [
+      "ev_germany_surrenders_1945"
+    ]
+  },
+  "ev_holocaust_widening_killings_1941": {
+    "prerequisites": [
+      "ev_operation_barbarossa_1941"
+    ],
+    "consequences": [
+      "ev_wannsee_conference_1942"
+    ]
+  },
+  "ev_ibn_battuta_travels": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_ilkhanid_knowledge_exchange": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_agadir_crisis_1911": {
+    "prerequisites": [
+      "ev_imperialism_algeciras_conference_1906"
+    ],
+    "consequences": []
+  },
+  "ev_imperialism_algeciras_conference_1906": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_imperialism_agadir_crisis_1911"
+    ]
+  },
+  "ev_imperialism_anglo_japanese_alliance_1902": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_imperialism_russojapanese_war_begins_1904"
+    ]
+  },
+  "ev_imperialism_battle_of_adwa_1896": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_berlin_conference_begins_1884": {
+    "prerequisites": [
+      "ev_global_market_coordination_1860s"
+    ],
+    "consequences": []
+  },
+  "ev_imperialism_berlin_conference_ends_1885": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_boer_war_ends_1902": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_boxer_rebellion_1900": {
+    "prerequisites": [
+      "ev_imperialism_open_door_notes_1899"
+    ],
+    "consequences": []
+  },
+  "ev_imperialism_british_occupation_egypt_1882": {
+    "prerequisites": [
+      "ev_imperialism_suez_canal_opens_1869"
+    ],
+    "consequences": []
+  },
+  "ev_imperialism_british_south_africa_company_charter_1889": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_imperialism_second_boer_war_begins_1899"
+    ]
+  },
+  "ev_imperialism_congo_free_state_established_1885": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_fashoda_incident_1898": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_first_balkan_war_1912": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
+    ]
+  },
+  "ev_imperialism_first_moroccan_crisis_1905": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_wwi_alliance_system_hardens_1890_1907"
+    ]
+  },
+  "ev_imperialism_first_sinojapanese_war_begins_1894": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_japan_annexes_korea_1910": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_leopold_congo_project_1876": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_open_door_notes_1899": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_imperialism_boxer_rebellion_1900"
+    ]
+  },
+  "ev_imperialism_philippine_american_war_begins_1899": {
+    "prerequisites": [
+      "ev_imperialism_us_annexes_hawaii_1898"
+    ],
+    "consequences": []
+  },
+  "ev_imperialism_russojapanese_war_begins_1904": {
+    "prerequisites": [
+      "ev_imperialism_anglo_japanese_alliance_1902",
+      "ev_imperialism_triple_intervention_1895"
+    ],
+    "consequences": [
+      "ev_wwi_naval_arms_race_1898_1914"
+    ]
+  },
+  "ev_imperialism_second_boer_war_begins_1899": {
+    "prerequisites": [
+      "ev_imperialism_british_south_africa_company_charter_1889"
+    ],
+    "consequences": []
+  },
+  "ev_imperialism_spanish_american_war_1898": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_suez_canal_opens_1869": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_imperialism_british_occupation_egypt_1882"
+    ]
+  },
+  "ev_imperialism_treaty_portsmouth_1905": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_treaty_shimonoseki_1895": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_imperialism_triple_intervention_1895": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_imperialism_russojapanese_war_begins_1904"
+    ]
+  },
+  "ev_imperialism_us_annexes_hawaii_1898": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_imperialism_philippine_american_war_begins_1899"
+    ]
+  },
+  "ev_india_independence_1947": {
+    "prerequisites": [
+      "ev_pan_african_congress_1945",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "consequences": [
+      "ev_bandung_conference_1955"
+    ]
+  },
+  "ev_indian_revolt_1857": {
+    "prerequisites": [
+      "ev_qing_first_opium_war_1839"
+    ],
+    "consequences": [
+      "ev_berlin_conference_1884"
+    ]
+  },
+  "ev_internal_combustion_engine_1876": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_mass_production_systems_1890s"
+    ]
+  },
+  "ev_invasion_poland_1939": {
+    "prerequisites": [
+      "ev_molotov_ribbentrop_pact_1939",
+      "ev_munich_agreement_1938"
+    ],
+    "consequences": [
+      "ev_france_britain_declare_war_1939",
+      "ev_soviet_invasion_eastern_poland_1939"
+    ]
+  },
+  "ev_islamic_caliphate_trade_expansion": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_island_hopping_campaign_1943_1945": {
+    "prerequisites": [
+      "ev_battle_midway_1942",
+      "ev_guadalcanal_campaign_1942_1943"
+    ],
+    "consequences": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_japan_surrenders_1945"
+    ]
+  },
+  "ev_italy_surrenders_1943": {
+    "prerequisites": [
+      "ev_battle_el_alamein_1942",
+      "ev_operation_torch_1942"
+    ],
+    "consequences": [
+      "ev_operation_overlord_d_day_1944"
+    ]
+  },
+  "ev_japan_surrenders_1945": {
+    "prerequisites": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_atomic_bomb_nagasaki_1945",
+      "ev_island_hopping_campaign_1943_1945",
+      "ev_soviet_invasion_manchuria_1945"
+    ],
+    "consequences": [
+      "ev_nuremberg_trials_begin_1945",
+      "ev_un_charter_signed_1945"
+    ]
+  },
+  "ev_kushan_trade_mediation": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_labor_movements_1830s_1840s": {
+    "prerequisites": [
+      "ev_factory_system_rise_1780s",
+      "ev_luddite_protests_1811",
+      "ev_urbanization_accelerates_1800_1850"
+    ],
+    "consequences": [
+      "ev_factory_act_1833",
+      "ev_factory_act_1847_ten_hours"
+    ]
+  },
+  "ev_law_22_prairial_1794": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_law_suspects_1793": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_lend_lease_act_1941": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_soviet_counteroffensives_1943_1944",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ]
+  },
+  "ev_levy_en_masse_1793": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_liberation_paris_1944": {
+    "prerequisites": [
+      "ev_operation_overlord_d_day_1944"
+    ],
+    "consequences": [
+      "ev_germany_surrenders_1945"
+    ]
+  },
+  "ev_liverpool_manchester_railway_1830": {
+    "prerequisites": [
+      "ev_steam_power_transport_expansion_1800s",
+      "ev_stockton_darlington_railway_1825"
+    ],
+    "consequences": [
+      "ev_national_market_integration_1850s",
+      "ev_railway_boom_1840s"
+    ]
+  },
+  "ev_loulan_and_tarim_oasis_trade": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_luddite_protests_1811": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_labor_movements_1830s_1840s"
+    ]
+  },
+  "ev_mali_mansa_musa_hajj_1324": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_ottoman_conquest_egypt_1517"
+    ]
+  },
+  "ev_mamluk_indian_ocean_intermediation": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_mansa_musa_hajj_gold_flows": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_marco_polo_travels": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_mass_politics_worker_parties_1880s_1890s": {
+    "prerequisites": [
+      "ev_first_international_1864",
+      "ev_matchgirls_strike_1888",
+      "ev_revolutions_1848",
+      "ev_second_industrial_revolution_1870s"
+    ],
+    "consequences": []
+  },
+  "ev_mass_production_systems_1890s": {
+    "prerequisites": [
+      "ev_electric_power_adoption_1880s",
+      "ev_internal_combustion_engine_1876"
+    ],
+    "consequences": []
+  },
+  "ev_matchgirls_strike_1888": {
+    "prerequisites": [
+      "ev_factory_act_1847_ten_hours"
+    ],
+    "consequences": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ]
+  },
+  "ev_mehmed_constantinople_1453": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_meiji_abolish_han_1871": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_meiji_annex_korea_1910": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_meiji_boshin_war_1868": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_meiji_charter_oath_1868"
+    ]
+  },
+  "ev_meiji_charter_oath_1868": {
+    "prerequisites": [
+      "ev_meiji_boshin_war_1868"
+    ],
+    "consequences": []
+  },
+  "ev_meiji_conscription_1873": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_meiji_constitution_1889": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_meiji_diet_1890"
+    ]
+  },
+  "ev_meiji_diet_1890": {
+    "prerequisites": [
+      "ev_meiji_constitution_1889"
+    ],
+    "consequences": []
+  },
+  "ev_meiji_emperor_death_1912": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_meiji_kanagawa_treaty_1854": {
+    "prerequisites": [
+      "ev_meiji_perry_1853"
+    ],
+    "consequences": []
+  },
+  "ev_meiji_perry_1853": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_meiji_kanagawa_treaty_1854"
+    ]
+  },
+  "ev_meiji_russojapanese_war_1905": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_meiji_sinojapanese_war_1894": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_ming_maritime_policy_reset": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_modern_urban_infrastructure_1850s_1870s": {
+    "prerequisites": [
+      "ev_public_health_act_1848"
+    ],
+    "consequences": [
+      "ev_electric_power_adoption_1880s"
+    ]
+  },
+  "ev_molotov_ribbentrop_pact_1939": {
+    "prerequisites": [
+      "ev_munich_agreement_1938"
+    ],
+    "consequences": [
+      "ev_invasion_poland_1939"
+    ]
+  },
+  "ev_mongol_empire_formation_1206": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_mongol_trade_integration": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_mughal_empire_akbar_consolidation_1570s": {
+    "prerequisites": [
+      "ev_ottoman_conquest_egypt_1517"
+    ],
+    "consequences": [
+      "ev_tokugawa_shogunate_1603"
+    ]
+  },
+  "ev_munich_agreement_1938": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_invasion_poland_1939",
+      "ev_molotov_ribbentrop_pact_1939"
+    ]
+  },
+  "ev_napoleon_coup_18_brumaire_1799": {
+    "prerequisites": [
+      "ev_directory_established_1795"
+    ],
+    "consequences": [
+      "ev_napoleon_emperor_1804",
+      "ev_napoleonic_wars_1803_1815"
+    ]
+  },
+  "ev_napoleon_emperor_1804": {
+    "prerequisites": [
+      "ev_napoleon_coup_18_brumaire_1799"
+    ],
+    "consequences": [
+      "ev_congress_of_vienna_1814_1815",
+      "ev_napoleonic_wars_1803_1815"
+    ]
+  },
+  "ev_napoleonic_wars_1803_1815": {
+    "prerequisites": [
+      "ev_napoleon_coup_18_brumaire_1799",
+      "ev_napoleon_emperor_1804"
+    ],
+    "consequences": [
+      "ev_congress_vienna_1815",
+      "ev_state_military_fiscal_expansion_1810s_1820s"
+    ]
+  },
+  "ev_national_assembly_declared_1789": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_national_convention_1792": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_national_market_integration_1850s": {
+    "prerequisites": [
+      "ev_liverpool_manchester_railway_1830",
+      "ev_railway_boom_1840s",
+      "ev_state_military_fiscal_expansion_1810s_1820s",
+      "ev_telegraph_invention_1837"
+    ],
+    "consequences": [
+      "ev_global_market_coordination_1860s"
+    ]
+  },
+  "ev_notables_assembly_1787": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_nuremberg_trials_begin_1945": {
+    "prerequisites": [
+      "ev_auschwitz_killing_center_expansion_1942",
+      "ev_germany_surrenders_1945",
+      "ev_japan_surrenders_1945"
+    ],
+    "consequences": []
+  },
+  "ev_operation_bagration_1944": {
+    "prerequisites": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_soviet_counteroffensives_1943_1944"
+    ],
+    "consequences": [
+      "ev_germany_surrenders_1945",
+      "ev_soviet_berlin_offensive_1945"
+    ]
+  },
+  "ev_operation_barbarossa_1941": {
+    "prerequisites": [
+      "ev_fall_of_france_1940",
+      "ev_soviet_invasion_eastern_poland_1939"
+    ],
+    "consequences": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_holocaust_widening_killings_1941"
+    ]
+  },
+  "ev_operation_overlord_d_day_1944": {
+    "prerequisites": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_battle_of_britain_1940",
+      "ev_italy_surrenders_1943",
+      "ev_lend_lease_act_1941",
+      "ev_tehran_conference_1943",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ],
+    "consequences": [
+      "ev_battle_bulge_1944",
+      "ev_germany_surrenders_1945",
+      "ev_liberation_paris_1944"
+    ]
+  },
+  "ev_operation_torch_1942": {
+    "prerequisites": [
+      "ev_united_states_enters_war_1941"
+    ],
+    "consequences": [
+      "ev_battle_el_alamein_1942",
+      "ev_italy_surrenders_1943"
+    ]
+  },
+  "ev_ottoman_conquest_egypt_1517": {
+    "prerequisites": [
+      "ev_mali_mansa_musa_hajj_1324"
+    ],
+    "consequences": [
+      "ev_mughal_empire_akbar_consolidation_1570s"
+    ]
+  },
+  "ev_ottoman_control_eastern_mediterranean": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_pan_african_congress_1945": {
+    "prerequisites": [
+      "ev_berlin_conference_1884",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "consequences": [
+      "ev_india_independence_1947"
+    ]
+  },
+  "ev_papermaking_central_asia_transfer": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_parlement_paris_refuses_1787": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_pearl_harbor_1941": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_battle_midway_1942",
+      "ev_united_states_enters_war_1941"
+    ]
+  },
+  "ev_penydarren_locomotive_run_1804": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_portuguese_arrive_indian_ocean": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_potsdam_conference_1945": {
+    "prerequisites": [
+      "ev_germany_surrenders_1945"
+    ],
+    "consequences": [
+      "ev_atomic_bomb_hiroshima_1945",
+      "ev_soviet_invasion_manchuria_1945"
+    ]
+  },
+  "ev_power_loom_patented_1785": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_public_health_act_1848": {
+    "prerequisites": [
+      "ev_factory_act_1847_ten_hours",
+      "ev_urbanization_accelerates_1800_1850"
+    ],
+    "consequences": [
+      "ev_modern_urban_infrastructure_1850s_1870s"
+    ]
+  },
+  "ev_qin_unification_221bce": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_qing_first_opium_war_1839": {
+    "prerequisites": [
+      "ev_abolition_british_slave_trade_1807"
+    ],
+    "consequences": [
+      "ev_indian_revolt_1857"
+    ]
+  },
+  "ev_qing_frontier_trade_regulation": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_railway_boom_1840s": {
+    "prerequisites": [
+      "ev_congress_vienna_1815",
+      "ev_liverpool_manchester_railway_1830"
+    ],
+    "consequences": [
+      "ev_national_market_integration_1850s",
+      "ev_second_industrial_revolution_1870s"
+    ]
+  },
+  "ev_rainhill_trials_rocket_1829": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_reign_of_terror_1793_1794": {
+    "prerequisites": [
+      "ev_battle_of_valmy_1792",
+      "ev_execution_louis_xvi_1793"
+    ],
+    "consequences": [
+      "ev_thermidorian_reaction_1794"
+    ]
+  },
+  "ev_revolutions_1848": {
+    "prerequisites": [
+      "ev_concert_of_europe_1815_1848"
+    ],
+    "consequences": [
+      "ev_mass_politics_worker_parties_1880s_1890s"
+    ]
+  },
+  "ev_ridda_wars_begin_632": {
+    "prerequisites": [
+      "ev_death_muhammad_632"
+    ],
+    "consequences": [
+      "ev_battle_yarmouk_636"
+    ]
+  },
+  "ev_russian_steppe_expansion_trade": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_safavid_ottoman_mughal_exchange_competition": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_sassanian_indian_ocean_exchange": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_second_industrial_revolution_1870s": {
+    "prerequisites": [
+      "ev_bessemer_process_1856",
+      "ev_railway_boom_1840s"
+    ],
+    "consequences": [
+      "ev_electric_power_adoption_1880s",
+      "ev_mass_politics_worker_parties_1880s_1890s",
+      "ev_wwi_naval_arms_race_1898_1914"
+    ]
+  },
+  "ev_september_massacres_1792": {
+    "prerequisites": [
+      "ev_flight_to_varennes_1791"
+    ],
+    "consequences": [
+      "ev_execution_louis_xvi_1793"
+    ]
+  },
+  "ev_silk_road_post_roman_shift": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_silver_flows_asia_via_oceans": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_sogdian_merchant_networks_expand": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_song_commercial_revolution_11c": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_song_maritime_commerce_expands": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_songtsen_gampo_tibet_links": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_soviet_berlin_offensive_1945": {
+    "prerequisites": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_bagration_1944",
+      "ev_soviet_counteroffensives_1943_1944"
+    ],
+    "consequences": [
+      "ev_germany_surrenders_1945",
+      "ev_hitler_suicide_1945"
+    ]
+  },
+  "ev_soviet_counteroffensives_1943_1944": {
+    "prerequisites": [
+      "ev_battle_stalingrad_1942_1943",
+      "ev_lend_lease_act_1941"
+    ],
+    "consequences": [
+      "ev_operation_bagration_1944",
+      "ev_soviet_berlin_offensive_1945"
+    ]
+  },
+  "ev_soviet_invasion_eastern_poland_1939": {
+    "prerequisites": [
+      "ev_invasion_poland_1939"
+    ],
+    "consequences": [
+      "ev_operation_barbarossa_1941"
+    ]
+  },
+  "ev_soviet_invasion_manchuria_1945": {
+    "prerequisites": [
+      "ev_potsdam_conference_1945"
+    ],
+    "consequences": [
+      "ev_japan_surrenders_1945"
+    ]
+  },
+  "ev_spinning_jenny_1764": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_factory_system_rise_1780s"
+    ]
+  },
+  "ev_spinning_jenny_invented_1764": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_spinning_jenny_patented_1770": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_spinning_mule_invented_1779": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_state_military_fiscal_expansion_1810s_1820s": {
+    "prerequisites": [
+      "ev_napoleonic_wars_1803_1815"
+    ],
+    "consequences": [
+      "ev_national_market_integration_1850s"
+    ]
+  },
+  "ev_steam_power_transport_expansion_1800s": {
+    "prerequisites": [
+      "ev_cotton_gin_1793",
+      "ev_watt_steam_engine_1776"
+    ],
+    "consequences": [
+      "ev_liverpool_manchester_railway_1830",
+      "ev_stockton_darlington_railway_1825"
+    ]
+  },
+  "ev_steamship_suez_accelerates_exchange": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_stockton_darlington_railway_1825": {
+    "prerequisites": [
+      "ev_factory_system_rise_1780s",
+      "ev_steam_power_transport_expansion_1800s"
+    ],
+    "consequences": [
+      "ev_liverpool_manchester_railway_1830"
+    ]
+  },
+  "ev_storming_bastille_1789": {
+    "prerequisites": [
+      "ev_tennis_court_oath_1789"
+    ],
+    "consequences": [
+      "ev_declaration_rights_man_citizen_1789"
+    ]
+  },
+  "ev_swahili_coast_urban_growth": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_talas_papermaking_transfer": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_tang_cosmopolitan_changan": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_tang_peak_7c": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_tehran_conference_1943": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_operation_overlord_d_day_1944",
+      "ev_yalta_conference_1945"
+    ]
+  },
+  "ev_telegraph_invention_1837": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_global_market_coordination_1860s",
+      "ev_national_market_integration_1850s"
+    ]
+  },
+  "ev_tennis_court_oath_1789": {
+    "prerequisites": [
+      "ev_estates_general_1789"
+    ],
+    "consequences": [
+      "ev_storming_bastille_1789"
+    ]
+  },
+  "ev_thermidorian_reaction_1794": {
+    "prerequisites": [
+      "ev_reign_of_terror_1793_1794"
+    ],
+    "consequences": []
+  },
+  "ev_timurid_patronage_exchange": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_tokugawa_shogunate_1603": {
+    "prerequisites": [
+      "ev_mughal_empire_akbar_consolidation_1570s"
+    ],
+    "consequences": [
+      "ev_haitian_revolution_independence_1804"
+    ]
+  },
+  "ev_treaty_hudaybiyyah_628": {
+    "prerequisites": [
+      "ev_battle_badr_624"
+    ],
+    "consequences": [
+      "ev_conquest_mecca_630"
+    ]
+  },
+  "ev_tuileries_stormed_1792": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_turkic_khaganate_trade_security": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_umayyad_coinage_standardization": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_un_charter_signed_1945": {
+    "prerequisites": [
+      "ev_japan_surrenders_1945",
+      "ev_yalta_conference_1945"
+    ],
+    "consequences": []
+  },
+  "ev_united_states_enters_war_1941": {
+    "prerequisites": [
+      "ev_pearl_harbor_1941"
+    ],
+    "consequences": [
+      "ev_battle_midway_1942",
+      "ev_operation_torch_1942",
+      "ev_wartime_industrial_mobilization_1942_1944"
+    ]
+  },
+  "ev_urbanization_accelerates_1800_1850": {
+    "prerequisites": [
+      "ev_factory_system_rise_1780s"
+    ],
+    "consequences": [
+      "ev_labor_movements_1830s_1840s",
+      "ev_public_health_act_1848"
+    ]
+  },
+  "ev_vendee_revolt_1793": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_wannsee_conference_1942": {
+    "prerequisites": [
+      "ev_holocaust_widening_killings_1941"
+    ],
+    "consequences": [
+      "ev_auschwitz_killing_center_expansion_1942"
+    ]
+  },
+  "ev_war_first_coalition_1792": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_wartime_industrial_mobilization_1942_1944": {
+    "prerequisites": [
+      "ev_lend_lease_act_1941",
+      "ev_united_states_enters_war_1941"
+    ],
+    "consequences": [
+      "ev_allied_strategic_bombing_1943",
+      "ev_operation_overlord_d_day_1944"
+    ]
+  },
+  "ev_water_frame_1769": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_factory_system_rise_1780s"
+    ]
+  },
+  "ev_water_frame_patent_1769": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_watt_condenser_patent_1769": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_watt_steam_engine_1776": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_factory_system_rise_1780s",
+      "ev_steam_power_transport_expansion_1800s"
+    ]
+  },
+  "ev_womens_march_versailles_1789": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_flight_to_varennes_1791"
+    ]
+  },
+  "ev_wwi_alliance_system_hardens_1890_1907": {
+    "prerequisites": [
+      "ev_global_market_coordination_1860s",
+      "ev_imperialism_first_moroccan_crisis_1905"
+    ],
+    "consequences": [
+      "ev_wwi_naval_arms_race_1898_1914"
+    ]
+  },
+  "ev_wwi_arab_revolt_1916": {
+    "prerequisites": [
+      "ev_wwi_gallipoli_campaign_1915"
+    ],
+    "consequences": [
+      "ev_wwi_balfour_declaration_1917"
+    ]
+  },
+  "ev_wwi_armenian_genocide_begins_1915": {
+    "prerequisites": [
+      "ev_wwi_ottoman_enters_war_1914"
+    ],
+    "consequences": []
+  },
+  "ev_wwi_armistice_1918": {
+    "prerequisites": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ],
+    "consequences": [
+      "ev_wwi_paris_peace_conference_1919",
+      "ev_wwi_spanish_flu_1918"
+    ]
+  },
+  "ev_wwi_assassination_franz_ferdinand_1914": {
+    "prerequisites": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
+    ],
+    "consequences": [
+      "ev_wwi_austria_ultimatum_serbia_1914"
+    ]
+  },
+  "ev_wwi_austria_ultimatum_serbia_1914": {
+    "prerequisites": [
+      "ev_wwi_assassination_franz_ferdinand_1914"
+    ],
+    "consequences": [
+      "ev_wwi_germany_blank_check_1914"
+    ]
+  },
+  "ev_wwi_balfour_declaration_1917": {
+    "prerequisites": [
+      "ev_wwi_arab_revolt_1916"
+    ],
+    "consequences": [
+      "ev_wwi_paris_peace_conference_1919"
+    ]
+  },
+  "ev_wwi_balkan_wars_destabilize_1912_1913": {
+    "prerequisites": [
+      "ev_imperialism_first_balkan_war_1912",
+      "ev_wwi_naval_arms_race_1898_1914"
+    ],
+    "consequences": [
+      "ev_wwi_assassination_franz_ferdinand_1914"
+    ]
+  },
+  "ev_wwi_battle_marne_1914": {
+    "prerequisites": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "consequences": [
+      "ev_wwi_trench_warfare_entrenched_1914"
+    ]
+  },
+  "ev_wwi_bolshevik_revolution_1917": {
+    "prerequisites": [
+      "ev_wwi_russian_february_revolution_1917"
+    ],
+    "consequences": [
+      "ev_wwi_treaty_brest_litovsk_1918"
+    ]
+  },
+  "ev_wwi_brusilov_offensive_1916": {
+    "prerequisites": [
+      "ev_wwi_tannenberg_1914"
+    ],
+    "consequences": [
+      "ev_wwi_russian_february_revolution_1917"
+    ]
+  },
+  "ev_wwi_first_ypres_1914": {
+    "prerequisites": [
+      "ev_wwi_trench_warfare_entrenched_1914"
+    ],
+    "consequences": [
+      "ev_wwi_gallipoli_campaign_1915",
+      "ev_wwi_italy_enters_war_1915"
+    ]
+  },
+  "ev_wwi_gallipoli_campaign_1915": {
+    "prerequisites": [
+      "ev_wwi_first_ypres_1914",
+      "ev_wwi_ottoman_enters_war_1914"
+    ],
+    "consequences": [
+      "ev_wwi_arab_revolt_1916"
+    ]
+  },
+  "ev_wwi_german_spring_offensive_1918": {
+    "prerequisites": [
+      "ev_wwi_treaty_brest_litovsk_1918",
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "consequences": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ]
+  },
+  "ev_wwi_germany_blank_check_1914": {
+    "prerequisites": [
+      "ev_wwi_austria_ultimatum_serbia_1914"
+    ],
+    "consequences": [
+      "ev_wwi_russia_mobilizes_1914"
+    ]
+  },
+  "ev_wwi_germany_invades_belgium_1914": {
+    "prerequisites": [
+      "ev_wwi_russia_mobilizes_1914"
+    ],
+    "consequences": [
+      "ev_wwi_battle_marne_1914",
+      "ev_wwi_japan_enters_war_1914",
+      "ev_wwi_ottoman_enters_war_1914"
+    ]
+  },
+  "ev_wwi_home_front_total_mobilization_1915": {
+    "prerequisites": [
+      "ev_wwi_trench_warfare_entrenched_1914",
+      "ev_wwi_verdun_1916"
+    ],
+    "consequences": [
+      "ev_wwi_hundred_days_offensive_1918",
+      "ev_wwi_state_propaganda_expands_1915"
+    ]
+  },
+  "ev_wwi_hundred_days_offensive_1918": {
+    "prerequisites": [
+      "ev_wwi_german_spring_offensive_1918",
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_italy_enters_war_1915",
+      "ev_wwi_us_enters_war_1917"
+    ],
+    "consequences": [
+      "ev_wwi_armistice_1918"
+    ]
+  },
+  "ev_wwi_italy_enters_war_1915": {
+    "prerequisites": [
+      "ev_wwi_first_ypres_1914"
+    ],
+    "consequences": [
+      "ev_wwi_hundred_days_offensive_1918"
+    ]
+  },
+  "ev_wwi_japan_enters_war_1914": {
+    "prerequisites": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "consequences": [
+      "ev_wwi_paris_peace_conference_1919"
+    ]
+  },
+  "ev_wwi_jutland_1916": {
+    "prerequisites": [
+      "ev_wwi_somme_1916"
+    ],
+    "consequences": [
+      "ev_wwi_unrestricted_submarine_1917"
+    ]
+  },
+  "ev_wwi_league_of_nations_1920": {
+    "prerequisites": [
+      "ev_wwi_paris_peace_conference_1919",
+      "ev_wwi_treaty_versailles_1919"
+    ],
+    "consequences": [
+      "ev_bandung_conference_1955"
+    ]
+  },
+  "ev_wwi_naval_arms_race_1898_1914": {
+    "prerequisites": [
+      "ev_imperialism_russojapanese_war_begins_1904",
+      "ev_second_industrial_revolution_1870s",
+      "ev_wwi_alliance_system_hardens_1890_1907"
+    ],
+    "consequences": [
+      "ev_wwi_balkan_wars_destabilize_1912_1913"
+    ]
+  },
+  "ev_wwi_ottoman_enters_war_1914": {
+    "prerequisites": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ],
+    "consequences": [
+      "ev_wwi_armenian_genocide_begins_1915",
+      "ev_wwi_gallipoli_campaign_1915"
+    ]
+  },
+  "ev_wwi_paris_peace_conference_1919": {
+    "prerequisites": [
+      "ev_wwi_armistice_1918",
+      "ev_wwi_balfour_declaration_1917",
+      "ev_wwi_japan_enters_war_1914",
+      "ev_wwi_spanish_flu_1918"
+    ],
+    "consequences": [
+      "ev_wwi_league_of_nations_1920",
+      "ev_wwi_treaty_versailles_1919"
+    ]
+  },
+  "ev_wwi_russia_mobilizes_1914": {
+    "prerequisites": [
+      "ev_wwi_germany_blank_check_1914"
+    ],
+    "consequences": [
+      "ev_wwi_germany_invades_belgium_1914"
+    ]
+  },
+  "ev_wwi_russian_february_revolution_1917": {
+    "prerequisites": [
+      "ev_wwi_brusilov_offensive_1916"
+    ],
+    "consequences": [
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_treaty_brest_litovsk_1918"
+    ]
+  },
+  "ev_wwi_second_battle_ypres_gas_1915": {
+    "prerequisites": [
+      "ev_wwi_trench_warfare_entrenched_1914"
+    ],
+    "consequences": [
+      "ev_wwi_verdun_1916"
+    ]
+  },
+  "ev_wwi_somme_1916": {
+    "prerequisites": [
+      "ev_wwi_verdun_1916"
+    ],
+    "consequences": [
+      "ev_wwi_jutland_1916"
+    ]
+  },
+  "ev_wwi_spanish_flu_1918": {
+    "prerequisites": [
+      "ev_wwi_armistice_1918"
+    ],
+    "consequences": [
+      "ev_wwi_paris_peace_conference_1919"
+    ]
+  },
+  "ev_wwi_state_propaganda_expands_1915": {
+    "prerequisites": [
+      "ev_wwi_home_front_total_mobilization_1915"
+    ],
+    "consequences": [
+      "ev_wwi_us_enters_war_1917"
+    ]
+  },
+  "ev_wwi_tannenberg_1914": {
+    "prerequisites": [],
+    "consequences": [
+      "ev_wwi_brusilov_offensive_1916"
+    ]
+  },
+  "ev_wwi_treaty_brest_litovsk_1918": {
+    "prerequisites": [
+      "ev_wwi_bolshevik_revolution_1917",
+      "ev_wwi_russian_february_revolution_1917"
+    ],
+    "consequences": [
+      "ev_wwi_german_spring_offensive_1918"
+    ]
+  },
+  "ev_wwi_treaty_versailles_1919": {
+    "prerequisites": [
+      "ev_wwi_paris_peace_conference_1919"
+    ],
+    "consequences": [
+      "ev_india_independence_1947",
+      "ev_pan_african_congress_1945",
+      "ev_wwi_league_of_nations_1920"
+    ]
+  },
+  "ev_wwi_trench_warfare_entrenched_1914": {
+    "prerequisites": [
+      "ev_wwi_battle_marne_1914"
+    ],
+    "consequences": [
+      "ev_wwi_first_ypres_1914",
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_second_battle_ypres_gas_1915"
+    ]
+  },
+  "ev_wwi_unrestricted_submarine_1917": {
+    "prerequisites": [
+      "ev_wwi_jutland_1916"
+    ],
+    "consequences": [
+      "ev_wwi_us_enters_war_1917",
+      "ev_wwi_zimmermann_telegram_1917"
+    ]
+  },
+  "ev_wwi_us_enters_war_1917": {
+    "prerequisites": [
+      "ev_wwi_state_propaganda_expands_1915",
+      "ev_wwi_unrestricted_submarine_1917",
+      "ev_wwi_zimmermann_telegram_1917"
+    ],
+    "consequences": [
+      "ev_wwi_german_spring_offensive_1918",
+      "ev_wwi_hundred_days_offensive_1918"
+    ]
+  },
+  "ev_wwi_verdun_1916": {
+    "prerequisites": [
+      "ev_wwi_second_battle_ypres_gas_1915"
+    ],
+    "consequences": [
+      "ev_wwi_home_front_total_mobilization_1915",
+      "ev_wwi_somme_1916"
+    ]
+  },
+  "ev_wwi_zimmermann_telegram_1917": {
+    "prerequisites": [
+      "ev_wwi_unrestricted_submarine_1917"
+    ],
+    "consequences": [
+      "ev_wwi_us_enters_war_1917"
+    ]
+  },
+  "ev_yalta_conference_1945": {
+    "prerequisites": [
+      "ev_battle_bulge_1944",
+      "ev_tehran_conference_1943"
+    ],
+    "consequences": [
+      "ev_germany_surrenders_1945",
+      "ev_un_charter_signed_1945"
+    ]
+  },
+  "ev_zhang_qian_missions_open_routes": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_zheng_he_voyages_begin": {
+    "prerequisites": [],
+    "consequences": []
+  }
+}

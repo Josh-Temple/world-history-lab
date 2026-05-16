@@ -17,6 +17,14 @@ World History Lab is a personal learning project for studying world history with
   - `data/derived/index.events_by_concept.json`
 - Added root discoverability link for **Historical Patterns Explorer** in `index.html`.
 
+## Recent updates (2026-05-16 · historical reasoning lab + directional causal metadata)
+
+- Added new app route at `apps/historical-reasoning-lab/` with prompt generation, evidence selection, explanation-quality guidance, counterfactual prompts, and local reflection persistence.
+- Added directional event metadata fields in `data/events.json`: `prerequisite_event_ids` and `consequence_event_ids` (generated from validated causal effects links to preserve backward compatibility).
+- Extended validation in `scripts/validate-data.mjs` to verify directional event IDs and warn for non-reciprocal consequence/prerequisite links.
+- Extended derive pipeline in `scripts/derive.mjs` to preserve directional fields in normalized events and generate `derived/causal-graph.json` plus `data/derived/causal-graph.json`.
+- Added homepage discoverability link for **Historical Reasoning Lab** in `index.html`.
+
 ## Core idea / approach
 
 - **One shared dataset, many mini apps**: this repository is intended to host multiple mini apps in the same repo, all using the same core data and schemas.
