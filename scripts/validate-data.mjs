@@ -351,6 +351,12 @@ export async function validateData({ log = false } = {}) {
       if (!isObject(event) || typeof event.id !== "string" || event.id.trim() === "") {
         continue;
       }
+      if (event.prerequisite_event_ids !== undefined && !Array.isArray(event.prerequisite_event_ids)) {
+        errors.push(`Event ${event.id} has invalid prerequisite_event_ids; expected an array.`);
+      }
+      if (event.consequence_event_ids !== undefined && !Array.isArray(event.consequence_event_ids)) {
+        errors.push(`Event ${event.id} has invalid consequence_event_ids; expected an array.`);
+      }
       if (Array.isArray(event.related_event_ids)) {
         for (const relatedId of event.related_event_ids) {
           if (!eventIdSet.has(relatedId)) {
@@ -364,8 +370,28 @@ export async function validateData({ log = false } = {}) {
           }
         }
       }
+
+      for (const prerequisiteId of event.prerequisite_event_ids || []) {
+        if (!eventIdSet.has(prerequisiteId)) {
+          errors.push(`Event ${event.id} invalid prerequisite_event_id: ${prerequisiteId}`);
+        }
+      }
+      for (const consequenceId of event.consequence_event_ids || []) {
+        if (!eventIdSet.has(consequenceId)) {
+          errors.push(`Event ${event.id} invalid consequence_event_id: ${consequenceId}`);
+        }
+      }
       validateCausalLinks(event, "effects", eventIdSet, errors, warnings);
       validateCausalLinks(event, "causes", eventIdSet, errors, warnings);
+      if (Array.isArray(event.consequence_event_ids)) {
+        for (const consequenceId of event.consequence_event_ids) {
+          const consequence = eventById.get(consequenceId);
+          if (consequence && !(Array.isArray(consequence.prerequisite_event_ids) && consequence.prerequisite_event_ids.includes(event.id))) {
+            warnings.push(`Event ${event.id} consequence link not reciprocated by prerequisite on ${consequenceId}.`);
+          }
+        }
+      }
+
     }
   }
 

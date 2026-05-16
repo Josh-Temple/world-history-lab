@@ -629,6 +629,8 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
         concept_tags: compactArrayStrings(event.concept_tags),
         people_ids: compactArrayStrings(event.people_ids),
         related_event_ids: compactArrayStrings(event.related_event_ids),
+    prerequisite_event_ids: compactArrayStrings(event.prerequisite_event_ids),
+    consequence_event_ids: compactArrayStrings(event.consequence_event_ids),
         unit_ids: unitIdsByEventId.get(event.id) || [],
         caused_by: causedBy,
         effects: Array.isArray(event.effects) ? event.effects : [],
@@ -670,6 +672,8 @@ function normalizeEvent(event, unitIdsByEventId = new Map(), causedByMap = new M
     concept_tags: compactArrayStrings(event.concept_tags),
     people_ids: compactArrayStrings(event.people_ids),
     related_event_ids: compactArrayStrings(event.related_event_ids),
+    prerequisite_event_ids: compactArrayStrings(event.prerequisite_event_ids),
+    consequence_event_ids: compactArrayStrings(event.consequence_event_ids),
     unit_ids: unitIdsByEventId.get(event.id) || [],
     caused_by: causedBy,
     effects: Array.isArray(event.effects) ? event.effects : [],
@@ -751,6 +755,17 @@ function buildConceptIndex(normalizedEvents) {
   return Object.fromEntries(Object.entries(byConcept).sort(([a], [b]) => a.localeCompare(b)));
 }
 
+
+function buildDirectionalCausalGraph(normalizedEvents) {
+  const graph = {};
+  for (const event of normalizedEvents) {
+    graph[event.id] = {
+      prerequisites: compactArrayStrings(event.prerequisite_event_ids).sort(),
+      consequences: compactArrayStrings(event.consequence_event_ids).sort(),
+    };
+  }
+  return graph;
+}
 function buildRelatedEventGraph(normalizedEvents, eventIdSet) {
   const graph = {};
   for (const event of normalizedEvents) {
@@ -1071,6 +1086,7 @@ async function main() {
   const eventsSorted = buildEventsSorted(normalizedEvents);
   const eventsByRegion = buildRegionIndex(normalizedEvents);
   const eventsByConcept = buildConceptIndex(normalizedEvents);
+  const causalGraph = buildDirectionalCausalGraph(normalizedEvents);
   const unitsIndex = units
     .map((unit) => ({ id: unit.id, title: unit.title, event_ids: unit.event_ids.slice() }))
     .sort((a, b) => a.id.localeCompare(b.id));
@@ -1094,10 +1110,12 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "causality_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DERIVED_DIR, "index.causal_pairs.json"), toJson(causalPairs), "utf8");
   await writeFile(path.join(DERIVED_DIR, "event-relationships.json"), toJson(relatedEventGraph), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "causal-graph.json"), toJson(causalGraph), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_concept.json"), toJson(eventsByConcept), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "event-relationships.json"), toJson(relatedEventGraph), "utf8");
+  await writeFile(path.join(DATA_DERIVED_DIR, "causal-graph.json"), toJson(causalGraph), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "tag_clusters.json"), toJson(tagClusters), "utf8");
 
   console.log(
