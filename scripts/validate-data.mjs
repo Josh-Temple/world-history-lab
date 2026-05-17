@@ -138,6 +138,85 @@ export async function validateData({ log = false } = {}) {
     errors.push("data/units/index.json must be an object with a units array.");
   }
 
+
+  const ALLOWED_DIFFICULTY_LEVELS = new Set(["beginner", "intermediate", "advanced"]);
+  const conceptGraph = new Map();
+  if (conceptList) {
+    for (const [index, concept] of conceptList.entries()) {
+      if (!isObject(concept)) {
+        errors.push(`concepts[${index}] must be an object.`);
+        continue;
+      }
+      const conceptLabel = describeRecordId(concept, `[index ${index}]`);
+      if (concept.difficulty !== undefined && !ALLOWED_DIFFICULTY_LEVELS.has(concept.difficulty)) {
+        errors.push(`Concept ${conceptLabel} has invalid difficulty: ${String(concept.difficulty)}`);
+      }
+      if (concept.prerequisite_concept_ids !== undefined && !Array.isArray(concept.prerequisite_concept_ids)) {
+        errors.push(`Concept ${conceptLabel} has invalid prerequisite_concept_ids; expected an array.`);
+      }
+      const prereqs = Array.isArray(concept.prerequisite_concept_ids) ? concept.prerequisite_concept_ids : [];
+      conceptGraph.set(concept.id, prereqs);
+      const seen = new Set();
+      for (const prereqId of prereqs) {
+        if (typeof prereqId !== 'string') {
+          errors.push(`Concept ${conceptLabel} has non-string prerequisite_concept_ids entry.`);
+          continue;
+        }
+        if (seen.has(prereqId)) errors.push(`Concept ${conceptLabel} has duplicate prerequisite concept id: ${prereqId}`);
+        seen.add(prereqId);
+        if (!conceptIdSet.has(prereqId)) errors.push(`Concept ${conceptLabel} references unknown prerequisite concept id: ${prereqId}`);
+      }
+    }
+
+    const visiting = new Set();
+    const visited = new Set();
+    const dfs = (id, trail = []) => {
+      if (visiting.has(id)) {
+        errors.push(`Concept prerequisite cycle detected: ${[...trail, id].join(' -> ')}`);
+        return;
+      }
+      if (visited.has(id)) return;
+      visiting.add(id);
+      const next = conceptGraph.get(id) || [];
+      for (const depId of next) dfs(depId, [...trail, id]);
+      visiting.delete(id);
+      visited.add(id);
+    };
+    for (const id of conceptGraph.keys()) dfs(id);
+  }
+
+
+  let learningPaths = [];
+  try {
+    const lp = await readJson("data/learning-paths.json");
+    if (!Array.isArray(lp)) {
+      errors.push("data/learning-paths.json must be an array.");
+    } else {
+      learningPaths = lp;
+    }
+  } catch {
+    warnings.push("data/learning-paths.json is missing; adaptive path recommendations will be limited.");
+  }
+
+  for (const [index, pathRecord] of learningPaths.entries()) {
+    if (!isObject(pathRecord)) {
+      errors.push(`learning-paths[${index}] must be an object.`);
+      continue;
+    }
+    if (pathRecord.recommended_level !== undefined && !ALLOWED_DIFFICULTY_LEVELS.has(pathRecord.recommended_level)) {
+      errors.push(`Learning path ${describeRecordId(pathRecord, `[index ${index}]`)} has invalid recommended_level.`);
+    }
+    if (pathRecord.required_concept_ids !== undefined) {
+      if (!Array.isArray(pathRecord.required_concept_ids)) {
+        errors.push(`Learning path ${describeRecordId(pathRecord, `[index ${index}]`)} has invalid required_concept_ids.`);
+      } else {
+        for (const cid of pathRecord.required_concept_ids) {
+          if (typeof cid !== 'string' || !conceptIdSet.has(cid)) errors.push(`Learning path ${describeRecordId(pathRecord, `[index ${index}]`)} references unknown required concept id: ${String(cid)}`);
+        }
+      }
+    }
+  }
+
   const personIdSet = new Set();
   if (peopleList) {
     for (const [index, person] of peopleList.entries()) {

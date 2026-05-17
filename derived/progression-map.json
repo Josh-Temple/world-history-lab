@@ -1,0 +1,15 @@
+{
+  "concept_bureaucratic_centralization": [],
+  "concept_frontier_expansion": [],
+  "concept_imperial_overstretch": [],
+  "concept_legitimacy_crisis": [],
+  "concept_military_reform": [],
+  "concept_religious_diffusion": [],
+  "concept_state_formation": [
+    "concept_imperial_overstretch"
+  ],
+  "concept_succession_crisis": [],
+  "concept_technological_diffusion": [],
+  "concept_trade_network_expansion": [],
+  "concept_urbanization": []
+}

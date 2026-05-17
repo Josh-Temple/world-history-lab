@@ -1,0 +1,40 @@
+[
+  {
+    "id": "path_world_foundations",
+    "label": "World Foundations",
+    "recommended_level": "beginner",
+    "required_concept_ids": [
+      "concept_state_formation"
+    ],
+    "unit_ids": [
+      "unit_foundations_world_history",
+      "unit_silk_road_exchange"
+    ]
+  },
+  {
+    "id": "path_trade_networks",
+    "label": "Trade Networks and Exchange",
+    "recommended_level": "intermediate",
+    "required_concept_ids": [
+      "concept_state_formation",
+      "concept_trade_network_expansion"
+    ],
+    "unit_ids": [
+      "unit_silk_road_exchange",
+      "unit_islamic_expansion"
+    ]
+  },
+  {
+    "id": "path_empires_and_change",
+    "label": "Empires, Industry, and Global Change",
+    "recommended_level": "advanced",
+    "required_concept_ids": [
+      "concept_imperial_overstretch",
+      "concept_technological_diffusion"
+    ],
+    "unit_ids": [
+      "unit_age_of_imperialism",
+      "unit_industrial_revolution"
+    ]
+  }
+]

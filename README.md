@@ -3,6 +3,19 @@
 World History Lab is a personal learning project for studying world history with practice formats that go beyond standard flashcards. The goal is to build stronger understanding of chronology, causality, and historical connections by using structured data that can power multiple mini apps in one repository.
 
 
+
+## Recent updates (2026-05-17 · adaptive sequencing + big-picture synthesis mode)
+
+- Added curriculum sequencing metadata in `data/concepts.json` via `difficulty` and `prerequisite_concept_ids`, including a new `concept_state_formation` foundation concept.
+- Added `data/learning-paths.json` with beginner/intermediate/advanced recommended levels and concept-gated path prerequisites.
+- Extended `scripts/validate-data.mjs` to validate concept difficulty levels, prerequisite reference integrity, concept-cycle detection, and learning-path concept requirements.
+- Extended `scripts/derive.mjs` to generate progression dependency output:
+  - `derived/progression-map.json`
+  - `data/derived/progression-map.json`
+- Enhanced `apps/dashboard/` with progression summary and adaptive learning-path recommendations.
+- Added `apps/big-picture-history/` (new synthesis mode) with macro-history themes, turning points, and cross-unit narrative links.
+- Added root navigation links for **Big Picture History** in `index.html`.
+
 ## Recent updates (2026-05-14 · historical patterns explorer + concept metadata layer)
 
 - Added new concept-centered learning mode at `apps/historical-patterns/` with:

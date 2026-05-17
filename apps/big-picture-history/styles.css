@@ -1,0 +1,5 @@
+body { font-family: Inter, system-ui, sans-serif; margin: 0; background:#f8fafc; color:#0f172a; }
+main { max-width: 1000px; margin: auto; padding: 16px; line-height: 1.6; }
+section { background:#fff; border:1px solid #dbe2ea; border-radius:10px; padding:12px; margin:12px 0; }
+.turning-point { border-left: 4px solid #0f766e; }
+small { color:#475569; }

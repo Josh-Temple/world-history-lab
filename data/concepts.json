@@ -1,12 +1,71 @@
 [
-  {"id":"concept_imperial_overstretch","label":"Imperial Overstretch","description":"Empires expanding beyond sustainable administrative, fiscal, or military capacity."},
-  {"id":"concept_trade_network_expansion","label":"Trade-Network Expansion","description":"Growth and integration of long-distance commercial routes and exchange systems."},
-  {"id":"concept_bureaucratic_centralization","label":"Bureaucratic Centralization","description":"Consolidation of governance through stronger administrative institutions and state capacity."},
-  {"id":"concept_religious_diffusion","label":"Religious Diffusion","description":"Spread of religious ideas, institutions, and practices across regions and cultures."},
-  {"id":"concept_succession_crisis","label":"Succession Crisis","description":"Instability triggered by contested political succession or leadership transitions."},
-  {"id":"concept_technological_diffusion","label":"Technological Diffusion","description":"Transmission and adoption of technologies across societies and economic systems."},
-  {"id":"concept_frontier_expansion","label":"Frontier Expansion","description":"Territorial expansion into borderlands through settlement, conquest, or migration."},
-  {"id":"concept_urbanization","label":"Urbanization","description":"Population concentration in cities with related social and economic transformation."},
-  {"id":"concept_military_reform","label":"Military Reform","description":"Institutional or technological modernization of military organization and strategy."},
-  {"id":"concept_legitimacy_crisis","label":"Legitimacy Crisis","description":"Erosion or contestation of perceived political authority and right to rule."}
+  {
+    "id": "concept_state_formation",
+    "label": "State Formation",
+    "description": "Development of durable political institutions and territorial governance.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "concept_imperial_overstretch",
+    "label": "Imperial Overstretch",
+    "description": "Empires expanding beyond sustainable administrative, fiscal, or military capacity.",
+    "difficulty": "beginner",
+    "prerequisite_concept_ids": [
+      "concept_state_formation"
+    ]
+  },
+  {
+    "id": "concept_trade_network_expansion",
+    "label": "Trade-Network Expansion",
+    "description": "Growth and integration of long-distance commercial routes and exchange systems.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "concept_bureaucratic_centralization",
+    "label": "Bureaucratic Centralization",
+    "description": "Consolidation of governance through stronger administrative institutions and state capacity.",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "concept_religious_diffusion",
+    "label": "Religious Diffusion",
+    "description": "Spread of religious ideas, institutions, and practices across regions and cultures.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "concept_succession_crisis",
+    "label": "Succession Crisis",
+    "description": "Instability triggered by contested political succession or leadership transitions.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "concept_technological_diffusion",
+    "label": "Technological Diffusion",
+    "description": "Transmission and adoption of technologies across societies and economic systems.",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "concept_frontier_expansion",
+    "label": "Frontier Expansion",
+    "description": "Territorial expansion into borderlands through settlement, conquest, or migration.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "concept_urbanization",
+    "label": "Urbanization",
+    "description": "Population concentration in cities with related social and economic transformation.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "concept_military_reform",
+    "label": "Military Reform",
+    "description": "Institutional or technological modernization of military organization and strategy.",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "concept_legitimacy_crisis",
+    "label": "Legitimacy Crisis",
+    "description": "Erosion or contestation of perceived political authority and right to rule.",
+    "difficulty": "beginner"
+  }
 ]
