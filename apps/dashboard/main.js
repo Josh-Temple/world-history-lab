@@ -5,6 +5,8 @@ const reviewSummary = document.getElementById('review-summary');
 const weakItemsEl = document.getElementById('weak-items');
 const recentUnitsEl = document.getElementById('recent-units');
 const quickActionsEl = document.getElementById('quick-actions');
+const progressionSummaryEl = document.getElementById('progression-summary');
+const recommendedPathsEl = document.getElementById('recommended-paths');
 
 function readRecentUnits() {
   try {
@@ -13,6 +15,23 @@ function readRecentUnits() {
   } catch {
     return [];
   }
+}
+
+
+function getRecommendedPaths({ masteredConcepts, availablePaths }) {
+  const mastered = new Set(Array.isArray(masteredConcepts) ? masteredConcepts : []);
+  return (Array.isArray(availablePaths) ? availablePaths : []).filter((path) => {
+    const required = Array.isArray(path.required_concept_ids) ? path.required_concept_ids : [];
+    return required.every((id) => mastered.has(id));
+  });
+}
+
+async function loadProgressionData() {
+  const [concepts, paths] = await Promise.all([
+    fetch('/data/concepts.json').then((r) => r.json()).catch(() => []),
+    fetch('/data/learning-paths.json').then((r) => r.json()).catch(() => []),
+  ]);
+  return { concepts: Array.isArray(concepts) ? concepts : [], paths: Array.isArray(paths) ? paths : [] };
 }
 
 function formatDate(ts) {
@@ -50,6 +69,19 @@ async function render() {
   recentUnitsEl.innerHTML += recentUnits.length
     ? `<ul>${recentUnits.map((unitId) => `<li>${unitId}</li>`).join('')}</ul>`
     : '<p>No recent unit history yet.</p>';
+
+  const { concepts, paths } = await loadProgressionData();
+  const masteredConcepts = concepts
+    .filter((concept) => ['beginner','intermediate','advanced'].includes(concept?.difficulty))
+    .filter((concept) => concept.difficulty === 'beginner')
+    .map((concept) => concept.id);
+  const recommended = getRecommendedPaths({ masteredConcepts, availablePaths: paths });
+
+  const levels = { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced' };
+  progressionSummaryEl.innerHTML = `<h2>Progression Summary</h2><p>Recommended next concept cluster: ${masteredConcepts.length ? 'Foundations and early trade systems' : 'Start with beginner foundations'}.</p>`;
+  recommendedPathsEl.innerHTML = '<h2>Recommended Learning Paths</h2>' + (recommended.length
+    ? `<ul>${recommended.slice(0,4).map((path) => `<li>Ready for ${levels[path.recommended_level] || 'Next'} · ${path.label}</li>`).join('')}</ul>`
+    : '<p>Complete more foundations to unlock intermediate pathways.</p>');
 
   quickActionsEl.innerHTML = `
     <h2>Quick Actions</h2>

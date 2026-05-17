@@ -742,6 +742,25 @@ function buildRegionIndex(normalizedEvents) {
 }
 
 
+function buildProgressionMap(concepts) {
+  const map = {};
+  const conceptList = Array.isArray(concepts) ? concepts : [];
+  for (const concept of conceptList) {
+    if (!concept || typeof concept.id !== "string") continue;
+    if (!map[concept.id]) map[concept.id] = [];
+  }
+  for (const concept of conceptList) {
+    const id = concept?.id;
+    const prereqs = Array.isArray(concept?.prerequisite_concept_ids) ? concept.prerequisite_concept_ids : [];
+    for (const prereq of prereqs) {
+      if (!map[prereq]) map[prereq] = [];
+      map[prereq].push(id);
+    }
+  }
+  for (const k of Object.keys(map)) map[k] = Array.from(new Set(map[k])).sort();
+  return Object.fromEntries(Object.entries(map).sort(([a],[b]) => a.localeCompare(b)));
+}
+
 function buildConceptIndex(normalizedEvents) {
   const byConcept = {};
   for (const event of normalizedEvents) {
@@ -1044,7 +1063,9 @@ async function main() {
   assertArray(events, "data/events.json");
 
   const people = await readJson("data/people.json");
+  const concepts = await readJson("data/concepts.json");
   assertArray(people, "data/people.json");
+  assertArray(concepts, "data/concepts.json");
   const peopleIdSet = validatePeople(people);
 
   const units = await loadUnits();
@@ -1087,6 +1108,7 @@ async function main() {
   const eventsByRegion = buildRegionIndex(normalizedEvents);
   const eventsByConcept = buildConceptIndex(normalizedEvents);
   const causalGraph = buildDirectionalCausalGraph(normalizedEvents);
+  const progressionMap = buildProgressionMap(concepts);
   const unitsIndex = units
     .map((unit) => ({ id: unit.id, title: unit.title, event_ids: unit.event_ids.slice() }))
     .sort((a, b) => a.id.localeCompare(b.id));
@@ -1111,11 +1133,13 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "index.causal_pairs.json"), toJson(causalPairs), "utf8");
   await writeFile(path.join(DERIVED_DIR, "event-relationships.json"), toJson(relatedEventGraph), "utf8");
   await writeFile(path.join(DERIVED_DIR, "causal-graph.json"), toJson(causalGraph), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "progression-map.json"), toJson(progressionMap), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_concept.json"), toJson(eventsByConcept), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "event-relationships.json"), toJson(relatedEventGraph), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal-graph.json"), toJson(causalGraph), "utf8");
+  await writeFile(path.join(DATA_DERIVED_DIR, "progression-map.json"), toJson(progressionMap), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "tag_clusters.json"), toJson(tagClusters), "utf8");
 
   console.log(
