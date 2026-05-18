@@ -1,4 +1,5 @@
 import { loadReviewStore, getDueItems, getWeakItems } from '../shared/review-store.js';
+import { getConceptMasterySummary, getWeakestConcepts } from '../shared/mastery-store.js';
 import { getNormalizedEvents } from '../shared/data-store.js';
 
 const reviewSummary = document.getElementById('review-summary');
@@ -71,6 +72,8 @@ async function render() {
     : '<p>No recent unit history yet.</p>';
 
   const { concepts, paths } = await loadProgressionData();
+  const conceptSummary = getConceptMasterySummary();
+  const weakestConcepts = getWeakestConcepts({ limit: 3 });
   const masteredConcepts = concepts
     .filter((concept) => ['beginner','intermediate','advanced'].includes(concept?.difficulty))
     .filter((concept) => concept.difficulty === 'beginner')
@@ -78,7 +81,7 @@ async function render() {
   const recommended = getRecommendedPaths({ masteredConcepts, availablePaths: paths });
 
   const levels = { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced' };
-  progressionSummaryEl.innerHTML = `<h2>Progression Summary</h2><p>Recommended next concept cluster: ${masteredConcepts.length ? 'Foundations and early trade systems' : 'Start with beginner foundations'}.</p>`;
+  progressionSummaryEl.innerHTML = `<h2>Progression Summary</h2><p>Recommended next concept cluster: ${masteredConcepts.length ? 'Foundations and early trade systems' : 'Start with beginner foundations'}.</p><p>Concept mastery: ${Math.round((conceptSummary.avgScore || 0) * 100)}% across ${conceptSummary.trackedConcepts} tracked concepts.</p>${weakestConcepts.length ? `<p>Weakest area now: ${weakestConcepts[0].conceptId}</p>` : '<p>No concept mastery data yet.</p>'}`;
   recommendedPathsEl.innerHTML = '<h2>Recommended Learning Paths</h2>' + (recommended.length
     ? `<ul>${recommended.slice(0,4).map((path) => `<li>Ready for ${levels[path.recommended_level] || 'Next'} · ${path.label}</li>`).join('')}</ul>`
     : '<p>Complete more foundations to unlock intermediate pathways.</p>');
@@ -89,6 +92,7 @@ async function render() {
       <li><a href="/apps/session-runner/?mode=review">Start Review Session</a></li>
       <li><a href="/apps/session-runner/">Start Guided Session</a></li>
       <li><a href="/apps/timeline-trainer/">Practice Timeline Core</a></li>
+      <li><a href="/apps/historical-reasoning-lab/">Adaptive reasoning for weak concepts</a></li>
     </ul>
   `;
 }

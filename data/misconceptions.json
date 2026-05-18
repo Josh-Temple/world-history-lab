@@ -1,0 +1,14 @@
+[
+  {
+    "id": "mis_single_cause_rome",
+    "claim": "The Western Roman Empire fell because of barbarian invasions alone.",
+    "why_problematic": "The decline reflected interacting military pressure, fiscal strain, administrative fragmentation, and internal political instability.",
+    "related_concept_ids": ["concept_imperial_overstretch"]
+  },
+  {
+    "id": "mis_industrialization_inevitable",
+    "claim": "Industrialization automatically improved life for everyone quickly.",
+    "why_problematic": "Industrialization increased output but also produced labor exploitation, urban disease, and uneven regional gains for decades.",
+    "related_concept_ids": ["concept_industrialization"]
+  }
+]
