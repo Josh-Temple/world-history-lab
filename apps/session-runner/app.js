@@ -1,5 +1,5 @@
 import { getEventsForUnit, getUnits, setStoredUnitId } from "../shared/data-store.js";
-import { getAllStats, getReviewQueueEventIds } from "../shared/mastery-store.js";
+import { getAllStats, getReviewQueueEventIds, updateConceptMastery, getWeakestConcepts } from "../shared/mastery-store.js";
 import { getModeMeta, recommendNextStep } from "../shared/next-step-engine.js";
 import { loadReviewStore, saveReviewStore, updateReviewItem, getDueItems } from "../shared/review-store.js";
 
@@ -47,6 +47,7 @@ let selectedUnitId = "";
 let units = [];
 let completedUnits = readCompletedUnits();
 let reviewStore = loadReviewStore();
+  console.log("[session-runner] adaptive concept priorities", getAdaptiveReviewPriorities());
 const isReviewMode = new URLSearchParams(window.location.search).get("mode") === "review";
 let reviewCandidates = [];
 let reviewCursor = 0;
@@ -76,6 +77,12 @@ function buildReviewCandidates(unitEvents = []) {
 function getCurrentReviewItemId() {
   if (!reviewCandidates.length) return "";
   return reviewCandidates[reviewCursor % reviewCandidates.length] || "";
+}
+
+function inferConceptIdsForEvent(event) {
+  if (!event || typeof event !== 'object') return [];
+  const ids = Array.isArray(event.concept_ids) ? event.concept_ids.filter(Boolean) : [];
+  return ids.slice(0, 4);
 }
 function resetModeProgress() {
   modeProgress.clear();
@@ -254,6 +261,22 @@ function updateUnitLabel() {
   unitLabelEl.textContent = `Unit: ${selectedUnit.label || selectedUnit.id} (${status})`;
 }
 
+
+function updateConceptMasteryFromInteraction({ correct, confidence }) {
+  if (!selectedUnitId) return;
+  getEventsForUnit(selectedUnitId).then((events) => {
+    const currentId = getCurrentReviewItemId();
+    const event = (Array.isArray(events) ? events : []).find((e) => e.id === currentId) || (Array.isArray(events) ? events[0] : null);
+    for (const conceptId of inferConceptIdsForEvent(event)) {
+      updateConceptMastery({ conceptId, correct, confidence });
+    }
+  }).catch(() => {});
+}
+
+function getAdaptiveReviewPriorities() {
+  const weakConcepts = getWeakestConcepts({ limit: 5 });
+  return weakConcepts.map((row) => row.conceptId);
+}
 
 function updateModeRecommendation() {
   if (!nextRecommendationEl) return;

@@ -37,3 +37,12 @@ Use the weekly strategic assessment as an execution filter:
   2. Era/transformation tags wired through derive output and visible in at least one app view.
   3. One concise continuity/change prompt in Timeline Trainer post-answer feedback.
 - Deprioritize for now: styling-only polish, deep validation-only expansion, and unrelated standalone apps.
+
+
+## Incremental update (2026-05-18 · learner-state + misconception challenge)
+
+- Added concept-level mastery store helpers and weakest-concept inference in `apps/shared/mastery-store.js`.
+- Added dashboard concept-mastery summary and adaptive weak-area callouts in `apps/dashboard/main.js`.
+- Added session-runner concept mastery update hooks for confidence interactions in `apps/session-runner/app.js`.
+- Added new `apps/misconception-challenge/` mode with confidence-based misconception judgment and explanatory feedback.
+- Added `data/misconceptions.json` seed dataset and linked app from root navigation.

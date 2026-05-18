@@ -1041,3 +1041,12 @@ TBD
 - Extended derive pipeline (`scripts/derive.mjs`) to preserve `related_event_ids` and generate relationship graph artifacts:
   - `derived/event-relationships.json`
   - `data/derived/event-relationships.json`
+
+
+## Incremental update (2026-05-18 · learner-state + misconception challenge)
+
+- Added concept-level mastery store helpers and weakest-concept inference in `apps/shared/mastery-store.js`.
+- Added dashboard concept-mastery summary and adaptive weak-area callouts in `apps/dashboard/main.js`.
+- Added session-runner concept mastery update hooks for confidence interactions in `apps/session-runner/app.js`.
+- Added new `apps/misconception-challenge/` mode with confidence-based misconception judgment and explanatory feedback.
+- Added `data/misconceptions.json` seed dataset and linked app from root navigation.
