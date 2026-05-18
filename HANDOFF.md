@@ -22,3 +22,18 @@
 2. Add concept-level completion state (locked/in-progress/unlocked) and show per-path readiness percentages.
 3. Expand Big Picture History with map overlays and narrative filters by region + era.
 4. Add concise pedagogy guardrails for prerequisite breadth to avoid over-constraining valid alternative learning paths.
+
+## Strategic direction update (for next session)
+
+Use the weekly strategic assessment as an execution filter:
+
+- Build toward **historical synthesis** (eras, transitions, divergence), not just discrete-event throughput.
+- Treat these as forced priorities:
+  - macro-history / era synthesis,
+  - continuity/change learning,
+  - broader regional coverage in canonical learning paths.
+- Near-term deliverables to target:
+  1. A curated `World History Overview` unit scaffold (start with a high-quality 15-event backbone, then expand toward 30–40).
+  2. Era/transformation tags wired through derive output and visible in at least one app view.
+  3. One concise continuity/change prompt in Timeline Trainer post-answer feedback.
+- Deprioritize for now: styling-only polish, deep validation-only expansion, and unrelated standalone apps.

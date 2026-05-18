@@ -38,6 +38,23 @@ World History Lab is a personal learning project for studying world history with
 - Extended derive pipeline in `scripts/derive.mjs` to preserve directional fields in normalized events and generate `derived/causal-graph.json` plus `data/derived/causal-graph.json`.
 - Added homepage discoverability link for **Historical Reasoning Lab** in `index.html`.
 
+
+## Weekly strategic focus (2026-05-17 · macro-history learning layer)
+
+- **Theme of the week**: Build a macro-history learning layer so learners can form era-scale mental models, not only event recall.
+- **Critical gaps to close**:
+  1. Missing era/transition synthesis in learner-facing flows.
+  2. Weak continuity-vs-change instruction across centuries.
+  3. Risk of regional imbalance in the default canonical path.
+- **Top priorities**:
+  1. Create a canonical **World History Overview** unit with balanced era/region coverage and transition summaries.
+  2. Add **era + transformation tagging** and expose tags in at least one learner-facing surface.
+  3. Integrate concise continuity/change prompts into Timeline Trainer feedback loops.
+- **Execution guardrails for this week**:
+  - Prefer learner-visible synthesis over refactor-only work.
+  - Freeze era taxonomy early; avoid late-week taxonomy churn.
+  - Split semantic data changes from UI exposure into separate PRs when possible.
+
 ## Core idea / approach
 
 - **One shared dataset, many mini apps**: this repository is intended to host multiple mini apps in the same repo, all using the same core data and schemas.
