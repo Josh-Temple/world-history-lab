@@ -46,3 +46,18 @@ Use the weekly strategic assessment as an execution filter:
 - Added session-runner concept mastery update hooks for confidence interactions in `apps/session-runner/app.js`.
 - Added new `apps/misconception-challenge/` mode with confidence-based misconception judgment and explanatory feedback.
 - Added `data/misconceptions.json` seed dataset and linked app from root navigation.
+
+
+## Incremental update (2026-05-19 · Indian Ocean unit + process chains)
+
+- Added a new Indian Ocean trade unit (`data/units/indian-ocean-trade.json`) and registered it in `data/units/index.json`.
+- Added substantial Indian Ocean event coverage and directional prerequisite/consequence links in `data/events.json`.
+- Added linked person records for major Indian Ocean actors in `data/people.json` and introduced `reg_indian_ocean` in `data/regions.json`.
+- Updated trade-network learning-path sequencing in `data/learning-paths.json` to include the new unit.
+- Added `scripts/derive-process-chains.mjs` and wired it into `scripts/derive.mjs` to emit `process-chains.json` into both derive output trees.
+
+### Next-session checks
+
+1. Review event factual phrasing for consistency with the project's evidence standards and add/normalize `source_refs` where needed.
+2. Evaluate process-chain heuristics (especially branching simplification) and tune for interpretability in reasoning/synthesis apps.
+3. Expand non-Western balancing further via Sub-Saharan inland networks, Southeast Asian inland-polity links, and pre-Columbian American macro-process chains.

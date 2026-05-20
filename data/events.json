@@ -13,7 +13,7 @@
       "weaving",
       "invention"
     ],
-    "summary_short": "John Kay’s flying shuttle sped up weaving and increased demand for spun yarn, helping trigger later spinning innovations.",
+    "summary_short": "John Kay\u2019s flying shuttle sped up weaving and increased demand for spun yarn, helping trigger later spinning innovations.",
     "source_refs": [
       {
         "title": "Flying shuttle (patent year 1733)",
@@ -118,7 +118,7 @@
     "summary_short": "A multi-spindle spinning machine that greatly increased yarn output and helped propel mechanized textile production.",
     "source_refs": [
       {
-        "title": "Spinning jenny (invented 1764–1765)",
+        "title": "Spinning jenny (invented 1764\u20131765)",
         "url": "https://en.wikipedia.org/wiki/Spinning_jenny"
       }
     ],
@@ -161,7 +161,7 @@
       "spinning",
       "patent"
     ],
-    "summary_short": "Arkwright’s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
+    "summary_short": "Arkwright\u2019s water frame used rollers and water power to spin stronger yarn, supporting large-scale mills.",
     "source_refs": [
       {
         "title": "Water frame (patented 1769)",
@@ -196,7 +196,7 @@
   },
   {
     "id": "ev_watt_condenser_patent_1769",
-    "label": "Watt’s separate condenser patented (steam engine efficiency)",
+    "label": "Watt\u2019s separate condenser patented (steam engine efficiency)",
     "time": {
       "year_start": 1769
     },
@@ -208,7 +208,7 @@
       "energy",
       "patent"
     ],
-    "summary_short": "James Watt’s separate condenser greatly improved steam engine efficiency, enabling broader industrial use beyond mines.",
+    "summary_short": "James Watt\u2019s separate condenser greatly improved steam engine efficiency, enabling broader industrial use beyond mines.",
     "source_refs": [
       {
         "title": "Watt steam engine (1769 patent context)",
@@ -293,10 +293,10 @@
       "textiles",
       "water_power"
     ],
-    "summary_short": "Arkwright’s water-powered spinning at Cromford is often cited as a key step toward the factory system in textiles.",
+    "summary_short": "Arkwright\u2019s water-powered spinning at Cromford is often cited as a key step toward the factory system in textiles.",
     "source_refs": [
       {
-        "title": "Arkwright’s water-frame at Cromford (1771)",
+        "title": "Arkwright\u2019s water-frame at Cromford (1771)",
         "url": "https://www.nationalarchives.gov.uk/education/resources/georgian-britain-age-modernity/arkwrights-spinning-frame/"
       }
     ],
@@ -349,10 +349,10 @@
       "spinning",
       "invention"
     ],
-    "summary_short": "Crompton’s spinning mule combined features of earlier spinning machines and enabled large-scale production of high-quality yarn.",
+    "summary_short": "Crompton\u2019s spinning mule combined features of earlier spinning machines and enabled large-scale production of high-quality yarn.",
     "source_refs": [
       {
-        "title": "Crompton’s spinning mule (invented 1779)",
+        "title": "Crompton\u2019s spinning mule (invented 1779)",
         "url": "https://ageofrevolution.org/200-object/cromptons-spinning-mule/"
       }
     ],
@@ -395,7 +395,7 @@
       "weaving",
       "mechanization"
     ],
-    "summary_short": "Cartwright’s power loom mechanized weaving, helping shift textile production further into factories.",
+    "summary_short": "Cartwright\u2019s power loom mechanized weaving, helping shift textile production further into factories.",
     "source_refs": [
       {
         "title": "Patenting of the steam-powered loom (1785)",
@@ -864,7 +864,7 @@
       "invention",
       "supply_chain"
     ],
-    "summary_short": "Whitney’s cotton gin sped seed removal, expanding raw cotton supply feeding textile mills and intensifying the global cotton economy.",
+    "summary_short": "Whitney\u2019s cotton gin sped seed removal, expanding raw cotton supply feeding textile mills and intensifying the global cotton economy.",
     "source_refs": [
       {
         "title": "Cotton gin (invented 1793)",
@@ -1009,7 +1009,7 @@
       "year_end": 1794,
       "century_label": "18th century CE",
       "precision": "range",
-      "display_text": "1793–1794"
+      "display_text": "1793\u20131794"
     },
     "regions": [
       "reg_france"
@@ -1496,7 +1496,7 @@
       "year_end": 1815,
       "century_label": "19th century CE",
       "precision": "range",
-      "display_text": "1814–1815"
+      "display_text": "1814\u20131815"
     },
     "regions": [
       "reg_western_europe"
@@ -1597,7 +1597,7 @@
   },
   {
     "id": "ev_rainhill_trials_rocket_1829",
-    "label": "Rainhill Trials won by Stephenson’s Rocket",
+    "label": "Rainhill Trials won by Stephenson\u2019s Rocket",
     "time": {
       "year_start": 1829
     },
@@ -1609,10 +1609,10 @@
       "transport",
       "competition"
     ],
-    "summary_short": "Rocket’s success at the Rainhill Trials helped convince investors and engineers that locomotive-hauled railways were viable at scale.",
+    "summary_short": "Rocket\u2019s success at the Rainhill Trials helped convince investors and engineers that locomotive-hauled railways were viable at scale.",
     "source_refs": [
       {
-        "title": "Stephenson’s Rocket (Rainhill Trials, 1829)",
+        "title": "Stephenson\u2019s Rocket (Rainhill Trials, 1829)",
         "url": "https://en.wikipedia.org/wiki/Stephenson%27s_Rocket"
       }
     ],
@@ -1669,7 +1669,7 @@
       "regulation",
       "social"
     ],
-    "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate—an important step toward enforceable workplace regulation.",
+    "summary_short": "The 1833 Factory Act restricted child labor and created an inspectorate\u2014an important step toward enforceable workplace regulation.",
     "source_refs": [
       {
         "title": "1833 Factory Act (Parliament; inspectorate)",
@@ -1743,7 +1743,7 @@
       "economic",
       "industrial"
     ],
-    "summary_short": "A major international exhibition showcasing industrial and cultural achievements, symbolizing Britain’s industrial prominence.",
+    "summary_short": "A major international exhibition showcasing industrial and cultural achievements, symbolizing Britain\u2019s industrial prominence.",
     "source_refs": [
       {
         "title": "Great Exhibition (opened 1 May 1851)",
@@ -1980,7 +1980,7 @@
       "manufacturing",
       "invention"
     ],
-    "summary_short": "Bessemer’s process enabled cheaper mass production of steel, accelerating industrial expansion in railways, construction, and machinery.",
+    "summary_short": "Bessemer\u2019s process enabled cheaper mass production of steel, accelerating industrial expansion in railways, construction, and machinery.",
     "source_refs": [
       {
         "title": "Bessemer process (patent 1856)",
@@ -2022,7 +2022,7 @@
       "year_end": 1869,
       "century_label": "19th century CE",
       "precision": "year",
-      "display_text": "1868–1869"
+      "display_text": "1868\u20131869"
     },
     "regions": [
       "reg_japan"
@@ -2042,7 +2042,7 @@
     ],
     "causes": [
       {
-        "label": "Collapse of the kōbu-gattai compromise and intensification of anti-shogunate movements",
+        "label": "Collapse of the k\u014dbu-gattai compromise and intensification of anti-shogunate movements",
         "category": "political",
         "note": null
       }
@@ -2525,7 +2525,7 @@
       "year_end": 1895,
       "century_label": "19th century CE",
       "precision": "year",
-      "display_text": "1894–1895"
+      "display_text": "1894\u20131895"
     },
     "regions": [
       "reg_japan",
@@ -2692,7 +2692,7 @@
       "imperialism",
       "colonialism"
     ],
-    "summary_short": "Through the Japan–Korea Annexation Treaty, Japan colonized the Korean Peninsula and intensified imperial expansion.",
+    "summary_short": "Through the Japan\u2013Korea Annexation Treaty, Japan colonized the Korean Peninsula and intensified imperial expansion.",
     "related_people": [],
     "related_events": [
       "ev_meiji_emperor_death_1912"
@@ -2775,7 +2775,7 @@
     "causes": [],
     "effects": [
       {
-        "label": "Transition to the Taishō era and reconfiguration of political and social challenges",
+        "label": "Transition to the Taish\u014d era and reconfiguration of political and social challenges",
         "category": "political",
         "note": null
       }
@@ -3060,7 +3060,7 @@
     ],
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "The Treaty of Shimonoseki ended the war with major Chinese concessions, marking Japan’s rise as an imperial power.",
+    "summary_short": "The Treaty of Shimonoseki ended the war with major Chinese concessions, marking Japan\u2019s rise as an imperial power.",
     "themes": [
       "state_power"
     ],
@@ -5260,7 +5260,7 @@
     "time": {
       "year_start": 1764
     },
-    "summary_short": "James Hargreaves’s spinning jenny increases yarn output and intensifies textile mechanization.",
+    "summary_short": "James Hargreaves\u2019s spinning jenny increases yarn output and intensifies textile mechanization.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -5290,7 +5290,7 @@
     "time": {
       "year_start": 1776
     },
-    "summary_short": "James Watt’s commercially deployed improvements make steam engines more efficient and more widely usable.",
+    "summary_short": "James Watt\u2019s commercially deployed improvements make steam engines more efficient and more widely usable.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -5439,7 +5439,7 @@
     "time": {
       "year_start": 1830
     },
-    "summary_short": "A landmark intercity railway demonstrates rail’s commercial viability for freight and passengers.",
+    "summary_short": "A landmark intercity railway demonstrates rail\u2019s commercial viability for freight and passengers.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -5698,7 +5698,7 @@
   },
   {
     "id": "ev_first_international_1864",
-    "label": "International Workingmen’s Association founded",
+    "label": "International Workingmen\u2019s Association founded",
     "time": {
       "year_start": 1864
     },
@@ -5890,7 +5890,7 @@
     "time": {
       "year_start": 1815
     },
-    "summary_short": "Major powers redraw borders and pursue a balance-of-power order after Napoleon’s defeat.",
+    "summary_short": "Major powers redraw borders and pursue a balance-of-power order after Napoleon\u2019s defeat.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -6215,7 +6215,7 @@
     "time": {
       "year_start": 1769
     },
-    "summary_short": "Richard Arkwright’s water frame enables larger-scale spinning production and helps shift textiles toward factory organization.",
+    "summary_short": "Richard Arkwright\u2019s water frame enables larger-scale spinning production and helps shift textiles toward factory organization.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -6249,7 +6249,7 @@
     "time": {
       "year_start": 1793
     },
-    "summary_short": "Eli Whitney’s cotton gin speeds raw cotton processing, accelerating textile supply chains and industrial demand.",
+    "summary_short": "Eli Whitney\u2019s cotton gin speeds raw cotton processing, accelerating textile supply chains and industrial demand.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -6283,7 +6283,7 @@
     "time": {
       "year_start": 1825
     },
-    "summary_short": "The first public railway to use steam locomotives for freight and passengers demonstrates rail transport’s industrial potential.",
+    "summary_short": "The first public railway to use steam locomotives for freight and passengers demonstrates rail transport\u2019s industrial potential.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "effects": [
@@ -7323,7 +7323,7 @@
       "political"
     ],
     "location": {
-      "region": "Compiègne, France",
+      "region": "Compi\u00e8gne, France",
       "lat": 49.415,
       "lon": 2.826
     },
@@ -7869,7 +7869,7 @@
   },
   {
     "id": "ev_molotov_ribbentrop_pact_1939",
-    "label": "Molotov–Ribbentrop Pact",
+    "label": "Molotov\u2013Ribbentrop Pact",
     "time": {
       "year_start": 1939
     },
@@ -8280,7 +8280,7 @@
     "time": {
       "year_start": 1942
     },
-    "summary_short": "Senior Nazi officials coordinate bureaucratic implementation of the “Final Solution.”",
+    "summary_short": "Senior Nazi officials coordinate bureaucratic implementation of the \u201cFinal Solution.\u201d",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "tags": [
@@ -8737,7 +8737,7 @@
     "time": {
       "year_start": 1944
     },
-    "summary_short": "Soviet forces destroy much of Germany’s Army Group Centre in Belarus.",
+    "summary_short": "Soviet forces destroy much of Germany\u2019s Army Group Centre in Belarus.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "tags": [
@@ -8854,7 +8854,7 @@
     "time": {
       "year_start": 1944
     },
-    "summary_short": "Germany’s final major offensive in the West fails, accelerating Allied advance into Germany.",
+    "summary_short": "Germany\u2019s final major offensive in the West fails, accelerating Allied advance into Germany.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "tags": [
@@ -9149,7 +9149,7 @@
     "time": {
       "year_start": 1945
     },
-    "summary_short": "A second U.S. atomic bombing increases pressure on Japan’s leadership to surrender.",
+    "summary_short": "A second U.S. atomic bombing increases pressure on Japan\u2019s leadership to surrender.",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed",
     "tags": [
@@ -10136,7 +10136,7 @@
   },
   {
     "id": "ev_fete_federation_1790",
-    "label": "Fête de la Fédération celebrates constitutional unity",
+    "label": "F\u00eate de la F\u00e9d\u00e9ration celebrates constitutional unity",
     "time": {
       "year_start": 1790
     },
@@ -10145,7 +10145,7 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Fête de la Fédération celebrates constitutional unity became a significant turning point in the French Revolution's political trajectory.",
+    "summary_short": "F\u00eate de la F\u00e9d\u00e9ration celebrates constitutional unity became a significant turning point in the French Revolution's political trajectory.",
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -10297,7 +10297,7 @@
   },
   {
     "id": "ev_levy_en_masse_1793",
-    "label": "Levée en masse enacts mass conscription",
+    "label": "Lev\u00e9e en masse enacts mass conscription",
     "time": {
       "year_start": 1793
     },
@@ -10306,7 +10306,7 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Levée en masse enacts mass conscription became a significant turning point in the French Revolution's political trajectory.",
+    "summary_short": "Lev\u00e9e en masse enacts mass conscription became a significant turning point in the French Revolution's political trajectory.",
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -10346,14 +10346,14 @@
   },
   {
     "id": "ev_vendee_revolt_1793",
-    "label": "Royalist and Catholic revolt expands in the Vendée",
+    "label": "Royalist and Catholic revolt expands in the Vend\u00e9e",
     "time": {
       "year_start": 1793
     },
     "people_ids": [],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Royalist and Catholic revolt expands in the Vendée became a significant turning point in the French Revolution's political trajectory.",
+    "summary_short": "Royalist and Catholic revolt expands in the Vend\u00e9e became a significant turning point in the French Revolution's political trajectory.",
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -10390,7 +10390,7 @@
   },
   {
     "id": "ev_hebertists_executed_1794",
-    "label": "Hébertists executed during factional purge",
+    "label": "H\u00e9bertists executed during factional purge",
     "time": {
       "year_start": 1794
     },
@@ -10399,7 +10399,7 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Hébertists executed during factional purge became a significant turning point in the French Revolution's political trajectory.",
+    "summary_short": "H\u00e9bertists executed during factional purge became a significant turning point in the French Revolution's political trajectory.",
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -10507,7 +10507,7 @@
   },
   {
     "id": "ev_13_vendemiaire_1795",
-    "label": "13 Vendémiaire uprising suppressed in Paris",
+    "label": "13 Vend\u00e9miaire uprising suppressed in Paris",
     "time": {
       "year_start": 1795
     },
@@ -10517,7 +10517,7 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "13 Vendémiaire uprising suppressed in Paris became a significant turning point in the French Revolution's political trajectory.",
+    "summary_short": "13 Vend\u00e9miaire uprising suppressed in Paris became a significant turning point in the French Revolution's political trajectory.",
     "question_types": [
       "timeline_before_after",
       "what_happened",
@@ -12056,5 +12056,836 @@
     ],
     "prerequisite_event_ids": [],
     "consequence_event_ids": []
+  },
+  {
+    "id": "ev_hippalus_monsoon_route_usage",
+    "label": "Monsoon route navigation becomes systematized",
+    "time": {
+      "year_start": 100
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Monsoon route navigation becomes systematized shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_axum_red_sea_trade_growth",
+    "label": "Aksum expands Red Sea exchange links",
+    "time": {
+      "year_start": 300
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_hippalus_monsoon_route_usage"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Aksum expands Red Sea exchange links shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_swahili_city_states_growth_900",
+    "label": "Swahili port-city growth accelerates",
+    "time": {
+      "year_start": 900
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization",
+      "concept_religious_diffusion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_axum_red_sea_trade_growth"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Swahili port-city growth accelerates shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_kilwa_gold_trade_integration",
+    "label": "Kilwa integrates gold and oceanic exchange",
+    "time": {
+      "year_start": 1100
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_swahili_city_states_growth_900"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Kilwa integrates gold and oceanic exchange shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_chola_naval_raids_srivijaya_1025",
+    "label": "Chola naval raids on Srivijaya",
+    "time": {
+      "year_start": 1025
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Chola naval raids on Srivijaya shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_srivijaya_maritime_mediation",
+    "label": "Srivijaya mediates strait commerce",
+    "time": {
+      "year_start": 900
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Srivijaya mediates strait commerce shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_calicut_port_as_hub",
+    "label": "Calicut emerges as major entrepot",
+    "time": {
+      "year_start": 1200
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Calicut emerges as major entrepot shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_hormuz_port_ascendancy",
+    "label": "Hormuz rises as Gulf transit hub",
+    "time": {
+      "year_start": 1300
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Hormuz rises as Gulf transit hub shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_aden_red_sea_gateway_peak",
+    "label": "Aden peaks as Red Sea gateway",
+    "time": {
+      "year_start": 1200
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Aden peaks as Red Sea gateway shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_gujarati_merchants_diaspora_expands",
+    "label": "Gujarati merchant diaspora expands",
+    "time": {
+      "year_start": 1300
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Gujarati merchant diaspora expands shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_ibn_battuta_indian_ocean_itinerary",
+    "label": "Ibn Battuta documents Indian Ocean circuits",
+    "time": {
+      "year_start": 1345
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Ibn Battuta documents Indian Ocean circuits shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_ming_maritime_expansion_policy",
+    "label": "Ming court authorizes maritime projection",
+    "time": {
+      "year_start": 1403
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Ming court authorizes maritime projection shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_zheng_he_first_voyage_1405",
+    "label": "First voyage of Zheng He",
+    "time": {
+      "year_start": 1405
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_ming_maritime_expansion_policy"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "First voyage of Zheng He shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_zheng_he_calicut_visit",
+    "label": "Zheng He fleet engages Calicut diplomacy",
+    "time": {
+      "year_start": 1407
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_zheng_he_first_voyage_1405"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Zheng He fleet engages Calicut diplomacy shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_zheng_he_hormuz_mission",
+    "label": "Zheng He reaches Hormuz",
+    "time": {
+      "year_start": 1414
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_zheng_he_calicut_visit"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Zheng He reaches Hormuz shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_zheng_he_east_africa_contact",
+    "label": "Ming-Swahili diplomatic contact deepens",
+    "time": {
+      "year_start": 1418
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_zheng_he_hormuz_mission"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Ming-Swahili diplomatic contact deepens shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_malacca_foundation_1400",
+    "label": "Foundation of Malacca polity",
+    "time": {
+      "year_start": 1400
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Foundation of Malacca polity shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_malacca_islamization",
+    "label": "Malacca court Islamization consolidates networks",
+    "time": {
+      "year_start": 1414
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_malacca_foundation_1400"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Malacca court Islamization consolidates networks shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_malacca_port_regulation",
+    "label": "Malacca develops multilingual port governance",
+    "time": {
+      "year_start": 1420
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_malacca_foundation_1400"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Malacca develops multilingual port governance shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_bengal_textile_exports_expand",
+    "label": "Bengal textile exports scale across ocean",
+    "time": {
+      "year_start": 1450
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Bengal textile exports scale across ocean shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_cinnamon_trade_ceylon_growth",
+    "label": "Ceylon cinnamon trade intensifies",
+    "time": {
+      "year_start": 1450
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Ceylon cinnamon trade intensifies shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_portuguese_round_cape_1488",
+    "label": "Portuguese round the Cape route",
+    "time": {
+      "year_start": 1488
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Portuguese round the Cape route shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_vasco_da_gama_arrival_calicut_1498",
+    "label": "Vasco da Gama reaches Calicut",
+    "time": {
+      "year_start": 1498
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_portuguese_round_cape_1488"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Vasco da Gama reaches Calicut shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_portuguese_cartaz_system",
+    "label": "Portuguese cartaz pass system imposed",
+    "time": {
+      "year_start": 1502
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_vasco_da_gama_arrival_calicut_1498"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Portuguese cartaz pass system imposed shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_battle_diu_1509",
+    "label": "Battle of Diu and Portuguese naval supremacy",
+    "time": {
+      "year_start": 1509
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_military_reform",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_portuguese_cartaz_system"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Battle of Diu and Portuguese naval supremacy shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_portuguese_capture_goa_1510",
+    "label": "Portuguese capture Goa",
+    "time": {
+      "year_start": 1510
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_frontier_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_battle_diu_1509"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Portuguese capture Goa shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_portuguese_capture_malacca_1511",
+    "label": "Portuguese capture Malacca",
+    "time": {
+      "year_start": 1511
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_battle_diu_1509"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Portuguese capture Malacca shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_ottoman_expansion_red_sea_1517",
+    "label": "Ottoman expansion into Red Sea politics",
+    "time": {
+      "year_start": 1517
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Ottoman expansion into Red Sea politics shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_ottoman_portuguese_rivalry_indian_ocean",
+    "label": "Ottoman-Portuguese rivalry intensifies",
+    "time": {
+      "year_start": 1538
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_military_reform",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_ottoman_expansion_red_sea_1517"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Ottoman-Portuguese rivalry intensifies shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_mughal_gujarat_annexation_1573",
+    "label": "Mughal annexation of Gujarat ports",
+    "time": {
+      "year_start": 1573
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Mughal annexation of Gujarat ports shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_aceh_ottoman_links",
+    "label": "Aceh seeks Ottoman military links",
+    "time": {
+      "year_start": 1560
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_military_reform",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Aceh seeks Ottoman military links shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_dutch_voc_formation_1602_indian_ocean",
+    "label": "VOC formation restructures spice commerce",
+    "time": {
+      "year_start": 1602
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "VOC formation restructures spice commerce shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_english_eic_indian_ocean_entry_1600",
+    "label": "EIC enters Indian Ocean competition",
+    "time": {
+      "year_start": 1600
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "EIC enters Indian Ocean competition shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_batavia_founded_1619",
+    "label": "Batavia founded as VOC headquarters",
+    "time": {
+      "year_start": 1619
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [
+      "ev_dutch_voc_formation_1602_indian_ocean"
+    ],
+    "consequence_event_ids": [],
+    "summary_short": "Batavia founded as VOC headquarters shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_oman_expels_portuguese_muscat_1650",
+    "label": "Omani forces expel Portuguese from Muscat",
+    "time": {
+      "year_start": 1650
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_legitimacy_crisis",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Omani forces expel Portuguese from Muscat shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_french_compagnie_indes_1664",
+    "label": "French East India Company enters network",
+    "time": {
+      "year_start": 1664
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "French East India Company enters network shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_hadrami_diaspora_southeast_asia",
+    "label": "Hadrami diaspora links Arabia to Southeast Asia",
+    "time": {
+      "year_start": 1700
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Hadrami diaspora links Arabia to Southeast Asia shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_clove_monopoly_conflicts_moluccas",
+    "label": "Clove monopoly conflicts reshape production",
+    "time": {
+      "year_start": 1650
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_legitimacy_crisis"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Clove monopoly conflicts reshape production shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_surat_decline_bombay_rise",
+    "label": "Shift from Surat to Bombay maritime hub",
+    "time": {
+      "year_start": 1700
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_urbanization",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Shift from Surat to Bombay maritime hub shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_coffee_trade_yemen_red_sea",
+    "label": "Yemeni coffee trade links Red Sea and Indian Ocean",
+    "time": {
+      "year_start": 1600
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Yemeni coffee trade links Red Sea and Indian Ocean shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_hajj_shipping_network_expansion",
+    "label": "Hajj shipping circuits expand interregional ties",
+    "time": {
+      "year_start": 1700
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Hajj shipping circuits expand interregional ties shaped long-distance maritime exchange across the Indian Ocean world."
+  },
+  {
+    "id": "ev_steam_navigation_indian_ocean_1830s",
+    "label": "Steam navigation accelerates Indian Ocean exchange",
+    "time": {
+      "year_start": 1830
+    },
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed",
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "summary_short": "Steam navigation accelerates Indian Ocean exchange shaped long-distance maritime exchange across the Indian Ocean world."
   }
 ]

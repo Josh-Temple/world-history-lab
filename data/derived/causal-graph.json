@@ -17,6 +17,14 @@
       "ev_qing_first_opium_war_1839"
     ]
   },
+  "ev_aceh_ottoman_links": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_aden_red_sea_gateway_peak": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_alexander_gaugamela_331bce": {
     "prerequisites": [],
     "consequences": []
@@ -73,6 +81,12 @@
       "ev_nuremberg_trials_begin_1945"
     ]
   },
+  "ev_axum_red_sea_trade_growth": {
+    "prerequisites": [
+      "ev_hippalus_monsoon_route_usage"
+    ],
+    "consequences": []
+  },
   "ev_baghdad_translation_movement": {
     "prerequisites": [],
     "consequences": []
@@ -81,6 +95,12 @@
     "prerequisites": [
       "ev_india_independence_1947",
       "ev_wwi_league_of_nations_1920"
+    ],
+    "consequences": []
+  },
+  "ev_batavia_founded_1619": {
+    "prerequisites": [
+      "ev_dutch_voc_formation_1602_indian_ocean"
     ],
     "consequences": []
   },
@@ -101,6 +121,12 @@
       "ev_germany_surrenders_1945",
       "ev_yalta_conference_1945"
     ]
+  },
+  "ev_battle_diu_1509": {
+    "prerequisites": [
+      "ev_portuguese_cartaz_system"
+    ],
+    "consequences": []
   },
   "ev_battle_el_alamein_1942": {
     "prerequisites": [
@@ -161,6 +187,10 @@
       "ev_conquest_jerusalem_638"
     ]
   },
+  "ev_bengal_textile_exports_expand": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_berlin_conference_1884": {
     "prerequisites": [
       "ev_indian_revolt_1857"
@@ -196,6 +226,10 @@
     "prerequisites": [],
     "consequences": []
   },
+  "ev_calicut_port_as_hub": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_camp_formio_1797": {
     "prerequisites": [],
     "consequences": []
@@ -212,11 +246,19 @@
     "prerequisites": [],
     "consequences": []
   },
+  "ev_chola_naval_raids_srivijaya_1025": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_cholera_trade_routes_1817": {
     "prerequisites": [],
     "consequences": []
   },
   "ev_church_property_nationalized_1789": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_cinnamon_trade_ceylon_growth": {
     "prerequisites": [],
     "consequences": []
   },
@@ -226,7 +268,15 @@
       "ev_flight_to_varennes_1791"
     ]
   },
+  "ev_clove_monopoly_conflicts_moluccas": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_coffee_trade_red_sea": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_coffee_trade_yemen_red_sea": {
     "prerequisites": [],
     "consequences": []
   },
@@ -387,6 +437,10 @@
     "prerequisites": [],
     "consequences": []
   },
+  "ev_dutch_voc_formation_1602_indian_ocean": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_egypt_campaign_1798": {
     "prerequisites": [],
     "consequences": []
@@ -405,6 +459,10 @@
     "consequences": [
       "ev_factory_system_rise_1780s"
     ]
+  },
+  "ev_english_eic_indian_ocean_entry_1600": {
+    "prerequisites": [],
+    "consequences": []
   },
   "ev_estates_general_1789": {
     "prerequisites": [],
@@ -512,6 +570,10 @@
       "ev_fall_of_france_1940"
     ]
   },
+  "ev_french_compagnie_indes_1664": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_germany_surrenders_1945": {
     "prerequisites": [
       "ev_battle_bulge_1944",
@@ -559,6 +621,14 @@
       "ev_island_hopping_campaign_1943_1945"
     ]
   },
+  "ev_gujarati_merchants_diaspora_expands": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_hadrami_diaspora_southeast_asia": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_haitian_revolution_independence_1804": {
     "prerequisites": [
       "ev_tokugawa_shogunate_1603"
@@ -566,6 +636,10 @@
     "consequences": [
       "ev_abolition_british_slave_trade_1807"
     ]
+  },
+  "ev_hajj_shipping_network_expansion": {
+    "prerequisites": [],
+    "consequences": []
   },
   "ev_han_protectorate_western_regions": {
     "prerequisites": [],
@@ -587,6 +661,10 @@
       "ev_constitution_medina_622"
     ]
   },
+  "ev_hippalus_monsoon_route_usage": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_hitler_suicide_1945": {
     "prerequisites": [
       "ev_soviet_berlin_offensive_1945"
@@ -602,6 +680,14 @@
     "consequences": [
       "ev_wannsee_conference_1942"
     ]
+  },
+  "ev_hormuz_port_ascendancy": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_ibn_battuta_indian_ocean_itinerary": {
+    "prerequisites": [],
+    "consequences": []
   },
   "ev_ibn_battuta_travels": {
     "prerequisites": [],
@@ -822,6 +908,12 @@
       "ev_un_charter_signed_1945"
     ]
   },
+  "ev_kilwa_gold_trade_integration": {
+    "prerequisites": [
+      "ev_swahili_city_states_growth_900"
+    ],
+    "consequences": []
+  },
   "ev_kushan_trade_mediation": {
     "prerequisites": [],
     "consequences": []
@@ -884,6 +976,22 @@
     "consequences": [
       "ev_labor_movements_1830s_1840s"
     ]
+  },
+  "ev_malacca_foundation_1400": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_malacca_islamization": {
+    "prerequisites": [
+      "ev_malacca_foundation_1400"
+    ],
+    "consequences": []
+  },
+  "ev_malacca_port_regulation": {
+    "prerequisites": [
+      "ev_malacca_foundation_1400"
+    ],
+    "consequences": []
   },
   "ev_mali_mansa_musa_hajj_1324": {
     "prerequisites": [],
@@ -991,6 +1099,10 @@
     "prerequisites": [],
     "consequences": []
   },
+  "ev_ming_maritime_expansion_policy": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_ming_maritime_policy_reset": {
     "prerequisites": [],
     "consequences": []
@@ -1026,6 +1138,10 @@
     "consequences": [
       "ev_tokugawa_shogunate_1603"
     ]
+  },
+  "ev_mughal_gujarat_annexation_1573": {
+    "prerequisites": [],
+    "consequences": []
   },
   "ev_munich_agreement_1938": {
     "prerequisites": [],
@@ -1093,6 +1209,10 @@
     ],
     "consequences": []
   },
+  "ev_oman_expels_portuguese_muscat_1650": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_operation_bagration_1944": {
     "prerequisites": [
       "ev_battle_stalingrad_1942_1943",
@@ -1149,6 +1269,16 @@
     "prerequisites": [],
     "consequences": []
   },
+  "ev_ottoman_expansion_red_sea_1517": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_ottoman_portuguese_rivalry_indian_ocean": {
+    "prerequisites": [
+      "ev_ottoman_expansion_red_sea_1517"
+    ],
+    "consequences": []
+  },
   "ev_pan_african_congress_1945": {
     "prerequisites": [
       "ev_berlin_conference_1884",
@@ -1178,6 +1308,28 @@
     "consequences": []
   },
   "ev_portuguese_arrive_indian_ocean": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_portuguese_capture_goa_1510": {
+    "prerequisites": [
+      "ev_battle_diu_1509"
+    ],
+    "consequences": []
+  },
+  "ev_portuguese_capture_malacca_1511": {
+    "prerequisites": [
+      "ev_battle_diu_1509"
+    ],
+    "consequences": []
+  },
+  "ev_portuguese_cartaz_system": {
+    "prerequisites": [
+      "ev_vasco_da_gama_arrival_calicut_1498"
+    ],
+    "consequences": []
+  },
+  "ev_portuguese_round_cape_1488": {
     "prerequisites": [],
     "consequences": []
   },
@@ -1368,6 +1520,10 @@
     "prerequisites": [],
     "consequences": []
   },
+  "ev_srivijaya_maritime_mediation": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_state_military_fiscal_expansion_1810s_1820s": {
     "prerequisites": [
       "ev_napoleonic_wars_1803_1815"
@@ -1375,6 +1531,10 @@
     "consequences": [
       "ev_national_market_integration_1850s"
     ]
+  },
+  "ev_steam_navigation_indian_ocean_1830s": {
+    "prerequisites": [],
+    "consequences": []
   },
   "ev_steam_power_transport_expansion_1800s": {
     "prerequisites": [
@@ -1406,6 +1566,16 @@
     "consequences": [
       "ev_declaration_rights_man_citizen_1789"
     ]
+  },
+  "ev_surat_decline_bombay_rise": {
+    "prerequisites": [],
+    "consequences": []
+  },
+  "ev_swahili_city_states_growth_900": {
+    "prerequisites": [
+      "ev_axum_red_sea_trade_growth"
+    ],
+    "consequences": []
   },
   "ev_swahili_coast_urban_growth": {
     "prerequisites": [],
@@ -1508,6 +1678,12 @@
       "ev_labor_movements_1830s_1840s",
       "ev_public_health_act_1848"
     ]
+  },
+  "ev_vasco_da_gama_arrival_calicut_1498": {
+    "prerequisites": [
+      "ev_portuguese_round_cape_1488"
+    ],
+    "consequences": []
   },
   "ev_vendee_revolt_1793": {
     "prerequisites": [],
@@ -1914,6 +2090,30 @@
   },
   "ev_zhang_qian_missions_open_routes": {
     "prerequisites": [],
+    "consequences": []
+  },
+  "ev_zheng_he_calicut_visit": {
+    "prerequisites": [
+      "ev_zheng_he_first_voyage_1405"
+    ],
+    "consequences": []
+  },
+  "ev_zheng_he_east_africa_contact": {
+    "prerequisites": [
+      "ev_zheng_he_hormuz_mission"
+    ],
+    "consequences": []
+  },
+  "ev_zheng_he_first_voyage_1405": {
+    "prerequisites": [
+      "ev_ming_maritime_expansion_policy"
+    ],
+    "consequences": []
+  },
+  "ev_zheng_he_hormuz_mission": {
+    "prerequisites": [
+      "ev_zheng_he_calicut_visit"
+    ],
     "consequences": []
   },
   "ev_zheng_he_voyages_begin": {

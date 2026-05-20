@@ -3205,5 +3205,307 @@
     "name": "Ahmad ibn Majid",
     "status": "reviewed",
     "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_zheng_he_io",
+    "name": "Zheng He",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Zheng He shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_zheng_he_first_voyage_1405",
+      "ev_zheng_he_hormuz_mission"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_ahmad_ibn_majid_io",
+    "name": "Ahmad ibn Majid",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Ahmad ibn Majid shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_vasco_da_gama_arrival_calicut_1498"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_ibn_battuta_io",
+    "name": "Ibn Battuta",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Ibn Battuta shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_ibn_battuta_indian_ocean_itinerary"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_rajendra_chola_i_io",
+    "name": "Rajendra Chola I",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Rajendra Chola I shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_chola_naval_raids_srivijaya_1025"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_parameswara_io",
+    "name": "Parameswara",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Parameswara shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_malacca_foundation_1400"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_vasco_da_gama_io",
+    "name": "Vasco da Gama",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Vasco da Gama shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_vasco_da_gama_arrival_calicut_1498"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_afonso_de_albuquerque_io",
+    "name": "Afonso de Albuquerque",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Afonso de Albuquerque shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_portuguese_capture_goa_1510",
+      "ev_portuguese_capture_malacca_1511"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_piri_reis_io",
+    "name": "Piri Reis",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Piri Reis shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_ottoman_portuguese_rivalry_indian_ocean"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_sultan_suleiman_io",
+    "name": "Suleiman I",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Suleiman I shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_ottoman_portuguese_rivalry_indian_ocean"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_ali_bey_al_kabir_io",
+    "name": "Ali Bey al-Kabir",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Ali Bey al-Kabir shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_ottoman_expansion_red_sea_1517"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_malik_ayaz_io",
+    "name": "Malik Ayaz",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Malik Ayaz shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_battle_diu_1509"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_kanhoji_angre_io",
+    "name": "Kanhoji Angre",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Kanhoji Angre shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_surat_decline_bombay_rise"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_tome_pires_io",
+    "name": "Tomé Pires",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Tomé Pires shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_portuguese_capture_malacca_1511"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_nuruddin_al_raniri_io",
+    "name": "Nuruddin al-Raniri",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Nuruddin al-Raniri shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_hadrami_diaspora_southeast_asia"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
+  },
+  {
+    "id": "pe_sultan_iskandar_muda_io",
+    "name": "Iskandar Muda",
+    "regions": [
+      "reg_indian_ocean"
+    ],
+    "roles": [
+      "merchant_network",
+      "ruler"
+    ],
+    "summary_short": "Iskandar Muda shaped Indian Ocean exchange networks and political-commercial linkages.",
+    "related_events": [
+      "ev_aceh_ottoman_links"
+    ],
+    "question_types": [
+      "person_event_match"
+    ],
+    "content_origin": "ai_assisted_self_reviewed",
+    "status": "reviewed"
   }
 ]

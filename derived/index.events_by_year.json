@@ -1,6 +1,7 @@
 {
   "100": [
     "ev_buddhism_spreads_to_china",
+    "ev_hippalus_monsoon_route_usage",
     "ev_kushan_trade_mediation"
   ],
   "150": [
@@ -10,6 +11,7 @@
     "ev_papermaking_central_asia_transfer"
   ],
   "300": [
+    "ev_axum_red_sea_trade_growth",
     "ev_sogdian_merchant_networks_expand"
   ],
   "313": [
@@ -84,17 +86,27 @@
     "ev_charlemagne_crowned_800"
   ],
   "900": [
+    "ev_srivijaya_maritime_mediation",
+    "ev_swahili_city_states_growth_900",
     "ev_swahili_coast_urban_growth"
   ],
   "1000": [
     "ev_ghaznavid_trade_corridors"
+  ],
+  "1025": [
+    "ev_chola_naval_raids_srivijaya_1025"
   ],
   "1050": [
     "ev_song_commercial_revolution_11c"
   ],
   "1100": [
     "ev_crusader_contact_trade_flows",
+    "ev_kilwa_gold_trade_integration",
     "ev_song_maritime_commerce_expands"
+  ],
+  "1200": [
+    "ev_aden_red_sea_gateway_peak",
+    "ev_calicut_port_as_hub"
   ],
   "1206": [
     "ev_mongol_empire_formation_1206"
@@ -106,6 +118,8 @@
     "ev_marco_polo_travels"
   ],
   "1300": [
+    "ev_gujarati_merchants_diaspora_expands",
+    "ev_hormuz_port_ascendancy",
     "ev_ilkhanid_knowledge_exchange"
   ],
   "1324": [
@@ -115,6 +129,9 @@
   "1325": [
     "ev_ibn_battuta_travels"
   ],
+  "1345": [
+    "ev_ibn_battuta_indian_ocean_itinerary"
+  ],
   "1347": [
     "ev_black_death_trade_route_transmission"
   ],
@@ -122,46 +139,108 @@
     "ev_ming_maritime_policy_reset"
   ],
   "1400": [
+    "ev_malacca_foundation_1400",
     "ev_timurid_patronage_exchange"
   ],
+  "1403": [
+    "ev_ming_maritime_expansion_policy"
+  ],
   "1405": [
+    "ev_zheng_he_first_voyage_1405",
     "ev_zheng_he_voyages_begin"
   ],
+  "1407": [
+    "ev_zheng_he_calicut_visit"
+  ],
+  "1414": [
+    "ev_malacca_islamization",
+    "ev_zheng_he_hormuz_mission"
+  ],
+  "1418": [
+    "ev_zheng_he_east_africa_contact"
+  ],
+  "1420": [
+    "ev_malacca_port_regulation"
+  ],
   "1450": [
+    "ev_bengal_textile_exports_expand",
+    "ev_cinnamon_trade_ceylon_growth",
     "ev_mamluk_indian_ocean_intermediation"
   ],
   "1453": [
     "ev_mehmed_constantinople_1453",
     "ev_ottoman_control_eastern_mediterranean"
   ],
+  "1488": [
+    "ev_portuguese_round_cape_1488"
+  ],
   "1492": [
     "ev_columbus_1492"
   ],
   "1498": [
-    "ev_portuguese_arrive_indian_ocean"
+    "ev_portuguese_arrive_indian_ocean",
+    "ev_vasco_da_gama_arrival_calicut_1498"
+  ],
+  "1502": [
+    "ev_portuguese_cartaz_system"
+  ],
+  "1509": [
+    "ev_battle_diu_1509"
+  ],
+  "1510": [
+    "ev_portuguese_capture_goa_1510"
+  ],
+  "1511": [
+    "ev_portuguese_capture_malacca_1511"
   ],
   "1517": [
-    "ev_ottoman_conquest_egypt_1517"
+    "ev_ottoman_conquest_egypt_1517",
+    "ev_ottoman_expansion_red_sea_1517"
+  ],
+  "1538": [
+    "ev_ottoman_portuguese_rivalry_indian_ocean"
   ],
   "1550": [
     "ev_safavid_ottoman_mughal_exchange_competition"
   ],
+  "1560": [
+    "ev_aceh_ottoman_links"
+  ],
   "1570": [
     "ev_mughal_empire_akbar_consolidation_1570s"
   ],
+  "1573": [
+    "ev_mughal_gujarat_annexation_1573"
+  ],
   "1600": [
+    "ev_coffee_trade_yemen_red_sea",
+    "ev_english_eic_indian_ocean_entry_1600",
     "ev_silver_flows_asia_via_oceans"
+  ],
+  "1602": [
+    "ev_dutch_voc_formation_1602_indian_ocean"
   ],
   "1603": [
     "ev_tokugawa_shogunate_1603"
   ],
+  "1619": [
+    "ev_batavia_founded_1619"
+  ],
   "1650": [
-    "ev_coffee_trade_red_sea"
+    "ev_clove_monopoly_conflicts_moluccas",
+    "ev_coffee_trade_red_sea",
+    "ev_oman_expels_portuguese_muscat_1650"
+  ],
+  "1664": [
+    "ev_french_compagnie_indes_1664"
   ],
   "1700": [
     "ev_chintz_and_textile_diffusion",
+    "ev_hadrami_diaspora_southeast_asia",
+    "ev_hajj_shipping_network_expansion",
     "ev_qing_frontier_trade_regulation",
-    "ev_russian_steppe_expansion_trade"
+    "ev_russian_steppe_expansion_trade",
+    "ev_surat_decline_bombay_rise"
   ],
   "1733": [
     "ev_flying_shuttle_patent_1733"
@@ -306,7 +385,8 @@
     "ev_rainhill_trials_rocket_1829"
   ],
   "1830": [
-    "ev_liverpool_manchester_railway_1830"
+    "ev_liverpool_manchester_railway_1830",
+    "ev_steam_navigation_indian_ocean_1830s"
   ],
   "1833": [
     "ev_factory_act_1833"

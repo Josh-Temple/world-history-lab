@@ -43,5 +43,11 @@
     "id": "reg_western_europe",
     "label": "Western Europe",
     "continent": "Europe"
+  },
+  {
+    "id": "reg_indian_ocean",
+    "label": "Indian Ocean Basin",
+    "status": "reviewed",
+    "content_origin": "ai_assisted_self_reviewed"
   }
 ]

@@ -165,6 +165,88 @@
     }
   },
   {
+    "id": "ev_aceh_ottoman_links",
+    "label": "Aceh seeks Ottoman military links",
+    "summary_short": "Aceh seeks Ottoman military links shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_military_reform",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1560",
+      "end": "1560",
+      "year_start": 1560,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15600101,
+      "sort_end": 15601231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1560
+    }
+  },
+  {
+    "id": "ev_aden_red_sea_gateway_peak",
+    "label": "Aden peaks as Red Sea gateway",
+    "summary_short": "Aden peaks as Red Sea gateway shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1200",
+      "end": "1200",
+      "year_start": 1200,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 12000101,
+      "sort_end": 12001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1200
+    }
+  },
+  {
     "id": "ev_alexander_gaugamela_331bce",
     "label": "Alexander defeats Persia at Gaugamela",
     "summary_short": "Macedonian victory accelerated Hellenistic cultural spread.",
@@ -624,6 +706,49 @@
     }
   },
   {
+    "id": "ev_axum_red_sea_trade_growth",
+    "label": "Aksum expands Red Sea exchange links",
+    "summary_short": "Aksum expands Red Sea exchange links shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_hippalus_monsoon_route_usage"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "300",
+      "end": "300",
+      "year_start": 300,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 3000101,
+      "sort_end": 3001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 300
+    }
+  },
+  {
     "id": "ev_baghdad_translation_movement",
     "label": "Baghdad translation movement grows",
     "summary_short": "Baghdad translation movement grows strengthened interregional connections across Afro-Eurasia.",
@@ -733,6 +858,49 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1955
+    }
+  },
+  {
+    "id": "ev_batavia_founded_1619",
+    "label": "Batavia founded as VOC headquarters",
+    "summary_short": "Batavia founded as VOC headquarters shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_dutch_voc_formation_1602_indian_ocean"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1619",
+      "end": "1619",
+      "year_start": 1619,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16190101,
+      "sort_end": 16191231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1619
     }
   },
   {
@@ -861,6 +1029,49 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1944
+    }
+  },
+  {
+    "id": "ev_battle_diu_1509",
+    "label": "Battle of Diu and Portuguese naval supremacy",
+    "summary_short": "Battle of Diu and Portuguese naval supremacy shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_military_reform",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_portuguese_cartaz_system"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1509",
+      "end": "1509",
+      "year_start": 1509,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15090101,
+      "sort_end": 15091231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1509
     }
   },
   {
@@ -1293,6 +1504,47 @@
     }
   },
   {
+    "id": "ev_bengal_textile_exports_expand",
+    "label": "Bengal textile exports scale across ocean",
+    "summary_short": "Bengal textile exports scale across ocean shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1450",
+      "end": "1450",
+      "year_start": 1450,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14500101,
+      "sort_end": 14501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1450
+    }
+  },
+  {
     "id": "ev_berlin_conference_1884",
     "label": "Berlin Conference sets rules for partitioning Africa",
     "summary_short": "European powers formalized frameworks for colonial claims in Africa without African representation, accelerating partition.",
@@ -1670,6 +1922,47 @@
     }
   },
   {
+    "id": "ev_calicut_port_as_hub",
+    "label": "Calicut emerges as major entrepot",
+    "summary_short": "Calicut emerges as major entrepot shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1200",
+      "end": "1200",
+      "year_start": 1200,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 12000101,
+      "sort_end": 12001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1200
+    }
+  },
+  {
     "id": "ev_camp_formio_1797",
     "label": "Treaty of Campo Formio expands French influence in Italy",
     "summary_short": "Treaty of Campo Formio expands French influence in Italy became a significant turning point in the French Revolution's political trajectory.",
@@ -1855,6 +2148,47 @@
     }
   },
   {
+    "id": "ev_chola_naval_raids_srivijaya_1025",
+    "label": "Chola naval raids on Srivijaya",
+    "summary_short": "Chola naval raids on Srivijaya shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_frontier_expansion",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1025",
+      "end": "1025",
+      "year_start": 1025,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 10250101,
+      "sort_end": 10251231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1025
+    }
+  },
+  {
     "id": "ev_cholera_trade_routes_1817",
     "label": "First cholera pandemic spreads via trade routes",
     "summary_short": "First cholera pandemic spreads via trade routes strengthened interregional connections across Afro-Eurasia.",
@@ -1946,6 +2280,47 @@
     }
   },
   {
+    "id": "ev_cinnamon_trade_ceylon_growth",
+    "label": "Ceylon cinnamon trade intensifies",
+    "summary_short": "Ceylon cinnamon trade intensifies shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1450",
+      "end": "1450",
+      "year_start": 1450,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14500101,
+      "sort_end": 14501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1450
+    }
+  },
+  {
     "id": "ev_civil_constitution_clergy_1790",
     "label": "Civil Constitution of the Clergy",
     "summary_short": "The National Assembly reorganized the Catholic Church under state authority, deepening social and religious divisions.",
@@ -1996,6 +2371,47 @@
     }
   },
   {
+    "id": "ev_clove_monopoly_conflicts_moluccas",
+    "label": "Clove monopoly conflicts reshape production",
+    "summary_short": "Clove monopoly conflicts reshape production shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_legitimacy_crisis"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1650",
+      "end": "1650",
+      "year_start": 1650,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16500101,
+      "sort_end": 16501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1650
+    }
+  },
+  {
     "id": "ev_coffee_trade_red_sea",
     "label": "Coffee trade links Red Sea and Indian Ocean ports",
     "summary_short": "Coffee trade links Red Sea and Indian Ocean ports strengthened interregional connections across Afro-Eurasia.",
@@ -2043,6 +2459,47 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1650
+    }
+  },
+  {
+    "id": "ev_coffee_trade_yemen_red_sea",
+    "label": "Yemeni coffee trade links Red Sea and Indian Ocean",
+    "summary_short": "Yemeni coffee trade links Red Sea and Indian Ocean shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1600",
+      "end": "1600",
+      "year_start": 1600,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16000101,
+      "sort_end": 16001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1600
     }
   },
   {
@@ -3559,6 +4016,47 @@
     }
   },
   {
+    "id": "ev_dutch_voc_formation_1602_indian_ocean",
+    "label": "VOC formation restructures spice commerce",
+    "summary_short": "VOC formation restructures spice commerce shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1602",
+      "end": "1602",
+      "year_start": 1602,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16020101,
+      "sort_end": 16021231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1602
+    }
+  },
+  {
     "id": "ev_egypt_campaign_1798",
     "label": "Napoleon launches Egyptian campaign",
     "summary_short": "Napoleon launches Egyptian campaign became a significant turning point in the French Revolution's political trajectory.",
@@ -3701,6 +4199,47 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1750
+    }
+  },
+  {
+    "id": "ev_english_eic_indian_ocean_entry_1600",
+    "label": "EIC enters Indian Ocean competition",
+    "summary_short": "EIC enters Indian Ocean competition shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1600",
+      "end": "1600",
+      "year_start": 1600,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16000101,
+      "sort_end": 16001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1600
     }
   },
   {
@@ -4570,6 +5109,47 @@
     }
   },
   {
+    "id": "ev_french_compagnie_indes_1664",
+    "label": "French East India Company enters network",
+    "summary_short": "French East India Company enters network shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1664",
+      "end": "1664",
+      "year_start": 1664,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16640101,
+      "sort_end": 16641231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1664
+    }
+  },
+  {
     "id": "ev_germany_surrenders_1945",
     "label": "Germany Surrenders (VE Day)",
     "summary_short": "Nazi Germany signs unconditional surrender, ending war in Europe.",
@@ -4901,6 +5481,88 @@
     }
   },
   {
+    "id": "ev_gujarati_merchants_diaspora_expands",
+    "label": "Gujarati merchant diaspora expands",
+    "summary_short": "Gujarati merchant diaspora expands shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1300",
+      "end": "1300",
+      "year_start": 1300,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 13000101,
+      "sort_end": 13001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1300
+    }
+  },
+  {
+    "id": "ev_hadrami_diaspora_southeast_asia",
+    "label": "Hadrami diaspora links Arabia to Southeast Asia",
+    "summary_short": "Hadrami diaspora links Arabia to Southeast Asia shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1700",
+      "end": "1700",
+      "year_start": 1700,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17000101,
+      "sort_end": 17001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1700
+    }
+  },
+  {
     "id": "ev_haitian_revolution_independence_1804",
     "label": "Haiti declares independence",
     "summary_short": "The Haitian Revolution produced the first independent Black republic and reshaped Atlantic debates about slavery and rights.",
@@ -4958,6 +5620,47 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1804
+    }
+  },
+  {
+    "id": "ev_hajj_shipping_network_expansion",
+    "label": "Hajj shipping circuits expand interregional ties",
+    "summary_short": "Hajj shipping circuits expand interregional ties shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1700",
+      "end": "1700",
+      "year_start": 1700,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17000101,
+      "sort_end": 17001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1700
     }
   },
   {
@@ -5171,6 +5874,47 @@
     }
   },
   {
+    "id": "ev_hippalus_monsoon_route_usage",
+    "label": "Monsoon route navigation becomes systematized",
+    "summary_short": "Monsoon route navigation becomes systematized shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "100",
+      "end": "100",
+      "year_start": 100,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 1000101,
+      "sort_end": 1001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 100
+    }
+  },
+  {
     "id": "ev_hitler_suicide_1945",
     "label": "Hitler Commits Suicide",
     "summary_short": "Adolf Hitler dies in Berlin as Nazi Germany collapses militarily.",
@@ -5271,6 +6015,88 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1941
+    }
+  },
+  {
+    "id": "ev_hormuz_port_ascendancy",
+    "label": "Hormuz rises as Gulf transit hub",
+    "summary_short": "Hormuz rises as Gulf transit hub shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1300",
+      "end": "1300",
+      "year_start": 1300,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 13000101,
+      "sort_end": 13001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1300
+    }
+  },
+  {
+    "id": "ev_ibn_battuta_indian_ocean_itinerary",
+    "label": "Ibn Battuta documents Indian Ocean circuits",
+    "summary_short": "Ibn Battuta documents Indian Ocean circuits shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1345",
+      "end": "1345",
+      "year_start": 1345,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 13450101,
+      "sort_end": 13451231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1345
     }
   },
   {
@@ -7356,6 +8182,49 @@
     }
   },
   {
+    "id": "ev_kilwa_gold_trade_integration",
+    "label": "Kilwa integrates gold and oceanic exchange",
+    "summary_short": "Kilwa integrates gold and oceanic exchange shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_swahili_city_states_growth_900"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1100",
+      "end": "1100",
+      "year_start": 1100,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 11000101,
+      "sort_end": 11001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1100
+    }
+  },
+  {
     "id": "ev_kushan_trade_mediation",
     "label": "Kushan Empire mediates Silk Road exchange",
     "summary_short": "Kushan Empire mediates Silk Road exchange strengthened interregional connections across Afro-Eurasia.",
@@ -7860,6 +8729,133 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1811
+    }
+  },
+  {
+    "id": "ev_malacca_foundation_1400",
+    "label": "Foundation of Malacca polity",
+    "summary_short": "Foundation of Malacca polity shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1400",
+      "end": "1400",
+      "year_start": 1400,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14000101,
+      "sort_end": 14001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1400
+    }
+  },
+  {
+    "id": "ev_malacca_islamization",
+    "label": "Malacca court Islamization consolidates networks",
+    "summary_short": "Malacca court Islamization consolidates networks shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_religious_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_malacca_foundation_1400"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1414",
+      "end": "1414",
+      "year_start": 1414,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14140101,
+      "sort_end": 14141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1414
+    }
+  },
+  {
+    "id": "ev_malacca_port_regulation",
+    "label": "Malacca develops multilingual port governance",
+    "summary_short": "Malacca develops multilingual port governance shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_malacca_foundation_1400"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1420",
+      "end": "1420",
+      "year_start": 1420,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14200101,
+      "sort_end": 14201231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1420
     }
   },
   {
@@ -9073,6 +10069,47 @@
     }
   },
   {
+    "id": "ev_ming_maritime_expansion_policy",
+    "label": "Ming court authorizes maritime projection",
+    "summary_short": "Ming court authorizes maritime projection shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1403",
+      "end": "1403",
+      "year_start": 1403,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14030101,
+      "sort_end": 14031231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1403
+    }
+  },
+  {
     "id": "ev_ming_maritime_policy_reset",
     "label": "Early Ming resets maritime policy and tribute",
     "summary_short": "Early Ming resets maritime policy and tribute strengthened interregional connections across Afro-Eurasia.",
@@ -9401,6 +10438,47 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1570
+    }
+  },
+  {
+    "id": "ev_mughal_gujarat_annexation_1573",
+    "label": "Mughal annexation of Gujarat ports",
+    "summary_short": "Mughal annexation of Gujarat ports shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1573",
+      "end": "1573",
+      "year_start": 1573,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15730101,
+      "sort_end": 15731231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1573
     }
   },
   {
@@ -9924,6 +11002,47 @@
     }
   },
   {
+    "id": "ev_oman_expels_portuguese_muscat_1650",
+    "label": "Omani forces expel Portuguese from Muscat",
+    "summary_short": "Omani forces expel Portuguese from Muscat shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_legitimacy_crisis",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1650",
+      "end": "1650",
+      "year_start": 1650,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 16500101,
+      "sort_end": 16501231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1650
+    }
+  },
+  {
     "id": "ev_operation_bagration_1944",
     "label": "Operation Bagration",
     "summary_short": "Soviet forces destroy much of Germany’s Army Group Centre in Belarus.",
@@ -10283,6 +11402,90 @@
     }
   },
   {
+    "id": "ev_ottoman_expansion_red_sea_1517",
+    "label": "Ottoman expansion into Red Sea politics",
+    "summary_short": "Ottoman expansion into Red Sea politics shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1517",
+      "end": "1517",
+      "year_start": 1517,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15170101,
+      "sort_end": 15171231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1517
+    }
+  },
+  {
+    "id": "ev_ottoman_portuguese_rivalry_indian_ocean",
+    "label": "Ottoman-Portuguese rivalry intensifies",
+    "summary_short": "Ottoman-Portuguese rivalry intensifies shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_military_reform",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_ottoman_expansion_red_sea_1517"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1538",
+      "end": "1538",
+      "year_start": 1538,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15380101,
+      "sort_end": 15381231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1538
+    }
+  },
+  {
     "id": "ev_pan_african_congress_1945",
     "label": "Fifth Pan-African Congress in Manchester",
     "summary_short": "The 1945 Pan-African Congress connected anticolonial leaders and strengthened movements that drove postwar independence struggles.",
@@ -10605,6 +11808,176 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1498
+    }
+  },
+  {
+    "id": "ev_portuguese_capture_goa_1510",
+    "label": "Portuguese capture Goa",
+    "summary_short": "Portuguese capture Goa shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_state_formation",
+      "concept_frontier_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_diu_1509"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1510",
+      "end": "1510",
+      "year_start": 1510,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15100101,
+      "sort_end": 15101231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1510
+    }
+  },
+  {
+    "id": "ev_portuguese_capture_malacca_1511",
+    "label": "Portuguese capture Malacca",
+    "summary_short": "Portuguese capture Malacca shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_battle_diu_1509"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1511",
+      "end": "1511",
+      "year_start": 1511,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15110101,
+      "sort_end": 15111231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1511
+    }
+  },
+  {
+    "id": "ev_portuguese_cartaz_system",
+    "label": "Portuguese cartaz pass system imposed",
+    "summary_short": "Portuguese cartaz pass system imposed shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_bureaucratic_centralization",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_vasco_da_gama_arrival_calicut_1498"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1502",
+      "end": "1502",
+      "year_start": 1502,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 15020101,
+      "sort_end": 15021231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1502
+    }
+  },
+  {
+    "id": "ev_portuguese_round_cape_1488",
+    "label": "Portuguese round the Cape route",
+    "summary_short": "Portuguese round the Cape route shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1488",
+      "end": "1488",
+      "year_start": 1488,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14880101,
+      "sort_end": 14881231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1488
     }
   },
   {
@@ -12250,6 +13623,47 @@
     }
   },
   {
+    "id": "ev_srivijaya_maritime_mediation",
+    "label": "Srivijaya mediates strait commerce",
+    "summary_short": "Srivijaya mediates strait commerce shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "900",
+      "end": "900",
+      "year_start": 900,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 9000101,
+      "sort_end": 9001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 900
+    }
+  },
+  {
     "id": "ev_state_military_fiscal_expansion_1810s_1820s",
     "label": "Post-Napoleonic states expand fiscal-military capacity",
     "summary_short": "Governments strengthen taxation, administration, and infrastructure planning after sustained wartime mobilization.",
@@ -12299,6 +13713,47 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1820
+    }
+  },
+  {
+    "id": "ev_steam_navigation_indian_ocean_1830s",
+    "label": "Steam navigation accelerates Indian Ocean exchange",
+    "summary_short": "Steam navigation accelerates Indian Ocean exchange shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_technological_diffusion",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1830",
+      "end": "1830",
+      "year_start": 1830,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 18300101,
+      "sort_end": 18301231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1830
     }
   },
   {
@@ -12542,6 +13997,91 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1789
+    }
+  },
+  {
+    "id": "ev_surat_decline_bombay_rise",
+    "label": "Shift from Surat to Bombay maritime hub",
+    "summary_short": "Shift from Surat to Bombay maritime hub shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_urbanization",
+      "concept_trade_network_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1700",
+      "end": "1700",
+      "year_start": 1700,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 17000101,
+      "sort_end": 17001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1700
+    }
+  },
+  {
+    "id": "ev_swahili_city_states_growth_900",
+    "label": "Swahili port-city growth accelerates",
+    "summary_short": "Swahili port-city growth accelerates shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization",
+      "concept_religious_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_axum_red_sea_trade_growth"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "900",
+      "end": "900",
+      "year_start": 900,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 9000101,
+      "sort_end": 9001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 900
     }
   },
   {
@@ -13492,6 +15032,49 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1820
+    }
+  },
+  {
+    "id": "ev_vasco_da_gama_arrival_calicut_1498",
+    "label": "Vasco da Gama reaches Calicut",
+    "summary_short": "Vasco da Gama reaches Calicut shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_portuguese_round_cape_1488"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1498",
+      "end": "1498",
+      "year_start": 1498,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14980101,
+      "sort_end": 14981231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1498
     }
   },
   {
@@ -16137,6 +17720,178 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": -130
+    }
+  },
+  {
+    "id": "ev_zheng_he_calicut_visit",
+    "label": "Zheng He fleet engages Calicut diplomacy",
+    "summary_short": "Zheng He fleet engages Calicut diplomacy shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_bureaucratic_centralization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_zheng_he_first_voyage_1405"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1407",
+      "end": "1407",
+      "year_start": 1407,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14070101,
+      "sort_end": 14071231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1407
+    }
+  },
+  {
+    "id": "ev_zheng_he_east_africa_contact",
+    "label": "Ming-Swahili diplomatic contact deepens",
+    "summary_short": "Ming-Swahili diplomatic contact deepens shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_zheng_he_hormuz_mission"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1418",
+      "end": "1418",
+      "year_start": 1418,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14180101,
+      "sort_end": 14181231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1418
+    }
+  },
+  {
+    "id": "ev_zheng_he_first_voyage_1405",
+    "label": "First voyage of Zheng He",
+    "summary_short": "First voyage of Zheng He shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_ming_maritime_expansion_policy"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1405",
+      "end": "1405",
+      "year_start": 1405,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14050101,
+      "sort_end": 14051231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1405
+    }
+  },
+  {
+    "id": "ev_zheng_he_hormuz_mission",
+    "label": "Zheng He reaches Hormuz",
+    "summary_short": "Zheng He reaches Hormuz shaped long-distance maritime exchange across the Indian Ocean world.",
+    "status": "reviewed",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_zheng_he_calicut_visit"
+    ],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_trade"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1414",
+      "end": "1414",
+      "year_start": 1414,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14140101,
+      "sort_end": 14141231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1414
     }
   },
   {

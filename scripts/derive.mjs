@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { validateData } from "./validate-data.mjs";
+import { deriveProcessChains } from "./derive-process-chains.mjs";
 
 const ROOT = process.cwd();
 const DERIVED_DIR = path.join(ROOT, "derived");
@@ -1117,6 +1118,7 @@ async function main() {
   const tagClusters = buildTagClusters(events, eventIdSet);
   const causalPairs = buildCausalPairs(normalizedEvents, eventIdSet);
   const relatedEventGraph = buildRelatedEventGraph(normalizedEvents, eventIdSet);
+  const processChains = deriveProcessChains(events);
   const unitEventPoolTypeCount = Object.values(unitEventPool)
     .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
 
@@ -1134,12 +1136,14 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "event-relationships.json"), toJson(relatedEventGraph), "utf8");
   await writeFile(path.join(DERIVED_DIR, "causal-graph.json"), toJson(causalGraph), "utf8");
   await writeFile(path.join(DERIVED_DIR, "progression-map.json"), toJson(progressionMap), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "process-chains.json"), toJson(processChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_concept.json"), toJson(eventsByConcept), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "event-relationships.json"), toJson(relatedEventGraph), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal-graph.json"), toJson(causalGraph), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "progression-map.json"), toJson(progressionMap), "utf8");
+  await writeFile(path.join(DATA_DERIVED_DIR, "process-chains.json"), toJson(processChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "tag_clusters.json"), toJson(tagClusters), "utf8");
 
   console.log(
