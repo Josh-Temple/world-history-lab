@@ -1,5 +1,14 @@
 # World History Lab
 
+
+## Recent updates (2026-05-19 · Indian Ocean expansion + process-chain derivation)
+
+- Added `data/units/indian-ocean-trade.json` and registered it in `data/units/index.json` for a dedicated Indian Ocean maritime exchange unit.
+- Expanded `data/events.json` with a large Indian Ocean event bundle spanning monsoon navigation, Swahili networks, Chola/Srivijaya interactions, Malacca, Zheng He, Portuguese entry, Ottoman rivalry, and later company-state competition.
+- Expanded `data/people.json` with linked Indian Ocean actors and updated `data/regions.json` with `reg_indian_ocean` for regional graph coverage.
+- Updated `data/learning-paths.json` to include the new unit in the trade-networks progression path.
+- Added `scripts/derive-process-chains.mjs` and integrated it into `scripts/derive.mjs` to generate reusable long-duration transformation chains at `derived/process-chains.json` and `data/derived/process-chains.json`.
+
 World History Lab is a personal learning project for studying world history with practice formats that go beyond standard flashcards. The goal is to build stronger understanding of chronology, causality, and historical connections by using structured data that can power multiple mini apps in one repository.
 
 

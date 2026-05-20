@@ -43,6 +43,10 @@
     {
       "id": "unit_silk_road_exchange",
       "path": "data/units/unit_silk_road_exchange.json"
+    },
+    {
+      "id": "unit_indian_ocean_trade",
+      "path": "data/units/indian-ocean-trade.json"
     }
   ]
 }

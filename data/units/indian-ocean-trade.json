@@ -1,0 +1,105 @@
+{
+  "id": "unit_indian_ocean_trade",
+  "title": "Indian Ocean Trade Networks",
+  "label": "Indian Ocean Trade Networks",
+  "status": "reviewed",
+  "content_origin": "ai_assisted_self_reviewed",
+  "event_ids": [
+    "ev_hippalus_monsoon_route_usage",
+    "ev_axum_red_sea_trade_growth",
+    "ev_swahili_city_states_growth_900",
+    "ev_kilwa_gold_trade_integration",
+    "ev_chola_naval_raids_srivijaya_1025",
+    "ev_srivijaya_maritime_mediation",
+    "ev_calicut_port_as_hub",
+    "ev_hormuz_port_ascendancy",
+    "ev_aden_red_sea_gateway_peak",
+    "ev_gujarati_merchants_diaspora_expands",
+    "ev_ibn_battuta_indian_ocean_itinerary",
+    "ev_ming_maritime_expansion_policy",
+    "ev_zheng_he_first_voyage_1405",
+    "ev_zheng_he_calicut_visit",
+    "ev_zheng_he_hormuz_mission",
+    "ev_zheng_he_east_africa_contact",
+    "ev_malacca_foundation_1400",
+    "ev_malacca_islamization",
+    "ev_malacca_port_regulation",
+    "ev_bengal_textile_exports_expand",
+    "ev_cinnamon_trade_ceylon_growth",
+    "ev_portuguese_round_cape_1488",
+    "ev_vasco_da_gama_arrival_calicut_1498",
+    "ev_portuguese_cartaz_system",
+    "ev_battle_diu_1509",
+    "ev_portuguese_capture_goa_1510",
+    "ev_portuguese_capture_malacca_1511",
+    "ev_ottoman_expansion_red_sea_1517",
+    "ev_ottoman_portuguese_rivalry_indian_ocean",
+    "ev_mughal_gujarat_annexation_1573",
+    "ev_aceh_ottoman_links",
+    "ev_dutch_voc_formation_1602_indian_ocean",
+    "ev_english_eic_indian_ocean_entry_1600",
+    "ev_batavia_founded_1619",
+    "ev_oman_expels_portuguese_muscat_1650",
+    "ev_french_compagnie_indes_1664",
+    "ev_hadrami_diaspora_southeast_asia",
+    "ev_clove_monopoly_conflicts_moluccas",
+    "ev_surat_decline_bombay_rise",
+    "ev_coffee_trade_yemen_red_sea",
+    "ev_hajj_shipping_network_expansion",
+    "ev_steam_navigation_indian_ocean_1830s"
+  ],
+  "person_ids": [
+    "pe_zheng_he_io",
+    "pe_ahmad_ibn_majid_io",
+    "pe_ibn_battuta_io",
+    "pe_rajendra_chola_i_io",
+    "pe_parameswara_io",
+    "pe_vasco_da_gama_io",
+    "pe_afonso_de_albuquerque_io",
+    "pe_piri_reis_io",
+    "pe_sultan_suleiman_io",
+    "pe_ali_bey_al_kabir_io",
+    "pe_malik_ayaz_io",
+    "pe_kanhoji_angre_io",
+    "pe_tome_pires_io",
+    "pe_nuruddin_al_raniri_io",
+    "pe_sultan_iskandar_muda_io"
+  ],
+  "description": "Long-duration maritime exchange linking East Africa, the Middle East, South Asia, and Southeast Asia.",
+  "regions": [
+    "reg_africa",
+    "reg_asia",
+    "reg_east_asia",
+    "reg_indian_ocean"
+  ],
+  "tags": [
+    "trade",
+    "religion",
+    "technology",
+    "migration"
+  ],
+  "updated_at": "2026-05-19",
+  "app_profiles": {
+    "timeline-trainer": {
+      "enabled": true,
+      "question_types": [
+        "timeline_before_after",
+        "timeline_ordering"
+      ]
+    },
+    "event-recognition": {
+      "enabled": true,
+      "question_types": [
+        "what_happened",
+        "significance"
+      ]
+    },
+    "causality-builder": {
+      "enabled": true,
+      "question_types": [
+        "cause_and_effect",
+        "causality_chain"
+      ]
+    }
+  }
+}

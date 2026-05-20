@@ -1029,5 +1029,8 @@
         "ev_zheng_he_voyages_begin"
       ]
     }
+  },
+  "unit_indian_ocean_trade": {
+    "eligible_ids": {}
   }
 }

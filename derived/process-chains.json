@@ -1,0 +1,1258 @@
+{
+  "generated_at": "2026-05-19T11:12:46.790Z",
+  "chains": [
+    {
+      "id": "chain_estates_general_1789",
+      "label": "Imperial Overstretch Transformation",
+      "event_ids": [
+        "ev_estates_general_1789",
+        "ev_tennis_court_oath_1789",
+        "ev_storming_bastille_1789",
+        "ev_declaration_rights_man_citizen_1789"
+      ],
+      "concept_anchor_id": "concept_imperial_overstretch",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_estates_general_1789"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_tennis_court_oath_1789"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_storming_bastille_1789"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_declaration_rights_man_citizen_1789"
+        }
+      ]
+    },
+    {
+      "id": "chain_imperialism_first_moroccan_crisis_1905",
+      "label": "Imperial Overstretch Transformation",
+      "event_ids": [
+        "ev_imperialism_first_moroccan_crisis_1905",
+        "ev_wwi_alliance_system_hardens_1890_1907",
+        "ev_wwi_naval_arms_race_1898_1914",
+        "ev_wwi_balkan_wars_destabilize_1912_1913",
+        "ev_wwi_assassination_franz_ferdinand_1914",
+        "ev_wwi_austria_ultimatum_serbia_1914",
+        "ev_wwi_germany_blank_check_1914",
+        "ev_wwi_russia_mobilizes_1914"
+      ],
+      "concept_anchor_id": "concept_imperial_overstretch",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_imperialism_first_moroccan_crisis_1905"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_wwi_alliance_system_hardens_1890_1907"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_wwi_naval_arms_race_1898_1914"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_balkan_wars_destabilize_1912_1913"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_assassination_franz_ferdinand_1914"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_austria_ultimatum_serbia_1914"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_germany_blank_check_1914"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_russia_mobilizes_1914"
+        }
+      ]
+    },
+    {
+      "id": "chain_imperialism_first_balkan_war_1912",
+      "label": "Imperial Overstretch Transformation",
+      "event_ids": [
+        "ev_imperialism_first_balkan_war_1912",
+        "ev_wwi_balkan_wars_destabilize_1912_1913",
+        "ev_wwi_assassination_franz_ferdinand_1914",
+        "ev_wwi_austria_ultimatum_serbia_1914",
+        "ev_wwi_germany_blank_check_1914",
+        "ev_wwi_russia_mobilizes_1914",
+        "ev_wwi_germany_invades_belgium_1914",
+        "ev_wwi_battle_marne_1914"
+      ],
+      "concept_anchor_id": "concept_imperial_overstretch",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_imperialism_first_balkan_war_1912"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_wwi_balkan_wars_destabilize_1912_1913"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_wwi_assassination_franz_ferdinand_1914"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_austria_ultimatum_serbia_1914"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_germany_blank_check_1914"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_russia_mobilizes_1914"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_germany_invades_belgium_1914"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_battle_marne_1914"
+        }
+      ]
+    },
+    {
+      "id": "chain_imperialism_triple_intervention_1895",
+      "label": "Imperial Overstretch Transformation",
+      "event_ids": [
+        "ev_imperialism_triple_intervention_1895",
+        "ev_imperialism_russojapanese_war_begins_1904",
+        "ev_wwi_naval_arms_race_1898_1914",
+        "ev_wwi_balkan_wars_destabilize_1912_1913",
+        "ev_wwi_assassination_franz_ferdinand_1914",
+        "ev_wwi_austria_ultimatum_serbia_1914",
+        "ev_wwi_germany_blank_check_1914",
+        "ev_wwi_russia_mobilizes_1914"
+      ],
+      "concept_anchor_id": "concept_imperial_overstretch",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_imperialism_triple_intervention_1895"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_imperialism_russojapanese_war_begins_1904"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_wwi_naval_arms_race_1898_1914"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_balkan_wars_destabilize_1912_1913"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_assassination_franz_ferdinand_1914"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_austria_ultimatum_serbia_1914"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_germany_blank_check_1914"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_russia_mobilizes_1914"
+        }
+      ]
+    },
+    {
+      "id": "chain_imperialism_anglo_japanese_alliance_1902",
+      "label": "Imperial Overstretch Transformation",
+      "event_ids": [
+        "ev_imperialism_anglo_japanese_alliance_1902",
+        "ev_imperialism_russojapanese_war_begins_1904",
+        "ev_wwi_naval_arms_race_1898_1914",
+        "ev_wwi_balkan_wars_destabilize_1912_1913",
+        "ev_wwi_assassination_franz_ferdinand_1914",
+        "ev_wwi_austria_ultimatum_serbia_1914",
+        "ev_wwi_germany_blank_check_1914",
+        "ev_wwi_russia_mobilizes_1914"
+      ],
+      "concept_anchor_id": "concept_imperial_overstretch",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_imperialism_anglo_japanese_alliance_1902"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_imperialism_russojapanese_war_begins_1904"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_wwi_naval_arms_race_1898_1914"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_balkan_wars_destabilize_1912_1913"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_assassination_franz_ferdinand_1914"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_austria_ultimatum_serbia_1914"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_germany_blank_check_1914"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_russia_mobilizes_1914"
+        }
+      ]
+    },
+    {
+      "id": "chain_womens_march_versailles_1789",
+      "label": "Trade Network Expansion Transformation",
+      "event_ids": [
+        "ev_womens_march_versailles_1789",
+        "ev_flight_to_varennes_1791",
+        "ev_september_massacres_1792",
+        "ev_execution_louis_xvi_1793",
+        "ev_reign_of_terror_1793_1794",
+        "ev_thermidorian_reaction_1794"
+      ],
+      "concept_anchor_id": "concept_trade_network_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_womens_march_versailles_1789"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_flight_to_varennes_1791"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_september_massacres_1792"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_execution_louis_xvi_1793"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_reign_of_terror_1793_1794"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_thermidorian_reaction_1794"
+        }
+      ]
+    },
+    {
+      "id": "chain_civil_constitution_clergy_1790",
+      "label": "Bureaucratic Centralization Transformation",
+      "event_ids": [
+        "ev_civil_constitution_clergy_1790",
+        "ev_flight_to_varennes_1791",
+        "ev_september_massacres_1792",
+        "ev_execution_louis_xvi_1793",
+        "ev_reign_of_terror_1793_1794",
+        "ev_thermidorian_reaction_1794"
+      ],
+      "concept_anchor_id": "concept_bureaucratic_centralization",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_civil_constitution_clergy_1790"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_flight_to_varennes_1791"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_september_massacres_1792"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_execution_louis_xvi_1793"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_reign_of_terror_1793_1794"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_thermidorian_reaction_1794"
+        }
+      ]
+    },
+    {
+      "id": "chain_battle_of_valmy_1792",
+      "label": "Frontier Expansion Transformation",
+      "event_ids": [
+        "ev_battle_of_valmy_1792",
+        "ev_reign_of_terror_1793_1794",
+        "ev_thermidorian_reaction_1794"
+      ],
+      "concept_anchor_id": "concept_frontier_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_battle_of_valmy_1792"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_reign_of_terror_1793_1794"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_thermidorian_reaction_1794"
+        }
+      ]
+    },
+    {
+      "id": "chain_directory_established_1795",
+      "label": "Trade Network Expansion Transformation",
+      "event_ids": [
+        "ev_directory_established_1795",
+        "ev_napoleon_coup_18_brumaire_1799",
+        "ev_napoleonic_wars_1803_1815",
+        "ev_congress_vienna_1815",
+        "ev_concert_of_europe_1815_1848",
+        "ev_revolutions_1848",
+        "ev_mass_politics_worker_parties_1880s_1890s"
+      ],
+      "concept_anchor_id": "concept_trade_network_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_directory_established_1795"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_napoleon_coup_18_brumaire_1799"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_napoleonic_wars_1803_1815"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_congress_vienna_1815"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_concert_of_europe_1815_1848"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_revolutions_1848"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_mass_politics_worker_parties_1880s_1890s"
+        }
+      ]
+    },
+    {
+      "id": "chain_mali_mansa_musa_hajj_1324",
+      "label": "Trade Network Expansion Transformation",
+      "event_ids": [
+        "ev_mali_mansa_musa_hajj_1324",
+        "ev_ottoman_conquest_egypt_1517",
+        "ev_mughal_empire_akbar_consolidation_1570s",
+        "ev_tokugawa_shogunate_1603",
+        "ev_haitian_revolution_independence_1804",
+        "ev_abolition_british_slave_trade_1807",
+        "ev_qing_first_opium_war_1839",
+        "ev_indian_revolt_1857"
+      ],
+      "concept_anchor_id": "concept_trade_network_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_mali_mansa_musa_hajj_1324"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_ottoman_conquest_egypt_1517"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_mughal_empire_akbar_consolidation_1570s"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_tokugawa_shogunate_1603"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_haitian_revolution_independence_1804"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_abolition_british_slave_trade_1807"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_qing_first_opium_war_1839"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_indian_revolt_1857"
+        }
+      ]
+    },
+    {
+      "id": "chain_enclosure_movement_accelerates_1750s",
+      "label": "Urbanization Transformation",
+      "event_ids": [
+        "ev_enclosure_movement_accelerates_1750s",
+        "ev_factory_system_rise_1780s",
+        "ev_urbanization_accelerates_1800_1850",
+        "ev_labor_movements_1830s_1840s",
+        "ev_factory_act_1833",
+        "ev_factory_act_1847_ten_hours",
+        "ev_public_health_act_1848",
+        "ev_modern_urban_infrastructure_1850s_1870s"
+      ],
+      "concept_anchor_id": "concept_urbanization",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_enclosure_movement_accelerates_1750s"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_factory_system_rise_1780s"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_urbanization_accelerates_1800_1850"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_labor_movements_1830s_1840s"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_factory_act_1833"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_factory_act_1847_ten_hours"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_public_health_act_1848"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_modern_urban_infrastructure_1850s_1870s"
+        }
+      ]
+    },
+    {
+      "id": "chain_spinning_jenny_1764",
+      "label": "Trade Network Expansion Transformation",
+      "event_ids": [
+        "ev_spinning_jenny_1764",
+        "ev_factory_system_rise_1780s",
+        "ev_urbanization_accelerates_1800_1850",
+        "ev_labor_movements_1830s_1840s",
+        "ev_factory_act_1833",
+        "ev_factory_act_1847_ten_hours",
+        "ev_public_health_act_1848",
+        "ev_modern_urban_infrastructure_1850s_1870s"
+      ],
+      "concept_anchor_id": "concept_trade_network_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_spinning_jenny_1764"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_factory_system_rise_1780s"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_urbanization_accelerates_1800_1850"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_labor_movements_1830s_1840s"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_factory_act_1833"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_factory_act_1847_ten_hours"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_public_health_act_1848"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_modern_urban_infrastructure_1850s_1870s"
+        }
+      ]
+    },
+    {
+      "id": "chain_watt_steam_engine_1776",
+      "label": "Technological Diffusion Transformation",
+      "event_ids": [
+        "ev_watt_steam_engine_1776",
+        "ev_factory_system_rise_1780s",
+        "ev_urbanization_accelerates_1800_1850",
+        "ev_labor_movements_1830s_1840s",
+        "ev_factory_act_1833",
+        "ev_factory_act_1847_ten_hours",
+        "ev_public_health_act_1848",
+        "ev_modern_urban_infrastructure_1850s_1870s"
+      ],
+      "concept_anchor_id": "concept_technological_diffusion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_watt_steam_engine_1776"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_factory_system_rise_1780s"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_urbanization_accelerates_1800_1850"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_labor_movements_1830s_1840s"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_factory_act_1833"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_factory_act_1847_ten_hours"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_public_health_act_1848"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_modern_urban_infrastructure_1850s_1870s"
+        }
+      ]
+    },
+    {
+      "id": "chain_luddite_protests_1811",
+      "label": "Legitimacy Crisis Transformation",
+      "event_ids": [
+        "ev_luddite_protests_1811",
+        "ev_labor_movements_1830s_1840s",
+        "ev_factory_act_1833",
+        "ev_factory_act_1847_ten_hours",
+        "ev_public_health_act_1848",
+        "ev_modern_urban_infrastructure_1850s_1870s",
+        "ev_electric_power_adoption_1880s",
+        "ev_mass_production_systems_1890s"
+      ],
+      "concept_anchor_id": "concept_legitimacy_crisis",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_luddite_protests_1811"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_labor_movements_1830s_1840s"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_factory_act_1833"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_factory_act_1847_ten_hours"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_public_health_act_1848"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_modern_urban_infrastructure_1850s_1870s"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_electric_power_adoption_1880s"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_mass_production_systems_1890s"
+        }
+      ]
+    },
+    {
+      "id": "chain_telegraph_invention_1837",
+      "label": "Trade Network Expansion Transformation",
+      "event_ids": [
+        "ev_telegraph_invention_1837",
+        "ev_national_market_integration_1850s",
+        "ev_global_market_coordination_1860s",
+        "ev_imperialism_berlin_conference_begins_1884"
+      ],
+      "concept_anchor_id": "concept_trade_network_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_telegraph_invention_1837"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_national_market_integration_1850s"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_global_market_coordination_1860s"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_imperialism_berlin_conference_begins_1884"
+        }
+      ]
+    },
+    {
+      "id": "chain_communist_manifesto_1848",
+      "label": "Technological Diffusion Transformation",
+      "event_ids": [
+        "ev_communist_manifesto_1848",
+        "ev_first_international_1864",
+        "ev_mass_politics_worker_parties_1880s_1890s"
+      ],
+      "concept_anchor_id": "concept_technological_diffusion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_communist_manifesto_1848"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_first_international_1864"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_mass_politics_worker_parties_1880s_1890s"
+        }
+      ]
+    },
+    {
+      "id": "chain_bessemer_process_1856",
+      "label": "Trade Network Expansion Transformation",
+      "event_ids": [
+        "ev_bessemer_process_1856",
+        "ev_global_market_coordination_1860s",
+        "ev_imperialism_berlin_conference_begins_1884"
+      ],
+      "concept_anchor_id": "concept_trade_network_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_bessemer_process_1856"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_global_market_coordination_1860s"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_imperialism_berlin_conference_begins_1884"
+        }
+      ]
+    },
+    {
+      "id": "chain_water_frame_1769",
+      "label": "Technological Diffusion Transformation",
+      "event_ids": [
+        "ev_water_frame_1769",
+        "ev_factory_system_rise_1780s",
+        "ev_urbanization_accelerates_1800_1850",
+        "ev_labor_movements_1830s_1840s",
+        "ev_factory_act_1833",
+        "ev_factory_act_1847_ten_hours",
+        "ev_public_health_act_1848",
+        "ev_modern_urban_infrastructure_1850s_1870s"
+      ],
+      "concept_anchor_id": "concept_technological_diffusion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_water_frame_1769"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_factory_system_rise_1780s"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_urbanization_accelerates_1800_1850"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_labor_movements_1830s_1840s"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_factory_act_1833"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_factory_act_1847_ten_hours"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_public_health_act_1848"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_modern_urban_infrastructure_1850s_1870s"
+        }
+      ]
+    },
+    {
+      "id": "chain_cotton_gin_1793",
+      "label": "Technological Diffusion Transformation",
+      "event_ids": [
+        "ev_cotton_gin_1793",
+        "ev_steam_power_transport_expansion_1800s",
+        "ev_stockton_darlington_railway_1825",
+        "ev_liverpool_manchester_railway_1830",
+        "ev_railway_boom_1840s",
+        "ev_national_market_integration_1850s",
+        "ev_global_market_coordination_1860s",
+        "ev_imperialism_berlin_conference_begins_1884"
+      ],
+      "concept_anchor_id": "concept_technological_diffusion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_cotton_gin_1793"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_steam_power_transport_expansion_1800s"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_stockton_darlington_railway_1825"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_liverpool_manchester_railway_1830"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_railway_boom_1840s"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_national_market_integration_1850s"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_global_market_coordination_1860s"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_imperialism_berlin_conference_begins_1884"
+        }
+      ]
+    },
+    {
+      "id": "chain_wwi_tannenberg_1914",
+      "label": "Frontier Expansion Transformation",
+      "event_ids": [
+        "ev_wwi_tannenberg_1914",
+        "ev_wwi_brusilov_offensive_1916",
+        "ev_wwi_russian_february_revolution_1917",
+        "ev_wwi_bolshevik_revolution_1917",
+        "ev_wwi_treaty_brest_litovsk_1918",
+        "ev_wwi_german_spring_offensive_1918",
+        "ev_wwi_hundred_days_offensive_1918",
+        "ev_wwi_armistice_1918"
+      ],
+      "concept_anchor_id": "concept_frontier_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_wwi_tannenberg_1914"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_wwi_brusilov_offensive_1916"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_wwi_russian_february_revolution_1917"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_bolshevik_revolution_1917"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_treaty_brest_litovsk_1918"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_wwi_german_spring_offensive_1918"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_hundred_days_offensive_1918"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_wwi_armistice_1918"
+        }
+      ]
+    },
+    {
+      "id": "chain_munich_agreement_1938",
+      "label": "Frontier Expansion Transformation",
+      "event_ids": [
+        "ev_munich_agreement_1938",
+        "ev_molotov_ribbentrop_pact_1939",
+        "ev_invasion_poland_1939",
+        "ev_france_britain_declare_war_1939",
+        "ev_fall_of_france_1940",
+        "ev_battle_of_britain_1940",
+        "ev_allied_strategic_bombing_1943",
+        "ev_operation_overlord_d_day_1944"
+      ],
+      "concept_anchor_id": "concept_frontier_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_munich_agreement_1938"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_molotov_ribbentrop_pact_1939"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_invasion_poland_1939"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_france_britain_declare_war_1939"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_fall_of_france_1940"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_battle_of_britain_1940"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_allied_strategic_bombing_1943"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_operation_overlord_d_day_1944"
+        }
+      ]
+    },
+    {
+      "id": "chain_lend_lease_act_1941",
+      "label": "Bureaucratic Centralization Transformation",
+      "event_ids": [
+        "ev_lend_lease_act_1941",
+        "ev_wartime_industrial_mobilization_1942_1944",
+        "ev_allied_strategic_bombing_1943",
+        "ev_operation_overlord_d_day_1944",
+        "ev_liberation_paris_1944",
+        "ev_germany_surrenders_1945",
+        "ev_potsdam_conference_1945",
+        "ev_atomic_bomb_hiroshima_1945"
+      ],
+      "concept_anchor_id": "concept_bureaucratic_centralization",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_lend_lease_act_1941"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_wartime_industrial_mobilization_1942_1944"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_allied_strategic_bombing_1943"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_operation_overlord_d_day_1944"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_liberation_paris_1944"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_germany_surrenders_1945"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_potsdam_conference_1945"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_atomic_bomb_hiroshima_1945"
+        }
+      ]
+    },
+    {
+      "id": "chain_pearl_harbor_1941",
+      "label": "Bureaucratic Centralization Transformation",
+      "event_ids": [
+        "ev_pearl_harbor_1941",
+        "ev_united_states_enters_war_1941",
+        "ev_battle_midway_1942",
+        "ev_guadalcanal_campaign_1942_1943",
+        "ev_island_hopping_campaign_1943_1945",
+        "ev_atomic_bomb_hiroshima_1945",
+        "ev_atomic_bomb_nagasaki_1945",
+        "ev_japan_surrenders_1945"
+      ],
+      "concept_anchor_id": "concept_bureaucratic_centralization",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_pearl_harbor_1941"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_united_states_enters_war_1941"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_battle_midway_1942"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_guadalcanal_campaign_1942_1943"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_island_hopping_campaign_1943_1945"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_atomic_bomb_hiroshima_1945"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_atomic_bomb_nagasaki_1945"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_japan_surrenders_1945"
+        }
+      ]
+    },
+    {
+      "id": "chain_tehran_conference_1943",
+      "label": "Religious Diffusion Transformation",
+      "event_ids": [
+        "ev_tehran_conference_1943",
+        "ev_operation_overlord_d_day_1944",
+        "ev_liberation_paris_1944",
+        "ev_germany_surrenders_1945",
+        "ev_potsdam_conference_1945",
+        "ev_atomic_bomb_hiroshima_1945",
+        "ev_atomic_bomb_nagasaki_1945",
+        "ev_japan_surrenders_1945"
+      ],
+      "concept_anchor_id": "concept_religious_diffusion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_tehran_conference_1943"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_operation_overlord_d_day_1944"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_liberation_paris_1944"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_germany_surrenders_1945"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_potsdam_conference_1945"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_atomic_bomb_hiroshima_1945"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_atomic_bomb_nagasaki_1945"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_japan_surrenders_1945"
+        }
+      ]
+    },
+    {
+      "id": "chain_first_revelation_610",
+      "label": "Religious Diffusion Transformation",
+      "event_ids": [
+        "ev_first_revelation_610",
+        "ev_hijra_622",
+        "ev_constitution_medina_622",
+        "ev_battle_badr_624",
+        "ev_treaty_hudaybiyyah_628",
+        "ev_conquest_mecca_630",
+        "ev_death_muhammad_632",
+        "ev_ridda_wars_begin_632"
+      ],
+      "concept_anchor_id": "concept_religious_diffusion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_first_revelation_610"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_hijra_622"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_constitution_medina_622"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_battle_badr_624"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_treaty_hudaybiyyah_628"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_conquest_mecca_630"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_death_muhammad_632"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_ridda_wars_begin_632"
+        }
+      ]
+    },
+    {
+      "id": "chain_conquest_ctesiphon_637",
+      "label": "Imperial Overstretch Transformation",
+      "event_ids": [
+        "ev_conquest_ctesiphon_637",
+        "ev_conquest_egypt_642",
+        "ev_battle_tours_732",
+        "ev_abbasid_revolution_750"
+      ],
+      "concept_anchor_id": "concept_imperial_overstretch",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_conquest_ctesiphon_637"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_conquest_egypt_642"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_battle_tours_732"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_abbasid_revolution_750"
+        }
+      ]
+    },
+    {
+      "id": "chain_hippalus_monsoon_route_usage",
+      "label": "Trade Network Expansion Transformation",
+      "event_ids": [
+        "ev_hippalus_monsoon_route_usage",
+        "ev_axum_red_sea_trade_growth",
+        "ev_swahili_city_states_growth_900",
+        "ev_kilwa_gold_trade_integration"
+      ],
+      "concept_anchor_id": "concept_trade_network_expansion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_hippalus_monsoon_route_usage"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_axum_red_sea_trade_growth"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_swahili_city_states_growth_900"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_kilwa_gold_trade_integration"
+        }
+      ]
+    },
+    {
+      "id": "chain_ming_maritime_expansion_policy",
+      "label": "Bureaucratic Centralization Transformation",
+      "event_ids": [
+        "ev_ming_maritime_expansion_policy",
+        "ev_zheng_he_first_voyage_1405",
+        "ev_zheng_he_calicut_visit",
+        "ev_zheng_he_hormuz_mission",
+        "ev_zheng_he_east_africa_contact"
+      ],
+      "concept_anchor_id": "concept_bureaucratic_centralization",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_ming_maritime_expansion_policy"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_zheng_he_first_voyage_1405"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_zheng_he_calicut_visit"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_zheng_he_hormuz_mission"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_zheng_he_east_africa_contact"
+        }
+      ]
+    },
+    {
+      "id": "chain_portuguese_round_cape_1488",
+      "label": "Technological Diffusion Transformation",
+      "event_ids": [
+        "ev_portuguese_round_cape_1488",
+        "ev_vasco_da_gama_arrival_calicut_1498",
+        "ev_portuguese_cartaz_system",
+        "ev_battle_diu_1509",
+        "ev_portuguese_capture_goa_1510"
+      ],
+      "concept_anchor_id": "concept_technological_diffusion",
+      "stages": [
+        {
+          "stage": "preconditions",
+          "event_id": "ev_portuguese_round_cape_1488"
+        },
+        {
+          "stage": "acceleration",
+          "event_id": "ev_vasco_da_gama_arrival_calicut_1498"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_portuguese_cartaz_system"
+        },
+        {
+          "stage": "system_transformation",
+          "event_id": "ev_battle_diu_1509"
+        },
+        {
+          "stage": "secondary_effects",
+          "event_id": "ev_portuguese_capture_goa_1510"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "isolated_or_short_chain:ev_napoleon_emperor_1804",
+    "isolated_or_short_chain:ev_congress_of_vienna_1814_1815",
+    "isolated_or_short_chain:ev_meiji_perry_1853",
+    "isolated_or_short_chain:ev_meiji_kanagawa_treaty_1854",
+    "isolated_or_short_chain:ev_meiji_boshin_war_1868",
+    "isolated_or_short_chain:ev_meiji_charter_oath_1868",
+    "isolated_or_short_chain:ev_meiji_constitution_1889",
+    "isolated_or_short_chain:ev_meiji_diet_1890",
+    "isolated_or_short_chain:ev_imperialism_british_occupation_egypt_1882",
+    "isolated_or_short_chain:ev_imperialism_second_boer_war_begins_1899",
+    "isolated_or_short_chain:ev_imperialism_boxer_rebellion_1900",
+    "isolated_or_short_chain:ev_imperialism_agadir_crisis_1911",
+    "isolated_or_short_chain:ev_imperialism_suez_canal_opens_1869",
+    "isolated_or_short_chain:ev_imperialism_british_south_africa_company_charter_1889",
+    "isolated_or_short_chain:ev_imperialism_us_annexes_hawaii_1898",
+    "isolated_or_short_chain:ev_imperialism_open_door_notes_1899",
+    "isolated_or_short_chain:ev_imperialism_philippine_american_war_begins_1899",
+    "isolated_or_short_chain:ev_imperialism_algeciras_conference_1906",
+    "isolated_or_short_chain:ev_berlin_conference_1884",
+    "isolated_or_short_chain:ev_pan_african_congress_1945",
+    "isolated_or_short_chain:ev_india_independence_1947",
+    "isolated_or_short_chain:ev_bandung_conference_1955",
+    "isolated_or_short_chain:ev_second_industrial_revolution_1870s",
+    "isolated_or_short_chain:ev_state_military_fiscal_expansion_1810s_1820s",
+    "isolated_or_short_chain:ev_internal_combustion_engine_1876",
+    "isolated_or_short_chain:ev_matchgirls_strike_1888",
+    "isolated_or_short_chain:ev_wwi_trench_warfare_entrenched_1914",
+    "isolated_or_short_chain:ev_wwi_first_ypres_1914",
+    "isolated_or_short_chain:ev_wwi_gallipoli_campaign_1915",
+    "isolated_or_short_chain:ev_wwi_armenian_genocide_begins_1915",
+    "isolated_or_short_chain:ev_wwi_verdun_1916",
+    "isolated_or_short_chain:ev_wwi_somme_1916",
+    "isolated_or_short_chain:ev_wwi_jutland_1916",
+    "isolated_or_short_chain:ev_wwi_unrestricted_submarine_1917",
+    "isolated_or_short_chain:ev_wwi_us_enters_war_1917",
+    "isolated_or_short_chain:ev_wwi_paris_peace_conference_1919",
+    "isolated_or_short_chain:ev_wwi_treaty_versailles_1919",
+    "isolated_or_short_chain:ev_wwi_league_of_nations_1920",
+    "isolated_or_short_chain:ev_wwi_japan_enters_war_1914",
+    "isolated_or_short_chain:ev_wwi_ottoman_enters_war_1914"
+  ]
+}
