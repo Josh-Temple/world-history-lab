@@ -1,5 +1,7 @@
 import { loadReviewStore, getDueItems, getWeakItems } from '../shared/review-store.js';
 import { getConceptMasterySummary, getWeakestConcepts } from '../shared/mastery-store.js';
+import { buildGuidedSession } from '../shared/guided-session-controller.js';
+import { saveSessionHandoff, loadSessionHandoff } from '../shared/session-handoff-store.js';
 import { getNormalizedEvents } from '../shared/data-store.js';
 
 const reviewSummary = document.getElementById('review-summary');
@@ -8,6 +10,7 @@ const recentUnitsEl = document.getElementById('recent-units');
 const quickActionsEl = document.getElementById('quick-actions');
 const progressionSummaryEl = document.getElementById('progression-summary');
 const recommendedPathsEl = document.getElementById('recommended-paths');
+const guidedSessionLaunchEl = document.getElementById('guided-session-launch');
 
 function readRecentUnits() {
   try {
@@ -85,6 +88,25 @@ async function render() {
   recommendedPathsEl.innerHTML = '<h2>Recommended Learning Paths</h2>' + (recommended.length
     ? `<ul>${recommended.slice(0,4).map((path) => `<li>Ready for ${levels[path.recommended_level] || 'Next'} · ${path.label}</li>`).join('')}</ul>`
     : '<p>Complete more foundations to unlock intermediate pathways.</p>');
+
+
+  const guidedSession = buildGuidedSession({
+    masteryState: { avgScore: conceptSummary.avgScore, weakConcepts: weakestConcepts.map((c) => c.conceptId) },
+    recentActivity: loadSessionHandoff().recentModes || [],
+    fatigueLevel: 0.35,
+  });
+  saveSessionHandoff({
+    weakConcepts: guidedSession.weakConcepts,
+    currentConceptCluster: guidedSession.weakConcepts[0] || 'foundations',
+    activeRegions: [],
+    sessionProgress: { modeIndex: 0, answered: 0, total: guidedSession.modes.length * 5 },
+    recentModes: guidedSession.modes.map((mode) => mode.key),
+  });
+  guidedSessionLaunchEl.innerHTML = `<h2>Guided Session</h2><p>Recommended next action: <strong>${guidedSession.recommendation}</strong></p><button id="start-guided-session" type="button">Start Guided Session</button>`;
+  document.getElementById('start-guided-session')?.addEventListener('click', () => {
+    window.location.href = '/apps/session-runner/?guided=1';
+  });
+
 
   quickActionsEl.innerHTML = `
     <h2>Quick Actions</h2>

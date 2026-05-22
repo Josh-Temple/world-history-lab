@@ -11,3 +11,5 @@ section {
   padding: 12px;
 }
 li { margin: 6px 0; }
+
+#start-guided-session { background:#0f766e; color:#fff; border:0; border-radius:10px; padding:10px 14px; font-weight:700; }

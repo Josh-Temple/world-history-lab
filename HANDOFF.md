@@ -61,3 +61,11 @@ Use the weekly strategic assessment as an execution filter:
 1. Review event factual phrasing for consistency with the project's evidence standards and add/normalize `source_refs` where needed.
 2. Evaluate process-chain heuristics (especially branching simplification) and tune for interpretability in reasoning/synthesis apps.
 3. Expand non-Western balancing further via Sub-Saharan inland networks, Southeast Asian inland-polity links, and pre-Columbian American macro-process chains.
+
+
+## Incremental update (2026-05-21 · guided orchestration + onboarding map)
+
+- Implemented guided session orchestration scaffolding via shared controller + handoff store and wired dashboard launch entry.
+- Updated session-runner to consume guided plans (`?guided=1`) and provide compact concept-practice summary text on completion.
+- Added a new beginner concept onboarding map app and linked it from root navigation for clearer first-step orientation.
+- Ran validation + derive scripts after integration.

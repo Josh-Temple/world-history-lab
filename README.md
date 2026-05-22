@@ -1,5 +1,15 @@
 # World History Lab
 
+## Recent updates (2026-05-21 · guided session orchestration + concept onboarding map)
+
+- Added `apps/shared/guided-session-controller.js` for adaptive guided-session composition based on weak concepts, fatigue, and recent activity.
+- Added `apps/shared/session-handoff-store.js` for cross-app handoff state persistence (`weakConcepts`, `sessionProgress`, and recent mode context).
+- Updated `apps/dashboard/` to surface a one-click **Start Guided Session** launch with recommendation context and continuity state setup.
+- Updated `apps/session-runner/app.js` to support `?guided=1` adaptive mode plans and richer end-of-session summary text.
+- Added new beginner-friendly app `apps/concept-onboarding-map/` with simplified concept clusters and progression hints.
+- Added root navigation link to **Concept Onboarding Map** in `index.html`.
+
+
 
 ## Recent updates (2026-05-19 · Indian Ocean expansion + process-chain derivation)
 
