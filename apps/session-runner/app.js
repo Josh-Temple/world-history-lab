@@ -2,6 +2,8 @@ import { getEventsForUnit, getUnits, setStoredUnitId } from "../shared/data-stor
 import { getAllStats, getReviewQueueEventIds, updateConceptMastery, getWeakestConcepts } from "../shared/mastery-store.js";
 import { getModeMeta, recommendNextStep } from "../shared/next-step-engine.js";
 import { loadReviewStore, saveReviewStore, updateReviewItem, getDueItems } from "../shared/review-store.js";
+import { buildGuidedSession } from "../shared/guided-session-controller.js";
+import { loadSessionHandoff, saveSessionHandoff } from "../shared/session-handoff-store.js";
 
 const MODE_LIBRARY = Object.freeze([
   { key: "timeline", name: "Timeline", app: "/apps/timeline-trainer/index.html", skill: "timeline" },
@@ -51,6 +53,7 @@ let reviewStore = loadReviewStore();
 const isReviewMode = new URLSearchParams(window.location.search).get("mode") === "review";
 let reviewCandidates = [];
 let reviewCursor = 0;
+const isGuided = new URLSearchParams(window.location.search).get("guided") === "1";
 
 function markRecentUnit(unitId) {
   if (!unitId) return;
@@ -403,7 +406,8 @@ function showCompletion() {
   const weakItems = confidenceResults.filter((item) => item.confidence === "guess" || item.confidence === "unsure");
   if (summaryEl && summaryScoreEl) {
     summaryEl.hidden = false;
-    summaryScoreEl.textContent = `${confidenceResults.length - weakItems.length} strong / ${confidenceResults.length} responses · ${weakItems.length} weak`;
+    const concepts = [...new Set(getWeakestConcepts({ limit: 5 }).map((row) => row.conceptId))];
+    summaryScoreEl.textContent = `${confidenceResults.length - weakItems.length} strong / ${confidenceResults.length} responses · ${weakItems.length} weak. Concepts practiced: ${concepts.slice(0,3).join(", ") || "mixed"}.`;
   }
   completeCurrentUnit();
   const nextUnitId = getNextRecommendedUnitId();
@@ -556,13 +560,27 @@ async function init() {
   reviewCandidates = isReviewMode ? buildReviewCandidates(unitEvents) : [];
   reviewCursor = 0;
   const progressByEvent = getAllStats();
-  sessionModes = composeBalancedSessionModes(unitEvents, progressByEvent);
+  if (isGuided) {
+    const conceptSummary = Object.values(progressByEvent || {});
+    const avgScore = conceptSummary.length ? conceptSummary.reduce((a,b)=>a+((b.correct||0)/Math.max(1,b.seen||b.attempts||1)),0)/conceptSummary.length : 0.5;
+    const guided = buildGuidedSession({ masteryState: { avgScore, weakConcepts: getWeakestConcepts({ limit: 5 }).map((r) => r.conceptId) }, recentActivity: loadSessionHandoff().recentModes || [], fatigueLevel: 0.35 });
+    sessionModes = guided.modes.map((m) => ({ key: m.key, name: m.key.replace(/-/g, " "), app: m.app, skill: m.type }));
+  } else {
+    sessionModes = composeBalancedSessionModes(unitEvents, progressByEvent);
+  }
   resetModeProgress();
 
   updateUnitLabel();
   updateUnitProgressUi();
   updateModeSelector();
   renderMode();
+  saveSessionHandoff({
+    weakConcepts: getWeakestConcepts({ limit: 5 }).map((r) => r.conceptId),
+    currentConceptCluster: getWeakestConcepts({ limit: 1 })[0]?.conceptId || "foundations",
+    activeRegions: [],
+    sessionProgress: { modeIndex, answered: getAnsweredQuestionCount(), total: getTotalQuestionsPerUnit() },
+    recentModes: sessionModes.map((m) => m.key),
+  });
 }
 
 nextStepButton.addEventListener("click", next);
