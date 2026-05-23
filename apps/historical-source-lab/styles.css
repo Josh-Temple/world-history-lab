@@ -1,0 +1,13 @@
+body { font-family: Inter, system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+#source-lab { max-width: 900px; margin: 0 auto; padding: 16px; display: grid; gap: 12px; }
+.panel { background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; padding: 12px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.prompt { border-left: 4px solid #0f766e; padding-left: 8px; color: #334155; }
+.source-list { display: flex; flex-wrap: wrap; gap: 8px; }
+button { border: 1px solid #cbd5e1; background: #fff; border-radius: 8px; padding: 8px 10px; cursor: pointer; }
+button.active { border-color: #0f766e; background: #ecfeff; }
+.evidence-badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid #cbd5e1; }
+.evidence-badge.weak { background:#fff7ed; }
+.evidence-badge.moderate { background:#fefce8; }
+.evidence-badge.strong { background:#ecfdf5; }
+@media (max-width: 760px) { .row { grid-template-columns: 1fr; } }

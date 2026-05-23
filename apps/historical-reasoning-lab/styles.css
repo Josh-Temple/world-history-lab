@@ -11,3 +11,5 @@ textarea{width:100%;min-height:110px;border:1px solid var(--border);border-radiu
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}.comparison-block{border:1px solid var(--border);border-radius:10px;padding:.65rem;background:#fcfefe}
 small{color:var(--muted)}
 @media (max-width:700px){.grid{grid-template-columns:1fr}}
+
+.evidence-badge{display:inline-block;padding:2px 8px;border:1px solid #cbd5e1;border-radius:999px;font-size:12px}.evidence-badge.weak{background:#fff7ed}.evidence-badge.moderate{background:#fefce8}.evidence-badge.strong{background:#ecfdf5}

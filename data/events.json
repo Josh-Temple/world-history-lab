@@ -43,7 +43,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_bridgewater_canal_opens_1761",
@@ -99,7 +101,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_spinning_jenny_invented_1764",
@@ -145,7 +149,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_water_frame_patent_1769",
@@ -192,7 +198,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_watt_condenser_patent_1769",
@@ -236,7 +244,9 @@
       "concept_urbanization"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_spinning_jenny_patented_1770",
@@ -277,7 +287,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_cromford_mill_uses_water_frame_1771",
@@ -333,7 +345,9 @@
       "concept_urbanization"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_spinning_mule_invented_1779",
@@ -379,7 +393,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_power_loom_patented_1785",
@@ -425,7 +441,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_declaration_rights_man_citizen_1789",
@@ -526,7 +544,9 @@
     "prerequisite_event_ids": [
       "ev_storming_bastille_1789"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_estates_general_1789",
@@ -643,7 +663,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_tennis_court_oath_1789"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_storming_bastille_1789",
@@ -744,7 +766,9 @@
     ],
     "consequence_event_ids": [
       "ev_declaration_rights_man_citizen_1789"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_tennis_court_oath_1789",
@@ -848,7 +872,9 @@
     ],
     "consequence_event_ids": [
       "ev_storming_bastille_1789"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_cotton_gin_invented_1793",
@@ -888,7 +914,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_execution_louis_xvi_1793",
@@ -998,7 +1026,9 @@
     ],
     "consequence_event_ids": [
       "ev_reign_of_terror_1793_1794"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_reign_of_terror_1793_1794",
@@ -1108,7 +1138,9 @@
     ],
     "consequence_event_ids": [
       "ev_thermidorian_reaction_1794"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_thermidorian_reaction_1794",
@@ -1208,7 +1240,9 @@
     "prerequisite_event_ids": [
       "ev_reign_of_terror_1793_1794"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_napoleon_coup_18_brumaire_1799",
@@ -1320,7 +1354,9 @@
     "consequence_event_ids": [
       "ev_napoleon_emperor_1804",
       "ev_napoleonic_wars_1803_1815"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_napoleon_emperor_1804",
@@ -1429,7 +1465,9 @@
     "consequence_event_ids": [
       "ev_congress_of_vienna_1814_1815",
       "ev_napoleonic_wars_1803_1815"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_penydarren_locomotive_run_1804",
@@ -1485,7 +1523,9 @@
       "concept_urbanization"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_congress_of_vienna_1814_1815",
@@ -1593,7 +1633,9 @@
     ],
     "consequence_event_ids": [
       "ev_congress_vienna_1815"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_rainhill_trials_rocket_1829",
@@ -1652,7 +1694,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_factory_act_1833",
@@ -1725,7 +1769,9 @@
     ],
     "consequence_event_ids": [
       "ev_factory_act_1847_ten_hours"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_great_exhibition_opens_1851",
@@ -1784,7 +1830,9 @@
       "concept_urbanization"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_perry_1853",
@@ -1872,7 +1920,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_meiji_kanagawa_treaty_1854"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_kanagawa_treaty_1854",
@@ -1964,7 +2014,9 @@
     "prerequisite_event_ids": [
       "ev_meiji_perry_1853"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_bessemer_process_patent_1856",
@@ -2011,7 +2063,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_boshin_war_1868",
@@ -2098,7 +2152,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_meiji_charter_oath_1868"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_charter_oath_1868",
@@ -2184,7 +2240,9 @@
     "prerequisite_event_ids": [
       "ev_meiji_boshin_war_1868"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_abolish_han_1871",
@@ -2268,7 +2326,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_conscription_1873",
@@ -2342,7 +2402,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_constitution_1889",
@@ -2428,7 +2490,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_meiji_diet_1890"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_diet_1890",
@@ -2514,7 +2578,9 @@
     "prerequisite_event_ids": [
       "ev_meiji_constitution_1889"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
@@ -2591,7 +2657,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_russojapanese_war_1905",
@@ -2669,7 +2737,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_annex_korea_1910",
@@ -2746,7 +2816,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_meiji_emperor_death_1912",
@@ -2826,7 +2898,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_leopold_congo_project_1876",
@@ -2870,7 +2944,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_british_occupation_egypt_1882",
@@ -2914,7 +2990,9 @@
     "prerequisite_event_ids": [
       "ev_imperialism_suez_canal_opens_1869"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_berlin_conference_begins_1884",
@@ -2958,7 +3036,9 @@
     "prerequisite_event_ids": [
       "ev_global_market_coordination_1860s"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_berlin_conference_ends_1885",
@@ -2997,7 +3077,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_first_sinojapanese_war_begins_1894",
@@ -3036,7 +3118,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_treaty_shimonoseki_1895",
@@ -3076,7 +3160,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_spanish_american_war_1898",
@@ -3114,7 +3200,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_second_boer_war_begins_1899",
@@ -3155,7 +3243,9 @@
     "prerequisite_event_ids": [
       "ev_imperialism_british_south_africa_company_charter_1889"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_boxer_rebellion_1900",
@@ -3197,7 +3287,9 @@
     "prerequisite_event_ids": [
       "ev_imperialism_open_door_notes_1899"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_boer_war_ends_1902",
@@ -3236,7 +3328,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_russojapanese_war_begins_1904",
@@ -3283,7 +3377,9 @@
     ],
     "consequence_event_ids": [
       "ev_wwi_naval_arms_race_1898_1914"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_treaty_portsmouth_1905",
@@ -3324,7 +3420,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_first_moroccan_crisis_1905",
@@ -3368,7 +3466,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_wwi_alliance_system_hardens_1890_1907"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_agadir_crisis_1911",
@@ -3404,7 +3504,9 @@
     "prerequisite_event_ids": [
       "ev_imperialism_algeciras_conference_1906"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_first_balkan_war_1912",
@@ -3443,7 +3545,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_wwi_balkan_wars_destabilize_1912_1913"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_suez_canal_opens_1869",
@@ -3491,7 +3595,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_imperialism_british_occupation_egypt_1882"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_congo_free_state_established_1885",
@@ -3538,7 +3644,9 @@
       "concept_frontier_expansion"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_british_south_africa_company_charter_1889",
@@ -3585,7 +3693,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_imperialism_second_boer_war_begins_1899"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_triple_intervention_1895",
@@ -3626,7 +3736,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_imperialism_russojapanese_war_begins_1904"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_battle_of_adwa_1896",
@@ -3676,7 +3788,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_fashoda_incident_1898",
@@ -3725,7 +3839,9 @@
       "concept_frontier_expansion"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_us_annexes_hawaii_1898",
@@ -3768,7 +3884,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_imperialism_philippine_american_war_begins_1899"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_open_door_notes_1899",
@@ -3812,7 +3930,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_imperialism_boxer_rebellion_1900"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_philippine_american_war_begins_1899",
@@ -3859,7 +3979,9 @@
     "prerequisite_event_ids": [
       "ev_imperialism_us_annexes_hawaii_1898"
     ],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_anglo_japanese_alliance_1902",
@@ -3904,7 +4026,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_imperialism_russojapanese_war_begins_1904"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_algeciras_conference_1906",
@@ -3945,7 +4069,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_imperialism_agadir_crisis_1911"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_imperialism_japan_annexes_korea_1910",
@@ -3989,7 +4115,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_cyrus_founds_achaemenid_550bce",
@@ -4023,7 +4151,9 @@
       "concept_frontier_expansion"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_buddha_enlightenment_5c_bce",
@@ -4056,7 +4186,9 @@
       "concept_religious_diffusion"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_alexander_gaugamela_331bce",
@@ -4093,7 +4225,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_ashoka_kalinga_261bce",
@@ -4128,7 +4262,9 @@
       "concept_religious_diffusion"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_qin_unification_221bce",
@@ -4158,7 +4294,9 @@
       "state_formation_governance"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_han_zhangqian_2c_bce",
@@ -4192,7 +4330,9 @@
       "concept_trade_network_expansion"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_augustus_principate_27bce",
@@ -4223,7 +4363,9 @@
       "empire_imperialism"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_constantine_edict_milan_313",
@@ -4257,7 +4399,9 @@
       "concept_religious_diffusion"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_hijra_622",
@@ -4303,7 +4447,9 @@
     ],
     "consequence_event_ids": [
       "ev_constitution_medina_622"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_tang_peak_7c",
@@ -4338,7 +4484,9 @@
       "concept_frontier_expansion"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_charlemagne_crowned_800",
@@ -4369,7 +4517,9 @@
       "belief_systems_cultural_exchange"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_song_commercial_revolution_11c",
@@ -4404,7 +4554,9 @@
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_mongol_empire_formation_1206",
@@ -4441,7 +4593,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_mehmed_constantinople_1453",
@@ -4478,7 +4632,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_columbus_1492",
@@ -4512,7 +4668,9 @@
       "concept_trade_network_expansion"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": []
+    "consequence_event_ids": [],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_womens_march_versailles_1789",
@@ -4539,7 +4697,9 @@
     "prerequisite_event_ids": [],
     "consequence_event_ids": [
       "ev_flight_to_varennes_1791"
-    ]
+    ],
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
   },
   {
     "id": "ev_civil_constitution_clergy_1790",
