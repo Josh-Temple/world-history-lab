@@ -80,3 +80,30 @@ Use the weekly strategic assessment as an execution filter:
 - Extended `scripts/validate-data.mjs` to validate `evidence_strength` and `confidence_level` fields on events/sources/perspectives.
 - Added root navigation link for **Historical Source Lab** in `index.html`.
 
+## Incremental update (2026-05-23 · quiz generation health check)
+
+- Ran end-to-end project checks to verify that question-serving prerequisites remain healthy:
+  - `node scripts/smoke-test.mjs`
+  - `node scripts/sanity-check.mjs`
+  - `node scripts/derive.mjs`
+  - `node scripts/validate-derived.mjs`
+- Confirmed the dataset currently supports quiz generation flow with **336 events / 12 units** and derive output emitted without hard errors.
+- Noted existing non-blocking warnings only:
+  - `validate-data` warnings on `international` cause/effect category usage in several Meiji events.
+  - `derive` unknown-tag fallback warnings for multiple events (category fallback succeeds).
+
+### Next-session follow-up
+
+1. Decide whether `international` should be added as a first-class allowed causal category or remapped to an existing taxonomy bucket.
+2. Reduce derive unknown-tag warning volume by normalizing frequently recurring tags (e.g., region and period tags) into the canonical tag dictionary.
+3. Add a lightweight automated "question generation snapshot" script that explicitly samples each question type per unit and validates candidate pool sizes.
+
+## Incremental update (2026-05-23 · loading-stuck mitigation for question apps)
+
+- Addressed a reported issue where apps could remain in "Loading..." and not surface questions when data fetch requests stalled.
+- Updated shared fetch utility in `apps/shared/data-store.js` to apply a 10-second timeout using `AbortController`.
+- Timeout errors now fail fast with explicit messages instead of hanging indefinitely, allowing each app's existing load-failure UI path to activate.
+
+### Next-session follow-up
+
+1. Add lightweight UI regression checks for at least Timeline Trainer and Map Quiz to assert loading states resolve to either question or explicit error.
