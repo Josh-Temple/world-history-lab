@@ -38,6 +38,8 @@ const ALLOWED_THEMES = new Set([
   "technology",
   "economic_change",
 ]);
+const ALLOWED_EVIDENCE_STRENGTH = new Set(["weak", "moderate", "strong"]);
+const ALLOWED_CONFIDENCE_LEVEL = new Set(["low", "medium", "high"]);
 
 async function readJson(relativePath) {
   const absolutePath = path.join(ROOT, relativePath);
@@ -103,13 +105,15 @@ export async function validateData({ log = false } = {}) {
   const errors = [];
   const warnings = [];
 
-  const [events, people, unitRegistry, metadata, regions, concepts] = await Promise.all([
+  const [events, people, unitRegistry, metadata, regions, concepts, sources, perspectives] = await Promise.all([
     readJson("data/events.json"),
     readJson("data/people.json"),
     readJson("data/units/index.json"),
     readJson("data/metadata.json"),
     readJson("data/regions.json"),
     readJson("data/concepts.json"),
+    readJson("data/sources.json").catch(() => []),
+    readJson("data/perspectives.json").catch(() => []),
   ]);
 
   const eventList = asArray(events);
@@ -118,6 +122,8 @@ export async function validateData({ log = false } = {}) {
   const conceptList = asArray(concepts);
   const regionIdSet = new Set((regionList || []).map((region) => (isObject(region) ? region.id : null)).filter((id) => typeof id === "string"));
   const conceptIdSet = new Set((conceptList || []).map((concept) => (isObject(concept) ? concept.id : null)).filter((id) => typeof id === "string"));
+  const sourceList = asArray(sources) || [];
+  const perspectiveList = asArray(perspectives) || [];
 
   if (!isObject(metadata)) {
     errors.push("data/metadata.json must be an object.");
@@ -218,6 +224,14 @@ export async function validateData({ log = false } = {}) {
   }
 
   const personIdSet = new Set();
+  const validateEvidenceMeta = (record, label) => {
+    if (record.evidence_strength !== undefined && !ALLOWED_EVIDENCE_STRENGTH.has(record.evidence_strength)) {
+      errors.push(`${label} has invalid evidence_strength: ${String(record.evidence_strength)}`);
+    }
+    if (record.confidence_level !== undefined && !ALLOWED_CONFIDENCE_LEVEL.has(record.confidence_level)) {
+      errors.push(`${label} has invalid confidence_level: ${String(record.confidence_level)}`);
+    }
+  };
   if (peopleList) {
     for (const [index, person] of peopleList.entries()) {
       if (!isObject(person)) {
@@ -248,6 +262,7 @@ export async function validateData({ log = false } = {}) {
       }
 
       const eventLabel = describeRecordId(event, `[index ${index}]`);
+      validateEvidenceMeta(event, `Event ${eventLabel}`);
       if (typeof event.id !== "string" || event.id.trim() === "") {
         errors.push(`${eventSourcePath} events[${index}] must include a non-empty id.`);
       } else {
@@ -422,6 +437,22 @@ export async function validateData({ log = false } = {}) {
     if (eventIdSet.size !== eventList.length) {
       errors.push(`Duplicate event IDs detected in ${eventSourcePath}: expected ${eventList.length} unique ids but found ${eventIdSet.size}.`);
     }
+  }
+
+  for (const [index, source] of sourceList.entries()) {
+    if (!isObject(source)) {
+      errors.push(`sources[${index}] must be an object.`);
+      continue;
+    }
+    validateEvidenceMeta(source, `Source ${describeRecordId(source, `[index ${index}]`)}`);
+  }
+
+  for (const [index, perspective] of perspectiveList.entries()) {
+    if (!isObject(perspective)) {
+      errors.push(`perspectives[${index}] must be an object.`);
+      continue;
+    }
+    validateEvidenceMeta(perspective, `Perspective ${describeRecordId(perspective, `[index ${index}]`)}`);
   }
 
   if (eventList) {

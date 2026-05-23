@@ -69,3 +69,14 @@ Use the weekly strategic assessment as an execution filter:
 - Updated session-runner to consume guided plans (`?guided=1`) and provide compact concept-practice summary text on completion.
 - Added a new beginner concept onboarding map app and linked it from root navigation for clearer first-step orientation.
 - Ran validation + derive scripts after integration.
+
+
+## Recent updates (2026-05-23 · historical source lab + evidence confidence layer)
+
+- Added new app `apps/historical-source-lab/` with source-context panels, interpretation prompts, reliability discussion, and cross-source comparison workflow.
+- Added `data/sources.json` seed primary-source fragment dataset and `data/perspectives.json` for perspective-level evidence metadata scaffolding.
+- Added shared evidence helpers in `apps/shared/evidence-utils.js` (`getEvidenceBadge`, `getConfidenceLabel`).
+- Added evidence/confidence indicators and weak-evidence diagnostic messaging in `apps/historical-reasoning-lab/main.js`.
+- Extended `scripts/validate-data.mjs` to validate `evidence_strength` and `confidence_level` fields on events/sources/perspectives.
+- Added root navigation link for **Historical Source Lab** in `index.html`.
+

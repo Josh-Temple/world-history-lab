@@ -1,0 +1,44 @@
+[
+  {
+    "id": "src_tacitus_germania",
+    "title": "Tacitus on Germania",
+    "author": "Tacitus",
+    "date_label": "1st century CE",
+    "excerpt": "They transact no public or private business without being armed.",
+    "historical_context": "Roman ethnographic writing about frontier societies during imperial consolidation.",
+    "intended_audience": "Roman elite readers",
+    "bias_considerations": "Roman moralizing contrasts may exaggerate difference for rhetorical effect.",
+    "firsthand_status": "Secondhand synthesis",
+    "political_incentives": "Framing frontier identity to comment on Roman virtue and decline.",
+    "related_event_ids": [
+      "ev_hijra_622"
+    ],
+    "related_concept_ids": [
+      "concept_frontier_identity"
+    ],
+    "source_type": "written_primary",
+    "evidence_strength": "moderate",
+    "confidence_level": "medium"
+  },
+  {
+    "id": "src_ibn_battuta_mali",
+    "title": "Ibn Battuta in Mali",
+    "author": "Ibn Battuta",
+    "date_label": "14th century CE",
+    "excerpt": "I saw there a complete justice and security in their country.",
+    "historical_context": "Travel narrative from trans-Saharan and Indian Ocean mobility networks.",
+    "intended_audience": "Courtly and scholarly audiences in Dar al-Islam",
+    "bias_considerations": "Selective observations and outsider assumptions shape cultural judgments.",
+    "firsthand_status": "Firsthand travel account",
+    "political_incentives": "Prestige through depicting distant courts and orderly governance.",
+    "related_event_ids": [
+      "ev_zheng_he_first_voyage"
+    ],
+    "related_concept_ids": [
+      "concept_trade_networks"
+    ],
+    "source_type": "written_primary",
+    "evidence_strength": "strong",
+    "confidence_level": "medium"
+  }
+]

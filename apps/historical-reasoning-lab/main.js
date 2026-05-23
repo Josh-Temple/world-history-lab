@@ -1,4 +1,5 @@
 import { loadReviewStore, saveReviewStore, updateReviewItem } from '/apps/shared/review-store.js';
+import { getConfidenceLabel, getEvidenceBadge } from '/apps/shared/evidence-utils.js';
 
 const APP_KEY = 'whl_reasoning_lab_v1';
 const promptPanel = document.getElementById('prompt-panel');
@@ -33,6 +34,8 @@ function render() {
   const conceptById = new Map(state.concepts.map((c) => [c.id, c]));
   const concepts = (event.concept_ids || []).map((id) => conceptById.get(id)).filter(Boolean);
 
+  const evidence = getEvidenceBadge(event.evidence_strength);
+  const weakEvidenceWarning = prereq.length + related.length < 2 ? '<p><strong>Weak-evidence diagnostic:</strong> This claim currently has sparse linked evidence. Compare with more sources before settling on one explanation.</p>' : '';
   promptPanel.innerHTML = `<h2>Prompt</h2><p>${generateReasoningPrompt(event)}</p><small>Counterfactual: ${counterfactualPrompt(event)}</small>`;
 
   const buttons = [...prereq, ...related].slice(0, 12).map((ev) => `<button class="evidence-item ${state.selectedEvidence.has(ev.id) ? 'selected' : ''}" data-id="${ev.id}">${ev.label}</button>`).join('');
@@ -40,7 +43,7 @@ function render() {
 
   evidencePanel.innerHTML = `<h2>Evidence selection</h2><p>Pick relevant events and concepts before writing your explanation.</p><div class="evidence-list">${buttons}${conceptButtons}</div>`;
 
-  reflectionPanel.innerHTML = `<h2>Reflection</h2><div class="grid"><section class="comparison-block"><h3>Stronger explanation</h3><p>Connects multiple causal factors, references evidence, and explains mechanisms (how/why).</p></section><section class="comparison-block"><h3>Weaker explanation</h3><p>Lists isolated facts, lacks evidence links, or assumes one single deterministic cause.</p></section></div><textarea id="reflection-text" placeholder="Write a 4–6 sentence explanation."></textarea><div style="margin-top:.5rem"><button id="save-reflection">Save reflection</button> <button id="next-prompt">Next prompt</button></div>`;
+  reflectionPanel.innerHTML = `<h2>Reflection</h2><p><span class="evidence-badge ${evidence.level}">${evidence.label}</span> · ${getConfidenceLabel(event.confidence_level)}</p>${weakEvidenceWarning}<div class="grid"><section class="comparison-block"><h3>Stronger explanation</h3><p>Connects multiple causal factors, references evidence, and explains mechanisms (how/why).</p></section><section class="comparison-block"><h3>Weaker explanation</h3><p>Lists isolated facts, lacks evidence links, or assumes one single deterministic cause.</p></section></div><textarea id="reflection-text" placeholder="Write a 4–6 sentence explanation."></textarea><div style="margin-top:.5rem"><button id="save-reflection">Save reflection</button> <button id="next-prompt">Next prompt</button></div>`;
 
   evidencePanel.querySelectorAll('.evidence-item').forEach((btn) => btn.onclick = () => {
     const id = btn.dataset.id;
