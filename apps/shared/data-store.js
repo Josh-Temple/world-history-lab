@@ -25,7 +25,20 @@ function isValidEvent(event) {
 }
 
 async function fetchJson(path, label) {
-  const response = await fetch(path, { cache: "no-store" });
+  const controller = new AbortController();
+  const timeoutMs = 10000;
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  let response;
+  try {
+    response = await fetch(path, { cache: "no-store", signal: controller.signal });
+  } catch (error) {
+    if (error?.name === "AbortError") {
+      throw new Error(`${label}: request timed out after ${timeoutMs}ms (${path})`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeoutId);
+  }
   if (!response.ok) {
     throw new Error(`${label}: HTTP ${response.status}`);
   }
