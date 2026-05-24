@@ -1,5 +1,11 @@
 # World History Lab
 
+## Recent updates (2026-05-24 · thematic comparison feedback + cognition-first onboarding copy)
+
+- Updated `apps/timeline-trainer/src/App.js` to add lightweight post-answer **theme comparison prompts** when question events share historical themes.
+- Updated `apps/concept-onboarding-map/index.html` with a beginner pathway organized by thinking goals (chronology → comparison → causality → review).
+- Updated `apps/concept-onboarding-map/main.js` to label each concept cluster with an explicit "thinking skill" outcome.
+
 ## Recent updates (2026-05-23 · historical source lab + evidence confidence layer)
 
 - Added new app `apps/historical-source-lab/` with source-context panels, interpretation prompts, reliability discussion, and cross-source comparison workflow.
