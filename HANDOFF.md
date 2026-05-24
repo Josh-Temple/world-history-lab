@@ -1,5 +1,18 @@
 # HANDOFF (2026-05-17)
 
+## Incremental update (2026-05-24 · thematic comparison reinforcement + onboarding cognition framing)
+
+- Updated `apps/timeline-trainer/src/App.js` to surface concise post-answer comparison prompts when question options share one or more `themes` tags (for example: “how were they similar, and what changed?”).
+- Updated `apps/concept-onboarding-map/index.html` with a beginner pathway framed by cognitive goals: chronology, comparison, causality, and review.
+- Updated `apps/concept-onboarding-map/main.js` so each concept cluster includes an explicit “Thinking skill” line to make mode purpose visible to learners.
+- Updated `README.md` with a matching release-note entry for this incremental slice.
+
+### Next-session follow-up
+
+1. Extend thematic comparison prompts to pull a third “related event” from the same theme and include cross-region preference.
+2. Define/lock a learner-visible controlled theme vocabulary page and link it from onboarding.
+3. Backfill or normalize missing `themes` tags for high-frequency timeline events to increase comparison prompt hit-rate.
+
 ## What was completed today
 
 - Added adaptive sequencing metadata in `data/concepts.json` (`difficulty`, `prerequisite_concept_ids`) and introduced `concept_state_formation` as a foundational prerequisite anchor.

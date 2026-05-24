@@ -332,6 +332,39 @@ function setResultMessage(message, resultType = "neutral") {
   ui.resultText.classList.toggle("incorrect", resultType === "incorrect");
 }
 
+function getSharedThemes(leftEvent, rightEvent) {
+  const leftThemes = new Set(Array.isArray(leftEvent?.themes) ? leftEvent.themes : []);
+  const rightThemes = Array.isArray(rightEvent?.themes) ? rightEvent.themes : [];
+  return rightThemes.filter((theme) => leftThemes.has(theme));
+}
+
+function getThemeComparisonPrompt(question) {
+  const optionEvents = Array.isArray(question?.options) ? question.options.filter((option) => option?.id) : [];
+  if (optionEvents.length < 2) {
+    return "";
+  }
+
+  let bestPair = null;
+  for (let i = 0; i < optionEvents.length; i += 1) {
+    for (let j = i + 1; j < optionEvents.length; j += 1) {
+      const sharedThemes = getSharedThemes(optionEvents[i], optionEvents[j]);
+      if (sharedThemes.length === 0) {
+        continue;
+      }
+      if (!bestPair || sharedThemes.length > bestPair.sharedThemes.length) {
+        bestPair = { left: optionEvents[i], right: optionEvents[j], sharedThemes };
+      }
+    }
+  }
+
+  if (!bestPair) {
+    return "";
+  }
+
+  const [primaryTheme] = bestPair.sharedThemes;
+  return ` Theme link (${primaryTheme}): Compare "${bestPair.left.label}" and "${bestPair.right.label}" — how were they similar, and what changed over time?`;
+}
+
 function updateNextStepVisibility() {
   if (state.totalAnswered < PRACTICE_LOOP_THRESHOLD) {
     ui.nextStep.hidden = true;
@@ -857,7 +890,11 @@ function handleAnswer(optionIndex) {
   ui.nextButton.disabled = true;
 
   const explanation = explainQuestionAnswer(state.currentQuestion);
-  setResultMessage(`${isCorrect ? "Correct" : "Incorrect"}. ${explanation}`, isCorrect ? "correct" : "incorrect");
+  const comparisonPrompt = getThemeComparisonPrompt(state.currentQuestion);
+  setResultMessage(
+    `${isCorrect ? "Correct" : "Incorrect"}. ${explanation}${comparisonPrompt}`,
+    isCorrect ? "correct" : "incorrect"
+  );
 }
 
 function populateUnitSelector() {
