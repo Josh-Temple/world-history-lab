@@ -1,3 +1,5 @@
+import { buildRetentionQueue, calculateForgettingRisk, recommendReviewMode } from './retention-engine.js';
+
 const MODE_LIBRARY = Object.freeze([
   { key: 'timeline-review', app: '/apps/timeline-trainer/index.html', type: 'recall', intensity: 1 },
   { key: 'event-recognition', app: '/apps/event-recognition/index.html', type: 'recall', intensity: 1 },
@@ -33,6 +35,19 @@ export function buildGuidedSession({ masteryState = {}, recentActivity = [], fat
   const recentModes = new Set((Array.isArray(recentActivity) ? recentActivity : []).slice(-4));
   const masteryHigh = Number(masteryState.avgScore || 0) >= 0.72;
 
+  const retentionRows = weakConcepts.map((conceptId, index) => {
+    const score = Number(masteryState?.conceptScores?.[conceptId] ?? 0.5);
+    const risk = calculateForgettingRisk({
+      lastReviewed: Date.now() - (index + 2) * 5 * 24 * 60 * 60 * 1000,
+      correctnessHistory: [score],
+      confidenceHistory: [score],
+      conceptComplexity: 0.55,
+      repetitionSpacingDays: 8,
+    });
+    return { conceptId, forgettingRisk: risk, regionId: index % 2 ? 'reg_eurasia' : 'reg_global', era: index % 2 ? 'early-modern' : 'modern', reasoningMode: index % 3 ? 'recall' : 'reasoning' };
+  });
+  const retentionQueue = buildRetentionQueue(retentionRows, { limit: 8 });
+
   const preferred = [];
   if (weakConcepts.length > 3) {
     preferred.push('timeline-review', 'event-recognition');
@@ -54,5 +69,11 @@ export function buildGuidedSession({ masteryState = {}, recentActivity = [], fat
     masteryHigh,
     modes,
     recommendation: modes[0]?.key || 'timeline-review',
+    retentionQueue,
+    reinforcementMode: recommendReviewMode({
+      conceptId: retentionQueue[0]?.conceptId || '',
+      forgettingRisk: Number(retentionQueue[0]?.forgettingRisk || 0),
+      weakness: masteryHigh ? 'synthesis' : 'factual',
+    }),
   };
 }

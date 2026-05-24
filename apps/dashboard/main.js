@@ -1,6 +1,7 @@
 import { loadReviewStore, getDueItems, getWeakItems } from '../shared/review-store.js';
 import { getConceptMasterySummary, getWeakestConcepts } from '../shared/mastery-store.js';
 import { buildGuidedSession } from '../shared/guided-session-controller.js';
+import { recommendReviewMode } from '../shared/retention-engine.js';
 import { saveSessionHandoff, loadSessionHandoff } from '../shared/session-handoff-store.js';
 import { getNormalizedEvents } from '../shared/data-store.js';
 
@@ -102,7 +103,9 @@ async function render() {
     sessionProgress: { modeIndex: 0, answered: 0, total: guidedSession.modes.length * 5 },
     recentModes: guidedSession.modes.map((mode) => mode.key),
   });
-  guidedSessionLaunchEl.innerHTML = `<h2>Guided Session</h2><p>Recommended next action: <strong>${guidedSession.recommendation}</strong></p><button id="start-guided-session" type="button">Start Guided Session</button>`;
+  const topRisk = guidedSession.retentionQueue?.[0];
+  const reinforcementHref = recommendReviewMode({ conceptId: topRisk?.conceptId || '', forgettingRisk: Number(topRisk?.forgettingRisk || 0), weakness: 'factual' });
+  guidedSessionLaunchEl.innerHTML = `<h2>Guided Session</h2><p>Recommended next action: <strong>${guidedSession.recommendation}</strong></p><p>Highest forgetting risk: <strong>${topRisk?.conceptId || 'n/a'}</strong>${topRisk ? ` (${Math.round(topRisk.forgettingRisk * 100)}%)` : ''}</p><p><a href="${reinforcementHref}">Reinforcement recommendation</a></p><button id="start-guided-session" type="button">Start Guided Session</button>`;
   document.getElementById('start-guided-session')?.addEventListener('click', () => {
     window.location.href = '/apps/session-runner/?guided=1';
   });
