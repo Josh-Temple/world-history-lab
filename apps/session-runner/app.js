@@ -565,6 +565,7 @@ async function init() {
     const avgScore = conceptSummary.length ? conceptSummary.reduce((a,b)=>a+((b.correct||0)/Math.max(1,b.seen||b.attempts||1)),0)/conceptSummary.length : 0.5;
     const guided = buildGuidedSession({ masteryState: { avgScore, weakConcepts: getWeakestConcepts({ limit: 5 }).map((r) => r.conceptId) }, recentActivity: loadSessionHandoff().recentModes || [], fatigueLevel: 0.35 });
     sessionModes = guided.modes.map((m) => ({ key: m.key, name: m.key.replace(/-/g, " "), app: m.app, skill: m.type }));
+    console.log('[session-runner] retention queue', guided.retentionQueue);
   } else {
     sessionModes = composeBalancedSessionModes(unitEvents, progressByEvent);
   }

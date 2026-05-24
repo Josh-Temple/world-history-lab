@@ -1119,6 +1119,19 @@ async function main() {
   const causalPairs = buildCausalPairs(normalizedEvents, eventIdSet);
   const relatedEventGraph = buildRelatedEventGraph(normalizedEvents, eventIdSet);
   const processChains = deriveProcessChains(events);
+  const retentionPriority = concepts
+    .map((concept, index) => {
+      const difficulty = concept?.difficulty === 'advanced' ? 1 : concept?.difficulty === 'intermediate' ? 0.7 : 0.45;
+      const forgettingRisk = Math.max(0.2, Math.min(0.95, difficulty * 0.65 + ((index % 5) / 10)));
+      return {
+        conceptId: concept.id,
+        conceptLabel: concept.label || concept.id,
+        forgettingRisk: Number(forgettingRisk.toFixed(2)),
+        priority: forgettingRisk >= 0.75 ? 'high' : forgettingRisk >= 0.55 ? 'medium' : 'low',
+      };
+    })
+    .sort((a, b) => b.forgettingRisk - a.forgettingRisk)
+    .slice(0, 80);
   const unitEventPoolTypeCount = Object.values(unitEventPool)
     .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
 
@@ -1137,6 +1150,7 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "causal-graph.json"), toJson(causalGraph), "utf8");
   await writeFile(path.join(DERIVED_DIR, "progression-map.json"), toJson(progressionMap), "utf8");
   await writeFile(path.join(DERIVED_DIR, "process-chains.json"), toJson(processChains), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "retention-priority.json"), toJson(retentionPriority), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_concept.json"), toJson(eventsByConcept), "utf8");

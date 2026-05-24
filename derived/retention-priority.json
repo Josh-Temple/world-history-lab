@@ -1,0 +1,68 @@
+[
+  {
+    "conceptId": "concept_bureaucratic_centralization",
+    "conceptLabel": "Bureaucratic Centralization",
+    "forgettingRisk": 0.95,
+    "priority": "high"
+  },
+  {
+    "conceptId": "concept_military_reform",
+    "conceptLabel": "Military Reform",
+    "forgettingRisk": 0.95,
+    "priority": "high"
+  },
+  {
+    "conceptId": "concept_technological_diffusion",
+    "conceptLabel": "Technological Diffusion",
+    "forgettingRisk": 0.75,
+    "priority": "high"
+  },
+  {
+    "conceptId": "concept_urbanization",
+    "conceptLabel": "Urbanization",
+    "forgettingRisk": 0.75,
+    "priority": "high"
+  },
+  {
+    "conceptId": "concept_religious_diffusion",
+    "conceptLabel": "Religious Diffusion",
+    "forgettingRisk": 0.69,
+    "priority": "medium"
+  },
+  {
+    "conceptId": "concept_trade_network_expansion",
+    "conceptLabel": "Trade-Network Expansion",
+    "forgettingRisk": 0.66,
+    "priority": "medium"
+  },
+  {
+    "conceptId": "concept_frontier_expansion",
+    "conceptLabel": "Frontier Expansion",
+    "forgettingRisk": 0.49,
+    "priority": "low"
+  },
+  {
+    "conceptId": "concept_succession_crisis",
+    "conceptLabel": "Succession Crisis",
+    "forgettingRisk": 0.45,
+    "priority": "low"
+  },
+  {
+    "conceptId": "concept_imperial_overstretch",
+    "conceptLabel": "Imperial Overstretch",
+    "forgettingRisk": 0.39,
+    "priority": "low"
+  },
+  {
+    "conceptId": "concept_state_formation",
+    "conceptLabel": "State Formation",
+    "forgettingRisk": 0.29,
+    "priority": "low"
+  },
+  {
+    "conceptId": "concept_legitimacy_crisis",
+    "conceptLabel": "Legitimacy Crisis",
+    "forgettingRisk": 0.29,
+    "priority": "low"
+  }
+]

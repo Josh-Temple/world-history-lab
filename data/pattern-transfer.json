@@ -1,0 +1,16 @@
+[
+  {
+    "id": "pattern_imperial_overstretch",
+    "pattern_label": "Imperial Overstretch",
+    "cases": ["ev_late_roman_empire", "ev_late_spanish_empire"],
+    "false_analogy_cases": ["ev_meiji_restoration"],
+    "explanation": "Transfer focus: multi-front commitments, fiscal strain, and legitimacy pressure can co-produce fragmentation. Non-transfer: institutional reform capacity differs significantly by case."
+  },
+  {
+    "id": "pattern_trade_network_resilience",
+    "pattern_label": "Trade Network Resilience",
+    "cases": ["ev_black_death", "ev_indian_ocean_trade_expansion"],
+    "false_analogy_cases": ["ev_total_war_economy_ww2"],
+    "explanation": "Transfer focus: distributed exchange networks can re-route around shocks. Non-transfer: state-directed wartime economies are structurally different from decentralized commercial systems."
+  }
+]

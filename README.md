@@ -1078,3 +1078,13 @@ TBD
 - Added session-runner concept mastery update hooks for confidence interactions in `apps/session-runner/app.js`.
 - Added new `apps/misconception-challenge/` mode with confidence-based misconception judgment and explanatory feedback.
 - Added `data/misconceptions.json` seed dataset and linked app from root navigation.
+
+
+## Incremental update (2026-05-24 · retention orchestration + pattern transfer mode)
+
+- Added shared retention engine at `apps/shared/retention-engine.js` with forgetting-risk scoring, retention-queue building, interleaving, and reinforcement route recommendations.
+- Updated guided-session orchestration to compute retention queues and expose reinforcement guidance in `apps/shared/guided-session-controller.js`.
+- Updated dashboard to show concise highest-risk retention summary and reinforcement recommendation links.
+- Extended derive output to emit `derived/retention-priority.json`.
+- Added new learner mode `apps/historical-pattern-transfer/` and seed dataset `data/pattern-transfer.json`.
+- Added root navigation link for **Historical Pattern Transfer** in `index.html`.
