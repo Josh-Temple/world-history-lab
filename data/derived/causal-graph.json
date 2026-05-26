@@ -246,6 +246,10 @@
     "prerequisites": [],
     "consequences": []
   },
+  "ev_chola_maritime_expansion": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_chola_naval_raids_srivijaya_1025": {
     "prerequisites": [],
     "consequences": []
@@ -849,6 +853,10 @@
       "ev_bandung_conference_1955"
     ]
   },
+  "ev_indian_ocean_islamic_trade_networks": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_indian_revolt_1857": {
     "prerequisites": [
       "ev_qing_first_opium_war_1839"
@@ -1329,6 +1337,10 @@
     ],
     "consequences": []
   },
+  "ev_portuguese_indian_ocean_intervention": {
+    "prerequisites": [],
+    "consequences": []
+  },
   "ev_portuguese_round_cape_1488": {
     "prerequisites": [],
     "consequences": []
@@ -1409,6 +1421,10 @@
     "consequences": [
       "ev_battle_yarmouk_636"
     ]
+  },
+  "ev_rise_of_malacca": {
+    "prerequisites": [],
+    "consequences": []
   },
   "ev_russian_steppe_expansion_trade": {
     "prerequisites": [],
@@ -1575,6 +1591,10 @@
     "prerequisites": [
       "ev_axum_red_sea_trade_growth"
     ],
+    "consequences": []
+  },
+  "ev_swahili_coast_trade_expansion": {
+    "prerequisites": [],
     "consequences": []
   },
   "ev_swahili_coast_urban_growth": {
@@ -2114,6 +2134,10 @@
     "prerequisites": [
       "ev_zheng_he_calicut_visit"
     ],
+    "consequences": []
+  },
+  "ev_zheng_he_voyages": {
+    "prerequisites": [],
     "consequences": []
   },
   "ev_zheng_he_voyages_begin": {

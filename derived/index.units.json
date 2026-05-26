@@ -190,6 +190,18 @@
     ]
   },
   {
+    "id": "unit_indian_ocean_world_system",
+    "title": "Indian Ocean World System",
+    "event_ids": [
+      "ev_swahili_coast_trade_expansion",
+      "ev_chola_maritime_expansion",
+      "ev_rise_of_malacca",
+      "ev_indian_ocean_islamic_trade_networks",
+      "ev_zheng_he_voyages",
+      "ev_portuguese_indian_ocean_intervention"
+    ]
+  },
+  {
     "id": "unit_industrial_revolution",
     "title": "Industrial Revolution",
     "event_ids": [

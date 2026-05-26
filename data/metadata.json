@@ -17,7 +17,8 @@
       "unit_world_war_ii",
       "unit_islamic_expansion",
       "unit_silk_road_exchange",
-      "unit_indian_ocean_trade"
+      "unit_indian_ocean_trade",
+      "unit_indian_ocean_world_system"
     ],
     "notes": "Core dataset now spans foundations, modern specialized units, comparison tracks, and high-density World War I + II flagship units for cross-mode practice."
   },

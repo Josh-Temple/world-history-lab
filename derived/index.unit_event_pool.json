@@ -1032,5 +1032,8 @@
   },
   "unit_indian_ocean_trade": {
     "eligible_ids": {}
+  },
+  "unit_indian_ocean_world_system": {
+    "eligible_ids": {}
   }
 }
