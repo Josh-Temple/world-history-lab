@@ -822,6 +822,11 @@ function generateAndRenderNextQuestion() {
     renderQuestion(question);
   } catch (error) {
     state.currentQuestion = null;
+    ui.questionTitle.textContent = "Question unavailable";
+    ui.questionText.textContent = "Could not generate a question for the current settings. Change mode/scope/quality or tap Try again.";
+    ui.questionBadge.hidden = true;
+    setAnswerButtonsEnabled(false);
+    clearAnswerButtonStates();
     setError(error.message, { allowRetry: true });
     setResultMessage("Could not load the next question. Use Try again to retry.", "incorrect");
   }

@@ -130,3 +130,11 @@ Use the weekly strategic assessment as an execution filter:
 - Extended derive output to emit `derived/retention-priority.json`.
 - Added new learner mode `apps/historical-pattern-transfer/` and seed dataset `data/pattern-transfer.json`.
 - Added root navigation link for **Historical Pattern Transfer** in `index.html`.
+
+## Incremental update (2026-05-24 · timeline trainer loading-question troubleshooting note)
+
+- Investigated a user report where Timeline Trainer can remain at "Loading question..." in several modes.
+- Confirmed likely root causes from code path:
+  - mode/scope/quality/difficulty filters yielding zero eligible events,
+  - data fetch timeout or HTTP failure while loading seed data (including PWA/network edge cases).
+- Follow-up fix now updates the question panel text explicitly on generation failure so users are not left at a stale "Loading question..." message.
