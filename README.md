@@ -1,5 +1,10 @@
 # World History Lab
 
+## Recent updates (2026-05-25 · timeline trainer unavailable-question fallback)
+
+- Updated `apps/timeline-trainer/src/App.js` so generation failures now replace stale "Loading question..." with an explicit "Question unavailable" message and recovery guidance.
+- Preserves existing retry path while disabling answer buttons in failure state to avoid ambiguous UI.
+
 ## Recent updates (2026-05-24 · thematic comparison feedback + cognition-first onboarding copy)
 
 - Updated `apps/timeline-trainer/src/App.js` to add lightweight post-answer **theme comparison prompts** when question events share historical themes.
