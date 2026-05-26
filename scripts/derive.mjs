@@ -1039,6 +1039,32 @@ async function loadUnits() {
   return units;
 }
 
+
+
+function buildThematicPathwaySummary(pathways = [], events = []) {
+  const byId = new Map((Array.isArray(events) ? events : []).map((e) => [e.id, e]));
+  const total = Array.isArray(pathways) ? pathways.length : 0;
+  const regionSet = new Set();
+  const conceptSet = new Set();
+  let linked = 0;
+  for (const path of (Array.isArray(pathways) ? pathways : [])) {
+    for (const eventId of (Array.isArray(path.event_ids) ? path.event_ids : [])) {
+      const ev = byId.get(eventId);
+      if (!ev) continue;
+      linked += 1;
+      (Array.isArray(ev.region_ids) ? ev.region_ids : []).forEach((r) => regionSet.add(r));
+      (Array.isArray(ev.concept_ids) ? ev.concept_ids : []).forEach((c) => conceptSet.add(c));
+    }
+  }
+  return {
+    generated_at: new Date().toISOString(),
+    pathway_count: total,
+    pathway_density: total ? Number((linked / total).toFixed(2)) : 0,
+    concept_overlap_count: conceptSet.size,
+    region_coverage_count: regionSet.size,
+  };
+}
+
 async function main() {
   const validationSummary = await validateData({ log: true });
   if (validationSummary.errors.length > 0) {
@@ -1065,6 +1091,7 @@ async function main() {
 
   const people = await readJson("data/people.json");
   const concepts = await readJson("data/concepts.json");
+  const thematicPathways = await readJson("data/thematic-pathways.json").catch(() => []);
   assertArray(people, "data/people.json");
   assertArray(concepts, "data/concepts.json");
   const peopleIdSet = validatePeople(people);
@@ -1132,6 +1159,8 @@ async function main() {
     })
     .sort((a, b) => b.forgettingRisk - a.forgettingRisk)
     .slice(0, 80);
+  const thematicPathwaysSummary = buildThematicPathwaySummary(thematicPathways, normalizedEvents);
+
   const unitEventPoolTypeCount = Object.values(unitEventPool)
     .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
 
@@ -1151,6 +1180,7 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "progression-map.json"), toJson(progressionMap), "utf8");
   await writeFile(path.join(DERIVED_DIR, "process-chains.json"), toJson(processChains), "utf8");
   await writeFile(path.join(DERIVED_DIR, "retention-priority.json"), toJson(retentionPriority), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "thematic-pathways-summary.json"), toJson(thematicPathwaysSummary), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_concept.json"), toJson(eventsByConcept), "utf8");

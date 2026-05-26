@@ -1,5 +1,13 @@
 # World History Lab
 
+## Recent updates (2026-05-26 · argument builder + thematic pathways)
+
+- Added new `apps/historical-argument-builder/` mode with structured thesis/evidence/causal/counterargument/synthesis workflow, local draft persistence, revision timestamps, and lightweight rubric heuristics.
+- Added shared rubric helpers in `apps/shared/argument-rubric-utils.js` for claim clarity, evidence usage, and counterargument presence feedback.
+- Added `data/thematic-pathways.json` with cross-era macro-history journeys and explanatory metadata (`why_it_matters`, transitions, recurring structures).
+- Updated dashboard integration to surface featured thematic journeys with level and estimated length (`apps/dashboard/index.html`, `apps/dashboard/main.js`).
+- Updated derive pipeline to emit `derived/thematic-pathways-summary.json` and linked root navigation entry for Historical Argument Builder.
+
 ## Recent updates (2026-05-25 · timeline trainer unavailable-question fallback)
 
 - Updated `apps/timeline-trainer/src/App.js` so generation failures now replace stale "Loading question..." with an explicit "Question unavailable" message and recovery guidance.

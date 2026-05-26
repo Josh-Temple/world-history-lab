@@ -193,6 +193,7 @@ export async function validateData({ log = false } = {}) {
 
 
   let learningPaths = [];
+  let thematicPathways = [];
   try {
     const lp = await readJson("data/learning-paths.json");
     if (!Array.isArray(lp)) {
@@ -202,6 +203,14 @@ export async function validateData({ log = false } = {}) {
     }
   } catch {
     warnings.push("data/learning-paths.json is missing; adaptive path recommendations will be limited.");
+  }
+
+  try {
+    const tp = await readJson("data/thematic-pathways.json");
+    if (!Array.isArray(tp)) errors.push("data/thematic-pathways.json must be an array.");
+    else thematicPathways = tp;
+  } catch {
+    warnings.push("data/thematic-pathways.json is missing; thematic journeys disabled.");
   }
 
   for (const [index, pathRecord] of learningPaths.entries()) {
@@ -586,6 +595,16 @@ export async function validateData({ log = false } = {}) {
     }
   }
 
+  for (const [index, p] of thematicPathways.entries()) {
+    if (!isObject(p)) {
+      errors.push(`thematic-pathways[${index}] must be an object.`);
+      continue;
+    }
+    if (!Array.isArray(p.event_ids)) {
+      errors.push(`Thematic pathway ${describeRecordId(p, `[index ${index}]`)} must include event_ids array.`);
+    }
+  }
+
   const summary = {
     events: eventList ? eventList.length : 0,
     people: peopleList ? peopleList.length : 0,
@@ -632,3 +651,4 @@ async function runCli() {
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   runCli();
 }
+
