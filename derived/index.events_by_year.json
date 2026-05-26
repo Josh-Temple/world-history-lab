@@ -91,9 +91,11 @@
     "ev_swahili_coast_urban_growth"
   ],
   "1000": [
-    "ev_ghaznavid_trade_corridors"
+    "ev_ghaznavid_trade_corridors",
+    "ev_swahili_coast_trade_expansion"
   ],
   "1025": [
+    "ev_chola_maritime_expansion",
     "ev_chola_naval_raids_srivijaya_1025"
   ],
   "1050": [
@@ -106,7 +108,8 @@
   ],
   "1200": [
     "ev_aden_red_sea_gateway_peak",
-    "ev_calicut_port_as_hub"
+    "ev_calicut_port_as_hub",
+    "ev_indian_ocean_islamic_trade_networks"
   ],
   "1206": [
     "ev_mongol_empire_formation_1206"
@@ -140,6 +143,7 @@
   ],
   "1400": [
     "ev_malacca_foundation_1400",
+    "ev_rise_of_malacca",
     "ev_timurid_patronage_exchange"
   ],
   "1403": [
@@ -147,6 +151,7 @@
   ],
   "1405": [
     "ev_zheng_he_first_voyage_1405",
+    "ev_zheng_he_voyages",
     "ev_zheng_he_voyages_begin"
   ],
   "1407": [
@@ -179,6 +184,7 @@
   ],
   "1498": [
     "ev_portuguese_arrive_indian_ocean",
+    "ev_portuguese_indian_ocean_intervention",
     "ev_vasco_da_gama_arrival_calicut_1498"
   ],
   "1502": [

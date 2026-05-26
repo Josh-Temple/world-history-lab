@@ -1,5 +1,12 @@
 # HANDOFF (2026-05-26)
 
+## Recent updates (2026-05-26 · Indian Ocean world-system expansion)
+
+- Added new `data/units/indian-ocean-world-system.json` and registered it in `data/units/index.json` for a cross-regional Indian Ocean macro-history learning unit.
+- Added new event bundle in `data/events.json` for Swahili trade growth, Chola maritime expansion, Malacca ascent, Islamic oceanic exchange networks, Zheng He voyages, and Portuguese intervention.
+- Added linked people records in `data/people.json` for Zheng He, Ibn Battuta, Parameswara, and Rajendra Chola I focused on Indian Ocean system coverage.
+- Extended `data/thematic-pathways.json` to connect the new unit/events into trade, diffusion, and imperial-expansion pathway flows.
+
 ## Recent updates (2026-05-26 · argument builder + thematic pathways)
 
 - Added new `apps/historical-argument-builder/` mode with structured thesis/evidence/causal/counterargument/synthesis workflow, local draft persistence, revision timestamps, and lightweight rubric heuristics.

@@ -3507,5 +3507,57 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "reviewed"
+  },
+  {
+    "id": "pe_zheng_he_indian_ocean",
+    "name": "Zheng He",
+    "region_ids": [
+      "reg_east_asia",
+      "reg_indian_ocean"
+    ],
+    "event_ids": [
+      "ev_zheng_he_voyages"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_ibn_battuta_indian_ocean",
+    "name": "Ibn Battuta",
+    "region_ids": [
+      "reg_africa",
+      "reg_indian_ocean"
+    ],
+    "event_ids": [
+      "ev_indian_ocean_islamic_trade_networks"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_parameswara_malacca",
+    "name": "Parameswara",
+    "region_ids": [
+      "reg_asia",
+      "reg_indian_ocean"
+    ],
+    "event_ids": [
+      "ev_rise_of_malacca"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
+  },
+  {
+    "id": "pe_rajendra_chola_i",
+    "name": "Rajendra Chola I",
+    "region_ids": [
+      "reg_asia",
+      "reg_indian_ocean"
+    ],
+    "event_ids": [
+      "ev_chola_maritime_expansion"
+    ],
+    "status": "draft",
+    "content_origin": "ai_assisted_self_reviewed"
   }
 ]

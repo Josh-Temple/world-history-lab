@@ -2148,6 +2148,48 @@
     }
   },
   {
+    "id": "ev_chola_maritime_expansion",
+    "label": "Chola Maritime Expansion in the Bay of Bengal",
+    "summary_short": "Chola naval campaigns and commerce linked South and Southeast Asian sea lanes.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_frontier_expansion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_world_system"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1025",
+      "end": "1025",
+      "year_start": 1025,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 10250101,
+      "sort_end": 10251231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1025
+    }
+  },
+  {
     "id": "ev_chola_naval_raids_srivijaya_1025",
     "label": "Chola naval raids on Srivijaya",
     "summary_short": "Chola naval raids on Srivijaya shaped long-distance maritime exchange across the Indian Ocean world.",
@@ -7787,6 +7829,49 @@
     }
   },
   {
+    "id": "ev_indian_ocean_islamic_trade_networks",
+    "label": "Expansion of Islamic Indian Ocean Trade Networks",
+    "summary_short": "Muslim merchant diasporas deepened commercial and cultural integration across the ocean.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_africa",
+      "reg_asia",
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_religious_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_world_system"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1200",
+      "end": "1200",
+      "year_start": 1200,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 12000101,
+      "sort_end": 12001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1200
+    }
+  },
+  {
     "id": "ev_indian_revolt_1857",
     "label": "Indian Rebellion of 1857",
     "summary_short": "The 1857 rebellion prompted the end of East India Company rule and the formal expansion of British crown governance in India.",
@@ -11940,6 +12025,50 @@
     }
   },
   {
+    "id": "ev_portuguese_indian_ocean_intervention",
+    "label": "Portuguese Intervention in Indian Ocean Networks",
+    "summary_short": "Portuguese coercive seaborne expansion disrupted existing commercial balances.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_western_europe",
+      "reg_africa",
+      "reg_asia",
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_military_reform"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_world_system"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1498",
+      "end": "1498",
+      "year_start": 1498,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14980101,
+      "sort_end": 14981231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1498
+    }
+  },
+  {
     "id": "ev_portuguese_round_cape_1488",
     "label": "Portuguese round the Cape route",
     "summary_short": "Portuguese round the Cape route shaped long-distance maritime exchange across the Indian Ocean world.",
@@ -12618,6 +12747,48 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 632
+    }
+  },
+  {
+    "id": "ev_rise_of_malacca",
+    "label": "Rise of Malacca as an Entrepot",
+    "summary_short": "Malacca emerged as a major entrepot mediating Indian Ocean and East Asian trade.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_asia",
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_world_system"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1400",
+      "end": "1400",
+      "year_start": 1400,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14000101,
+      "sort_end": 14001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1400
     }
   },
   {
@@ -14082,6 +14253,48 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 900
+    }
+  },
+  {
+    "id": "ev_swahili_coast_trade_expansion",
+    "label": "Swahili Coast Trade Expansion",
+    "summary_short": "Swahili port cities expanded as hubs in monsoon-driven trade circuits.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_africa",
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_urbanization"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_world_system"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1000",
+      "end": "1000",
+      "year_start": 1000,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 10000101,
+      "sort_end": 10001231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1000
     }
   },
   {
@@ -17892,6 +18105,48 @@
       "derived_precision": "year",
       "derived_certainty": "exact",
       "year_start": 1414
+    }
+  },
+  {
+    "id": "ev_zheng_he_voyages",
+    "label": "Zheng He Voyages",
+    "summary_short": "Ming fleets projected diplomacy and exchange across key Indian Ocean ports.",
+    "status": "draft",
+    "places": [],
+    "regions": [],
+    "region_ids": [
+      "reg_east_asia",
+      "reg_indian_ocean"
+    ],
+    "question_types": [],
+    "themes": [],
+    "concept_ids": [
+      "concept_trade_network_expansion",
+      "concept_technological_diffusion"
+    ],
+    "concept_tags": [],
+    "people_ids": [],
+    "related_event_ids": [],
+    "prerequisite_event_ids": [],
+    "consequence_event_ids": [],
+    "unit_ids": [
+      "unit_indian_ocean_world_system"
+    ],
+    "caused_by": [],
+    "effects": [],
+    "causes": [],
+    "time": {
+      "start": "1405",
+      "end": "1405",
+      "year_start": 1405,
+      "calendar": "gregorian"
+    },
+    "derived": {
+      "sort_start": 14050101,
+      "sort_end": 14051231,
+      "derived_precision": "year",
+      "derived_certainty": "exact",
+      "year_start": 1405
     }
   },
   {

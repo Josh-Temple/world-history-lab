@@ -1,0 +1,52 @@
+{
+  "id": "unit_indian_ocean_world_system",
+  "title": "Indian Ocean World System",
+  "label": "Indian Ocean World System",
+  "status": "draft",
+  "content_origin": "ai_assisted_self_reviewed",
+  "event_ids": [
+    "ev_swahili_coast_trade_expansion",
+    "ev_chola_maritime_expansion",
+    "ev_rise_of_malacca",
+    "ev_indian_ocean_islamic_trade_networks",
+    "ev_zheng_he_voyages",
+    "ev_portuguese_indian_ocean_intervention"
+  ],
+  "person_ids": [
+    "pe_zheng_he_indian_ocean",
+    "pe_ibn_battuta_indian_ocean",
+    "pe_parameswara_malacca",
+    "pe_rajendra_chola_i"
+  ],
+  "summary": "Long-duration maritime trade and cultural exchange system linking East Africa, the Middle East, South Asia, and Southeast Asia.",
+  "description": "Focuses on monsoon-enabled commerce, diasporic exchange, and political competition across the Indian Ocean basin.",
+  "regions": [
+    "reg_africa",
+    "reg_asia",
+    "reg_east_asia",
+    "reg_indian_ocean"
+  ],
+  "tags": [
+    "trade",
+    "cultural diffusion",
+    "maritime",
+    "state formation"
+  ],
+  "updated_at": "2026-05-26",
+  "app_profiles": {
+    "timeline-trainer": {
+      "enabled": true,
+      "question_types": [
+        "timeline_before_after",
+        "timeline_ordering"
+      ]
+    },
+    "historical-reasoning-lab": {
+      "enabled": true,
+      "question_types": [
+        "cause_and_effect",
+        "cross-regional comparison"
+      ]
+    }
+  }
+}
