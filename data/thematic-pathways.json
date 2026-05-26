@@ -1,0 +1,44 @@
+[
+  {
+    "id": "path_trade_integration",
+    "title": "Trade Integration Across Afro-Eurasia",
+    "recommended_level": "beginner",
+    "estimated_steps": 4,
+    "category": "trade integration",
+    "event_ids": ["ev_silk_road_expansion", "ev_indian_ocean_trade_growth", "ev_age_of_exploration"],
+    "summary": "Follows long-distance exchange from caravan systems to maritime expansion and global integration.",
+    "historical_significance": "Shows how exchange networks reshaped states, ideas, and economies.",
+    "recurring_structures": ["merchant diasporas", "port-city mediation", "state-taxed exchange"],
+    "major_transitions": ["overland to maritime concentration", "regional to intercontinental intensity"],
+    "cross_era_connections": "Links medieval exchange structures with early modern oceanic empires.",
+    "why_it_matters": "Helps learners explain continuity and change in connectivity over centuries."
+  },
+  {
+    "id": "path_state_formation",
+    "title": "State Formation and Imperial Overstretch",
+    "recommended_level": "intermediate",
+    "estimated_steps": 5,
+    "category": "state formation",
+    "event_ids": ["ev_han_consolidation", "ev_abbasid_revolution", "ev_french_revolution_1789", "ev_world_war_i_1914"],
+    "summary": "Compares expansion, legitimacy, and crisis across major state systems.",
+    "historical_significance": "Connects institutional growth to internal and external pressure cycles.",
+    "recurring_structures": ["fiscal strain", "military mobilization", "elite contestation"],
+    "major_transitions": ["dynastic to bureaucratic centralization", "imperial to mass-politics legitimacy"],
+    "cross_era_connections": "Pairs premodern imperial consolidation with modern revolutionary and total-war states.",
+    "why_it_matters": "Builds causal reasoning around how states scale and why they destabilize."
+  },
+  {
+    "id": "path_migration_systems",
+    "title": "Migration Systems and Social Transformation",
+    "recommended_level": "intermediate",
+    "estimated_steps": 4,
+    "category": "migration systems",
+    "event_ids": ["ev_bantu_migrations", "ev_atlantic_slave_trade_expansion", "ev_partition_of_india_1947"],
+    "summary": "Tracks migration as a long-duration engine of demographic and political change.",
+    "historical_significance": "Highlights forced and voluntary movement as drivers of new social orders.",
+    "recurring_structures": ["labor demand", "frontier settlement", "identity renegotiation"],
+    "major_transitions": ["regional diffusion to coerced global displacement"],
+    "cross_era_connections": "Connects early population movement patterns to modern nation-state border crises.",
+    "why_it_matters": "Supports synthesis on how mobility changes institutions, identity, and power."
+  }
+]

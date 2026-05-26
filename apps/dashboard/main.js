@@ -12,6 +12,7 @@ const quickActionsEl = document.getElementById('quick-actions');
 const progressionSummaryEl = document.getElementById('progression-summary');
 const recommendedPathsEl = document.getElementById('recommended-paths');
 const guidedSessionLaunchEl = document.getElementById('guided-session-launch');
+const thematicPathwaysEl = document.getElementById('thematic-pathways');
 
 function readRecentUnits() {
   try {
@@ -85,6 +86,12 @@ async function render() {
   const recommended = getRecommendedPaths({ masteredConcepts, availablePaths: paths });
 
   const levels = { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced' };
+
+  const thematicPaths = await fetch('/data/thematic-pathways.json').then((r) => r.json()).catch(() => []);
+  thematicPathwaysEl.innerHTML = '<h2>Featured Thematic Journeys</h2>' + (Array.isArray(thematicPaths) && thematicPaths.length
+    ? `<ul>${thematicPaths.slice(0,3).map((path) => `<li><strong>${path.title}</strong> · ${(path.recommended_level || 'all').toUpperCase()} · ~${path.estimated_steps || 0} steps<br/><span>${path.why_it_matters || path.summary || ''}</span></li>`).join('')}</ul>`
+    : '<p>No thematic pathways loaded yet.</p>');
+
   progressionSummaryEl.innerHTML = `<h2>Progression Summary</h2><p>Recommended next concept cluster: ${masteredConcepts.length ? 'Foundations and early trade systems' : 'Start with beginner foundations'}.</p><p>Concept mastery: ${Math.round((conceptSummary.avgScore || 0) * 100)}% across ${conceptSummary.trackedConcepts} tracked concepts.</p>${weakestConcepts.length ? `<p>Weakest area now: ${weakestConcepts[0].conceptId}</p>` : '<p>No concept mastery data yet.</p>'}`;
   recommendedPathsEl.innerHTML = '<h2>Recommended Learning Paths</h2>' + (recommended.length
     ? `<ul>${recommended.slice(0,4).map((path) => `<li>Ready for ${levels[path.recommended_level] || 'Next'} · ${path.label}</li>`).join('')}</ul>`
