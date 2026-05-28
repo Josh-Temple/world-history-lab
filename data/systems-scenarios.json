@@ -1,0 +1,43 @@
+[
+  {
+    "id": "sys_late_roman_frontier",
+    "title": "Late Roman Frontier Pressure",
+    "starting_conditions": {
+      "treasury": 60,
+      "military_pressure": 75,
+      "political_stability": 45,
+      "economic_stability": 50,
+      "elite_fragmentation": 40
+    },
+    "decisions": [
+      {
+        "id": "raise_taxes",
+        "label": "Increase taxation",
+        "summary": "Boost short-term treasury but risks elite backlash and legitimacy decline.",
+        "immediate": { "treasury": 12, "economic_stability": -7, "elite_fragmentation": 5 },
+        "deferred": [{ "in_turns": 2, "effects": { "political_stability": -8 } }]
+      },
+      {
+        "id": "negotiate_alliance",
+        "label": "Negotiate frontier alliance",
+        "summary": "Reduce military pressure, but create long-term fiscal obligations.",
+        "immediate": { "military_pressure": -10, "political_stability": 4, "treasury": -5 },
+        "deferred": [{ "in_turns": 2, "effects": { "treasury": -7, "elite_fragmentation": 3 } }]
+      },
+      {
+        "id": "cut_military_spending",
+        "label": "Reduce military spending",
+        "summary": "Stabilize treasury now but raise external pressure over time.",
+        "immediate": { "treasury": 8, "military_pressure": 6 },
+        "deferred": [{ "in_turns": 1, "effects": { "military_pressure": 8, "political_stability": -4 } }]
+      },
+      {
+        "id": "suppress_elites",
+        "label": "Suppress elite faction",
+        "summary": "Temporarily reduce fragmentation but harms broader legitimacy.",
+        "immediate": { "elite_fragmentation": -9, "political_stability": -5 },
+        "deferred": [{ "in_turns": 2, "effects": { "elite_fragmentation": 10, "military_pressure": 5 } }]
+      }
+    ]
+  }
+]

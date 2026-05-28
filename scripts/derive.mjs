@@ -1065,6 +1065,26 @@ function buildThematicPathwaySummary(pathways = [], events = []) {
   };
 }
 
+
+function buildMigrationNetworkSummary(pathways = []) {
+  const regionConnectivity = new Map();
+  let diffusionDensity = 0;
+  let overlapLinks = 0;
+  for (const item of (Array.isArray(pathways) ? pathways : [])) {
+    const regions = Array.isArray(item.regions) ? item.regions : [];
+    diffusionDensity += Array.isArray(item.diffusion_dimensions) ? item.diffusion_dimensions.length : 0;
+    overlapLinks += Array.isArray(item.comparison_links) ? item.comparison_links.length : 0;
+    for (const r of regions) regionConnectivity.set(r, (regionConnectivity.get(r) || 0) + 1);
+  }
+  return {
+    generated_at: new Date().toISOString(),
+    pathway_count: Array.isArray(pathways) ? pathways.length : 0,
+    region_connectivity: Object.fromEntries([...regionConnectivity.entries()].sort((a,b)=>b[1]-a[1])),
+    diffusion_density: diffusionDensity,
+    pathway_overlap_links: overlapLinks,
+  };
+}
+
 async function main() {
   const validationSummary = await validateData({ log: true });
   if (validationSummary.errors.length > 0) {
@@ -1092,6 +1112,7 @@ async function main() {
   const people = await readJson("data/people.json");
   const concepts = await readJson("data/concepts.json");
   const thematicPathways = await readJson("data/thematic-pathways.json").catch(() => []);
+  const migrationPathways = await readJson("data/migration-diaspora-pathways.json").catch(() => []);
   assertArray(people, "data/people.json");
   assertArray(concepts, "data/concepts.json");
   const peopleIdSet = validatePeople(people);
@@ -1160,6 +1181,7 @@ async function main() {
     .sort((a, b) => b.forgettingRisk - a.forgettingRisk)
     .slice(0, 80);
   const thematicPathwaysSummary = buildThematicPathwaySummary(thematicPathways, normalizedEvents);
+  const migrationNetworkSummary = buildMigrationNetworkSummary(migrationPathways);
 
   const unitEventPoolTypeCount = Object.values(unitEventPool)
     .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
@@ -1181,6 +1203,7 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "process-chains.json"), toJson(processChains), "utf8");
   await writeFile(path.join(DERIVED_DIR, "retention-priority.json"), toJson(retentionPriority), "utf8");
   await writeFile(path.join(DERIVED_DIR, "thematic-pathways-summary.json"), toJson(thematicPathwaysSummary), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "migration-network-summary.json"), toJson(migrationNetworkSummary), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_concept.json"), toJson(eventsByConcept), "utf8");
@@ -1189,6 +1212,7 @@ async function main() {
   await writeFile(path.join(DATA_DERIVED_DIR, "progression-map.json"), toJson(progressionMap), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "process-chains.json"), toJson(processChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "tag_clusters.json"), toJson(tagClusters), "utf8");
+  await writeFile(path.join(DATA_DERIVED_DIR, "migration-network-summary.json"), toJson(migrationNetworkSummary), "utf8");
 
   console.log(
     `[derive] Validation summary: ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events, ${Object.keys(eventsByYear).length} year buckets, ${unitEventPoolTypeCount} unit/type eligibility pools, and ${causalityChains.length} causality chains, ${causalPairs.length} causal pairs, plus ${tagClusters.length} tag clusters in /derived and /data/derived.`
