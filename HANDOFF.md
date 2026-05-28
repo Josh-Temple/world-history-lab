@@ -1,3 +1,14 @@
+# HANDOFF (2026-05-27)
+
+## Recent updates (2026-05-27 · systems simulator + migration pathways)
+
+- Added new `apps/historical-systems-simulator/` mode with multi-turn constrained decision flows, structural pressure indicators, delayed consequence queues, and local replay persistence.
+- Added shared `apps/shared/systems-simulation-engine.js` with scenario initialization, turn advancement, decision application, and structural pressure calculation helpers.
+- Added `data/systems-scenarios.json` seed scenario for Late Roman frontier governance tradeoffs.
+- Added `data/migration-diaspora-pathways.json` with migration-system records, diffusion dimensions, comparison links, and reasoning prompts.
+- Extended validation (`scripts/validate-data.mjs`) to verify migration pathway dataset shape.
+- Extended derive pipeline (`scripts/derive.mjs`) to output migration network summaries at `derived/migration-network-summary.json` and `data/derived/migration-network-summary.json`.
+
 # HANDOFF (2026-05-26)
 
 ## Recent updates (2026-05-26 · Indian Ocean world-system expansion)

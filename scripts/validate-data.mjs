@@ -194,6 +194,7 @@ export async function validateData({ log = false } = {}) {
 
   let learningPaths = [];
   let thematicPathways = [];
+  let migrationPathways = [];
   try {
     const lp = await readJson("data/learning-paths.json");
     if (!Array.isArray(lp)) {
@@ -211,6 +212,23 @@ export async function validateData({ log = false } = {}) {
     else thematicPathways = tp;
   } catch {
     warnings.push("data/thematic-pathways.json is missing; thematic journeys disabled.");
+  }
+
+  try {
+    const mp = await readJson("data/migration-diaspora-pathways.json");
+    if (!Array.isArray(mp)) errors.push("data/migration-diaspora-pathways.json must be an array.");
+    else migrationPathways = mp;
+  } catch {
+    warnings.push("data/migration-diaspora-pathways.json is missing; migration pathways disabled.");
+  }
+
+  for (const [index, record] of migrationPathways.entries()) {
+    if (!isObject(record)) {
+      errors.push(`migration-diaspora-pathways[${index}] must be an object.`);
+      continue;
+    }
+    if (!Array.isArray(record.event_ids)) errors.push(`Migration pathway ${describeRecordId(record, `[index ${index}]`)} must include event_ids array.`);
+    if (!Array.isArray(record.concept_ids)) errors.push(`Migration pathway ${describeRecordId(record, `[index ${index}]`)} must include concept_ids array.`);
   }
 
   for (const [index, pathRecord] of learningPaths.entries()) {

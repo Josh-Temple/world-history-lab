@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-27T09:25:52.411Z",
+  "pathway_count": 2,
+  "region_connectivity": {
+    "reg_sub_saharan_africa": 1,
+    "reg_southeast_asia": 1,
+    "reg_indian_ocean": 1
+  },
+  "diffusion_density": 6,
+  "pathway_overlap_links": 3
+}

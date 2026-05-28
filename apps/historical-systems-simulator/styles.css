@@ -1,0 +1,11 @@
+body { font-family: system-ui, sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
+#systems-simulator { max-width: 960px; margin: 0 auto; padding: 16px; }
+.panel { background: #1e293b; border-radius: 10px; padding: 12px; margin: 12px 0; }
+.grid { display: grid; gap: 10px; grid-template-columns: 1fr; }
+@media (min-width: 700px){ .grid { grid-template-columns: repeat(2,1fr); } }
+.decision-btn { width: 100%; text-align: left; margin: 6px 0; padding: 10px; border: 1px solid #334155; border-radius: 8px; background: #0b1220; color: #e2e8f0; }
+.bar-wrap { margin: 7px 0; }
+.bar-label { display:flex; justify-content:space-between; font-size: .9rem; }
+.bar { background: #334155; border-radius: 999px; height: 8px; overflow: hidden; }
+.bar > span { display:block; height:100%; background:#38bdf8; }
+.muted { color: #94a3b8; }

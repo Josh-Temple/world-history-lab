@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mig_bantu_expansion",
+    "title": "Bantu Expansion",
+    "regions": ["reg_sub_saharan_africa"],
+    "event_ids": ["ev_bantu_expansion"],
+    "concept_ids": ["concept_migration"],
+    "diffusion_dimensions": ["language", "technology", "agriculture"],
+    "comparison_links": ["mig_austronesian_expansion"],
+    "reasoning_prompts": ["How did migration reshape linguistic frontiers and local state development?"]
+  },
+  {
+    "id": "mig_austronesian_expansion",
+    "title": "Austronesian Migration Systems",
+    "regions": ["reg_southeast_asia", "reg_indian_ocean"],
+    "event_ids": [],
+    "concept_ids": ["concept_migration"],
+    "diffusion_dimensions": ["navigation", "language", "commercial networks"],
+    "comparison_links": ["mig_bantu_expansion", "mig_indian_ocean_diasporas"],
+    "reasoning_prompts": ["Which structural conditions enabled long-distance migration over maritime spaces?"]
+  }
+]
