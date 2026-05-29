@@ -1,3 +1,10 @@
+## Recent updates (2026-05-29 · validation and data integrity hardening)
+
+- Confirmed repository inspection access for the core app/data/script paths and ran the Friday validation suite against the current dataset.
+- Added missing `question_types` coverage to Indian Ocean event records so the legacy validator and derived unit/type eligibility pools can include those events.
+- Normalized Meiji diplomatic causal-link categories from the non-canonical `international` value to the existing `diplomatic` taxonomy bucket.
+- Added package scripts for `validate` and `validate-data` so the full validation stack is easier to run from npm.
+
 ## Recent updates (2026-05-28 · adaptive next-session routing layer)
 
 - Added shared `apps/shared/next-session-router.js` with adaptive learner-needs aggregation, fatigue/variety balancing, and continuity-aware next-session recommendations.

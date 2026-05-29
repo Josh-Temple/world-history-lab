@@ -174,7 +174,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_military_reform",
@@ -215,7 +219,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -715,7 +723,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -870,7 +882,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_state_formation",
@@ -1041,7 +1057,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_military_reform",
@@ -1513,7 +1533,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -1931,7 +1955,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -2158,7 +2186,11 @@
       "reg_asia",
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -2199,7 +2231,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_frontier_expansion",
@@ -2331,7 +2367,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -2422,7 +2462,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -2513,7 +2557,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -4067,7 +4115,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_bureaucratic_centralization",
@@ -4253,7 +4305,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -5160,7 +5216,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -5532,7 +5592,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -5573,7 +5637,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_religious_diffusion",
@@ -5674,7 +5742,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_religious_diffusion",
@@ -5925,7 +5997,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -6069,7 +6145,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -6110,7 +6190,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -7840,7 +7924,11 @@
       "reg_asia",
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -8276,7 +8364,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -8826,7 +8918,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_state_formation",
@@ -8867,7 +8963,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_religious_diffusion",
@@ -8910,7 +9010,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_bureaucratic_centralization",
@@ -9473,7 +9577,7 @@
     "effects": [
       {
         "label": "Heightened anti-colonial movements and tensions across East Asia",
-        "category": "international"
+        "category": "diplomatic"
       }
     ],
     "causes": [
@@ -9741,7 +9845,7 @@
     "causes": [
       {
         "label": "Institutional modernization aimed at future treaty revision negotiations",
-        "category": "international"
+        "category": "diplomatic"
       }
     ],
     "time": {
@@ -10013,7 +10117,7 @@
     "causes": [
       {
         "label": "U.S. need for Pacific routes and supply ports",
-        "category": "international"
+        "category": "diplomatic"
       }
     ],
     "time": {
@@ -10072,7 +10176,7 @@
     "effects": [
       {
         "label": "Advanced stronger control over Korea",
-        "category": "international"
+        "category": "diplomatic"
       }
     ],
     "causes": [
@@ -10133,7 +10237,7 @@
     "effects": [
       {
         "label": "Territorial and indemnity gains under the Treaty of Shimonoseki",
-        "category": "international"
+        "category": "diplomatic"
       }
     ],
     "causes": [
@@ -10163,7 +10267,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_bureaucratic_centralization",
@@ -10535,7 +10643,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_state_formation",
@@ -11096,7 +11208,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_legitimacy_crisis",
@@ -11496,7 +11612,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_state_formation",
@@ -11537,7 +11657,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_military_reform",
@@ -11905,7 +12029,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_state_formation",
@@ -11948,7 +12076,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -11991,7 +12123,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_bureaucratic_centralization",
@@ -12037,7 +12173,11 @@
       "reg_asia",
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -12078,7 +12218,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_technological_diffusion",
@@ -12760,7 +12904,11 @@
       "reg_asia",
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -13803,7 +13951,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -13896,7 +14048,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_technological_diffusion",
@@ -14180,7 +14336,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_urbanization",
@@ -14221,7 +14381,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -14266,7 +14430,11 @@
       "reg_africa",
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -15257,7 +15425,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -17945,7 +18117,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -17988,7 +18164,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -18031,7 +18211,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -18074,7 +18258,11 @@
     "region_ids": [
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
@@ -18118,7 +18306,11 @@
       "reg_east_asia",
       "reg_indian_ocean"
     ],
-    "question_types": [],
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ],
     "themes": [],
     "concept_ids": [
       "concept_trade_network_expansion",
