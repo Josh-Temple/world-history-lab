@@ -1864,7 +1864,7 @@
     "causes": [
       {
         "label": "U.S. need for Pacific routes and supply ports",
-        "category": "international",
+        "category": "diplomatic",
         "note": null
       }
     ],
@@ -2435,7 +2435,7 @@
     "causes": [
       {
         "label": "Institutional modernization aimed at future treaty revision negotiations",
-        "category": "international",
+        "category": "diplomatic",
         "note": null
       }
     ],
@@ -2614,7 +2614,7 @@
     "effects": [
       {
         "label": "Territorial and indemnity gains under the Treaty of Shimonoseki",
-        "category": "international",
+        "category": "diplomatic",
         "note": null
       }
     ],
@@ -2693,7 +2693,7 @@
     "effects": [
       {
         "label": "Advanced stronger control over Korea",
-        "category": "international",
+        "category": "diplomatic",
         "note": null
       }
     ],
@@ -2773,7 +2773,7 @@
     "effects": [
       {
         "label": "Heightened anti-colonial movements and tensions across East Asia",
-        "category": "international",
+        "category": "diplomatic",
         "note": null
       }
     ],
@@ -12234,7 +12234,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Monsoon route navigation becomes systematized shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Monsoon route navigation becomes systematized shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_axum_red_sea_trade_growth",
@@ -12255,7 +12260,12 @@
       "ev_hippalus_monsoon_route_usage"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Aksum expands Red Sea exchange links shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Aksum expands Red Sea exchange links shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_swahili_city_states_growth_900",
@@ -12277,7 +12287,12 @@
       "ev_axum_red_sea_trade_growth"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Swahili port-city growth accelerates shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Swahili port-city growth accelerates shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_kilwa_gold_trade_integration",
@@ -12298,7 +12313,12 @@
       "ev_swahili_city_states_growth_900"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Kilwa integrates gold and oceanic exchange shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Kilwa integrates gold and oceanic exchange shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_chola_naval_raids_srivijaya_1025",
@@ -12317,7 +12337,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Chola naval raids on Srivijaya shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Chola naval raids on Srivijaya shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_srivijaya_maritime_mediation",
@@ -12336,7 +12361,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Srivijaya mediates strait commerce shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Srivijaya mediates strait commerce shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_calicut_port_as_hub",
@@ -12355,7 +12385,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Calicut emerges as major entrepot shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Calicut emerges as major entrepot shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_hormuz_port_ascendancy",
@@ -12374,7 +12409,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Hormuz rises as Gulf transit hub shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Hormuz rises as Gulf transit hub shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_aden_red_sea_gateway_peak",
@@ -12393,7 +12433,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Aden peaks as Red Sea gateway shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Aden peaks as Red Sea gateway shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_gujarati_merchants_diaspora_expands",
@@ -12412,7 +12457,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Gujarati merchant diaspora expands shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Gujarati merchant diaspora expands shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_ibn_battuta_indian_ocean_itinerary",
@@ -12431,7 +12481,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Ibn Battuta documents Indian Ocean circuits shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Ibn Battuta documents Indian Ocean circuits shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_ming_maritime_expansion_policy",
@@ -12450,7 +12505,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Ming court authorizes maritime projection shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Ming court authorizes maritime projection shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_zheng_he_first_voyage_1405",
@@ -12471,7 +12531,12 @@
       "ev_ming_maritime_expansion_policy"
     ],
     "consequence_event_ids": [],
-    "summary_short": "First voyage of Zheng He shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "First voyage of Zheng He shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_zheng_he_calicut_visit",
@@ -12492,7 +12557,12 @@
       "ev_zheng_he_first_voyage_1405"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Zheng He fleet engages Calicut diplomacy shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Zheng He fleet engages Calicut diplomacy shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_zheng_he_hormuz_mission",
@@ -12513,7 +12583,12 @@
       "ev_zheng_he_calicut_visit"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Zheng He reaches Hormuz shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Zheng He reaches Hormuz shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_zheng_he_east_africa_contact",
@@ -12534,7 +12609,12 @@
       "ev_zheng_he_hormuz_mission"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Ming-Swahili diplomatic contact deepens shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Ming-Swahili diplomatic contact deepens shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_malacca_foundation_1400",
@@ -12553,7 +12633,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Foundation of Malacca polity shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Foundation of Malacca polity shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_malacca_islamization",
@@ -12574,7 +12659,12 @@
       "ev_malacca_foundation_1400"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Malacca court Islamization consolidates networks shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Malacca court Islamization consolidates networks shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_malacca_port_regulation",
@@ -12595,7 +12685,12 @@
       "ev_malacca_foundation_1400"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Malacca develops multilingual port governance shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Malacca develops multilingual port governance shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_bengal_textile_exports_expand",
@@ -12614,7 +12709,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Bengal textile exports scale across ocean shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Bengal textile exports scale across ocean shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_cinnamon_trade_ceylon_growth",
@@ -12633,7 +12733,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Ceylon cinnamon trade intensifies shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Ceylon cinnamon trade intensifies shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_portuguese_round_cape_1488",
@@ -12652,7 +12757,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Portuguese round the Cape route shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Portuguese round the Cape route shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_vasco_da_gama_arrival_calicut_1498",
@@ -12673,7 +12783,12 @@
       "ev_portuguese_round_cape_1488"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Vasco da Gama reaches Calicut shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Vasco da Gama reaches Calicut shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_portuguese_cartaz_system",
@@ -12694,7 +12809,12 @@
       "ev_vasco_da_gama_arrival_calicut_1498"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Portuguese cartaz pass system imposed shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Portuguese cartaz pass system imposed shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_battle_diu_1509",
@@ -12715,7 +12835,12 @@
       "ev_portuguese_cartaz_system"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Battle of Diu and Portuguese naval supremacy shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Battle of Diu and Portuguese naval supremacy shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_portuguese_capture_goa_1510",
@@ -12736,7 +12861,12 @@
       "ev_battle_diu_1509"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Portuguese capture Goa shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Portuguese capture Goa shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_portuguese_capture_malacca_1511",
@@ -12757,7 +12887,12 @@
       "ev_battle_diu_1509"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Portuguese capture Malacca shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Portuguese capture Malacca shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_ottoman_expansion_red_sea_1517",
@@ -12776,7 +12911,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Ottoman expansion into Red Sea politics shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Ottoman expansion into Red Sea politics shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_ottoman_portuguese_rivalry_indian_ocean",
@@ -12797,7 +12937,12 @@
       "ev_ottoman_expansion_red_sea_1517"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Ottoman-Portuguese rivalry intensifies shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Ottoman-Portuguese rivalry intensifies shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_mughal_gujarat_annexation_1573",
@@ -12816,7 +12961,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Mughal annexation of Gujarat ports shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Mughal annexation of Gujarat ports shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_aceh_ottoman_links",
@@ -12835,7 +12985,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Aceh seeks Ottoman military links shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Aceh seeks Ottoman military links shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_dutch_voc_formation_1602_indian_ocean",
@@ -12854,7 +13009,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "VOC formation restructures spice commerce shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "VOC formation restructures spice commerce shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_english_eic_indian_ocean_entry_1600",
@@ -12873,7 +13033,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "EIC enters Indian Ocean competition shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "EIC enters Indian Ocean competition shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_batavia_founded_1619",
@@ -12894,7 +13059,12 @@
       "ev_dutch_voc_formation_1602_indian_ocean"
     ],
     "consequence_event_ids": [],
-    "summary_short": "Batavia founded as VOC headquarters shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Batavia founded as VOC headquarters shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_oman_expels_portuguese_muscat_1650",
@@ -12913,7 +13083,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Omani forces expel Portuguese from Muscat shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Omani forces expel Portuguese from Muscat shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_french_compagnie_indes_1664",
@@ -12932,7 +13107,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "French East India Company enters network shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "French East India Company enters network shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_hadrami_diaspora_southeast_asia",
@@ -12951,7 +13131,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Hadrami diaspora links Arabia to Southeast Asia shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Hadrami diaspora links Arabia to Southeast Asia shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_clove_monopoly_conflicts_moluccas",
@@ -12970,7 +13155,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Clove monopoly conflicts reshape production shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Clove monopoly conflicts reshape production shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_surat_decline_bombay_rise",
@@ -12989,7 +13179,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Shift from Surat to Bombay maritime hub shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Shift from Surat to Bombay maritime hub shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_coffee_trade_yemen_red_sea",
@@ -13008,7 +13203,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Yemeni coffee trade links Red Sea and Indian Ocean shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Yemeni coffee trade links Red Sea and Indian Ocean shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_hajj_shipping_network_expansion",
@@ -13027,7 +13227,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Hajj shipping circuits expand interregional ties shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Hajj shipping circuits expand interregional ties shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_steam_navigation_indian_ocean_1830s",
@@ -13046,7 +13251,12 @@
     "content_origin": "ai_assisted_self_reviewed",
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
-    "summary_short": "Steam navigation accelerates Indian Ocean exchange shaped long-distance maritime exchange across the Indian Ocean world."
+    "summary_short": "Steam navigation accelerates Indian Ocean exchange shaped long-distance maritime exchange across the Indian Ocean world.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_swahili_coast_trade_expansion",
@@ -13064,7 +13274,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Swahili port cities expanded as hubs in monsoon-driven trade circuits."
+    "summary_short": "Swahili port cities expanded as hubs in monsoon-driven trade circuits.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_chola_maritime_expansion",
@@ -13082,7 +13297,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Chola naval campaigns and commerce linked South and Southeast Asian sea lanes."
+    "summary_short": "Chola naval campaigns and commerce linked South and Southeast Asian sea lanes.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_rise_of_malacca",
@@ -13100,7 +13320,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Malacca emerged as a major entrepot mediating Indian Ocean and East Asian trade."
+    "summary_short": "Malacca emerged as a major entrepot mediating Indian Ocean and East Asian trade.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_indian_ocean_islamic_trade_networks",
@@ -13119,7 +13344,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Muslim merchant diasporas deepened commercial and cultural integration across the ocean."
+    "summary_short": "Muslim merchant diasporas deepened commercial and cultural integration across the ocean.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_zheng_he_voyages",
@@ -13137,7 +13367,12 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Ming fleets projected diplomacy and exchange across key Indian Ocean ports."
+    "summary_short": "Ming fleets projected diplomacy and exchange across key Indian Ocean ports.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   },
   {
     "id": "ev_portuguese_indian_ocean_intervention",
@@ -13157,6 +13392,11 @@
     ],
     "status": "draft",
     "content_origin": "ai_assisted_self_reviewed",
-    "summary_short": "Portuguese coercive seaborne expansion disrupted existing commercial balances."
+    "summary_short": "Portuguese coercive seaborne expansion disrupted existing commercial balances.",
+    "question_types": [
+      "timeline_before_after",
+      "what_happened",
+      "cause_and_effect"
+    ]
   }
 ]

@@ -1,3 +1,24 @@
+# HANDOFF (2026-05-29)
+
+## Recent updates (2026-05-29 · validation and data integrity hardening)
+
+- Per Friday validation/integration priority, inspected the actual repository files instead of relying on the previous failed-retrieval summary. Core paths are present, including `README.md`, `package.json`, `index.html`, `data/events.json`, `data/people.json`, `data/units/index.json`, `data/units/*`, `scripts/derive.mjs`, validation scripts, and the `apps/*` mini-app directories.
+- Fixed the legacy `scripts/validate.mjs` failure by adding default practice coverage (`timeline_before_after`, `what_happened`, `cause_and_effect`) to 48 Indian Ocean event records that were missing `question_types`.
+- Removed the known `validate-data` warnings for Meiji causal links by remapping the non-canonical `international` category to the allowed `diplomatic` category.
+- Added npm shortcuts for `validate-data` and `validate`, then regenerated derived outputs with `npm run derive`.
+
+## Validation notes
+
+- Passing checks: `npm run smoke`, `npm run sanity`, `npm run derive`, `npm run validate-derived`, `npm run validate-data`, and `npm run validate`.
+- Remaining non-blocking reliability item: `npm run derive` still emits many unknown-tag fallback warnings. The derive pipeline succeeds, but a future cleanup should normalize recurring tags into the canonical tag dictionary or update the warning strategy.
+- Environment note: npm emits `Unknown env config "http-proxy"`; it does not block the scripts in this run.
+
+## Next-session follow-up
+
+1. Normalize high-volume derive unknown tags (for example industrialization, regional, and period tags) so derive output is quieter and easier to audit.
+2. Consider adding a single npm `check` script that chains smoke, sanity, derive, validate-derived, validate-data, and validate for one-command Friday verification.
+3. Continue expanding question-type metadata beyond the default fallback for the Indian Ocean events where a more specialized practice format would be useful.
+
 # HANDOFF (2026-05-28)
 
 ## Recent updates (2026-05-28 · adaptive next-session routing layer)
