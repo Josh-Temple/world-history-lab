@@ -3,6 +3,7 @@ import { getConceptMasterySummary, getWeakestConcepts } from '../shared/mastery-
 import { buildGuidedSession } from '../shared/guided-session-controller.js';
 import { recommendReviewMode } from '../shared/retention-engine.js';
 import { saveSessionHandoff, loadSessionHandoff } from '../shared/session-handoff-store.js';
+import { recommendNextSession } from '../shared/next-session-router.js';
 import { getNormalizedEvents } from '../shared/data-store.js';
 
 const reviewSummary = document.getElementById('review-summary');
@@ -13,6 +14,7 @@ const progressionSummaryEl = document.getElementById('progression-summary');
 const recommendedPathsEl = document.getElementById('recommended-paths');
 const guidedSessionLaunchEl = document.getElementById('guided-session-launch');
 const thematicPathwaysEl = document.getElementById('thematic-pathways');
+const nextSessionPanelEl = document.getElementById('next-session-panel');
 
 function readRecentUnits() {
   try {
@@ -97,6 +99,10 @@ async function render() {
     ? `<ul>${recommended.slice(0,4).map((path) => `<li>Ready for ${levels[path.recommended_level] || 'Next'} · ${path.label}</li>`).join('')}</ul>`
     : '<p>Complete more foundations to unlock intermediate pathways.</p>');
 
+
+
+  const nextSession = recommendNextSession();
+  nextSessionPanelEl.innerHTML = `<h2>Recommended Next Session</h2><div class="next-session-card"><p><strong>${nextSession.primary.label}</strong> · ${nextSession.estimatedMinutes} min · target: ${nextSession.primary.skill}</p><p>${nextSession.primary.why}</p><p>Why now: fatigue risk ${Math.round(nextSession.balanceMetrics.fatigueRisk * 100)}% · variety score ${Math.round(nextSession.balanceMetrics.varietyScore * 100)}%</p><p><a href="${nextSession.primary.app}">Start this session</a></p>${nextSession.alternates.length ? `<details><summary>Alternatives</summary><ul>${nextSession.alternates.map((alt) => `<li><a href="${alt.app}">${alt.label}</a> · ${alt.skill}</li>`).join('')}</ul></details>` : ''}</div>`;
 
   const guidedSession = buildGuidedSession({
     masteryState: { avgScore: conceptSummary.avgScore, weakConcepts: weakestConcepts.map((c) => c.conceptId) },

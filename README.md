@@ -1,3 +1,9 @@
+## Recent updates (2026-05-28 · adaptive next-session routing layer)
+
+- Added shared `apps/shared/next-session-router.js` with adaptive learner-needs aggregation, fatigue/variety balancing, and continuity-aware next-session recommendations.
+- Updated `apps/dashboard/main.js` and `apps/dashboard/index.html` to surface a new **Recommended Next Session** panel with rationale, estimated duration, skill target, and alternatives.
+- Extended derive pipeline (`scripts/derive.mjs`) to emit `derived/session-recommendations.json` and `data/derived/session-recommendations.json` for interpretable recommendation metadata.
+
 # World History Lab
 
 ## Recent updates (2026-05-27 · systems simulator + migration pathways)
