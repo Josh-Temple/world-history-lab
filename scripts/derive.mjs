@@ -1183,6 +1183,18 @@ async function main() {
   const thematicPathwaysSummary = buildThematicPathwaySummary(thematicPathways, normalizedEvents);
   const migrationNetworkSummary = buildMigrationNetworkSummary(migrationPathways);
 
+  const sessionRecommendations = {
+    generated_at: new Date().toISOString(),
+    recommendation_categories: ['reinforcement', 'reasoning', 'source-analysis'],
+    session_balance_metrics: { intensity_mix_target: ['low', 'medium', 'high'], max_repeat_same_mode: 1, fatigue_guardrail_minutes: 25 },
+    app_rotation_summary: [
+      { app: 'timeline-trainer', role: 'low-intensity reinforcement' },
+      { app: 'historical-source-lab', role: 'evidence evaluation' },
+      { app: 'historical-systems-simulator', role: 'causal systems reasoning' },
+      { app: 'historical-argument-builder', role: 'synthesis and argumentation' },
+    ],
+  };
+
   const unitEventPoolTypeCount = Object.values(unitEventPool)
     .reduce((acc, item) => acc + Object.keys(item.eligible_ids || {}).length, 0);
 
@@ -1204,6 +1216,7 @@ async function main() {
   await writeFile(path.join(DERIVED_DIR, "retention-priority.json"), toJson(retentionPriority), "utf8");
   await writeFile(path.join(DERIVED_DIR, "thematic-pathways-summary.json"), toJson(thematicPathwaysSummary), "utf8");
   await writeFile(path.join(DERIVED_DIR, "migration-network-summary.json"), toJson(migrationNetworkSummary), "utf8");
+  await writeFile(path.join(DERIVED_DIR, "session-recommendations.json"), toJson(sessionRecommendations), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "causal_chains.json"), toJson(causalityChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_region.json"), toJson(eventsByRegion), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "index.events_by_concept.json"), toJson(eventsByConcept), "utf8");
@@ -1213,6 +1226,7 @@ async function main() {
   await writeFile(path.join(DATA_DERIVED_DIR, "process-chains.json"), toJson(processChains), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "tag_clusters.json"), toJson(tagClusters), "utf8");
   await writeFile(path.join(DATA_DERIVED_DIR, "migration-network-summary.json"), toJson(migrationNetworkSummary), "utf8");
+  await writeFile(path.join(DATA_DERIVED_DIR, "session-recommendations.json"), toJson(sessionRecommendations), "utf8");
 
   console.log(
     `[derive] Validation summary: ${events.length} events, ${people.length} people, ${units.length} units. Generated ${normalizedEvents.length} normalized events, ${Object.keys(eventsByYear).length} year buckets, ${unitEventPoolTypeCount} unit/type eligibility pools, and ${causalityChains.length} causality chains, ${causalPairs.length} causal pairs, plus ${tagClusters.length} tag clusters in /derived and /data/derived.`

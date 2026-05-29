@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-05-28T09:37:29.020Z",
+  "recommendation_categories": [
+    "reinforcement",
+    "reasoning",
+    "source-analysis"
+  ],
+  "session_balance_metrics": {
+    "intensity_mix_target": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "max_repeat_same_mode": 1,
+    "fatigue_guardrail_minutes": 25
+  },
+  "app_rotation_summary": [
+    {
+      "app": "timeline-trainer",
+      "role": "low-intensity reinforcement"
+    },
+    {
+      "app": "historical-source-lab",
+      "role": "evidence evaluation"
+    },
+    {
+      "app": "historical-systems-simulator",
+      "role": "causal systems reasoning"
+    },
+    {
+      "app": "historical-argument-builder",
+      "role": "synthesis and argumentation"
+    }
+  ]
+}

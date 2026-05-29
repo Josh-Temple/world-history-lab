@@ -1,3 +1,18 @@
+# HANDOFF (2026-05-28)
+
+## Recent updates (2026-05-28 · adaptive next-session routing layer)
+
+- Added `apps/shared/next-session-router.js` to aggregate learner-state signals (mastery gaps, recent-mode history, fatigue heuristic, continuity memory) and produce next-session recommendations.
+- Updated dashboard UI to render a learner-centric **Recommended Next Session** card with why/explanation text, duration estimates, target skill, and alternate session options.
+- Added continuity memory persistence (`whl_next_session_memory_v1`) to reduce interrupted-flow friction and maintain focus context between sessions.
+- Extended derive output with `session-recommendations.json` in both `derived/` and `data/derived/` for recommendation-category and rotation summary diagnostics.
+
+## Next-session follow-up
+
+1. Wire misconception signals into next-session routing once cross-app misconception registry is landed.
+2. Add lightweight click-through telemetry for recommendation acceptance and completion rates.
+3. Tune fatigue heuristics with observed session duration distributions rather than static thresholds.
+
 # HANDOFF (2026-05-27)
 
 ## Recent updates (2026-05-27 · systems simulator + migration pathways)
