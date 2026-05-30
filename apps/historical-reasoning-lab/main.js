@@ -1,3 +1,4 @@
+import { fetchJson } from '/apps/shared/data-access.js';
 import { loadReviewStore, saveReviewStore, updateReviewItem } from '/apps/shared/review-store.js';
 import { getConfidenceLabel, getEvidenceBadge } from '/apps/shared/evidence-utils.js';
 
@@ -66,10 +67,17 @@ function render() {
 function nextPrompt() { state.selectedEvidence.clear(); state.current = pick(state.events.filter((e) => e.status === 'approved')); render(); }
 
 async function init() {
-  const [events, concepts] = await Promise.all([fetch('/data/events.json').then((r) => r.json()), fetch('/data/concepts.json').then((r) => r.json())]);
+  const [events, concepts] = await Promise.all([
+    fetchJson('/data/events.json', 'events'),
+    fetchJson('/data/concepts.json', 'concepts'),
+  ]);
   state.events = Array.isArray(events) ? events : [];
   state.concepts = Array.isArray(concepts) ? concepts : [];
   nextPrompt();
 }
 
-init();
+init().catch((error) => {
+  promptPanel.innerHTML = `<h2>Loading failed</h2><p>${error.message}</p>`;
+  evidencePanel.innerHTML = '';
+  reflectionPanel.innerHTML = '';
+});

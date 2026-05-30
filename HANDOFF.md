@@ -1,3 +1,21 @@
+# HANDOFF (2026-05-29 · loading resilience follow-up)
+
+## Recent updates
+
+- Fixed `apps/timeline-trainer/src/logic/question-generator.js`, which had a malformed weighted-pick function and returned an undefined `picked` value for triplet questions. This could prevent Timeline Trainer from booting and leave users on loading text.
+- Added timeout-aware `fetchJson` to `apps/shared/data-access.js` and moved high-traffic learning modes to it so JSON fetches fail fast with explicit UI messages instead of hanging indefinitely.
+- Added timeout handling for inline Overview/History Player loaders and service-worker network-first JSON requests.
+- Added `npm run smoke-app-syntax` to catch app JavaScript parse errors and wired it into `npm run check`.
+
+## Important active issue: loading resilience
+
+Most learning modes should now fail fast instead of staying on loading placeholders, but this remains an important priority until browser-level regression coverage exists for every mode. Next session should add a smoke/regression script that opens each linked mode and asserts that initial `Loading...` text is replaced by either playable content or a visible error message.
+
+## Validation notes
+
+- Run `npm run check` after this update.
+- `npm run check` now includes the app JavaScript syntax pass because a Timeline Trainer parse error was one root cause of loading lockups.
+
 # HANDOFF (2026-05-29)
 
 ## Recent updates (2026-05-29 · validation and data integrity hardening)
@@ -6,18 +24,25 @@
 - Fixed the legacy `scripts/validate.mjs` failure by adding default practice coverage (`timeline_before_after`, `what_happened`, `cause_and_effect`) to 48 Indian Ocean event records that were missing `question_types`.
 - Removed the known `validate-data` warnings for Meiji causal links by remapping the non-canonical `international` category to the allowed `diplomatic` category.
 - Added npm shortcuts for `validate-data` and `validate`, then regenerated derived outputs with `npm run derive`.
+- Resolved the high-volume derive unknown-tag warnings by adding semantic aliases for broad taxonomy tags and a context-only allowlist for region/period/actor source tags.
 
 ## Validation notes
 
-- Passing checks: `npm run smoke`, `npm run sanity`, `npm run derive`, `npm run validate-derived`, `npm run validate-data`, and `npm run validate`.
-- Remaining non-blocking reliability item: `npm run derive` still emits many unknown-tag fallback warnings. The derive pipeline succeeds, but a future cleanup should normalize recurring tags into the canonical tag dictionary or update the warning strategy.
+- Passing checks: `npm run smoke`, `npm run sanity`, `npm run derive`, `npm run validate-derived`, `npm run validate-data`, `npm run validate`, and the new aggregate `npm run check`.
+- `npm run derive` now completes without unknown-tag fallback warnings; source-only region/period/actor tags are accepted without becoming derived tag clusters.
 - Environment note: npm emits `Unknown env config "http-proxy"`; it does not block the scripts in this run.
+
+## Current unresolved priorities
+
+1. Continue expanding question-type metadata beyond the default fallback for the Indian Ocean events where a more specialized practice format would be useful.
+2. Keep future source-data tags aligned with the broad derived taxonomy by extending semantic aliases or context-only tags as new tag families are introduced.
+3. Consider making derived artifact timestamps deterministic if generated-output churn becomes distracting during validation-only runs.
 
 ## Next-session follow-up
 
-1. Normalize high-volume derive unknown tags (for example industrialization, regional, and period tags) so derive output is quieter and easier to audit.
-2. Consider adding a single npm `check` script that chains smoke, sanity, derive, validate-derived, validate-data, and validate for one-command Friday verification.
-3. Continue expanding question-type metadata beyond the default fallback for the Indian Ocean events where a more specialized practice format would be useful.
+1. Use `npm run check` for one-command Friday verification after any data or derivation changes.
+2. Re-run `npm run derive` before committing content changes that affect `data/*` or derived outputs.
+3. If new source tags appear, decide whether they should map to a broad cluster or remain source-only context before accepting them.
 
 # HANDOFF (2026-05-28)
 

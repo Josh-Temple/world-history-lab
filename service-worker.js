@@ -1,5 +1,6 @@
-const APP_SHELL_CACHE = 'world-history-lab-shell-v3';
+const APP_SHELL_CACHE = 'world-history-lab-shell-v4';
 const RUNTIME_CACHE = 'world-history-lab-runtime-v1';
+const NETWORK_TIMEOUT_MS = 10000;
 const APP_SHELL_URLS = [
   '/',
   '/index.html',
@@ -90,10 +91,20 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(isDataRequest ? networkFirst(request) : staleWhileRevalidate(request));
 });
 
+async function fetchWithTimeout(request, timeoutMs = NETWORK_TIMEOUT_MS) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(request, { signal: controller.signal });
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
 async function networkFirst(request) {
   const cache = await caches.open(RUNTIME_CACHE);
   try {
-    const response = await fetch(request);
+    const response = await fetchWithTimeout(request);
     cache.put(request, response.clone());
     return response;
   } catch {

@@ -4,6 +4,7 @@ import { buildGuidedSession } from '../shared/guided-session-controller.js';
 import { recommendReviewMode } from '../shared/retention-engine.js';
 import { saveSessionHandoff, loadSessionHandoff } from '../shared/session-handoff-store.js';
 import { recommendNextSession } from '../shared/next-session-router.js';
+import { fetchJson } from '../shared/data-access.js';
 import { getNormalizedEvents } from '../shared/data-store.js';
 
 const reviewSummary = document.getElementById('review-summary');
@@ -36,8 +37,8 @@ function getRecommendedPaths({ masteredConcepts, availablePaths }) {
 
 async function loadProgressionData() {
   const [concepts, paths] = await Promise.all([
-    fetch('/data/concepts.json').then((r) => r.json()).catch(() => []),
-    fetch('/data/learning-paths.json').then((r) => r.json()).catch(() => []),
+    fetchJson('/data/concepts.json', 'concepts').catch(() => []),
+    fetchJson('/data/learning-paths.json', 'learning paths').catch(() => []),
   ]);
   return { concepts: Array.isArray(concepts) ? concepts : [], paths: Array.isArray(paths) ? paths : [] };
 }
@@ -89,7 +90,7 @@ async function render() {
 
   const levels = { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced' };
 
-  const thematicPaths = await fetch('/data/thematic-pathways.json').then((r) => r.json()).catch(() => []);
+  const thematicPaths = await fetchJson('/data/thematic-pathways.json', 'thematic pathways').catch(() => []);
   thematicPathwaysEl.innerHTML = '<h2>Featured Thematic Journeys</h2>' + (Array.isArray(thematicPaths) && thematicPaths.length
     ? `<ul>${thematicPaths.slice(0,3).map((path) => `<li><strong>${path.title}</strong> · ${(path.recommended_level || 'all').toUpperCase()} · ~${path.estimated_steps || 0} steps<br/><span>${path.why_it_matters || path.summary || ''}</span></li>`).join('')}</ul>`
     : '<p>No thematic pathways loaded yet.</p>');

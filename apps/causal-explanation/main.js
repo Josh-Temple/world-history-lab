@@ -1,3 +1,5 @@
+import { fetchJson } from "/apps/shared/data-access.js";
+
 let state = {
   pairs: [],
   eventsById: new Map(),
@@ -5,18 +7,10 @@ let state = {
 };
 const PROGRESS_KEY = 'whl_causal_explanation_progress_v1';
 
-async function fetchJson(url) {
-  const response = await fetch(url, { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error(`${url}: HTTP ${response.status}`);
-  }
-  return response.json();
-}
-
 async function loadData() {
   const [pairs, events] = await Promise.all([
-    fetchJson('/derived/index.causal_pairs.json'),
-    fetchJson('/derived/events.normalized.json'),
+    fetchJson('/derived/index.causal_pairs.json', 'causal pairs'),
+    fetchJson('/derived/events.normalized.json', 'normalized events'),
   ]);
   const eventsById = new Map(events.map((event) => [event.id, event]));
   return { pairs, eventsById };

@@ -404,11 +404,25 @@
         }
       }
 
-      async function init() {
-        const response = await fetch("/derived/events.normalized.json", { cache: "no-store" });
+      async function fetchJson(path) {
+        const timeoutMs = 10000;
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+        let response;
+        try {
+          response = await fetch(path, { cache: "no-store", signal: controller.signal });
+        } catch (error) {
+          if (error?.name === "AbortError") throw new Error(`Request timed out after ${timeoutMs}ms for ${path}`);
+          throw error;
+        } finally {
+          clearTimeout(timeoutId);
+        }
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      }
 
-        const events = await response.json();
+      async function init() {
+        const events = await fetchJson("/derived/events.normalized.json");
         state.events = events
           .filter(isCanonicalPlayerEvent)
           .sort((a, b) => a.derived.sort_start - b.derived.sort_start);

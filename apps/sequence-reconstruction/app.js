@@ -1,4 +1,4 @@
-import { loadDerivedEvents } from "../shared/data-access.js";
+import { fetchJson, loadDerivedEvents } from "../shared/data-access.js";
 import { getEventsForUnit, getNextUnit, getUnits } from "../shared/data-store.js";
 import { recordResult } from "../shared/mastery-store.js";
 import { showFeedback } from "../shared/feedback.js";
@@ -247,12 +247,7 @@ async function init() {
   try {
     const [events, chainsRaw, units] = await Promise.all([
       loadDerivedEvents(),
-      fetch("/derived/causality_chains.json", { cache: "no-store" }).then((response) => {
-        if (!response.ok) {
-          throw new Error(`causality_chains: HTTP ${response.status}`);
-        }
-        return response.json();
-      }),
+      fetchJson("/derived/causality_chains.json", "causality chains"),
       getUnits(),
     ]);
 

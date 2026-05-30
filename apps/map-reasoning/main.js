@@ -1,3 +1,4 @@
+import { fetchJson } from "../shared/data-access.js";
 import { mountHeader } from "../shared/header.js";
 
 const promptEl = document.getElementById("prompt");
@@ -31,8 +32,7 @@ function showPoint(el, lat, lon) {
 }
 
 async function loadEvents() {
-  const res = await fetch('/derived/events.normalized.json', { cache: 'no-store' });
-  return res.json();
+  return fetchJson('/derived/events.normalized.json', 'normalized events');
 }
 
 function normalizeGeo(event) {
@@ -99,12 +99,17 @@ submitButton.addEventListener("click", submitAnswer);
 nextButton.addEventListener("click", nextRound);
 
 (async function init() {
-  const events = await loadEvents();
-  const geoEvents = filterGeo(events);
-  state.pool = geoEvents;
-  if (!geoEvents.length) {
-    setFeedback("No geo-enabled events found.");
-    return;
+  try {
+    const events = await loadEvents();
+    const geoEvents = filterGeo(events);
+    state.pool = geoEvents;
+    if (!geoEvents.length) {
+      setFeedback("No geo-enabled events found.");
+      return;
+    }
+    nextRound();
+  } catch (error) {
+    promptEl.textContent = "Map data unavailable";
+    setFeedback(`Unable to load map reasoning data: ${error.message}`);
   }
-  nextRound();
 })();

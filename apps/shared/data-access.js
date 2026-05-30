@@ -1,11 +1,31 @@
 import { filterEvents, REVIEWED_PLUS } from "./event-filters.js";
 
+const DEFAULT_FETCH_TIMEOUT_MS = 10000;
+
 function appUrl(relativePath) {
   return new URL(relativePath, window.location.href).toString();
 }
 
-async function fetchJson(relativePath, label) {
-  const response = await fetch(appUrl(relativePath), { cache: "no-store" });
+export async function fetchJson(relativePath, label = relativePath, options = {}) {
+  const timeoutMs = Number.isFinite(options.timeoutMs) ? options.timeoutMs : DEFAULT_FETCH_TIMEOUT_MS;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  let response;
+
+  try {
+    response = await fetch(appUrl(relativePath), {
+      cache: "no-store",
+      signal: controller.signal,
+    });
+  } catch (error) {
+    if (error?.name === "AbortError") {
+      throw new Error(`${label}: request timed out after ${timeoutMs}ms (${relativePath})`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeoutId);
+  }
+
   if (!response.ok) {
     throw new Error(`${label}: HTTP ${response.status}`);
   }

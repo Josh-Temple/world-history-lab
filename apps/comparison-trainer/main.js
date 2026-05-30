@@ -1,3 +1,5 @@
+import { fetchJson } from "/apps/shared/data-access.js";
+
 const PROMPTS = [
   "What similarities do these events share?",
   "How are the causes different?",
@@ -9,10 +11,8 @@ function toYear(ev) { return Number(ev?.time?.year_start); }
 function sample(list) { return list[Math.floor(Math.random() * list.length)]; }
 
 async function loadEvents() {
-  const response = await fetch('/data/events.json');
-  if (!response.ok) throw new Error(`Failed to load events: ${response.status}`);
-  const events = await response.json();
-  return events.filter((ev) => ev?.id && ev?.label && Number.isFinite(toYear(ev)));
+  const events = await fetchJson('/data/events.json', 'events');
+  return (Array.isArray(events) ? events : []).filter((ev) => ev?.id && ev?.label && Number.isFinite(toYear(ev)));
 }
 
 function randomPair(events, mode) {
