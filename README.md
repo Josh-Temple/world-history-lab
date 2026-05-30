@@ -1,9 +1,25 @@
+## Recent updates (2026-05-29 · loading resilience across learning modes)
+
+- Fixed a Timeline Trainer module parse/runtime issue in weighted question generation that could leave the mode at its initial loading text.
+- Added timeout-aware shared JSON loading and migrated major learning modes away from unbounded direct `fetch` calls so stalled data requests now resolve to explicit error states instead of indefinite loading.
+- Added `npm run smoke-app-syntax` and included it in `npm run check` to catch app-level JavaScript parse errors before they become loading lockups.
+- Added a service-worker data-request timeout so PWA network-first JSON requests can fall back to cached data instead of hanging.
+
 ## Recent updates (2026-05-29 · validation and data integrity hardening)
 
 - Confirmed repository inspection access for the core app/data/script paths and ran the Friday validation suite against the current dataset.
 - Added missing `question_types` coverage to Indian Ocean event records so the legacy validator and derived unit/type eligibility pools can include those events.
 - Normalized Meiji diplomatic causal-link categories from the non-canonical `international` value to the existing `diplomatic` taxonomy bucket.
 - Added package scripts for `validate` and `validate-data` so the full validation stack is easier to run from npm.
+- Added `npm run check` as the one-command Friday verification entry point for smoke, sanity, derive, derived validation, data validation, and legacy validation.
+- Normalized recurring derive tag noise by expanding semantic tag aliases and accepting source-only context tags without warnings; `npm run derive` now completes without unknown-tag fallback warnings.
+
+## Current unresolved priorities (2026-05-29)
+
+1. Treat loading resilience as an active important issue until every learning mode has a browser-level regression check proving it leaves the initial loading state with either usable content or an explicit error message.
+2. Continue replacing default fallback `question_types` on the recently patched Indian Ocean events with more intentional practice formats where the content supports specialized chronology, causality, or comparison questions.
+3. Keep future source-data tags aligned with the broad derived taxonomy by adding semantic aliases or context-only tags when new tag families are introduced.
+4. Consider making derived artifact timestamps deterministic if generated-output churn becomes distracting during validation-only runs.
 
 ## Recent updates (2026-05-28 · adaptive next-session routing layer)
 

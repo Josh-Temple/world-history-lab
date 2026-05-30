@@ -1,3 +1,5 @@
+import { fetchJson } from "/apps/shared/data-access.js";
+
 const root = document.getElementById('pattern-transfer');
 const KEY = 'whl_pattern_transfer_v1';
 
@@ -11,7 +13,7 @@ function scoreLabel(choice) {
 }
 
 async function run() {
-  const patterns = await fetch('/data/pattern-transfer.json').then((r) => r.json()).catch(() => []);
+  const patterns = await fetchJson('/data/pattern-transfer.json', 'pattern transfer data').catch(() => []);
   const pattern = patterns[Math.floor(Math.random() * patterns.length)] || null;
   if (!pattern) { root.innerHTML = '<p>Pattern data unavailable.</p>'; return; }
 
@@ -38,4 +40,6 @@ async function run() {
   }));
 }
 
-run();
+run().catch((error) => {
+  root.innerHTML = `<p>Unable to load pattern transfer data: ${error.message}</p>`;
+});

@@ -1,3 +1,5 @@
+import { fetchJson } from "/apps/shared/data-access.js";
+
 const THEMES = [
   { key: 'state_power', label: 'Rise of States' },
   { key: 'trade', label: 'Trade-Network Integration' },
@@ -16,7 +18,7 @@ function renderTheme(theme, events) {
 
 async function main() {
   const root = document.getElementById('history-container');
-  const events = await fetch('/data/events.json').then((r) => r.json()).catch(() => []);
+  const events = await fetchJson('/data/events.json', 'events').catch(() => []);
   root.innerHTML = `<h1>Big Picture History</h1><p><small>Macro-historical synthesis across units and eras.</small></p>
     <section class="turning-point"><h2>Turning Point: Industrial Revolution</h2><p>Atlantic trade integration and industrial technology accelerated global power shifts and imperial competition.</p></section>
     <section class="turning-point"><h2>Turning Point: Silk Road to Black Death</h2><p>Interconnected Afro-Eurasian exchange expanded commerce and intensified epidemiological vulnerability.</p></section>
@@ -24,4 +26,7 @@ async function main() {
     <section><h2>Cross-unit Narrative Links</h2><p>Silk Road exchange → Mongol integration → Black Death → state restructuring.</p><p>Atlantic trade → industrialization → imperialism → nationalist resistance.</p></section>`;
 }
 
-main();
+main().catch((error) => {
+  const root = document.getElementById('history-container');
+  if (root) root.innerHTML = `<h1>Big Picture History</h1><p>Unable to load history data: ${error.message}</p>`;
+});

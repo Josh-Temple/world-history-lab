@@ -1,3 +1,4 @@
+import { fetchJson } from '/apps/shared/data-access.js';
 import { getConfidenceLabel, getEvidenceBadge } from '/apps/shared/evidence-utils.js';
 
 const el = document.getElementById('source-lab');
@@ -27,9 +28,9 @@ function render() {
 
 async function init() {
   const [sources, events, concepts] = await Promise.all([
-    fetch('/data/sources.json').then((r) => r.json()),
-    fetch('/data/events.json').then((r) => r.json()),
-    fetch('/data/concepts.json').then((r) => r.json()),
+    fetchJson('/data/sources.json', 'sources'),
+    fetchJson('/data/events.json', 'events'),
+    fetchJson('/data/concepts.json', 'concepts'),
   ]);
   state.sources = Array.isArray(sources) ? sources : [];
   state.events = Array.isArray(events) ? events : [];
@@ -37,4 +38,6 @@ async function init() {
   if (state.sources[0]) state.selected.add(state.sources[0].id);
   render();
 }
-init();
+init().catch((error) => {
+  el.innerHTML = `<section class="panel"><h1>Historical Source Lab</h1><p>Unable to load source data: ${error.message}</p></section>`;
+});

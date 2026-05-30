@@ -64,7 +64,18 @@
 
     <script type="module">
       async function fetchJson(path) {
-        const response = await fetch(path, { cache: 'no-store' });
+        const timeoutMs = 10000;
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+        let response;
+        try {
+          response = await fetch(path, { cache: 'no-store', signal: controller.signal });
+        } catch (error) {
+          if (error?.name === 'AbortError') throw new Error(`Request timed out after ${timeoutMs}ms for ${path}`);
+          throw error;
+        } finally {
+          clearTimeout(timeoutId);
+        }
         if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
         return response.json();
       }

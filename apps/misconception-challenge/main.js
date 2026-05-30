@@ -1,6 +1,7 @@
+import { fetchJson } from "/apps/shared/data-access.js";
 const KEY='whl_misconception_progress_v1';
 const el=document.getElementById('challenge-container');
-async function load(){const data=await fetch('/data/misconceptions.json').then(r=>r.json()).catch(()=>[]);return Array.isArray(data)?data:[];}
+async function load(){const data=await fetchJson('/data/misconceptions.json','misconceptions').catch(()=>[]);return Array.isArray(data)?data:[];}
 function save(id,choice,confidence){const s=JSON.parse(localStorage.getItem(KEY)||'{}');s[id]={choice,confidence,last_seen:Date.now()};localStorage.setItem(KEY,JSON.stringify(s));}
 function render(item){el.innerHTML=`<h1>Historical Misconception Challenge</h1><p><strong>Claim:</strong> ${item.claim}</p><label>Confidence <select id='confidence'><option value='low'>Low</option><option value='med'>Medium</option><option value='high'>High</option></select></label><div class='choices'><button data-v='mostly'>Mostly Accurate</button><button data-v='misleading'>Misleading</button><button data-v='highly'>Highly Misleading</button></div><section id='fb' class='feedback' hidden><h3>Why this is misleading</h3><p>${item.why_problematic}</p></section>`;el.querySelectorAll('button[data-v]').forEach(b=>b.onclick=()=>{save(item.id,b.dataset.v,document.getElementById('confidence').value);el.querySelector('#fb').hidden=false;});}
-load().then(items=>{if(!items.length){el.textContent='No misconceptions available.';return;}render(items[Math.floor(Math.random()*items.length)]);});
+load().then(items=>{if(!items.length){el.textContent='No misconceptions available.';return;}render(items[Math.floor(Math.random()*items.length)]);}).catch((error)=>{el.textContent=`Unable to load misconceptions: ${error.message}`;});

@@ -1,3 +1,4 @@
+import { fetchJson } from "/apps/shared/data-access.js";
 import { initializeScenario, applyDecision, advanceTurn, calculateStructuralPressure } from '../shared/systems-simulation-engine.js';
 
 const root = document.getElementById('systems-simulator');
@@ -26,9 +27,11 @@ function render(session, scenario) {
 }
 
 async function init(){
-  const scenarios = await fetch('/data/systems-scenarios.json').then(r=>r.json());
+  const scenarios = await fetchJson('/data/systems-scenarios.json', 'systems scenarios');
   const scenario = scenarios[0];
   const session = readSaved()?.scenarioId === scenario.id ? readSaved() : initializeScenario(scenario);
   save(session); render(session, scenario);
 }
-init();
+init().catch((error) => {
+  root.innerHTML = `<section><h1>Historical Systems Simulator</h1><p>Unable to load scenarios: ${error.message}</p></section>`;
+});
