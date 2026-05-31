@@ -9,7 +9,8 @@
     "validate-data": "node scripts/validate-data.mjs",
     "validate": "node scripts/validate.mjs",
     "validate-derived": "node scripts/validate-derived.mjs",
-    "check": "npm run smoke-app-syntax && npm run smoke && npm run sanity && npm run derive && npm run validate-derived && npm run validate-data && npm run validate",
-    "smoke-app-syntax": "node scripts/smoke-app-syntax.mjs"
+    "check": "npm run smoke-app-syntax && npm run smoke-loading-resilience && npm run smoke && npm run sanity && npm run derive && npm run validate-derived && npm run validate-data && npm run validate",
+    "smoke-app-syntax": "node scripts/smoke-app-syntax.mjs",
+    "smoke-loading-resilience": "node scripts/smoke-loading-resilience.mjs"
   }
 }
