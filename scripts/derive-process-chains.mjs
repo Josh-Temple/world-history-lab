@@ -13,7 +13,7 @@ function conceptChainLabel(conceptId) {
   return conceptId.replace(/^concept_/, "").split("_").map((s) => s[0].toUpperCase() + s.slice(1)).join(" ");
 }
 
-export function deriveProcessChains(events) {
+export function deriveProcessChains(events, { generatedAt = "2000-01-01T00:00:00.000Z" } = {}) {
   const eventMap = new Map(events.map((e) => [e.id, e]));
   const incoming = new Map();
   const outgoing = new Map();
@@ -65,5 +65,5 @@ export function deriveProcessChains(events) {
     .slice(0, 40)
     .map((e) => `isolated_or_short_chain:${e.id}`);
 
-  return { generated_at: new Date().toISOString(), chains, warnings: orphanWarnings };
+  return { generated_at: generatedAt, chains, warnings: orphanWarnings };
 }
