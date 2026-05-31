@@ -1,3 +1,9 @@
+## Recent updates (2026-05-31 · Sunday review and derive cleanup)
+
+- Confirmed repository inspection access for required project paths including `README.md`, `package.json`, `index.html`, core data files, unit files, derived outputs, validation scripts, and `apps/*`.
+- Ran the aggregate health check (`npm run check`) successfully: app syntax, loading-resilience smoke audit, smoke data load, sanity, derive, derived validation, data validation, and legacy validation all passed.
+- Made derive metadata timestamps deterministic for summary artifacts so validation-only `npm run derive` runs no longer create wall-clock-only generated-output churn.
+
 ## Recent updates (2026-05-30 · loading resilience audit)
 
 - Confirmed repository inspection access for the core project paths after the prior failed-retrieval handoff note.

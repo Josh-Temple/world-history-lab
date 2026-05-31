@@ -1,3 +1,24 @@
+# HANDOFF (2026-05-31 · Sunday review / cleanup / next-week preparation)
+
+## Recent updates
+
+- Re-inspected the actual working tree and verified that the required repository paths are present: `README.md`, `package.json`, `index.html`, `data/events.json`, `data/people.json`, `data/units/index.json`, `data/units/*`, `data/metadata.json`, `derived/*`, validation scripts, `scripts/derive.mjs`, and `apps/*`.
+- Ran `npm run check` successfully on Sunday review cadence. The suite covered app JavaScript syntax, static loading resilience, smoke loading, sanity checks, derive generation, derived validation, data validation, and legacy validation.
+- Cleaned up the known generated-output churn issue by replacing wall-clock `generated_at` values in derive summary artifacts with a deterministic timestamp. This keeps validation-only derive runs from producing timestamp-only diffs.
+
+## Repository health summary
+
+- Health is currently good based on the aggregate check: 342 events, 142 people, and 13 units validate and derive successfully.
+- Loading resilience remains guarded by static smoke coverage, but true browser-level regression coverage is still missing.
+- The prior failed-retrieval/unknown-repository assessment is not applicable to this local working tree.
+
+## Next-session follow-up
+
+1. Add browser-level coverage for linked apps when a browser runner is available, asserting each app exits initial loading text with content or an explicit error.
+2. Continue refining Indian Ocean `question_types` beyond default fallback formats where specialized chronology, causality, or comparison practice is supported.
+3. Keep source-data tags aligned with the broad derived taxonomy when new tag families are introduced.
+4. Preserve deterministic generated artifacts unless a future data-versioning scheme provides a more meaningful stable build timestamp.
+
 # HANDOFF (2026-05-30 · loading resilience audit)
 
 ## Recent updates

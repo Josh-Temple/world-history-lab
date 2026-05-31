@@ -6,6 +6,8 @@ import { deriveProcessChains } from "./derive-process-chains.mjs";
 const ROOT = process.cwd();
 const DERIVED_DIR = path.join(ROOT, "derived");
 const DATA_DERIVED_DIR = path.join(ROOT, "data", "derived");
+// Keep generated summary artifacts stable across validation-only derive runs.
+const DERIVED_GENERATED_AT = "2000-01-01T00:00:00.000Z";
 const ALLOWED_TAGS = new Set([
   "war",
   "revolution",
@@ -1145,7 +1147,7 @@ async function loadUnits() {
 
 
 
-function buildThematicPathwaySummary(pathways = [], events = []) {
+function buildThematicPathwaySummary(pathways = [], events = [], generatedAt = DERIVED_GENERATED_AT) {
   const byId = new Map((Array.isArray(events) ? events : []).map((e) => [e.id, e]));
   const total = Array.isArray(pathways) ? pathways.length : 0;
   const regionSet = new Set();
@@ -1161,7 +1163,7 @@ function buildThematicPathwaySummary(pathways = [], events = []) {
     }
   }
   return {
-    generated_at: new Date().toISOString(),
+    generated_at: generatedAt,
     pathway_count: total,
     pathway_density: total ? Number((linked / total).toFixed(2)) : 0,
     concept_overlap_count: conceptSet.size,
@@ -1170,7 +1172,7 @@ function buildThematicPathwaySummary(pathways = [], events = []) {
 }
 
 
-function buildMigrationNetworkSummary(pathways = []) {
+function buildMigrationNetworkSummary(pathways = [], generatedAt = DERIVED_GENERATED_AT) {
   const regionConnectivity = new Map();
   let diffusionDensity = 0;
   let overlapLinks = 0;
@@ -1181,7 +1183,7 @@ function buildMigrationNetworkSummary(pathways = []) {
     for (const r of regions) regionConnectivity.set(r, (regionConnectivity.get(r) || 0) + 1);
   }
   return {
-    generated_at: new Date().toISOString(),
+    generated_at: generatedAt,
     pathway_count: Array.isArray(pathways) ? pathways.length : 0,
     region_connectivity: Object.fromEntries([...regionConnectivity.entries()].sort((a,b)=>b[1]-a[1])),
     diffusion_density: diffusionDensity,
@@ -1270,7 +1272,7 @@ async function main() {
   const tagClusters = buildTagClusters(events, eventIdSet);
   const causalPairs = buildCausalPairs(normalizedEvents, eventIdSet);
   const relatedEventGraph = buildRelatedEventGraph(normalizedEvents, eventIdSet);
-  const processChains = deriveProcessChains(events);
+  const processChains = deriveProcessChains(events, { generatedAt: DERIVED_GENERATED_AT });
   const retentionPriority = concepts
     .map((concept, index) => {
       const difficulty = concept?.difficulty === 'advanced' ? 1 : concept?.difficulty === 'intermediate' ? 0.7 : 0.45;
@@ -1288,7 +1290,7 @@ async function main() {
   const migrationNetworkSummary = buildMigrationNetworkSummary(migrationPathways);
 
   const sessionRecommendations = {
-    generated_at: new Date().toISOString(),
+    generated_at: DERIVED_GENERATED_AT,
     recommendation_categories: ['reinforcement', 'reasoning', 'source-analysis'],
     session_balance_metrics: { intensity_mix_target: ['low', 'medium', 'high'], max_repeat_same_mode: 1, fatigue_guardrail_minutes: 25 },
     app_rotation_summary: [
