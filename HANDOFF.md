@@ -1,3 +1,22 @@
+# HANDOFF (2026-05-30 · loading resilience audit)
+
+## Recent updates
+
+- Re-inspected the actual repository contents. The previously noted inability to inspect required files is no longer applicable in this working tree; `README.md`, `package.json`, `index.html`, `data/events.json`, `data/people.json`, `data/units/index.json`, unit files, `scripts/derive.mjs`, validation scripts, derived outputs, and `apps/*` are present.
+- Added `scripts/smoke-loading-resilience.mjs`, a dependency-free static smoke audit for the active loading-resilience pillar. It discovers root-linked app pages, confirms their app entry files exist, verifies pages with loading placeholders have detectable failure/error states, and flags direct `fetch()` calls that lack timeout/AbortController context.
+- Added `npm run smoke-loading-resilience` and wired it into `npm run check` immediately after JavaScript syntax checks.
+
+## Validation notes
+
+- Run `npm run check` after changes; it now includes `smoke-app-syntax`, `smoke-loading-resilience`, smoke, sanity, derive, derived validation, data validation, and legacy validation.
+- This audit is not a substitute for true browser-level regression coverage. It is a fast guardrail until a headless-browser or hosted-browser check can assert that every app leaves initial loading text with content or visible errors.
+
+## Next-session follow-up
+
+1. Add real browser-level coverage when a browser runner is available, using the app list and expectations established by `scripts/smoke-loading-resilience.mjs`.
+2. Keep the Saturday underdeveloped-pillar focus on loading-state reliability until every mode has runtime coverage, not just static detection.
+3. If new apps are linked from `index.html`, ensure their loading placeholders have explicit failure states and that data requests use shared timeout-aware loaders or AbortController.
+
 # HANDOFF (2026-05-29 · loading resilience follow-up)
 
 ## Recent updates

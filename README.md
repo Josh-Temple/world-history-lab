@@ -1,3 +1,9 @@
+## Recent updates (2026-05-30 · loading resilience audit)
+
+- Confirmed repository inspection access for the core project paths after the prior failed-retrieval handoff note.
+- Added `npm run smoke-loading-resilience`, a dependency-free audit that checks root-linked apps for existing entry files, detectable loading failure states, and timeout/AbortController coverage around direct fetch calls.
+- Included the new loading-resilience audit in `npm run check` so Saturday follow-up work keeps the loading-state pillar from regressing before browser-level coverage is available.
+
 ## Recent updates (2026-05-29 · loading resilience across learning modes)
 
 - Fixed a Timeline Trainer module parse/runtime issue in weighted question generation that could leave the mode at its initial loading text.
