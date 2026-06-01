@@ -1,3 +1,9 @@
+## Recent updates (2026-05-31 · cross-mode reinforcement loop)
+
+- Timeline Trainer now records missed chronology answers into the shared review store so mistakes from chronology practice become due review items for the cross-mode Session Runner review flow.
+- Added a session-completion recommendations panel that routes learners from Timeline Trainer into targeted mistake review, adaptive event recognition, or causality practice based on whether mistakes were queued.
+- Expanded the shared review store with explicit mistake metadata helpers so future modes can attach source, reason, labels, and related-event context when routing errors into review.
+
 ## Recent updates (2026-05-31 · Sunday review and derive cleanup)
 
 - Confirmed repository inspection access for required project paths including `README.md`, `package.json`, `index.html`, core data files, unit files, derived outputs, validation scripts, and `apps/*`.
