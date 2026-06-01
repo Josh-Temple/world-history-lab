@@ -1,3 +1,22 @@
+# HANDOFF (2026-05-31 · cross-mode reinforcement loop)
+
+## Recent updates
+
+- Implemented the first visible mistake-to-review routing slice for the weekly strategic priority: missed Timeline Trainer answers now write event-level mistake records into `whl_review_store_v1` via shared review-store helpers.
+- Added a lightweight Timeline Trainer completion recommendations panel that suggests either mistake review, adaptive recognition, and causality practice after errors, or alternate retrieval practice after a clean session.
+- Updated the shared review store to preserve learner-facing mistake metadata (`source`, `reason`, `label`, `related_event_ids`, `mistake_count`, and immediate `due_at`) so later modes can route their own errors without bespoke storage.
+
+## Validation notes
+
+- Ran `npm run smoke-app-syntax` successfully after the app changes.
+- Run the full `npm run check` before or during the next broader integration pass if more data or derived-output changes are added.
+
+## Next-session follow-up
+
+1. Extend the same `recordReviewMistake` pattern to Event Recognition and Causality Drill so more modes feed the shared review queue.
+2. Let Session Runner's review UI display `reason` and `related_event_ids` from the review store so remediation explains adjacent knowledge, not only the missed event.
+3. Consider adding a small automated storage-unit test for review-store mistake metadata once the project has a test harness beyond smoke scripts.
+
 # HANDOFF (2026-05-31 · Sunday review / cleanup / next-week preparation)
 
 ## Recent updates

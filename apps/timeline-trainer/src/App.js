@@ -1,5 +1,6 @@
 import { loadTimelineSeedData } from "./data/loaders.js";
-import { recordResult } from "../../shared/mastery-store.js";
+import { getReviewQueueEventIds, recordResult } from "../../shared/mastery-store.js";
+import { loadReviewStore, recordReviewMistake, saveReviewStore } from "../../shared/review-store.js";
 import { filterEvents as filterSharedEvents } from "../../shared/event-filters.js";
 import { mountHeader } from "../../shared/header.js";
 import {
@@ -91,6 +92,8 @@ const state = {
   questionIndex: 0,
   confidenceResults: [],
   pendingConfidence: false,
+  persistentMistakeIds: new Set(),
+  sessionMistakeDetails: new Map(),
 };
 
 const ui = {
@@ -134,6 +137,9 @@ const ui = {
   summaryPanel: document.getElementById("session-summary"),
   summaryScore: document.getElementById("summary-score"),
   retryWeakItems: document.getElementById("retry-weak-items"),
+  recommendationsPanel: document.getElementById("recommendations-panel"),
+  recommendationsContext: document.getElementById("recommendations-context"),
+  recommendationsList: document.getElementById("recommendations-list"),
 };
 
 const appHeader = mountHeader({
@@ -541,6 +547,43 @@ function pickReviewQuestion(enabledTypes) {
   return null;
 }
 
+function getEventUnitIds(eventId) {
+  return state.units
+    .filter((unit) => Array.isArray(unit.event_ids) && unit.event_ids.includes(eventId))
+    .map((unit) => unit.id);
+}
+
+function recordMistakeForReview(question) {
+  if (!question || !Array.isArray(question.options)) {
+    return;
+  }
+
+  const correctEvent = question.options[question.correctOptionIndex];
+  const selectedEvent = question.options[state.selectedOptionIndex];
+  const reviewTargets = [correctEvent, selectedEvent].filter((event, index, events) => (
+    event?.id && events.findIndex((candidate) => candidate?.id === event.id) === index
+  ));
+
+  let reviewStore = loadReviewStore();
+  const relatedEventIds = question.options.map((option) => option?.id).filter(Boolean);
+  for (const event of reviewTargets) {
+    reviewStore = recordReviewMistake(reviewStore, {
+      eventId: event.id,
+      label: event.label,
+      source: "timeline-trainer",
+      reason: `Missed ${getQuestionTypeLabel(question.type)} chronology question`,
+      relatedEventIds: relatedEventIds.filter((id) => id !== event.id),
+    });
+    state.persistentMistakeIds.add(event.id);
+    state.sessionMistakeDetails.set(event.id, {
+      label: event.label,
+      unitIds: getEventUnitIds(event.id),
+      relatedEventIds: relatedEventIds.filter((id) => id !== event.id),
+    });
+  }
+  saveReviewStore(reviewStore);
+}
+
 function queueWrongPair(question) {
   if (question.type !== QUESTION_TYPES.BEFORE_AFTER) {
     return;
@@ -885,6 +928,7 @@ function handleAnswer(optionIndex) {
     }
   } else {
     queueWrongPair(state.currentQuestion);
+    recordMistakeForReview(state.currentQuestion);
   }
 
   updateStats();
@@ -962,7 +1006,10 @@ function resetSessionState() {
   state.questionIndex = 0;
   state.confidenceResults = [];
   state.pendingConfidence = false;
+  state.persistentMistakeIds = new Set();
+  state.sessionMistakeDetails = new Map();
   if (ui.summaryPanel) ui.summaryPanel.hidden = true;
+  if (ui.recommendationsPanel) ui.recommendationsPanel.hidden = true;
   showConfidenceControls(false);
   updateSessionProgress();
   updateStats();
@@ -1006,11 +1053,72 @@ function showConfidenceControls(show) {
   ui.confidenceControls.hidden = !show;
 }
 
+function createRecommendationItem({ href, label, detail }) {
+  const item = document.createElement("li");
+  const link = document.createElement("a");
+  link.href = href;
+  link.textContent = label;
+  item.append(link);
+  if (detail) {
+    item.append(` — ${detail}`);
+  }
+  return item;
+}
+
+function renderRecommendations() {
+  if (!ui.recommendationsPanel || !ui.recommendationsList || !ui.recommendationsContext) {
+    return;
+  }
+
+  const mistakeCount = state.persistentMistakeIds.size;
+  const queuedCount = getReviewQueueEventIds(50).length;
+  ui.recommendationsList.innerHTML = "";
+
+  if (mistakeCount === 0 && queuedCount === 0) {
+    ui.recommendationsContext.textContent = "No missed timeline events were queued in this session. Use another retrieval mode to strengthen transfer.";
+    ui.recommendationsList.append(
+      createRecommendationItem({
+        href: "../event-recognition/",
+        label: "Practice event recognition",
+        detail: "retrieve the same knowledge from descriptions instead of dates",
+      }),
+      createRecommendationItem({
+        href: "../causality-drill/",
+        label: "Practice causality",
+        detail: "connect timeline facts to causes and consequences",
+      })
+    );
+  } else {
+    const sample = Array.from(state.sessionMistakeDetails.values()).slice(0, 2).map((event) => event.label);
+    ui.recommendationsContext.textContent = `${mistakeCount} timeline mistake${mistakeCount === 1 ? "" : "s"} now feed the shared review queue${sample.length ? `, including ${sample.join(" and ")}` : ""}.`;
+    ui.recommendationsList.append(
+      createRecommendationItem({
+        href: "../session-runner/?mode=review",
+        label: "Review mistakes",
+        detail: "start with due items from this Timeline Trainer session",
+      }),
+      createRecommendationItem({
+        href: "../event-recognition/?adaptive=1",
+        label: "Practice recognition",
+        detail: "recall the same events from clues and summaries",
+      }),
+      createRecommendationItem({
+        href: "../causality-drill/",
+        label: "Practice causality",
+        detail: "strengthen adjacent cause-and-effect knowledge",
+      })
+    );
+  }
+
+  ui.recommendationsPanel.hidden = false;
+}
+
 function showSessionSummary() {
   const total = state.confidenceResults.length;
   const weak = state.confidenceResults.filter((r) => !r.correct || r.confidence !== "easy");
   if (ui.summaryPanel) ui.summaryPanel.hidden = false;
   if (ui.summaryScore) ui.summaryScore.textContent = `${total - weak.length} strong / ${total} total · ${weak.length} weak items`;
+  renderRecommendations();
 }
 
 function recordConfidence(confidence) {
