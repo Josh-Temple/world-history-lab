@@ -1,3 +1,28 @@
+# HANDOFF (2026-06-01 · Monday strategy + first push)
+
+## Section 1 — prerequisite repository check
+
+- Today's weekday emphasis is Monday strategy plus first push: make a concise evidence-based repo check first, then choose only work that advances the strongest strategic learning loop.
+- Repository inspection is now available in the local working tree. The previously reported retrieval failure is not applicable to this session.
+- Required paths were verified as present: `README.md`, `HANDOFF.md`, `package.json`, `index.html`, `data/events.json`, `data/people.json`, `data/units/index.json`, `data/units/*`, `data/metadata.json`, `derived/*`, `scripts/derive.mjs`, validation/test scripts, and `apps/*`.
+- Current file-backed footprint: 342 events, 142 people, 13 registered units, 17 root derived JSON artifacts, 10 mirrored `data/derived` JSON artifacts, and 28 learner-facing app directories plus `apps/shared`.
+
+## Concise repo health summary
+
+- Actual repository state is inspectable and substantially implemented: source data, unit metadata, derived artifacts, validation scripts, and a broad mini-app portfolio are present.
+- The full aggregate check passed in this session via `npm run check`, covering app syntax, loading-resilience smoke checks, data smoke loading, sanity checks, derive generation, derived validation, data validation, and legacy validation.
+- The active strategic risk remains learner-flow integration rather than basic repository availability: keep pushing the mistake/review/recommendation loop across modes before starting unrelated apps.
+
+## Implemented vs missing summary
+
+- Implemented: core data files, unit registry and unit files, derived data outputs, derive and validation scripts, root launcher, dashboard/session/review infrastructure, and multiple practice apps for chronology, causality, comparison, evidence, maps, systems, patterns, people, and source work.
+- Missing or still incomplete: browser-level loading regression coverage, broader mistake-to-review integration outside Timeline Trainer, richer Session Runner display of review metadata, and continued intentional refinement of default `question_types` where content supports specialized practice.
+
+## Neglect warning for today's priorities
+
+- Do not spend Monday's first push on cosmetic-only polish or a new standalone app unless it directly feeds the cross-mode learner state.
+- Favor a small integration improvement that connects existing modes, review metadata, recommendations, or validation around the learner loop.
+
 # HANDOFF (2026-05-31 · cross-mode reinforcement loop)
 
 ## Recent updates

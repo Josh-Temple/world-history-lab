@@ -1,3 +1,10 @@
+## Recent updates (2026-06-01 · Monday strategy + repository access check)
+
+- Confirmed local repository inspection access for the required project paths: `README.md`, `HANDOFF.md`, `package.json`, `index.html`, `data/events.json`, `data/people.json`, `data/units/index.json`, unit files, `data/metadata.json`, `derived/*`, validation/test scripts, `scripts/derive.mjs`, and `apps/*`.
+- Verified the current data/app footprint from actual files: 342 events, 142 people, 13 registered units, 17 root derived JSON artifacts, 10 mirrored `data/derived` JSON artifacts, and 28 learner-facing app directories plus `apps/shared`.
+- Reframed the Monday working emphasis as strategy plus first push: prioritize evidence-based integration work that strengthens the cross-mode learning loop before adding unrelated standalone surface area.
+- Ran the full aggregate verification command (`npm run check`) successfully during this pass to confirm validation health matches the inspected repo state.
+
 ## Recent updates (2026-05-31 · cross-mode reinforcement loop)
 
 - Timeline Trainer now records missed chronology answers into the shared review store so mistakes from chronology practice become due review items for the cross-mode Session Runner review flow.
