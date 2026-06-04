@@ -1,3 +1,10 @@
+## Recent updates (2026-06-03 · Wednesday feature mode + repository access check)
+
+- Confirmed local repository inspection access for the required project paths after the failed-retrieval execution note: `README.md`, `HANDOFF.md`, `package.json`, `index.html`, `data/events.json`, `data/people.json`, `data/units/index.json`, unit files, `data/metadata.json`, root/data derived outputs, validation/test scripts, `scripts/derive.mjs`, and `apps/*`.
+- Verified the current data/app footprint from actual files: 342 events, 142 people, 13 registered units, 17 root derived JSON artifacts, 10 mirrored `data/derived` JSON artifacts, 10 event theme tags, and 29 learner-facing app directories plus `apps/shared`.
+- Added the new Wednesday learning mode `apps/theme-lens/`, which lets learners choose a recurring theme, optionally narrow by region, inspect a three-anchor timeline arc, and practice continuity/change, causation, regional comparison, and false-analogy prompts.
+- Linked Theme Lens from the root Practice section so it is discoverable alongside spread, map, timeline, recognition, and synthesis practice modes.
+
 ## Recent updates (2026-06-01 · Monday strategy + repository access check)
 
 - Confirmed local repository inspection access for the required project paths: `README.md`, `HANDOFF.md`, `package.json`, `index.html`, `data/events.json`, `data/people.json`, `data/units/index.json`, unit files, `data/metadata.json`, `derived/*`, validation/test scripts, `scripts/derive.mjs`, and `apps/*`.

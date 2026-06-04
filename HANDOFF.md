@@ -1,3 +1,22 @@
+## Handoff update (2026-06-03 · Wednesday feature mode)
+
+### Repository access and health
+
+- Local repository inspection succeeded despite the prior failed-retrieval note. Required paths were available for review, including `README.md`, `HANDOFF.md`, `package.json`, `index.html`, `data/events.json`, `data/people.json`, `data/units/index.json`, `data/metadata.json`, `derived/*`, `scripts/derive.mjs`, validation/smoke scripts, and `apps/*`.
+- Current inspected footprint: 342 events, 142 people, 13 registered units, 17 root derived JSON artifacts, 10 mirrored `data/derived` JSON artifacts, 10 event theme tags, and 29 learner-facing app directories plus `apps/shared`.
+
+### Completed this session
+
+- Added `apps/theme-lens/` as the Wednesday new learning mode. It loads `data/events.json` and `data/regions.json` through the shared timeout-aware fetch helper, builds theme and region filters from actual data, and renders a theme overview, timeline arc, and reasoning prompts.
+- Added a root `index.html` Practice link for Theme Lens so the new mode is discoverable from the main app shell.
+- Updated `README.md` and this handoff with the actual repository inspection result, the new feature summary, and next-session context.
+
+### Suggested next session priorities
+
+1. Run a browser-level smoke check for Theme Lens to verify the generated controls and prompt cards render correctly in the deployed/static hosting environment.
+2. Consider replacing the local `FALLBACK_THEME_LABELS` map in `apps/theme-lens/main.js` with a shared controlled-theme metadata file if more theme-facing apps need consistent labels/descriptions.
+3. Add optional concept filters or learner-state recommendations so Theme Lens can route weak concepts from dashboard/session history into a specific thematic lens.
+
 # HANDOFF (2026-06-01 · Monday strategy + first push)
 
 ## Section 1 — prerequisite repository check

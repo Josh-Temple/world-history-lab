@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Theme Lens</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a class="home-link" href="/">← World History Lab</a>
+      <h1>Theme Lens</h1>
+      <p>Learn one recurring historical theme by comparing it across regions, eras, and concrete events.</p>
+      <form id="theme-form" class="controls" aria-label="Theme lens controls">
+        <label for="theme-select">Theme</label>
+        <select id="theme-select"></select>
+        <label for="region-select">Region focus</label>
+        <select id="region-select"></select>
+      </form>
+    </header>
+
+    <main>
+      <section id="status-panel" class="panel status-panel" aria-live="polite">Loading theme data…</section>
+
+      <section class="panel" aria-labelledby="overview-title">
+        <h2 id="overview-title">Theme overview</h2>
+        <div id="theme-overview" class="overview-grid"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="timeline-title">
+        <h2 id="timeline-title">Timeline arc</h2>
+        <div id="timeline-arc" class="timeline-arc"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="compare-title">
+        <h2 id="compare-title">Compare across contexts</h2>
+        <div id="comparison-prompts" class="prompt-grid"></div>
+      </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
