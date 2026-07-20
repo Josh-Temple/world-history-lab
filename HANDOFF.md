@@ -190,7 +190,16 @@ Most learning modes should now fail fast instead of staying on loading placehold
 - Updated dashboard integration to surface featured thematic journeys with level and estimated length (`apps/dashboard/index.html`, `apps/dashboard/main.js`).
 - Updated derive pipeline to emit `derived/thematic-pathways-summary.json` and linked root navigation entry for Historical Argument Builder.
 
-# HANDOFF (2026-05-17)
+# HANDOFF (2026-07-20)
+
+## Incremental update (2026-07-20 · Timeline Trainer default-question recovery)
+
+- Root cause: the default Core Essentials filter required a numeric `importance <= 1`; 19 of 20 events in Industrialization Pathways Comparison had no importance metadata, leaving only one candidate when Before / After needs at least two.
+- Moved difficulty filtering into `apps/timeline-trainer/src/logic/difficulty-filter.js` and made missing importance values backward-compatible at Core and Standard difficulty, while retaining reviewed/approved quality filtering.
+- Extended `scripts/smoke-timeline-trainer.mjs` with a data-backed regression that verifies the exact reported unit has at least two default eligible candidates, and wired the smoke test into `npm run check`.
+- Follow-up: progressively backfill explicit `importance` values so legacy compatibility can eventually be narrowed without making units unplayable.
+
+# Previous handoff (2026-05-17)
 
 ## Incremental update (2026-05-24 · thematic comparison reinforcement + onboarding cognition framing)
 

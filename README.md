@@ -1,3 +1,8 @@
+## Recent updates (2026-07-20 · Timeline Trainer default-question recovery)
+
+- Fixed Timeline Trainer's Core Essentials filter so reviewed legacy events without an assigned `importance` tier remain eligible, instead of leaving otherwise populated units with too few candidates to ask a question.
+- Added a data-backed Timeline Trainer smoke regression for the reported Industrialization Pathways Comparison / Reviewed+ / Core Essentials / Before-After setup and included it in `npm run check`.
+
 ## Recent updates (2026-06-03 · Wednesday feature mode + repository access check)
 
 - Confirmed local repository inspection access for the required project paths after the failed-retrieval execution note: `README.md`, `HANDOFF.md`, `package.json`, `index.html`, `data/events.json`, `data/people.json`, `data/units/index.json`, unit files, `data/metadata.json`, root/data derived outputs, validation/test scripts, `scripts/derive.mjs`, and `apps/*`.
