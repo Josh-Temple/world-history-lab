@@ -1,7 +1,6 @@
 import { loadTimelineSeedData } from "./data/loaders.js";
 import { getReviewQueueEventIds, recordResult } from "../../shared/mastery-store.js";
 import { loadReviewStore, recordReviewMistake, saveReviewStore } from "../../shared/review-store.js";
-import { filterEvents as filterSharedEvents } from "../../shared/event-filters.js";
 import { mountHeader } from "../../shared/header.js";
 import {
   createPairKey,
@@ -12,6 +11,7 @@ import {
   generateLatestOfThreeQuestion,
   resolveUnitEvents,
 } from "./logic/question-generator.js";
+import { DIFFICULTY, filterByDifficulty } from "./logic/difficulty-filter.js";
 
 const QUESTION_TYPES = {
   BEFORE_AFTER: "timeline_before_after",
@@ -43,11 +43,6 @@ const REVIEW_DELAY_MIN = 2;
 const REVIEW_DELAY_MAX = 4;
 const REVIEW_MAX_ATTEMPTS = 2;
 const MIN_TRIPLET_YEAR_SPAN = 10;
-const DIFFICULTY = {
-  CORE: "core",
-  STANDARD: "standard",
-  FULL: "full",
-};
 const DIFFICULTY_MULTIPLIER = {
   [DIFFICULTY.CORE]: 1,
   [DIFFICULTY.STANDARD]: 1.2,
@@ -220,22 +215,6 @@ function getDifficultyLabelText(difficulty) {
   if (difficulty === DIFFICULTY.STANDARD) return "Standard (Core + Secondary)";
   if (difficulty === DIFFICULTY.FULL) return "Full (All Events)";
   return "Core Essentials";
-}
-
-function filterByDifficulty(events, difficulty) {
-  if (difficulty === DIFFICULTY.CORE) {
-    return filterSharedEvents(events, {
-      status: "reviewed",
-      predicate: (event) => Number.isFinite(event?.importance) && event.importance <= 1,
-    });
-  }
-  if (difficulty === DIFFICULTY.STANDARD) {
-    return filterSharedEvents(events, {
-      status: "reviewed",
-      predicate: (event) => !Number.isFinite(event?.importance) || event.importance <= 2,
-    });
-  }
-  return events;
 }
 
 function getMinYearSpanForDifficulty(difficulty) {

@@ -67,6 +67,12 @@ Open:
 - Progress is in-memory only (resets on refresh).
 - No schema validator integration yet.
 
+## Difficulty compatibility
+
+- Core Essentials includes reviewed/approved events with `importance <= 1` and reviewed/approved legacy events that do not yet have an `importance` value.
+- Standard includes the same unclassified legacy records plus events with `importance <= 2`.
+- This compatibility behavior keeps older, otherwise valid units playable while importance metadata is backfilled.
+
 
 ## Scope settings (Unit vs All + quality)
 
