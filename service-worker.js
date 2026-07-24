@@ -1,4 +1,4 @@
-const APP_SHELL_CACHE = 'world-history-lab-shell-v4';
+const APP_SHELL_CACHE = 'world-history-lab-shell-v5';
 const RUNTIME_CACHE = 'world-history-lab-runtime-v1';
 const NETWORK_TIMEOUT_MS = 10000;
 const APP_SHELL_URLS = [
@@ -44,7 +44,16 @@ const APP_SHELL_URLS = [
   '/apps/comparison-trainer/',
   '/apps/comparison-trainer/index.html',
   '/apps/comparison-trainer/main.js',
+  '/apps/session-runner/',
+  '/apps/session-runner/index.html',
+  '/apps/session-runner/app.js',
   '/apps/shared/data-store.js',
+  '/apps/shared/guided-session-controller.js',
+  '/apps/shared/mastery-store.js',
+  '/apps/shared/next-step-engine.js',
+  '/apps/shared/retention-engine.js',
+  '/apps/shared/review-store.js',
+  '/apps/shared/session-handoff-store.js',
   '/apps/shared/header.js',
   '/apps/shared/data-access.js',
   '/derived/events.normalized.json',
@@ -78,10 +87,11 @@ self.addEventListener('fetch', (event) => {
   if (request.mode === 'navigate') {
     event.respondWith((async () => {
       try {
-        return await fetch(request);
+        return await fetchWithTimeout(request);
       } catch {
         const cache = await caches.open(APP_SHELL_CACHE);
-        return (await cache.match('/index.html')) || Response.error();
+        const cachedPage = await cache.match(request, { ignoreSearch: true });
+        return cachedPage || (await cache.match('/index.html')) || Response.error();
       }
     })());
     return;
