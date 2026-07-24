@@ -27,21 +27,18 @@
     ],
     "skills": [
       "timeline",
-      "geography"
+      "causality"
     ],
-    "primary_skill": "geography",
+    "primary_skill": "timeline",
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
     "region_ids": [
       "reg_britain"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
@@ -86,24 +83,25 @@
       "lon": -2.2426
     },
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
     "region_ids": [
       "reg_britain"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_trade_network_expansion",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_technological_diffusion",
-      "concept_urbanization",
-      "concept_legitimacy_crisis"
+      "concept_trade_network_expansion"
     ],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "skills": [
+      "timeline",
+      "causality"
+    ],
+    "primary_skill": "timeline"
   },
   {
     "id": "ev_spinning_jenny_invented_1764",
@@ -133,21 +131,18 @@
     ],
     "skills": [
       "timeline",
-      "geography"
+      "causality"
     ],
-    "primary_skill": "geography",
+    "primary_skill": "timeline",
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
     "region_ids": [
       "reg_britain"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
@@ -181,22 +176,18 @@
     ],
     "skills": [
       "timeline",
-      "geography"
+      "causality"
     ],
-    "primary_skill": "geography",
+    "primary_skill": "timeline",
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
     "region_ids": [
       "reg_britain"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_trade_network_expansion",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
@@ -230,19 +221,18 @@
     ],
     "skills": [
       "timeline",
-      "geography"
+      "causality"
     ],
-    "primary_skill": "geography",
+    "primary_skill": "timeline",
     "themes": [
-      "industrialization"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
     "region_ids": [
       "reg_britain"
     ],
-    "concept_ids": [
-      "concept_technological_diffusion",
-      "concept_urbanization"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",

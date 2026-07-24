@@ -1,3 +1,46 @@
+# HANDOFF (2026-07-24 · learning-data and mastery integrity)
+
+## Root causes and completed work
+
+- The early Industrial Revolution bundle had evidently received a mechanical metadata backfill: the same four state-crisis concepts, `state_power`, and geography-primary skill appeared on inventions whose labels and summaries describe textile or steam technology. Five high-confidence records were corrected; no broad rewrite of all 342 events was attempted.
+- Timeline Trainer passed one question-level boolean to `recordResult()` for every option. Answer recording is now isolated in `logic/answer-recording.js`: a correct answer updates only the correct event; an incorrect answer updates only the selected event. The persisted `last_answer` distinguishes all item IDs, correct/selected IDs, correctness, question type, and confidence. A missed selected event still enters the existing review queue.
+- Timeline mastery persistence is deferred until the confidence selection so the same structured record contains the real confidence value.
+- Session Runner had no child-answer channel and treated `easy`/`unsure` confidence as correctness. It now keeps confidence only in its in-memory session summary and makes no mastery or review-store write. This is the conservative option B; implementing a trustworthy cross-frame protocol across seven child apps is intentionally deferred.
+
+## Historical data audit
+
+Corrected `ev_flying_shuttle_patent_1733`, `ev_bridgewater_canal_opens_1761`, `ev_spinning_jenny_invented_1764`, `ev_water_frame_patent_1769`, and `ev_watt_condenser_patent_1769`:
+
+- All five now use `industrialization`, `technology`, and `economic_change`, and use timeline as the primary skill with causality as a secondary skill. Patents/inventions no longer default to geography.
+- The four unrelated state-crisis concepts were removed. The canal retains only `concept_trade_network_expansion`, because lower transport costs and the coal connection directly exemplify network expansion. The inventions have no concept IDs: the current registry's `technological_diffusion` concept is not automatically established merely by an invention/patent occurring.
+- Audit search after correction found the suspect concepts still widespread: imperial overstretch 83 events, bureaucratic centralization 87, succession crisis 67, legitimacy crisis 96, and 42 events containing all four. This strongly suggests a larger generated backfill, but contextual review is required before editing them. The focused search found four additional `state_power` records tagged as an invention/patent/technology (`ev_spinning_jenny_patented_1770`, `ev_spinning_mule_invented_1779`, `ev_cotton_gin_invented_1793`, and `ev_bessemer_process_patent_1856`). They remain an explicit follow-up set because this change avoids expanding five audited records into an unsupported bulk rewrite.
+
+## Store ownership and duplication
+
+- `whl_mastery_v1` (shared mastery store): per-event attempts/correct/incorrect; updated by modes calling `recordResult`. It now also retains the most recent structured answer context.
+- `whl_review_queue_v1` (same module): lightweight mistake pressure/count queue, automatically updated by `recordResult`.
+- `whl_review_store_v1` (shared review store): scheduling/mastery plus rich mistake metadata. Timeline mistakes are written here separately, so missed-event identity is duplicated with the lightweight queue.
+- `whl_concept_mastery_v1` (shared mastery store): concept-level score, separate in granularity but Session Runner contains a concept-update helper, but no current call site was found; any future caller must use actual result data rather than confidence inference.
+
+Recommended migration: make `whl_mastery_v1` the canonical event attempt ledger and `whl_review_store_v1` the canonical scheduling/metadata projection. Stop direct writers to `whl_review_queue_v1`, derive queue pressure from review-store records, then migrate old queue counts once with an idempotent schema-version marker. Keep concept mastery separate, but update it only from actual answer-result concept IDs. Do not migrate until call sites and old-data conflict rules are inventoried.
+
+## Deferred answer-result protocol
+
+Implement a shared validator for `{ type: "whl-answer-result", mode, itemIds, correctItemId, selectedItemId, correct, questionType, confidence }`. Child frames should emit once per answer with an `attemptId`; Runner must accept only messages where `event.source === iframe.contentWindow`, validate the expected mode and known item IDs, and deduplicate attempt IDs. `postMessage` is not an authentication boundary: same-origin scripts/local modification remain possible, so treat records as learner-local telemetry, not trusted assessment. Confidence should be a later message keyed to the same attempt or included after confidence selection. Only validated actual results may update event/review/concept stores.
+
+## Tests and remaining priorities
+
+`npm run check` now includes `scripts/test-learning-integrity.mjs`, covering two- and three-option correct/wrong update isolation, correct/selected IDs, question type/confidence, existing review-queue behavior, structural uniqueness, primary-skill membership, and the five semantic regressions. Data validation now treats primary skill outside skills as an error rather than a warning.
+
+Priorities:
+1. Contextually audit the 42 events carrying all four suspect political concepts, in coherent unit-sized batches with reviewed evidence and explicit regression fixtures.
+2. Implement and test the shared answer-result protocol in one child mode and Session Runner before rolling it across remaining modes.
+3. Inventory every writer/reader of the two review stores and implement the staged canonical-store migration above.
+
+Intentionally unchanged: no new mode/UI, no backend, no wholesale event retagging, no store migration, and no attempt to infer semantic validity universally. Browser automation is not currently configured; perform manual local HTTP verification of Timeline, Session Runner, and Historical Patterns Explorer when browser tooling is available.
+
+---
+
 ## Handoff update (2026-06-03 · Wednesday feature mode)
 
 ### Repository access and health

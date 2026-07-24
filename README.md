@@ -1,3 +1,10 @@
+## Recent updates (2026-07-24 · learning integrity recovery)
+
+- Corrected the five audited early Industrial Revolution records so their themes, concepts, skills, and primary skill reflect industrial technology rather than unrelated state-crisis concepts.
+- Changed Timeline Trainer mastery recording to update only the demonstrated target (correct answer) or selected misconception (wrong answer), while retaining structured comparison-answer context and the existing review queue.
+- Stopped Session Runner from converting confidence ratings into invented correctness and review/mastery updates.
+- Added learning-integrity regressions to `npm run check`; detailed store ownership, audit scope, and migration guidance are in `HANDOFF.md`.
+
 ## Recent updates (2026-07-21 · Guided Session startup recovery)
 
 - Fixed Guided Session Runner's blank startup state by rendering an immediate loading message and converting initialization failures into an explicit retryable error instead of leaving an empty question panel.
