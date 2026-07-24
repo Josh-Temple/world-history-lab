@@ -31,6 +31,7 @@ function sanitizeStats(stats) {
     total_score: Number.isFinite(stats?.total_score) ? Math.max(0, stats.total_score) : 0,
     attempts: seen,
     last_seen: Number.isFinite(stats?.last_seen) ? stats.last_seen : null,
+    ...(stats?.last_answer && typeof stats.last_answer === 'object' ? { last_answer: stats.last_answer } : {}),
   };
 }
 
@@ -113,7 +114,7 @@ export function getConceptMasterySummary() {
 }
 
 function updateReviewQueue(eventId, correct) { const queue = loadReviewQueue(); const existing = queue[eventId] || { count: 0, last_incorrect: null, last_seen: null }; const now = Date.now(); if (correct) { if (existing.count <= 1) delete queue[eventId]; else queue[eventId] = { ...existing, count: existing.count - 1, last_seen: now }; } else { queue[eventId] = { count: existing.count + 1, last_incorrect: now, last_seen: now }; } saveReviewQueue(queue); }
-export function recordResult(eventId, correct, details = {}) { if (typeof eventId !== 'string' || eventId.length === 0) return; const data = load(); const existing = sanitizeStats(data[eventId] || EMPTY_STATS); const numericError = Number.isFinite(details?.error) ? Math.max(0, details.error) : 0; const numericScore = Number.isFinite(details?.score) ? Math.max(0, details.score) : (correct ? 1 : 0); const next = { ...existing, seen: existing.seen + 1, correct: existing.correct + (correct ? 1 : 0), incorrect: existing.incorrect + (correct ? 0 : 1), total_error: existing.total_error + numericError, total_score: existing.total_score + numericScore, attempts: existing.seen + 1, last_seen: Date.now() }; data[eventId] = next; save(data); updateReviewQueue(eventId, correct); return next; }
+export function recordResult(eventId, correct, details = {}) { if (typeof eventId !== 'string' || eventId.length === 0) return; const data = load(); const existing = sanitizeStats(data[eventId] || EMPTY_STATS); const numericError = Number.isFinite(details?.error) ? Math.max(0, details.error) : 0; const numericScore = Number.isFinite(details?.score) ? Math.max(0, details.score) : (correct ? 1 : 0); const next = { ...existing, seen: existing.seen + 1, correct: existing.correct + (correct ? 1 : 0), incorrect: existing.incorrect + (correct ? 0 : 1), total_error: existing.total_error + numericError, total_score: existing.total_score + numericScore, attempts: existing.seen + 1, last_seen: Date.now(), ...(details?.answer ? { last_answer: details.answer } : {}) }; data[eventId] = next; save(data); updateReviewQueue(eventId, correct); return next; }
 export function getStats(eventId) { if (typeof eventId !== 'string' || eventId.length === 0) return { ...EMPTY_STATS }; const data = load(); return sanitizeStats(data[eventId] || EMPTY_STATS); }
 export function getAllStats() { return load(); }
 export function getAccuracy(eventId) { const stats = getStats(eventId); const total = stats.correct + stats.incorrect; if (total === 0) return null; return stats.correct / total; }

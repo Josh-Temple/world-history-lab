@@ -1,7 +1,7 @@
 import { getEventsForUnit, getUnits, setStoredUnitId } from "../shared/data-store.js";
 import { getAllStats, getReviewQueueEventIds, updateConceptMastery, getWeakestConcepts } from "../shared/mastery-store.js";
 import { getModeMeta, recommendNextStep } from "../shared/next-step-engine.js";
-import { loadReviewStore, saveReviewStore, updateReviewItem, getDueItems } from "../shared/review-store.js";
+import { loadReviewStore, getDueItems } from "../shared/review-store.js";
 import { buildGuidedSession } from "../shared/guided-session-controller.js";
 import { loadSessionHandoff, saveSessionHandoff } from "../shared/session-handoff-store.js";
 
@@ -631,17 +631,10 @@ confidenceButtons.forEach((btn) => {
     const mode = getCurrentMode();
     if (!mode || modeIndex >= sessionModes.length) return;
     const confidence = btn.dataset.confidence || "skip";
-    const correct = confidence === "easy" || confidence === "unsure";
-    confidenceResults.push({ mode: mode.key, correct, confidence });
-    const fallbackId = `${selectedUnitId || "global"}::${mode.key}::q${getCurrentQuestionCount() + 1}`;
-    const itemId = getCurrentReviewItemId() || fallbackId;
-    const prev = reviewStore[itemId] || {};
-    reviewStore[itemId] = updateReviewItem(prev, { correct, confidence });
-    if (isReviewMode && reviewCandidates.length > 0) reviewCursor += 1;
-    saveReviewStore(reviewStore);
+    confidenceResults.push({ mode: mode.key, correct: null, confidence });
     if (feedbackEl) {
-      feedbackEl.textContent = correct ? "Saved confidence: keep the momentum." : "Saved as weak response for review.";
-      feedbackEl.style.color = correct ? "#166534" : "#b00020";
+      feedbackEl.textContent = "Confidence noted for this session. Answer accuracy was not inferred or saved.";
+      feedbackEl.style.color = "#475569";
     }
   });
 });

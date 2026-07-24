@@ -12,6 +12,7 @@ import {
   resolveUnitEvents,
 } from "./logic/question-generator.js";
 import { DIFFICULTY, filterByDifficulty } from "./logic/difficulty-filter.js";
+import { buildTimelineAnswerRecord } from "./logic/answer-recording.js";
 
 const QUESTION_TYPES = {
   BEFORE_AFTER: "timeline_before_after",
@@ -854,20 +855,13 @@ function generateAndRenderNextQuestion() {
   }
 }
 
-function recordTimelineMastery(question, isCorrect) {
-  if (!question || !Array.isArray(question.options)) {
-    return;
+function recordTimelineMastery(question, selectedOptionIndex, confidence = null) {
+  const record = buildTimelineAnswerRecord(question, selectedOptionIndex, confidence);
+  if (!record) return null;
+  for (const update of record.masteryUpdates) {
+    recordResult(update.eventId, update.correct, { answer: record.answer });
   }
-
-  const seenIds = new Set();
-  for (const option of question.options) {
-    if (!option?.id || seenIds.has(option.id)) {
-      continue;
-    }
-
-    seenIds.add(option.id);
-    recordResult(option.id, isCorrect);
-  }
+  return record.answer;
 }
 
 function handleAnswer(optionIndex) {
@@ -894,8 +888,6 @@ function handleAnswer(optionIndex) {
   if (state.currentQuestion.isReview) {
     state.reviewAnswered += 1;
   }
-
-  recordTimelineMastery(state.currentQuestion, isCorrect);
 
   if (isCorrect) {
     state.correctAnswered += 1;
@@ -1102,6 +1094,7 @@ function showSessionSummary() {
 
 function recordConfidence(confidence) {
   if (!state.currentQuestion || !state.hasAnswered) return;
+  recordTimelineMastery(state.currentQuestion, state.selectedOptionIndex, confidence);
   state.confidenceResults.push({
     question_type: state.currentQuestion.type,
     correct: state.selectedOptionIndex === state.correctOptionIndex,

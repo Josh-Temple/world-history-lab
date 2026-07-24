@@ -381,7 +381,7 @@ export async function validateData({ log = false } = {}) {
         if (typeof event.primary_skill !== "string" || !ALLOWED_SKILLS.has(event.primary_skill)) {
           errors.push(`Event ${eventLabel} has invalid primary_skill: ${String(event.primary_skill)}`);
         } else if (Array.isArray(event.skills) && !event.skills.includes(event.primary_skill)) {
-          warnings.push(`Event ${eventLabel} primary_skill is not included in skills array.`);
+          errors.push(`Event ${eventLabel} primary_skill is not included in skills array.`);
         }
       }
 

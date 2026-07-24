@@ -9,9 +9,10 @@
     "validate-data": "node scripts/validate-data.mjs",
     "validate": "node scripts/validate.mjs",
     "validate-derived": "node scripts/validate-derived.mjs",
-    "check": "npm run smoke-app-syntax && npm run smoke-loading-resilience && npm run smoke-timeline-trainer && npm run smoke && npm run sanity && npm run derive && npm run validate-derived && npm run validate-data && npm run validate",
+    "check": "npm run smoke-app-syntax && npm run smoke-loading-resilience && npm run smoke-timeline-trainer && npm run test-learning-integrity && npm run smoke && npm run sanity && npm run derive && npm run validate-derived && npm run validate-data && npm run validate",
     "smoke-app-syntax": "node scripts/smoke-app-syntax.mjs",
     "smoke-loading-resilience": "node scripts/smoke-loading-resilience.mjs",
-    "smoke-timeline-trainer": "node scripts/smoke-timeline-trainer.mjs"
+    "smoke-timeline-trainer": "node scripts/smoke-timeline-trainer.mjs",
+    "test-learning-integrity": "node scripts/test-learning-integrity.mjs"
   }
 }
