@@ -1,3 +1,8 @@
+## Recent updates (2026-07-21 · Guided Session startup recovery)
+
+- Fixed Guided Session Runner's blank startup state by rendering an immediate loading message and converting initialization failures into an explicit retryable error instead of leaving an empty question panel.
+- Added the Session Runner and its imported modules to the PWA application shell, and made navigation requests time out and fall back to the matching cached page rather than incorrectly opening the home page offline.
+
 ## Recent updates (2026-07-20 · Timeline Trainer default-question recovery)
 
 - Fixed Timeline Trainer's Core Essentials filter so reviewed legacy events without an assigned `importance` tier remain eligible, instead of leaving otherwise populated units with too few candidates to ask a question.

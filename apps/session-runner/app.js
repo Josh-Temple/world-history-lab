@@ -55,6 +55,16 @@ let reviewCandidates = [];
 let reviewCursor = 0;
 const isGuided = new URLSearchParams(window.location.search).get("guided") === "1";
 
+function showStartupMessage(message, { error = false } = {}) {
+  appContainer.innerHTML = "";
+  const status = document.createElement("p");
+  status.id = "session-startup-status";
+  status.setAttribute("role", error ? "alert" : "status");
+  status.textContent = message;
+  if (error) status.style.color = "#b00020";
+  appContainer.appendChild(status);
+}
+
 function markRecentUnit(unitId) {
   if (!unitId) return;
   try {
@@ -506,6 +516,10 @@ function next() {
 function restart() {
   modeIndex = 0;
   resetModeProgress();
+  if (document.documentElement.dataset.sessionRunnerState === "error") {
+    init().catch(recoverFromStartupFailure);
+    return;
+  }
   renderMode();
 }
 
@@ -535,6 +549,11 @@ function updateModeSelector() {
 }
 
 async function init() {
+  document.documentElement.dataset.sessionRunnerState = "loading";
+  showStartupMessage("Preparing your first question…");
+  nextStepButton.disabled = true;
+  restartButton.disabled = true;
+
   const urlUnit = new URLSearchParams(window.location.search).get("unit") || "";
   const savedUnit = localStorage.getItem("selected_unit") || "";
   units = await getUnits().catch(() => []);
@@ -575,6 +594,8 @@ async function init() {
   updateUnitProgressUi();
   updateModeSelector();
   renderMode();
+  document.documentElement.dataset.sessionRunnerState = "ready";
+  restartButton.disabled = false;
   saveSessionHandoff({
     weakConcepts: getWeakestConcepts({ limit: 5 }).map((r) => r.conceptId),
     currentConceptCluster: getWeakestConcepts({ limit: 1 })[0]?.conceptId || "foundations",
@@ -582,6 +603,16 @@ async function init() {
     sessionProgress: { modeIndex, answered: getAnsweredQuestionCount(), total: getTotalQuestionsPerUnit() },
     recentModes: sessionModes.map((m) => m.key),
   });
+}
+
+function recoverFromStartupFailure(error) {
+  console.error("[session-runner] Failed to start guided session", error);
+  document.documentElement.dataset.sessionRunnerState = "error";
+  restartButton.disabled = false;
+  nextStepButton.disabled = true;
+  unitLabelEl.textContent = "Unit: unavailable";
+  modeHelpEl.textContent = "The session data could not be loaded. Check your connection, then retry.";
+  showStartupMessage("The first question could not be prepared. Retry the session to load it again.", { error: true });
 }
 
 nextStepButton.addEventListener("click", next);
@@ -592,7 +623,7 @@ if (isReviewMode && modeHelpEl) {
   modeHelpEl.textContent = `Review mode active: ${dueCount} due items ready.`;
 }
 
-init();
+init().catch(recoverFromStartupFailure);
 
 
 confidenceButtons.forEach((btn) => {

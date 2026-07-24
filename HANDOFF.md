@@ -82,6 +82,25 @@
 3. Keep source-data tags aligned with the broad derived taxonomy when new tag families are introduced.
 4. Preserve deterministic generated artifacts unless a future data-versioning scheme provides a more meaningful stable build timestamp.
 
+# HANDOFF (2026-07-21 · Guided Session startup recovery)
+
+## Recent updates
+
+- Investigated the reported Guided Session state where the unit stayed unset and the question frame remained blank.
+- The runner previously left `#app` empty while it awaited data initialization and called `init()` without a rejection handler, so a slow request or any unexpected startup exception produced no actionable UI.
+- Added an immediate startup status, a top-level initialization failure handler, and a retry path through **Restart Session**.
+- Added Session Runner HTML, JavaScript, and its shared imports to the versioned PWA shell cache. Navigation fetches now have a timeout and prefer the requested cached page during fallback instead of always returning the root page.
+
+## Validation notes
+
+- Run `npm run check` after follow-up changes.
+- Browser tooling is not installed in this environment, so the visual state was verified through the HTML/JavaScript startup contract and repository smoke checks rather than a captured local browser screenshot.
+
+## Next-session follow-up
+
+1. Add browser-level coverage that opens `/apps/session-runner/?guided=1` and asserts `data-session-runner-state` reaches `ready` or `error` within the request timeout.
+2. Consider exposing which data resource failed in a collapsible diagnostics area while keeping the learner-facing error concise.
+
 # HANDOFF (2026-05-30 · loading resilience audit)
 
 ## Recent updates
