@@ -1693,17 +1693,11 @@
       "timeline_before_after"
     ],
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_technological_diffusion",
-      "concept_frontier_expansion",
-      "concept_urbanization",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [
       "pe_andrew_carnegie",
@@ -3493,14 +3487,11 @@
       "timeline_before_after"
     ],
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -13849,14 +13840,11 @@
       "timeline_before_after"
     ],
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],
@@ -13898,14 +13886,11 @@
       "timeline_before_after"
     ],
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "concept_tags": [],
     "people_ids": [],
     "related_event_ids": [],

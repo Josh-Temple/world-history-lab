@@ -26,8 +26,7 @@
       "reg_britain"
     ],
     "skills": [
-      "timeline",
-      "causality"
+      "timeline"
     ],
     "primary_skill": "timeline",
     "themes": [
@@ -98,8 +97,7 @@
     "evidence_strength": "moderate",
     "confidence_level": "medium",
     "skills": [
-      "timeline",
-      "causality"
+      "timeline"
     ],
     "primary_skill": "timeline"
   },
@@ -130,8 +128,7 @@
       "reg_britain"
     ],
     "skills": [
-      "timeline",
-      "causality"
+      "timeline"
     ],
     "primary_skill": "timeline",
     "themes": [
@@ -175,8 +172,7 @@
       "reg_britain"
     ],
     "skills": [
-      "timeline",
-      "causality"
+      "timeline"
     ],
     "primary_skill": "timeline",
     "themes": [
@@ -220,8 +216,7 @@
       "reg_britain"
     ],
     "skills": [
-      "timeline",
-      "causality"
+      "timeline"
     ],
     "primary_skill": "timeline",
     "themes": [
@@ -265,21 +260,22 @@
       "reg_britain"
     ],
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
     "region_ids": [
       "reg_britain"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "skills": [
+      "timeline"
+    ],
+    "primary_skill": "timeline"
   },
   {
     "id": "ev_cromford_mill_uses_water_frame_1771",
@@ -366,22 +362,18 @@
       "reg_britain"
     ],
     "skills": [
-      "timeline",
-      "geography"
+      "timeline"
     ],
-    "primary_skill": "geography",
+    "primary_skill": "timeline",
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
     "region_ids": [
       "reg_britain"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
@@ -890,19 +882,15 @@
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
     "skills": [
-      "timeline",
-      "recognition"
+      "timeline"
     ],
-    "primary_skill": "recognition",
+    "primary_skill": "timeline",
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
@@ -2036,22 +2024,15 @@
       "pe_jp_morgan"
     ],
     "skills": [
-      "timeline",
-      "people"
+      "timeline"
     ],
-    "primary_skill": "people",
+    "primary_skill": "timeline",
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_technological_diffusion",
-      "concept_frontier_expansion",
-      "concept_urbanization",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",

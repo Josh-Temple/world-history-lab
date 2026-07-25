@@ -52,7 +52,10 @@ export function getWeakItems(store = {}, limit = 10) {
     .slice(0, Math.max(0, limit));
 }
 
-export function recordReviewMistake(store = {}, { eventId, label = '', source = 'unknown', reason = '', relatedEventIds = [] } = {}) {
+export function recordReviewMistake(store = {}, {
+  eventId, label = '', source = 'unknown', reason = '', relatedEventIds = [],
+  correctItemId = '', questionType = '', mistakeType = '',
+} = {}) {
   if (typeof eventId !== 'string' || eventId.length === 0) {
     return store || {};
   }
@@ -60,14 +63,20 @@ export function recordReviewMistake(store = {}, { eventId, label = '', source = 
   const nextStore = { ...(store || {}) };
   const existing = nextStore[eventId] && typeof nextStore[eventId] === 'object' ? nextStore[eventId] : {};
   const history = Array.isArray(existing.mistake_history) ? existing.mistake_history.slice(-9) : [];
-  history.push({ source, reason, at: Date.now() });
+  const normalizedRelatedIds = [...new Set(Array.isArray(relatedEventIds) ? relatedEventIds : [])]
+    .filter((id) => typeof id === 'string' && id && id !== eventId)
+    .slice(0, 6);
+  history.push({ source, reason, correct_item_id: correctItemId, question_type: questionType, mistake_type: mistakeType, at: Date.now() });
 
   nextStore[eventId] = {
     ...existing,
     label: label || existing.label || eventId,
     source,
     reason: reason || existing.reason || 'Needs targeted review',
-    related_event_ids: Array.isArray(relatedEventIds) ? relatedEventIds.filter(Boolean).slice(0, 6) : [],
+    related_event_ids: normalizedRelatedIds,
+    correct_item_id: correctItemId || existing.correct_item_id || '',
+    question_type: questionType || existing.question_type || '',
+    mistake_type: mistakeType || existing.mistake_type || '',
     mastery: clamp01(Math.min(Number(existing.mastery) || 0.3, 0.35)),
     attempts: Number(existing.attempts) || 0,
     correct: Number(existing.correct) || 0,

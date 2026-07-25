@@ -1,3 +1,10 @@
+## Recent updates (2026-07-25 · review-record integrity follow-up)
+
+- Timeline Trainer now creates one rich review-store mistake record for the selected wrong event; the correct event is retained only as comparison context.
+- Audited four more Industrial Revolution records and removed unsupported political metadata; all nine reviewed records now advertise only timeline practice because they lack structured causal links and causal question types.
+- Removed Session Runner's unreachable concept-mastery inference helper and added a read-only GitHub Actions check running the complete `npm run check` suite.
+- See `HANDOFF.md` for the scoped 42-record audit inventory and recommended unit-by-unit follow-up.
+
 ## Recent updates (2026-07-24 · learning integrity recovery)
 
 - Corrected the five audited early Industrial Revolution records so their themes, concepts, skills, and primary skill reflect industrial technology rather than unrelated state-crisis concepts.
