@@ -406,22 +406,18 @@
       "reg_britain"
     ],
     "skills": [
-      "timeline",
-      "geography"
+      "timeline"
     ],
-    "primary_skill": "geography",
+    "primary_skill": "timeline",
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
     "region_ids": [
       "reg_britain"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
@@ -1650,31 +1646,29 @@
       "reg_britain"
     ],
     "skills": [
-      "timeline",
-      "geography"
+      "timeline"
     ],
-    "primary_skill": "geography",
+    "primary_skill": "timeline",
     "geo": {
       "lat": 53.417,
       "lon": -2.766
     },
     "themes": [
-      "state_power"
+      "industrialization",
+      "technology",
+      "economic_change"
     ],
     "region_ids": [
       "reg_britain"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_technological_diffusion",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": [
+      "pe_george_stephenson"
+    ]
   },
   {
     "id": "ev_factory_act_1833",
@@ -2020,8 +2014,7 @@
     "status": "approved",
     "content_origin": "ai_assisted_self_reviewed",
     "people_ids": [
-      "pe_andrew_carnegie",
-      "pe_jp_morgan"
+      "pe_henry_bessemer"
     ],
     "skills": [
       "timeline"

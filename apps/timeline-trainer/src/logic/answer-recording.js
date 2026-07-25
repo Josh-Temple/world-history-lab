@@ -1,3 +1,10 @@
+export function createTimelineAttemptId(randomUUID = globalThis.crypto?.randomUUID?.bind(globalThis.crypto)) {
+  if (typeof randomUUID !== "function") {
+    throw new Error("Timeline attempt IDs require crypto.randomUUID()");
+  }
+  return `timeline-${randomUUID()}`;
+}
+
 export function buildTimelineAnswerRecord(question, selectedOptionIndex, confidence = null) {
   if (!question || !Array.isArray(question.options)) return null;
   const correctOptionIndex = question.correctOptionIndex;
@@ -14,6 +21,7 @@ export function buildTimelineAnswerRecord(question, selectedOptionIndex, confide
     correct,
     questionType: question.type,
     confidence,
+    attemptId: question.attemptId || null,
   };
 
   // A correct response demonstrates knowledge of the target; a miss only demonstrates
@@ -44,5 +52,6 @@ export function buildTimelineMistakeRecord(question, selectedOptionIndex) {
     correctItemId: correctItem.id,
     relatedEventIds,
     questionType: question.type,
+    attemptId: question.attemptId || "",
   };
 }

@@ -54,9 +54,18 @@ export function getWeakItems(store = {}, limit = 10) {
 
 export function recordReviewMistake(store = {}, {
   eventId, label = '', source = 'unknown', reason = '', relatedEventIds = [],
-  correctItemId = '', questionType = '', mistakeType = '',
+  correctItemId = '', questionType = '', mistakeType = '', attemptId = '',
 } = {}) {
   if (typeof eventId !== 'string' || eventId.length === 0) {
+    return store || {};
+  }
+
+  if (typeof attemptId === 'string' && attemptId && Object.values(store || {}).some((item) => {
+    if (!item || typeof item !== 'object') return false;
+    if (item.last_attempt_id === attemptId) return true;
+    return Array.isArray(item.mistake_history)
+      && item.mistake_history.some((entry) => entry?.attempt_id === attemptId);
+  })) {
     return store || {};
   }
 
@@ -66,7 +75,7 @@ export function recordReviewMistake(store = {}, {
   const normalizedRelatedIds = [...new Set(Array.isArray(relatedEventIds) ? relatedEventIds : [])]
     .filter((id) => typeof id === 'string' && id && id !== eventId)
     .slice(0, 6);
-  history.push({ source, reason, correct_item_id: correctItemId, question_type: questionType, mistake_type: mistakeType, at: Date.now() });
+  history.push({ attempt_id: attemptId, source, reason, correct_item_id: correctItemId, question_type: questionType, mistake_type: mistakeType, at: Date.now() });
 
   nextStore[eventId] = {
     ...existing,
@@ -77,6 +86,7 @@ export function recordReviewMistake(store = {}, {
     correct_item_id: correctItemId || existing.correct_item_id || '',
     question_type: questionType || existing.question_type || '',
     mistake_type: mistakeType || existing.mistake_type || '',
+    last_attempt_id: attemptId || existing.last_attempt_id || '',
     mastery: clamp01(Math.min(Number(existing.mastery) || 0.3, 0.35)),
     attempts: Number(existing.attempts) || 0,
     correct: Number(existing.correct) || 0,

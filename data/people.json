@@ -373,9 +373,7 @@
       "philanthropist"
     ],
     "summary_short": "Scottish-American steel industrialist who symbolized large-scale corporate growth in the Second Industrial Revolution.",
-    "related_events": [
-      "ev_bessemer_process_patent_1856"
-    ],
+    "related_events": [],
     "confusions": [],
     "question_types": [
       "person_event_match",
@@ -409,9 +407,7 @@
       "financier"
     ],
     "summary_short": "American financier who consolidated major corporations and influenced industrial capital networks at global scale.",
-    "related_events": [
-      "ev_bessemer_process_patent_1856"
-    ],
+    "related_events": [],
     "confusions": [],
     "question_types": [
       "person_event_match",
@@ -646,7 +642,8 @@
     ],
     "summary_short": "Railway engineer associated with early locomotive development and the spread of rail transport in industrial Britain.",
     "related_events": [
-      "ev_liverpool_manchester_railway_1830"
+      "ev_liverpool_manchester_railway_1830",
+      "ev_rainhill_trials_rocket_1829"
     ],
     "confusions": [],
     "question_types": [
@@ -671,7 +668,7 @@
     ],
     "summary_short": "English inventor of the Bessemer steelmaking process, which sharply reduced steel costs and enabled large-scale industrial expansion.",
     "related_events": [
-      "ev_bessemer_process_1856"
+      "ev_bessemer_process_patent_1856"
     ],
     "confusions": [],
     "question_types": [

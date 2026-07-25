@@ -1,7 +1,7 @@
 import { loadTimelineSeedData } from "./data/loaders.js";
 import { getReviewQueueEventIds, recordResult } from "../../shared/mastery-store.js";
 import { loadReviewStore, recordReviewMistake, saveReviewStore } from "../../shared/review-store.js";
-import { buildTimelineMistakeRecord } from "./logic/answer-recording.js";
+import { buildTimelineAnswerRecord, buildTimelineMistakeRecord, createTimelineAttemptId } from "./logic/answer-recording.js";
 import { mountHeader } from "../../shared/header.js";
 import {
   createPairKey,
@@ -13,7 +13,6 @@ import {
   resolveUnitEvents,
 } from "./logic/question-generator.js";
 import { DIFFICULTY, filterByDifficulty } from "./logic/difficulty-filter.js";
-import { buildTimelineAnswerRecord } from "./logic/answer-recording.js";
 
 const QUESTION_TYPES = {
   BEFORE_AFTER: "timeline_before_after",
@@ -831,6 +830,7 @@ function generateAndRenderNextQuestion() {
     const enabledTypes = getEnabledTypesForScope();
     const reviewQuestion = pickReviewQuestion(enabledTypes);
     const question = reviewQuestion || generateFreshQuestion(enabledTypes);
+    question.attemptId = createTimelineAttemptId();
     renderQuestion(question);
   } catch (error) {
     state.currentQuestion = null;

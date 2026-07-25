@@ -1,3 +1,8 @@
+## Recent updates (2026-07-25 · attempt integrity follow-up)
+
+- Timeline Trainer questions now carry injectable UUID-based attempt IDs, and the rich review store ignores replayed answers without changing counts, history, scheduling, or mastery.
+- Finished the two-record Industrial Revolution follow-up and corrected the Bessemer patent's people link to Henry Bessemer; detailed audit boundaries remain in `HANDOFF.md`.
+
 ## Recent updates (2026-07-25 · review-record integrity follow-up)
 
 - Timeline Trainer now creates one rich review-store mistake record for the selected wrong event; the correct event is retained only as comparison context.

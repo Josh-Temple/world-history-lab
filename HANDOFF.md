@@ -1,4 +1,30 @@
-# HANDOFF (2026-07-24 · learning-data and mastery integrity)
+# HANDOFF (2026-07-25 · attempt integrity and Industrial Revolution follow-up)
+
+## Current state
+
+- PR #140 already corrected Timeline Trainer's selected-mistake targeting, removed unsupported causal skills from nine audited Industrial Revolution records, removed Session Runner's unused concept-mastery code, and added the `npm run check` GitHub Actions workflow.
+- This follow-up gives every generated Timeline Trainer question one `timeline-${crypto.randomUUID()}` attempt ID. Rich review records store it as `last_attempt_id` and in `mistake_history`; a repeat of an ID already present anywhere in `whl_review_store_v1` returns that store unchanged. This answer-wide policy prevents one answer from creating multiple independent event mistakes. Legacy history entries without attempt IDs remain readable and can receive new attempts.
+- Store roles remain separate: `whl_mastery_v1` is the event-attempt ledger, `whl_review_queue_v1` is the lightweight queue written by mastery results, `whl_review_store_v1` schedules rich mistake metadata, and `whl_concept_mastery_v1` is concept-granular. No key or migration was added.
+
+## Audited Industrial Revolution records
+
+Eleven records are now scoped to supported event metadata: `ev_flying_shuttle_patent_1733`, `ev_bridgewater_canal_opens_1761`, `ev_spinning_jenny_invented_1764`, `ev_water_frame_patent_1769`, `ev_watt_condenser_patent_1769`, `ev_spinning_jenny_patented_1770`, `ev_spinning_mule_invented_1779`, `ev_power_loom_patented_1785`, `ev_cotton_gin_invented_1793`, `ev_rainhill_trials_rocket_1829`, and `ev_bessemer_process_patent_1856`.
+
+- Power loom and Rainhill Trials now advertise only timeline practice, use industrialization/technology/economic-change themes, and carry no unsupported political or technological-diffusion concepts. Rainhill directly links George Stephenson; Edmund Cartwright has no person record, so Power loom has no person link.
+- Henry Bessemer already exists. The patent event now links him instead of Andrew Carnegie and J. P. Morgan. Their reciprocal links were also removed because People Recognition derives event/person questions from `event.people_ids`; associating them with the 1856 patent would imply direct participation. Henry Bessemer's stale related-event ID was corrected.
+- The original 42-record suspect inventory therefore has 36 unaudited records remaining. Next audit French Revolution/Napoleon, then Meiji Restoration, then Age of Imperialism; do not bulk-edit the remainder.
+
+## Deferred work and boundaries
+
+1. Audit the remaining suspect records in coherent unit batches, beginning with French Revolution/Napoleon.
+2. Implement the validated answer-result `postMessage` protocol before Session Runner writes embedded-mode mastery. Session Runner communication remains unimplemented.
+3. Inventory all review-store readers/writers before any consolidation of `whl_review_queue_v1` and `whl_review_store_v1`.
+
+Browser automation is not configured in this repository, so no browser runtime check was performed in this follow-up. No new mode, UI, backend, storage key/migration, Session Runner communication, or metadata changes outside the two requested events and Bessemer/person-link corrections were made.
+
+---
+
+# Superseded history (2026-07-24 · state before PR #140)
 
 ## Root causes and completed work
 
@@ -401,32 +427,3 @@ Use the weekly strategic assessment as an execution filter:
   - mode/scope/quality/difficulty filters yielding zero eligible events,
   - data fetch timeout or HTTP failure while loading seed data (including PWA/network edge cases).
 - Follow-up fix now updates the question panel text explicitly on generation failure so users are not left at a stale "Loading question..." message.
-## Handoff update (2026-07-25 · review records and scoped metadata audit)
-
-### Completed
-
-- Fixed the root review-store bug: `recordMistakeForReview` iterated over both the correct and selected events and called `recordReviewMistake` for each. It now builds exactly one record, keyed by the selected wrong event. The record adds `correct_item_id`, `question_type`, and `mistake_type`, while normalized `related_event_ids` preserve comparison context without duplicates or the mistaken event itself. Existing `whl_review_store_v1` records remain readable and no storage key or migration was introduced.
-- Corrected `ev_spinning_jenny_patented_1770`, `ev_spinning_mule_invented_1779`, `ev_cotton_gin_invented_1793`, and `ev_bessemer_process_patent_1856`: each now uses `industrialization`, `technology`, and `economic_change`; has no unsupported concepts; and uses `skills: ["timeline"]` with `primary_skill: "timeline"`.
-- Reassessed the five records patched on 2026-07-24. None has `causes`/`effects`, causal question types, or eligibility for Causality Drill (which reads `effects`/`caused_by` links), so `causality` was removed from all five. The same criterion was applied to the four records above. No reviewed event retains `causality`.
-- Removed Session Runner's unused `updateConceptMasteryFromInteraction`, `inferConceptIdsForEvent`, `getCurrentReviewItemId`, `updateConceptMastery` import, and inert `reviewCursor`. Confidence remains session feedback only and is not converted to correctness.
-- Expanded learning-integrity coverage for two- and three-option rich review records, correct-answer context, related-ID uniqueness, one selected target, existing mastery/queue isolation, and all nine audited records. GitHub Actions now runs the entire dependency-free `npm run check` on pushes and pull requests with Node 24 LTS, read-only contents permission, and per-ref cancellation.
-
-### Inventory of the 42 records carrying all four suspect political concepts
-
-The broad type is an audit triage label, not new event metadata. Some events belong to more than one registered unit.
-
-- **Industrial Revolution — 6 — inventions/patents and transport trials:** `ev_spinning_jenny_patented_1770`, `ev_spinning_mule_invented_1779`, `ev_power_loom_patented_1785`, `ev_cotton_gin_invented_1793`, `ev_rainhill_trials_rocket_1829`, `ev_bessemer_process_patent_1856`. All are in `unit_industrial_revolution`. The four named in this session were fixed; audit the remaining two next.
-- **French Revolution / Napoleon — 5 — revolutionary institutions, execution, regime change, diplomacy:** `ev_estates_general_1789`, `ev_tennis_court_oath_1789`, `ev_execution_louis_xvi_1793`, `ev_napoleon_coup_18_brumaire_1799`, `ev_congress_of_vienna_1814_1815`. All are in `unit_french_revolution_napoleon`; the first four also occur in `unit_french_revolution`.
-- **Meiji Restoration — 10 — diplomacy, civil war, central reforms, constitutional institutions, empire:** `ev_meiji_perry_1853`, `ev_meiji_kanagawa_treaty_1854`, `ev_meiji_boshin_war_1868`, `ev_meiji_charter_oath_1868`, `ev_meiji_abolish_han_1871`, `ev_meiji_conscription_1873`, `ev_meiji_constitution_1889`, `ev_meiji_diet_1890`, `ev_meiji_annex_korea_1910`, `ev_meiji_emperor_death_1912`. All are in `unit_meiji_restoration`; Perry, Charter Oath, abolition of han, and conscription also occur in `unit_industrialization_pathways_comparison`.
-- **Age of Imperialism — 9 — colonial projects/occupation, conferences, rebellions/wars, treaties/crises:** `ev_imperialism_leopold_congo_project_1876`, `ev_imperialism_british_occupation_egypt_1882`, `ev_imperialism_berlin_conference_begins_1884`, `ev_imperialism_berlin_conference_ends_1885`, `ev_imperialism_treaty_shimonoseki_1895`, `ev_imperialism_boxer_rebellion_1900`, `ev_imperialism_boer_war_ends_1902`, `ev_imperialism_treaty_portsmouth_1905`, `ev_imperialism_first_moroccan_crisis_1905`. All are in `unit_age_of_imperialism`.
-- **Silk Road Exchange — 12 — frontier administration, trade mediation/security, corridor shifts, and maritime policy:** `ev_han_protectorate_western_regions`, `ev_kushan_trade_mediation`, `ev_silk_road_post_roman_shift`, `ev_turkic_khaganate_trade_security`, `ev_songtsen_gampo_tibet_links`, `ev_ghaznavid_trade_corridors`, `ev_ming_maritime_policy_reset`, `ev_zheng_he_voyages_begin`, `ev_mamluk_indian_ocean_intermediation`, `ev_ottoman_control_eastern_mediterranean`, `ev_qing_frontier_trade_regulation`, `ev_russian_steppe_expansion_trade`. All are in `unit_silk_road_exchange`.
-
-Recommended order: finish the two remaining Industrial Revolution records, then French Revolution/Napoleon, Meiji Restoration, Age of Imperialism, and Silk Road Exchange. Each batch needs event-specific judgments; do not mechanically delete all four concepts because some political events may legitimately support a subset.
-
-### Remaining priorities and boundaries
-
-1. Audit the remaining 38 suspect records in the unit batches above, starting with the two Industrial Revolution records.
-2. Add the deferred validated `postMessage` answer-result protocol before Session Runner updates any mastery from embedded modes.
-3. Inventory readers/writers before consolidating `whl_review_queue_v1` and `whl_review_store_v1`; no store migration was attempted here.
-
-Intentionally unchanged: no new mode or UI, no backend/framework, no new localStorage key, no mass migration, no bulk correction of the other 38 suspect records, no full-dataset retagging, and no Session Runner `postMessage` integration.
