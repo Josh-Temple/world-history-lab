@@ -1,6 +1,7 @@
 import { loadTimelineSeedData } from "./data/loaders.js";
 import { getReviewQueueEventIds, recordResult } from "../../shared/mastery-store.js";
 import { loadReviewStore, recordReviewMistake, saveReviewStore } from "../../shared/review-store.js";
+import { buildTimelineMistakeRecord } from "./logic/answer-recording.js";
 import { mountHeader } from "../../shared/header.js";
 import {
   createPairKey,
@@ -538,29 +539,17 @@ function recordMistakeForReview(question) {
     return;
   }
 
-  const correctEvent = question.options[question.correctOptionIndex];
-  const selectedEvent = question.options[state.selectedOptionIndex];
-  const reviewTargets = [correctEvent, selectedEvent].filter((event, index, events) => (
-    event?.id && events.findIndex((candidate) => candidate?.id === event.id) === index
-  ));
+  const mistake = buildTimelineMistakeRecord(question, state.selectedOptionIndex);
+  if (!mistake) return;
+  mistake.reason = `Missed ${getQuestionTypeLabel(question.type)} chronology question`;
 
-  let reviewStore = loadReviewStore();
-  const relatedEventIds = question.options.map((option) => option?.id).filter(Boolean);
-  for (const event of reviewTargets) {
-    reviewStore = recordReviewMistake(reviewStore, {
-      eventId: event.id,
-      label: event.label,
-      source: "timeline-trainer",
-      reason: `Missed ${getQuestionTypeLabel(question.type)} chronology question`,
-      relatedEventIds: relatedEventIds.filter((id) => id !== event.id),
-    });
-    state.persistentMistakeIds.add(event.id);
-    state.sessionMistakeDetails.set(event.id, {
-      label: event.label,
-      unitIds: getEventUnitIds(event.id),
-      relatedEventIds: relatedEventIds.filter((id) => id !== event.id),
-    });
-  }
+  const reviewStore = recordReviewMistake(loadReviewStore(), mistake);
+  state.persistentMistakeIds.add(mistake.eventId);
+  state.sessionMistakeDetails.set(mistake.eventId, {
+    label: mistake.label,
+    unitIds: getEventUnitIds(mistake.eventId),
+    relatedEventIds: mistake.relatedEventIds,
+  });
   saveReviewStore(reviewStore);
 }
 

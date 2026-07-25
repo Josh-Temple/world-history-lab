@@ -1,13 +1,18 @@
-name: Data Integrity
+name: Check
+
+permissions:
+  contents: read
 
 on:
   pull_request:
   push:
-    branches:
-      - main
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  validate-and-derive:
+  check:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,16 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
 
-      - name: Validate canonical data
-        run: node scripts/validate.mjs
-
-      - name: Derive runtime artifacts
-        run: node scripts/derive.mjs
-
-      - name: Ensure derived artifacts are up to date
-        run: git diff --exit-code -- derived
-
-      - name: Timeline Trainer smoke check
-        run: node scripts/smoke-timeline-trainer.mjs
+      - name: Run repository checks
+        run: npm run check

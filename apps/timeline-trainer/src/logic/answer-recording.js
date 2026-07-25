@@ -24,3 +24,25 @@ export function buildTimelineAnswerRecord(question, selectedOptionIndex, confide
 
   return { answer, masteryUpdates };
 }
+
+export function buildTimelineMistakeRecord(question, selectedOptionIndex) {
+  if (!question || !Array.isArray(question.options)) return null;
+  const correctItem = question.options[question.correctOptionIndex];
+  const selectedItem = question.options[selectedOptionIndex];
+  if (!correctItem?.id || !selectedItem?.id || correctItem.id === selectedItem.id) return null;
+
+  const relatedEventIds = [...new Set(question.options
+    .map((option) => option?.id)
+    .filter((id) => id && id !== selectedItem.id))];
+
+  return {
+    eventId: selectedItem.id,
+    label: selectedItem.label || selectedItem.id,
+    source: "timeline-trainer",
+    reason: `Missed ${question.type} chronology question`,
+    mistakeType: "chronology_relation",
+    correctItemId: correctItem.id,
+    relatedEventIds,
+    questionType: question.type,
+  };
+}
