@@ -1,3 +1,8 @@
+## Recent updates (2026-07-25 · French Revolution/Napoleon metadata audit)
+
+- Audited five scoped French Revolution/Napoleon events, retaining only directly supported concepts, practice skills, person links, and causal relationships; 31 records from the original four-concept suspect set remain unaudited.
+- Added explicit event-by-event learning-integrity expectations and regenerated derived concept, skill, people, unit, and causality projections; details are in `HANDOFF.md`.
+
 ## Recent updates (2026-07-25 · attempt integrity follow-up)
 
 - Timeline Trainer questions now carry injectable UUID-based attempt IDs, and the rich review store ignores replayed answers without changing counts, history, scheduling, or mastery.

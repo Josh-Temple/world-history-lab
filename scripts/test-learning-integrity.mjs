@@ -89,6 +89,65 @@ for (const event of events) {
 assert.equal(industrialIds.size, events.filter((event) => industrialIds.has(event.id)).length, "all audited events must exist");
 assert.deepEqual(events.find((event) => event.id === "ev_bessemer_process_patent_1856").people_ids, ["pe_henry_bessemer"]);
 
+const frenchAudit = {
+  ev_estates_general_1789: {
+    concepts: ["concept_legitimacy_crisis"],
+    themes: ["revolution", "state_power"],
+    skills: ["timeline", "causality", "people"],
+    people: ["pe_louis_xvi"],
+  },
+  ev_tennis_court_oath_1789: {
+    concepts: ["concept_legitimacy_crisis"],
+    themes: ["revolution", "state_power"],
+    skills: ["timeline", "causality"],
+    people: [],
+  },
+  ev_execution_louis_xvi_1793: {
+    concepts: ["concept_legitimacy_crisis"],
+    themes: ["revolution", "state_power"],
+    skills: ["timeline", "causality", "people"],
+    people: ["pe_louis_xvi"],
+  },
+  ev_napoleon_coup_18_brumaire_1799: {
+    concepts: ["concept_legitimacy_crisis"],
+    themes: ["revolution", "state_power"],
+    skills: ["timeline", "causality", "people"],
+    people: ["pe_napoleon_bonaparte"],
+  },
+  ev_congress_of_vienna_1814_1815: {
+    concepts: [],
+    themes: ["war", "state_power"],
+    skills: ["timeline", "causality"],
+    people: [],
+  },
+};
+const eventsById = new Map(events.map((event) => [event.id, event]));
+const people = JSON.parse(await readFile(new URL("../data/people.json", import.meta.url)));
+const peopleById = new Map(people.map((person) => [person.id, person]));
+for (const [eventId, expected] of Object.entries(frenchAudit)) {
+  const event = eventsById.get(eventId);
+  assert.ok(event, `${eventId}: audited event must exist`);
+  assert.deepEqual(event.concept_ids, expected.concepts, `${eventId}: audited concepts changed`);
+  assert.deepEqual(event.themes, expected.themes, `${eventId}: audited themes changed`);
+  assert.deepEqual(event.skills, expected.skills, `${eventId}: audited skills changed`);
+  assert.equal(event.primary_skill, "causality", `${eventId}: audited primary skill changed`);
+  assert.deepEqual(event.people_ids, expected.people, `${eventId}: audited people changed`);
+  assert.ok(event.question_types.some((type) => type.startsWith("causality_")), `${eventId}: causality needs a supported question type`);
+  assert.ok((event.causes?.length || 0) + (event.effects?.length || 0) > 0, `${eventId}: causality needs structured data`);
+  for (const personId of event.people_ids) {
+    const person = peopleById.get(personId);
+    assert.ok(person, `${eventId}: missing person ${personId}`);
+    assert.ok(person.related_events?.includes(eventId), `${eventId}: ${personId} reciprocal link missing`);
+  }
+}
+assert.ok(new Set(Object.values(frenchAudit).map(({ concepts }) => JSON.stringify(concepts))).size > 1, "French audit must not regress to one mechanical concept set");
+for (const person of people) {
+  for (const eventId of person.related_events || []) {
+    if (!Object.hasOwn(frenchAudit, eventId)) continue;
+    assert.ok(eventsById.get(eventId).people_ids?.includes(person.id), `${person.id}: stale audited-event link ${eventId}`);
+  }
+}
+
 const storage = new Map();
 globalThis.window = { localStorage: { getItem: (key) => storage.get(key) ?? null, setItem: (key, value) => storage.set(key, value) } };
 const { recordResult } = await import("../apps/shared/mastery-store.js");

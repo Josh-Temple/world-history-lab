@@ -615,10 +615,7 @@
     "skills": [
       "timeline",
       "causality",
-      "geography",
-      "people",
-      "comparison",
-      "recognition"
+      "people"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -633,9 +630,6 @@
       "reg_france"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
@@ -811,9 +805,7 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "approved",
-    "people_ids": [
-      "pe_louis_xvi"
-    ],
+    "people_ids": [],
     "location": {
       "label": "Versailles, France",
       "lat": 48.8049,
@@ -821,11 +813,7 @@
     },
     "skills": [
       "timeline",
-      "causality",
-      "geography",
-      "people",
-      "comparison",
-      "recognition"
+      "causality"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -840,9 +828,6 @@
       "reg_france"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [
@@ -972,10 +957,7 @@
     "skills": [
       "timeline",
       "causality",
-      "geography",
-      "people",
-      "comparison",
-      "recognition"
+      "people"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -990,9 +972,6 @@
       "reg_france"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [
@@ -1247,7 +1226,7 @@
       "pe_napoleon_bonaparte"
     ],
     "related_events": [
-      "ev_thermidorian_reaction_1794",
+      "ev_directory_established_1795",
       "ev_napoleon_emperor_1804"
     ],
     "causes": [
@@ -1302,7 +1281,6 @@
     "skills": [
       "timeline",
       "causality",
-      "geography",
       "people"
     ],
     "primary_skill": "causality",
@@ -1311,15 +1289,13 @@
       "lon": 2.3522
     },
     "themes": [
+      "revolution",
       "state_power"
     ],
     "region_ids": [
       "reg_france"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [
@@ -1524,9 +1500,7 @@
       "europe"
     ],
     "summary_short": "European powers met at Vienna to rebuild order after the Napoleonic Wars, reshaping borders and seeking a balance of power.",
-    "related_people": [
-      "pe_napoleon_bonaparte"
-    ],
+    "related_people": [],
     "related_events": [
       "ev_napoleon_emperor_1804"
     ],
@@ -1571,9 +1545,7 @@
     ],
     "content_origin": "ai_assisted_self_reviewed",
     "status": "approved",
-    "people_ids": [
-      "pe_napoleon_bonaparte"
-    ],
+    "people_ids": [],
     "location": {
       "label": "Vienna, Austria",
       "lat": 48.2082,
@@ -1581,9 +1553,7 @@
     },
     "skills": [
       "timeline",
-      "causality",
-      "geography",
-      "people"
+      "causality"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -1591,17 +1561,13 @@
       "lon": 16.3738
     },
     "themes": [
+      "war",
       "state_power"
     ],
     "region_ids": [
       "reg_western_europe"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [
       "ev_napoleon_emperor_1804"
     ],

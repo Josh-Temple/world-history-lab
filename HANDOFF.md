@@ -1,3 +1,21 @@
+# HANDOFF (2026-07-25 · French Revolution/Napoleon metadata audit)
+
+## Completed scope and decisions
+
+Audited only `ev_estates_general_1789`, `ev_tennis_court_oath_1789`, `ev_execution_louis_xvi_1793`, `ev_napoleon_coup_18_brumaire_1799`, and `ev_congress_of_vienna_1814_1815`. The Estates-General, Tennis Court Oath, execution, and coup retain only `concept_legitimacy_crisis`: each directly contests the source or holder of governing authority. Congress of Vienna retains no current concept because postwar restoration and balance-of-power diplomacy do not, by themselves, make the meeting a representative example of the registry's crisis concept. All five lost `concept_imperial_overstretch`, `concept_bureaucratic_centralization`, and `concept_succession_crisis`; the events are not directly about capacity-exceeding expansion, administrative consolidation, or contested succession. Congress also lost `concept_legitimacy_crisis` for the distinction above.
+
+- Themes remain event-specific within the allowed vocabulary: the four revolutionary transitions use `revolution` and `state_power`; Congress uses `war` and `state_power` as a post-Napoleonic settlement.
+- All five retain timeline and causality skills with causality primary because each has structured causes/effects and causal question types that the current drill/derived indexes can use. People remains only for the Estates-General/Louis XVI, the execution/Louis XVI, and the coup/Napoleon. Unsupported geography, comparison, and recognition skills were removed.
+- Tennis Court Oath's unsupported Louis XVI event-side people link was removed. Congress's Napoleon link was removed on both the event and person records because Napoleon did not participate in the congress. Marie Antoinette's stale person-side link to Louis XVI's execution was also removed.
+- The coup's broad Thermidor relationship was replaced with the Directory, preserving the directly explainable Directory → coup → Consulate/Empire sequence. Existing structured directional links were otherwise retained: Estates-General → Tennis Court Oath → Bastille, September Massacres → execution → Reign of Terror, Directory → coup → empire/wars, and imperial rule → Congress → settlement.
+- Canonical derive output was regenerated. The explicit regression fixture now freezes concepts, themes, skills, primary skill, people links, causal eligibility, and reciprocal person links for all five while preserving the eleven-event Industrial Revolution fixture.
+
+## Remaining audit inventory
+
+The original four-concept query now returns **31 unaudited events**, matching the expected 42 minus the eleven completed Industrial Revolution records and these five records. French Revolution/Napoleon events outside this five-record scope remain unaudited, including partial suspect-concept assignments and the duplicate Congress settlement records; do not infer that the whole units are clean. Next audit the Meiji Restoration batch, followed by Age of Imperialism and then Silk Road exchange. No UI, learning record, Session Runner, localStorage, schema, non-target event metadata, or GitHub Actions workflow was changed. Browser automation remains unavailable, so browser runtime checks were not performed.
+
+---
+
 # HANDOFF (2026-07-25 · attempt integrity and Industrial Revolution follow-up)
 
 ## Current state
