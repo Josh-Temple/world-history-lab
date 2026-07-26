@@ -1037,26 +1037,28 @@
   },
   "ev_meiji_abolish_han_1871": {
     "prerequisites": [],
-    "consequences": []
+    "consequences": [
+      "ev_meiji_conscription_1873"
+    ]
   },
   "ev_meiji_annex_korea_1910": {
-    "prerequisites": [],
+    "prerequisites": [
+      "ev_meiji_russojapanese_war_1905"
+    ],
     "consequences": []
   },
   "ev_meiji_boshin_war_1868": {
     "prerequisites": [],
-    "consequences": [
-      "ev_meiji_charter_oath_1868"
-    ]
+    "consequences": []
   },
   "ev_meiji_charter_oath_1868": {
-    "prerequisites": [
-      "ev_meiji_boshin_war_1868"
-    ],
+    "prerequisites": [],
     "consequences": []
   },
   "ev_meiji_conscription_1873": {
-    "prerequisites": [],
+    "prerequisites": [
+      "ev_meiji_abolish_han_1871"
+    ],
     "consequences": []
   },
   "ev_meiji_constitution_1889": {
@@ -1089,7 +1091,9 @@
   },
   "ev_meiji_russojapanese_war_1905": {
     "prerequisites": [],
-    "consequences": []
+    "consequences": [
+      "ev_meiji_annex_korea_1910"
+    ]
   },
   "ev_meiji_sinojapanese_war_1894": {
     "prerequisites": [],

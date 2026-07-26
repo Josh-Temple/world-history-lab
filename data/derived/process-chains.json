@@ -1211,10 +1211,12 @@
     "isolated_or_short_chain:ev_napoleon_emperor_1804",
     "isolated_or_short_chain:ev_meiji_perry_1853",
     "isolated_or_short_chain:ev_meiji_kanagawa_treaty_1854",
-    "isolated_or_short_chain:ev_meiji_boshin_war_1868",
-    "isolated_or_short_chain:ev_meiji_charter_oath_1868",
+    "isolated_or_short_chain:ev_meiji_abolish_han_1871",
+    "isolated_or_short_chain:ev_meiji_conscription_1873",
     "isolated_or_short_chain:ev_meiji_constitution_1889",
     "isolated_or_short_chain:ev_meiji_diet_1890",
+    "isolated_or_short_chain:ev_meiji_russojapanese_war_1905",
+    "isolated_or_short_chain:ev_meiji_annex_korea_1910",
     "isolated_or_short_chain:ev_imperialism_british_occupation_egypt_1882",
     "isolated_or_short_chain:ev_imperialism_second_boer_war_begins_1899",
     "isolated_or_short_chain:ev_imperialism_boxer_rebellion_1900",
@@ -1245,8 +1247,6 @@
     "isolated_or_short_chain:ev_wwi_paris_peace_conference_1919",
     "isolated_or_short_chain:ev_wwi_treaty_versailles_1919",
     "isolated_or_short_chain:ev_wwi_league_of_nations_1920",
-    "isolated_or_short_chain:ev_wwi_japan_enters_war_1914",
-    "isolated_or_short_chain:ev_wwi_ottoman_enters_war_1914",
-    "isolated_or_short_chain:ev_wwi_second_battle_ypres_gas_1915"
+    "isolated_or_short_chain:ev_wwi_japan_enters_war_1914"
   ]
 }

@@ -1,3 +1,30 @@
+# HANDOFF (2026-07-26 · Meiji Restoration metadata audit)
+
+## Scope and event-level concept decisions
+
+Individually audited the ten baseline records in `unit_meiji_restoration`: Perry (1853), Kanagawa (1854), Boshin War (1868), Charter Oath (1868), abolition of han (1871), conscription (1873), Constitution (1889), Diet (1890), Korea annexation (1910), and Emperor Meiji's death (1912). Perry, Kanagawa, Boshin, Charter Oath, and the Constitution retain only `concept_legitimacy_crisis`, because each directly exposes, contests, declares, or codifies a basis for governing authority. Han abolition retains only `concept_bureaucratic_centralization`; conscription retains that concept plus `concept_military_reform`. Korea annexation retains only `concept_frontier_expansion`. The Diet and emperor's death retain no registry concept.
+
+All ten lost `concept_imperial_overstretch`: coercive diplomacy, war, state building, and acquiring Korea do not establish expansion beyond sustainable capacity. Succession was not contested in any of these records, so all lost `concept_succession_crisis`. Centralization was removed except where nationwide administrative or military capacity is the event's substance (han abolition and conscription). Legitimacy was removed from administrative/military reforms, the Diet's institutional implementation, colonial annexation, and an orderly imperial succession because those events do not themselves represent a crisis over the right to rule.
+
+## Themes, skills, people, and relationships
+
+- Themes are event-specific: Perry, Kanagawa, han abolition, conscription, Constitution, and Diet use `state_power`; Boshin uses `revolution`, `war`, and `state_power`; Charter Oath uses `revolution` and `state_power`; annexation uses `imperialism` and `colonialism`; the emperor's death has no forced political theme.
+- Unsupported geography was removed from all ten. Timeline remains on all. Causality remains primary for Perry, Kanagawa, Boshin, han abolition, conscription, Constitution, Diet, and annexation because each has structured cause/effect data plus `cause_and_effect` or `causality_chain`; Charter Oath and the emperor's death are timeline-only. No comparison, recognition, or people skill was added.
+- The registry has no Perry, Emperor Meiji, Tokugawa Yoshinobu, or Itō Hirobumi record. Rather than expand scope by creating people, all ten use empty `people_ids`/`related_people`; the regression also rejects any stale one-way person link to these audited events. Registering those directly involved people remains optional future enrichment.
+- Perry → Kanagawa remains the direct cause/effect and prerequisite/consequence pair. Boshin and Charter Oath remain related context, but their misleading direct event-causal edge was removed. Charter Oath ↔ han abolition is broad context. Han abolition → conscription is now the direct capacity-building pair. Constitution → Diet remains direct. Russo-Japanese settlement → Korea annexation is represented reciprocally as cause/effect and prerequisite/consequence, while the annexation-to-emperor-death chronological link was removed. No other event metadata was retagged; only the Russo-Japanese settlement's inverse annexation links changed for consistency.
+
+## Regression and derived output
+
+`scripts/test-learning-integrity.mjs` now freezes exact concepts, themes, skills, primary skill, people, related events, prerequisites, consequences, and event IDs embedded in causes/effects for each of the ten records. It checks all ten exist, scoped arrays are duplicate-free, primary skill membership, causal eligibility, person existence/reciprocity, and more than one concept set. The repository-wide relationship existence/duplicate/self-reference checks from PR #143, Congress protections, five French expectations, and eleven Industrial Revolution expectations remain intact. Derivation regenerated normalized events, concept indexes, causal graph/chains/pairs, process chains, unit event pools, and people/event projections in both derived locations.
+
+## Baseline recount and next work
+
+The baseline remains the **42 events carrying all four suspect concepts immediately after commit `7a3ffa1`'s initial five-event Industrial Revolution correction**. Before this pass, six baseline Industrial Revolution records and five French records had been audited, leaving 31. This pass audited the remaining ten Meiji baseline records. A fresh query of canonical `data/events.json` now finds **21** records still carrying all four concepts: **9** in `unit_age_of_imperialism` and **12** in `unit_silk_road_exchange`; no scoped Meiji record remains. Audit the nine Age of Imperialism records next, then the twelve Silk Road Exchange records.
+
+Intentionally unchanged: the other two Meiji events' concepts/skills, Age of Imperialism and Silk Road metadata, global schemas/taxonomies, Timeline Trainer, Session Runner, attempt IDs, localStorage, UI, backend, workflow, and unrelated relationships. Browser automation is not configured, so Concept Explorer, Historical Patterns, Causality Drill, People Recognition, Timeline Trainer, and Industrialization Pathways Comparison were not runtime-tested in a browser.
+
+---
+
 # HANDOFF (2026-07-26 · French Revolution/Napoleon relation follow-up)
 
 ## Completed relation cleanup
