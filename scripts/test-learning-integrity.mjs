@@ -122,6 +122,44 @@ const frenchAudit = {
   },
 };
 const eventsById = new Map(events.map((event) => [event.id, event]));
+const relationIds = (links = []) => links.flatMap((link) => {
+  if (typeof link === "string") return [link];
+  return typeof link?.event_id === "string" ? [link.event_id] : [];
+});
+const expectedRelations = {
+  ev_estates_general_1789: {
+    relatedEventIds: ["ev_tennis_court_oath_1789", "ev_storming_bastille_1789"], prerequisiteEventIds: [], consequenceEventIds: ["ev_tennis_court_oath_1789"], causeEventIds: [], effectEventIds: ["ev_tennis_court_oath_1789"],
+  },
+  ev_tennis_court_oath_1789: {
+    relatedEventIds: ["ev_estates_general_1789", "ev_storming_bastille_1789"], prerequisiteEventIds: ["ev_estates_general_1789"], consequenceEventIds: ["ev_storming_bastille_1789"], causeEventIds: ["ev_estates_general_1789"], effectEventIds: ["ev_storming_bastille_1789"],
+  },
+  ev_execution_louis_xvi_1793: {
+    relatedEventIds: ["ev_reign_of_terror_1793_1794"], prerequisiteEventIds: [], consequenceEventIds: ["ev_reign_of_terror_1793_1794"], causeEventIds: [], effectEventIds: ["ev_reign_of_terror_1793_1794"],
+  },
+  ev_napoleon_coup_18_brumaire_1799: {
+    relatedEventIds: ["ev_directory_established_1795", "ev_napoleon_emperor_1804"], prerequisiteEventIds: ["ev_directory_established_1795"], consequenceEventIds: ["ev_napoleon_emperor_1804", "ev_napoleonic_wars_1803_1815"], causeEventIds: [], effectEventIds: ["ev_napoleon_emperor_1804", "ev_napoleonic_wars_1803_1815"],
+  },
+  ev_congress_of_vienna_1814_1815: {
+    relatedEventIds: ["ev_napoleon_emperor_1804"], prerequisiteEventIds: ["ev_napoleonic_wars_1803_1815"], consequenceEventIds: ["ev_concert_of_europe_1815_1848"], causeEventIds: ["ev_napoleonic_wars_1803_1815"], effectEventIds: ["ev_concert_of_europe_1815_1848"],
+  },
+};
+for (const event of events) {
+  for (const [field, ids] of Object.entries({
+    related_events: relationIds(event.related_events),
+    prerequisite_event_ids: event.prerequisite_event_ids || [],
+    consequence_event_ids: event.consequence_event_ids || [],
+    causes: relationIds(event.causes),
+    effects: relationIds(event.effects),
+  })) {
+    assert.equal(new Set(ids).size, ids.length, `${event.id}: duplicate ${field} event ID`);
+    assert.ok(!ids.includes(event.id), `${event.id}: self-reference in ${field}`);
+    for (const id of ids) assert.ok(eventsById.has(id), `${event.id}: unknown ${field} event ID ${id}`);
+  }
+}
+assert.ok(!eventsById.has("ev_congress_vienna_1815"), "duplicate Congress settlement must stay removed");
+assert.ok(!relationIds(eventsById.get("ev_napoleon_emperor_1804").effects).includes("ev_congress_of_vienna_1814_1815"), "Napoleon's coronation must not become a direct Congress cause");
+assert.ok(!eventsById.get("ev_napoleon_emperor_1804").consequence_event_ids.includes("ev_congress_of_vienna_1814_1815"), "Napoleon's coronation must not become a Congress prerequisite");
+assert.ok(!eventsById.get("ev_execution_louis_xvi_1793").prerequisite_event_ids.includes("ev_september_massacres_1792"), "September Massacres must not become an execution prerequisite");
 const people = JSON.parse(await readFile(new URL("../data/people.json", import.meta.url)));
 const peopleById = new Map(people.map((person) => [person.id, person]));
 for (const [eventId, expected] of Object.entries(frenchAudit)) {
@@ -132,6 +170,12 @@ for (const [eventId, expected] of Object.entries(frenchAudit)) {
   assert.deepEqual(event.skills, expected.skills, `${eventId}: audited skills changed`);
   assert.equal(event.primary_skill, "causality", `${eventId}: audited primary skill changed`);
   assert.deepEqual(event.people_ids, expected.people, `${eventId}: audited people changed`);
+  const expectedRelation = expectedRelations[eventId];
+  assert.deepEqual(event.related_events || [], expectedRelation.relatedEventIds, `${eventId}: related events changed`);
+  assert.deepEqual(event.prerequisite_event_ids || [], expectedRelation.prerequisiteEventIds, `${eventId}: prerequisites changed`);
+  assert.deepEqual(event.consequence_event_ids || [], expectedRelation.consequenceEventIds, `${eventId}: consequences changed`);
+  assert.deepEqual(relationIds(event.causes), expectedRelation.causeEventIds, `${eventId}: causal event links changed`);
+  assert.deepEqual(relationIds(event.effects), expectedRelation.effectEventIds, `${eventId}: effect event links changed`);
   assert.ok(event.question_types.some((type) => type.startsWith("causality_")), `${eventId}: causality needs a supported question type`);
   assert.ok((event.causes?.length || 0) + (event.effects?.length || 0) > 0, `${eventId}: causality needs structured data`);
   for (const personId of event.people_ids) {
