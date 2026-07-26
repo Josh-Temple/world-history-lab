@@ -143,6 +143,49 @@ const expectedRelations = {
     relatedEventIds: ["ev_napoleon_emperor_1804"], prerequisiteEventIds: ["ev_napoleonic_wars_1803_1815"], consequenceEventIds: ["ev_concert_of_europe_1815_1848"], causeEventIds: ["ev_napoleonic_wars_1803_1815"], effectEventIds: ["ev_concert_of_europe_1815_1848"],
   },
 };
+
+const meijiAudit = {
+  ev_meiji_perry_1853: {
+    concepts: ["concept_legitimacy_crisis"], themes: ["state_power"], skills: ["timeline", "causality"], primarySkill: "causality", people: [],
+    relatedEventIds: ["ev_meiji_kanagawa_treaty_1854"], prerequisiteEventIds: [], consequenceEventIds: ["ev_meiji_kanagawa_treaty_1854"], causeEventIds: [], effectEventIds: ["ev_meiji_kanagawa_treaty_1854"],
+  },
+  ev_meiji_kanagawa_treaty_1854: {
+    concepts: ["concept_legitimacy_crisis"], themes: ["state_power"], skills: ["timeline", "causality"], primarySkill: "causality", people: [],
+    relatedEventIds: ["ev_meiji_perry_1853"], prerequisiteEventIds: ["ev_meiji_perry_1853"], consequenceEventIds: [], causeEventIds: ["ev_meiji_perry_1853"], effectEventIds: [],
+  },
+  ev_meiji_boshin_war_1868: {
+    concepts: ["concept_legitimacy_crisis"], themes: ["revolution", "war", "state_power"], skills: ["timeline", "causality"], primarySkill: "causality", people: [],
+    relatedEventIds: ["ev_meiji_charter_oath_1868"], prerequisiteEventIds: [], consequenceEventIds: [], causeEventIds: [], effectEventIds: [],
+  },
+  ev_meiji_charter_oath_1868: {
+    concepts: ["concept_legitimacy_crisis"], themes: ["revolution", "state_power"], skills: ["timeline"], primarySkill: "timeline", people: [],
+    relatedEventIds: ["ev_meiji_boshin_war_1868", "ev_meiji_abolish_han_1871"], prerequisiteEventIds: [], consequenceEventIds: [], causeEventIds: [], effectEventIds: [],
+  },
+  ev_meiji_abolish_han_1871: {
+    concepts: ["concept_bureaucratic_centralization"], themes: ["state_power"], skills: ["timeline", "causality"], primarySkill: "causality", people: [],
+    relatedEventIds: ["ev_meiji_charter_oath_1868", "ev_meiji_conscription_1873"], prerequisiteEventIds: [], consequenceEventIds: ["ev_meiji_conscription_1873"], causeEventIds: [], effectEventIds: ["ev_meiji_conscription_1873"],
+  },
+  ev_meiji_conscription_1873: {
+    concepts: ["concept_bureaucratic_centralization", "concept_military_reform"], themes: ["state_power"], skills: ["timeline", "causality"], primarySkill: "causality", people: [],
+    relatedEventIds: ["ev_meiji_abolish_han_1871"], prerequisiteEventIds: ["ev_meiji_abolish_han_1871"], consequenceEventIds: [], causeEventIds: ["ev_meiji_abolish_han_1871"], effectEventIds: [],
+  },
+  ev_meiji_constitution_1889: {
+    concepts: ["concept_legitimacy_crisis"], themes: ["state_power"], skills: ["timeline", "causality"], primarySkill: "causality", people: [],
+    relatedEventIds: ["ev_meiji_diet_1890"], prerequisiteEventIds: [], consequenceEventIds: ["ev_meiji_diet_1890"], causeEventIds: [], effectEventIds: ["ev_meiji_diet_1890"],
+  },
+  ev_meiji_diet_1890: {
+    concepts: [], themes: ["state_power"], skills: ["timeline", "causality"], primarySkill: "causality", people: [],
+    relatedEventIds: ["ev_meiji_constitution_1889"], prerequisiteEventIds: ["ev_meiji_constitution_1889"], consequenceEventIds: [], causeEventIds: ["ev_meiji_constitution_1889"], effectEventIds: [],
+  },
+  ev_meiji_annex_korea_1910: {
+    concepts: ["concept_frontier_expansion"], themes: ["imperialism", "colonialism"], skills: ["timeline", "causality"], primarySkill: "causality", people: [],
+    relatedEventIds: ["ev_meiji_russojapanese_war_1905"], prerequisiteEventIds: ["ev_meiji_russojapanese_war_1905"], consequenceEventIds: [], causeEventIds: ["ev_meiji_russojapanese_war_1905"], effectEventIds: [],
+  },
+  ev_meiji_emperor_death_1912: {
+    concepts: [], themes: [], skills: ["timeline"], primarySkill: "timeline", people: [],
+    relatedEventIds: [], prerequisiteEventIds: [], consequenceEventIds: [], causeEventIds: [], effectEventIds: [],
+  },
+};
 for (const event of events) {
   for (const [field, ids] of Object.entries({
     related_events: relationIds(event.related_events),
@@ -162,6 +205,40 @@ assert.ok(!eventsById.get("ev_napoleon_emperor_1804").consequence_event_ids.incl
 assert.ok(!eventsById.get("ev_execution_louis_xvi_1793").prerequisite_event_ids.includes("ev_september_massacres_1792"), "September Massacres must not become an execution prerequisite");
 const people = JSON.parse(await readFile(new URL("../data/people.json", import.meta.url)));
 const peopleById = new Map(people.map((person) => [person.id, person]));
+for (const [eventId, expected] of Object.entries(meijiAudit)) {
+  const event = eventsById.get(eventId);
+  assert.ok(event, `${eventId}: audited Meiji event must exist`);
+  assert.deepEqual(event.concept_ids, expected.concepts, `${eventId}: audited concepts changed`);
+  assert.deepEqual(event.themes, expected.themes, `${eventId}: audited themes changed`);
+  assert.deepEqual(event.skills, expected.skills, `${eventId}: audited skills changed`);
+  assert.equal(event.primary_skill, expected.primarySkill, `${eventId}: audited primary skill changed`);
+  assert.deepEqual(event.people_ids, expected.people, `${eventId}: audited people changed`);
+  assert.deepEqual(event.related_events || [], expected.relatedEventIds, `${eventId}: related events changed`);
+  assert.deepEqual(event.prerequisite_event_ids || [], expected.prerequisiteEventIds, `${eventId}: prerequisites changed`);
+  assert.deepEqual(event.consequence_event_ids || [], expected.consequenceEventIds, `${eventId}: consequences changed`);
+  assert.deepEqual(relationIds(event.causes), expected.causeEventIds, `${eventId}: causal event links changed`);
+  assert.deepEqual(relationIds(event.effects), expected.effectEventIds, `${eventId}: effect event links changed`);
+  for (const field of ["concept_ids", "themes", "skills", "people_ids"]) {
+    assert.equal(new Set(event[field] || []).size, (event[field] || []).length, `${eventId}: duplicate ${field}`);
+  }
+  if (event.skills.includes("causality")) {
+    assert.ok(event.question_types.some((type) => type.startsWith("causality_") || type === "cause_and_effect"), `${eventId}: causality needs a supported question type`);
+    assert.ok((event.causes?.length || 0) + (event.effects?.length || 0) > 0, `${eventId}: causality needs structured data`);
+  }
+  for (const personId of event.people_ids) {
+    const person = peopleById.get(personId);
+    assert.ok(person, `${eventId}: missing person ${personId}`);
+    assert.ok(person.related_events?.includes(eventId), `${eventId}: ${personId} reciprocal link missing`);
+  }
+}
+assert.equal(Object.keys(meijiAudit).length, 10, "all ten scoped Meiji expectations must remain explicit");
+assert.ok(new Set(Object.values(meijiAudit).map(({ concepts }) => JSON.stringify(concepts))).size > 1, "Meiji audit must not regress to one mechanical concept set");
+for (const person of people) {
+  for (const eventId of person.related_events || []) {
+    if (!Object.hasOwn(meijiAudit, eventId)) continue;
+    assert.ok(eventsById.get(eventId).people_ids?.includes(person.id), `${person.id}: stale audited Meiji-event link ${eventId}`);
+  }
+}
 for (const [eventId, expected] of Object.entries(frenchAudit)) {
   const event = eventsById.get(eventId);
   assert.ok(event, `${eventId}: audited event must exist`);

@@ -176,6 +176,14 @@
   },
   "unit_meiji_restoration": {
     "eligible_ids": {
+      "causality_chain": [
+        "ev_meiji_abolish_han_1871",
+        "ev_meiji_annex_korea_1910",
+        "ev_meiji_boshin_war_1868",
+        "ev_meiji_constitution_1889",
+        "ev_meiji_diet_1890",
+        "ev_meiji_kanagawa_treaty_1854"
+      ],
       "cause_and_effect": [
         "ev_meiji_conscription_1873",
         "ev_meiji_perry_1853",
@@ -535,6 +543,9 @@
   },
   "unit_industrialization_pathways_comparison": {
     "eligible_ids": {
+      "causality_chain": [
+        "ev_meiji_abolish_han_1871"
+      ],
       "cause_and_effect": [
         "ev_bessemer_process_1856",
         "ev_concert_of_europe_1815_1848",

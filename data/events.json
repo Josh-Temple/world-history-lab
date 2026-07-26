@@ -1831,8 +1831,7 @@
     },
     "skills": [
       "timeline",
-      "causality",
-      "geography"
+      "causality"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -1846,9 +1845,6 @@
       "reg_japan"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
@@ -1856,7 +1852,8 @@
       "ev_meiji_kanagawa_treaty_1854"
     ],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_meiji_kanagawa_treaty_1854",
@@ -1886,8 +1883,7 @@
     "summary_short": "The Treaty of Kanagawa opened Shimoda and Hakodate to U.S. ships, marking a major reorganization of Japan's foreign relations.",
     "related_people": [],
     "related_events": [
-      "ev_meiji_perry_1853",
-      "ev_meiji_boshin_war_1868"
+      "ev_meiji_perry_1853"
     ],
     "causes": [
       "ev_meiji_perry_1853"
@@ -1904,7 +1900,8 @@
       "timeline_before_after",
       "timeline_ordering",
       "what_happened",
-      "significance"
+      "significance",
+      "causality_chain"
     ],
     "difficulty_hint": "easy",
     "source_refs": [
@@ -1925,8 +1922,7 @@
     },
     "skills": [
       "timeline",
-      "causality",
-      "geography"
+      "causality"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -1940,9 +1936,6 @@
       "reg_japan"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [
@@ -1950,7 +1943,8 @@
     ],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_bessemer_process_patent_1856",
@@ -2028,13 +2022,18 @@
       }
     ],
     "effects": [
-      "ev_meiji_charter_oath_1868"
+      {
+        "label": "Defeat of pro-shogunate forces made the new imperial government’s regime transition decisive",
+        "category": "political",
+        "note": null
+      }
     ],
     "confusions": [],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
-      "what_happened"
+      "what_happened",
+      "causality_chain"
     ],
     "difficulty_hint": "medium",
     "source_refs": [
@@ -2055,8 +2054,7 @@
     },
     "skills": [
       "timeline",
-      "causality",
-      "geography"
+      "causality"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -2064,23 +2062,21 @@
       "lon": 135.7681
     },
     "themes": [
+      "revolution",
+      "war",
       "state_power"
     ],
     "region_ids": [
       "reg_japan"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": [
-      "ev_meiji_charter_oath_1868"
-    ],
+    "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_meiji_charter_oath_1868",
@@ -2106,18 +2102,11 @@
     "summary_short": "The new government announced guiding principles for national governance, emphasizing broad deliberation and the adoption of knowledge from abroad.",
     "related_people": [],
     "related_events": [
+      "ev_meiji_boshin_war_1868",
       "ev_meiji_abolish_han_1871"
     ],
-    "causes": [
-      "ev_meiji_boshin_war_1868"
-    ],
-    "effects": [
-      {
-        "label": "Created an ideological foundation for later centralization reforms",
-        "category": "political",
-        "note": null
-      }
-    ],
+    "causes": [],
+    "effects": [],
     "confusions": [],
     "question_types": [
       "timeline_before_after",
@@ -2142,33 +2131,28 @@
       "lon": 135.7681
     },
     "skills": [
-      "timeline",
-      "causality",
-      "geography"
+      "timeline"
     ],
-    "primary_skill": "causality",
+    "primary_skill": "timeline",
     "geo": {
       "lat": 35.0116,
       "lon": 135.7681
     },
     "themes": [
+      "revolution",
       "state_power"
     ],
     "region_ids": [
       "reg_japan"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
-    "prerequisite_event_ids": [
-      "ev_meiji_boshin_war_1868"
-    ],
+    "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_meiji_abolish_han_1871",
@@ -2194,23 +2178,30 @@
     "summary_short": "The han domains were abolished and replaced by prefectures, establishing a centralized system for modern state-building.",
     "related_people": [],
     "related_events": [
+      "ev_meiji_charter_oath_1868",
       "ev_meiji_conscription_1873"
     ],
     "causes": [
-      "ev_meiji_charter_oath_1868"
+      {
+        "label": "The new government needed to replace domain authority with uniform national administration",
+        "category": "political",
+        "note": null
+      }
     ],
     "effects": [
       {
         "label": "Advanced nationwide unification of taxation, military organization, and administration",
         "category": "political",
         "note": null
-      }
+      },
+      "ev_meiji_conscription_1873"
     ],
     "confusions": [],
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
-      "what_happened"
+      "what_happened",
+      "causality_chain"
     ],
     "difficulty_hint": "medium",
     "source_refs": [
@@ -2231,8 +2222,7 @@
     },
     "skills": [
       "timeline",
-      "causality",
-      "geography"
+      "causality"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -2246,15 +2236,15 @@
       "reg_japan"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
+      "concept_bureaucratic_centralization"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": [],
+    "consequence_event_ids": [
+      "ev_meiji_conscription_1873"
+    ],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_meiji_conscription_1873",
@@ -2278,7 +2268,7 @@
     "summary_short": "The government promulgated conscription to form a modern national army, shifting away from a samurai-centered military system.",
     "related_people": [],
     "related_events": [
-      "ev_meiji_sinojapanese_war_1894"
+      "ev_meiji_abolish_han_1871"
     ],
     "causes": [
       "ev_meiji_abolish_han_1871"
@@ -2310,8 +2300,7 @@
     "status": "approved",
     "skills": [
       "timeline",
-      "causality",
-      "geography"
+      "causality"
     ],
     "primary_skill": "causality",
     "themes": [
@@ -2321,16 +2310,16 @@
       "reg_japan"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
       "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_military_reform",
-      "concept_legitimacy_crisis"
+      "concept_military_reform"
     ],
-    "prerequisite_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_meiji_abolish_han_1871"
+    ],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_meiji_constitution_1889",
@@ -2372,7 +2361,8 @@
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
-      "what_happened"
+      "what_happened",
+      "causality_chain"
     ],
     "difficulty_hint": "medium",
     "source_refs": [
@@ -2393,8 +2383,7 @@
     },
     "skills": [
       "timeline",
-      "causality",
-      "geography"
+      "causality"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -2408,9 +2397,6 @@
       "reg_japan"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "prerequisite_event_ids": [],
@@ -2418,7 +2404,8 @@
       "ev_meiji_diet_1890"
     ],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_meiji_diet_1890",
@@ -2460,7 +2447,8 @@
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
-      "significance"
+      "significance",
+      "causality_chain"
     ],
     "difficulty_hint": "medium",
     "source_refs": [
@@ -2481,8 +2469,7 @@
     },
     "skills": [
       "timeline",
-      "causality",
-      "geography"
+      "causality"
     ],
     "primary_skill": "causality",
     "geo": {
@@ -2495,18 +2482,14 @@
     "region_ids": [
       "reg_japan"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [
       "ev_meiji_constitution_1889"
     ],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_meiji_sinojapanese_war_1894",
@@ -2621,7 +2604,8 @@
         "label": "Advanced stronger control over Korea",
         "category": "diplomatic",
         "note": null
-      }
+      },
+      "ev_meiji_annex_korea_1910"
     ],
     "confusions": [],
     "question_types": [
@@ -2663,7 +2647,9 @@
       "concept_military_reform"
     ],
     "prerequisite_event_ids": [],
-    "consequence_event_ids": [],
+    "consequence_event_ids": [
+      "ev_meiji_annex_korea_1910"
+    ],
     "evidence_strength": "moderate",
     "confidence_level": "medium"
   },
@@ -2691,7 +2677,7 @@
     "summary_short": "Through the Japan–Korea Annexation Treaty, Japan colonized the Korean Peninsula and intensified imperial expansion.",
     "related_people": [],
     "related_events": [
-      "ev_meiji_emperor_death_1912"
+      "ev_meiji_russojapanese_war_1905"
     ],
     "causes": [
       "ev_meiji_russojapanese_war_1905"
@@ -2707,7 +2693,8 @@
     "question_types": [
       "timeline_before_after",
       "timeline_ordering",
-      "what_happened"
+      "what_happened",
+      "causality_chain"
     ],
     "difficulty_hint": "hard",
     "source_refs": [
@@ -2723,28 +2710,27 @@
     "status": "approved",
     "skills": [
       "timeline",
-      "causality",
-      "geography"
+      "causality"
     ],
     "primary_skill": "causality",
     "themes": [
-      "state_power"
+      "imperialism",
+      "colonialism"
     ],
     "region_ids": [
       "reg_japan",
       "reg_korea"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_frontier_expansion",
-      "concept_legitimacy_crisis"
+      "concept_frontier_expansion"
     ],
-    "prerequisite_event_ids": [],
+    "prerequisite_event_ids": [
+      "ev_meiji_russojapanese_war_1905"
+    ],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_meiji_emperor_death_1912",
@@ -2771,13 +2757,7 @@
     "related_people": [],
     "related_events": [],
     "causes": [],
-    "effects": [
-      {
-        "label": "Transition to the Taishō era and reconfiguration of political and social challenges",
-        "category": "political",
-        "note": null
-      }
-    ],
+    "effects": [],
     "confusions": [],
     "question_types": [
       "timeline_before_after",
@@ -2802,31 +2782,23 @@
       "lon": 139.6503
     },
     "skills": [
-      "timeline",
-      "causality",
-      "geography"
+      "timeline"
     ],
-    "primary_skill": "causality",
+    "primary_skill": "timeline",
     "geo": {
       "lat": 35.6762,
       "lon": 139.6503
     },
-    "themes": [
-      "state_power"
-    ],
+    "themes": [],
     "region_ids": [
       "reg_japan"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "prerequisite_event_ids": [],
     "consequence_event_ids": [],
     "evidence_strength": "moderate",
-    "confidence_level": "medium"
+    "confidence_level": "medium",
+    "people_ids": []
   },
   {
     "id": "ev_imperialism_leopold_congo_project_1876",

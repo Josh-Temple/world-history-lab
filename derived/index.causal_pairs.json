@@ -372,8 +372,8 @@
     "effect_id": "ev_mass_politics_worker_parties_1880s_1890s"
   },
   {
-    "cause_id": "ev_meiji_boshin_war_1868",
-    "effect_id": "ev_meiji_charter_oath_1868"
+    "cause_id": "ev_meiji_abolish_han_1871",
+    "effect_id": "ev_meiji_conscription_1873"
   },
   {
     "cause_id": "ev_meiji_constitution_1889",
@@ -382,6 +382,10 @@
   {
     "cause_id": "ev_meiji_perry_1853",
     "effect_id": "ev_meiji_kanagawa_treaty_1854"
+  },
+  {
+    "cause_id": "ev_meiji_russojapanese_war_1905",
+    "effect_id": "ev_meiji_annex_korea_1910"
   },
   {
     "cause_id": "ev_modern_urban_infrastructure_1850s_1870s",

@@ -1,3 +1,7 @@
+## Recent updates (2026-07-26 · Meiji Restoration metadata audit)
+
+- Individually audited ten Meiji Restoration records and regenerated concept, causality, process-chain, unit-pool, and people/event projections; 21 records remain in the original four-concept baseline (9 Age of Imperialism, 12 Silk Road Exchange).
+
 ## Recent updates (2026-07-26 · French Revolution/Napoleon relation follow-up)
 
 - Consolidated the duplicate 1815 Congress of Vienna settlement into the canonical `ev_congress_of_vienna_1814_1815` record and rewired unit and causal references.
