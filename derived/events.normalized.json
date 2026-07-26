@@ -2803,18 +2803,12 @@
       "causality_match_effects"
     ],
     "themes": [
+      "war",
       "state_power"
     ],
-    "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
-      "concept_legitimacy_crisis"
-    ],
+    "concept_ids": [],
     "concept_tags": [],
-    "people_ids": [
-      "pe_napoleon_bonaparte"
-    ],
+    "people_ids": [],
     "related_event_ids": [],
     "prerequisite_event_ids": [
       "ev_napoleon_emperor_1804"
@@ -4356,9 +4350,6 @@
       "state_power"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
@@ -4439,9 +4430,6 @@
       "state_power"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
@@ -10739,12 +10727,10 @@
       "causality_match_effects"
     ],
     "themes": [
+      "revolution",
       "state_power"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
@@ -14781,15 +14767,10 @@
       "state_power"
     ],
     "concept_ids": [
-      "concept_imperial_overstretch",
-      "concept_bureaucratic_centralization",
-      "concept_succession_crisis",
       "concept_legitimacy_crisis"
     ],
     "concept_tags": [],
-    "people_ids": [
-      "pe_louis_xvi"
-    ],
+    "people_ids": [],
     "related_event_ids": [],
     "prerequisite_event_ids": [
       "ev_estates_general_1789"

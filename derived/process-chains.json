@@ -3,14 +3,14 @@
   "chains": [
     {
       "id": "chain_estates_general_1789",
-      "label": "Imperial Overstretch Transformation",
+      "label": "Legitimacy Crisis Transformation",
       "event_ids": [
         "ev_estates_general_1789",
         "ev_tennis_court_oath_1789",
         "ev_storming_bastille_1789",
         "ev_declaration_rights_man_citizen_1789"
       ],
-      "concept_anchor_id": "concept_imperial_overstretch",
+      "concept_anchor_id": "concept_legitimacy_crisis",
       "stages": [
         {
           "stage": "preconditions",
