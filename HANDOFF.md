@@ -1,3 +1,23 @@
+# HANDOFF (2026-07-26 · French Revolution/Napoleon relation follow-up)
+
+## Completed relation cleanup
+
+`ev_congress_of_vienna_1814_1815` and `ev_congress_vienna_1815` described the same diplomatic settlement rather than two instructionally distinct events. The fuller 1814–1815 record is canonical, and the duplicate 1815 record was deleted. Its memberships in Foundations, Industrial Revolution, and French Revolution/Napoleon units were redirected to the canonical ID and deduplicated. The Napoleonic Wars and Concert of Europe causal references were also redirected. The spurious Congress → railway-boom link was removed rather than carried onto the canonical record.
+
+The Congress now uses `ev_napoleonic_wars_1803_1815` as its direct causal-event and prerequisite link and `ev_concert_of_europe_1815_1848` as its direct effect and consequence. Its structured cause explicitly describes the allied victory and collapse of Napoleonic dominance. `ev_napoleon_emperor_1804` remains only in Congress `related_events` as broad context; the coronation's direct `effects` and `consequence_event_ids` links to Congress were removed. No Congress themes, concepts, skills, primary skill, or people links changed.
+
+The September Massacres show revolutionary radicalization but do not directly explain the decision reached through Louis XVI's later trial. Because the dataset has no sufficiently direct trial, abolition, or republic event for this purpose, `ev_execution_louis_xvi_1793.prerequisite_event_ids` is now empty. The September Massacres' matching effect/consequence links to the execution were removed. The execution's structured prose causes remain intact, and its effect/consequence link to the Reign of Terror remains directionally consistent.
+
+Regression coverage now extracts event IDs from strings and `{ event_id }` objects in `related_events`, prerequisites, consequences, causes, and effects. It checks existence, uniqueness, and self-reference for every record, freezes exact relationships for the five audited French Revolution/Napoleon events, prevents restoration of the duplicate Congress or the two rejected direct links, and retains the eleven-event Industrial Revolution and audited concept/theme/skill/person assertions. Derivation continues to build process chains from `prerequisite_event_ids`; regenerated process-chain outputs contain only the canonical Congress ID, retain stage order, and preserve the Estates-General chain's `concept_legitimacy_crisis` anchor.
+
+## Recalculated audit inventory
+
+The baseline is the **42 events carrying all four suspect concepts immediately after commit `7a3ffa1`'s initial five-event Industrial Revolution correction**. Six of the later eleven-event Industrial Revolution audit were members of that 42-record baseline; the other five were found through the broader technology follow-up and therefore cannot be subtracted from 42. All five events in the focused French Revolution/Napoleon audit were baseline members. Thus **42 - 6 - 5 = 31** baseline records remain. The Meiji Restoration unit contains 12 events total; **10** are in the remaining baseline inventory and should be the next concept-metadata audit batch. This session did not perform that audit.
+
+No UI, learning-record logic, Timeline Trainer, Session Runner, localStorage, schema, concepts, themes, people metadata, GitHub Actions workflow, or unrelated bulk event metadata was changed. Browser automation is not configured, so the learner-facing Causality Drill, Timeline Trainer, Historical Patterns, and concept displays were not runtime-tested in a browser.
+
+---
+
 # HANDOFF (2026-07-25 · French Revolution/Napoleon metadata audit)
 
 ## Completed scope and decisions
@@ -12,7 +32,7 @@ Audited only `ev_estates_general_1789`, `ev_tennis_court_oath_1789`, `ev_executi
 
 ## Remaining audit inventory
 
-The original four-concept query now returns **31 unaudited events**, matching the expected 42 minus the eleven completed Industrial Revolution records and these five records. French Revolution/Napoleon events outside this five-record scope remain unaudited, including partial suspect-concept assignments and the duplicate Congress settlement records; do not infer that the whole units are clean. Next audit the Meiji Restoration batch, followed by Age of Imperialism and then Silk Road exchange. No UI, learning record, Session Runner, localStorage, schema, non-target event metadata, or GitHub Actions workflow was changed. Browser automation remains unavailable, so browser runtime checks were not performed.
+The original four-concept query now returns **31 unaudited events**. As clarified in the 2026-07-26 update above, this is 42 minus six Industrial Revolution baseline members and five French Revolution/Napoleon records—not minus all eleven records in the broader Industrial Revolution audit. Next audit the ten Meiji Restoration events in that baseline, followed by Age of Imperialism and then Silk Road exchange. No UI, learning record, Session Runner, localStorage, schema, non-target event metadata, or GitHub Actions workflow was changed. Browser automation remains unavailable, so browser runtime checks were not performed.
 
 ---
 

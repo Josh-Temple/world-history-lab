@@ -300,7 +300,7 @@
   },
   "ev_concert_of_europe_1815_1848": {
     "prerequisites": [
-      "ev_congress_vienna_1815"
+      "ev_congress_of_vienna_1814_1815"
     ],
     "consequences": [
       "ev_revolutions_1848"
@@ -308,20 +308,10 @@
   },
   "ev_congress_of_vienna_1814_1815": {
     "prerequisites": [
-      "ev_napoleon_emperor_1804"
-    ],
-    "consequences": [
-      "ev_congress_vienna_1815"
-    ]
-  },
-  "ev_congress_vienna_1815": {
-    "prerequisites": [
-      "ev_congress_of_vienna_1814_1815",
       "ev_napoleonic_wars_1803_1815"
     ],
     "consequences": [
-      "ev_concert_of_europe_1815_1848",
-      "ev_railway_boom_1840s"
+      "ev_concert_of_europe_1815_1848"
     ]
   },
   "ev_conquest_ctesiphon_637": {
@@ -475,9 +465,7 @@
     ]
   },
   "ev_execution_louis_xvi_1793": {
-    "prerequisites": [
-      "ev_september_massacres_1792"
-    ],
+    "prerequisites": [],
     "consequences": [
       "ev_reign_of_terror_1793_1794"
     ]
@@ -1172,7 +1160,6 @@
       "ev_napoleon_coup_18_brumaire_1799"
     ],
     "consequences": [
-      "ev_congress_of_vienna_1814_1815",
       "ev_napoleonic_wars_1803_1815"
     ]
   },
@@ -1182,7 +1169,7 @@
       "ev_napoleon_emperor_1804"
     ],
     "consequences": [
-      "ev_congress_vienna_1815",
+      "ev_congress_of_vienna_1814_1815",
       "ev_state_military_fiscal_expansion_1810s_1820s"
     ]
   },
@@ -1385,7 +1372,6 @@
   },
   "ev_railway_boom_1840s": {
     "prerequisites": [
-      "ev_congress_vienna_1815",
       "ev_liverpool_manchester_railway_1830"
     ],
     "consequences": [
@@ -1453,9 +1439,7 @@
     "prerequisites": [
       "ev_flight_to_varennes_1791"
     ],
-    "consequences": [
-      "ev_execution_louis_xvi_1793"
-    ]
+    "consequences": []
   },
   "ev_silk_road_post_roman_shift": {
     "prerequisites": [],

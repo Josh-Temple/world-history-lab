@@ -56,7 +56,7 @@
       "ev_india_independence_1947",
       "ev_bandung_conference_1955",
       "ev_napoleonic_wars_1803_1815",
-      "ev_congress_vienna_1815",
+      "ev_congress_of_vienna_1814_1815",
       "ev_revolutions_1848",
       "ev_second_industrial_revolution_1870s",
       "ev_alexander_gaugamela_331bce",
@@ -137,8 +137,7 @@
       "ev_napoleon_coup_18_brumaire_1799",
       "ev_napoleon_emperor_1804",
       "ev_congress_of_vienna_1814_1815",
-      "ev_napoleonic_wars_1803_1815",
-      "ev_congress_vienna_1815"
+      "ev_napoleonic_wars_1803_1815"
     ]
   },
   {
@@ -213,7 +212,7 @@
       "ev_cotton_gin_1793",
       "ev_steam_power_transport_expansion_1800s",
       "ev_luddite_protests_1811",
-      "ev_congress_vienna_1815",
+      "ev_congress_of_vienna_1814_1815",
       "ev_stockton_darlington_railway_1825",
       "ev_liverpool_manchester_railway_1830",
       "ev_factory_act_1833",

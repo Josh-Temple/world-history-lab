@@ -105,15 +105,7 @@
   },
   {
     "cause_id": "ev_congress_of_vienna_1814_1815",
-    "effect_id": "ev_congress_vienna_1815"
-  },
-  {
-    "cause_id": "ev_congress_vienna_1815",
     "effect_id": "ev_concert_of_europe_1815_1848"
-  },
-  {
-    "cause_id": "ev_congress_vienna_1815",
-    "effect_id": "ev_railway_boom_1840s"
   },
   {
     "cause_id": "ev_conquest_ctesiphon_637",
@@ -421,15 +413,11 @@
   },
   {
     "cause_id": "ev_napoleon_emperor_1804",
-    "effect_id": "ev_congress_of_vienna_1814_1815"
-  },
-  {
-    "cause_id": "ev_napoleon_emperor_1804",
     "effect_id": "ev_napoleonic_wars_1803_1815"
   },
   {
     "cause_id": "ev_napoleonic_wars_1803_1815",
-    "effect_id": "ev_congress_vienna_1815"
+    "effect_id": "ev_congress_of_vienna_1814_1815"
   },
   {
     "cause_id": "ev_napoleonic_wars_1803_1815",
@@ -538,10 +526,6 @@
   {
     "cause_id": "ev_second_industrial_revolution_1870s",
     "effect_id": "ev_wwi_naval_arms_race_1898_1914"
-  },
-  {
-    "cause_id": "ev_september_massacres_1792",
-    "effect_id": "ev_execution_louis_xvi_1793"
   },
   {
     "cause_id": "ev_soviet_berlin_offensive_1945",

@@ -1,3 +1,9 @@
+## Recent updates (2026-07-26 · French Revolution/Napoleon relation follow-up)
+
+- Consolidated the duplicate 1815 Congress of Vienna settlement into the canonical `ev_congress_of_vienna_1814_1815` record and rewired unit and causal references.
+- Replaced Napoleon's 1804 coronation as a direct Congress cause with the Napoleonic Wars, removed the September Massacres as a required precursor to Louis XVI's execution, and added event-relation regressions.
+- Recalculated the original four-concept audit inventory: six of its 42 records were in the Industrial Revolution audit, five were in the French audit, and 31 remain; ten of the 12-event Meiji unit belong to that remaining inventory.
+
 ## Recent updates (2026-07-25 · French Revolution/Napoleon metadata audit)
 
 - Audited five scoped French Revolution/Napoleon events, retaining only directly supported concepts, practice skills, person links, and causal relationships; 31 records from the original four-concept suspect set remain unaudited.

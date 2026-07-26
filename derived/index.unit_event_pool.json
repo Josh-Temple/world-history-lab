@@ -23,12 +23,10 @@
         "ev_napoleon_coup_18_brumaire_1799"
       ],
       "cause_and_effect": [
-        "ev_congress_vienna_1815",
         "ev_napoleonic_wars_1803_1815"
       ],
       "timeline_before_after": [
         "ev_congress_of_vienna_1814_1815",
-        "ev_congress_vienna_1815",
         "ev_declaration_rights_man_citizen_1789",
         "ev_estates_general_1789",
         "ev_execution_louis_xvi_1793",
@@ -65,17 +63,21 @@
         "ev_thermidorian_reaction_1794"
       ],
       "what_happened": [
-        "ev_congress_vienna_1815",
         "ev_napoleonic_wars_1803_1815"
       ]
     }
   },
   "unit_industrial_revolution": {
     "eligible_ids": {
+      "causality_categorize_causes": [
+        "ev_congress_of_vienna_1814_1815"
+      ],
+      "causality_match_effects": [
+        "ev_congress_of_vienna_1814_1815"
+      ],
       "cause_and_effect": [
         "ev_bessemer_process_1856",
         "ev_communist_manifesto_1848",
-        "ev_congress_vienna_1815",
         "ev_cotton_gin_1793",
         "ev_electric_power_adoption_1880s",
         "ev_enclosure_movement_accelerates_1750s",
@@ -103,7 +105,7 @@
         "ev_bessemer_process_patent_1856",
         "ev_bridgewater_canal_opens_1761",
         "ev_communist_manifesto_1848",
-        "ev_congress_vienna_1815",
+        "ev_congress_of_vienna_1814_1815",
         "ev_cotton_gin_1793",
         "ev_cotton_gin_invented_1793",
         "ev_cromford_mill_uses_water_frame_1771",
@@ -139,10 +141,15 @@
         "ev_watt_condenser_patent_1769",
         "ev_watt_steam_engine_1776"
       ],
+      "timeline_century": [
+        "ev_congress_of_vienna_1814_1815"
+      ],
+      "timeline_ordering": [
+        "ev_congress_of_vienna_1814_1815"
+      ],
       "what_happened": [
         "ev_bessemer_process_1856",
         "ev_communist_manifesto_1848",
-        "ev_congress_vienna_1815",
         "ev_cotton_gin_1793",
         "ev_electric_power_adoption_1880s",
         "ev_enclosure_movement_accelerates_1750s",
@@ -469,8 +476,13 @@
   },
   "unit_foundations_world_history": {
     "eligible_ids": {
+      "causality_categorize_causes": [
+        "ev_congress_of_vienna_1814_1815"
+      ],
+      "causality_match_effects": [
+        "ev_congress_of_vienna_1814_1815"
+      ],
       "cause_and_effect": [
-        "ev_congress_vienna_1815",
         "ev_hijra_622",
         "ev_napoleonic_wars_1803_1815",
         "ev_revolutions_1848",
@@ -480,7 +492,7 @@
         "ev_abolition_british_slave_trade_1807",
         "ev_bandung_conference_1955",
         "ev_berlin_conference_1884",
-        "ev_congress_vienna_1815",
+        "ev_congress_of_vienna_1814_1815",
         "ev_haitian_revolution_independence_1804",
         "ev_hijra_622",
         "ev_india_independence_1947",
@@ -495,11 +507,16 @@
         "ev_second_industrial_revolution_1870s",
         "ev_tokugawa_shogunate_1603"
       ],
+      "timeline_century": [
+        "ev_congress_of_vienna_1814_1815"
+      ],
+      "timeline_ordering": [
+        "ev_congress_of_vienna_1814_1815"
+      ],
       "what_happened": [
         "ev_abolition_british_slave_trade_1807",
         "ev_bandung_conference_1955",
         "ev_berlin_conference_1884",
-        "ev_congress_vienna_1815",
         "ev_haitian_revolution_independence_1804",
         "ev_hijra_622",
         "ev_india_independence_1947",
