@@ -1,137 +1,92 @@
-const APP_SHELL_CACHE = 'world-history-lab-shell-v5';
-const RUNTIME_CACHE = 'world-history-lab-runtime-v1';
+importScripts("/pwa/cache-policy.js");
+
+const APP_SHELL_CACHE = "world-history-lab-shell-v6";
+const RUNTIME_CACHE = "world-history-lab-runtime-v2";
 const NETWORK_TIMEOUT_MS = 10000;
-const APP_SHELL_URLS = [
-  '/',
-  '/index.html',
-  '/pwa/manifest.webmanifest',
-  '/pwa/register-sw.js',
-  '/assets/pwa/icon.svg',
-  '/assets/pwa/icon-maskable.svg',
-  '/assets/pwa/apple-touch-icon.svg',
-  '/styles/site.css',
-  '/apps/timeline-trainer/',
-  '/apps/timeline-trainer/index.html',
-  '/apps/timeline-trainer/src/main.js',
-  '/apps/timeline-trainer/src/App.js',
-  '/apps/timeline-trainer/src/styles.css',
-  '/apps/timeline-trainer/src/types.js',
-  '/apps/timeline-trainer/src/data/loaders.js',
-  '/apps/timeline-trainer/src/logic/question-generator.js',
-  '/apps/event-recognition/',
-  '/apps/event-recognition/index.html',
-  '/apps/event-recognition/app.js',
-  '/apps/event-recognition/styles.css',
-  '/apps/causality-builder/',
-  '/apps/causality-builder/index.html',
-  '/apps/causality-builder/app.js',
-  '/apps/causality-builder/styles.css',
-  '/apps/causal-chain/',
-  '/apps/causal-chain/index.html',
-  '/apps/causal-chain/app.js',
-  '/apps/causality-drill/',
-  '/apps/causality-drill/index.html',
-  '/apps/causality-drill/app.js',
-  '/data/derived/causal_chains.json',
-  '/apps/history-player/',
-  '/apps/history-player/index.html',
-  '/apps/map-quiz/',
-  '/apps/map-quiz/index.html',
-  '/apps/map-quiz/app.js',
-  '/apps/graph-explorer/',
-  '/apps/graph-explorer/index.html',
-  '/apps/graph-explorer/app.js',
-  '/apps/comparison-trainer/',
-  '/apps/comparison-trainer/index.html',
-  '/apps/comparison-trainer/main.js',
-  '/apps/session-runner/',
-  '/apps/session-runner/index.html',
-  '/apps/session-runner/app.js',
-  '/apps/shared/data-store.js',
-  '/apps/shared/guided-session-controller.js',
-  '/apps/shared/mastery-store.js',
-  '/apps/shared/next-step-engine.js',
-  '/apps/shared/retention-engine.js',
-  '/apps/shared/review-store.js',
-  '/apps/shared/session-handoff-store.js',
-  '/apps/shared/header.js',
-  '/apps/shared/data-access.js',
-  '/derived/events.normalized.json',
-  '/data/units/index.json'
+const REQUIRED_SHELL_URLS = ["/", "/index.html", "/pwa/cache-policy.js", "/pwa/register-sw.js"];
+const OPTIONAL_SHELL_URLS = [
+  "/pwa/manifest.webmanifest", "/styles/site.css", "/apps/shared/app-boot.js",
+  "/apps/session-runner/index.html", "/apps/session-runner/app.js",
+  "/apps/timeline-trainer/index.html", "/apps/timeline-trainer/src/main.js",
+  "/apps/event-recognition/index.html", "/apps/event-recognition/app.js",
+  "/apps/people-recognition/index.html", "/apps/people-recognition/app.js",
+  "/apps/causality-drill/index.html", "/apps/causality-drill/app.js",
+  "/apps/event-comparison/index.html", "/apps/event-comparison/app.js",
+  "/apps/comparison-trainer/index.html", "/apps/comparison-trainer/main.js",
+  "/apps/map-quiz/index.html", "/apps/map-quiz/app.js",
+  "/apps/dashboard/index.html", "/apps/dashboard/main.js",
+  "/apps/overview/index.html", "/derived/events.normalized.json", "/data/units/index.json"
 ];
 
-self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(APP_SHELL_CACHE).then((cache) => cache.addAll(APP_SHELL_URLS)));
-  self.skipWaiting();
+async function fetchAndCache(cache, url, required) {
+  try {
+    const request = new Request(url, { cache: "reload" });
+    const response = await fetch(request);
+    if (!WHLCachePolicy.isCacheableResponse(request, response)) throw new Error(`invalid ${response.status} ${response.headers.get("content-type") || "MIME"}`);
+    await cache.put(request, response.clone());
+  } catch (error) {
+    console.error("[service-worker] shell fetch failed", { url, required, error: String(error) });
+    if (required) throw error;
+  }
+}
+
+self.addEventListener("install", (event) => {
+  event.waitUntil((async () => {
+    const cache = await caches.open(APP_SHELL_CACHE);
+    for (const url of REQUIRED_SHELL_URLS) await fetchAndCache(cache, url, true);
+    await Promise.all(OPTIONAL_SHELL_URLS.map((url) => fetchAndCache(cache, url, false)));
+    await self.skipWaiting();
+  })());
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener("activate", (event) => {
   event.waitUntil((async () => {
-    const cacheNames = await caches.keys();
-    await Promise.all(
-      cacheNames
-        .filter((name) => ![APP_SHELL_CACHE, RUNTIME_CACHE].includes(name))
-        .map((name) => caches.delete(name))
-    );
+    const keep = new Set([APP_SHELL_CACHE, RUNTIME_CACHE]);
+    await Promise.all((await caches.keys()).filter((name) => name.startsWith("world-history-lab-") && !keep.has(name)).map((name) => caches.delete(name)));
     await self.clients.claim();
   })());
 });
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener("fetch", (event) => {
   const { request } = event;
-  if (request.method !== 'GET') return;
-
-  const url = new URL(request.url);
-  if (url.origin !== self.location.origin) return;
-
-  if (request.mode === 'navigate') {
-    event.respondWith((async () => {
-      try {
-        return await fetchWithTimeout(request);
-      } catch {
-        const cache = await caches.open(APP_SHELL_CACHE);
-        const cachedPage = await cache.match(request, { ignoreSearch: true });
-        return cachedPage || (await cache.match('/index.html')) || Response.error();
-      }
-    })());
-    return;
-  }
-
-  const isDataRequest = url.pathname.endsWith('.json');
-  event.respondWith(isDataRequest ? networkFirst(request) : staleWhileRevalidate(request));
+  if (request.method !== "GET" || new URL(request.url).origin !== self.location.origin) return;
+  const kind = WHLCachePolicy.resourceKind(request);
+  if (["document", "script", "json"].includes(kind)) event.respondWith(networkFirst(request));
+  else event.respondWith(staleWhileRevalidate(request));
 });
 
-async function fetchWithTimeout(request, timeoutMs = NETWORK_TIMEOUT_MS) {
+async function fetchWithTimeout(request) {
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
-  try {
-    return await fetch(request, { signal: controller.signal });
-  } finally {
-    clearTimeout(timeoutId);
-  }
+  const timeout = setTimeout(() => controller.abort(), NETWORK_TIMEOUT_MS);
+  try { return await fetch(request, { signal: controller.signal }); }
+  finally { clearTimeout(timeout); }
+}
+
+async function validCached(request) {
+  const response = await caches.match(request, { ignoreSearch: false });
+  return WHLCachePolicy.isCacheableResponse(request, response) ? response : null;
 }
 
 async function networkFirst(request) {
-  const cache = await caches.open(RUNTIME_CACHE);
   try {
     const response = await fetchWithTimeout(request);
-    cache.put(request, response.clone());
+    if (!WHLCachePolicy.isCacheableResponse(request, response)) return response;
+    const cache = await caches.open(RUNTIME_CACHE);
+    await cache.put(request, response.clone());
     return response;
   } catch {
-    const cached = await cache.match(request);
-    return cached || (await caches.match(request)) || Response.error();
+    return (await validCached(request)) || Response.error();
   }
 }
 
 async function staleWhileRevalidate(request) {
-  const cache = await caches.open(APP_SHELL_CACHE);
-  const cached = await cache.match(request);
-  const networkPromise = fetch(request)
-    .then((response) => {
-      cache.put(request, response.clone());
-      return response;
-    })
-    .catch(() => null);
-
-  return cached || (await networkPromise) || Response.error();
+  const cached = await validCached(request);
+  const network = fetch(request).then(async (response) => {
+    if (WHLCachePolicy.isCacheableResponse(request, response)) {
+      const cache = await caches.open(RUNTIME_CACHE);
+      await cache.put(request, response.clone());
+    }
+    return response;
+  }).catch(() => null);
+  return cached || (await network) || Response.error();
 }

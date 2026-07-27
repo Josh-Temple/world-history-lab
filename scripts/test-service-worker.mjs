@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+await import('../pwa/cache-policy.js');
+const { isCacheableResponse }=globalThis.WHLCachePolicy;
+const response=(body,status,type,extra={})=>new Response(body,{status,headers:{'content-type':type},...extra});
+assert.equal(isCacheableResponse('/x.js',response('no',404,'text/html')),false);
+assert.equal(isCacheableResponse('/x.js',response('<html>',200,'text/html')),false);
+assert.equal(isCacheableResponse('/x.json',response('<html>',200,'text/html')),false);
+assert.equal(isCacheableResponse('/x.js',response('export{}',200,'text/javascript')),true);
+assert.equal(isCacheableResponse('/x.json',response('{}',200,'application/json')),true);
+const sw=await (await import('node:fs/promises')).readFile('service-worker.js','utf8');
+assert.match(sw,/shell-v6/); assert.match(sw,/required\) throw error/); assert.match(sw,/OPTIONAL_SHELL_URLS\.map/); assert.match(sw,/validCached/);
+const boot=await (await import('node:fs/promises')).readFile('apps/shared/app-boot.js','utf8');
+assert.doesNotMatch(boot,/localStorage\.(?:clear|removeItem)/); assert.match(boot,/startsWith\(CACHE_PREFIX\)/);
+console.log('[test-service-worker] OK (MIME/status, install policy, fallback and learning-storage preservation)');

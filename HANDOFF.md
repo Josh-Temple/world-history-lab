@@ -1,3 +1,24 @@
+# HANDOFF (2026-07-27 · cross-app startup and offline-cache recovery)
+
+## Reproduction and confirmed causes
+
+The clean-URL audit reproduced the URL-resolution defect structurally: at `/apps/session-runner` the former `./app.js` resolves to `/apps/app.js`, while the actual module is `/apps/session-runner/app.js`. The same unsafe external-entry form existed in 27 HTML files (24 module entries and three classic-script entries); History Player and Overview use inline modules. A production-like HTTP regression now proves all 29 learner app indexes resolve through `/apps/name`, `/apps/name/`, and `/apps/name/index.html`, and that representative JavaScript is served with JavaScript MIME rather than HTML. The complete inventory, root-link, iframe, loading, and failure-display status is in `docs/app-startup-audit.md`.
+
+The prior Service Worker independently amplified failures: shell `addAll` was all-or-nothing; JSON was cached without status/MIME checks; all other assets used cache-first stale-while-revalidate and cached 404, redirected, or HTML fallback responses under JavaScript URLs. Thus every same-origin learner app could be affected after one bad response. The local production server deliberately does not HTML-fallback 404s; no legitimate JavaScript request returned HTML after this fix. External Vercel Preview was not available in this environment.
+
+## Implementation
+
+- Replaced 24 external module tags with absolute dynamic entries routed through the shared boot guard and changed three classic entries to absolute paths. The guard exposes common `loading`, `ready`, and `error` states, structured phase/app/entry diagnostics, visible Reload and Reset app cache controls, and never touches localStorage.
+- Session Runner retains `sessionRunnerState`, mirrors it into `appState`, and now ships Restart and Complete Question disabled. Its existing initializer enables controls only at the appropriate phase and its iframe routes were already root absolute.
+- Cache names are now `world-history-lab-shell-v6` and `world-history-lab-runtime-v2`. HTML/navigation, JS, and JSON use network-first with validated exact-cache fallback; other assets use validated stale-while-revalidate. Status, redirect, and resource-specific Content-Type checks reject HTML-as-JS/JSON. Activation deletes older `world-history-lab-*` caches.
+- Install fetches four required shell resources serially and fails clearly if one is invalid; optional resources are isolated, logged, and cannot abort installation. Cache reset deletes only `world-history-lab-*` Cache Storage plus Service Worker registrations, preserving `whl_mastery_v1`, `whl_review_queue_v1`, `whl_review_store_v1`, `whl_concept_mastery_v1`, selected units, and all other learning localStorage.
+- Static resilience now audits all 29 app indexes, rejects missing HTML/scripts/local static or dynamic imports and relative entry tags, requires boot-failure handling for placeholders, and checks Session controls. Service-worker policy tests cover bad status/MIME, valid JS/JSON, cache fallback/install policy, version migration, and storage preservation. The production-like runtime test covers all three URL forms and MIME/HTML confusion.
+
+## Browser and remaining verification
+
+A Chromium dependency could not be installed because the environment's npm registry policy returned HTTP 403, and no system Chromium was present. Therefore no genuine browser, Android viewport, Service Worker-controlled reload, screenshot, GitHub Actions result, or Vercel Preview result can honestly be reported from this session. The runtime test covered Session Runner, Timeline Trainer, Event/People Recognition, Causality Drill, Event/Comparison Trainers, Map Quiz, Dashboard, Overview, and all remaining app routes at the HTTP layer; browser execution remains the highest-priority preview verification. Next: (1) run the browser assertions and capture Session Runner on an environment with Chromium, (2) verify the reset flow in an installed Android PWA, and (3) inspect CI/Preview results. Historical data, learning metadata, answer protocol, attempt IDs, mastery/review semantics, new modes, backend, and broad UI/CSS were intentionally unchanged.
+
+---
 # HANDOFF (2026-07-26 · Meiji Restoration metadata audit)
 
 ## Scope and event-level concept decisions

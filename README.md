@@ -1,3 +1,8 @@
+## Recent updates (2026-07-27 · cross-app startup recovery)
+
+- Made learner-app entries clean-URL-safe with shared visible boot recovery, hardened Service Worker response validation/cache migration, and added static plus production-like runtime regressions.
+- Offline cache reset now preserves all learning localStorage; see `HANDOFF.md` and `docs/app-startup-audit.md` for the audit and remaining browser-preview verification.
+
 ## Recent updates (2026-07-26 · Meiji Restoration metadata audit)
 
 - Individually audited ten Meiji Restoration records and regenerated concept, causality, process-chain, unit-pool, and people/event projections; 21 records remain in the original four-concept baseline (9 Age of Imperialism, 12 Silk Road Exchange).
