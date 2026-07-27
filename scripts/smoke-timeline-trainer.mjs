@@ -42,7 +42,7 @@ async function main() {
   const events = JSON.parse(await read("data/events.json"));
   const comparisonUnit = JSON.parse(await read("data/units/industrialization-pathways-comparison.json"));
 
-  assert(html.includes('src="/apps/timeline-trainer/src/main.js"'), "timeline-trainer index must load src/main.js");
+  assert(html.includes('entry: "/apps/timeline-trainer/src/main.js"'), "timeline-trainer index must boot the absolute src/main.js entry");
   assert(html.includes('href="/apps/timeline-trainer/src/styles.css"'), "timeline-trainer index must load styles.css");
 
   assert(mainJs.includes('import { startApp } from "./App.js";'), "main.js must import startApp from App.js");

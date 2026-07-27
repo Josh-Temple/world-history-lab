@@ -138,7 +138,15 @@
       <p><a class="back-link" href="/">Back to top page</a></p>
     </main>
 
-    <script type="module" src="/apps/timeline-trainer/src/main.js"></script>
+    <script type="module">
+      document.documentElement.dataset.appState = "loading";
+      import("/apps/shared/app-boot.js").then(({ bootApp }) => bootApp({ app: "timeline-trainer", entry: "/apps/timeline-trainer/src/main.js" })).catch((error) => {
+        console.error("[app-boot]", { app: "timeline-trainer", phase: "boot-guard-import", entry: "/apps/timeline-trainer/src/main.js", error });
+        document.documentElement.dataset.appState = "error";
+        const alert = document.createElement("p"); alert.id = "app-boot-error"; alert.setAttribute("role", "alert");
+        alert.textContent = "The application could not be loaded. Reload this page or reset the offline app cache."; document.body.prepend(alert);
+      });
+    </script>
       <script type="module" src="/pwa/register-sw.js"></script>
   </body>
 </html>

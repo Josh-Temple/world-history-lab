@@ -528,6 +528,7 @@ function updateModeSelector() {
 
 async function init() {
   document.documentElement.dataset.sessionRunnerState = "loading";
+  document.documentElement.dataset.appState = "loading";
   showStartupMessage("Preparing your first question…");
   nextStepButton.disabled = true;
   restartButton.disabled = true;
@@ -572,6 +573,7 @@ async function init() {
   updateModeSelector();
   renderMode();
   document.documentElement.dataset.sessionRunnerState = "ready";
+  document.documentElement.dataset.appState = "ready";
   restartButton.disabled = false;
   saveSessionHandoff({
     weakConcepts: getWeakestConcepts({ limit: 5 }).map((r) => r.conceptId),
@@ -585,6 +587,7 @@ async function init() {
 function recoverFromStartupFailure(error) {
   console.error("[session-runner] Failed to start guided session", error);
   document.documentElement.dataset.sessionRunnerState = "error";
+  document.documentElement.dataset.appState = "error";
   restartButton.disabled = false;
   nextStepButton.disabled = true;
   unitLabelEl.textContent = "Unit: unavailable";
