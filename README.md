@@ -850,6 +850,7 @@ Timeline Trainer MVP is available at `http://localhost:4173/apps/timeline-traine
 PWA installability is available when the site is served over `http://localhost` during local development or over HTTPS in deployment.
 
 ## Deploy to Vercel
+- Production: https://world-history-lab.vercel.app/
 
 This repository is deployment-ready for Vercel as a static site.
 
