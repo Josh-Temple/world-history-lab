@@ -1,0 +1,259 @@
+/* Baukasten learning-page layer
+   Keeps the home/gallery expressive while making /apps/ tools quieter,
+   denser, and easier to use for repeated practice. Session Runner already
+   has a bespoke version of this hierarchy and is intentionally left alone. */
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) {
+  --bk-learning-width: 860px;
+  --bk-learning-rule: color-mix(in srgb, var(--bk-border) 88%, transparent);
+  margin: 0 !important;
+  min-height: 100vh;
+  background: var(--bk-bg) !important;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  main,
+  .page-shell,
+  .container,
+  #main
+) {
+  width: min(var(--bk-learning-width), calc(100% - 2rem)) !important;
+  max-width: var(--bk-learning-width) !important;
+  margin: 0 auto !important;
+  padding-top: clamp(1rem, 3vw, 2rem);
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  main > header,
+  .page-header
+) {
+  margin: 0 0 1.4rem !important;
+  padding: 0 0 1.35rem !important;
+  border-bottom: 1px solid var(--bk-learning-rule);
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  main > header,
+  .page-header
+) > :first-child {
+  margin-top: 0;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(.lead, .description) {
+  max-width: 62ch;
+  color: var(--bk-muted) !important;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  .back-link,
+  main > p:first-child a,
+  .page-shell > p:first-child a
+) {
+  color: var(--bk-muted) !important;
+  font-size: 0.82rem;
+  font-weight: 800 !important;
+  letter-spacing: 0.02em;
+  text-decoration: none !important;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  .back-link,
+  main > p:first-child a,
+  .page-shell > p:first-child a
+):hover {
+  color: var(--bk-ink) !important;
+}
+
+/* Structural sections are separated by rhythm and rules instead of cards. */
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  main > section,
+  .page-shell > section,
+  .container > section,
+  #main > section,
+  body > section
+) {
+  margin-top: 1.25rem !important;
+  padding-top: 1.25rem !important;
+  border-top: 1px solid var(--bk-learning-rule) !important;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  main > section,
+  .page-shell > section,
+  .container > section,
+  #main > section
+):first-of-type {
+  margin-top: 0 !important;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  .setup,
+  .toolbar,
+  .settings,
+  .controls,
+  .session-header
+) {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--bk-learning-rule);
+}
+
+/* Setup/configuration areas should stay visually quiet. */
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  .setup-card,
+  .settings-panel,
+  .mode-panel,
+  #stats-panel
+) {
+  background: transparent !important;
+  border-width: 0 0 1px !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Promote only the actual work/question surface. */
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  .panel:has(#event-list),
+  .panel:has(#chain-container),
+  .card:has(#question),
+  .card:has(#options),
+  .card:has(#event-label),
+  .card:has(textarea),
+  .card-grid .card,
+  .question-surface,
+  #question-panel
+) {
+  background: var(--bk-surface) !important;
+  border: 1px solid var(--bk-border) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 7px 22px rgba(26, 26, 26, 0.045) !important;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  .panel:has(#event-list),
+  .panel:has(#chain-container),
+  .card:has(#question),
+  .card:has(#options),
+  .card:has(#event-label),
+  .card:has(textarea),
+  .question-surface,
+  #question-panel
+) {
+  padding: clamp(1rem, 2.6vw, 1.4rem) !important;
+}
+
+/* Comparison cards are useful as two distinct objects, but keep them light. */
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) .card-grid {
+  gap: 0.9rem !important;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) .card-grid .card {
+  padding: 1rem !important;
+}
+
+/* Reflection/explanation blocks are editorial sections, not floating cards. */
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  .prompt,
+  .explanation
+) {
+  background: transparent !important;
+  border-width: 1px 0 0 !important;
+  border-style: solid !important;
+  border-color: var(--bk-learning-rule) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 1rem 0 0 !important;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) label {
+  color: var(--bk-ink) !important;
+  font-weight: 800;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(select, input, textarea) {
+  min-height: 44px;
+  border: 1px solid var(--bk-border) !important;
+  box-shadow: none !important;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) textarea {
+  padding: 0.85rem 0.95rem !important;
+  line-height: 1.65;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) button {
+  min-height: 44px;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+  #check,
+  #submit,
+  #submit-btn,
+  #retry-button,
+  #retry-weak-items
+) {
+  background: var(--bk-ink) !important;
+  color: #fff !important;
+  border-color: var(--bk-ink) !important;
+}
+
+/* Causal Explanation is a deliberately spare writing tool. */
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) > :is(h1, p, div, textarea) {
+  max-width: var(--bk-learning-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) > h1 {
+  padding-top: clamp(1rem, 3vw, 2rem);
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) > #prompt {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--bk-learning-rule);
+}
+
+html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) > :is(#reference, #feedback, #assessment) {
+  padding-top: 1rem;
+  border-top: 1px solid var(--bk-learning-rule);
+}
+
+@media (max-width: 640px) {
+  html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+    main,
+    .page-shell,
+    .container,
+    #main
+  ) {
+    width: min(100% - 1.4rem, var(--bk-learning-width)) !important;
+    padding-top: 0.9rem;
+    padding-bottom: 2rem;
+  }
+
+  html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+    main > header,
+    .page-header
+  ) {
+    margin-bottom: 1.1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) :is(
+    main > section,
+    .page-shell > section,
+    .container > section,
+    #main > section,
+    body > section
+  ) {
+    margin-top: 1rem !important;
+    padding-top: 1rem !important;
+  }
+
+  html[data-baukasten-context="learning"] body.learning-page:not(.session-runner-page) .card-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
