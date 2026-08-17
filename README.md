@@ -1,3 +1,9 @@
+## Recent updates (2026-08-17 · quieter learning-page hierarchy)
+
+- Reduced card nesting across the priority learning tools while retaining the shared Baukasten palette, typography, controls, and accent language.
+- Rebuilt Guided Session Runner around compact title/progress/mode sections, divider-led navigation, a single prominent question surface, and a lighter responsive control bar.
+- Added the Runner stylesheet to the optional PWA shell so the focused learning layout remains available after a successful offline install; implementation and verification details are in `HANDOFF.md`.
+
 ## Recent updates (2026-07-27 · cross-app startup recovery)
 
 - Made learner-app entries clean-URL-safe with shared visible boot recovery, hardened Service Worker response validation/cache migration, and added static plus production-like runtime regressions.

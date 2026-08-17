@@ -1,3 +1,23 @@
+# HANDOFF (2026-08-17 · learning-page visual hierarchy)
+
+## What changed and why
+
+The shared Baukasten theme promoted every direct section, `.panel`, and `.card` to the same white, rounded, shadowed surface. That broad selector erased the quieter hierarchy already present in apps such as Timeline Trainer and made Session Runner stack five equally prominent containers around an already card-like iframe application.
+
+Priority learning pages now opt into `body.learning-page`. The shared theme keeps its tokens, type, controls, and small three-color title accent, but flattens structural cards into divider-led sections. Setup and secondary statistics end with a thin rule; the actual session/question container remains the prominent white surface. This opt-in affects Timeline Trainer, Event Recognition, People Recognition, and Causality Drill, while Home and non-opted-in showcase pages retain the existing graphical treatment.
+
+Session Runner received a purpose-built stylesheet and semantic structure. Its title is compact, progress and current-mode information are grouped into quiet ruled sections, mode switching is an unboxed label/description/chip row, and only the embedded activity receives a large surface. The iframe border is removed to avoid a competing outer/inner card edge. Confidence and navigation controls sit below a divider without a containing card, with two-column chips and touch-sized controls on mobile. No application logic, data, state, mastery, review, attempt ID, question generation, or boot-guard behavior changed.
+
+## Validation and follow-up
+
+- Run `npm run check` for syntax, route/runtime, Service Worker, learning-integrity, derive, and data validation coverage.
+- Screenshot capture could not be completed in this container: no browser executable or browser automation package is installed, and the Playwright registry request was rejected with HTTP 403. Static structure, responsive CSS, clean app routes, and runtime startup contracts were verified instead; desktop and mobile visual review remains the first preview follow-up.
+- The new Runner CSS is listed in the optional Service Worker shell. Future visual work should keep learning tools opted in deliberately rather than weakening the more expressive Home treatment globally.
+
+Potential follow-ups: (1) evaluate whether secondary setup controls should collapse on small screens after observing real learners, (2) standardize inline styles that remain in older learning-app markup, and (3) add automated visual snapshots if a browser dependency becomes part of the repository toolchain.
+
+---
+
 # HANDOFF (2026-07-27 · cross-app startup and offline-cache recovery)
 
 ## Reproduction and confirmed causes
