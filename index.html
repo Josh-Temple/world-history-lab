@@ -7,233 +7,103 @@
     <link rel="manifest" href="/pwa/manifest.webmanifest" />
     <link rel="icon" href="/assets/pwa/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/pwa/apple-touch-icon.svg" />
+    <link rel="stylesheet" href="/styles/baukasten-ui.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
     <title>World History Lab</title>
-    <style>
-      :root {
-        --bg: #f8fafc;
-        --panel: #ffffff;
-        --text: #0f172a;
-        --muted: #475569;
-        --accent: #0f766e;
-        --border: #dbe2ea;
-      }
-
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-      }
-
-      #main {
-        width: min(760px, calc(100% - 1.5rem));
-        margin: 2rem auto;
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 1.2rem;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(1.8rem, 4vw, 2.4rem);
-      }
-
-      #intro {
-        margin: 0.6rem 0 0;
-        color: var(--muted);
-      }
-
-      #primary {
-        margin: 20px 0;
-      }
-
-      #start-btn {
-        font-size: 20px;
-        padding: 12px 24px;
-        border: 0;
-        border-radius: 10px;
-        background: var(--accent);
-        color: #fff;
-        font-weight: 700;
-        cursor: pointer;
-      }
-
-      #start-btn:hover,
-      #start-btn:focus-visible {
-        background: #115e59;
-      }
-
-      #modes {
-        margin-top: 0.7rem;
-        display: grid;
-        gap: 0.9rem;
-      }
-
-      .mode-group {
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 0.75rem;
-        background: #fcfefe;
-      }
-
-      .mode-group h2 {
-        margin: 0;
-        font-size: 1.2rem;
-      }
-
-      .mode-note {
-        margin: 0.35rem 0 0;
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-
-      .mode-group ul {
-        list-style: none;
-        padding: 0;
-        margin: 0.55rem 0 0;
-      }
-
-      .mode-group li {
-        margin: 8px 0;
-        color: var(--muted);
-      }
-
-      .mode-group a {
-        color: var(--accent);
-        font-weight: 700;
-      }
-
-      .badge {
-        display: inline-block;
-        margin-left: 0.35rem;
-        padding: 0.1rem 0.4rem;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        color: var(--muted);
-        font-size: 0.78rem;
-        font-weight: 700;
-        vertical-align: middle;
-      }
-
-      .secondary {
-        opacity: 0.88;
-      }
-
-      .progress-panel {
-        margin: 0.75rem 0 1rem;
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 0.75rem;
-        background: #f8fffe;
-      }
-      .progress-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 0.5rem;
-        margin-top: 0.45rem;
-      }
-      .progress-stat { font-size: 0.92rem; color: var(--muted); }
-      .continue-link { display:inline-block; margin-top:0.5rem; font-weight:700; color:var(--accent); }
-
-
-      @media (max-width: 640px) {
-        #main {
-          margin: 1rem auto;
-          padding: 1rem;
-        }
-
-        #start-btn {
-          width: 100%;
-        }
-      }
-    </style>
   </head>
-  <body>
-    <div id="main">
-      <h1>World History Lab</h1>
-      <p id="intro">Start with the core curriculum first, then expand into broader practice as accuracy improves.</p>
+  <body class="home-page">
+    <main id="main" class="home-shell">
+      <header class="home-hero">
+        <p class="eyebrow">Engineered play &amp; logic</p>
+        <h1>World History Lab</h1>
+        <div class="accent-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="intro">Start with the core curriculum first, then expand into broader practice as accuracy improves.</p>
+      </header>
 
-      <section class="mode-group" aria-label="Start here path">
-        <h2>Start here</h2>
-        <ol style="margin-top:0.35rem; padding-left:1.2rem; color:var(--muted);">
+      <section class="home-section start-section" aria-labelledby="start-here-title">
+        <h2 id="start-here-title">Start here</h2>
+        <ol class="start-list">
           <li>Run <strong>Timeline Trainer</strong> in <strong>Core essentials</strong> mode.</li>
           <li>Move to Event Recognition once core timeline accuracy is stable.</li>
           <li>Expand to full-set modes after core events feel automatic.</li>
         </ol>
       </section>
 
-      <section class="progress-panel" id="progress-panel" aria-live="polite">
-        <strong>Progress snapshot</strong>
+      <section class="home-section progress-panel" id="progress-panel" aria-labelledby="progress-title" aria-live="polite">
+        <h2 id="progress-title">Progress snapshot</h2>
         <div class="progress-grid">
-          <div class="progress-stat" id="events-seen">Events seen: 0</div>
-          <div class="progress-stat" id="events-mastered">Mastered: 0</div>
-          <div class="progress-stat" id="events-weak">Needs review: 0</div>
+          <div class="progress-stat"><strong id="events-seen">0</strong><span>Events seen</span></div>
+          <div class="progress-stat"><strong id="events-mastered">0</strong><span>Mastered</span></div>
+          <div class="progress-stat"><strong id="events-weak">0</strong><span>Needs review</span></div>
         </div>
         <a id="continue-link" class="continue-link" href="/apps/session-runner/">Continue where you left off</a>
       </section>
 
-      <div id="primary">
-        <button id="start-btn" type="button">Start Learning</button>
-      </div>
+      <section class="home-section primary-section" aria-labelledby="primary-title">
+        <h2 id="primary-title">Start learning</h2>
+        <div class="primary-action">
+          <div class="primary-action-copy">
+            <strong>Begin a guided mixed session</strong>
+            <span>Keep your progress while moving between practice modes.</span>
+          </div>
+          <button id="start-btn" type="button">Start Learning</button>
+        </div>
+      </section>
 
       <div id="modes">
-        <section class="mode-group">
-          <h2>Start</h2>
-          <p class="mode-note">Choose a mode based on your goal: guided progression, broad survey, focused retrieval, or relationship exploration.</p>
-          <ul>
-            <li><a href="/apps/session-runner/">Session Runner</a> <span class="badge">Core</span> – guided mixed practice.</li>
-            <li><a href="/apps/session-runner/?mode=review">Review Due Items</a> <span class="badge">Review</span> – prioritize weak and due items.</li>
-            <li><a href="/apps/dashboard/">Learning Dashboard</a> <span class="badge">New</span> – review priorities and weak areas.</li>
-            <li><a href="/apps/overview/">Overview</a> <span class="badge">Survey</span> – build a coarse world-history map.</li>
-            <li><a href="/apps/history-player/">History Player</a> <span class="badge">Explore</span> – play through events in sequence.</li>
-          <li><a href="/apps/concept-onboarding-map/">Concept Onboarding Map</a> <span class="badge">New</span> – beginner concept clusters and start-here pathways.</li>
+        <section class="home-section mode-group" aria-labelledby="start-title">
+          <h2 id="start-title">Start</h2>
+          <p class="section-note">Choose a mode based on your goal: guided progression, broad survey, focused retrieval, or relationship exploration.</p>
+          <ul class="mode-list">
+            <li><a href="/apps/session-runner/">Session Runner</a> <span class="badge">Core</span> <span class="mode-description">— guided mixed practice.</span></li>
+            <li><a href="/apps/session-runner/?mode=review">Review Due Items</a> <span class="badge">Review</span> <span class="mode-description">— prioritize weak and due items.</span></li>
+            <li><a href="/apps/dashboard/">Learning Dashboard</a> <span class="badge">New</span> <span class="mode-description">— review priorities and weak areas.</span></li>
+            <li><a href="/apps/overview/">Overview</a> <span class="badge">Survey</span> <span class="mode-description">— build a coarse world-history map.</span></li>
+            <li><a href="/apps/history-player/">History Player</a> <span class="badge">Explore</span> <span class="mode-description">— play through events in sequence.</span></li>
+            <li><a href="/apps/concept-onboarding-map/">Concept Onboarding Map</a> <span class="badge">New</span> <span class="mode-description">— beginner concept clusters and start-here pathways.</span></li>
           </ul>
         </section>
 
-        <section class="mode-group">
-          <h2>Practice</h2>
-          <p class="mode-note">Use these for focused retrieval and recognition practice.</p>
-          <ul>
-            <li><a href="/apps/timeline-trainer/">Timeline Trainer</a> <span class="badge">Core</span> – place events in time.</li>
-            <li><a href="/apps/sequence-reconstruction/">Sequence</a> <span class="badge">Practice</span> – order events correctly.</li>
-            <li><a href="/apps/year-estimation/">Year Estimation</a> <span class="badge">Practice</span> – recall approximate dates.</li>
-            <li><a href="/apps/event-recognition/">Event Recognition</a> <span class="badge">Practice</span> – identify events from clues.</li>
-            <li><a href="/apps/people-recognition/">People Recognition</a> <span class="badge">Practice</span> – connect people to historical roles.</li>
-            <li><a href="/apps/map-quiz/">Map Quiz</a> <span class="badge">Practice</span> – match events to locations.</li>
-            <li><a href="/apps/spread-explorer/">Historical Spread Explorer</a> <span class="badge">New</span> – explore spread by theme and year.</li>
-            <li><a href="/apps/theme-lens/">Theme Lens</a> <span class="badge">New</span> – compare one recurring theme across eras and regions.</li>
-            <li><a href="/apps/map-reasoning/">Map Reasoning</a> <span class="badge">Experimental</span> – identify locations and learn why place mattered.</li>
-                      <li><a href="/apps/big-picture-history/">Big Picture History</a> <span class="badge">New</span> – macro-scale narrative synthesis across units.</li>
+        <section class="home-section mode-group" aria-labelledby="practice-title">
+          <h2 id="practice-title">Practice</h2>
+          <p class="section-note">Use these for focused retrieval and recognition practice.</p>
+          <ul class="mode-list">
+            <li><a href="/apps/timeline-trainer/">Timeline Trainer</a> <span class="badge">Core</span> <span class="mode-description">— place events in time.</span></li>
+            <li><a href="/apps/sequence-reconstruction/">Sequence</a> <span class="badge">Practice</span> <span class="mode-description">— order events correctly.</span></li>
+            <li><a href="/apps/year-estimation/">Year Estimation</a> <span class="badge">Practice</span> <span class="mode-description">— recall approximate dates.</span></li>
+            <li><a href="/apps/event-recognition/">Event Recognition</a> <span class="badge">Practice</span> <span class="mode-description">— identify events from clues.</span></li>
+            <li><a href="/apps/people-recognition/">People Recognition</a> <span class="badge">Practice</span> <span class="mode-description">— connect people to historical roles.</span></li>
+            <li><a href="/apps/map-quiz/">Map Quiz</a> <span class="badge">Practice</span> <span class="mode-description">— match events to locations.</span></li>
+            <li><a href="/apps/spread-explorer/">Historical Spread Explorer</a> <span class="badge">New</span> <span class="mode-description">— explore spread by theme and year.</span></li>
+            <li><a href="/apps/theme-lens/">Theme Lens</a> <span class="badge">New</span> <span class="mode-description">— compare one recurring theme across eras and regions.</span></li>
+            <li><a href="/apps/map-reasoning/">Map Reasoning</a> <span class="badge">Experimental</span> <span class="mode-description">— identify locations and learn why place mattered.</span></li>
+            <li><a href="/apps/big-picture-history/">Big Picture History</a> <span class="badge">New</span> <span class="mode-description">— macro-scale narrative synthesis across units.</span></li>
           </ul>
         </section>
 
-        <section class="mode-group secondary">
-          <h2>Connections</h2>
-          <p class="mode-note">Use these to study causes, effects, comparisons, and graph links.</p>
-          <ul>
-            <li><a href="/apps/causality-drill/">Causality Drill</a> <span class="badge">Practice</span> – recall cause and effect quickly.</li>
-            <li><a href="/apps/causality-builder/">Causality Builder</a> <span class="badge">Experimental</span> – build causal relationships.</li>
-            <li><a href="/apps/causal-chain/">Causal Chain</a> <span class="badge">Experimental</span> – reconstruct full relationship sequences.</li>
-            <li><a href="/apps/causal-explanation/">Causal Explanation</a> <span class="badge">Experimental</span> – write why one event led to another.</li>
-            <li><a href="/apps/historical-argument-builder/">Historical Argument Builder</a> <span class="badge">New</span> – structured thesis/evidence/counterargument writing practice.</li>
-            <li><a href="/apps/event-comparison/">Comparison</a> <span class="badge">Practice</span> – compare events and themes.</li>
-            <li><a href="/apps/comparison-trainer/">Historical Comparison</a> <span class="badge">New</span> – side-by-side cross-era synthesis prompts.</li>
-            <li><a href="/apps/graph-explorer/">Graph Explorer</a> <span class="badge">Explore</span> – inspect incoming and outgoing links.</li>
-            <li><a href="/apps/historical-patterns/">Historical Patterns Explorer</a> <span class="badge">New</span> – compare recurring dynamics across eras.</li>
-            <li><a href="/apps/historical-pattern-transfer/">Historical Pattern Transfer</a> <span class="badge">New</span> – test cross-era analogies and false-analogy traps.</li>
-            <li><a href="/apps/historical-reasoning-lab/">Historical Reasoning Lab</a> <span class="badge">New</span> – build causal arguments and counterfactual explanations.</li>
-            <li><a href="/apps/historical-source-lab/">Historical Source Lab</a> <span class="badge">New</span> – analyze primary-source fragments, context, and uncertainty.</li>
-            <li><a href="/apps/historical-systems-simulator/">Historical Systems Simulator</a> <span class="badge">New</span> – multi-turn systems tradeoffs under uncertainty.</li>
-            <li><a href="/apps/misconception-challenge/">Misconception Challenge</a> <span class="badge">New</span> – test misleading claims with contrastive reasoning.</li>
+        <section class="home-section mode-group secondary" aria-labelledby="connections-title">
+          <h2 id="connections-title">Connections</h2>
+          <p class="section-note">Use these to study causes, effects, comparisons, and graph links.</p>
+          <ul class="mode-list">
+            <li><a href="/apps/causality-drill/">Causality Drill</a> <span class="badge">Practice</span> <span class="mode-description">— recall cause and effect quickly.</span></li>
+            <li><a href="/apps/causality-builder/">Causality Builder</a> <span class="badge">Experimental</span> <span class="mode-description">— build causal relationships.</span></li>
+            <li><a href="/apps/causal-chain/">Causal Chain</a> <span class="badge">Experimental</span> <span class="mode-description">— reconstruct full relationship sequences.</span></li>
+            <li><a href="/apps/causal-explanation/">Causal Explanation</a> <span class="badge">Experimental</span> <span class="mode-description">— write why one event led to another.</span></li>
+            <li><a href="/apps/historical-argument-builder/">Historical Argument Builder</a> <span class="badge">New</span> <span class="mode-description">— structured thesis/evidence/counterargument writing practice.</span></li>
+            <li><a href="/apps/event-comparison/">Comparison</a> <span class="badge">Practice</span> <span class="mode-description">— compare events and themes.</span></li>
+            <li><a href="/apps/comparison-trainer/">Historical Comparison</a> <span class="badge">New</span> <span class="mode-description">— side-by-side cross-era synthesis prompts.</span></li>
+            <li><a href="/apps/graph-explorer/">Graph Explorer</a> <span class="badge">Explore</span> <span class="mode-description">— inspect incoming and outgoing links.</span></li>
+            <li><a href="/apps/historical-patterns/">Historical Patterns Explorer</a> <span class="badge">New</span> <span class="mode-description">— compare recurring dynamics across eras.</span></li>
+            <li><a href="/apps/historical-pattern-transfer/">Historical Pattern Transfer</a> <span class="badge">New</span> <span class="mode-description">— test cross-era analogies and false-analogy traps.</span></li>
+            <li><a href="/apps/historical-reasoning-lab/">Historical Reasoning Lab</a> <span class="badge">New</span> <span class="mode-description">— build causal arguments and counterfactual explanations.</span></li>
+            <li><a href="/apps/historical-source-lab/">Historical Source Lab</a> <span class="badge">New</span> <span class="mode-description">— analyze primary-source fragments, context, and uncertainty.</span></li>
+            <li><a href="/apps/historical-systems-simulator/">Historical Systems Simulator</a> <span class="badge">New</span> <span class="mode-description">— multi-turn systems tradeoffs under uncertainty.</span></li>
+            <li><a href="/apps/misconception-challenge/">Misconception Challenge</a> <span class="badge">New</span> <span class="mode-description">— test misleading claims with contrastive reasoning.</span></li>
           </ul>
         </section>
       </div>
-    </div>
+    </main>
 
-    
     <script type="module">
       import { recommendNextStep } from '/apps/shared/next-step-engine.js';
 
@@ -265,9 +135,9 @@
       }
 
       const summary = summarizeProgress();
-      document.getElementById('events-seen').textContent = `Events seen: ${summary.seen}`;
-      document.getElementById('events-mastered').textContent = `Mastered: ${summary.mastered}`;
-      document.getElementById('events-weak').textContent = `Needs review: ${summary.weak}`;
+      document.getElementById('events-seen').textContent = summary.seen;
+      document.getElementById('events-mastered').textContent = summary.mastered;
+      document.getElementById('events-weak').textContent = summary.weak;
 
       const selectedUnit = localStorage.getItem('selected_unit') || '';
       const next = recommendNextStep({
