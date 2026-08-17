@@ -1,21 +1,6 @@
+import { ensureBaukastenTheme, THEME_HREF } from "./baukasten-theme.js";
+
 const CACHE_PREFIX = "world-history-lab-";
-const BAUKASTEN_THEME_HREF = "/styles/baukasten-ui.css";
-
-function ensureBaukastenTheme() {
-  document.documentElement.dataset.baukastenUi = "1";
-  const existing = document.querySelector('link[data-baukasten-ui="1"]');
-  if (existing) return Promise.resolve();
-
-  return new Promise((resolve, reject) => {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = BAUKASTEN_THEME_HREF;
-    link.dataset.baukastenUi = "1";
-    link.addEventListener("load", () => resolve(), { once: true });
-    link.addEventListener("error", () => reject(new Error(`Failed to load ${BAUKASTEN_THEME_HREF}`)), { once: true });
-    document.head.appendChild(link);
-  });
-}
 
 export async function resetAppCacheAndReload() {
   if ("caches" in window) {
@@ -60,7 +45,7 @@ function renderBootError({ app, entry, error }) {
 export async function bootApp({ app, entry }) {
   document.documentElement.dataset.appState = "loading";
   await ensureBaukastenTheme().catch((error) => {
-    console.warn("[app-boot]", { app, phase: "theme-load", href: BAUKASTEN_THEME_HREF, error });
+    console.warn("[app-boot]", { app, phase: "theme-load", href: THEME_HREF, error });
   });
   try {
     await import(entry);
