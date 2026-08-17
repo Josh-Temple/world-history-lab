@@ -7,8 +7,13 @@ assert.equal(isCacheableResponse('/x.js',response('<html>',200,'text/html')),fal
 assert.equal(isCacheableResponse('/x.json',response('<html>',200,'text/html')),false);
 assert.equal(isCacheableResponse('/x.js',response('export{}',200,'text/javascript')),true);
 assert.equal(isCacheableResponse('/x.json',response('{}',200,'application/json')),true);
-const sw=await (await import('node:fs/promises')).readFile('service-worker.js','utf8');
-assert.match(sw,/shell-v6/); assert.match(sw,/required\) throw error/); assert.match(sw,/OPTIONAL_SHELL_URLS\.map/); assert.match(sw,/validCached/);
-const boot=await (await import('node:fs/promises')).readFile('apps/shared/app-boot.js','utf8');
+const fs=await import('node:fs/promises');
+const sw=await fs.readFile('service-worker.js','utf8');
+assert.match(sw,/shell-v6/); assert.match(sw,/required\) throw error/); assert.match(sw,/OPTIONAL_SHELL_URLS\.map/); assert.match(sw,/validCached/); assert.match(sw,/baukasten-learning\.css/);
+const boot=await fs.readFile('apps/shared/app-boot.js','utf8');
 assert.doesNotMatch(boot,/localStorage\.(?:clear|removeItem)/); assert.match(boot,/startsWith\(CACHE_PREFIX\)/);
-console.log('[test-service-worker] OK (MIME/status, install policy, fallback and learning-storage preservation)');
+const theme=await fs.readFile('apps/shared/baukasten-theme.js','utf8');
+assert.match(theme,/baukasten-learning\.css/); assert.match(theme,/pathname\.startsWith\("\/apps\/"\)/); assert.match(theme,/classList\.add\("learning-page"\)/);
+const learningCss=await fs.readFile('styles/baukasten-learning.css','utf8');
+assert.match(learningCss,/data-baukasten-context="learning"/); assert.match(learningCss,/session-runner-page/); assert.match(learningCss,/:has\(#question\)/);
+console.log('[test-service-worker] OK (MIME/status, install policy, Baukasten learning context, fallback and learning-storage preservation)');

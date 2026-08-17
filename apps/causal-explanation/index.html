@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en" data-baukasten-ui="1">
+<html lang="en" data-baukasten-ui="1" data-baukasten-context="learning">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Causal Explanation</title>
     <link rel="stylesheet" href="/styles/baukasten-ui.css" />
+    <link rel="stylesheet" href="/styles/baukasten-learning.css" />
     <style>
       body { font-family: system-ui, sans-serif; margin: 2rem; max-width: 860px; }
       textarea { width: 100%; max-width: 100%; }
@@ -12,7 +13,7 @@
       .row { margin-top: 1rem; }
     </style>
   </head>
-  <body>
+  <body class="learning-page">
     <h1>Causal Explanation</h1>
     <p class="muted">Explain why one event led to another, then compare with a reference explanation.</p>
     <div id="prompt" class="row" aria-live="polite"></div>
