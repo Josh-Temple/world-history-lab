@@ -5,7 +5,7 @@ const RUNTIME_CACHE = "world-history-lab-runtime-v2";
 const NETWORK_TIMEOUT_MS = 10000;
 const REQUIRED_SHELL_URLS = ["/", "/index.html", "/pwa/cache-policy.js", "/pwa/register-sw.js"];
 const OPTIONAL_SHELL_URLS = [
-  "/pwa/manifest.webmanifest", "/styles/site.css", "/styles/baukasten-ui.css", "/styles/baukasten-learning.css", "/apps/shared/app-boot.js", "/apps/shared/baukasten-theme.js",
+  "/pwa/manifest.webmanifest", "/styles/site.css", "/styles/baukasten-ui.css", "/styles/baukasten-learning.css", "/styles/home.css", "/styles/overview.css", "/apps/shared/app-boot.js", "/apps/shared/baukasten-theme.js",
   "/apps/session-runner/index.html", "/apps/session-runner/app.js", "/apps/session-runner/styles.css",
   "/apps/timeline-trainer/index.html", "/apps/timeline-trainer/src/main.js",
   "/apps/event-recognition/index.html", "/apps/event-recognition/app.js",
@@ -14,7 +14,7 @@ const OPTIONAL_SHELL_URLS = [
   "/apps/event-comparison/index.html", "/apps/event-comparison/app.js",
   "/apps/comparison-trainer/index.html", "/apps/comparison-trainer/main.js",
   "/apps/map-quiz/index.html", "/apps/map-quiz/app.js",
-  "/apps/dashboard/index.html", "/apps/dashboard/main.js",
+  "/apps/dashboard/index.html", "/apps/dashboard/styles.css", "/apps/dashboard/main.js",
   "/apps/overview/index.html", "/derived/events.normalized.json", "/data/units/index.json"
 ];
 

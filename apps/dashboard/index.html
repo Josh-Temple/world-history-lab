@@ -6,17 +6,24 @@
     <title>Learning Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <h1>Learning Dashboard</h1>
-    <section id="review-summary"></section>
-    <section id="weak-items"></section>
-    <section id="recent-units"></section>
-    <section id="progression-summary"></section>
-    <section id="recommended-paths"></section>
-    <section id="thematic-pathways"></section>
-    <section id="quick-actions"></section>
-    <section id="next-session-panel"></section>
-    <section id="guided-session-launch"></section>
+  <body class="learning-page dashboard-page">
+    <header class="page-header">
+      <p class="back-link"><a href="/">← Back to World History Lab</a></p>
+      <p class="eyebrow">Learner state</p>
+      <h1>Learning Dashboard</h1>
+      <p class="lead">Review priorities, recent practice, and the next useful session.</p>
+    </header>
+    <main>
+      <section id="review-summary"></section>
+      <section id="weak-items"></section>
+      <section id="recent-units"></section>
+      <section id="progression-summary"></section>
+      <section id="recommended-paths"></section>
+      <section id="thematic-pathways"></section>
+      <section id="quick-actions"></section>
+      <section id="next-session-panel"></section>
+      <section id="guided-session-launch"></section>
+    </main>
     <script type="module">
       document.documentElement.dataset.appState = "loading";
       import("/apps/shared/app-boot.js").then(({ bootApp }) => bootApp({ app: "dashboard", entry: "/apps/dashboard/main.js" })).catch((error) => {
