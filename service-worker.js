@@ -5,7 +5,7 @@ const RUNTIME_CACHE = "world-history-lab-runtime-v2";
 const NETWORK_TIMEOUT_MS = 10000;
 const REQUIRED_SHELL_URLS = ["/", "/index.html", "/pwa/cache-policy.js", "/pwa/register-sw.js"];
 const OPTIONAL_SHELL_URLS = [
-  "/pwa/manifest.webmanifest", "/styles/site.css", "/styles/baukasten-ui.css", "/apps/shared/app-boot.js",
+  "/pwa/manifest.webmanifest", "/styles/site.css", "/styles/baukasten-ui.css", "/apps/shared/app-boot.js", "/apps/shared/baukasten-theme.js",
   "/apps/session-runner/index.html", "/apps/session-runner/app.js",
   "/apps/timeline-trainer/index.html", "/apps/timeline-trainer/src/main.js",
   "/apps/event-recognition/index.html", "/apps/event-recognition/app.js",
