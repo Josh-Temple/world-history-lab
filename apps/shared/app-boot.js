@@ -1,3 +1,5 @@
+import { ensureBaukastenTheme, THEME_HREF } from "./baukasten-theme.js";
+
 const CACHE_PREFIX = "world-history-lab-";
 
 export async function resetAppCacheAndReload() {
@@ -42,6 +44,9 @@ function renderBootError({ app, entry, error }) {
 
 export async function bootApp({ app, entry }) {
   document.documentElement.dataset.appState = "loading";
+  await ensureBaukastenTheme().catch((error) => {
+    console.warn("[app-boot]", { app, phase: "theme-load", href: THEME_HREF, error });
+  });
   try {
     await import(entry);
     // An app with asynchronous initialization may keep loading and set ready itself.
