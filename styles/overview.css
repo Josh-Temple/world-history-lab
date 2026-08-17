@@ -30,6 +30,14 @@ body.overview-page {
   box-shadow: none !important;
 }
 
+.overview-page .back-link {
+  margin: 0;
+}
+
+.overview-page .page-header .eyebrow {
+  margin-top: 1.1rem;
+}
+
 .overview-page .page-header {
   padding-top: 0;
   padding-bottom: 1.35rem;
