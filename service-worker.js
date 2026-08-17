@@ -14,7 +14,7 @@ const OPTIONAL_SHELL_URLS = [
   "/apps/event-comparison/index.html", "/apps/event-comparison/app.js",
   "/apps/comparison-trainer/index.html", "/apps/comparison-trainer/main.js",
   "/apps/map-quiz/index.html", "/apps/map-quiz/app.js",
-  "/apps/dashboard/index.html", "/apps/dashboard/main.js",
+  "/apps/dashboard/index.html", "/apps/dashboard/styles.css", "/apps/dashboard/main.js",
   "/apps/overview/index.html", "/derived/events.normalized.json", "/data/units/index.json"
 ];
 
