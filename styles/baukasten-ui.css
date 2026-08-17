@@ -181,6 +181,46 @@ html[data-baukasten-ui="1"] iframe {
   background: var(--bk-surface) !important;
 }
 
+/* Learning tools use Baukasten typography and tokens without turning every
+   structural section into a floating module. The question surface remains the
+   one intentionally prominent plane. */
+html[data-baukasten-ui="1"] body.learning-page :is(
+  main > section,
+  .container > section,
+  #main > section,
+  .panel,
+  .card
+) {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+html[data-baukasten-ui="1"] body.learning-page :is(.setup-card, .settings-panel, .mode-panel, #stats-panel) {
+  border-width: 0 0 1px !important;
+  border-style: solid !important;
+  border-color: var(--bk-border) !important;
+  padding-bottom: 1rem !important;
+}
+
+html[data-baukasten-ui="1"] body.learning-page :is(.session-card, #question-panel, .question-surface) {
+  background: var(--bk-surface) !important;
+  border: 1px solid var(--bk-border) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 7px 22px rgba(26, 26, 26, 0.045) !important;
+}
+
+html[data-baukasten-ui="1"] body.learning-page h1 {
+  font-size: clamp(1.9rem, 5vw, 2.8rem) !important;
+}
+
+html[data-baukasten-ui="1"] body.learning-page h1::after {
+  width: 9px;
+  height: 5px;
+  margin-top: 9px;
+  box-shadow: 15px 0 0 var(--bk-blue), 30px 0 0 var(--bk-yellow);
+}
+
 html[data-baukasten-ui="1"] #app-boot-error {
   background: #fff !important;
   color: var(--bk-ink) !important;
